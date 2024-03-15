@@ -1,4 +1,4 @@
-.. _bson_oid_copy
+.. _bson_oid_copy:
 
 bson_oid_copy()
 ===============
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``src``: A :symbol:`bson_oid_t`.
-* ``dst``: A :symbol:`bson_oid_t`.
+- ``src``: A :symbol:`bson_oid_t`.
+- ``dst``: A :symbol:`bson_oid_t`.
 
 Description
 -----------

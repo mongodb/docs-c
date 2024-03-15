@@ -1,4 +1,4 @@
-.. _bson_oid_init_from_data
+.. _bson_oid_init_from_data:
 
 bson_oid_init_from_data()
 =========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
-* ``data``: A buffer containing 12 bytes for the oid.
+- ``oid``: A :symbol:`bson_oid_t`.
+- ``data``: A buffer containing 12 bytes for the oid.
 
 Description
 -----------

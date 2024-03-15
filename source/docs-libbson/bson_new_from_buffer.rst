@@ -1,4 +1,4 @@
-.. _bson_new_from_buffer
+.. _bson_new_from_buffer:
 
 bson_new_from_buffer()
 ======================
@@ -17,10 +17,10 @@ Synopsis
 Parameters
 ----------
 
-* ``buf``: An out-pointer to a buffer containing a serialized BSON document, or to NULL.
-* ``buf_len``: An out-pointer to the length of the buffer in bytes.
-* ``realloc_func``: Optional :symbol:`bson_realloc_func` for reallocating the buffer.
-* ``realloc_func_ctx``: Optional pointer that will be passed as ``ctx`` to ``realloc_func``.
+- ``buf``: An out-pointer to a buffer containing a serialized BSON document, or to NULL.
+- ``buf_len``: An out-pointer to the length of the buffer in bytes.
+- ``realloc_func``: Optional :symbol:`bson_realloc_func` for reallocating the buffer.
+- ``realloc_func_ctx``: Optional pointer that will be passed as ``ctx`` to ``realloc_func``.
 
 Description
 -----------

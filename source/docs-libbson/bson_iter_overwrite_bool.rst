@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_bool
+.. _bson_iter_overwrite_bool:
 
 bson_iter_overwrite_bool()
 ==========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``value``: A bool containing the new value.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``value``: A bool containing the new value.
 
 Description
 -----------

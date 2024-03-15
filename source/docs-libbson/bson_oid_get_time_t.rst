@@ -1,4 +1,4 @@
-.. _bson_oid_get_time_t
+.. _bson_oid_get_time_t:
 
 bson_oid_get_time_t()
 =====================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
+- ``oid``: A :symbol:`bson_oid_t`.
 
 Description
 -----------

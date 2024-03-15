@@ -18,11 +18,11 @@ Synopsis
 Parameters
 ----------
 
-* ``buf``: A uint8_t.
-* ``buflen``: A size_t.
-* ``offset``: A size_t.
-* ``realloc_func``: A bson_realloc_func.
-* ``realloc_func_ctx``: A bson_realloc_func.
+- ``buf``: A uint8_t.
+- ``buflen``: A size_t.
+- ``offset``: A size_t.
+- ``realloc_func``: A bson_realloc_func.
+- ``realloc_func_ctx``: A bson_realloc_func.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_int64
+.. _bson_iter_overwrite_int64:
 
 bson_iter_overwrite_int64()
 ===========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``value``: A int64_t.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``value``: A int64_t.
 
 Description
 -----------

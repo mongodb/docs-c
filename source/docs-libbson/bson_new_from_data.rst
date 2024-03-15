@@ -1,4 +1,4 @@
-.. _bson_new_from_data
+.. _bson_new_from_data:
 
 bson_new_from_data()
 ====================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``data``: A BSON encoded document buffer.
-* ``length``: The length of ``data`` in bytes.
+- ``data``: A BSON encoded document buffer.
+- ``length``: The length of ``data`` in bytes.
 
 Description
 -----------

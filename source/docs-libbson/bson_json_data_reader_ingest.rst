@@ -1,4 +1,4 @@
-.. _bson_json_data_reader_ingest
+.. _bson_json_data_reader_ingest:
 
 bson_json_data_reader_ingest()
 ==============================
@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_json_reader_t`.
-* ``data``: A uint8_t containing data to feed.
-* ``len``: A size_t containing the length of ``data``.
+- ``reader``: A :symbol:`bson_json_reader_t`.
+- ``data``: A uint8_t containing data to feed.
+- ``len``: A size_t containing the length of ``data``.
 
 Description
 -----------

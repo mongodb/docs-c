@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_double
+.. _bson_iter_overwrite_double:
 
 bson_iter_overwrite_double()
 ============================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``value``: The new double value.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``value``: The new double value.
 
 Description
 -----------

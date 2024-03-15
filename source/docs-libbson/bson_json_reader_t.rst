@@ -1,4 +1,4 @@
-.. _bson_json_reader_t
+.. _bson_json_reader_t:
 
 bson_json_reader_t
 ==================

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``string``: A :symbol:`bson_string_t`.
-* ``free_segment``: A bool indicating whether ``string->str`` should be freed.
+- ``string``: A :symbol:`bson_string_t`.
+- ``free_segment``: A bool indicating whether ``string->str`` should be freed.
 
 Description
 -----------

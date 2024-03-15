@@ -1,4 +1,4 @@
-.. _bson_iter_int64
+.. _bson_iter_int64:
 
 bson_iter_int64()
 =================
@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_json_reader_new
+.. _bson_json_reader_new:
 
 bson_json_reader_new()
 ======================
@@ -18,11 +18,11 @@ Synopsis
 Parameters
 ----------
 
-* ``data``: A user-defined pointer.
-* ``cb``: A bson_json_reader_cb.
-* ``dcb``: A bson_json_destroy_cb.
-* ``allow_multiple``: Unused.
-* ``buf_size``: A size_t containing the requested internal buffer size.
+- ``data``: A user-defined pointer.
+- ``cb``: A bson_json_reader_cb.
+- ``dcb``: A bson_json_destroy_cb.
+- ``allow_multiple``: Unused.
+- ``buf_size``: A size_t containing the requested internal buffer size.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_iter_timeval
+.. _bson_iter_timeval:
 
 bson_iter_timeval()
 ===================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``tv``: A struct timeval.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``tv``: A struct timeval.
 
 Description
 -----------

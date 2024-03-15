@@ -25,9 +25,9 @@ Synopsis
 Parameters
 ----------
 
-* ``bson``: A :symbol:`bson_t`.
-* ``flags``: A bitwise-or of all desired validation flags.
-* ``error``: Optional :symbol:`bson_error_t`.
+- ``bson``: A :symbol:`bson_t`.
+- ``flags``: A bitwise-or of all desired validation flags.
+- ``error``: Optional :symbol:`bson_error_t`.
 
 Description
 -----------
@@ -36,12 +36,12 @@ Validates a BSON document by walking through the document and inspecting the key
 
 You can modify how the validation occurs through the use of the ``flags`` parameter. A description of their effect is below.
 
-* ``BSON_VALIDATE_NONE`` Basic validation of BSON length and structure.
-* ``BSON_VALIDATE_UTF8`` All keys and string values are checked for invalid UTF-8.
-* ``BSON_VALIDATE_UTF8_ALLOW_NULL`` String values are allowed to have embedded NULL bytes.
-* ``BSON_VALIDATE_DOLLAR_KEYS`` Prohibit keys that start with ``$`` outside of a "DBRef" subdocument.
-* ``BSON_VALIDATE_DOT_KEYS`` Prohibit keys that contain ``.`` anywhere in the string.
-* ``BSON_VALIDATE_EMPTY_KEYS`` Prohibit zero-length keys.
+- ``BSON_VALIDATE_NONE`` Basic validation of BSON length and structure.
+- ``BSON_VALIDATE_UTF8`` All keys and string values are checked for invalid UTF-8.
+- ``BSON_VALIDATE_UTF8_ALLOW_NULL`` String values are allowed to have embedded NULL bytes.
+- ``BSON_VALIDATE_DOLLAR_KEYS`` Prohibit keys that start with ``$`` outside of a "DBRef" subdocument.
+- ``BSON_VALIDATE_DOT_KEYS`` Prohibit keys that contain ``.`` anywhere in the string.
+- ``BSON_VALIDATE_EMPTY_KEYS`` Prohibit zero-length keys.
 
 Returns
 -------

@@ -1,4 +1,4 @@
-.. _bson_reader_new_from_file
+.. _bson_reader_new_from_file:
 
 bson_reader_new_from_file()
 ===========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``path``: A filename in the host filename encoding.
-* ``error``: A :symbol:`bson_error_t`.
+- ``path``: A filename in the host filename encoding.
+- ``error``: A :symbol:`bson_error_t`.
 
 Description
 -----------

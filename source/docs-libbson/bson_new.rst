@@ -1,4 +1,4 @@
-.. _bson_new
+.. _bson_new:
 
 bson_new()
 ==========

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``s``: A string.
-* ``maxlen``: The maximum size of string to check.
+- ``s``: A string.
+- ``maxlen``: The maximum size of string to check.
 
 Description
 -----------

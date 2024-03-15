@@ -15,10 +15,10 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: A location for the resulting string.
-* ``size``: The size of str in bytes.
-* ``format``: A printf style format string.
-* ``ap``: A va_list of parameters for the format.
+- ``str``: A location for the resulting string.
+- ``size``: The size of str in bytes.
+- ``format``: A printf style format string.
+- ``ap``: A va_list of parameters for the format.
 
 Description
 -----------

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``mem``: A memory region.
-* ``size``: The size of ``mem``.
+- ``mem``: A memory region.
+- ``size``: The size of ``mem``.
 
 Description
 -----------

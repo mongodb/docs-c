@@ -1,4 +1,4 @@
-.. _d_is_valid
+.. _d_is_valid:
 
 bson_oid_is_valid()
 ===================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: A string.
-* ``length``: The length of ``str``.
+- ``str``: A string.
+- ``length``: The length of ``str``.
 
 Description
 -----------

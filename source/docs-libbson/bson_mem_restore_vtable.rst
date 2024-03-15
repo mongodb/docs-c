@@ -1,4 +1,4 @@
-.. _bson_mem_restore_vtable
+.. _bson_mem_restore_vtable:
 
 bson_mem_restore_vtable()
 =========================

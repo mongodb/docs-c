@@ -1,4 +1,4 @@
-.. _bson_oid_compare
+.. _bson_oid_compare:
 
 bson_oid_compare()
 ==================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``oid1``: A :symbol:`bson_oid_t`.
-* ``oid2``: A :symbol:`bson_oid_t`.
+- ``oid1``: A :symbol:`bson_oid_t`.
+- ``oid2``: A :symbol:`bson_oid_t`.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_reader_destroy_func_t
+.. _bson_reader_destroy_func_t:
 
 bson_reader_destroy_func_t
 ==========================
@@ -13,7 +13,7 @@ Synopsis
 Parameters
 ----------
 
-* ``handle``: The opaque handle provided to :symbol:`bson_reader_new_from_handle`.
+- ``handle``: The opaque handle provided to :symbol:`bson_reader_new_from_handle`.
 
 Description
 -----------

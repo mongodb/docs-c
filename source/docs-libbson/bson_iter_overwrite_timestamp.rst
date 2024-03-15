@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_timestamp
+.. _bson_iter_overwrite_timestamp:
 
 bson_iter_overwrite_timestamp()
 ===============================
@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``timestamp``: A uint32_t.
-* ``increment``: A uint32_t.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``timestamp``: A uint32_t.
+- ``increment``: A uint32_t.
 
 Description
 -----------

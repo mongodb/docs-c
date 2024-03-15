@@ -1,4 +1,4 @@
-.. _bson_oid_init_from_string_unsafe
+.. _bson_oid_init_from_string_unsafe:
 
 bson_oid_init_from_string_unsafe()
 ==================================

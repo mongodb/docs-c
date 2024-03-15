@@ -1,4 +1,4 @@
-.. _bson_json_opts_destroy
+.. _bson_json_opts_destroy:
 
 bson_json_opts_destroy()
 ========================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: A :symbol:`bson_json_opts_t`.
+- ``opts``: A :symbol:`bson_json_opts_t`.
 
 Description
 -----------

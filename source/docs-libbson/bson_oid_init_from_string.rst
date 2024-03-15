@@ -1,4 +1,4 @@
-.. _bson_oid_init_from_string
+.. _bson_oid_init_from_string:
 
 bson_oid_init_from_string()
 ===========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
-* ``str``: A string containing a hex encoded version of the oid.
+- ``oid``: A :symbol:`bson_oid_t`.
+- ``str``: A string containing a hex encoded version of the oid.
 
 Description
 -----------

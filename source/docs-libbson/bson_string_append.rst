@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``string``: A :symbol:`bson_string_t`.
-* ``str``: A string.
+- ``string``: A :symbol:`bson_string_t`.
+- ``str``: A string.
 
 Description
 -----------

@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: A string.
+- ``str``: A string.
 
 Description
 -----------

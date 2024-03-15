@@ -1,4 +1,4 @@
-.. _bson_json_reader_read
+.. _bson_json_reader_read:
 
 bson_json_reader_read()
 =======================
@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_json_reader_t`.
-* ``bson``: A :symbol:`bson_t`.
-* ``error``: A :symbol:`bson_error_t`.
+- ``reader``: A :symbol:`bson_json_reader_t`.
+- ``bson``: A :symbol:`bson_t`.
+- ``error``: A :symbol:`bson_error_t`.
 
 Description
 -----------

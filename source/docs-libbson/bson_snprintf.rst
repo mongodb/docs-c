@@ -15,9 +15,9 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: The destination buffer.
-* ``size``: The size of ``str``.
-* ``format``: A printf style format string.
+- ``str``: The destination buffer.
+- ``size``: The size of ``str``.
+- ``format``: A printf style format string.
 
 Description
 -----------

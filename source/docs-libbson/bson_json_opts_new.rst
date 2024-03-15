@@ -1,4 +1,4 @@
-.. _bson_json_opts_new
+.. _bson_json_opts_new:
 
 bson_json_opts_new()
 ====================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``mode``: A bson_json_mode_t.
-* ``max_len``: An int32_t.
+- ``mode``: A bson_json_mode_t.
+- ``max_len``: An int32_t.
 
 Description
 -----------

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``s1``: A string.
-* ``s2``: A string.
+- ``s1``: A string.
+- ``s2``: A string.
 
 Description
 -----------

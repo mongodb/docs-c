@@ -1,4 +1,4 @@
-.. _bson_json_opts_t
+.. _bson_json_opts_t:
 
 bson_json_opts_t
 ================

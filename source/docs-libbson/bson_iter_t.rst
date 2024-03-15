@@ -1,4 +1,4 @@
-.. _bson_iter_t
+.. _bson_iter_t:
 
 bson_iter_t
 ===========

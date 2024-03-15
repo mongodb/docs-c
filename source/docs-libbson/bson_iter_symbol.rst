@@ -1,4 +1,4 @@
-.. _bson_iter_symbol
+.. _bson_iter_symbol:
 
 bson_iter_symbol()
 ==================
@@ -14,13 +14,13 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``length``: A uint32_t.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``length``: A uint32_t.
 
 Description
 -----------
 
-The symbol element type is *DEPRECATED* in the bson specification at http://bsonspec.org.
+The symbol element type is *DEPRECATED- in the bson specification at http://bsonspec.org.
 
 The :symbol:`bson_iter_symbol()` function shall return the contents of a BSON_TYPE_SYMBOL element.
 

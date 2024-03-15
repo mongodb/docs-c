@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_decimal128
+.. _bson_iter_overwrite_decimal128:
 
 bson_iter_overwrite_decimal128()
 ================================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``value``: The new Decimal128 value.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``value``: The new Decimal128 value.
 
 Description
 -----------

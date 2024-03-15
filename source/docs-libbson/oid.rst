@@ -10,9 +10,9 @@ The :symbol:`bson_oid_t` structure represents an ``ObjectID`` in MongoDB. It is 
 Composition
 -----------
 
-* 4 bytes : The UNIX timestamp in big-endian format.
-* 5 bytes : A random number.
-* 3 bytes : A 24-bit monotonic counter incrementing from ``rand()`` in big-endian.
+- 4 bytes : The UNIX timestamp in big-endian format.
+- 5 bytes : A random number.
+- 3 bytes : A 24-bit monotonic counter incrementing from ``rand()`` in big-endian.
 
 Sorting ObjectIDs
 -----------------

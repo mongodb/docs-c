@@ -1,4 +1,4 @@
-.. _bson_realloc
+.. _bson_realloc:
 
 bson_realloc()
 ==============
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``mem``: A memory region.
-* ``num_bytes``: A size_t containing the new requested size.
+- ``mem``: A memory region.
+- ``num_bytes``: A size_t containing the new requested size.
 
 Description
 -----------

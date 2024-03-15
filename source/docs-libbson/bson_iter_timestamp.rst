@@ -1,4 +1,4 @@
-.. _bson_iter_timestamp
+.. _bson_iter_timestamp:
 
 bson_iter_timestamp()
 =====================
@@ -19,9 +19,9 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``timestamp``: A uint32_t.
-* ``increment``: A uint32_t.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``timestamp``: A uint32_t.
+- ``increment``: A uint32_t.
 
 Description
 -----------

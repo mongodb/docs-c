@@ -1,4 +1,4 @@
-.. _bson_iter_utf8
+.. _bson_iter_utf8:
 
 bson_iter_utf8()
 ================
@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``length``: An optional location for the length of the resulting UTF-8 encoded string.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``length``: An optional location for the length of the resulting UTF-8 encoded string.
 
 Description
 -----------

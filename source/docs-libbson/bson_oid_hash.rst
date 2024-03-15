@@ -1,4 +1,4 @@
-.. _bson_oid_hash
+.. _bson_oid_hash:
 
 bson_oid_hash()
 ===============
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
+- ``oid``: A :symbol:`bson_oid_t`.
 
 Description
 -----------

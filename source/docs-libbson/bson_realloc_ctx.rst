@@ -1,4 +1,4 @@
-.. _bson_realloc_ctx
+.. _bson_realloc_ctx:
 
 bson_realloc_ctx()
 ==================
@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``mem``: A memory region.
-* ``num_bytes``: A size_t containing the requested size.
-* ``ctx``: A consumer-specific pointer or ``NULL``.
+- ``mem``: A memory region.
+- ``num_bytes``: A size_t containing the requested size.
+- ``ctx``: A consumer-specific pointer or ``NULL``.
 
 Description
 -----------

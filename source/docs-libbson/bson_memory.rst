@@ -1,4 +1,4 @@
-.. _bson_memory
+.. _bson_memory:
 
 Memory Management
 =================

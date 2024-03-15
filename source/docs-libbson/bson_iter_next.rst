@@ -1,4 +1,4 @@
-.. _bson_iter_next
+.. _bson_iter_next:
 
 bson_iter_next()
 ================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

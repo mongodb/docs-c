@@ -1,4 +1,4 @@
-.. _bson_oid_get_time_t_unsafe
+.. _bson_oid_get_time_t_unsafe:
 
 bson_oid_get_time_t_unsafe()
 ============================

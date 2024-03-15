@@ -1,4 +1,4 @@
-.. _bson_reader_t
+.. _bson_reader_t:
 
 bson_reader_t
 =============

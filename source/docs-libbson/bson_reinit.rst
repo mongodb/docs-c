@@ -1,4 +1,4 @@
-.. _bson_reinit
+.. _bson_reinit:
 
 bson_reinit()
 =============
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``b``: A :symbol:`bson_t`.
+- ``b``: A :symbol:`bson_t`.
 
 Description
 -----------

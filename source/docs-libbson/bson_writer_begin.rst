@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``writer``: A :symbol:`bson_writer_t`.
-* ``bson``: A :symbol:`bson_t`.
+- ``writer``: A :symbol:`bson_writer_t`.
+- ``bson``: A :symbol:`bson_t`.
 
 Description
 -----------

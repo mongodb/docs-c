@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``dst``: The destination buffer.
-* ``src``: The src buffer.
-* ``size``: The number of bytes to copy into dst, which must be at least that size.
+- ``dst``: The destination buffer.
+- ``src``: The src buffer.
+- ``size``: The number of bytes to copy into dst, which must be at least that size.
 
 Description
 -----------

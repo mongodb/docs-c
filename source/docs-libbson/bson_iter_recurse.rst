@@ -1,4 +1,4 @@
-.. _bson_iter_recurse
+.. _bson_iter_recurse:
 
 bson_iter_recurse()
 ===================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``child``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``child``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

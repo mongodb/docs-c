@@ -1,4 +1,4 @@
-.. _bson_reader_new_from_handle
+.. _bson_reader_new_from_handle:
 
 bson_reader_new_from_handle()
 =============================
@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``handle``: A user-provided pointer or NULL.
-* ``rf``: A :symbol:`bson_reader_read_func_t`.
-* ``df``: A :symbol:`bson_reader_destroy_func_t`.
+- ``handle``: A user-provided pointer or NULL.
+- ``rf``: A :symbol:`bson_reader_read_func_t`.
+- ``df``: A :symbol:`bson_reader_destroy_func_t`.
 
 Description
 -----------

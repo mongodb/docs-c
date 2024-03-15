@@ -1,4 +1,4 @@
-.. _bson_new_from_json
+.. _bson_new_from_json:
 
 bson_new_from_json()
 ====================
@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``data``: A UTF-8 encoded string containing valid JSON.
-* ``len``: The length of ``data`` in bytes excluding a trailing ``\0`` or -1 to determine the length with ``strlen()``.
-* ``error``: An optional location for a :symbol:`bson_error_t`.
+- ``data``: A UTF-8 encoded string containing valid JSON.
+- ``len``: The length of ``data`` in bytes excluding a trailing ``\0`` or -1 to determine the length with ``strlen()``.
+- ``error``: An optional location for a :symbol:`bson_error_t`.
 
 Description
 -----------

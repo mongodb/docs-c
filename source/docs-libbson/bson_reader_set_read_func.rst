@@ -1,4 +1,4 @@
-.. _bson_reader_set_read_func
+.. _bson_reader_set_read_func:
 
 bson_reader_set_read_func()
 ===========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_reader_t`.
-* ``func``: A :symbol:`bson_reader_read_func_t`.
+- ``reader``: A :symbol:`bson_reader_t`.
+- ``func``: A :symbol:`bson_reader_read_func_t`.
 
 Description
 -----------

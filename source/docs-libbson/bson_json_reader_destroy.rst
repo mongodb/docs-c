@@ -1,4 +1,4 @@
-.. _bson_json_reader_destroy
+.. _bson_json_reader_destroy:
 
 bson_json_reader_destroy()
 ==========================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_json_reader_t`.
+- ``reader``: A :symbol:`bson_json_reader_t`.
 
 Description
 -----------

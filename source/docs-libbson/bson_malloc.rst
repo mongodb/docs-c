@@ -1,4 +1,4 @@
-.. _lloc
+.. _lloc:
 
 bson_malloc()
 =============
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``num_bytes``: A size_t containing the number of bytes to allocate.
+- ``num_bytes``: A size_t containing the number of bytes to allocate.
 
 Description
 -----------

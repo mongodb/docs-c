@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_oid
+.. _bson_iter_overwrite_oid:
 
 bson_iter_overwrite_oid()
 =========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``oid``: A :symbol:`bson_oid_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``oid``: A :symbol:`bson_oid_t`.
 
 Description
 -----------

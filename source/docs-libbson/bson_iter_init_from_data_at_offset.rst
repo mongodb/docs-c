@@ -1,4 +1,4 @@
-.. _bson_iter_init_from_data_at_offset
+.. _bson_iter_init_from_data_at_offset:
 
 bson_iter_init_from_data_at_offset()
 ====================================
@@ -19,11 +19,11 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``data``: A buffer to initialize with. This is not validated.
-* ``length``: The length of ``data`` in bytes. This is not validated.
-* ``offset``: The offset of the field to start iterating. This is not validated. This should be an offset previously obtained from :symbol:`bson_iter_offset()`.
-* ``keylen``: The string length of the key of the field to start iterating. This is not validated. This should be a length previously obtained from :symbol:`bson_iter_key_len()`.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``data``: A buffer to initialize with. This is not validated.
+- ``length``: The length of ``data`` in bytes. This is not validated.
+- ``offset``: The offset of the field to start iterating. This is not validated. This should be an offset previously obtained from :symbol:`bson_iter_offset()`.
+- ``keylen``: The string length of the key of the field to start iterating. This is not validated. This should be a length previously obtained from :symbol:`bson_iter_key_len()`.
 
 Description
 -----------

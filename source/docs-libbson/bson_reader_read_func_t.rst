@@ -1,4 +1,4 @@
-.. _bson_reader_read_func_t
+.. _bson_reader_read_func_t:
 
 bson_reader_read_func_t
 =======================
@@ -15,9 +15,9 @@ Synopsis
 Parameters
 ----------
 
-* ``handle``: The handle to read from.
-* ``buf``: The buffer to read into.
-* ``count``: The number of bytes to read.
+- ``handle``: The handle to read from.
+- ``buf``: The buffer to read into.
+- ``count``: The number of bytes to read.
 
 Description
 -----------

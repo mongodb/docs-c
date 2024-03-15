@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``utf8``: A UTF-8 encoded string.
-* ``utf8_len``: The length of ``utf8`` in bytes or -1 if it is NULL terminated.
+- ``utf8``: A UTF-8 encoded string.
+- ``utf8_len``: The length of ``utf8`` in bytes or -1 if it is NULL terminated.
 
 Description
 -----------

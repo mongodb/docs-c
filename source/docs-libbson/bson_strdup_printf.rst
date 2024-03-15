@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``format``: A printf style format string.
+- ``format``: A printf style format string.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_json_reader_new_from_fd
+.. _bson_json_reader_new_from_fd:
 
 bson_json_reader_new_from_fd()
 ==============================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``fd``: An open file-descriptor.
-* ``close_on_destroy``: Whether ``close()`` should be called on ``fd`` when the reader is destroyed.
+- ``fd``: An open file-descriptor.
+- ``close_on_destroy``: Whether ``close()`` should be called on ``fd`` when the reader is destroyed.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_oid_copy_unsafe
+.. _bson_oid_copy_unsafe:
 
 bson_oid_copy_unsafe()
 ======================

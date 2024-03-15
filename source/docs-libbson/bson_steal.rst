@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``dst``: An uninitialized :symbol:`bson_t`.
-* ``src``: A :symbol:`bson_t`.
+- ``dst``: An uninitialized :symbol:`bson_t`.
+- ``src``: A :symbol:`bson_t`.
 
 Description
 -----------

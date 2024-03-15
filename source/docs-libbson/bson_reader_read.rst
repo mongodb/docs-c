@@ -1,4 +1,4 @@
-.. _bson_reader_read
+.. _bson_reader_read:
 
 bson_reader_read()
 ==================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_reader_t`.
-* ``reached_eof``: A UNKNOWN.
+- ``reader``: A :symbol:`bson_reader_t`.
+- ``reached_eof``: A UNKNOWN.
 
 Description
 -----------

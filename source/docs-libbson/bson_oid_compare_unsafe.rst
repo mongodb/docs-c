@@ -1,4 +1,4 @@
-.. _bson_oid_compare_unsafe
+.. _bson_oid_compare_unsafe:
 
 bson_oid_compare_unsafe()
 =========================

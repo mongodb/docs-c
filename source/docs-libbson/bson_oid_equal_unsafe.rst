@@ -1,4 +1,4 @@
-.. _bson_oid_equal_unsafe
+.. _bson_oid_equal_unsafe:
 
 bson_oid_equal_unsafe()
 =======================

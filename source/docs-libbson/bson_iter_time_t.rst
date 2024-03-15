@@ -1,4 +1,4 @@
-.. _bson_iter_time_t
+.. _bson_iter_time_t:
 
 bson_iter_time_t()
 ==================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

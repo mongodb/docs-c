@@ -1,4 +1,4 @@
-.. _bson_reader_set_destroy_func
+.. _bson_reader_set_destroy_func:
 
 bson_reader_set_destroy_func()
 ==============================
@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_reader_t`.
-* ``func``: A :symbol:`bson_reader_destroy_func_t`.
+- ``reader``: A :symbol:`bson_reader_t`.
+- ``func``: A :symbol:`bson_reader_destroy_func_t`.
 
 Description
 -----------

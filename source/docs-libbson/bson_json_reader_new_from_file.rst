@@ -1,4 +1,4 @@
-.. _bson_json_reader_new_from_file
+.. _bson_json_reader_new_from_file:
 
 bson_json_reader_new_from_file()
 ================================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``filename``: A file-name in the system file-name encoding.
-* ``error``: A :symbol:`bson_error_t`.
+- ``filename``: A file-name in the system file-name encoding.
+- ``error``: A :symbol:`bson_error_t`.
 
 Description
 -----------

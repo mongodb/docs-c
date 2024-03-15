@@ -1,4 +1,4 @@
-.. _bson_iter_key_len
+.. _bson_iter_key_len:
 
 bson_iter_key_len()
 ===================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

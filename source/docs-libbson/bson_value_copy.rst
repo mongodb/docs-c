@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``src``: A :symbol:`bson_value_t` to copy from.
-* ``dst``: A :symbol:`bson_value_t` to copy into.
+- ``src``: A :symbol:`bson_value_t` to copy from.
+- ``dst``: A :symbol:`bson_value_t` to copy into.
 
 Description
 -----------

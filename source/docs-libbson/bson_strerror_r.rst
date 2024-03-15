@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``err_code``: An errno.
-* ``buf``: A location to store the string.
-* ``buflen``: The size of ``buf``.
+- ``err_code``: An errno.
+- ``buf``: A location to store the string.
+- ``buflen``: The size of ``buf``.
 
 Description
 -----------

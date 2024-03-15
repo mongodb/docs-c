@@ -16,10 +16,10 @@ Synopsis
 Parameters
 ----------
 
-* ``error``: A :symbol:`bson_error_t`.
-* ``domain``: A ``uint32_t``.
-* ``code``: A ``uint32_t``.
-* ``format``: A ``printf()`` style format string.
+- ``error``: A :symbol:`bson_error_t`.
+- ``domain``: A ``uint32_t``.
+- ``code``: A ``uint32_t``.
+- ``format``: A ``printf()`` style format string.
 
 Description
 -----------

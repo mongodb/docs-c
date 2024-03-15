@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``string``: A :symbol:`bson_string_t`.
-* ``format``: A printf style format string.
+- ``string``: A :symbol:`bson_string_t`.
+- ``format``: A printf style format string.
 
 Description
 -----------

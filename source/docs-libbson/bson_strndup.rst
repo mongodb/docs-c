@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: A string to copy.
-* ``n_bytes``: A size_t.
+- ``str``: A string to copy.
+- ``n_bytes``: A size_t.
 
 Description
 -----------

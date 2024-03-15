@@ -1,4 +1,4 @@
-.. _bson_iter_overwrite_date_time
+.. _bson_iter_overwrite_date_time:
 
 bson_iter_overwrite_date_time()
 ===============================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``value``: The date and time as specified in milliseconds since the UNIX epoch.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``value``: The date and time as specified in milliseconds since the UNIX epoch.
 
 Description
 -----------

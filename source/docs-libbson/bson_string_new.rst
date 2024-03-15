@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``str``: A string to be copied or NULL.
+- ``str``: A string to be copied or NULL.
 
 Description
 -----------

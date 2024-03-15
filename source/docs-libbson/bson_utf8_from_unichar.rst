@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``unichar``: A :symbol:`bson_unichar_t`.
-* ``utf8``: A location for the utf8 sequence.
-* ``len``: A location for the number of bytes in the resulting utf8 sequence.
+- ``unichar``: A :symbol:`bson_unichar_t`.
+- ``utf8``: A location for the utf8 sequence.
+- ``len``: A location for the number of bytes in the resulting utf8 sequence.
 
 Description
 -----------

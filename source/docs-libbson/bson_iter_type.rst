@@ -1,4 +1,4 @@
-.. _bson_iter_type
+.. _bson_iter_type:
 
 bson_iter_type()
 ================
@@ -38,7 +38,7 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :symbol:`bson_iter_t`.
 
 Description
 -----------

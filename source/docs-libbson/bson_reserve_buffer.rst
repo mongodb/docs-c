@@ -1,4 +1,4 @@
-.. _bson_reserve_buffer
+.. _bson_reserve_buffer:
 
 bson_reserve_buffer()
 =====================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``bson``: An initialized :symbol:`bson_t`.
-* ``size``: The length in bytes of the new buffer.
+- ``bson``: An initialized :symbol:`bson_t`.
+- ``size``: The length in bytes of the new buffer.
 
 Description
 -----------

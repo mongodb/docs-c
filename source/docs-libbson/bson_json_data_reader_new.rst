@@ -1,4 +1,4 @@
-.. _bson_json_data_reader_new
+.. _bson_json_data_reader_new:
 
 bson_json_data_reader_new()
 ===========================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``allow_multiple``: Unused.
-* ``size``: A requested buffer size.
+- ``allow_multiple``: Unused.
+- ``size``: A requested buffer size.
 
 Description
 -----------

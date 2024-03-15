@@ -1,4 +1,4 @@
-.. _bson_json_mode_t
+.. _bson_json_mode_t:
 
 bson_json_mode_t
 ================

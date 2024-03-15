@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``strv``: A NULL-terminated array of strings to free, including the array.
+- ``strv``: A NULL-terminated array of strings to free, including the array.
 
 Description
 -----------

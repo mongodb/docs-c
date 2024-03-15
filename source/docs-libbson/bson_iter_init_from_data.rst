@@ -1,4 +1,4 @@
-.. _bson_iter_init_from_data
+.. _bson_iter_init_from_data:
 
 bson_iter_init_from_data()
 ==========================
@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``data``: A buffer to initialize with.
-* ``length``: The length of ``data`` in bytes.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``data``: A buffer to initialize with.
+- ``length``: The length of ``data`` in bytes.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_iter_find
+.. _bson_iter_find:
 
 bson_iter_find()
 ================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``key``: A string containing the requested key.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``key``: A string containing the requested key.
 
 Description
 -----------

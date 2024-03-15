@@ -1,4 +1,4 @@
-.. _bson_oid_t
+.. _bson_oid_t:
 
 bson_oid_t
 ==========
@@ -23,9 +23,9 @@ The :symbol:`bson_oid_t` structure contains the 12-byte ObjectId notation define
 
 ObjectId is a 12-byte BSON type, constructed using:
 
-* a 4-byte value representing the seconds since the Unix epoch (in Big Endian).
-* a 5-byte random value.
-* a 3-byte counter (Big Endian), starting with a random value.
+- a 4-byte value representing the seconds since the Unix epoch (in Big Endian).
+- a 5-byte random value.
+- a 3-byte counter (Big Endian), starting with a random value.
 
 String Conversion
 -----------------

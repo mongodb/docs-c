@@ -1,4 +1,4 @@
-.. _bson_malloc0
+.. _bson_malloc0:
 
 bson_malloc0()
 ==============
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``num_bytes``: A size_t.
+- ``num_bytes``: A size_t.
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _bson_reader_reset
+.. _bson_reader_reset:
 
 bson_reader_reset()
 ===================
@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``reader``: A :symbol:`bson_reader_t`.
+- ``reader``: A :symbol:`bson_reader_t`.
 
 Description
 -----------

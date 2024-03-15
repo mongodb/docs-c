@@ -1,4 +1,4 @@
-.. _bson_iter_init_find
+.. _bson_iter_init_find:
 
 bson_iter_init_find()
 =====================
@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``bson``: A :symbol:`bson_t`.
-* ``key``: A key to locate after initializing the iter.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``bson``: A :symbol:`bson_t`.
+- ``key``: A key to locate after initializing the iter.
 
 Description
 -----------

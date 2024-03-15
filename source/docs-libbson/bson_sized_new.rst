@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``size``: The size to pre-allocate for the underlying buffer.
+- ``size``: The size to pre-allocate for the underlying buffer.
 
 Description
 -----------

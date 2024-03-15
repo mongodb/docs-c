@@ -1,4 +1,4 @@
-.. _bson_iter_regex
+.. _bson_iter_regex:
 
 bson_iter_regex()
 =================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``options``: A (null).
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``options``: A (null).
 
 Description
 -----------

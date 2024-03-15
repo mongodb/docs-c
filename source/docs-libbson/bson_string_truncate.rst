@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``string``: A :symbol:`bson_string_t`.
-* ``len``: The new length of the string, excluding the trailing ``\0``.
+- ``string``: A :symbol:`bson_string_t`.
+- ``len``: The new length of the string, excluding the trailing ``\0``.
 
 Description
 -----------

@@ -18,10 +18,10 @@ Synopsis
 Parameters
 ----------
 
-* ``value``: A uint32_t.
-* ``strptr``: A location for the resulting string pointer.
-* ``str``: A location to buffer the string.
-* ``size``: A size_t containing the size of ``str``.
+- ``value``: A uint32_t.
+- ``strptr``: A location for the resulting string pointer.
+- ``str``: A location to buffer the string.
+- ``size``: A size_t containing the size of ``str``.
 
 Description
 -----------

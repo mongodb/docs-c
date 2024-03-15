@@ -1,4 +1,4 @@
-.. _bson_mem_set_vtable
+.. _bson_mem_set_vtable:
 
 bson_mem_set_vtable()
 =====================
@@ -23,7 +23,7 @@ Synopsis
 Parameters
 ----------
 
-* ``vtable``: A bson_mem_vtable_t with every non-padding field set.
+- ``vtable``: A bson_mem_vtable_t with every non-padding field set.
 
 Description
 -----------

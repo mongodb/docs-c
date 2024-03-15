@@ -1,4 +1,4 @@
-.. _bson_iter_init_find_case
+.. _bson_iter_init_find_case:
 
 bson_iter_init_find_case()
 ==========================
@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``bson``: A :symbol:`bson_t`.
-* ``key``: A key to locate after initializing the iter.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``bson``: A :symbol:`bson_t`.
+- ``key``: A key to locate after initializing the iter.
 
 Description
 -----------

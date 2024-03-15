@@ -8,9 +8,9 @@ Description
 
 Many libbson functions report errors by returning ``NULL`` or -1 and filling out a :symbol:`bson_error_t` structure with an error domain, error code, and message.
 
-* ``error.domain`` names the subsystem that generated the error.
-* ``error.code`` is a domain-specific error type.
-* ``error.message`` describes the error.
+- ``error.domain`` names the subsystem that generated the error.
+- ``error.code`` is a domain-specific error type.
+- ``error.message`` describes the error.
 
 Some error codes overlap with others; always check both the domain and code to determine the type of error.
 

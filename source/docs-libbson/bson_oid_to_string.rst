@@ -1,4 +1,4 @@
-.. _bson_oid_to_string
+.. _bson_oid_to_string:
 
 bson_oid_to_string()
 ====================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
-* ``str``: A location for the resulting string.
+- ``oid``: A :symbol:`bson_oid_t`.
+- ``str``: A location for the resulting string.
 
 Description
 -----------

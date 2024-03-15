@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``utf8``: A string to verify.
-* ``utf8_len``: The length of ``utf8`` in bytes.
-* ``allow_null``: A bool indicating that embedded ``\0`` bytes are allowed.
+- ``utf8``: A string to verify.
+- ``utf8_len``: The length of ``utf8`` in bytes.
+- ``allow_null``: A bool indicating that embedded ``\0`` bytes are allowed.
 
 Description
 -----------

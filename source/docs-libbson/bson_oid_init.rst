@@ -1,4 +1,4 @@
-.. _bson_oid_init
+.. _bson_oid_init:
 
 bson_oid_init()
 ===============
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``oid``: A :symbol:`bson_oid_t`.
-* ``context``: An *optional* :symbol:`bson_context_t` or NULL.
+- ``oid``: A :symbol:`bson_oid_t`.
+- ``context``: An *optional- :symbol:`bson_context_t` or NULL.
 
 Description
 -----------

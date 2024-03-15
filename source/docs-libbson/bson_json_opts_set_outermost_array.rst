@@ -1,4 +1,4 @@
-.. _bson_json_opts_set_outermost_array
+.. _bson_json_opts_set_outermost_array:
 
 bson_json_opts_set_outermost_array()
 ====================================
@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: A :symbol:`bson_json_opts_t`.
-* ``is_outermost_array``: A value determining what we want to set the is_outermost_array variable to.
+- ``opts``: A :symbol:`bson_json_opts_t`.
+- ``is_outermost_array``: A value determining what we want to set the is_outermost_array variable to.
 
 Description
 -----------

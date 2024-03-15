@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``format``: A printf style format string.
-* ``args``: A va_list.
+- ``format``: A printf style format string.
+- ``args``: A va_list.
 
 Description
 -----------

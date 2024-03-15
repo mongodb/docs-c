@@ -1,4 +1,4 @@
-.. _bson_iter_init_find_w_len
+.. _bson_iter_init_find_w_len:
 
 bson_iter_init_find_w_len()
 ===========================
@@ -17,10 +17,10 @@ Synopsis
 Parameters
 ----------
 
-* ``iter``: A :symbol:`bson_iter_t`.
-* ``bson``: A :symbol:`bson_t`.
-* ``key``: A key to locate after initializing the iter.
-* ``keylen``: An integer indicating the length of the key string.
+- ``iter``: A :symbol:`bson_iter_t`.
+- ``bson``: A :symbol:`bson_t`.
+- ``key``: A key to locate after initializing the iter.
+- ``keylen``: An integer indicating the length of the key string.
 
 Description
 -----------
