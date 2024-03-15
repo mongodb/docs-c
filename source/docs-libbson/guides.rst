@@ -1,0 +1,11 @@
+.. _bson_guides
+
+Guides
+======
+
+.. toctree::
+  :titlesonly:
+
+  streaming-bson
+  json
+  lifetimes
