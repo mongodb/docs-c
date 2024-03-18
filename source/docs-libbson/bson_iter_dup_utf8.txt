@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  char *
-  bson_iter_dup_utf8 (const bson_iter_t *iter, uint32_t *length);
+   char *
+   bson_iter_dup_utf8 (const bson_iter_t *iter, uint32_t *length);
 
 Parameters
 ----------

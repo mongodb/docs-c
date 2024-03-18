@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  int
-  bson_get_major_version (void);
+   int
+   bson_get_major_version (void);
 
 Description
 -----------

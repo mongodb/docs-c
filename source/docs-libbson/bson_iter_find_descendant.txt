@@ -9,10 +9,10 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  bson_iter_find_descendant (bson_iter_t *iter,
-                             const char *dotkey,
-                             bson_iter_t *descendant);
+   bool
+   bson_iter_find_descendant (bson_iter_t *iter,
+                              const char *dotkey,
+                              bson_iter_t *descendant);
 
 Parameters
 ----------
