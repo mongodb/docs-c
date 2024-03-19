@@ -71,72 +71,70 @@ Synopsis
 Description
 -----------
 
-:symbol:`bson_iter_t` is a structure used to iterate through the elements of a :symbol:`bson_t`.
+:ref:`bson_iter_t` is a structure used to iterate through the elements of a :ref:`bson_t`.
 It is meant to be used on the stack and can be discarded at any time as it contains no external
 allocation. The contents of the structure should be considered private and may change between
 releases, however the structure size will not change.
 
-The :symbol:`bson_t` *MUST* be valid for the lifetime of the iter and it is an error to modify the
-:symbol:`bson_t` while using the iter.
+The :ref:`bson_t` *MUST* be valid for the lifetime of the iter and it is an error to modify the
+:ref:`bson_t` while using the iter.
 
-.. only:: html
+Functions
+---------
 
-   Functions
-   ---------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
-
-     bson_iter_array
-     bson_iter_as_bool
-     bson_iter_as_double
-     bson_iter_as_int64
-     bson_iter_binary
-     bson_iter_bool
-     bson_iter_code
-     bson_iter_codewscope
-     bson_iter_date_time
-     bson_iter_dbpointer
-     bson_iter_decimal128
-     bson_iter_document
-     bson_iter_double
-     bson_iter_dup_utf8
-     bson_iter_find
-     bson_iter_find_case
-     bson_iter_find_descendant
-     bson_iter_find_w_len
-     bson_iter_init
-     bson_iter_init_find
-     bson_iter_init_find_case
-     bson_iter_init_find_w_len
-     bson_iter_init_from_data
-     bson_iter_init_from_data_at_offset
-     bson_iter_int32
-     bson_iter_int64
-     bson_iter_key
-     bson_iter_key_len
-     bson_iter_next
-     bson_iter_offset
-     bson_iter_oid
-     bson_iter_overwrite_bool
-     bson_iter_overwrite_date_time
-     bson_iter_overwrite_decimal128
-     bson_iter_overwrite_double
-     bson_iter_overwrite_int32
-     bson_iter_overwrite_int64
-     bson_iter_overwrite_oid
-     bson_iter_overwrite_timestamp
-     bson_iter_recurse
-     bson_iter_regex
-     bson_iter_symbol
-     bson_iter_time_t
-     bson_iter_timestamp
-     bson_iter_timeval
-     bson_iter_type
-     bson_iter_utf8
-     bson_iter_value
-     bson_iter_visit_all
+   bson_iter_array
+   bson_iter_as_bool
+   bson_iter_as_double
+   bson_iter_as_int64
+   bson_iter_binary
+   bson_iter_bool
+   bson_iter_code
+   bson_iter_codewscope
+   bson_iter_date_time
+   bson_iter_dbpointer
+   bson_iter_decimal128
+   bson_iter_document
+   bson_iter_double
+   bson_iter_dup_utf8
+   bson_iter_find
+   bson_iter_find_case
+   bson_iter_find_descendant
+   bson_iter_find_w_len
+   bson_iter_init
+   bson_iter_init_find
+   bson_iter_init_find_case
+   bson_iter_init_find_w_len
+   bson_iter_init_from_data
+   bson_iter_init_from_data_at_offset
+   bson_iter_int32
+   bson_iter_int64
+   bson_iter_key
+   bson_iter_key_len
+   bson_iter_next
+   bson_iter_offset
+   bson_iter_oid
+   bson_iter_overwrite_bool
+   bson_iter_overwrite_date_time
+   bson_iter_overwrite_decimal128
+   bson_iter_overwrite_double
+   bson_iter_overwrite_int32
+   bson_iter_overwrite_int64
+   bson_iter_overwrite_oid
+   bson_iter_overwrite_timestamp
+   bson_iter_recurse
+   bson_iter_regex
+   bson_iter_symbol
+   bson_iter_time_t
+   bson_iter_timestamp
+   bson_iter_timeval
+   bson_iter_type
+   bson_iter_utf8
+   bson_iter_value
+   bson_iter_visit_all
 
 Examples
 --------

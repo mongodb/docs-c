@@ -131,6 +131,4 @@ On the other hand, if the client connects to the server successfully and attempt
      return 0;
   }
 
-.. only:: html
-
-  .. include:: includes/seealso/cursor-error.txt
+.. include:: includes/seealso/cursor-error.txt

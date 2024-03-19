@@ -16,9 +16,7 @@ Synopsis
 
   | :doc:`in-use-encryption`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

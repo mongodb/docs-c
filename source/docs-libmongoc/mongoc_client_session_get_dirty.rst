@@ -28,6 +28,4 @@ Returns
 
 A boolean indicating whether the session has been marked "dirty".
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

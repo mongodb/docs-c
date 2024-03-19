@@ -23,6 +23,4 @@ Returns
 
 A :symbol:`bson:bson_t` that is valid only for the lifetime of ``session``.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

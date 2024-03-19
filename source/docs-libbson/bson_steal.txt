@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-- ``dst``: An uninitialized :symbol:`bson_t`.
-- ``src``: A :symbol:`bson_t`.
+- ``dst``: An uninitialized :ref:`bson_t`
+- ``src``: A :ref:`bson_t`
 
 Description
 -----------
@@ -25,9 +25,9 @@ Efficiently transfer the contents of ``src`` to ``dst`` and destroy ``src``.
 
 Before calling this function, ``src`` must be initialized and ``dst`` must be uninitialized.
 After this function returns successfully, ``src`` is destroyed, and ``dst`` is initialized
-and must be freed with :symbol:`bson_destroy`.
+and must be freed with :ref:`bson_destroy`
 
-For example, if you have a higher-level structure that wraps a :symbol:`bson_t`, use ``bson_steal``
+For example, if you have a higher-level structure that wraps a :ref:`bson_t`se ``bson_steal``
 to transfer BSON data into it:
 
 .. code-block:: c
@@ -82,5 +82,5 @@ or was statically initialized, or another error occurred.
 
 .. seealso::
 
-   | :symbol:`bson_destroy_with_steal`, a lower-level function that returns the raw contents of a :symbol:`bson_t`.
+   | :ref:`bson_destroy_with_steal` lower-level function that returns the raw contents of a :re:ref:`bson_t`
 

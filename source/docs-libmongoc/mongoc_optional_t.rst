@@ -12,9 +12,7 @@ Used to specify optional boolean flags, which may remain unset.
 
 This is used within :symbol:`mongoc_server_api_t` to track whether a flag was explicitly set.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

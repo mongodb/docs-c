@@ -23,9 +23,7 @@ Lifecycle
 
 The key vault client, configured via :symbol:`mongoc_client_encryption_opts_set_keyvault_client()`, must outlive the :symbol:`mongoc_client_encryption_t`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

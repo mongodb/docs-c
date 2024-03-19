@@ -52,9 +52,7 @@ Example
 
   | The spec-compliant :symbol:`mongoc_gridfs_bucket_t`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

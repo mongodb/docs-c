@@ -36,9 +36,7 @@ Status
 
 The ``mongoc_rand_status`` function allows the user to check the status of the mongoc PRNG.  This can be used to guarantee sufficient entropy at program startup, rather than waiting for runtime errors to occur.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

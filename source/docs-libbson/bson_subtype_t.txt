@@ -32,9 +32,7 @@ Description
 This enumeration contains the various subtypes that may be used in a binary field. See
 `http://bsonspec.org <http://bsonspec.org>`_ for more information.
 
-.. only:: html
-
-   Functions
+Functions
    ---------
 
    .. toctree::

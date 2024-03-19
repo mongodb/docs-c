@@ -19,9 +19,7 @@ Stream Types
 
 There are a number of built in stream types that come with mongoc. The default configuration is a buffered unix stream. If TLS is in use, that in turn is wrapped in a tls stream.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

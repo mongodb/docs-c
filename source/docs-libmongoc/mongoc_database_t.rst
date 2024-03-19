@@ -16,9 +16,7 @@ Synopsis
 
 Read preferences and write concerns are inherited from the parent client. They can be overridden with :symbol:`mongoc_database_set_read_prefs()` and :symbol:`mongoc_database_set_write_concern()`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

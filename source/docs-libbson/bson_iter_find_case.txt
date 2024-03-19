@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`
 - ``key``: An ASCII string containing the field to locate.
 
 Description

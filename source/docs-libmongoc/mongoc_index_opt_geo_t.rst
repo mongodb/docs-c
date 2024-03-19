@@ -24,9 +24,7 @@ Description
 
 This structure contains the options that may be used for tuning a GEO index.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

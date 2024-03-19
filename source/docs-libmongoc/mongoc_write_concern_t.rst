@@ -44,9 +44,7 @@ The write concern ``MONGOC_WRITE_CONCERN_W_ERRORS_IGNORED`` (value -1) is a depr
 
 :symbol:`mongoc_write_concern_set_fsync` is deprecated.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

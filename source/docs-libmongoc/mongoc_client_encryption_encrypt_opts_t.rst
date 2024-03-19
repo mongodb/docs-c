@@ -13,9 +13,7 @@ Synopsis
 
 Used to set options for :symbol:`mongoc_client_encryption_encrypt()`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

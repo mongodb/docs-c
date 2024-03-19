@@ -20,6 +20,4 @@ Parameters
 * ``opts``: A :symbol:`mongoc_transaction_opt_t`.
 * ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

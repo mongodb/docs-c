@@ -15,14 +15,17 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 - ``data``: A buffer to initialize with.
 - ``length``: The length of ``data`` in bytes.
 
 Description
 -----------
 
-The ``bson_iter_init_from_data()`` function shall initialize ``iter`` to iterate upon the buffer ``data``, which must contain a BSON document. Upon initialization, ``iter`` is placed before the first element. Callers must call :symbol:`bson_iter_next()`, :symbol:`bson_iter_find()`, or :symbol:`bson_iter_find_case()` to advance to an element.
+The ``bson_iter_init_from_data()`` function shall initialize ``iter`` to iterate upon the buffer ``data``,
+which must contain a BSON document. Upon initialization, ``iter`` is placed before the first element.
+Callers must call :ref:`bson_iter_next`, :ref:`bson_iter_find`, or :ref:`bson_iter_find_case` to
+advance to an element.
 
 Returns
 -------
@@ -51,6 +54,4 @@ Example
       }
    }
 
-.. only:: html
-
-   .. include:: includes/seealso/iter-init.txt
+.. include:: includes/seealso/iter-init.rst

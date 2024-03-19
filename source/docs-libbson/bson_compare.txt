@@ -15,13 +15,13 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: A :symbol:`bson_t`.
-- ``other``: A :symbol:`bson_t`.
+- ``bson``: A :ref:`bson_t`.
+- ``other``: A :ref:`bson_t`.
 
 Description
 -----------
 
-The :symbol:`bson_compare()` function shall compare two bson documents for equality.
+The :ref:`bson_compare` function shall compare two bson documents for equality.
 
 This can be useful in conjunction with _qsort()_.
 

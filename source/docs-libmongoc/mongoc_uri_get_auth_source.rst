@@ -26,6 +26,4 @@ Returns
 
 A string which should not be modified or freed if the ``authSource`` parameter is provided, otherwise ``NULL``.
 
-.. only:: html
-
-  .. include:: includes/seealso/authmechanism.txt
+.. include:: includes/seealso/authmechanism.txt

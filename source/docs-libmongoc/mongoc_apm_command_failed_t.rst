@@ -10,9 +10,7 @@ Synopsis
 
 An event notification sent when the driver fails to execute a MongoDB command.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -18,6 +18,4 @@ Returns
 
 A new :symbol:`mongoc_transaction_opt_t` that must be freed with :symbol:`mongoc_transaction_opts_destroy()`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

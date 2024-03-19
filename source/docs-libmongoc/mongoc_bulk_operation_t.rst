@@ -24,9 +24,7 @@ After adding all of the write operations to the ``mongoc_bulk_operation_t``, cal
 
   | :symbol:`Bulk Write Operations <bulk>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -15,14 +15,12 @@ Synopsis
 Parameters
 ----------
 
-- ``b``: A :symbol:`bson_t`.
+- ``b``: A :ref:`bson_t`.
 
 Description
 -----------
 
-The :symbol:`bson_init()` function shall initialize a :symbol:`bson_t` that is placed on
-the stack. This is equivalent to initializing a :symbol:`bson_t` to ``BSON_INITIALIZER``.
+The :ref:`bson_init` function shall initialize a :ref:`bson_t` that is placed on
+the stack. This is equivalent to initializing a :ref:`bson_t` to ``BSON_INITIALIZER``.
 
-.. only:: html
-
-  .. include:: includes/seealso/create-bson.txt
+.. include:: includes/seealso/create-bson.rst

@@ -16,9 +16,7 @@ Create a ``mongoc_apm_callbacks_t`` with :symbol:`mongoc_apm_callbacks_new`, set
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

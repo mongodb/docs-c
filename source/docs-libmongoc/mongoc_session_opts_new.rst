@@ -20,6 +20,4 @@ Returns
 
 A new :symbol:`mongoc_session_opt_t` that must be freed with :symbol:`mongoc_session_opts_destroy()`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

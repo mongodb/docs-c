@@ -8,9 +8,7 @@ We provide a small number of character and string routines to substitute for tho
 are not available on all platforms, and routines to make UTF-8 character manipulation
 convenient.
 
-.. only:: html
-
-   Functions
+Functions
    ---------
 
    .. toctree::

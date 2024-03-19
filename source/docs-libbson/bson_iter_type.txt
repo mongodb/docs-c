@@ -39,7 +39,7 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 
 Description
 -----------
@@ -50,5 +50,5 @@ document.
 Returns
 -------
 
-A :symbol:`bson_type_t`.
+A :ref:`bson_type_t`.
 

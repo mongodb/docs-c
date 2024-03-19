@@ -150,7 +150,7 @@ This content has been relocated to the :doc:`Data Compression <data-compression>
 Additional Connection Options
 -----------------------------
 
-The full list of connection options can be found in the :symbol:`mongoc_uri_t` docs.
+The full list of connection options can be found in the :ref:`mongoc_uri_t` docs.
 
 Certain socket/connection related options are not configurable:
 

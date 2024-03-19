@@ -8,7 +8,9 @@ bson_array_builder_t
 
    typedef struct _bson_array_builder_t bson_array_builder_t;
 
-``bson_array_builder_t`` may be used to build BSON arrays. ``bson_array_builder_t`` internally tracks and uses the array index as a key ("0", "1", "2", ...) when appending elements.
+``bson_array_builder_t`` may be used to build BSON arrays. ``bson_array_builder_t``
+internally tracks and uses the array index as a key ("0", "1", "2", ...) when appending
+elements.
 
 Appending an Array Value
 ------------------------
@@ -50,7 +52,9 @@ Creating a Top-Level Array
     BSON_EXPORT (void)
     bson_array_builder_destroy (bson_array_builder_t *bab);
 
-``bson_array_builder_new`` and ``bson_array_builder_build`` may be used to build a top-level BSON array. ``bson_array_builder_build`` initializes and moves BSON data to ``out``. The ``bson_array_builder_t`` may be reused and will start appending a new array at index "0":
+``bson_array_builder_new`` and ``bson_array_builder_build`` may be used to build a top-level BSON array.
+``bson_array_builder_build`` initializes and moves BSON data to ``out``. The ``bson_array_builder_t`` may
+be reused and will start appending a new array at index "0":
 
 Example:
 
@@ -63,7 +67,9 @@ Example:
 Appending Values to an Array
 ----------------------------
 
-``bson_array_builder_append_*`` functions are provided to append values to a BSON array. The ``bson_array_builder_append_*`` functions internally use ``bson_append_*`` and provide the array index as a key:
+``bson_array_builder_append_*`` functions are provided to append values to a BSON array. The
+``bson_array_builder_append_*`` functions internally use ``bson_append_*`` and provide the array
+index as a key:
 
 .. code-block:: c
 

@@ -19,9 +19,7 @@ The options min, max, sparsity, and range must match the values set in the encry
 
 For double and decimal128 fields, min/max/precision must all be set, or all be unset.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

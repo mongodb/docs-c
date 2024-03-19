@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-- ``string``: A :symbol:`bson_string_t`.
-- ``unichar``: A :symbol:`bson_unichar_t`.
+- ``string``: A :ref:`bson_string_t`.
+- ``unichar``: A :ref:`bson_unichar_t`.
 
 Description
 -----------

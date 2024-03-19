@@ -30,6 +30,4 @@ Returns true if the transaction was committed. Returns ``false`` and sets ``erro
 
 If a ``reply`` is supplied, it is always initialized and must be freed with :symbol:`bson:bson_destroy`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

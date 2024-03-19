@@ -17,9 +17,7 @@ Read Preferences and Write Concerns
 
 Read preferences and write concerns are inherited from the parent client. They can be overridden by set_* commands if so desired.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

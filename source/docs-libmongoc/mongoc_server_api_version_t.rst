@@ -21,9 +21,7 @@ Enum value            MongoDB version string
 MONGOC_SERVER_API_V1  "1"
 ====================  ======================
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

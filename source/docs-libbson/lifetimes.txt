@@ -1,23 +1,23 @@
 .. _bson_lifetimes:
 
 ==========================
-:symbol:`bson_t` Lifetimes
+:ref:`bson_t` Lifetimes
 ==========================
 
-A :symbol:`bson_t` may contain its data directly or may contain pointers to heap-allocated memory.
-Overwriting an existing :symbol:`bson_t` or allowing a stack-allocated :symbol:`bson_t` to go out of
-scope may cause a memory leak. A :symbol:`bson_t` should always be destroyed with :symbol:`bson_destroy()`.
+A :ref:`bson_t` may contain its data directly or may contain pointers to heap-allocated memory.
+Overwriting an existing :ref:`bson_t` or allowing a stack-allocated :ref:`bson_t` to go out of
+scope may cause a memory leak. A :ref:`bson_t` should always be destroyed with :ref:`bson_destroy()`.
 
-:symbol:`bson_t` Out Parameters
+:ref:`bson_t` Out Parameters
 -------------------------------
 
-A :symbol:`bson_t` pointer used as an out parameter must point to valid overwritable storage for a
-new :symbol:`bson_t` which must be one of:
+A :ref:`bson_t` pointer used as an out parameter must point to valid overwritable storage for a
+new :ref:`bson_t` which must be one of:
 
-- Uninitialized storage for a :symbol:`bson_t`.
-- A zero-initialized :symbol:`bson_t` object.
-- A :symbol:`bson_t` object initialized with ``BSON_INITIALIZER``.
-- A :symbol:`bson_t` object not created with :symbol:`bson_new` that was destroyed with :symbol:`bson_destroy`.
+- Uninitialized storage for a :ref:`bson_t`.
+- A zero-initialized :ref:`bson_t` object.
+- A :ref:`bson_t` object initialized with ``BSON_INITIALIZER``.
+- A :ref:`bson_t` object not created with :ref:`bson_new` that was destroyed with :ref:`bson_destroy`.
 
 This can be on the stack:
 
@@ -36,11 +36,11 @@ Or on the heap:
    bson_destroy (heap_doc);
    bson_free (heap_doc);
 
-Omitting :symbol:`bson_destroy` in either case may cause memory leaks.
+Omitting :ref:`bson_destroy` in either case may cause memory leaks.
 
 .. warning::
 
-   Passing a :symbol:`bson_t` pointer obtained from :symbol:`bson_new` as an out parameter will result in a leak of the :symbol:`bson_t` struct.
+   Passing a :ref:`bson_t` pointer obtained from :ref:`bson_new` as an out parameter will result in a leak of the :ref:`bson_t` struct.
 
    .. code-block:: c
 

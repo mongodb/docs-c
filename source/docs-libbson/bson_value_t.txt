@@ -70,11 +70,9 @@ Synopsis
 Description
 -----------
 
-The :symbol:`bson_value_t` structure is a boxed type for encapsulating a runtime determined type.
+The :ref:`bson_value_t` structure is a boxed type for encapsulating a runtime determined type.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

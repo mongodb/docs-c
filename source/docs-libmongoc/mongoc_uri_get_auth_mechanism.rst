@@ -26,6 +26,4 @@ Returns
 
 A string which should not be modified or freed. Returns ``NULL`` if the ``authMechanism`` parameter was not provided to ``uri``.
 
-.. only:: html
-
-  .. include:: includes/seealso/authmechanism.txt
+.. include:: includes/seealso/authmechanism.txt

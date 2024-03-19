@@ -19,9 +19,7 @@ Synopsis
 
 This structure provides a socket abstraction that is friendlier for portability than BSD sockets directly. Inconsistencies between Linux, various BSDs, Solaris, and Windows are handled here.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

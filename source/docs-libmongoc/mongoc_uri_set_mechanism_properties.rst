@@ -48,7 +48,5 @@ Example
 
   bson_destroy (&props);
 
-.. only:: html
-
-  .. include:: includes/seealso/authmechanism.txt
+.. include:: includes/seealso/authmechanism.txt
 

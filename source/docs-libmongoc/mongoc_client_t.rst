@@ -43,9 +43,7 @@ Example
    :language: c
    :caption: example-client.c
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -12,9 +12,7 @@ Synopsis
 
 ``mongoc_stream_file_t`` is a :symbol:`mongoc_stream_t` subclass for working with standard UNIX style file-descriptors.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

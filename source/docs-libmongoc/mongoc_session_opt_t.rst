@@ -16,9 +16,7 @@ Synopsis
 
 See the example code for :symbol:`mongoc_session_opts_set_causal_consistency`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

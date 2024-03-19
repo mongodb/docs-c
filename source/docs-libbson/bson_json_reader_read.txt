@@ -17,9 +17,9 @@ Synopsis
 Parameters
 ----------
 
-- ``reader``: A :symbol:`bson_json_reader_t`.
-- ``bson``: A :symbol:`bson_t`.
-- ``error``: A :symbol:`bson_error_t`.
+- ``reader``: A :ref:`bson_json_reader_t`
+- ``bson``: A :ref:`bson_t`
+- ``error``: A :ref:`bson_error_t`
 
 Description
 -----------
@@ -36,6 +36,4 @@ Returns
 
 1 if successful and data was read. 0 if successful and no data was read. -1 if there was an error.
 
-.. only:: html
-
-   .. include:: includes/seealso/json.txt
+.. include:: includes/seealso/json.rst

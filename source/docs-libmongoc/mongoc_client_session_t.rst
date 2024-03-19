@@ -22,9 +22,7 @@ Example
    :language: c
    :caption: example-session.c
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

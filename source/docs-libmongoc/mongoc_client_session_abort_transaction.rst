@@ -26,6 +26,4 @@ Return
 
 Returns true if the transaction was aborted. Returns ``false`` and sets ``error`` if there are invalid arguments, such as a session with no transaction in progress. Network or server errors are ignored.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

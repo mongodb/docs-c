@@ -21,9 +21,7 @@ Example
    :language: c
    :caption: example-pool.c
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

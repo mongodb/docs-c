@@ -17,12 +17,13 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 
 Description
 -----------
 
-Fetches the value from a BSON_TYPE_INT64 field. You should verify that this is a BSON_TYPE_INT64 field before calling this function.
+Fetches the value from a BSON_TYPE_INT64 field. You should verify that this is a BSON_TYPE_INT64
+field before calling this function.
 
 Returns
 -------

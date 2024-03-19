@@ -15,19 +15,17 @@ Synopsis
 Parameters
 ----------
 
-- ``dst``: A :symbol:`bson_t`.
-- ``src``: A :symbol:`bson_t`.
+- ``dst``: A :ref:`bson_t`.
+- ``src``: A :ref:`bson_t`.
 
 Description
 -----------
 
-The :symbol:`bson_concat()` function shall append the contents of ``src`` to ``dst``.
+The :ref:`bson_concat` function shall append the contents of ``src`` to ``dst``.
 
 Returns
 -------
 
 Returns ``true`` if successful; ``false`` if the operation would overflow the maximum document size or another invalid state is detected.
 
-.. only:: html
-
-   .. include:: includes/seealso/create-bson.txt
+.. include:: includes/seealso/create-bson.rst

@@ -24,6 +24,4 @@ Parameters
 * ``timestamp``: The new operationTime's timestamp component.
 * ``increment``: The new operationTime's increment component.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

@@ -23,6 +23,4 @@ Returns
 
 A :symbol:`mongoc_client_t` that should not be freed.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

@@ -29,6 +29,4 @@ Returns
 
 Returns false if the option cannot be set, for example if ``value`` is not valid UTF-8.
 
-.. only:: html
-
-  .. include:: includes/seealso/authmechanism.txt
+.. include:: includes/seealso/authmechanism.txt

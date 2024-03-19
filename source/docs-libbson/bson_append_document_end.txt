@@ -15,14 +15,14 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: A :symbol:`bson_t`.
-- ``child``: The child :symbol:`bson_t` initialized in a call to :symbol:`bson_append_document_begin()`.
+- ``bson``: A :ref:`bson_t`
+- ``child``: The child :ref:`bson_t` initialized in a call to :ref:`bson_append_document_begin`
 
 Description
 -----------
 
-The :symbol:`bson_append_document_end()` function shall complete the appending of a document with
-:symbol:`bson_append_document_begin()`. ``child`` is invalid after calling this function.
+The :ref:`bson_append_document_end` function shall complete the appending of a document with
+:ref:`bson_append_document_begin`. ``child`` is invalid after calling this function.
 
 Returns
 -------

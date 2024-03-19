@@ -75,9 +75,7 @@ Example
      mongoc_collection_destroy (&collection);
   }
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

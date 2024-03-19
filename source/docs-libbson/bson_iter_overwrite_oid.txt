@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
-- ``oid``: A :symbol:`bson_oid_t`.
+- ``iter``: A :ref:`bson_iter_t`.
+- ``oid``: A :ref:`bson_oid_t`.
 
 Description
 -----------

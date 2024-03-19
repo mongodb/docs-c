@@ -20,6 +20,4 @@ Parameters
 * ``opts``: A :symbol:`mongoc_transaction_opt_t`.
 * ``int64_t``: Timeout for commitTransaction, in milliseconds.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

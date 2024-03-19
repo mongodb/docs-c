@@ -29,9 +29,7 @@ Example
    :language: c
    :caption: example-transaction.c
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

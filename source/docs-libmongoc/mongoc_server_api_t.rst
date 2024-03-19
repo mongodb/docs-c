@@ -14,9 +14,7 @@ The server API type takes a :symbol:`mongoc_server_api_version_t`. It can option
 
 A :symbol:`mongoc_server_api_t` can be set on a client, and will then be sent to MongoDB for most commands run using that client.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

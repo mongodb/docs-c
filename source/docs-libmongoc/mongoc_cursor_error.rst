@@ -32,6 +32,4 @@ Returns
 
 false if no error has occurred, otherwise true and error is set.
 
-.. only:: html
-
-  .. include:: includes/seealso/cursor-error.txt
+.. include:: includes/seealso/cursor-error.txt

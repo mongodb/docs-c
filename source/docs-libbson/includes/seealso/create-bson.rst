@@ -1,23 +1,23 @@
 .. seealso::
 
-  | :symbol:`bson_concat()`
+  | :ref:`bson_concat()`
 
-  | :symbol:`bson_init()`
+  | :ref:`bson_init()`
 
-  | :symbol:`bson_init_from_json()`
+  | :ref:`bson_init_from_json`
 
-  | :symbol:`bson_init_static()`
+  | :ref:`bson_init_static()`
 
-  | :symbol:`bson_new()`
+  | :ref:`bson_new`
 
-  | :symbol:`bson_new_from_buffer()`
+  | :ref:`bson_new_from_buffer()`
 
-  | :symbol:`bson_new_from_data()`
+  | :ref:`bson_new_from_data()`
 
-  | :symbol:`bson_new_from_json()`
+  | :ref:`bson_new_from_json`
 
-  | :symbol:`bson_reinit()`
+  | :ref:`bson_reinit()`
 
-  | :symbol:`bson_reserve_buffer()`
+  | :ref:`bson_reserve_buffer()`
 
-  | :symbol:`bson_sized_new()`
+  | :ref:`bson_sized_new`

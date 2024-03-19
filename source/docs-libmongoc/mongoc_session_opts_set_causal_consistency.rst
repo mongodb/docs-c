@@ -67,6 +67,4 @@ Example
       abort ();
    }
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

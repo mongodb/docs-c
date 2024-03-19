@@ -14,9 +14,7 @@ An event notification sent when the driver observes a change in status of a serv
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -21,9 +21,7 @@ Description
 
 This structure contains the options that may be used for tuning a WiredTiger specific index.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

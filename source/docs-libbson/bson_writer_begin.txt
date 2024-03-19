@@ -15,15 +15,15 @@ Synopsis
 Parameters
 ----------
 
-- ``writer``: A :symbol:`bson_writer_t`.
-- ``bson``: A :symbol:`bson_t`.
+- ``writer``: A :ref:`bson_writer_t`.
+- ``bson``: A :ref:`bson_t`.
 
 Description
 -----------
 
 Begins writing a new document. The caller may use the bson structure to write out a new
-BSON document. When completed, the caller must call either :symbol:`bson_writer_end()`
-or :symbol:`bson_writer_rollback()`.
+BSON document. When completed, the caller must call either :ref:`bson_writer_end()`
+or :ref:`bson_writer_rollback()`.
 
 Returns
 -------

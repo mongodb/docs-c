@@ -37,9 +37,7 @@ For the sake of compatibility with future versions of MongoDB, :symbol:`mongoc_r
 
 See `Read Concern Levels <https://www.mongodb.com/docs/manual/reference/read-concern/#read-concern-levels>`_ in the MongoDB manual for more information about the individual read concern levels.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

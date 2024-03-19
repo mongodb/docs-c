@@ -14,9 +14,7 @@ An event notification sent when the driver failed to send a "hello" command to c
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

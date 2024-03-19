@@ -23,6 +23,4 @@ Returns
 
 A :symbol:`mongoc_session_opt_t` that is valid only for the lifetime of ``session``.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

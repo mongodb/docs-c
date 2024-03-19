@@ -15,12 +15,12 @@ Synopsis
 Parameters
 ----------
 
-- ``opts``: A :symbol:`bson_json_opts_t`.
+- ``opts``: A :ref:`bson_json_opts_t`
 - ``is_outermost_array``: A value determining what we want to set the is_outermost_array
 - variable to.
 
 Description
 -----------
 
-The :symbol:`bson_json_opts_set_outermost_array()` function shall set the ``is_outermost_array``
-variable on the :symbol:`bson_json_opts_t` parameter using the boolean provided.
+The :ref:`bson_json_opts_set_outermost_array` function shall set the ``is_outermost_array``
+variable on the :ref:`bson_json_opts_t` parameter using the boolean provided.

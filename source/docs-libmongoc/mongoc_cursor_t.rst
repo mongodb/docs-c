@@ -36,9 +36,7 @@ Example
    :language: c
    :caption: Query MongoDB and iterate results
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

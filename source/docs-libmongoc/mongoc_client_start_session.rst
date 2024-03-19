@@ -34,6 +34,4 @@ Errors
 
 This function can fail if the driver is not built with crypto support, if ``opts`` is misconfigured, or if the session is configured with options that the server does not support.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

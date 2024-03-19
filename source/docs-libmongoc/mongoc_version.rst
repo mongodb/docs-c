@@ -33,9 +33,7 @@ Only compile a block on MongoDB C Driver 1.1.0 and newer.
   }
   #endif
 
-.. only:: html
-
-  Run-Time Version Checks
+Run-Time Version Checks
   -----------------------
 
   .. toctree::

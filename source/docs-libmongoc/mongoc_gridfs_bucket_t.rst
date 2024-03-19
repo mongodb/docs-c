@@ -35,9 +35,7 @@ Example
    :language: c
    :caption: example-gridfs-bucket.c
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -14,9 +14,7 @@ An event notification sent when the driver begins executing a "hello" command to
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

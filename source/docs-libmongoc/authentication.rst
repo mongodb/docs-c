@@ -240,6 +240,4 @@ AWS Credentials via EC2
 
 If credentials are not passed in the URI or with environment variables, and the environment variable ``AWS_CONTAINER_CREDENTIALS_RELATIVE_URI`` is not set, libmongoc will attempt to retrieve temporary credentials from the EC2 machine metadata by querying link local addresses.
 
-.. only:: html
-
-  .. include:: includes/seealso/authmechanism.txt
+.. include:: includes/seealso/authmechanism.txt

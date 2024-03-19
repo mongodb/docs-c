@@ -23,6 +23,4 @@ Returns
 
 If the session has not been used for any operation and :symbol:`mongoc_client_session_advance_cluster_time()` has not been called, a :symbol:`bson:bson_t` that is valid only for the lifetime of ``session``. Otherwise, ``NULL``.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

@@ -35,9 +35,7 @@ Example
 
   mongoc_gridfs_file_list_destroy (list);
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`
 
 Description
 -----------
@@ -29,5 +29,5 @@ An unsigned integer representing the offset in the BSON data of the current elem
 
 .. seealso::
 
-   | :symbol:`bson_iter_init_from_data_at_offset()` to use this offset to reconstruct a :symbol:`bson_iter_t` in constant time.
+   | :ref:`bson_iter_init_from_data_at_offset` to use this offset to reconstruct a :ref:`bson_iter_t` in constant time.
 

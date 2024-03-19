@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 
 Description
 -----------
@@ -23,10 +23,10 @@ Description
 Fetches the value for the currently observed type as a boxed type. This allows passing around
 the value without knowing the type at runtime.
 
-If the :symbol:`bson_iter_t` is further modified, the :symbol:`bson_value_t` is invalidated.
+If the :ref:`bson_iter_t` is further modified, the :ref:`bson_value_t` is invalidated.
 
 Returns
 -------
 
-A :symbol:`bson_value_t` that should not be modified or freed.
+A :ref:`bson_value_t` that should not be modified or freed.
 

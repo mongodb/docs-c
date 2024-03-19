@@ -41,6 +41,4 @@ The following example demonstrates how to use :ref:`error labels <error_labels>`
    :language: c
    :caption: example-transaction.c
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

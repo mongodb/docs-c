@@ -14,9 +14,7 @@ An event notification sent when the driver successfully executes a MongoDB comma
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

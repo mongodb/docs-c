@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: A :symbol:`bson_t`.
+- ``bson``: A :ref:`bson_t`
 - ``flags``: A bitwise-or of all desired :symbol:`bson_validate_flags_t <bson_validate_with_error>`.
 - ``offset``: A location for the offset within ``bson`` where the error occurred.
 
@@ -26,7 +26,7 @@ Validates a BSON document by walking through the document and inspecting the key
 content.
 
 You can modify how the validation occurs through the use of the ``flags`` parameter, see
-:symbol:`bson_validate_with_error()` for details.
+:ref:`bson_validate_with_error()`r details.
 
 Returns
 -------
@@ -36,7 +36,7 @@ error was detected.
 
 .. seealso::
 
-   | :symbol:`bson_validate_with_error()`.
+   | :ref:`bson_validate_with_error()`
 
-   | :symbol:`bson_visitor_t` can be used for custom validation, :ref:`example_custom_validation`.
+   | :ref:`bson_visitor_t`n be used for custom validation, :ref:`example_custom_validation`.
 

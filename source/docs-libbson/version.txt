@@ -40,9 +40,7 @@ Only compile a block on Libbson 1.1.0 and newer.
    }
    #endif
 
-.. only:: html
-
-   Functions
+Functions
    ---------
 
    .. toctree::

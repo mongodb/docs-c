@@ -8,7 +8,7 @@ Clients and pools
 
 Call :symbol:`mongoc_init()` once, before calling any other libmongoc functions, and call :symbol:`mongoc_cleanup()` once before your program exits.
 
-A program that uses libmongoc from multiple threads should create a :symbol:`mongoc_client_pool_t` with :symbol:`mongoc_client_pool_new()`. Each thread acquires a :symbol:`mongoc_client_t` from the pool with :symbol:`mongoc_client_pool_pop()` and returns it with :symbol:`mongoc_client_pool_push()` when the thread is finished using it. To destroy the pool, first return all clients, then call :symbol:`mongoc_client_pool_destroy()`.
+A program that uses libmongoc from multiple threads should create a :symbol:`mongoc_client_pool_t` with :symbol:`mongoc_client_pool_new`. Each thread acquires a :symbol:`mongoc_client_t` from the pool with :symbol:`mongoc_client_pool_pop()` and returns it with :symbol:`mongoc_client_pool_push()` when the thread is finished using it. To destroy the pool, first return all clients, then call :symbol:`mongoc_client_pool_destroy()`.
 
 If your program uses libmongoc from only one thread, create a :symbol:`mongoc_client_t` directly with :symbol:`mongoc_client_new()` or :symbol:`mongoc_client_new_from_uri()`. Destroy it with :symbol:`mongoc_client_destroy()`.
 

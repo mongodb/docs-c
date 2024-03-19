@@ -22,6 +22,4 @@ Parameters
 * ``timestamp``: A pointer to a ``uint32_t`` to receive the timestamp component.
 * ``increment``: A pointer to a ``uint32_t`` to receive the increment component.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

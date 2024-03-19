@@ -23,6 +23,4 @@ Returns
 
 A :symbol:`mongoc_read_prefs_t` that is valid only for the lifetime of ``opts``. 
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

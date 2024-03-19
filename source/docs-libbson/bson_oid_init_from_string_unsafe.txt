@@ -15,4 +15,4 @@ Synopsis
 Description
 -----------
 
-Identical to :symbol:`bson_oid_init_from_string()`, but performs no integrity checking.
+Identical to :ref:`bson_oid_init_from_string()`, but performs no integrity checking.

@@ -13,7 +13,7 @@ Converting BSON to JSON
 
 There are often times where you might want to convert a BSON document to JSON. It is convenient for
 debugging as well as an interchange format. To help with this, Libbson contains the functions
-:symbol:`bson_as_canonical_extended_json()` and :symbol:`bson_as_relaxed_extended_json()`. The
+:ref:`bson_as_canonical_extended_json` and :ref:`bson_as_relaxed_extended_json`. The
 canonical format preserves BSON type information for values that may have ambiguous representations
 in JSON (e.g. numeric types).
 
@@ -59,10 +59,10 @@ not required.
 Converting JSON to BSON
 -----------------------
 
-Converting back from JSON is also useful and common enough that we added :symbol:`bson_init_from_json()`
-and :symbol:`bson_new_from_json()`.
+Converting back from JSON is also useful and common enough that we added :ref:`bson_init_from_json`
+and :ref:`bson_new_from_json`.
 
-The following example creates a new :symbol:`bson_t` from the JSON string ``{"a":1}``.
+The following example creates a new :ref:`bson_t` from the JSON string ``{"a":1}``.
 
 .. code-block:: c
 
@@ -80,8 +80,8 @@ The following example creates a new :symbol:`bson_t` from the JSON string ``{"a"
 Streaming JSON Parsing
 ----------------------
 
-Libbson provides :symbol:`bson_json_reader_t` to allow for parsing a sequence of JSON documents into BSON.
-The interface is similar to :symbol:`bson_reader_t` but expects the input to be in the `MongoDB extended JSON
+Libbson provides :ref:`bson_json_reader_t` to allow for parsing a sequence of JSON documents into BSON.
+The interface is similar to :ref:`bson_reader_t` but expects the input to be in the `MongoDB extended JSON
 <https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/>`_ format.
 
 .. code-block:: c

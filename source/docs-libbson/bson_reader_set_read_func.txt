@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-- ``reader``: A :symbol:`bson_reader_t`.
-- ``func``: A :symbol:`bson_reader_read_func_t`.
+- ``reader``: A :ref:`bson_reader_t`.
+- ``func``: A :ref:`bson_reader_read_func_t`.
 
 Description
 -----------

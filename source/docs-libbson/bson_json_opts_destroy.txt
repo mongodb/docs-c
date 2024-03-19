@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``opts``: A :symbol:`bson_json_opts_t`.
+- ``opts``: A :ref:`bson_json_opts_t`.
 
 Description
 -----------

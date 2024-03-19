@@ -155,9 +155,7 @@ Outputs:
       "ok": 1
   }
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

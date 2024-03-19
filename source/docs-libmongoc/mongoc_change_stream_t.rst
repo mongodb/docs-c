@@ -47,9 +47,7 @@ The following example shows using ``startAtOperationTime`` to synchronize a chan
    :caption: example-start-at-optime.c
 
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

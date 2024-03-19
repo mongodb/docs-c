@@ -18,6 +18,4 @@ Parameters
 
 * ``opts``: A :symbol:`mongoc_transaction_opt_t`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

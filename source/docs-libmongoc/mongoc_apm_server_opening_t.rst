@@ -14,9 +14,7 @@ An event notification sent when the driver adds a :symbol:`mongoc_server_descrip
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

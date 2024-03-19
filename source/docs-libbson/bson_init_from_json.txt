@@ -18,22 +18,21 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: Pointer to an uninitialized :symbol:`bson_t`.
+- ``bson``: Pointer to an uninitialized :ref:`bson_t`
 - ``data``: A UTF-8 encoded string containing valid JSON.
 - ``len``: The length of ``data`` in bytes excluding a trailing ``\0`` or -1 to determine
   the length with ``strlen()``.
-- ``error``: An optional location for a :symbol:`bson_error_t`.
+- ``error``: An optional location for a :ref:`bson_error_t`
 
 Description
 -----------
 
-The ``bson_init_from_json()`` function will initialize a new :symbol:`bson_t` by parsing the
+The ``bson_init_from_json()`` function will initialize a new :ref:`bson_t` parsing the
 JSON found in ``data``. Only a single JSON object may exist in ``data`` or an error will be
 set and false returned.
 
 ``data`` should be in `MongoDB Extended JSON <https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/>`_
 format.
-
 
 Deprecated behavior
 -------------------
@@ -56,9 +55,8 @@ Returns
 -------
 
 Returns ``true`` if valid JSON was parsed, otherwise ``false`` and ``error`` is set. On success,
-``bson`` is initialized and must be freed with :symbol:`bson_destroy`, otherwise ``bson`` is invalid.
+``bson`` is initialized and must be freed with :ref:`bson_destroy` otherwise ``bson`` is invalid.
 
-.. only:: html
+.. include:: includes/seealso/create-bson.rst
 
-  .. include:: includes/seealso/create-bson.txt
-  .. include:: includes/seealso/json.txt
+.. include:: includes/seealso/json.rst

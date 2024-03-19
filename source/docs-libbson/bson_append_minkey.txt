@@ -18,14 +18,14 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: A :symbol:`bson_t`.
+- ``bson``: A :ref:`bson_t`.
 - ``key``: An ASCII C string containing the name of the field.
 - ``key_length``: The length of ``key`` in bytes, or -1 to determine the length with ``strlen()``.
 
 Description
 -----------
 
-The :symbol:`bson_append_minkey()` function shall append an element of type BSON_TYPE_MINKEY
+The :ref:`bson_append_minkey` function shall append an element of type BSON_TYPE_MINKEY
 to a bson document. This is primarily used in queries and unlikely to be used when storing a
 document to MongoDB.
 

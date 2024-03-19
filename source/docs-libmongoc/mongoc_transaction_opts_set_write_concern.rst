@@ -20,6 +20,4 @@ Parameters
 * ``opts``: A :symbol:`mongoc_transaction_opt_t`.
 * ``write_concern``: A :symbol:`mongoc_write_concern_t`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

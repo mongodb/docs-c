@@ -20,6 +20,4 @@ Parameters
 
 * ``session``: A :symbol:`mongoc_client_session_t`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

@@ -23,6 +23,4 @@ Returns
 
 A :symbol:`mongoc_transaction_opt_t` that is valid only for the lifetime of ``opts``.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

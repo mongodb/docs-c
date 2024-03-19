@@ -23,7 +23,5 @@ Returns
 
 A server ID or ``0`` if this :symbol:`mongoc_client_session_t` is not pinned.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt
 

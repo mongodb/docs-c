@@ -12,9 +12,7 @@ Synopsis
 
 Used to set options for :symbol:`mongoc_client_encryption_create_datakey()`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

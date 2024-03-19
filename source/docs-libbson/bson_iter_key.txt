@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :symbol:`bson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 
 Description
 -----------
@@ -29,5 +29,5 @@ A string which should not be modified or freed.
 
 .. seealso::
 
-   | :symbol:`bson_iter_key_len()` to retrieve the length of the key in constant time.
+   | :ref:`bson_iter_key_len` to retrieve the length of the key in constant time.
 

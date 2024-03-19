@@ -21,8 +21,8 @@ Parameters
 Description
 -----------
 
-The :symbol:`bson_json_opts_new()` function shall create a new :symbol:`bson_json_opts_t` using
-the mode and length supplied.  The ``mode`` member is a :symbol:`bson_json_mode_t` defining the
+The :ref:`bson_json_opts_new` function shall create a new :ref:`bson_json_opts_t` using
+the mode and length supplied.  The ``mode`` member is a :ref:`bson_json_mode_t` defining the
 encoding mode.
 
 The ``max_len`` member holds a maximum length for the resulting JSON string. Encoding will stop
@@ -32,5 +32,5 @@ once the serialised string has reached this length. To encode the full BSON docu
 Returns
 -------
 
-A newly allocated :symbol:`bson_json_opts_t`.
+A newly allocated :ref:`bson_json_opts_t`.
 

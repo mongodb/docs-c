@@ -64,6 +64,4 @@ Example
     * in time as the first read operation. */
    cursor = mongoc_collection_aggregate (collection, MONGOC_QUERY_NONE, pipeline, &query_opts, NULL);
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

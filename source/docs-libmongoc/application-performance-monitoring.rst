@@ -136,9 +136,7 @@ This example program prints something like:
 
 The driver connects to the mongods on ports 27017 and 27018, which were specified in the URI, and determines which is primary. It also discovers the third member, "localhost:27019", and adds it to the topology.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

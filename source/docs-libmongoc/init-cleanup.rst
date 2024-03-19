@@ -8,9 +8,7 @@ Synopsis
 
 .. include:: includes/init_cleanup.txt
 
-.. only:: html
-
-  .. toctree::
+.. toctree::
     :titlesonly:
     :maxdepth: 1
 

@@ -82,9 +82,7 @@ When the read preference mode is ``MONGOC_READ_NEAREST`` and the sharded cluster
 
 Appropriate values for the ``enabled`` key are ``true`` or ``false``.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

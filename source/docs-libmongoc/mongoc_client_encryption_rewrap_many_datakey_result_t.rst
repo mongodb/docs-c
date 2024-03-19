@@ -14,9 +14,7 @@ Synopsis
 
 Used to access the result of :symbol:`mongoc_client_encryption_rewrap_many_datakey()`.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

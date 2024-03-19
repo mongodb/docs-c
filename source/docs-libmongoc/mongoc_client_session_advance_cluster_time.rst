@@ -22,6 +22,4 @@ Parameters
 * ``session``: A :symbol:`mongoc_client_session_t`.
 * ``cluster_time``: The session's new cluster time, as a :symbol:`bson:bson_t` like `{"cluster time": <timestamp>}`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

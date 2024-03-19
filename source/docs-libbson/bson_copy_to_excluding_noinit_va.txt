@@ -18,21 +18,21 @@ Synopsis
 Parameters
 ----------
 
-- ``src``: A :symbol:`bson_t`.
-- ``dst``: A :symbol:`bson_t`.
+- ``src``: A :ref:`bson_t`.
+- ``dst``: A :ref:`bson_t`.
 - ``first_exclude``: The first field name to exclude.
 - ``args``: A va_list.
 
 Description
 -----------
 
-The :symbol:`bson_copy_to_excluding_noinit_va()` function shall copy all fields from
+The :ref:`bson_copy_to_excluding_noinit_va()` function shall copy all fields from
 ``src`` to ``dst`` except those specified by ``first_exclude`` and ``args``.
 
-This method works the same way as :symbol:`bson_copy_to_excluding_noinit`, except it
-takes a va_list. This method does not call :symbol:`bson_init` on ``dst``.
+This method works the same way as :ref:`bson_copy_to_excluding_noinit`, except it
+takes a va_list. This method does not call :ref:`bson_init` on ``dst``.
 
 .. seealso::
 
-  | :symbol:`bson_copy_to_excluding_noinit`
+  | :ref:`bson_copy_to_excluding_noinit`
 

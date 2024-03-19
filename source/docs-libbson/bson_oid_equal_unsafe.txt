@@ -15,4 +15,4 @@ Synopsis
 Description
 -----------
 
-Identical to :symbol:`bson_oid_equal()`, but performs no integrity checking.
+Identical to :ref:`bson_oid_equal()`ut performs no integrity checking.

@@ -22,7 +22,7 @@ Synopsis
 Parameters
 ----------
 
-- ``bson``: A :symbol:`bson_t`.
+- ``bson``: A :ref:`bson_t`.
 - ``key``: An ASCII C string containing the name of the field.
 - ``key_length``: The length of ``key`` in bytes, or -1 to determine the length with ``strlen()``.
 - ``value``: The symbol.
@@ -35,7 +35,7 @@ Appends a new field to ``bson`` of type BSON_TYPE_SYMBOL. This BSON type is depr
 not be used in new code.
 
 Due to legacy behavior, passing ``NULL`` for ``value`` appends a null value, *not* a symbol value.
-To append a null value directly, prefer using :symbol:`bson_append_null()`.
+To append a null value directly, prefer using :ref:`bson_append_null`.
 
 Returns
 -------

@@ -181,9 +181,7 @@ The Error API Versions are defined with ``MONGOC_ERROR_API_VERSION_LEGACY`` and 
 
   | `MongoDB Server Error Codes <https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.yml>`_
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

@@ -14,9 +14,7 @@ An event notification sent when the driver stops monitoring a server topology an
 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::

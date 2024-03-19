@@ -15,14 +15,14 @@ Synopsis
 Parameters
 ----------
 
-- ``src``: A :symbol:`bson_t`.
-- ``dst``: A :symbol:`bson_t`.
+- ``src``: A :ref:`bson_t`.
+- ``dst``: A :ref:`bson_t`.
 
 Description
 -----------
 
-The :symbol:`bson_copy_to()` function shall initialize ``dst`` with a copy of the contents
+The :ref:`bson_copy_to` function shall initialize ``dst`` with a copy of the contents
 of ``src``.
 
-``dst`` *MUST* be an uninitialized :symbol:`bson_t` to avoid leaking memory.
+``dst`` *MUST* be an uninitialized :ref:`bson_t` to avoid leaking memory.
 

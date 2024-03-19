@@ -23,6 +23,4 @@ Example
 
 See the example code for :symbol:`mongoc_session_opts_set_causal_consistency`.
 
-.. only:: html
-
-  .. include:: includes/seealso/session.txt
+.. include:: includes/seealso/session.txt

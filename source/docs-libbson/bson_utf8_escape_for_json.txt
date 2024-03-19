@@ -32,4 +32,4 @@ byte is found before ``utf8_len`` bytes, it is converted to
 Returns
 -------
 
-A newly allocated string that should be freed with :symbol:`bson_free()`.
+A newly allocated string that should be freed with :ref:`bson_free`.

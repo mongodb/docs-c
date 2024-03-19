@@ -24,9 +24,7 @@ Thread Safety
 
 This structure is NOT thread-safe and should only be used from one thread at a time.
 
-.. only:: html
-
-  Functions
+Functions
   ---------
 
   .. toctree::
