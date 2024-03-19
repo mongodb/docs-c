@@ -21,6 +21,6 @@ Description
 -----------
 
 Seeks to the beginning of the underlying buffer. Valid only for a reader created from
-a buffer with :ref:`bson_reader_new_from_data`ot one created from a file, file
+a buffer with :ref:`bson_reader_new_from_data`, not one created from a file, file
 descriptor, or handle.
 

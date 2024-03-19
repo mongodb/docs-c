@@ -6,7 +6,7 @@
 
 A :ref:`bson_t` may contain its data directly or may contain pointers to heap-allocated memory.
 Overwriting an existing :ref:`bson_t` or allowing a stack-allocated :ref:`bson_t` to go out of
-scope may cause a memory leak. A :ref:`bson_t` should always be destroyed with :ref:`bson_destroy()`.
+scope may cause a memory leak. A :ref:`bson_t` should always be destroyed with :ref:`bson_destroy`.
 
 :ref:`bson_t` Out Parameters
 -------------------------------

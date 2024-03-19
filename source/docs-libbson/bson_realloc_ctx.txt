@@ -22,6 +22,6 @@ Parameters
 Description
 -----------
 
-This function is identical to :ref:`bson_realloc()` except it takes a context parameter.
+This function is identical to :ref:`bson_realloc` except it takes a context parameter.
 This is useful when working with pooled or specific memory allocators.
 

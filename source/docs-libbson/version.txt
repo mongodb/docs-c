@@ -41,15 +41,15 @@ Only compile a block on Libbson 1.1.0 and newer.
    #endif
 
 Functions
-   ---------
+---------
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-     bson_check_version
-     bson_get_major_version
-     bson_get_micro_version
-     bson_get_minor_version
-     bson_get_version
+   bson_check_version
+   bson_get_major_version
+   bson_get_micro_version
+   bson_get_minor_version
+   bson_get_version
 

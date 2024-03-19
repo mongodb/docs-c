@@ -9,12 +9,12 @@ Parsing
 
 BSON documents are lazily parsed as necessary. To begin parsing a BSON document, use one of the
 provided Libbson functions to create a new :ref:`bson_t` from existing data such as
-:ref:`bson_new_from_data()`. This will make a copy of the data so that additional mutations
+:ref:`bson_new_from_data`. This will make a copy of the data so that additional mutations
 may occur to the BSON document.
 
 .. tip::
 
-   If you only want to parse a BSON document and have no need to mutate it, you may use :ref:`bson_init_static()`
+   If you only want to parse a BSON document and have no need to mutate it, you may use :ref:`bson_init_static`
    to avoid making a copy of the data.
 
 .. code-block:: c
@@ -90,7 +90,7 @@ an example that will dive into a sub-document named "foo" and print it's field n
 Finding Fields Using Dot Notation
 ---------------------------------
 
-Using the :ref:`bson_iter_recurse()` function exemplified above, :ref:`bson_iter_find_descendant()`
+Using the :ref:`bson_iter_recurse` function exemplified above, :ref:`bson_iter_find_descendant`
 can find a field for you using the MongoDB style path notation such as "foo.bar.0.baz".
 
 Let's create a document like ``{"foo": {"bar": [{"baz: 1}]}}`` and locate the ``"baz"`` field.
@@ -115,7 +115,7 @@ Let's create a document like ``{"foo": {"bar": [{"baz: 1}]}}`` and locate the ``
 Validating a BSON Document
 --------------------------
 
-If all you want to do is validate that a BSON document is valid, you can use :ref:`bson_validate()`.
+If all you want to do is validate that a BSON document is valid, you can use :ref:`bson_validate`.
 
 .. code-block:: c
 
@@ -127,5 +127,5 @@ If all you want to do is validate that a BSON document is valid, you can use :re
                (unsigned) err_offset);
    }
 
-See the :ref:`bson_validate()` documentation for more information and examples.
+See the :ref:`bson_validate` documentation for more information and examples.
 

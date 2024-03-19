@@ -22,8 +22,8 @@ Description
 -----------
 
 Begins writing a new document. The caller may use the bson structure to write out a new
-BSON document. When completed, the caller must call either :ref:`bson_writer_end()`
-or :ref:`bson_writer_rollback()`.
+BSON document. When completed, the caller must call either :ref:`bson_writer_end`
+or :ref:`bson_writer_rollback`.
 
 Returns
 -------

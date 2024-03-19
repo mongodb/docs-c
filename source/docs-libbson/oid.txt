@@ -21,14 +21,14 @@ Sorting ObjectIDs
 -----------------
 
 The typical way to sort in C is using ``qsort()``. Therefore, Libbson provides a ``qsort()``
-compatible callback function named :ref:`bson_oid_compare()`. It returns ``less than 1``,
+compatible callback function named :ref:`bson_oid_compare`. It returns ``less than 1``,
 ``greater than 1``, or ``0`` depending on the equality of two :ref:`bson_oid_t` structures.
 
 Comparing Object IDs
 --------------------
 
 If you simply want to compare two :ref:`bson_oid_t` structures for equality, use
-:ref:`bson_oid_equal()`.
+:ref:`bson_oid_equal`.
 
 Generating
 ----------
@@ -74,7 +74,7 @@ Libbson provides a hash function for just this purpose. It is based on DJB hash.
 Fetching ObjectID Creation Time
 -------------------------------
 
-You can easily fetch the time that a :ref:`bson_oid_t` was generated using :ref:`bson_oid_get_time_t()`.
+You can easily fetch the time that a :ref:`bson_oid_t` was generated using :ref:`bson_oid_get_time_t`.
 
 .. code-block:: c
 

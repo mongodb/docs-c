@@ -57,13 +57,13 @@ Now let's take a look at an example that adds a few different field types to a B
    BSON_APPEND_UTF8 (&b, "hello", "world");
    BSON_APPEND_BOOL (&b, "bool", true);
 
-Notice that we omitted the call to :ref:`bson_init()`. By specifying ``BSON_INITIALIZER``
+Notice that we omitted the call to :ref:`bson_init`. By specifying ``BSON_INITIALIZER``
 we can remove the need to initialize the structure to a base state.
 
 Sub-Documents and Sub-Arrays
 ----------------------------
 
-To simplify the creation of sub-documents :ref:`bson_append_document_begin()` can be used
+To simplify the creation of sub-documents :ref:`bson_append_document_begin` can be used
 to build a sub-document using the parent's memory region as the destination buffer.
 
 .. literalinclude:: ../examples/creating.c

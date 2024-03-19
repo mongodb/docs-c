@@ -21,11 +21,11 @@ representation of a character. As UTF-8 can contain multi-byte characters, this 
 when iterating through UTF-8 text.
 
 Functions
-   ---------
+---------
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
 Example
 -------

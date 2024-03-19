@@ -23,11 +23,11 @@ Some error codes overlap with others; always check both the domain and code to d
      - ``BSON_JSON_ERROR_READ_CORRUPT_JS``
        ``BSON_JSON_ERROR_READ_INVALID_PARAM``
        ``BSON_JSON_ERROR_READ_CB_FAILURE``
-     - :ref:`bson_json_reader_t`ied to parse invalid MongoDB Extended JSON. Tried to parse a
+     - :ref:`bson_json_reader_t` tried to parse invalid MongoDB Extended JSON. Tried to parse a
        valid JSON document that is invalid as MongoDBExtended JSON. An internal callback failure
        during JSON parsing.
 
    * - ``BSON_ERROR_READER``
      - ``BSON_ERROR_READER_BADFD``  
-     - An internal callback failure during JSON parsing. :ref:`bson_json_reader_new_from_file`uld
+     - An internal callback failure during JSON parsing. :ref:`bson_json_reader_new_from_file` could
        not open the file.

@@ -36,24 +36,24 @@ Description
 The sequence can come from a file-descriptor, memory region, or custom callbacks.
 
 Functions
-   ---------
+---------
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-     bson_reader_destroy
-     bson_reader_destroy_func_t
-     bson_reader_new_from_data
-     bson_reader_new_from_fd
-     bson_reader_new_from_file
-     bson_reader_new_from_handle
-     bson_reader_read
-     bson_reader_read_func_t
-     bson_reader_reset
-     bson_reader_set_destroy_func
-     bson_reader_set_read_func
-     bson_reader_tell
+   bson_reader_destroy
+   bson_reader_destroy_func_t
+   bson_reader_new_from_data
+   bson_reader_new_from_fd
+   bson_reader_new_from_file
+   bson_reader_new_from_handle
+   bson_reader_read
+   bson_reader_read_func_t
+   bson_reader_reset
+   bson_reader_set_destroy_func
+   bson_reader_set_read_func
+   bson_reader_tell
 
 Example
 -------

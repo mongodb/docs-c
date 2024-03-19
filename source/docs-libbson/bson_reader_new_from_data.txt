@@ -21,7 +21,7 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_reader_new_from_data()` function shall create a new :ref:`bson_reader_t`
+The :ref:`bson_reader_new_from_data` function shall create a new :ref:`bson_reader_t`
 using the buffer supplied. ``data`` is not copied and *MUST* be valid for the lifetime of the
 resulting :ref:`bson_reader_t`.
 

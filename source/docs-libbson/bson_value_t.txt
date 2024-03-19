@@ -73,14 +73,14 @@ Description
 The :ref:`bson_value_t` structure is a boxed type for encapsulating a runtime determined type.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    bson_value_copy
-    bson_value_destroy
+   bson_value_copy
+   bson_value_destroy
 
 Example
 -------

@@ -59,7 +59,7 @@ and gives more detail if possible.
 
 .. seealso::
 
-   | :ref:`bson_validate()`.
+   | :ref:`bson_validate`.
 
    | :ref:`bson_visitor_t` can be used for custom validation, :ref:`example_custom_validation`.
 

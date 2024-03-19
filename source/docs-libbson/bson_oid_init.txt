@@ -16,10 +16,10 @@ Parameters
 ----------
 
 - ``oid``: A :ref:`bson_oid_t`
-- ``context``: An *optional- :ref:`bson_context_t` NULL.
+- ``context``: An *optional* :ref:`bson_context_t` or NULL.
 
 Description
 -----------
 
-Generates a new :ref:`bson_oid_t`ing either ``context`` or the default :re:ref:`bson_context_t`
+Generates a new :ref:`bson_oid_t` using either ``context`` or the default :ref:`bson_context_t`.
 

@@ -127,11 +127,11 @@ callback to report an error like "unrecognized type" instead of simply "corrupt 
 code that may use an older version of libbson to parse future BSON formats.
 
 Functions
-   ---------
+---------
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
 Basic Example
 -------------

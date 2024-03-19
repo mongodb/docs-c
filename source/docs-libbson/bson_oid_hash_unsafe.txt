@@ -15,4 +15,4 @@ Synopsis
 Description
 -----------
 
-Identical to :ref:`bson_oid_hash()`, but performs no integrity checking.
+Identical to :ref:`bson_oid_hash`, but performs no integrity checking.

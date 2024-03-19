@@ -1,4 +1,4 @@
-.. _d_is_valid:
+.. _bson_oid_is_valid:
 
 ===================
 bson_oid_is_valid()

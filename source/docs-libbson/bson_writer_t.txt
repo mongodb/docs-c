@@ -34,18 +34,18 @@ language. For example, you can serialize a Python Dictionary directly to a singl
 destined for a TCP packet.
 
 Functions
-   ---------
+---------
 
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-     bson_writer_begin
-     bson_writer_destroy
-     bson_writer_end
-     bson_writer_get_length
-     bson_writer_new
-     bson_writer_rollback
+   bson_writer_begin
+   bson_writer_destroy
+   bson_writer_end
+   bson_writer_get_length
+   bson_writer_new
+   bson_writer_rollback
 
 Example
 -------

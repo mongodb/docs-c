@@ -21,13 +21,13 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_reader_new_from_fd()` function shall create a new :ref:`bson_reader_t`
+The :ref:`bson_reader_new_from_fd` function shall create a new :ref:`bson_reader_t`
 that will read from the provided file-descriptor.
 
 fd *MUST* be in blocking mode.
 
 If ``close_fd`` is true, then ``fd`` will be closed when the :ref:`bson_reader_t` is destroyed
-with :ref:`bson_reader_destroy()`.
+with :ref:`bson_reader_destroy`.
 
 Returns
 -------

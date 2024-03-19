@@ -32,13 +32,6 @@ Description
 This enumeration contains the various subtypes that may be used in a binary field. See
 `http://bsonspec.org <http://bsonspec.org>`_ for more information.
 
-Functions
-   ---------
-
-   .. toctree::
-     :titlesonly:
-     :maxdepth: 1
-
 Example
 -------
 

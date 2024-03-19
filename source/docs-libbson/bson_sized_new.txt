@@ -20,13 +20,13 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_sized_new`nction shall create a new :re:ref:`bson_t`e heap
+The :ref:`bson_sized_new` function shall create a new :ref:`bson_t` on the heap
 with a preallocated buffer. This is useful if you have a good idea of the size of the resulting
 document.
 
 Returns
 -------
 
-A newly allocated :ref:`bson_t`at should be freed with :re:ref:`bson_destroy()`
+A newly allocated :ref:`bson_t` that should be freed with :ref:`bson_destroy`.
 
 .. include:: includes/seealso/create-bson.rst

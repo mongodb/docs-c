@@ -21,7 +21,7 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_reader_read()` function shall read the next document from the underlying
+The :ref:`bson_reader_read` function shall read the next document from the underlying
 file-descriptor or buffer.
 
 If there are no further documents or a failure was detected, then NULL is returned.

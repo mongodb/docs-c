@@ -13,7 +13,7 @@ Reading from a BSON Stream
 --------------------------
 
 :ref:`bson_reader_t` provides a convenient API to read sequential BSON documents from
-a file-descriptor or memory buffer. The :ref:`bson_reader_read()` function will read
+a file-descriptor or memory buffer. The :ref:`bson_reader_read` function will read
 forward in the underlying stream and return a :ref:`bson_t` that can be inspected and
 iterated upon.
 
@@ -54,14 +54,14 @@ iterated upon.
      return 0;
    }
 
-See :ref:`bson_reader_new_from_fd()`, :ref:`bson_reader_new_from_file()`, and
-:ref:`bson_reader_new_from_data()` for more information.
+See :ref:`bson_reader_new_from_fd`, :ref:`bson_reader_new_from_file`, and
+:ref:`bson_reader_new_from_data` for more information.
 
 Writing a Sequence of BSON Documents
 ------------------------------------
 
 :ref:`bson_writer_t` provides a convenient API to write a sequence of BSON documents to a
-memory buffer that can grow with ``realloc()``. The :ref:`bson_writer_begin()` and :ref:`bson_writer_end()`
+memory buffer that can grow with ``realloc()``. The :ref:`bson_writer_begin` and :ref:`bson_writer_end`
 functions will manage the underlying buffer while building the sequence of documents.
 
 This could also be useful if you want to write to a network packet while serializing the documents from
