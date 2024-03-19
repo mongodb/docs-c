@@ -232,6 +232,6 @@ Example Corruption Check
 Example Custom Validation
 -------------------------
 
-.. literalinclude:: ../examples/bson-check-depth.c
+.. literalinclude:: includes/examples/bson-check-depth.c
    :caption: bson-check-depth.c
    :start-after: -- sphinx-include-start --
