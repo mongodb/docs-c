@@ -45,9 +45,9 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   bson_decimal128_from_string
-   bson_decimal128_from_string_w_len
-   bson_decimal128_to_string
+   /bson_decimal128_t/bson_decimal128_from_string
+   /bson_decimal128_t/bson_decimal128_from_string_w_len
+   /bson_decimal128_t/bson_decimal128_to_string
 
 Example
 -------
