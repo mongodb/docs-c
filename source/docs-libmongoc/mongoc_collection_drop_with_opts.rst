@@ -19,7 +19,7 @@ Parameters
 * ``collection``: A :symbol:`mongoc_collection_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/write-opts.txt
 

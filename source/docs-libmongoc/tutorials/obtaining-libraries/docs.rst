@@ -1,5 +1,5 @@
 #################################################
-Building the |mongo-c-driver| Documentation Pages
+Building the mongo-c-driver Documentation Pages
 #################################################
 
 .. highlight:: console

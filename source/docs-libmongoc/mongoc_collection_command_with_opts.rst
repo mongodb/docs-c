@@ -19,7 +19,7 @@ Synopsis
 
 Execute a command on the server, interpreting ``opts`` according to the MongoDB server version. To send a raw command to the server without any of this logic, use :symbol:`mongoc_client_command_simple`.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/opts-sources.txt
 
@@ -32,7 +32,7 @@ Parameters
 * ``command``: A :symbol:`bson:bson_t` containing the command specification.
 * ``read_prefs``: An optional :symbol:`mongoc_read_prefs_t`.
 * ``opts``: A :symbol:`bson:bson_t` containing additional options.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 .. include:: includes/read-write-opts.txt

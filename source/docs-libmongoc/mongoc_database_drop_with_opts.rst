@@ -19,7 +19,7 @@ Parameters
 * ``database``: A :symbol:`mongoc_database_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``database``
+.. ``opts-source`` replace:: ``database``
 
 .. include:: includes/write-opts.txt
 

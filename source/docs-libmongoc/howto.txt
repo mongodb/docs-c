@@ -12,4 +12,4 @@ How-To Guides
 .. toctree::
    :maxdepth: 2
 
-   source-install
+   /howto/source-install

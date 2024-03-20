@@ -37,9 +37,9 @@ To generate a :ref:`bson_oid_t`, you may use the following.
 
 .. code-block:: c
 
-  bson_oid_t oid;
+   bson_oid_t oid;
 
-  bson_oid_init (&oid, NULL);
+   bson_oid_init (&oid, NULL);
 
 Parsing ObjectID Strings
 ------------------------

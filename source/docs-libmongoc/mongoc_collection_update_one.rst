@@ -22,10 +22,10 @@ Parameters
 * ``collection``: A :symbol:`mongoc_collection_t`.
 * ``selector``: A :symbol:`bson:bson_t` containing the query to match the document for updating.
 * ``update``: A :symbol:`bson:bson_t` containing the update to perform. If updating with a pipeline, a :symbol:`bson:bson_t` array.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/update-one-opts.txt
 

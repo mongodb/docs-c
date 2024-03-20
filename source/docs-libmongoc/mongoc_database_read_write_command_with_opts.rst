@@ -19,7 +19,7 @@ Synopsis
 
 Execute a command on the server, applying logic for commands that both read and write, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :symbol:`mongoc_database_command_simple`.
 
-.. |opts-source| replace:: ``database``
+.. ``opts-source`` replace:: ``database``
 
 .. include:: includes/read-write-opts-sources.txt
 
@@ -34,7 +34,7 @@ Parameters
 * ``command``: A :symbol:`bson:bson_t` containing the command specification.
 * ``read_prefs``: Ignored.
 * ``opts``: A :symbol:`bson:bson_t` containing additional options.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 .. include:: includes/read-write-opts.txt

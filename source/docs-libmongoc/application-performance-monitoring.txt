@@ -1,12 +1,13 @@
 .. _mongoc_application_performance_monitoring
 
+========================================
 Application Performance Monitoring (APM)
 ========================================
 
 The MongoDB C Driver allows you to monitor all the MongoDB operations the driver executes. This event-notification system conforms to two MongoDB driver specs:
 
-* `Command Logging and Monitoring <https://github.com/mongodb/specifications/blob/master/source/command-logging-and-monitoring/command-logging-and-monitoring.rst>`_: events related to all application operations.
-* `SDAM Monitoring <https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring-monitoring.rst>`_: events related to the driver's Server Discovery And Monitoring logic.
+- `Command Logging and Monitoring <https://github.com/mongodb/specifications/blob/master/source/command-logging-and-monitoring/command-logging-and-monitoring.rst>`_: events related to all application operations.
+- `SDAM Monitoring <https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring-monitoring.rst>`_: events related to the driver's Server Discovery And Monitoring logic.
 
 To receive notifications, create a ``mongoc_apm_callbacks_t`` with :symbol:`mongoc_apm_callbacks_new`, set callbacks on it, then pass it to :symbol:`mongoc_client_set_apm_callbacks` or :symbol:`mongoc_client_pool_set_apm_callbacks`.
 
@@ -137,22 +138,22 @@ This example program prints something like:
 The driver connects to the mongods on ports 27017 and 27018, which were specified in the URI, and determines which is primary. It also discovers the third member, "localhost:27019", and adds it to the topology.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_callbacks_t
-    mongoc_apm_command_failed_t
-    mongoc_apm_command_started_t
-    mongoc_apm_command_succeeded_t
-    mongoc_apm_server_changed_t
-    mongoc_apm_server_closed_t
-    mongoc_apm_server_heartbeat_failed_t
-    mongoc_apm_server_heartbeat_started_t
-    mongoc_apm_server_heartbeat_succeeded_t
-    mongoc_apm_server_opening_t
-    mongoc_apm_topology_changed_t
-    mongoc_apm_topology_closed_t
-    mongoc_apm_topology_opening_t
+  /application-performance-monitoring/mongoc_apm_callbacks_t
+  /application-performance-monitoring/mongoc_apm_command_failed_t
+  /application-performance-monitoring/mongoc_apm_command_started_t
+  /application-performance-monitoring/mongoc_apm_command_succeeded_t
+  /application-performance-monitoring/mongoc_apm_server_changed_t
+  /application-performance-monitoring/mongoc_apm_server_closed_t
+  /application-performance-monitoring/mongoc_apm_server_heartbeat_failed_t
+  /application-performance-monitoring/mongoc_apm_server_heartbeat_started_t
+  /application-performance-monitoring/mongoc_apm_server_heartbeat_succeeded_t
+  /application-performance-monitoring/mongoc_apm_server_opening_t
+  /application-performance-monitoring/mongoc_apm_topology_changed_t
+  /application-performance-monitoring/mongoc_apm_topology_closed_t
+  /application-performance-monitoring/mongoc_apm_topology_opening_t

@@ -6,13 +6,13 @@ Package Installation Reference
 .. _conan: https://conan.io/
 .. _vcpkg: https://vcpkg.io/
 
-|libbson| and |libmongoc| are available from several package management tools
+``libbson`` and ``libmongoc`` are available from several package management tools
 on a variety of systems.
 
 .. important::
 
   The third-party packages detailed here are not directly controlled via the
-  |mongo-c-driver| maintainers, and the information found here may be incomplete
+  ``mongo-c-driver`` maintainers, and the information found here may be incomplete
   or out-of-date.
 
 
@@ -23,7 +23,7 @@ This table details the names and usage notes of such packages.
 
 .. note::
   
-  The development packages (ending in ``-dev`` or ``-devel``) include files required to build applications using |libbson| and |libmongoc|.
+  The development packages (ending in ``-dev`` or ``-devel``) include files required to build applications using ``libbson`` and ``libmongoc``.
 
 .. seealso::
 
@@ -39,8 +39,8 @@ This table details the names and usage notes of such packages.
 
   - - Packaging Tool
     - Platform(s)
-    - |libbson| package(s)
-    - |libmongoc| package(s)
+    - ``libbson`` package(s)
+    - ``libmongoc`` package(s)
     - Notes
 
   - - :index:`APT <!pair: APT; package names>` (``apt``/``apt-get``)
@@ -71,7 +71,7 @@ This table details the names and usage notes of such packages.
     - ``mongo-c-driver``
     - ``mongo-c-driver``
     - A single package provides both runtime and development support for both
-      |libbson| and |libmongoc|
+      ``libbson`` and ``libmongoc``
 
   - - :index:`Homebrew <!pair: Homebrew; package names>`
     - :index:`macOS <!pair: macOS; package names>`
@@ -100,7 +100,7 @@ Conan Settings and Features
 
 The ``mongo-c-driver`` Conan_ recipe includes several build settings that
 correspond to the configure-time build settings available when building the
-|mongo-c-driver| project.
+``mongo-c-driver`` project.
 
 .. seealso::
 
@@ -169,8 +169,8 @@ correspond to the configure-time build settings available when building the
 
   Conan will use OpenSSL as the default TLS backend, even on platforms that ship
   with their own TLS implementation (e.g. Windows and macOS). This behavior
-  differs from the upstream default-configured |libmongoc| or the vcpkg
-  distribution of |mongo-c-driver|, which both default to use the TLS
+  differs from the upstream default-configured ``libmongoc`` or the vcpkg
+  distribution of ``mongo-c-driver``, which both default to use the TLS
   implementation preferred for the target platform.
 
 .. index:: !vcpkg; Optional features
@@ -199,7 +199,7 @@ features.
 
   - - ``icu``
     - Installs the ICU library, which is necessary for non-ASCII usernames and
-      passwords in pre-1.25 |libmongoc|
+      passwords in pre-1.25 ``libmongoc``
   - - ``openssl``
     - Use OpenSSL for encryption, even on Windows and Apple platforms which
       provide a native TLS backend.

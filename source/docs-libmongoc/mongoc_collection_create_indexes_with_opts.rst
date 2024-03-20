@@ -30,10 +30,10 @@ Parameters
 * ``models``: An array of ``mongoc_index_model_t *``.
 * ``n_models``: The number of ``models``.
 * ``opts``: Optional options.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/write-opts.txt
 

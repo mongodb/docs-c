@@ -18,7 +18,7 @@ Parameters
 
 * ``collection``: A :symbol:`mongoc_collection_t`.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/bulk-opts.txt
 

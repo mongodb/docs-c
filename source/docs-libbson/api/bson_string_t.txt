@@ -34,13 +34,13 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   bson_string_append
-   bson_string_append_c
-   bson_string_append_printf
-   bson_string_append_unichar
-   bson_string_free
-   bson_string_new
-   bson_string_truncate
+   /bson_string_t/bson_string_append
+   /bson_string_t/bson_string_append_c
+   /bson_string_t/bson_string_append_printf
+   /bson_string_t/bson_string_append_unichar
+   /bson_string_t/bson_string_free
+   /bson_string_t/bson_string_new
+   /bson_string_t/bson_string_truncate
 
 Example
 -------

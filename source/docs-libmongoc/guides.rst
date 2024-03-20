@@ -7,16 +7,16 @@ Guides
    :titlesonly:
    :maxdepth: 1
 
-   configuring_tls
-   mongoc-common-task-examples
-   advanced-connections
-   connection-pooling
-   data-compression
-   cursors
-   bulk
-   aggregate
-   distinct-mapreduce
-   visual-studio-guide
-   manage-collection-indexes
-   debugging
-   in-use-encryption
+   /guides/configuring_tls
+   /guides/mongoc-common-task-examples
+   /guides/advanced-connections
+   /guides/connection-pooling
+   /guides/data-compression
+   /guides/cursors
+   /guides/bulk
+   /guides/aggregate
+   /guides/distinct-mapreduce
+   /guides/visual-studio-guide
+   /guides/manage-collection-indexes
+   /guides/debugging
+   /guides/in-use-encryption

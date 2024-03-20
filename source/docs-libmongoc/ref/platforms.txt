@@ -1,14 +1,14 @@
 #################################
-|mongo-c-driver| Platform Support
+mongo-c-driver Platform Support
 #################################
 
 This page documents information about the target platforms and toolchains that
-are supported by the |mongo-c-driver| libraries.
+are supported by the ``mongo-c-driver`` libraries.
 
 Operating Systems
 *****************
 
-The following operating systems are continually tested with |mongo-c-driver|:
+The following operating systems are continually tested with ``mongo-c-driver``:
 
 .. list-table::
   :header-rows: 1
@@ -38,7 +38,7 @@ The following operating systems are continually tested with |mongo-c-driver|:
 Compilers
 *********
 
-The following compilers are continually tested for |mongo-c-driver|:
+The following compilers are continually tested for ``mongo-c-driver``:
 
 .. list-table::
   :header-rows: 1
@@ -61,7 +61,7 @@ The following compilers are continually tested for |mongo-c-driver|:
 Architectures
 *************
 
-The following CPU architectures are continually tested for |mongo-c-driver|:
+The following CPU architectures are continually tested for ``mongo-c-driver``:
 
 .. list-table::
   :align: left

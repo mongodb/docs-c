@@ -59,12 +59,12 @@ all fields of a BSON document recursively and generate a UTF-8 encoded JSON stri
    bson_t *b;
    char *json;
 
-  if ((b = bson_new_from_data (my_data, my_data_len))) {
-      if ((json = bson_as_canonical_extended_json (b, NULL))) {
-         printf ("%s\n", json);
-         bson_free (json);
-      }
-      bson_destroy (b);
+   if ((b = bson_new_from_data (my_data, my_data_len))) {
+       if ((json = bson_as_canonical_extended_json (b, NULL))) {
+          printf ("%s\n", json);
+          bson_free (json);
+       }
+       bson_destroy (b);
    }
 
 Recursing into Sub-Documents

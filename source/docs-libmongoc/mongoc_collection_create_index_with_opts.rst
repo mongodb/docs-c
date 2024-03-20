@@ -28,10 +28,10 @@ Parameters
 * ``collection``: A :symbol:`mongoc_collection_t`.
 * ``keys``: A :symbol:`bson:bson_t`.
 * ``index_opts``: A mongoc_index_opt_t.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/create-index-opts.txt
 

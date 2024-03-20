@@ -42,7 +42,7 @@ Parameters
 * ``read_prefs``: An optional :symbol:`mongoc_read_prefs_t`, otherwise uses the collection's read preference.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/read-opts.txt
 

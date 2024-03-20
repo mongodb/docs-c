@@ -30,7 +30,7 @@ Query on ``collection``, passing arbitrary query options to the server in ``opts
 
 To target a specific server, include an integer "serverId" field in ``opts`` with an id obtained first by calling :symbol:`mongoc_client_select_server`, then :symbol:`mongoc_server_description_id` on its return value.
 
-.. |opts-source| replace:: ``collection``
+.. ``opts-source`` replace:: ``collection``
 
 .. include:: includes/read-opts-sources.txt
 

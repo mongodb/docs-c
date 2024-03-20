@@ -23,7 +23,7 @@ Parameters
 * ``opts``: A :symbol:`bson:bson_t` containing options for the command, or ``NULL``.
 * ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL``.
 
-.. |opts-source| replace:: ``database``
+.. ``opts-source`` replace:: ``database``
 
 .. include:: includes/aggregate-opts.txt
 

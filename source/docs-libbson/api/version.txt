@@ -47,9 +47,9 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   bson_check_version
-   bson_get_major_version
-   bson_get_micro_version
-   bson_get_minor_version
-   bson_get_version
+   /version/bson_check_version
+   /version/bson_get_major_version
+   /version/bson_get_micro_version
+   /version/bson_get_minor_version
+   /version/bson_get_version
 

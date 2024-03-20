@@ -7,8 +7,8 @@ Building the C Driver Libraries from Source
 .. highlight:: shell-session
 .. default-role:: bash
 
-This page details how to download, unpack, configure, and build |libbson| and
-|libmongoc| from their original source-code form.
+This page details how to download, unpack, configure, and build ``libbson`` and
+``libmongoc`` from their original source-code form.
 
 .. ad-dropdown:: Extra information
   :admonition: hint
@@ -33,7 +33,7 @@ the value into that step.
 Choose a Version
 ****************
 
-Before we begin, know what version of |mongo-c-driver| you will be downloading.
+Before we begin, know what version of ``mongo-c-driver`` you will be downloading.
 A list of available versions can be found on
 `the GitHub repository tags page`__. (The current version written for this
 documentation is |version.pre|.)
@@ -41,7 +41,7 @@ documentation is |version.pre|.)
 __ https://github.com/mongodb/mongo-c-driver/tags
 
 For the remainder of this page, `$VERSION` will refer to the version number of
-|mongo-c-driver| that you will be building for this tutorial.
+``mongo-c-driver`` that you will be building for this tutorial.
 
 
 .. _get-src:
@@ -49,7 +49,7 @@ For the remainder of this page, `$VERSION` will refer to the version number of
 Obtaining the Source
 ********************
 
-There are two primary recommended methods of obtaining the |mongo-c-driver|
+There are two primary recommended methods of obtaining the ``mongo-c-driver``
 source code:
 
 1. Clone the repository using `git` (recommended).
@@ -139,7 +139,7 @@ Obtaining Prerequisites
 
 In order to build the project, a few prerequisites need to be available.
 
-Both |libmongoc| and |libbson| projects use CMake__ for build configuration.
+Both ``libmongoc`` and ``libbson`` projects use CMake__ for build configuration.
 
 __ https://cmake.org
 
@@ -185,7 +185,7 @@ the command line::
 
 .. note::
 
-  If you intend to build |libbson| *only*, then CMake is sufficient for the
+  If you intend to build ``libbson`` *only*, then CMake is sufficient for the
   build. Additional C driver features may require additional external
   dependencies be installed, but we will not worry about them here.
 
@@ -207,8 +207,8 @@ the command line::
 
 .. _learn.get.configure:
 
-Configuring for |libbson|
-*************************
+Configuring for libbson
+***********************
 
 .. important::
 
@@ -219,9 +219,9 @@ Configuring for |libbson|
 Let the name `$BUILD` be the path `$SOURCE/_build`. This will be the directory
 where our built files will be written by CMake.
 
-With the source directory for |mongo-c-driver| at `$SOURCE` and build directory
+With the source directory for ``mongo-c-driver`` at `$SOURCE` and build directory
 `$BUILD`, the following command can be executed from a command-line to configure
-the project with both |libbson| and |libmongoc|::
+the project with both ``libbson`` and ``libmongoc``::
 
   $ cmake -S $SOURCE -B $BUILD \
     -D ENABLE_EXTRA_ALIGNMENT=OFF \
@@ -250,11 +250,11 @@ messages and information. Ensure that configuration succeeds before proceeding.
   driver that was downloaded in :ref:`get-src`.
 
   The `ENABLE_EXTRA_ALIGNMENT` and `ENABLE_AUTOMATIC_INIT_AND_CLEANUP` are part
-  of |mongo-c-driver|, and correspond to deprecated features that are only
+  of ``mongo-c-driver``, and correspond to deprecated features that are only
   enabled by default for ABI compatibility purposes. It is highly recommended to
   disable these features whenever possible.
 
-  The `ENABLE_MONGOC=OFF` argument disabled building |libmongoc|. We'll build
+  The `ENABLE_MONGOC=OFF` argument disabled building ``libmongoc``. We'll build
   that in the next section.
 
   The |cmvar:CMAKE_BUILD_TYPE| setting tells CMake what variant of code will be
@@ -296,12 +296,12 @@ more information.
 Installing the Built Results
 ****************************
 
-Let `$PREFIX` be the path `$SOURCE/_install`. We can use CMake to install the
+Let ``$PREFIX`` be the path `$SOURCE/_install`. We can use CMake to install the
 built results::
 
   $ cmake --install "$BUILD" --prefix "$PREFIX" --config RelWithDebInfo
 
-This command will install the |mongo-c-driver| build results into the `$PREFIX`
+This command will install the ``mongo-c-driver`` build results into the ``$PREFIX``
 directory.
 
 .. ad-dropdown:: The ``--config`` option
@@ -315,26 +315,26 @@ directory.
 
 .. seealso::
 
-   The above snippet simply installs |mongo-c-driver| in a subdirectory of the
+   The above snippet simply installs ``mongo-c-driver`` in a subdirectory of the
    source directory itself, but this is not a normal workflow. Once you feel
-   compfortable about configuring and building |mongo-c-driver|, the page
+   compfortable about configuring and building ``mongo-c-driver``, the page
    :doc:`/howto/source-install` will do a deeper dive on from-source
    installation options.
 
 
-Configuring with |libmongoc|
-****************************
+Configuring with libmongoc
+**************************
 
 If you followed the above steps starting from :ref:`learn.get.configure`, your
-final result with only contain |libbson| and not the full C database driver
-library. Building of |libmongoc| is enabled/disabled using the `ENABLE_MONGOC`
+final result with only contain ``libbson`` and not the full C database driver
+library. Building of ``libmongoc`` is enabled/disabled using the `ENABLE_MONGOC`
 CMake variable. Re-run CMake again, but set `ENABLE_MONGOC` to `TRUE`::
 
   $ cmake -D ENABLE_MONGOC=ON $BUILD
 
 If the above command succeeds, then the project has been reconfigured to build
-with |libmongoc|. Follow the process at :ref:`learn.get.build` and
-:ref:`learn.get.install` again to build and install |libmongoc|.
+with ``libmongoc``. Follow the process at :ref:`learn.get.build` and
+:ref:`learn.get.install` again to build and install ``libmongoc``.
 
 .. TODO:
 

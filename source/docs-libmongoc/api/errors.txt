@@ -2,6 +2,7 @@
 
 « :doc:`index`
 
+===============
 Error Reporting
 ===============
 

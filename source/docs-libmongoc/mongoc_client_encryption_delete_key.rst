@@ -22,7 +22,7 @@ Parameters
 
 * ``client_encryption``: A :symbol:`mongoc_client_encryption_t`.
 * ``keyid``: The UUID (BSON binary subtype 0x04) of the key to delete.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: Optional. :symbol:`bson_error_t`.
 
 Returns

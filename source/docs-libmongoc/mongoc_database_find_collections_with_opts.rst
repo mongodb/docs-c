@@ -25,7 +25,7 @@ Parameters
 * ``database``: A :symbol:`mongoc_database_t`.
 * ``opts``: A :symbol:`bson:bson_t` containing additional options.
 
-.. |opts-source| replace:: ``database``
+.. ``opts-source`` replace:: ``database``
 
 .. include:: includes/generic-opts.txt
 
