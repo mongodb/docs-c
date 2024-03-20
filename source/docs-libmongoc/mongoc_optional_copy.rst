@@ -16,5 +16,5 @@ Creates a deep copy of ``source`` into ``copy``.
 Parameters
 ----------
 
-* ``source``: A :symbol:`mongoc_optional_t`.
-* ``copy``: An empty :symbol:`mongoc_optional_t`. Values will be overwritten.
+* ``source``: A :ref:`mongoc_optional_t`.
+* ``copy``: An empty :ref:`mongoc_optional_t`. Values will be overwritten.

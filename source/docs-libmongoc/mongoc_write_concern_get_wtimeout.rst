@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :symbol:`mongoc_write_concern_t`.
+* ``write_concern``: A :ref:`mongoc_write_concern_t`.
 
 Description
 -----------
@@ -30,5 +30,5 @@ Returns an 32-bit signed integer containing the timeout.
 
 .. seealso::
 
-  | :symbol:`mongoc_write_concern_set_wtimeout` and :symbol:`mongoc_write_concern_get_wtimeout_int64`.
+  | :ref:`mongoc_write_concern_set_wtimeout` and :ref:`mongoc_write_concern_get_wtimeout_int64`.
 

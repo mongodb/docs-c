@@ -20,8 +20,8 @@ Receive an event notification whenever the driver starts a MongoDB operation.
 Parameters
 ----------
 
-* ``callbacks``: A :symbol:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :symbol:`mongoc_apm_command_started_t` whenever the driver begins a MongoDB operation.
+* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+* ``cb``: A function to call with a :ref:`mongoc_apm_command_started_t` whenever the driver begins a MongoDB operation.
 
 .. seealso::
 

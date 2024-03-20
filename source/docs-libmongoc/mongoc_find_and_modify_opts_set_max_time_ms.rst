@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_find_and_modify_opts_t`.
+* ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
 * ``max_time_ms``: The maximum server-side execution time permitted, in milliseconds, or 0 to specify no maximum time (the default setting).
 
 Description
@@ -28,7 +28,7 @@ Returns
 
 Returns ``true`` if it successfully added the option to the builder, otherwise ``false`` and logs an error.
 
-Note: although ``max_time_ms`` is a uint32_t, it is possible to set it as a uint64_t through the options arguments in some cursor returning functions like :symbol:`mongoc_collection_find_with_opts()`.
+Note: although ``max_time_ms`` is a uint32_t, it is possible to set it as a uint64_t through the options arguments in some cursor returning functions like :ref:`mongoc_collection_find_with_opts()`.
 
 Setting maxTimeMS
 -----------------

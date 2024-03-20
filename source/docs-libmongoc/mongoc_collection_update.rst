@@ -19,17 +19,17 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``flags``: A bitwise or of :symbol:`mongoc_update_flags_t`.
-* ``selector``: A :symbol:`bson:bson_t` containing the query to match documents for updating.
-* ``update``: A :symbol:`bson:bson_t` containing the update to perform. If updating with a pipeline, a :symbol:`bson:bson_t` array.
-* ``write_concern``: A :symbol:`mongoc_write_concern_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``flags``: A bitwise or of :ref:`mongoc_update_flags_t`.
+* ``selector``: A :ref:`bson:bson_t` containing the query to match documents for updating.
+* ``update``: A :ref:`bson:bson_t` containing the update to perform. If updating with a pipeline, a :ref:`bson:bson_t` array.
+* ``write_concern``: A :ref:`mongoc_write_concern_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------
 
-Superseded by :symbol:`mongoc_collection_update_one`, :symbol:`mongoc_collection_update_many`, and :symbol:`mongoc_collection_replace_one`.
+Superseded by :ref:`mongoc_collection_update_one`, :ref:`mongoc_collection_update_many`, and :ref:`mongoc_collection_replace_one`.
 
 This function shall update documents in ``collection`` that match ``selector``.
 

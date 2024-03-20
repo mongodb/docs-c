@@ -14,15 +14,15 @@ Synopsis
                                            bson_error_t *error);
 
 
-Start a multi-document transaction for all following operations in this session. Any options provided in ``opts`` override options passed to :symbol:`mongoc_session_opts_set_default_transaction_opts`, and options inherited from the :symbol:`mongoc_client_t`. The ``opts`` argument is copied and can be freed after calling this function.
+Start a multi-document transaction for all following operations in this session. Any options provided in ``opts`` override options passed to :ref:`mongoc_session_opts_set_default_transaction_opts`, and options inherited from the :ref:`mongoc_client_t`. The ``opts`` argument is copied and can be freed after calling this function.
 
-The transaction must be completed with :symbol:`mongoc_client_session_commit_transaction` or :symbol:`mongoc_client_session_abort_transaction`. An in-progress transaction is automatically aborted by :symbol:`mongoc_client_session_destroy`.
+The transaction must be completed with :ref:`mongoc_client_session_commit_transaction` or :ref:`mongoc_client_session_abort_transaction`. An in-progress transaction is automatically aborted by :ref:`mongoc_client_session_destroy`.
 
 Parameters
 ----------
 
-* ``session``: A :symbol:`mongoc_client_session_t`.
-* ``opts``: A :symbol:`mongoc_transaction_opt_t` or ``NULL``.
+* ``session``: A :ref:`mongoc_client_session_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t` or ``NULL``.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Return

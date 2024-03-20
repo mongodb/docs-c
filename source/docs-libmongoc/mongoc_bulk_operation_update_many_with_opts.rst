@@ -15,7 +15,7 @@ Synopsis
                                                const bson_t *opts,
                                                bson_error_t *error); /* OUT */
 
-This function queues an update as part of a bulk operation. This does not execute the operation. To execute the entirety of the bulk operation call :symbol:`mongoc_bulk_operation_execute()`.
+This function queues an update as part of a bulk operation. This does not execute the operation. To execute the entirety of the bulk operation call :ref:`mongoc_bulk_operation_execute()`.
 
 .. warning::
 
@@ -24,17 +24,17 @@ This function queues an update as part of a bulk operation. This does not execut
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``selector``: A :symbol:`bson:bson_t` that selects which documents to remove.
-* ``document``: A :symbol:`bson:bson_t` containing the update document.
-* ``error``: A :symbol:`bson:bson_error_t` any errors that may have occurred.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson:bson_t` that selects which documents to remove.
+* ``document``: A :ref:`bson:bson_t` containing the update document.
+* ``error``: A :ref:`bson:bson_error_t` any errors that may have occurred.
 
 .. include:: includes/bulk-update-many-opts.txt
 
 Errors
 ------
 
-Operation errors are propagated via :symbol:`mongoc_bulk_operation_execute()`, while argument validation errors are reported by the ``error`` argument.
+Operation errors are propagated via :ref:`mongoc_bulk_operation_execute()`, while argument validation errors are reported by the ``error`` argument.
 
 Returns
 -------
@@ -43,5 +43,5 @@ Returns true on success, and false if there is a server or network error or if p
 
 .. seealso::
 
-  | :symbol:`mongoc_bulk_operation_update_one_with_opts()`
+  | :ref:`mongoc_bulk_operation_update_one_with_opts()`
 

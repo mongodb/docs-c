@@ -11,7 +11,7 @@ Synopsis
   typedef struct _mongoc_client_encryption_encrypt_opts_t mongoc_client_encryption_encrypt_opts_t;
 
 
-Used to set options for :symbol:`mongoc_client_encryption_encrypt()`.
+Used to set options for :ref:`mongoc_client_encryption_encrypt()`.
 
 Functions
   ---------
@@ -31,5 +31,5 @@ Functions
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_encrypt()`
+  | :ref:`mongoc_client_encryption_encrypt()`
 

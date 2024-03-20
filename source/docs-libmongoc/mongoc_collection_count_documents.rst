@@ -19,10 +19,10 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``filter``: A :symbol:`bson:bson_t` containing the filter.
-* ``opts``: A :symbol:`bson:bson_t`, ``NULL`` to ignore.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``filter``: A :ref:`bson:bson_t` containing the filter.
+* ``opts``: A :ref:`bson:bson_t`, ``NULL`` to ignore.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -35,7 +35,7 @@ Other options are included in the sent ``aggregate`` command. For a list of all 
 Description
 -----------
 
-This functions executes a count query on ``collection``. In contrast with :symbol:`mongoc_collection_estimated_document_count()`, the count returned is guaranteed to be accurate.
+This functions executes a count query on ``collection``. In contrast with :ref:`mongoc_collection_estimated_document_count()`, the count returned is guaranteed to be accurate.
 
 .. include:: includes/retryable-read.txt
 
@@ -81,7 +81,7 @@ Example
 Migrating from deprecated count functions
 -----------------------------------------
 
-When migrating to :symbol:`mongoc_collection_count_documents` from the deprecated :symbol:`mongoc_collection_count` or :symbol:`mongoc_collection_count_with_opts`, the following query operators in the filter must be replaced:
+When migrating to :ref:`mongoc_collection_count_documents` from the deprecated :ref:`mongoc_collection_count` or :ref:`mongoc_collection_count_with_opts`, the following query operators in the filter must be replaced:
 
 +-------------+-------------------------------------+
 | Operator    | Replacement                         |
@@ -102,5 +102,5 @@ $expr requires MongoDB 3.6+
 
 .. seealso::
 
-  | :symbol:`mongoc_collection_estimated_document_count()`
+  | :ref:`mongoc_collection_estimated_document_count()`
 

@@ -19,10 +19,10 @@ Get a key document in the key vault collection that has the given ``keyid``.
 Parameters
 ----------
 
-* ``client_encryption``: A :symbol:`mongoc_client_encryption_t`.
+* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
 * ``keyid``: The UUID (BSON binary subtype 0x04) of the key to get.
-* ``key_doc``: Optional. An uninitialized :symbol:`bson_t` set to the resulting key document, or an empty document value if the key does not exist. Must be freed by :symbol:`bson_destroy`.
-* ``error``: Optional. :symbol:`bson_error_t`.
+* ``key_doc``: Optional. An uninitialized :ref:`bson_t` set to the resulting key document, or an empty document value if the key does not exist. Must be freed by :ref:`bson_destroy`.
+* ``error``: Optional. :ref:`bson_error_t`.
 
 Returns
 -------
@@ -31,4 +31,4 @@ Returns ``true`` if successful. Returns ``false`` and sets ``error`` otherwise.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_t`
+  | :ref:`mongoc_client_encryption_t`

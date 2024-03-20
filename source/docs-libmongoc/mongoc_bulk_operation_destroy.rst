@@ -11,10 +11,10 @@ Synopsis
   void
   mongoc_bulk_operation_destroy (mongoc_bulk_operation_t *bulk);
 
-Destroys a :symbol:`mongoc_bulk_operation_t` and frees the structure. Does nothing if ``bulk`` is NULL.
+Destroys a :ref:`mongoc_bulk_operation_t` and frees the structure. Does nothing if ``bulk`` is NULL.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 

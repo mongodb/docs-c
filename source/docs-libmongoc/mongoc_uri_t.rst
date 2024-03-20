@@ -94,7 +94,7 @@ MONGOC_URI_RETRYREADS                      retryreads                        tru
 MONGOC_URI_RETRYWRITES                     retrywrites                       true if driver built w/ TLS       If "true" and the server is a MongoDB 3.6+ replica set or sharded cluster, the driver safely retries a write that failed due to a network error or replica set failover. Only inserts, updates of single documents, or deletes of single
                                                                                                                documents are retried.
 MONGOC_URI_APPNAME                         appname                           Empty (no appname)                The client application name. This value is used by MongoDB when it logs connection information and profile information, such as slow queries.
-MONGOC_URI_TLS                             tls                               Empty (not set, same as false)    {true|false}, indicating if TLS must be used. (See also :symbol:`mongoc_client_set_ssl_opts` and :symbol:`mongoc_client_pool_set_ssl_opts`.)
+MONGOC_URI_TLS                             tls                               Empty (not set, same as false)    {true|false}, indicating if TLS must be used. (See also :ref:`mongoc_client_set_ssl_opts` and :ref:`mongoc_client_pool_set_ssl_opts`.)
 MONGOC_URI_COMPRESSORS                     compressors                       Empty (no compressors)            Comma separated list of compressors, if any, to use to compress the wire protocol messages. Snappy, zlib, and zstd are optional build time dependencies, and enable the "snappy", "zlib", and "zstd" values respectively.
 MONGOC_URI_CONNECTTIMEOUTMS                connecttimeoutms                  10,000 ms (10 seconds)            This setting applies to new server connections. It is also used as the socket timeout for server discovery and monitoring operations.
 MONGOC_URI_SOCKETTIMEOUTMS                 sockettimeoutms                   300,000 ms (5 minutes)            The time in milliseconds to attempt to send or receive on a socket before the attempt times out.
@@ -164,7 +164,7 @@ MONGOC_URI_SSLALLOWINVALIDHOSTNAMES        sslallowinvalidhostnames          MON
 Server Discovery, Monitoring, and Selection Options
 ---------------------------------------------------
 
-Clients in a :symbol:`mongoc_client_pool_t` share a topology scanner that runs on a background thread. The thread wakes every ``heartbeatFrequencyMS`` (default 10 seconds) to scan all MongoDB servers in parallel. Whenever an application operation requires a server that is not known--for example, if there is no known primary and your application attempts an insert--the thread rescans all servers every half-second. In this situation the pooled client waits up to ``serverSelectionTimeoutMS`` (default 30 seconds) for the thread to find a server suitable for the operation, then returns an error with domain ``MONGOC_ERROR_SERVER_SELECTION``.
+Clients in a :ref:`mongoc_client_pool_t` share a topology scanner that runs on a background thread. The thread wakes every ``heartbeatFrequencyMS`` (default 10 seconds) to scan all MongoDB servers in parallel. Whenever an application operation requires a server that is not known--for example, if there is no known primary and your application attempts an insert--the thread rescans all servers every half-second. In this situation the pooled client waits up to ``serverSelectionTimeoutMS`` (default 30 seconds) for the thread to find a server suitable for the operation, then returns an error with domain ``MONGOC_ERROR_SERVER_SELECTION``.
 
 Technically, the total time an operation may wait while a pooled client scans the topology is controlled both by ``serverSelectionTimeoutMS`` and ``connectTimeoutMS``. The longest wait occurs if the last scan begins just at the end of the selection timeout, and a slow or down server requires the full connection timeout before the client gives up.
 
@@ -191,12 +191,12 @@ Setting any of the \*TimeoutMS options above to ``0`` will be interpreted as "us
 Connection Pool Options
 -----------------------
 
-These options govern the behavior of a :symbol:`mongoc_client_pool_t`. They are ignored by a non-pooled :symbol:`mongoc_client_t`.
+These options govern the behavior of a :ref:`mongoc_client_pool_t`. They are ignored by a non-pooled :ref:`mongoc_client_t`.
 
 ========================================== ================================= =========================================================================================================================================================================================================================
 Constant                                   Key                               Description
 ========================================== ================================= =========================================================================================================================================================================================================================
-MONGOC_URI_MAXPOOLSIZE                     maxpoolsize                       The maximum number of clients created by a :symbol:`mongoc_client_pool_t` total (both in the pool and checked out). The default value is 100. Once it is reached, :symbol:`mongoc_client_pool_pop` blocks until another thread pushes a client.
+MONGOC_URI_MAXPOOLSIZE                     maxpoolsize                       The maximum number of clients created by a :ref:`mongoc_client_pool_t` total (both in the pool and checked out). The default value is 100. Once it is reached, :ref:`mongoc_client_pool_pop` blocks until another thread pushes a client.
 MONGOC_URI_MINPOOLSIZE                     minpoolsize                       Deprecated. This option's behavior does not match its name, and its actual behavior will likely hurt performance.
 MONGOC_URI_MAXIDLETIMEMS                   maxidletimems                     Not implemented.
 MONGOC_URI_WAITQUEUEMULTIPLE               waitqueuemultiple                 Not implemented.

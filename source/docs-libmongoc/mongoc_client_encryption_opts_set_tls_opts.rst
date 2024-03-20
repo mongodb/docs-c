@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_client_encryption_opts_t`
-* ``tls_opts``: A :symbol:`bson_t` mapping a Key Management Service (KMS) provider to a BSON document with TLS options.
+* ``opts``: The :ref:`mongoc_client_encryption_opts_t`
+* ``tls_opts``: A :ref:`bson_t` mapping a Key Management Service (KMS) provider to a BSON document with TLS options.
 
 ``tls_opts`` is a BSON document of the following form:
 

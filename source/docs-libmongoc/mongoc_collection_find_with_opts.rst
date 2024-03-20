@@ -18,17 +18,17 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``filter``: A :symbol:`bson:bson_t` containing the query to execute.
-* ``opts``: A :symbol:`bson:bson_t` query options, including sort order and which fields to return. Can be ``NULL``.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``filter``: A :ref:`bson:bson_t` containing the query to execute.
+* ``opts``: A :ref:`bson:bson_t` query options, including sort order and which fields to return. Can be ``NULL``.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
 
 Description
 -----------
 
 Query on ``collection``, passing arbitrary query options to the server in ``opts``.
 
-To target a specific server, include an integer "serverId" field in ``opts`` with an id obtained first by calling :symbol:`mongoc_client_select_server`, then :symbol:`mongoc_server_description_id` on its return value.
+To target a specific server, include an integer "serverId" field in ``opts`` with an id obtained first by calling :ref:`mongoc_client_select_server`, then :ref:`mongoc_server_description_id` on its return value.
 
 .. ``opts-source`` replace:: ``collection``
 
@@ -137,9 +137,9 @@ All options are documented in the reference page for `the "find" command`_ in th
 "maxAwaitTimeMS" is the maximum amount of time for the server to wait on new documents to satisfy a query, if "tailable" and "awaitData" are both true.
 If no new documents are found, the tailable cursor receives an empty batch. The "maxAwaitTimeMS" option is ignored for MongoDB older than 3.4.
 
-To add a "sessionId", construct a :symbol:`mongoc_client_session_t` with :symbol:`mongoc_client_start_session`. You can begin a transaction with :symbol:`mongoc_client_session_start_transaction`, optionally with a :symbol:`mongoc_transaction_opt_t` that overrides the options inherited from ``collection``. Then use :symbol:`mongoc_client_session_append` to add the session to ``opts``. See the example code for :symbol:`mongoc_client_session_t`.
+To add a "sessionId", construct a :ref:`mongoc_client_session_t` with :ref:`mongoc_client_start_session`. You can begin a transaction with :ref:`mongoc_client_session_start_transaction`, optionally with a :ref:`mongoc_transaction_opt_t` that overrides the options inherited from ``collection``. Then use :ref:`mongoc_client_session_append` to add the session to ``opts``. See the example code for :ref:`mongoc_client_session_t`.
 
-To add a "readConcern", construct a :symbol:`mongoc_read_concern_t` with :symbol:`mongoc_read_concern_new` and configure it with :symbol:`mongoc_read_concern_set_level`. Then use :symbol:`mongoc_read_concern_append` to add the read concern to ``opts``.
+To add a "readConcern", construct a :ref:`mongoc_read_concern_t` with :ref:`mongoc_read_concern_new` and configure it with :ref:`mongoc_read_concern_set_level`. Then use :ref:`mongoc_read_concern_append` to add the read concern to ``opts``.
 
 "exhaust" requests the construction of an exhaust cursor.
 

@@ -16,10 +16,10 @@ Retrieves the default read preferences configured for the client instance. The r
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 
 Returns
 -------
 
-A :symbol:`mongoc_read_prefs_t`.
+A :ref:`mongoc_read_prefs_t`.
 

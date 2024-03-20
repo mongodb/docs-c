@@ -8,7 +8,7 @@ A read preference abstraction
 Synopsis
 --------
 
-:symbol:`mongoc_read_prefs_t` provides an abstraction on top of the MongoDB connection read preferences. It allows for hinting to the driver which nodes in a replica set should be accessed first and how.
+:ref:`mongoc_read_prefs_t` provides an abstraction on top of the MongoDB connection read preferences. It allows for hinting to the driver which nodes in a replica set should be accessed first and how.
 
 You can specify a read preference mode on connection objects, database objects, collection objects, or per-operation.  Generally, it makes the most sense to stick with the global default mode, ``MONGOC_READ_PRIMARY``.  All of the other modes come with caveats that won't be covered in great detail here.
 
@@ -54,7 +54,7 @@ Note the empty value for the last one, which means "match any secondary as a las
 
 Order matters when using multiple readPreferenceTags.
 
-Tag Sets can also be configured using :symbol:`mongoc_read_prefs_set_tags`.
+Tag Sets can also be configured using :ref:`mongoc_read_prefs_set_tags`.
 
 All interfaces use the same member selection logic to choose the member to which to direct read operations, basing the choice on read preference mode and tag sets.
 
@@ -72,7 +72,7 @@ Hedged Reads
 
 When connecting to a sharded cluster running MongoDB 4.4 or later, reads can be sent in parallel to the two "best" hosts.  Once one result returns, any other outstanding operations that were part of the hedged read are cancelled.
 
-When the read preference mode is ``MONGOC_READ_NEAREST`` and the sharded cluster is running MongoDB 4.4 or later, hedged reads are enabled by default.  Additionally, hedged reads may be explicitly enabled or disabled by calling :symbol:`mongoc_read_prefs_set_hedge` with a BSON document, e.g.
+When the read preference mode is ``MONGOC_READ_NEAREST`` and the sharded cluster is running MongoDB 4.4 or later, hedged reads are enabled by default.  Additionally, hedged reads may be explicitly enabled or disabled by calling :ref:`mongoc_read_prefs_set_hedge` with a BSON document, e.g.
 
 .. code-block:: none
 

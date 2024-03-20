@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 
 Description
 -----------
@@ -24,5 +24,5 @@ Fetches any read preference hedge document that has been registered.
 Returns
 -------
 
-Returns a :symbol:`bson:bson_t` that should not be modified or freed.
+Returns a :ref:`bson:bson_t` that should not be modified or freed.
 

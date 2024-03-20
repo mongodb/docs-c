@@ -17,9 +17,9 @@ Creates a deep copy of ``api``.
 Parameters
 ----------
 
-* ``api``: A :symbol:`mongoc_server_api_t`.
+* ``api``: A :ref:`mongoc_server_api_t`.
 
 Returns
 -------
 
-Returns a newly allocated copy of ``api`` that must be freed with :symbol:`mongoc_server_api_destroy()` when no longer in use.
+Returns a newly allocated copy of ``api`` that must be freed with :ref:`mongoc_server_api_destroy()` when no longer in use.

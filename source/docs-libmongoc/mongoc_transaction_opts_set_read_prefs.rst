@@ -17,7 +17,7 @@ Configure the transaction's read preference. The argument is copied into the str
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 
 .. include:: includes/seealso/session.txt

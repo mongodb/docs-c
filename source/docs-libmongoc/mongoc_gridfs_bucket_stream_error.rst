@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_t` created by :symbol:`mongoc_gridfs_bucket_open_upload_stream`, :symbol:`mongoc_gridfs_bucket_open_upload_stream_with_id`, or :symbol:`mongoc_gridfs_bucket_open_download_stream`.
-* ``error``: A :symbol:`bson_error_t` to receive the possible error.
+* ``stream``: A :ref:`mongoc_stream_t` created by :ref:`mongoc_gridfs_bucket_open_upload_stream`, :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id`, or :ref:`mongoc_gridfs_bucket_open_download_stream`.
+* ``error``: A :ref:`bson_error_t` to receive the possible error.
 
 Description
 -----------
@@ -30,9 +30,9 @@ True if an error occurred on the stream and sets ``error``. False otherwise.
 
 .. seealso::
 
-  | :symbol:`mongoc_gridfs_bucket_open_upload_stream`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream`
 
-  | :symbol:`mongoc_gridfs_bucket_open_upload_stream_with_id()`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id()`
 
-  | :symbol:`mongoc_gridfs_bucket_open_download_stream`
+  | :ref:`mongoc_gridfs_bucket_open_download_stream`
 

@@ -15,4 +15,4 @@ Synopsis
 Returns
 -------
 
-A new :symbol:`mongoc_client_encryption_rewrap_many_datakey_result_t` that must be freed with :symbol:`mongoc_client_encryption_rewrap_many_datakey_result_destroy()`.
+A new :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t` that must be freed with :ref:`mongoc_client_encryption_rewrap_many_datakey_result_destroy()`.

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
-* ``tag``: A :symbol:`bson:bson_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
+* ``tag``: A :ref:`bson:bson_t`.
 
 Description
 -----------

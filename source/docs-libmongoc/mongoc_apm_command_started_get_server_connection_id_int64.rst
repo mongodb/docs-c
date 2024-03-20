@@ -13,14 +13,14 @@ Synopsis
     const mongoc_apm_command_started_t *event);
 
 Returns the server connection ID for the command. The server connection ID is
-distinct from the server ID (:symbol:`mongoc_apm_command_started_get_server_id`)
+distinct from the server ID (:ref:`mongoc_apm_command_started_get_server_id`)
 and is returned by the hello or legacy hello response as "connectionId" from the
 server on 4.2+.
 
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_command_started_t`.
+* ``event``: A :ref:`mongoc_apm_command_started_t`.
 
 Returns
 -------

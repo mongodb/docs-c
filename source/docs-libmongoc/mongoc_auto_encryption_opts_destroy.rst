@@ -11,16 +11,16 @@ Synopsis
    void
    mongoc_auto_encryption_opts_destroy (mongoc_auto_encryption_opts_t *opts);
 
-Destroy a :symbol:`mongoc_auto_encryption_opts_t`.
+Destroy a :ref:`mongoc_auto_encryption_opts_t`.
 
 Parameters
 ----------
 
-* ``opts`` The :symbol:`mongoc_auto_encryption_opts_t` to destroy.
+* ``opts`` The :ref:`mongoc_auto_encryption_opts_t` to destroy.
 
 .. seealso::
 
-  | :symbol:`mongoc_auto_encryption_opts_new()`
+  | :ref:`mongoc_auto_encryption_opts_new()`
 
   | :doc:`in-use-encryption`
 

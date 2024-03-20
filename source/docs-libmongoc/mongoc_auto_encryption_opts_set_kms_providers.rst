@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``kms_providers``: A :symbol:`bson_t` containing configuration for an external Key Management Service (KMS).
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``kms_providers``: A :ref:`bson_t` containing configuration for an external Key Management Service (KMS).
 
 ``kms_providers`` is a BSON document containing configuration for each KMS provider.
 
@@ -86,7 +86,7 @@ KMS providers may include an optional name suffix separate with a colon. This en
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

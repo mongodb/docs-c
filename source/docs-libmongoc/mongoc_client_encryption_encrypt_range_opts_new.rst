@@ -11,15 +11,15 @@ Synopsis
   mongoc_client_encryption_encrypt_range_opts_t *
   mongoc_client_encryption_encrypt_range_opts_new (void);
 
-.. important:: The |qenc:range-is-experimental| |qenc:api-is-experimental|
+.. important:: The {+range-is-experimental+} {+api-is-experimental+}
 .. versionadded:: 1.24.0
 
 Returns
 -------
 
-A new :symbol:`mongoc_client_encryption_encrypt_range_opts_t` that must be freed with :symbol:`mongoc_client_encryption_encrypt_range_opts_destroy()`.
+A new :ref:`mongoc_client_encryption_encrypt_range_opts_t` that must be freed with :ref:`mongoc_client_encryption_encrypt_range_opts_destroy()`.
 
 
 .. seealso::
-    | :symbol:`mongoc_client_encryption_encrypt_range_opts_t`
-    | :symbol:`mongoc_client_encryption_encrypt_range_opts_destroy`
+    | :ref:`mongoc_client_encryption_encrypt_range_opts_t`
+    | :ref:`mongoc_client_encryption_encrypt_range_opts_destroy`

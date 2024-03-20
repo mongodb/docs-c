@@ -12,22 +12,22 @@ Synopsis
   mongoc_client_encryption_new (mongoc_client_encryption_opts_t *opts,
                                 bson_error_t *error) BSON_GNUC_WARN_UNUSED_RESULT;
 
-Create a new :symbol:`mongoc_client_encryption_t`.
+Create a new :ref:`mongoc_client_encryption_t`.
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_opts_t`.
-* ``error``: A :symbol:`bson_error_t`.
+* ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
+* ``error``: A :ref:`bson_error_t`.
 
 Returns
 -------
 
-A new :symbol:`mongoc_client_encryption_t` that must be freed with :symbol:`mongoc_client_encryption_destroy()` if successful. Returns ``NULL`` and sets ``error`` otherwise.
+A new :ref:`mongoc_client_encryption_t` that must be freed with :ref:`mongoc_client_encryption_destroy()` if successful. Returns ``NULL`` and sets ``error`` otherwise.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_t`
+  | :ref:`mongoc_client_encryption_t`
 
-  | :symbol:`mongoc_client_encryption_opts_t`
+  | :ref:`mongoc_client_encryption_opts_t`
 

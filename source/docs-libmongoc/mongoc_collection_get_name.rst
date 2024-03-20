@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
 
 Description
 -----------

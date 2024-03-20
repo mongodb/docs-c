@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t` or ``NULL``.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t` or ``NULL``.
 
 Description
 -----------
 
-Destroys a :symbol:`mongoc_gridfs_bucket_t`. Does nothing if passed ``NULL``.
+Destroys a :ref:`mongoc_gridfs_bucket_t`. Does nothing if passed ``NULL``.

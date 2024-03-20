@@ -15,7 +15,7 @@ Automatic encryption, where sensitive fields in commands are encrypted automatic
 Automatic Client-Side Field Level Encryption
 --------------------------------------------
 
-Automatic encryption is enabled by calling :symbol:`mongoc_client_enable_auto_encryption()` on a :symbol:`mongoc_client_t`. The following examples show how to set up automatic encryption using :symbol:`mongoc_client_encryption_t` to create a new encryption data key.
+Automatic encryption is enabled by calling :ref:`mongoc_client_enable_auto_encryption()` on a :ref:`mongoc_client_t`. The following examples show how to set up automatic encryption using :ref:`mongoc_client_encryption_t` to create a new encryption data key.
 
 .. note::
 
@@ -24,7 +24,7 @@ Automatic encryption is enabled by calling :symbol:`mongoc_client_enable_auto_en
 Providing Local Automatic Encryption Rules
 ``````````````````````````````````````````
 
-The following example shows how to specify automatic encryption rules using a schema map set with :symbol:`mongoc_auto_encryption_opts_set_schema_map()`. The automatic encryption rules are expressed using a strict subset of the JSON Schema syntax.
+The following example shows how to specify automatic encryption rules using a schema map set with :ref:`mongoc_auto_encryption_opts_set_schema_map()`. The automatic encryption rules are expressed using a strict subset of the JSON Schema syntax.
 
 Supplying a schema map provides more security than relying on JSON Schemas obtained from the server. It protects against a malicious server advertising a false JSON Schema, which could trick the client into sending unencrypted data that should be encrypted.
 
@@ -39,7 +39,7 @@ Server-Side Field Level Encryption Enforcement
 
 The MongoDB 4.2 server supports using schema validation to enforce encryption of specific fields in a collection. This schema validation will prevent an application from inserting unencrypted values for any fields marked with the "encrypt" JSON schema keyword.
 
-The following example shows how to set up automatic encryption using :symbol:`mongoc_client_encryption_t` to create a new encryption data key and create a collection with the necessary JSON Schema:
+The following example shows how to set up automatic encryption using :ref:`mongoc_client_encryption_t` to create a new encryption data key and create a collection with the necessary JSON Schema:
 
 .. literalinclude:: ../examples/client-side-encryption-server-schema.c
    :caption: client-side-encryption-server-schema.c
@@ -50,7 +50,7 @@ The following example shows how to set up automatic encryption using :symbol:`mo
 Explicit Encryption
 ```````````````````
 
-Explicit encryption is a MongoDB community feature and does not use :ref:`query_analysis` (``mongocryptd`` or ``crypt_shared``). Explicit encryption is provided by the :symbol:`mongoc_client_encryption_t` class, for example:
+Explicit encryption is a MongoDB community feature and does not use :ref:`query_analysis` (``mongocryptd`` or ``crypt_shared``). Explicit encryption is provided by the :ref:`mongoc_client_encryption_t` class, for example:
 
 .. literalinclude:: ../examples/client-side-encryption-explicit.c
    :caption: client-side-encryption-explicit.c
@@ -59,7 +59,7 @@ Explicit encryption is a MongoDB community feature and does not use :ref:`query_
 Explicit Encryption with Automatic Decryption
 `````````````````````````````````````````````
 
-Although automatic encryption requires MongoDB 4.2 enterprise or a MongoDB 4.2 Atlas cluster, automatic decryption is supported for all users. To configure automatic decryption without automatic encryption set bypass_auto_encryption=True in :symbol:`mongoc_auto_encryption_opts_t`:
+Although automatic encryption requires MongoDB 4.2 enterprise or a MongoDB 4.2 Atlas cluster, automatic decryption is supported for all users. To configure automatic decryption without automatic encryption set bypass_auto_encryption=True in :ref:`mongoc_auto_encryption_opts_t`:
 
 .. literalinclude:: ../examples/client-side-encryption-auto-decryption.c
    :caption: client-side-encryption-auto-decryption.c

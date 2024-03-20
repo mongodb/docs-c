@@ -10,7 +10,7 @@ Synopsis
 
   typedef struct _mongoc_client_encryption_datakey_opts_t mongoc_client_encryption_datakey_opts_t;
 
-Used to set options for :symbol:`mongoc_client_encryption_create_datakey()`.
+Used to set options for :ref:`mongoc_client_encryption_create_datakey()`.
 
 Functions
   ---------
@@ -27,4 +27,4 @@ Functions
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_create_datakey()`
+  | :ref:`mongoc_client_encryption_create_datakey()`

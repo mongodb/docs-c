@@ -17,13 +17,13 @@ Set the database and collection name of the key vault. The key vault is the spec
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_client_encryption_opts_t`
+* ``opts``: The :ref:`mongoc_client_encryption_opts_t`
 * ``db``: The database name of the key vault collection.
 * ``coll``: The collection name of the key vault collection.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_new()`
+  | :ref:`mongoc_client_encryption_new()`
 
   | :doc:`in-use-encryption`
 

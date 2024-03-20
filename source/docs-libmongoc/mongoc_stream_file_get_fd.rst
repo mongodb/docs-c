@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_file_t`.
+* ``stream``: A :ref:`mongoc_stream_file_t`.
 
-This function shall return the underlying file-descriptor of a :symbol:`mongoc_stream_file_t`.
+This function shall return the underlying file-descriptor of a :ref:`mongoc_stream_file_t`.
 
 .. warning::
 

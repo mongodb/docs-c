@@ -16,7 +16,7 @@ Fetches the name of the database.
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
+* ``database``: A :ref:`mongoc_database_t`.
 
 Returns
 -------

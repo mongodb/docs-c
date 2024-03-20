@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
-* ``properties``: A :symbol:`bson:bson_t` .
+* ``uri``: A :ref:`mongoc_uri_t`.
+* ``properties``: A :ref:`bson:bson_t` .
 
 Description
 -----------

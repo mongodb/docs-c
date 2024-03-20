@@ -14,10 +14,10 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :symbol:`mongoc_cursor_t`.
+* ``cursor``: A :ref:`mongoc_cursor_t`.
 
 Description
 -----------
 
-Retrieve the value set with :symbol:`mongoc_cursor_set_max_await_time_ms`.
+Retrieve the value set with :ref:`mongoc_cursor_set_max_await_time_ms`.
 

@@ -17,8 +17,8 @@ Synopsis
 Parameters
 ----------
 
-* ``file``: A :symbol:`mongoc_gridfs_file_t`.
-* ``iov``: An array of :symbol:`mongoc_iovec_t`.
+* ``file``: A :ref:`mongoc_gridfs_file_t`.
+* ``iov``: An array of :ref:`mongoc_iovec_t`.
 * ``iovcnt``: The number of elements in ``iov``.
 * ``timeout_msec``: Unused.
 
@@ -34,4 +34,4 @@ Modifying GridFS files is NOT thread-safe. Only one thread or process can access
 Returns
 -------
 
-Returns the number of bytes written, or -1 on failure. Use :symbol:`mongoc_gridfs_file_error` to retrieve error details.
+Returns the number of bytes written, or -1 on failure. Use :ref:`mongoc_gridfs_file_error` to retrieve error details.

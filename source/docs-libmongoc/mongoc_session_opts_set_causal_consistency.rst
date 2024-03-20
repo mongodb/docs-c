@@ -14,14 +14,14 @@ Synopsis
 
 Configure causal consistency in a session. If true (the default), each operation in the session will be causally ordered after the previous read or write operation. Set to false to disable causal consistency. See `the MongoDB Manual Entry for Causal Consistency <https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency>`_.
 
-Causal consistency and snapshot reads are mutually exclusive. Attempting to set both to true will result in an error. See :symbol:`mongoc_session_opts_set_snapshot()`.
+Causal consistency and snapshot reads are mutually exclusive. Attempting to set both to true will result in an error. See :ref:`mongoc_session_opts_set_snapshot()`.
 
-Unacknowledged writes are not causally consistent. If you execute a write operation with a :symbol:`mongoc_write_concern_t` on which you have called :symbol:`mongoc_write_concern_set_w` with a value of 0, the write does not participate in causal consistency.
+Unacknowledged writes are not causally consistent. If you execute a write operation with a :ref:`mongoc_write_concern_t` on which you have called :ref:`mongoc_write_concern_set_w` with a value of 0, the write does not participate in causal consistency.
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_session_opt_t`.
+* ``opts``: A :ref:`mongoc_session_opt_t`.
 * ``causal_consistency``: True or false.
 
 Example

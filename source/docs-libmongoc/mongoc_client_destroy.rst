@@ -13,13 +13,13 @@ Synopsis
 
 Release all resources associated with ``client`` and free the structure. Does nothing if ``client`` is NULL.
 
-Only call :symbol:`mongoc_client_destroy` on a single-threaded client. Do not call on a :symbol:`mongoc_client_t` obtained from a :symbol:`mongoc_client_pool_t`, which should instead be pushed back with :symbol:`mongoc_client_pool_push()`.
+Only call :ref:`mongoc_client_destroy` on a single-threaded client. Do not call on a :ref:`mongoc_client_t` obtained from a :ref:`mongoc_client_pool_t`, which should instead be pushed back with :ref:`mongoc_client_pool_push()`.
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_pool_push()` to push a multi-threaded client back onto a pool.
+  | :ref:`mongoc_client_pool_push()` to push a multi-threaded client back onto a pool.

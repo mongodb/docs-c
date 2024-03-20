@@ -14,7 +14,7 @@ Synopsis
                                 const char *collection)
      BSON_GNUC_WARN_UNUSED_RESULT;
 
-Get a newly allocated :symbol:`mongoc_collection_t` for the collection named ``collection`` in the database named ``db``.
+Get a newly allocated :ref:`mongoc_collection_t` for the collection named ``collection`` in the database named ``db``.
 
 .. tip::
 
@@ -23,12 +23,12 @@ Get a newly allocated :symbol:`mongoc_collection_t` for the collection named ``c
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 * ``db``: The name of the database containing the collection.
 * ``collection``: The name of the collection.
 
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_collection_t` that should be freed with :symbol:`mongoc_collection_destroy()` when no longer in use.
+A newly allocated :ref:`mongoc_collection_t` that should be freed with :ref:`mongoc_collection_destroy()` when no longer in use.
 

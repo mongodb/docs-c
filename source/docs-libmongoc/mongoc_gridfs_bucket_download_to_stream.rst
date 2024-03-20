@@ -17,10 +17,10 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t`.
-* ``file_id``: A :symbol:`bson_value_t` of the id of the file to download.
-* ``destination``: A :symbol:`mongoc_stream_t` which receives data from the downloaded file.
-* ``error``: A :symbol:`bson_error_t` to receive any error or ``NULL``.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t`.
+* ``file_id``: A :ref:`bson_value_t` of the id of the file to download.
+* ``destination``: A :ref:`mongoc_stream_t` which receives data from the downloaded file.
+* ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
 Description
 -----------
@@ -28,7 +28,7 @@ Description
 Reads from the GridFS file and writes to the ``destination`` stream.
 
 Writes the full contents of the file to the ``destination`` stream.
-The ``destination`` stream is not closed after calling :symbol:`mongoc_gridfs_bucket_download_to_stream()`; call :symbol:`mongoc_stream_close()` after.
+The ``destination`` stream is not closed after calling :ref:`mongoc_gridfs_bucket_download_to_stream()`; call :ref:`mongoc_stream_close()` after.
 
 .. include:: includes/retryable-read.txt
 
@@ -39,5 +39,5 @@ True if the operation succeeded. False otherwise, and sets ``error``.
 
 .. seealso::
 
-  | :symbol:`mongoc_stream_file_new` and :symbol:`mongoc_stream_file_new_for_path`, which can be used to create a destination stream from a file.
+  | :ref:`mongoc_stream_file_new` and :ref:`mongoc_stream_file_new_for_path`, which can be used to create a destination stream from a file.
 

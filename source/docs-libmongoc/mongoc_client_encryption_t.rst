@@ -16,12 +16,12 @@ Synopsis
 Thread Safety
 -------------
 
-:symbol:`mongoc_client_encryption_t` is NOT thread-safe and should only be used in the same thread as the :symbol:`mongoc_client_t` that is configured via :symbol:`mongoc_client_encryption_opts_set_keyvault_client()`.
+:ref:`mongoc_client_encryption_t` is NOT thread-safe and should only be used in the same thread as the :ref:`mongoc_client_t` that is configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client()`.
 
 Lifecycle
 ---------
 
-The key vault client, configured via :symbol:`mongoc_client_encryption_opts_set_keyvault_client()`, must outlive the :symbol:`mongoc_client_encryption_t`.
+The key vault client, configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client()`, must outlive the :ref:`mongoc_client_encryption_t`.
 
 Functions
   ---------
@@ -48,9 +48,9 @@ Functions
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
-  | :symbol:`mongoc_client_pool_enable_auto_encryption()`
+  | :ref:`mongoc_client_pool_enable_auto_encryption()`
 
   | :doc:`in-use-encryption` for libmongoc
 

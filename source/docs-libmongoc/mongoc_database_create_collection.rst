@@ -18,15 +18,15 @@ Synopsis
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
+* ``database``: A :ref:`mongoc_database_t`.
 * ``name``: The name of the new collection.
-* ``opts``: An optional :symbol:`bson:bson_t` for opts to the ``create`` command.
+* ``opts``: An optional :ref:`bson:bson_t` for opts to the ``create`` command.
 * ``error``: A location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------
 
-This function creates a :symbol:`mongoc_collection_t` from the given :symbol:`mongoc_database_t`.
+This function creates a :ref:`mongoc_collection_t` from the given :ref:`mongoc_database_t`.
 
 If no write concern is provided in ``opts``, the database's write concern is used.
 
@@ -42,5 +42,5 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-This function returns a newly allocated :symbol:`mongoc_collection_t` upon success, ``NULL`` upon failure and ``error`` is set.
+This function returns a newly allocated :ref:`mongoc_collection_t` upon success, ``NULL`` upon failure and ``error`` is set.
 

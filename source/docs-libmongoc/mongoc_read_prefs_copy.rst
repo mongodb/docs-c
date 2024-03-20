@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 
 Description
 -----------
@@ -25,5 +25,5 @@ This function shall deep copy a read preference.
 Returns
 -------
 
-Returns a newly allocated read preference that should be freed with :symbol:`mongoc_read_prefs_destroy()`.
+Returns a newly allocated read preference that should be freed with :ref:`mongoc_read_prefs_destroy()`.
 

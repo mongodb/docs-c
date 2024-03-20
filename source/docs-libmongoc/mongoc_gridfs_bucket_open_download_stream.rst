@@ -17,9 +17,9 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t`.
-* ``file_id``: A :symbol:`bson_value_t` of the id of the file to download.
-* ``error``: A :symbol:`bson_error_t` to receive any error or ``NULL``.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t`.
+* ``file_id``: A :ref:`bson_value_t` of the id of the file to download.
+* ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
 Description
 -----------
@@ -29,9 +29,9 @@ Opens a stream for reading a file from GridFS.
 Returns
 -------
 
-A :symbol:`mongoc_stream_t` that can be read from or ``NULL`` on failure. Errors on this stream can be retrieved with :symbol:`mongoc_gridfs_bucket_stream_error()`.
+A :ref:`mongoc_stream_t` that can be read from or ``NULL`` on failure. Errors on this stream can be retrieved with :ref:`mongoc_gridfs_bucket_stream_error()`.
 
 .. seealso::
 
-  | :symbol:`mongoc_gridfs_bucket_stream_error()`
+  | :ref:`mongoc_gridfs_bucket_stream_error()`
 

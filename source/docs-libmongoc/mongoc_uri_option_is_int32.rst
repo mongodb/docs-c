@@ -23,5 +23,5 @@ Returns true if the option is a known MongoDB URI option of integer type. For ex
 
 .. seealso::
 
-  | :symbol:`mongoc_uri_option_is_int64()`
+  | :ref:`mongoc_uri_option_is_int64()`
 

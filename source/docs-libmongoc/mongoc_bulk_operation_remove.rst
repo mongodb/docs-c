@@ -12,26 +12,26 @@ Synopsis
   mongoc_bulk_operation_remove (mongoc_bulk_operation_t *bulk,
                                 const bson_t *selector);
 
-Remove documents as part of a bulk operation. This only queues the operation. To execute it, call :symbol:`mongoc_bulk_operation_execute()`.
+Remove documents as part of a bulk operation. This only queues the operation. To execute it, call :ref:`mongoc_bulk_operation_execute()`.
 
-This function is superseded by :symbol:`mongoc_bulk_operation_remove_one_with_opts()` and :symbol:`mongoc_bulk_operation_remove_many_with_opts()`.
+This function is superseded by :ref:`mongoc_bulk_operation_remove_one_with_opts()` and :ref:`mongoc_bulk_operation_remove_many_with_opts()`.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``selector``: A :symbol:`bson:bson_t`.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson:bson_t`.
 
 Errors
 ------
 
-Errors are propagated via :symbol:`mongoc_bulk_operation_execute()`.
+Errors are propagated via :ref:`mongoc_bulk_operation_execute()`.
 
 .. seealso::
 
-  | :symbol:`mongoc_bulk_operation_remove_one()`
+  | :ref:`mongoc_bulk_operation_remove_one()`
 
-  | :symbol:`mongoc_bulk_operation_remove_one_with_opts()`
+  | :ref:`mongoc_bulk_operation_remove_one_with_opts()`
 
-  | :symbol:`mongoc_bulk_operation_remove_many_with_opts()`
+  | :ref:`mongoc_bulk_operation_remove_many_with_opts()`
 

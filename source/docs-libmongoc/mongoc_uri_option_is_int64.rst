@@ -23,5 +23,5 @@ Returns true if the option is a known MongoDB URI option of 64-bit integer type.
 
 .. seealso::
 
-  | :symbol:`mongoc_uri_option_is_int32()`
+  | :ref:`mongoc_uri_option_is_int32()`
 

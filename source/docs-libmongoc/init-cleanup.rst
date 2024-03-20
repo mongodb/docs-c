@@ -18,9 +18,9 @@ Synopsis
 Deprecated feature: automatic initialization and cleanup
 --------------------------------------------------------
 
-On some platforms the driver can automatically call :symbol:`mongoc_init` before ``main``, and call :symbol:`mongoc_cleanup` as the process exits. This is problematic in situations where related libraries also execute cleanup code on shutdown, and it creates inconsistent rules across platforms. Therefore the automatic initialization and cleanup feature is deprecated, and will be dropped in version 2.0. Meanwhile, for backward compatibility, the feature is *enabled* by default on platforms where it is available.
+On some platforms the driver can automatically call :ref:`mongoc_init` before ``main``, and call :ref:`mongoc_cleanup` as the process exits. This is problematic in situations where related libraries also execute cleanup code on shutdown, and it creates inconsistent rules across platforms. Therefore the automatic initialization and cleanup feature is deprecated, and will be dropped in version 2.0. Meanwhile, for backward compatibility, the feature is *enabled* by default on platforms where it is available.
 
-For portable, future-proof code, always call :symbol:`mongoc_init` and :symbol:`mongoc_cleanup` yourself, and configure the driver like:
+For portable, future-proof code, always call :ref:`mongoc_init` and :ref:`mongoc_cleanup` yourself, and configure the driver like:
 
 .. code-block:: none
 

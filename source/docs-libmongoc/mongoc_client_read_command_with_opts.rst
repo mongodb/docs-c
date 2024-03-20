@@ -17,26 +17,26 @@ Synopsis
                                         bson_t *reply,
                                         bson_error_t *error);
 
-Execute a command on the server, applying logic that is specific to commands that read, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :symbol:`mongoc_client_command_simple`.
+Execute a command on the server, applying logic that is specific to commands that read, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :ref:`mongoc_client_command_simple`.
 
 .. |opts-source| replace:: ``client``
 
 .. include:: includes/read-cmd-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
 
-.. |generic-cmd| replace:: :symbol:`mongoc_client_command_with_opts`
+.. |generic-cmd| replace:: :ref:`mongoc_client_command_with_opts`
 .. include:: includes/retryable-read.txt
 .. include:: includes/retryable-read-command.txt
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 * ``db_name``: The name of the database to run the command on.
-* ``command``: A :symbol:`bson:bson_t` containing the command specification.
-* ``read_prefs``: An optional :symbol:`mongoc_read_prefs_t`.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``command``: A :ref:`bson:bson_t` containing the command specification.
+* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 * ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 

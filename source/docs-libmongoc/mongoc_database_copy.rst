@@ -14,15 +14,15 @@ Synopsis
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
+* ``database``: A :ref:`mongoc_database_t`.
 
 Description
 -----------
 
-Performs a deep copy of the ``database`` struct and its configuration. Useful if you intend to call :symbol:`mongoc_database_set_write_concern`, :symbol:`mongoc_database_set_read_prefs`, or :symbol:`mongoc_database_set_read_concern`, and want to preserve an unaltered copy of the struct.
+Performs a deep copy of the ``database`` struct and its configuration. Useful if you intend to call :ref:`mongoc_database_set_write_concern`, :ref:`mongoc_database_set_read_prefs`, or :ref:`mongoc_database_set_read_concern`, and want to preserve an unaltered copy of the struct.
 
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_database_t` that should be freed with :symbol:`mongoc_database_destroy()` when no longer in use.
+A newly allocated :ref:`mongoc_database_t` that should be freed with :ref:`mongoc_database_destroy()` when no longer in use.
 

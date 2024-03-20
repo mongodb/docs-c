@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 
 Description
 -----------
@@ -24,5 +24,5 @@ Fetches a read preference that is owned by the URI instance. This read preferenc
 Returns
 -------
 
-Returns a :symbol:`mongoc_read_prefs_t` that should not be modified or freed if ``uri`` has read preferences, otherwise ``NULL``.
+Returns a :ref:`mongoc_read_prefs_t` that should not be modified or freed if ``uri`` has read preferences, otherwise ``NULL``.
 

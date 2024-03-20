@@ -21,7 +21,7 @@ does not block.
 Parameters
 ----------
 
-* ``td``: A :symbol:`mongoc_topology_description_t`.
+* ``td``: A :ref:`mongoc_topology_description_t`.
 
 Returns
 -------

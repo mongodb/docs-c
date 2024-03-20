@@ -20,14 +20,14 @@ Create a session for a sequence of operations.
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
-* ``opts``: An optional :symbol:`mongoc_session_opt_t`.
-* ``error``: A :symbol:`bson:bson_error_t`.
+* ``client``: A :ref:`mongoc_client_t`.
+* ``opts``: An optional :ref:`mongoc_session_opt_t`.
+* ``error``: A :ref:`bson:bson_error_t`.
 
 Returns
 -------
 
-If successful, this function returns a newly allocated :symbol:`mongoc_client_session_t` that should be freed with :symbol:`mongoc_client_session_destroy()` when no longer in use. On error, returns NULL and sets ``error``.
+If successful, this function returns a newly allocated :ref:`mongoc_client_session_t` that should be freed with :ref:`mongoc_client_session_destroy()` when no longer in use. On error, returns NULL and sets ``error``.
 
 Errors
 ------

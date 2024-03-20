@@ -17,11 +17,11 @@ Create a copy of a transaction options struct.
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
 
 Returns
 -------
 
-A new :symbol:`mongoc_transaction_opt_t` that must be freed with :symbol:`mongoc_transaction_opts_destroy()`.
+A new :ref:`mongoc_transaction_opt_t` that must be freed with :ref:`mongoc_transaction_opts_destroy()`.
 
 .. include:: includes/seealso/session.txt

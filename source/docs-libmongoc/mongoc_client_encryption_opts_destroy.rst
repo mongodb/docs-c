@@ -11,9 +11,9 @@ Synopsis
    void
    mongoc_client_encryption_opts_destroy (mongoc_client_encryption_opts_t *opts);
 
-Frees resources of a :symbol:`mongoc_client_encryption_opts_t` created with :symbol:`mongoc_client_encryption_opts_new()`. Does nothing if ``NULL`` is passed.
+Frees resources of a :ref:`mongoc_client_encryption_opts_t` created with :ref:`mongoc_client_encryption_opts_new()`. Does nothing if ``NULL`` is passed.
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_opts_t`.
+* ``opts``: A :ref:`mongoc_client_encryption_opts_t`.

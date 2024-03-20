@@ -23,7 +23,7 @@ The following URI options may be used to further configure TLS:
 Configuration with mongoc_ssl_opt_t
 -----------------------------------
 
-Alternatively, the :symbol:`mongoc_ssl_opt_t` struct may be used to configure TLS with :symbol:`mongoc_client_set_ssl_opts()` or :symbol:`mongoc_client_pool_set_ssl_opts()`. Most of the configurable options can be set using the `Connection String URI <https://www.mongodb.com/docs/manual/reference/connection-string/>`_.
+Alternatively, the :ref:`mongoc_ssl_opt_t` struct may be used to configure TLS with :ref:`mongoc_client_set_ssl_opts()` or :ref:`mongoc_client_pool_set_ssl_opts()`. Most of the configurable options can be set using the `Connection String URI <https://www.mongodb.com/docs/manual/reference/connection-string/>`_.
 
 ===============================  ===============================
 **mongoc_ssl_opt_t key**         **URI key**
@@ -35,7 +35,7 @@ weak_cert_validation             tlsAllowInvalidCertificates
 allow_invalid_hostname           tlsAllowInvalidHostnames
 ===============================  ===============================
 
-The only exclusions are ``crl_file`` and ``ca_dir``. Those may only be set with :symbol:`mongoc_ssl_opt_t`.
+The only exclusions are ``crl_file`` and ``ca_dir``. Those may only be set with :ref:`mongoc_ssl_opt_t`.
 
 Client Authentication
 ---------------------
@@ -86,18 +86,18 @@ Ensure your system's OpenSSL is a recent version (at least 1.0.1), or install a 
 
   cmake -DOPENSSL_ROOT_DIR=/absolute/path/to/openssl
 
-When compiled against OpenSSL, the driver will attempt to load the system default certificate store, as configured by the distribution. That can be overridden by setting the ``tlsCAFile`` URI option or with the fields ``ca_file`` and ``ca_dir`` in the :symbol:`mongoc_ssl_opt_t`.
+When compiled against OpenSSL, the driver will attempt to load the system default certificate store, as configured by the distribution. That can be overridden by setting the ``tlsCAFile`` URI option or with the fields ``ca_file`` and ``ca_dir`` in the :ref:`mongoc_ssl_opt_t`.
 
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`_) is fully supported when using OpenSSL 1.0.1+ with the following notes:
 
-- When a ``crl_file`` is set with :symbol:`mongoc_ssl_opt_t`, and the ``crl_file`` revokes the server's certificate, the certificate is considered revoked (even if the certificate has a valid stapled OCSP response)
+- When a ``crl_file`` is set with :ref:`mongoc_ssl_opt_t`, and the ``crl_file`` revokes the server's certificate, the certificate is considered revoked (even if the certificate has a valid stapled OCSP response)
 
 LibreSSL / libtls
 `````````````````
 
 The MongoDB C Driver supports LibreSSL through the use of OpenSSL compatibility checks when configured to compile against ``openssl``. It also supports the new ``libtls`` library when configured to build against ``libressl``.
 
-When compiled against the Windows native libraries, the ``crl_file`` option of a :symbol:`mongoc_ssl_opt_t` is not supported, and will issue an error if used.
+When compiled against the Windows native libraries, the ``crl_file`` option of a :ref:`mongoc_ssl_opt_t` is not supported, and will issue an error if used.
 
 Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
 
@@ -111,20 +111,20 @@ Native TLS Support on Windows (Secure Channel)
 
 The MongoDB C Driver supports the Windows native TLS library (Secure Channel, or SChannel), and its native crypto library (Cryptography API: Next Generation, or CNG).
 
-When compiled against the Windows native libraries, the ``ca_dir`` option of a :symbol:`mongoc_ssl_opt_t` is not supported, and will issue an error if used.
+When compiled against the Windows native libraries, the ``ca_dir`` option of a :ref:`mongoc_ssl_opt_t` is not supported, and will issue an error if used.
 
 Encrypted PEM files (e.g., setting ``tlsCertificateKeyPassword``) are also not supported, and will result in error when attempting to load them.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided. When no ``tlsCAFile`` is set, the driver will look up the Certificate Authority using the ``System Local Machine Root`` certificate store to confirm the provided certificate.
 
-When ``crl_file`` is set with :symbol:`mongoc_ssl_opt_t`, the driver will import the revocation list to the ``System Local Machine Root`` certificate store.
+When ``crl_file`` is set with :ref:`mongoc_ssl_opt_t`, the driver will import the revocation list to the ``System Local Machine Root`` certificate store.
 
 Setting ``tlsDisableOCSPEndpointCheck`` has no effect.
 
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`_) is partially supported with the following notes:
 
 - The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`_) is ignored. Connection may continue if a Must-Staple certificate is presented with no stapled response (unless the client receives a revoked response from an OCSP responder).
-- When a ``crl_file`` is set with :symbol:`mongoc_ssl_opt_t`, and the ``crl_file`` revokes the server's certificate, the OCSP response takes precedence. E.g. if the server presents a certificate with a valid stapled OCSP response, the certificate is considered valid even if the ``crl_file`` marks it as revoked.
+- When a ``crl_file`` is set with :ref:`mongoc_ssl_opt_t`, and the ``crl_file`` revokes the server's certificate, the OCSP response takes precedence. E.g. if the server presents a certificate with a valid stapled OCSP response, the certificate is considered valid even if the ``crl_file`` marks it as revoked.
 - Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
 
 .. _Secure Transport:
@@ -134,7 +134,7 @@ Native TLS Support on macOS / Darwin (Secure Transport)
 
 The MongoDB C Driver supports the Darwin (OS X, macOS, iOS, etc.) native TLS library (Secure Transport), and its native crypto library (Common Crypto, or CC).
 
-When compiled against Secure Transport, the ``ca_dir`` and ``crl_file`` options of a :symbol:`mongoc_ssl_opt_t` are not supported. An error is issued if either are used.
+When compiled against Secure Transport, the ``ca_dir`` and ``crl_file`` options of a :ref:`mongoc_ssl_opt_t` are not supported. An error is issued if either are used.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided. When no ``tlsCAFile`` is set, the driver will use the Certificate Authorities in the currently unlocked keychains.
 

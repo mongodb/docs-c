@@ -11,12 +11,12 @@ Synopsis
   bool
   mongoc_optional_is_set (const mongoc_optional_t *opt);
 
-Returns whether a value for a :symbol:`mongoc_optional_t` was set.
+Returns whether a value for a :ref:`mongoc_optional_t` was set.
 
 Parameters
 ----------
 
-* ``opt``: A :symbol:`mongoc_optional_t`.
+* ``opt``: A :ref:`mongoc_optional_t`.
 
 Returns
 -------

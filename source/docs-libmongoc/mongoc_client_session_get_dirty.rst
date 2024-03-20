@@ -16,7 +16,7 @@ Indicates whether ``session`` has been marked "dirty" as defined in the `driver 
 Parameters
 ----------
 
-* ``session``: A const :symbol:`mongoc_client_session_t`.
+* ``session``: A const :ref:`mongoc_client_session_t`.
 
 Description
 -----------

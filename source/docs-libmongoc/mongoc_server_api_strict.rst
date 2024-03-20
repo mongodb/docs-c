@@ -16,5 +16,5 @@ Set whether to be strict about the list of allowed commands in this API version.
 Parameters
 ----------
 
-* ``api``: A :symbol:`mongoc_server_api_t`.
+* ``api``: A :ref:`mongoc_server_api_t`.
 * ``strict``: Whether or not to be struct about the list of allowed API commands.

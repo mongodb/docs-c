@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :symbol:`mongoc_cursor_t`.
+* ``cursor``: A :ref:`mongoc_cursor_t`.
 * ``limit``: The maximum number of documents to retrieve for this query.
 
 Description
@@ -22,11 +22,11 @@ Description
 
 Limits the number of documents in the result set.
 
-This function is useful for setting the limit on a cursor after the cursor is created, but before any calls to :symbol:`mongoc_cursor_next`. It can also be used to pass a negative limit: The ``limit`` parameter to ``mongoc_cursor_set_limit`` is signed, although for backward-compatibility reasons the ``limit`` parameter to :symbol:`mongoc_collection_find` is not.
+This function is useful for setting the limit on a cursor after the cursor is created, but before any calls to :ref:`mongoc_cursor_next`. It can also be used to pass a negative limit: The ``limit`` parameter to ``mongoc_cursor_set_limit`` is signed, although for backward-compatibility reasons the ``limit`` parameter to :ref:`mongoc_collection_find` is not.
 
-Calling this function after :symbol:`mongoc_cursor_next` has no effect.
+Calling this function after :ref:`mongoc_cursor_next` has no effect.
 
-This is not applicable to all cursors. Calling :symbol:`mongoc_cursor_set_limit` on a cursor returned by :symbol:`mongoc_client_find_databases_with_opts`, :symbol:`mongoc_database_find_collections_with_opts`, or :symbol:`mongoc_collection_find_indexes_with_opts` will not change the results.
+This is not applicable to all cursors. Calling :ref:`mongoc_cursor_set_limit` on a cursor returned by :ref:`mongoc_client_find_databases_with_opts`, :ref:`mongoc_database_find_collections_with_opts`, or :ref:`mongoc_collection_find_indexes_with_opts` will not change the results.
 
 Returns
 -------

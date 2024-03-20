@@ -19,9 +19,9 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``selector``: A :symbol:`bson:bson_t` containing the query to match the document for updating.
-* ``replacement``: A :symbol:`bson:bson_t` containing the replacement document.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``selector``: A :ref:`bson:bson_t` containing the query to match the document for updating.
+* ``replacement``: A :ref:`bson:bson_t` containing the replacement document.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -34,7 +34,7 @@ Description
 
 This function shall replace documents in ``collection`` that match ``selector`` with ``replacement``.
 
-If provided, ``reply`` will be initialized and populated with the fields ``matchedCount``, ``modifiedCount``, ``upsertedCount``, and optionally ``upsertedId`` if applicable. If there is a server error then ``reply`` contains either a ``writeErrors`` array with one subdocument or a ``writeConcernErrors`` array. The reply must be freed with :symbol:`bson:bson_destroy`.
+If provided, ``reply`` will be initialized and populated with the fields ``matchedCount``, ``modifiedCount``, ``upsertedCount``, and optionally ``upsertedId`` if applicable. If there is a server error then ``reply`` contains either a ``writeErrors`` array with one subdocument or a ``writeConcernErrors`` array. The reply must be freed with :ref:`bson:bson_destroy`.
 
 Errors
 ------
@@ -52,7 +52,7 @@ A write concern timeout or write concern error is considered a failure.
 
   | `MongoDB update command documentation <https://www.mongodb.com/docs/manual/reference/command/update/>`_ for more information on the update options.
 
-  | :symbol:`mongoc_collection_update_one`
+  | :ref:`mongoc_collection_update_one`
 
-  | :symbol:`mongoc_collection_update_many`
+  | :ref:`mongoc_collection_update_many`
 

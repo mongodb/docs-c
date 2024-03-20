@@ -43,10 +43,10 @@ Identifies the algorithm to use for encryption. Valid values of ``algorithm`` ar
 
    for range encryption. Specific to the :doc:`queryable-encryption` feature.
    
-   .. note:: The |qenc:range-is-experimental| |qenc:opt-is-experimental|
+   .. note:: The {+range-is-experimental+} |qenc:opt-is-experimental|
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_encrypt_opts_t`
+* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
 * ``algorithm``: A ``char *`` identifying the algorithm.

@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 * ``option``: The name of an option, case insensitive.
 * ``fallback``: A default value to return.
 
@@ -37,5 +37,5 @@ When reading an option that is an int64, this function will return the value as 
 
 .. seealso::
 
-  | :symbol:`mongoc_uri_get_option_as_int64()`
+  | :ref:`mongoc_uri_get_option_as_int64()`
 

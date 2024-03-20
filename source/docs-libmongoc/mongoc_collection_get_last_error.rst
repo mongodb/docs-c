@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
 
 Description
 -----------
@@ -26,5 +26,5 @@ A write_concern must be at least ``MONGOC_WRITE_CONCERN_W_DEFAULT`` in last comm
 Returns
 -------
 
-A :symbol:`bson:bson_t` that should not be modified or ``NULL``.
+A :ref:`bson:bson_t` that should not be modified or ``NULL``.
 

@@ -15,9 +15,9 @@ Synopsis
 Parameters
 ----------
 
-* ``socket``: A :symbol:`mongoc_socket_t`.
+* ``socket``: A :ref:`mongoc_socket_t`.
 
-Creates a new :symbol:`mongoc_stream_socket_t` using the :symbol:`mongoc_socket_t` provided.
+Creates a new :ref:`mongoc_stream_socket_t` using the :ref:`mongoc_socket_t` provided.
 
 .. warning::
 
@@ -26,5 +26,5 @@ Creates a new :symbol:`mongoc_stream_socket_t` using the :symbol:`mongoc_socket_
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_stream_socket_t` that should be freed with :symbol:`mongoc_stream_destroy()` when no longer in use.
+A newly allocated :ref:`mongoc_stream_socket_t` that should be freed with :ref:`mongoc_stream_destroy()` when no longer in use.
 

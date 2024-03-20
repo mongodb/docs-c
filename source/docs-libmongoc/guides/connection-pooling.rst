@@ -8,7 +8,7 @@ The MongoDB C driver has two connection modes: single-threaded and pooled. Singl
 Single Mode
 -----------
 
-In single mode, your program creates a :symbol:`mongoc_client_t` directly:
+In single mode, your program creates a :ref:`mongoc_client_t` directly:
 
 .. code-block:: c
 
@@ -17,14 +17,14 @@ In single mode, your program creates a :symbol:`mongoc_client_t` directly:
 
 The client connects on demand when your program first uses it for a MongoDB operation. Using a non-blocking socket per server, it begins a check on each server concurrently, and uses the asynchronous ``poll`` or ``select`` function to receive events from the sockets, until all have responded or timed out. Put another way, in single-threaded mode the C Driver fans out to begin all checks concurrently, then fans in once all checks have completed or timed out. Once the scan completes, the client executes your program's operation and returns.
 
-In single mode, the client re-scans the server topology roughly once per minute. If more than a minute has elapsed since the previous scan, the next operation on the client will block while the client completes its scan. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :symbol:`mongoc_uri_t`.)
+In single mode, the client re-scans the server topology roughly once per minute. If more than a minute has elapsed since the previous scan, the next operation on the client will block while the client completes its scan. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :ref:`mongoc_uri_t`.)
 
 A single client opens one connection per server in your topology: these connections are used both for scanning the topology and performing normal operations.
 
 Pooled Mode
 -----------
 
-To activate pooled mode, create a :symbol:`mongoc_client_pool_t`:
+To activate pooled mode, create a :ref:`mongoc_client_pool_t`:
 
 .. code-block:: c
 
@@ -33,7 +33,7 @@ To activate pooled mode, create a :symbol:`mongoc_client_pool_t`:
 
   mongoc_client_pool_t *pool = mongoc_client_pool_new (uri);
 
-When your program first calls :symbol:`mongoc_client_pool_pop`, the pool launches monitoring threads in the background. Monitoring threads independently connect to all servers in the connection string. As monitoring threads receive hello responses from the servers, they update the shared view of the server topology. Additional monitoring threads and connections are created as new servers are discovered. Monitoring threads are terminated when servers are removed from the shared view of the server topology.
+When your program first calls :ref:`mongoc_client_pool_pop`, the pool launches monitoring threads in the background. Monitoring threads independently connect to all servers in the connection string. As monitoring threads receive hello responses from the servers, they update the shared view of the server topology. Additional monitoring threads and connections are created as new servers are discovered. Monitoring threads are terminated when servers are removed from the shared view of the server topology.
 
 Each thread that executes MongoDB operations must check out a client from the pool:
 
@@ -45,13 +45,13 @@ Each thread that executes MongoDB operations must check out a client from the po
 
   mongoc_client_pool_push (pool, client);
 
-The :symbol:`mongoc_client_t` object is not thread-safe, only the :symbol:`mongoc_client_pool_t` is.
+The :ref:`mongoc_client_t` object is not thread-safe, only the :ref:`mongoc_client_pool_t` is.
 
 When the driver is in pooled mode, your program's operations are unblocked as soon as monitoring discovers a usable server. For example, if a thread in your program is waiting to execute an "insert" on the primary, it is unblocked as soon as the primary is discovered, rather than waiting for all secondaries to be checked as well.
 
-The pool opens one connection per server for monitoring, and each client opens its own connection to each server it uses for application operations. Background monitoring threads re-scan servers independently roughly every 10 seconds. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :symbol:`mongoc_uri_t`.)
+The pool opens one connection per server for monitoring, and each client opens its own connection to each server it uses for application operations. Background monitoring threads re-scan servers independently roughly every 10 seconds. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :ref:`mongoc_uri_t`.)
 
-The connection string can also specify ``waitQueueTimeoutMS`` to limit the time that :symbol:`mongoc_client_pool_pop` will wait for a client from the pool.  (See :symbol:`mongoc_uri_t`.)  If ``waitQueueTimeoutMS`` is specified, then it is necessary to confirm that a client was actually returned:
+The connection string can also specify ``waitQueueTimeoutMS`` to limit the time that :ref:`mongoc_client_pool_pop` will wait for a client from the pool.  (See :ref:`mongoc_uri_t`.)  If ``waitQueueTimeoutMS`` is specified, then it is necessary to confirm that a client was actually returned:
 
 .. code-block:: c
 
@@ -70,4 +70,4 @@ The connection string can also specify ``waitQueueTimeoutMS`` to limit the time 
      /* take appropriate action for a timeout */
   }
 
-See :ref:`connection_pool_options` to configure pool size and behavior, and see :symbol:`mongoc_client_pool_t` for an extended example of a multi-threaded program that uses the driver in pooled mode.
+See :ref:`connection_pool_options` to configure pool size and behavior, and see :ref:`mongoc_client_pool_t` for an extended example of a multi-threaded program that uses the driver in pooled mode.

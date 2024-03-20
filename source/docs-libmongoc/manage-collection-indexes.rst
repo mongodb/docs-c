@@ -3,7 +3,7 @@
 Manage Collection Indexes
 =========================
 
-To create indexes on a MongoDB collection, use :symbol:`mongoc_collection_create_indexes_with_opts`:
+To create indexes on a MongoDB collection, use :ref:`mongoc_collection_create_indexes_with_opts`:
 
 .. literalinclude:: ../examples/example-manage-collection-indexes.c
    :language: c
@@ -11,7 +11,7 @@ To create indexes on a MongoDB collection, use :symbol:`mongoc_collection_create
    :end-before: // Create an index ... end
    :dedent: 6
 
-To list indexes, use :symbol:`mongoc_collection_find_indexes_with_opts`:
+To list indexes, use :ref:`mongoc_collection_find_indexes_with_opts`:
 
 .. literalinclude:: ../examples/example-manage-collection-indexes.c
    :language: c
@@ -19,7 +19,7 @@ To list indexes, use :symbol:`mongoc_collection_find_indexes_with_opts`:
    :end-before: // List indexes ... end
    :dedent: 6
 
-To drop an index, use :symbol:`mongoc_collection_drop_index_with_opts`. The index name may be obtained from the ``keys`` document with :symbol:`mongoc_collection_keys_to_index_string`:
+To drop an index, use :ref:`mongoc_collection_drop_index_with_opts`. The index name may be obtained from the ``keys`` document with :ref:`mongoc_collection_keys_to_index_string`:
 
 .. literalinclude:: ../examples/example-manage-collection-indexes.c
    :language: c

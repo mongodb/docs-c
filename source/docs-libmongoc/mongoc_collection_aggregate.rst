@@ -19,11 +19,11 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``flags``: A :symbol:`mongoc_query_flags_t`. Not all flag values apply. In particular, setting ``MONGOC_QUERY_EXHAUST`` results in an error.
-* ``pipeline``: A :symbol:`bson:bson_t`, either a BSON array or a BSON document containing an array field named "pipeline".
-* ``opts``: A :symbol:`bson:bson_t` containing options for the command, or ``NULL``.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``flags``: A :ref:`mongoc_query_flags_t`. Not all flag values apply. In particular, setting ``MONGOC_QUERY_EXHAUST`` results in an error.
+* ``pipeline``: A :ref:`bson:bson_t`, either a BSON array or a BSON document containing an array field named "pipeline".
+* ``opts``: A :ref:`bson:bson_t` containing options for the command, or ``NULL``.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
 
 .. |opts-source| replace:: ``collection``
 
@@ -37,7 +37,7 @@ For a list of all options, see `the MongoDB Manual entry on the aggregate comman
 Description
 -----------
 
-This function creates a cursor which sends the aggregate command on the underlying collection upon the first call to :symbol:`mongoc_cursor_next()`. For more information on building aggregation pipelines, see `the MongoDB Manual entry on the aggregate command <https://www.mongodb.com/docs/manual/reference/command/aggregate/>`_.
+This function creates a cursor which sends the aggregate command on the underlying collection upon the first call to :ref:`mongoc_cursor_next()`. For more information on building aggregation pipelines, see `the MongoDB Manual entry on the aggregate command <https://www.mongodb.com/docs/manual/reference/command/aggregate/>`_.
 
 Read preferences, read and write concern, and collation can be overridden by various sources. The highest-priority sources for these options are listed first in the following table. In a transaction, read concern and write concern are prohibited in ``opts`` and the read preference must be primary or NULL. Write concern is applied from ``opts``, or if ``opts`` has no write concern and the aggregation pipeline includes "$out", the write concern is applied from ``collection``. The write concern is omitted for MongoDB before 3.4.
 
@@ -99,7 +99,7 @@ Example
 Other Parameters
 ----------------
 
-When using ``$out``, the pipeline stage that writes, the write_concern field of the :symbol:`mongoc_cursor_t` will be set to the :symbol:`mongoc_write_concern_t` parameter, if it is valid, and applied to the write command when :symbol:`mongoc_cursor_next()` is called. Pass any other parameters to the ``aggregate`` command, besides ``pipeline``, as fields in ``opts``:
+When using ``$out``, the pipeline stage that writes, the write_concern field of the :ref:`mongoc_cursor_t` will be set to the :ref:`mongoc_write_concern_t` parameter, if it is valid, and applied to the write command when :ref:`mongoc_cursor_next()` is called. Pass any other parameters to the ``aggregate`` command, besides ``pipeline``, as fields in ``opts``:
 
 .. code-block:: c
 

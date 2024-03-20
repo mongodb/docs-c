@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``comment``: A :symbol:`bson_value_t` specifying the comment to associate with this bulk write.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``comment``: A :ref:`bson_value_t` specifying the comment to associate with this bulk write.
 
 Description
 -----------

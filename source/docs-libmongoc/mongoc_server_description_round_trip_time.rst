@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``description``: A :symbol:`mongoc_server_description_t`.
+* ``description``: A :ref:`mongoc_server_description_t`.
 
 Description
 -----------

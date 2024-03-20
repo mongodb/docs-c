@@ -23,11 +23,11 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``query``: A :symbol:`bson:bson_t` containing the query to locate target document(s).
-* ``sort``: A :symbol:`bson:bson_t` containing the sort order for ``query``.
-* ``update``: A :symbol:`bson:bson_t` containing an update spec.
-* ``fields``: An optional :symbol:`bson:bson_t` containing the fields to return or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``query``: A :ref:`bson:bson_t` containing the query to locate target document(s).
+* ``sort``: A :ref:`bson:bson_t` containing the sort order for ``query``.
+* ``update``: A :ref:`bson:bson_t` containing an update spec.
+* ``fields``: An optional :ref:`bson:bson_t` containing the fields to return or ``NULL``.
 * ``_remove``: If the matching documents should be removed.
 * ``upsert``: If an upsert should be performed.
 * ``_new``: If the new version of the document should be returned.
@@ -41,9 +41,9 @@ Update and return an object.
 
 This is a thin wrapper around the ``findAndModify`` command. Either ``update`` or ``_remove`` arguments are required.
 
-As of MongoDB 3.2, the :symbol:`mongoc_write_concern_t` specified on the :symbol:`mongoc_collection_t` will be used, if any.
+As of MongoDB 3.2, the :ref:`mongoc_write_concern_t` specified on the :ref:`mongoc_collection_t` will be used, if any.
 
-``reply`` is always initialized, and must be freed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
 
 On success, the output ``reply`` contains the full server reply to the ``findAndModify`` command. See the `MongoDB Manual page for findAndModify <https://www.mongodb.com/docs/manual/reference/command/findAndModify/#output>`_ for the expected server reply.
 
@@ -60,7 +60,7 @@ A write concern timeout or write concern error is considered a failure.
 
 .. seealso::
 
-  | :symbol:`mongoc_collection_find_and_modify_with_opts`.
+  | :ref:`mongoc_collection_find_and_modify_with_opts`.
 
 Example
 -------

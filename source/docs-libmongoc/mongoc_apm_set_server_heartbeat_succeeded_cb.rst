@@ -20,8 +20,8 @@ Receive an event notification whenever the driver completes a "hello" command to
 Parameters
 ----------
 
-* ``callbacks``: A :symbol:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :symbol:`mongoc_apm_server_heartbeat_succeeded_t` whenever the driver completes a "hello" command to check the status of a server.
+* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+* ``cb``: A function to call with a :ref:`mongoc_apm_server_heartbeat_succeeded_t` whenever the driver completes a "hello" command to check the status of a server.
 
 .. seealso::
 

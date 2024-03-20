@@ -14,13 +14,13 @@ Synopsis
                                           const bson_t *opts,
                                           bson_error_t *error); /* OUT */
 
-Queue an insert of a single document into a bulk operation. The insert is not performed until :symbol:`mongoc_bulk_operation_execute()` is called.
+Queue an insert of a single document into a bulk operation. The insert is not performed until :ref:`mongoc_bulk_operation_execute()` is called.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``document``: A :symbol:`bson:bson_t`.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``document``: A :ref:`bson:bson_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 .. include:: includes/bulk-insert-opts.txt
@@ -28,7 +28,7 @@ Parameters
 Errors
 ------
 
-Operation errors are propagated via :symbol:`mongoc_bulk_operation_execute()`, while argument validation errors are reported by the ``error`` argument.
+Operation errors are propagated via :ref:`mongoc_bulk_operation_execute()`, while argument validation errors are reported by the ``error`` argument.
 
 Returns
 -------

@@ -20,8 +20,8 @@ The ``callbacks`` are copied by the pool and may be destroyed at any time after.
 Parameters
 ----------
 
-* ``pool``: A :symbol:`mongoc_client_pool_t`.
-* ``callbacks``: A :symbol:`mongoc_apm_callbacks_t`.
+* ``pool``: A :ref:`mongoc_client_pool_t`.
+* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
 * ``context``: Optional pointer to include with each event notification.
 
 Returns

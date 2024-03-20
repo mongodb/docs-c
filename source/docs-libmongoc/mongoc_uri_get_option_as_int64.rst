@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 * ``option``: The name of an option, case insensitive.
 * ``fallback``: A default value to return.
 
@@ -35,5 +35,5 @@ If ``myvalue`` is non-zero it is the write concern timeout; if it is zero the dr
 
 .. seealso::
 
-  | :symbol:`mongoc_uri_get_option_as_int32()`
+  | :ref:`mongoc_uri_get_option_as_int32()`
 

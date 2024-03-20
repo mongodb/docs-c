@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``sock``: A :symbol:`mongoc_socket_t`.
+* ``sock``: A :ref:`mongoc_socket_t`.
 * ``backlog``: An int containing max backlog size.
 
 Description

@@ -8,7 +8,7 @@ mongoc_client_get_database_names()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_client_get_database_names_with_opts()` in new code.
+      Please use :ref:`mongoc_client_get_database_names_with_opts()` in new code.
 
 Synopsis
 --------
@@ -30,7 +30,7 @@ This function queries the MongoDB server for a list of known databases.
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
@@ -41,6 +41,6 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-A ``NULL`` terminated vector of ``NULL-byte`` terminated strings. The result should be freed with :symbol:`bson:bson_strfreev()`.
+A ``NULL`` terminated vector of ``NULL-byte`` terminated strings. The result should be freed with :ref:`bson:bson_strfreev()`.
 
 ``NULL`` is returned upon failure and ``error`` is set.

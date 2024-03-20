@@ -17,7 +17,7 @@ Returns whether this event came from an awaitable hello.
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_server_heartbeat_succeeded_t`.
+* ``event``: A :ref:`mongoc_apm_server_heartbeat_succeeded_t`.
 
 Returns
 -------

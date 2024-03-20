@@ -14,14 +14,14 @@ Synopsis
 
 Configure snapshot reads for a session. If true (false by default), each read operation in the session will be sent with a "snapshot" level read concern. After the first read operation ("find", "aggregate" or "distinct"), subsequent read operations will read from the same point in time as the first read operation. Set to true to enable snapshot reads. See `the official documentation for Read Concern "snapshot" <https://www.mongodb.com/docs/manual/reference/read-concern-snapshot/>`_.
 
-Snapshot reads and causal consistency are mutually exclusive. Attempting to set both to true will result in an error. See :symbol:`mongoc_session_opts_set_causal_consistency()`.
+Snapshot reads and causal consistency are mutually exclusive. Attempting to set both to true will result in an error. See :ref:`mongoc_session_opts_set_causal_consistency()`.
 
 Snapshot reads can only be used on MongoDB server version 5.0 and later and cannot be used during a transaction. A write operation in a snapshot-enabled session will also result in an error.
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_session_opt_t`.
+* ``opts``: A :ref:`mongoc_session_opt_t`.
 * ``snapshot``: True or false.
 
 Example

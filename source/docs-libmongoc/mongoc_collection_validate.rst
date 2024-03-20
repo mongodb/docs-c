@@ -6,7 +6,7 @@ mongoc_collection_validate()
 .. warning::
    .. deprecated:: 1.10.0
 
-      This helper function is deprecated and should not be used in new code. Run the `validate <https://www.mongodb.com/docs/manual/reference/command/validate/>`_ command directly with :symbol:`mongoc_client_read_command_with_opts()` instead.
+      This helper function is deprecated and should not be used in new code. Run the `validate <https://www.mongodb.com/docs/manual/reference/command/validate/>`_ command directly with :ref:`mongoc_client_read_command_with_opts()` instead.
 
 Synopsis
 --------
@@ -22,8 +22,8 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``options``: A :symbol:`bson:bson_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``options``: A :ref:`bson:bson_t`.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -46,5 +46,5 @@ Returns
 
 Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
 
-``reply`` is always initialized if it's not ``NULL`` and must be destroyed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized if it's not ``NULL`` and must be destroyed with :ref:`bson:bson_destroy()`.
 

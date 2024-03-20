@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t`.
-* ``file_id``: A :symbol:`bson_value_t` of the id of the file to delete.
-* ``error``: A :symbol:`bson_error_t` to receive any error or ``NULL``.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t`.
+* ``file_id``: A :ref:`bson_value_t` of the id of the file to delete.
+* ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
 Description
 -----------

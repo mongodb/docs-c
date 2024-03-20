@@ -18,9 +18,9 @@ load balancer, or ``NULL`` if not connected to a load balanced cluster.
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_command_started_t`.
+* ``event``: A :ref:`mongoc_apm_command_started_t`.
 
 Returns
 -------
 
-A :symbol:`bson_oid_t` that should not be modified or freed or ``NULL``.
+A :ref:`bson_oid_t` that should not be modified or freed or ``NULL``.

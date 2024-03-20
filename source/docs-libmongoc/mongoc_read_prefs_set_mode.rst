@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
-* ``mode``: A :symbol:`mongoc_read_mode_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
+* ``mode``: A :ref:`mongoc_read_mode_t`.
 
 Description
 -----------

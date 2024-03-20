@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``socket``: A :symbol:`mongoc_socket_t`.
+* ``socket``: A :ref:`mongoc_socket_t`.
 
 Description
 -----------
@@ -24,5 +24,5 @@ This function is a wrapper around the BSD socket ``shutdown()`` and ``close()`` 
 Returns
 -------
 
-0 on success, -1 on failure to close the socket. On failure, the socket's errno is set; retrieve it with :symbol:`mongoc_socket_errno()`.
+0 on success, -1 on failure to close the socket. On failure, the socket's errno is set; retrieve it with :ref:`mongoc_socket_errno()`.
 

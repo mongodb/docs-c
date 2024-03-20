@@ -16,4 +16,4 @@ Destroys a change stream and associated data.
 Parameters
 ----------
 
-* ``stream``: An allocated :symbol:`mongoc_change_stream_t`.
+* ``stream``: An allocated :ref:`mongoc_change_stream_t`.

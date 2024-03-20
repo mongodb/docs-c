@@ -12,7 +12,7 @@ Synopsis
       mongoc_client_encryption_rewrap_many_datakey_result_t;
 
 
-Used to access the result of :symbol:`mongoc_client_encryption_rewrap_many_datakey()`.
+Used to access the result of :ref:`mongoc_client_encryption_rewrap_many_datakey()`.
 
 Functions
   ---------
@@ -27,4 +27,4 @@ Functions
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_rewrap_many_datakey()`
+  | :ref:`mongoc_client_encryption_rewrap_many_datakey()`

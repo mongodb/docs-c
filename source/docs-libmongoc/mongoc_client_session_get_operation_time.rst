@@ -18,7 +18,7 @@ Get the session's operationTime, expressed as a BSON Timestamp with timestamp an
 Parameters
 ----------
 
-* ``session``: A :symbol:`mongoc_client_session_t`.
+* ``session``: A :ref:`mongoc_client_session_t`.
 * ``timestamp``: A pointer to a ``uint32_t`` to receive the timestamp component.
 * ``increment``: A pointer to a ``uint32_t`` to receive the increment component.
 

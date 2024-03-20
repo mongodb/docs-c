@@ -59,8 +59,8 @@ Functions
 Related
 -------
 
-* :symbol:`mongoc_client_t`
-* :symbol:`mongoc_gridfs_t`
-* :symbol:`mongoc_gridfs_file_list_t`
-* :symbol:`mongoc_gridfs_file_opt_t`
+* :ref:`mongoc_client_t`
+* :ref:`mongoc_gridfs_t`
+* :ref:`mongoc_gridfs_file_list_t`
+* :ref:`mongoc_gridfs_file_opt_t`
 

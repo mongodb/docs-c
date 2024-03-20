@@ -16,14 +16,14 @@ Synopsis
 Parameters
 ----------
 
-* ``client_session``: A pointer to a :symbol:`mongoc_client_session_t`.
-* ``opts``: A pointer to a :symbol:`bson:bson_t`.
+* ``client_session``: A pointer to a :ref:`mongoc_client_session_t`.
+* ``opts``: A pointer to a :ref:`bson:bson_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------
 
-This function appends a logical session id to command options. Use it to configure a session for any function that takes an options document, such as :symbol:`mongoc_client_write_command_with_opts`.
+This function appends a logical session id to command options. Use it to configure a session for any function that takes an options document, such as :ref:`mongoc_client_write_command_with_opts`.
 
 It is an error to use a session for unacknowledged writes.
 
@@ -35,5 +35,5 @@ Returns true on success. If any arguments are invalid, returns false and fills o
 Example
 -------
 
-See the example code for :symbol:`mongoc_client_session_t`.
+See the example code for :ref:`mongoc_client_session_t`.
 

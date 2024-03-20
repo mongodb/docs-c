@@ -22,12 +22,12 @@ Synopsis
 Parameters
 ----------
 
-* ``description``: A :symbol:`mongoc_server_description_t`.
+* ``description``: A :ref:`mongoc_server_description_t`.
 
 Description
 -----------
 
-The client or client pool periodically runs a `"hello" <https://www.mongodb.com/docs/manual/reference/command/hello/>`_ command on each server, to update its view of the MongoDB deployment. Use :symbol:`mongoc_client_get_server_descriptions()` and ``mongoc_server_description_hello_response()`` to get the most recent "hello" response.
+The client or client pool periodically runs a `"hello" <https://www.mongodb.com/docs/manual/reference/command/hello/>`_ command on each server, to update its view of the MongoDB deployment. Use :ref:`mongoc_client_get_server_descriptions()` and ``mongoc_server_description_hello_response()`` to get the most recent "hello" response.
 
 Returns
 -------

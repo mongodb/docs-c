@@ -20,34 +20,34 @@ Synopsis
                          const mongoc_read_prefs_t *read_prefs)
      BSON_GNUC_WARN_UNUSED_RESULT;
 
-This function is superseded by :symbol:`mongoc_client_command_with_opts()`, :symbol:`mongoc_client_read_command_with_opts()`, :symbol:`mongoc_client_write_command_with_opts()`, and :symbol:`mongoc_client_read_write_command_with_opts()`.
+This function is superseded by :ref:`mongoc_client_command_with_opts()`, :ref:`mongoc_client_read_command_with_opts()`, :ref:`mongoc_client_write_command_with_opts()`, and :ref:`mongoc_client_read_write_command_with_opts()`.
 
 .. include:: includes/not-retryable-read.txt
 
 Description
 -----------
 
-This function creates a cursor which will execute the command when :symbol:`mongoc_cursor_next` is called on it. The client's read preference, read concern, and write concern are not applied to the command, and :symbol:`mongoc_cursor_next` will not check the server response for a write concern error or write concern timeout.
+This function creates a cursor which will execute the command when :ref:`mongoc_cursor_next` is called on it. The client's read preference, read concern, and write concern are not applied to the command, and :ref:`mongoc_cursor_next` will not check the server response for a write concern error or write concern timeout.
 
-If :symbol:`mongoc_cursor_next()` returns ``false``, then retrieve error details with :symbol:`mongoc_cursor_error()` or :symbol:`mongoc_cursor_error_document()`.
+If :ref:`mongoc_cursor_next()` returns ``false``, then retrieve error details with :ref:`mongoc_cursor_error()` or :ref:`mongoc_cursor_error_document()`.
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 * ``db_name``: The name of the database to run the command on.
 * ``flags``: Unused.
 * ``skip``: Unused.
 * ``limit``: Unused.
 * ``batch_size``: Unused.
-* ``query``: A :symbol:`bson:bson_t` containing the command specification.
+* ``query``: A :ref:`bson:bson_t` containing the command specification.
 * ``fields``: Unused.
-* ``read_prefs``: An optional :symbol:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
+* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
 
 Returns
 -------
 
-A :symbol:`mongoc_cursor_t`.
+A :ref:`mongoc_cursor_t`.
 
-The cursor should be freed with :symbol:`mongoc_cursor_destroy()`.
+The cursor should be freed with :ref:`mongoc_cursor_destroy()`.
 

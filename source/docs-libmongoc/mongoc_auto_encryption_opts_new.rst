@@ -12,32 +12,32 @@ Synopsis
   mongoc_auto_encryption_opts_new (void) BSON_GNUC_WARN_UNUSED_RESULT;
 
 
-Create a new :symbol:`mongoc_auto_encryption_opts_t`.
+Create a new :ref:`mongoc_auto_encryption_opts_t`.
 
 Caller must set the required options:
 
-* :symbol:`mongoc_auto_encryption_opts_set_keyvault_namespace()`
-* :symbol:`mongoc_auto_encryption_opts_set_kms_providers()`
+* :ref:`mongoc_auto_encryption_opts_set_keyvault_namespace()`
+* :ref:`mongoc_auto_encryption_opts_set_kms_providers()`
 
 Caller may set optionally set the following:
 
-* :symbol:`mongoc_auto_encryption_opts_set_keyvault_client()`
-* :symbol:`mongoc_auto_encryption_opts_set_schema_map()`
-* :symbol:`mongoc_auto_encryption_opts_set_bypass_auto_encryption()`
-* :symbol:`mongoc_auto_encryption_opts_set_extra()`
+* :ref:`mongoc_auto_encryption_opts_set_keyvault_client()`
+* :ref:`mongoc_auto_encryption_opts_set_schema_map()`
+* :ref:`mongoc_auto_encryption_opts_set_bypass_auto_encryption()`
+* :ref:`mongoc_auto_encryption_opts_set_extra()`
 
-This options struct is used to enable auto encryption with :symbol:`mongoc_client_enable_auto_encryption()`.
+This options struct is used to enable auto encryption with :ref:`mongoc_client_enable_auto_encryption()`.
 
 Returns
 -------
 
-A new :symbol:`mongoc_auto_encryption_opts_t`, which must be destroyed with :symbol:`mongoc_auto_encryption_opts_destroy()`.
+A new :ref:`mongoc_auto_encryption_opts_t`, which must be destroyed with :ref:`mongoc_auto_encryption_opts_destroy()`.
 
 .. seealso::
 
-  | :symbol:`mongoc_auto_encryption_opts_destroy()`
+  | :ref:`mongoc_auto_encryption_opts_destroy()`
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

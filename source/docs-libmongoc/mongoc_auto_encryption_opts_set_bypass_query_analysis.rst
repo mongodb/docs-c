@@ -17,7 +17,7 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
 * ``bypass_query_analysis``: A boolean.
 
 
@@ -28,7 +28,7 @@ Parameters
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

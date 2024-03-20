@@ -14,17 +14,17 @@ Synopsis
 
 The options for the current transaction started with this session.
 
-If this ``session`` is not in a transaction, then the returned value is ``NULL``. See :symbol:`mongoc_client_session_in_transaction()`. 
+If this ``session`` is not in a transaction, then the returned value is ``NULL``. See :ref:`mongoc_client_session_in_transaction()`. 
 
 Parameters
 ----------
 
-* ``session``: A :symbol:`mongoc_client_session_t`.
+* ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------
 
-If the session is in a transaction, a new :symbol:`mongoc_transaction_opt_t` that must be freed with :symbol:`mongoc_transaction_opts_destroy()`. Otherwise, ``NULL``.
+If the session is in a transaction, a new :ref:`mongoc_transaction_opt_t` that must be freed with :ref:`mongoc_transaction_opts_destroy()`. Otherwise, ``NULL``.
 
 .. include:: includes/seealso/session.txt
 

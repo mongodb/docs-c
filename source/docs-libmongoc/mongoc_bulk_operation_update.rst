@@ -14,28 +14,28 @@ Synopsis
                                 const bson_t *document,
                                 bool upsert);
 
-This function queues an update as part of a bulk operation. This does not execute the operation. To execute the entirety of the bulk operation call :symbol:`mongoc_bulk_operation_execute()`.
+This function queues an update as part of a bulk operation. This does not execute the operation. To execute the entirety of the bulk operation call :ref:`mongoc_bulk_operation_execute()`.
 
 ``document`` MUST only contain fields whose key starts with ``$``. See the update document specification for more details.
 
-This function is superseded by :symbol:`mongoc_bulk_operation_update_one_with_opts()` and :symbol:`mongoc_bulk_operation_update_many_with_opts()`.
+This function is superseded by :ref:`mongoc_bulk_operation_update_one_with_opts()` and :ref:`mongoc_bulk_operation_update_many_with_opts()`.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``selector``: A :symbol:`bson:bson_t` that selects which documents to remove.
-* ``document``: A :symbol:`bson:bson_t` containing the update document.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson:bson_t` that selects which documents to remove.
+* ``document``: A :ref:`bson:bson_t` containing the update document.
 * ``upsert``: ``true`` if an ``upsert`` should be performed.
 
 Errors
 ------
 
-Errors are propagated via :symbol:`mongoc_bulk_operation_execute()`.
+Errors are propagated via :ref:`mongoc_bulk_operation_execute()`.
 
 .. seealso::
 
-  | :symbol:`mongoc_bulk_operation_update_one_with_opts()`
+  | :ref:`mongoc_bulk_operation_update_one_with_opts()`
 
-  | :symbol:`mongoc_bulk_operation_update_many_with_opts()`
+  | :ref:`mongoc_bulk_operation_update_many_with_opts()`
 

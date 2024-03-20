@@ -17,12 +17,12 @@ It wraps up the wire protocol negotiation required to initiate a query and retri
 
 Common cursor operations include:
 
-* Determine which host we've connected to with :symbol:`mongoc_cursor_get_host()`.
-* Retrieve more records with repeated calls to :symbol:`mongoc_cursor_next()`.
-* Clone a query to repeat execution at a later point with :symbol:`mongoc_cursor_clone()`.
-* Test for errors with :symbol:`mongoc_cursor_error()`.
+* Determine which host we've connected to with :ref:`mongoc_cursor_get_host()`.
+* Retrieve more records with repeated calls to :ref:`mongoc_cursor_next()`.
+* Clone a query to repeat execution at a later point with :ref:`mongoc_cursor_clone()`.
+* Test for errors with :ref:`mongoc_cursor_error()`.
 
-Cursors are lazy, meaning that no connection is established and no network traffic occurs until the first call to :symbol:`mongoc_cursor_next()`.
+Cursors are lazy, meaning that no connection is established and no network traffic occurs until the first call to :ref:`mongoc_cursor_next()`.
 
 Thread Safety
 -------------

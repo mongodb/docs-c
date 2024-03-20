@@ -22,8 +22,8 @@ to; it does no I/O and it does not block.
 Parameters
 ----------
 
-* ``td``: A :symbol:`mongoc_topology_description_t`.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL`` for default read preferences.
+* ``td``: A :ref:`mongoc_topology_description_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL`` for default read preferences.
 
 Returns
 -------

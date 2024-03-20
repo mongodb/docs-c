@@ -15,15 +15,15 @@ Synopsis
 
 Fetches a cursor containing documents, each corresponding to a collection on this database.
 
-To get collection names only, use :symbol:`mongoc_database_get_collection_names_with_opts`.
+To get collection names only, use :ref:`mongoc_database_get_collection_names_with_opts`.
 
 .. include:: includes/retryable-read.txt
 
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``database``: A :ref:`mongoc_database_t`.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 
 .. ``opts-source`` replace:: ``database``
 
@@ -34,7 +34,7 @@ For a list of all options, see `the MongoDB Manual entry on the listCollections 
 Errors
 ------
 
-Use :symbol:`mongoc_cursor_error` on the returned cursor to check for errors.
+Use :ref:`mongoc_cursor_error` on the returned cursor to check for errors.
 
 Returns
 -------
@@ -43,7 +43,7 @@ Returns
 
 In the returned cursor each result corresponds to the server's representation of a collection in this database.
 
-The cursor functions :symbol:`mongoc_cursor_set_limit`, :symbol:`mongoc_cursor_set_batch_size`, and :symbol:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
+The cursor functions :ref:`mongoc_cursor_set_limit`, :ref:`mongoc_cursor_set_batch_size`, and :ref:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
 
 Examples
 --------
@@ -79,5 +79,5 @@ Examples
 
 .. seealso::
 
-  | :symbol:`mongoc_database_get_collection_names_with_opts()`
+  | :ref:`mongoc_database_get_collection_names_with_opts()`
 

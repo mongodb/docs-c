@@ -20,8 +20,8 @@ Receive an event notification whenever the driver fails to send a "hello" comman
 Parameters
 ----------
 
-* ``callbacks``: A :symbol:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :symbol:`mongoc_apm_server_heartbeat_failed_t` whenever the driver fails to send a "hello" command to check the status of a server.
+* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+* ``cb``: A function to call with a :ref:`mongoc_apm_server_heartbeat_failed_t` whenever the driver fails to send a "hello" command to check the status of a server.
 
 .. seealso::
 

@@ -15,11 +15,11 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_find_and_modify_opts_t`.
-* ``sort``: An uninitialized :symbol:`bson:bson_t`.
+* ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
+* ``sort``: An uninitialized :ref:`bson:bson_t`.
 
 Description
 -----------
 
-Copies the sort document set with :symbol:`mongoc_find_and_modify_opts_set_sort`, or initializes ``sort`` with an empty BSON document.
+Copies the sort document set with :ref:`mongoc_find_and_modify_opts_set_sort`, or initializes ``sort`` with an empty BSON document.
 

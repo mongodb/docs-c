@@ -8,8 +8,8 @@ mongoc_collection_save()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_collection_insert_one()` or
-      :symbol:`mongoc_collection_replace_one()` with "upsert" instead.
+      Please use :ref:`mongoc_collection_insert_one()` or
+      :ref:`mongoc_collection_replace_one()` with "upsert" instead.
 
 Synopsis
 --------
@@ -27,9 +27,9 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``document``: A :symbol:`bson:bson_t` containing the document.
-* ``write_concern``: A :symbol:`mongoc_write_concern_t` or ``NULL`` for default write concern.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``document``: A :ref:`bson:bson_t` containing the document.
+* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL`` for default write concern.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description

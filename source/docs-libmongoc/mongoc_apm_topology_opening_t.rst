@@ -8,7 +8,7 @@ Topology-opening event
 Synopsis
 --------
 
-An event notification sent when the driver initializes a :symbol:`mongoc_topology_description_t`.
+An event notification sent when the driver initializes a :ref:`mongoc_topology_description_t`.
 
 .. seealso::
 

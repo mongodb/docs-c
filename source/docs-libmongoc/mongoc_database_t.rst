@@ -12,9 +12,9 @@ Synopsis
 
   typedef struct _mongoc_database_t mongoc_database_t;
 
-``mongoc_database_t`` provides access to a MongoDB database. This handle is useful for actions a particular database object. It *is not* a container for :symbol:`mongoc_collection_t` structures.
+``mongoc_database_t`` provides access to a MongoDB database. This handle is useful for actions a particular database object. It *is not* a container for :ref:`mongoc_collection_t` structures.
 
-Read preferences and write concerns are inherited from the parent client. They can be overridden with :symbol:`mongoc_database_set_read_prefs()` and :symbol:`mongoc_database_set_write_concern()`.
+Read preferences and write concerns are inherited from the parent client. They can be overridden with :ref:`mongoc_database_set_read_prefs()` and :ref:`mongoc_database_set_write_concern()`.
 
 Functions
   ---------

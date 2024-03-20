@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``sock``: A :symbol:`mongoc_socket_t`.
+* ``sock``: A :ref:`mongoc_socket_t`.
 * ``expire_at``: An int64_t containing a timeout in milliseconds.
 
 Description
@@ -26,5 +26,5 @@ This function is a wrapper around the BSD socket ``accept()`` interface. It allo
 Returns
 -------
 
-NULL upon failure to accept or timeout. A newly allocated ``mongoc_socket_t`` that should be released with :symbol:`mongoc_socket_destroy()` on success.
+NULL upon failure to accept or timeout. A newly allocated ``mongoc_socket_t`` that should be released with :ref:`mongoc_socket_destroy()` on success.
 

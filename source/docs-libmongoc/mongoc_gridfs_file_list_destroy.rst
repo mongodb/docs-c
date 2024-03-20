@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``list``: A :symbol:`mongoc_gridfs_file_list_t`.
+* ``list``: A :ref:`mongoc_gridfs_file_list_t`.
 
 Description
 -----------

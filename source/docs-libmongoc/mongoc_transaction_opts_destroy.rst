@@ -11,11 +11,11 @@ Synopsis
   void
   mongoc_transaction_opts_destroy (mongoc_transaction_opt_t *opts);
 
-Free a :symbol:`mongoc_transaction_opt_t`. Does nothing if ``opts`` is NULL.
+Free a :ref:`mongoc_transaction_opt_t`. Does nothing if ``opts`` is NULL.
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
 
 .. include:: includes/seealso/session.txt

@@ -20,10 +20,10 @@ Delete a key document in the key vault collection that has the given ``keyid``.
 Parameters
 ----------
 
-* ``client_encryption``: A :symbol:`mongoc_client_encryption_t`.
+* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
 * ``keyid``: The UUID (BSON binary subtype 0x04) of the key to delete.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: Optional. :symbol:`bson_error_t`.
+* ``error``: Optional. :ref:`bson_error_t`.
 
 Returns
 -------
@@ -32,5 +32,5 @@ Returns ``true`` if successful. Returns ``false`` and sets ``error`` otherwise.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_t`
-  | :symbol:`mongoc_client_encryption_create_datakey`
+  | :ref:`mongoc_client_encryption_t`
+  | :ref:`mongoc_client_encryption_create_datakey`

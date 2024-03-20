@@ -17,8 +17,8 @@ Identifies the masterkey for the Key Management Service (KMS) provider used to e
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_datakey_opts_t`
-* ``masterkey``: A :symbol:`bson_t` document describing the KMS provider specific masterkey.
+* ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
+* ``masterkey``: A :ref:`bson_t` document describing the KMS provider specific masterkey.
 
 Description
 -----------

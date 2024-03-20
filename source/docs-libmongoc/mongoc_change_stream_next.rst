@@ -21,7 +21,7 @@ may be returned before the timeout. If no data is returned this function returns
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_change_stream_t`.
+* ``stream``: A :ref:`mongoc_change_stream_t`.
 * ``bson``: The location for the resulting document.
 
 Returns
@@ -30,12 +30,12 @@ Returns
 This function returns true if a valid bson document was read from the stream.
 Otherwise, false if there was an error or no document was available.
 
-Errors can be determined with the :symbol:`mongoc_change_stream_error_document`
+Errors can be determined with the :ref:`mongoc_change_stream_error_document`
 function.
 
 Lifecycle
 ---------
 
-Similar to :symbol:`mongoc_cursor_next` the lifetime of ``bson`` is until the
-next call to :symbol:`mongoc_change_stream_next`, so it needs to be copied to
+Similar to :ref:`mongoc_cursor_next` the lifetime of ``bson`` is until the
+next call to :ref:`mongoc_change_stream_next`, so it needs to be copied to
 extend the lifetime.

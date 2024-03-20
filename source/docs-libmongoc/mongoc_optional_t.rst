@@ -10,7 +10,7 @@ Synopsis
 
 Used to specify optional boolean flags, which may remain unset.
 
-This is used within :symbol:`mongoc_server_api_t` to track whether a flag was explicitly set.
+This is used within :ref:`mongoc_server_api_t` to track whether a flag was explicitly set.
 
 Functions
   ---------

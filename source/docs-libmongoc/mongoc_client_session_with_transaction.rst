@@ -20,19 +20,19 @@ This method will start a new transaction on ``session``, run ``cb``, and then co
 
 This method has an internal time limit of 120 seconds, and will retry until that time limit is reached. This timeout is not configurable.
 
-``cb`` should not attempt to start new transactions, but should simply run operations meant to be contained within a transaction. The ``cb`` does not need to commit transactions; this is handled by the :symbol:`mongoc_client_session_with_transaction`. If ``cb`` does commit or abort a transaction, however, this method will return without taking further action.
+``cb`` should not attempt to start new transactions, but should simply run operations meant to be contained within a transaction. The ``cb`` does not need to commit transactions; this is handled by the :ref:`mongoc_client_session_with_transaction`. If ``cb`` does commit or abort a transaction, however, this method will return without taking further action.
 
 The parameter ``reply`` is initialized even upon failure to simplify memory management.
 
 Parameters
 ----------
 
-* ``session``: A :symbol:`mongoc_client_session_t`.
-* ``cb``: A :symbol:`mongoc_client_session_with_transaction_cb_t` callback, which will run inside of a new transaction on the session. See example below.
-* ``opts``: An optional :symbol:`mongoc_transaction_opt_t`.
+* ``session``: A :ref:`mongoc_client_session_t`.
+* ``cb``: A :ref:`mongoc_client_session_with_transaction_cb_t` callback, which will run inside of a new transaction on the session. See example below.
+* ``opts``: An optional :ref:`mongoc_transaction_opt_t`.
 * ``ctx``: A ``void*``. This user-provided data will be passed to ``cb``.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t` or ``NULL``.
+* ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Return
 ------

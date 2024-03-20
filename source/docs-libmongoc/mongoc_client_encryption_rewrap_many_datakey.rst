@@ -34,12 +34,12 @@ conform to the `Client Side Encryption specification
 Parameters
 ----------
 
-* ``client_encryption``: A :symbol:`mongoc_client_encryption_t`.
+* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
 * ``filter``: The filter to use when finding data keys to rewrap in the key vault collection.
 * ``provider``: The new KMS provider to use to encrypt the data keys, or ``NULL`` to use the current KMS provider(s).
 * ``master_key``: The master key fields corresponding to the new KMS provider when ``provider`` is not ``NULL``.
-* ``result``: An optional :symbol:`mongoc_client_encryption_rewrap_many_datakey_result_t`.
-* ``error``: A :symbol:`bson_error_t` set on failure.
+* ``result``: An optional :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`.
+* ``error``: A :ref:`bson_error_t` set on failure.
 
 Returns
 -------
@@ -48,4 +48,4 @@ Returns ``true`` if successful. Returns ``false`` and sets ``error`` otherwise.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_rewrap_many_datakey_result_t`
+  | :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`

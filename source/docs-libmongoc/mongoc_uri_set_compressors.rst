@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 * ``compressors``: A string consisting of one or more comma (,) separated compressors (e.g. "snappy,zlib") or ``NULL``. Passing ``NULL`` clears any existing compressors set on ``uri``.
 
 Description

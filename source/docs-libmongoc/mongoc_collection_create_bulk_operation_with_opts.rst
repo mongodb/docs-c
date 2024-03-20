@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
 
 .. ``opts-source`` replace:: ``collection``
 
@@ -25,9 +25,9 @@ Parameters
 Description
 -----------
 
-This function shall begin a new bulk operation. After creating this you may call various functions such as :symbol:`mongoc_bulk_operation_update()`, :symbol:`mongoc_bulk_operation_insert()` and others.
+This function shall begin a new bulk operation. After creating this you may call various functions such as :ref:`mongoc_bulk_operation_update()`, :ref:`mongoc_bulk_operation_insert()` and others.
 
-After calling :symbol:`mongoc_bulk_operation_execute()` the commands will be executed in as large as batches as reasonable by the client.
+After calling :ref:`mongoc_bulk_operation_execute()` the commands will be executed in as large as batches as reasonable by the client.
 
 Errors
 ------
@@ -37,7 +37,7 @@ Errors are propagated when executing the bulk operation.
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_bulk_operation_t` that should be freed with :symbol:`mongoc_bulk_operation_destroy()` when no longer in use.
+A newly allocated :ref:`mongoc_bulk_operation_t` that should be freed with :ref:`mongoc_bulk_operation_destroy()` when no longer in use.
 
 .. warning::
 
@@ -47,5 +47,5 @@ A newly allocated :symbol:`mongoc_bulk_operation_t` that should be freed with :s
 
   | :symbol:`Bulk Write Operations <bulk>`
 
-  | :symbol:`mongoc_bulk_operation_t`
+  | :ref:`mongoc_bulk_operation_t`
 

@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``opt``: A :symbol:`mongoc_index_opt_t`.
+* ``opt``: A :ref:`mongoc_index_opt_t`.
 
 Description
 -----------

@@ -15,13 +15,13 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A pointer to a :symbol:`mongoc_write_concern_t`.
-* ``command``: A pointer to a :symbol:`bson:bson_t`.
+* ``write_concern``: A pointer to a :ref:`mongoc_write_concern_t`.
+* ``command``: A pointer to a :ref:`bson:bson_t`.
 
 Description
 -----------
 
-This function appends a write concern to command options. It is useful for appending a write concern to command options before passing them to :symbol:`mongoc_client_write_command_with_opts` or a related function that takes an options document.
+This function appends a write concern to command options. It is useful for appending a write concern to command options before passing them to :ref:`mongoc_client_write_command_with_opts` or a related function that takes an options document.
 
 Returns
 -------
@@ -31,5 +31,5 @@ Returns true on success. If any arguments are invalid, returns false and logs an
 Example
 -------
 
-See the example code for :symbol:`mongoc_client_write_command_with_opts`.
+See the example code for :ref:`mongoc_client_write_command_with_opts`.
 

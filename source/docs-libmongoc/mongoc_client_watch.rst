@@ -29,20 +29,20 @@ will be used. This may happen if the change stream encounters a resumable error.
 Parameters
 ----------
 
-* ``db``: A :symbol:`mongoc_client_t` specifying the client which the change stream listens to.
-* ``pipeline``: A :symbol:`bson:bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
-* ``opts``: A :symbol:`bson:bson_t` containing change stream options.
+* ``db``: A :ref:`mongoc_client_t` specifying the client which the change stream listens to.
+* ``pipeline``: A :ref:`bson:bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
+* ``opts``: A :ref:`bson:bson_t` containing change stream options.
 
 .. include:: includes/change-stream-opts.txt
 
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_change_stream_t` which must be freed with
-:symbol:`mongoc_change_stream_destroy` when no longer in use. The returned
-:symbol:`mongoc_change_stream_t` is never ``NULL``. If there is an error, it can
-be retrieved with :symbol:`mongoc_change_stream_error_document`, and subsequent
-calls to :symbol:`mongoc_change_stream_next` will return ``false``.
+A newly allocated :ref:`mongoc_change_stream_t` which must be freed with
+:ref:`mongoc_change_stream_destroy` when no longer in use. The returned
+:ref:`mongoc_change_stream_t` is never ``NULL``. If there is an error, it can
+be retrieved with :ref:`mongoc_change_stream_error_document`, and subsequent
+calls to :ref:`mongoc_change_stream_next` will return ``false``.
 
 .. seealso::
 

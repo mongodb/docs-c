@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :symbol:`mongoc_cursor_t`.
+* ``cursor``: A :ref:`mongoc_cursor_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 * ``reply``: A location for a :symbol:`const bson_t * <bson:bson_t>`.
 
@@ -37,7 +37,7 @@ Returns
 
 False if no error has occurred, otherwise true and ``error`` is set.
 
-If the function returns true and ``reply`` is not NULL, then ``reply`` is set to a pointer to a BSON document, which is either empty or the server's error response. The document is invalid after the cursor is freed with :symbol:`mongoc_cursor_destroy()`.
+If the function returns true and ``reply`` is not NULL, then ``reply`` is set to a pointer to a BSON document, which is either empty or the server's error response. The document is invalid after the cursor is freed with :ref:`mongoc_cursor_destroy()`.
 
 Example
 -------

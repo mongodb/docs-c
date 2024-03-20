@@ -26,7 +26,7 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
 * ``models``: An array of ``mongoc_index_model_t *``.
 * ``n_models``: The number of ``models``.
 * ``opts``: Optional options.

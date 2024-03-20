@@ -16,9 +16,9 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t`.
-* ``filter``: A :symbol:`bson_t` containing the query to execute.
-* ``opts``: A :symbol:`bson_t` for query options, supporting all options in :symbol:`mongoc_collection_find_with_opts()` excluding ``sessionId``.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t`.
+* ``filter``: A :ref:`bson_t` containing the query to execute.
+* ``opts``: A :ref:`bson_t` for query options, supporting all options in :ref:`mongoc_collection_find_with_opts()` excluding ``sessionId``.
 
 Description
 -----------
@@ -29,4 +29,4 @@ Finds file documents from the bucket's ``files`` collection.
 
 Returns
 -------
-A newly allocated :symbol:`mongoc_cursor_t` that must be freed with :symbol:`mongoc_cursor_destroy()`.
+A newly allocated :ref:`mongoc_cursor_t` that must be freed with :ref:`mongoc_cursor_destroy()`.

@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``gridfs``: A :symbol:`mongoc_gridfs_t`.
+* ``gridfs``: A :ref:`mongoc_gridfs_t`.
 
 Description
 -----------

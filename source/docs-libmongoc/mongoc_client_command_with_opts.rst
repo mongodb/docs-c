@@ -18,24 +18,24 @@ Synopsis
      bson_t *reply,
      bson_error_t *error);
 
-Execute a command on the server, interpreting ``opts`` according to the MongoDB server version. To send a raw command to the server without any of this logic, use :symbol:`mongoc_client_command_simple`.
+Execute a command on the server, interpreting ``opts`` according to the MongoDB server version. To send a raw command to the server without any of this logic, use :ref:`mongoc_client_command_simple`.
 
 .. |opts-source| replace:: ``client``
 
 .. include:: includes/opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
 
 .. include:: includes/not-retryable-read.txt
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
+* ``client``: A :ref:`mongoc_client_t`.
 * ``db_name``: The name of the database to run the command on.
-* ``command``: A :symbol:`bson:bson_t` containing the command specification.
-* ``read_prefs``: An optional :symbol:`mongoc_read_prefs_t`.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``command``: A :ref:`bson:bson_t` containing the command specification.
+* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -58,4 +58,4 @@ The reply is not parsed for a write concern timeout or write concern error.
 Example
 -------
 
-See the example code for :symbol:`mongoc_client_read_command_with_opts`.
+See the example code for :ref:`mongoc_client_read_command_with_opts`.

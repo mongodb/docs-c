@@ -15,13 +15,13 @@ Synopsis
 Parameters
 ----------
 
-* ``read_concern``: A :symbol:`mongoc_read_concern_t`.
+* ``read_concern``: A :ref:`mongoc_read_concern_t`.
 * ``level``: The readConcern level to use.
 
 Description
 -----------
 
-Sets the read concern level. See :symbol:`mongoc_read_concern_t` for details.
+Sets the read concern level. See :ref:`mongoc_read_concern_t` for details.
 
 Beginning in version 1.9.0, this function can now alter the read concern after
 it has been used in an operation. Previously, using the struct with an operation

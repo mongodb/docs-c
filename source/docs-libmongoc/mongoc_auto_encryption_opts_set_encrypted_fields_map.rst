@@ -17,16 +17,16 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``encrypted_fields_map``: A :symbol:`bson_t` where keys are collection namespaces and values are encrypted fields documents.
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``encrypted_fields_map``: A :ref:`bson_t` where keys are collection namespaces and values are encrypted fields documents.
 
 Supplying an ``encrypted_fields_map`` provides more security than relying on an ``encryptedFields`` obtained from the server. It protects against a malicious server advertising a false ``encryptedFields``.
 
-The schema map does not apply to collections encrypted with: :doc:`Client-Side Field Level Encryption </queryable-encryption>`. See :symbol:`mongoc_auto_encryption_opts_set_schema_map()` instead.
+The schema map does not apply to collections encrypted with: :doc:`Client-Side Field Level Encryption </queryable-encryption>`. See :ref:`mongoc_auto_encryption_opts_set_schema_map()` instead.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

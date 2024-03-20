@@ -19,7 +19,7 @@ pointer will be ``NULL``.
 Parameters
 ----------
 
-* ``enc``: A live :symbol:`mongoc_client_encryption_t`
+* ``enc``: A live :ref:`mongoc_client_encryption_t`
 
 Returns
 -------
@@ -34,4 +34,4 @@ modified or freed. The returned pointer is only valid for the lifetime of
 
 .. seealso::
 
-  - :symbol:`mongoc_client_get_crypt_shared_version`
+  - :ref:`mongoc_client_get_crypt_shared_version`

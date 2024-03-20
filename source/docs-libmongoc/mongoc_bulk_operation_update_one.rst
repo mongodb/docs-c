@@ -14,16 +14,16 @@ Synopsis
                                     const bson_t *document,
                                     bool upsert);
 
-This function queues an update as part of a bulk operation. It will only modify a single document on the MongoDB server. This function does not execute the operation. To execute the entirety of the bulk operation call :symbol:`mongoc_bulk_operation_execute()`.
+This function queues an update as part of a bulk operation. It will only modify a single document on the MongoDB server. This function does not execute the operation. To execute the entirety of the bulk operation call :ref:`mongoc_bulk_operation_execute()`.
 
-This function is superseded by :symbol:`mongoc_bulk_operation_update_one_with_opts()`.
+This function is superseded by :ref:`mongoc_bulk_operation_update_one_with_opts()`.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``selector``: A :symbol:`bson:bson_t` that selects which document to remove.
-* ``document``: A :symbol:`bson:bson_t` containing the update document.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson:bson_t` that selects which document to remove.
+* ``document``: A :ref:`bson:bson_t` containing the update document.
 * ``upsert``: ``true`` if an ``upsert`` should be performed.
 
 .. warning::
@@ -32,7 +32,7 @@ Parameters
 
 .. seealso::
 
-  | :symbol:`mongoc_bulk_operation_update()`
+  | :ref:`mongoc_bulk_operation_update()`
 
-  | :symbol:`mongoc_bulk_operation_update_one_with_opts()`
+  | :ref:`mongoc_bulk_operation_update_one_with_opts()`
 

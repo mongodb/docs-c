@@ -14,9 +14,9 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :symbol:`mongoc_cursor_t`.
+* ``cursor``: A :ref:`mongoc_cursor_t`.
 
 Description
 -----------
 
-Frees a :symbol:`mongoc_cursor_t` and releases all associated resources. If a server-side cursor has been allocated, it will be released as well. Does nothing if ``cursor`` is NULL.
+Frees a :ref:`mongoc_cursor_t` and releases all associated resources. If a server-side cursor has been allocated, it will be released as well. Does nothing if ``cursor`` is NULL.

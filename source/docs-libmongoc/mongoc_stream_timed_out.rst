@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_t`.
+* ``stream``: A :ref:`mongoc_stream_t`.
 
 Returns
 -------

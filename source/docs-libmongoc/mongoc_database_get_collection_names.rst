@@ -8,7 +8,7 @@ mongoc_database_get_collection_names()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_database_get_collection_names_with_opts()` in new code.
+      Please use :ref:`mongoc_database_get_collection_names_with_opts()` in new code.
 
 Synopsis
 --------
@@ -31,7 +31,7 @@ Fetches a ``NULL`` terminated array of ``NULL-byte`` terminated ``char*`` string
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
+* ``database``: A :ref:`mongoc_database_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
@@ -42,4 +42,4 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed with :symbol:`bson:bson_strfreev()`. Upon failure, ``NULL`` is returned and ``error`` is set.
+A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed with :ref:`bson:bson_strfreev()`. Upon failure, ``NULL`` is returned and ``error`` is set.

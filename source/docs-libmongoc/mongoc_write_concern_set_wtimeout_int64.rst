@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :symbol:`mongoc_write_concern_t`.
+* ``write_concern``: A :ref:`mongoc_write_concern_t`.
 * ``wtimeout_msec``: A positive ``int64_t`` or zero.
 
 Description
@@ -30,5 +30,5 @@ instead of altering the write concern.
 
 .. seealso::
 
-  | :symbol:`mongoc_write_concern_get_wtimeout_int64`.
+  | :ref:`mongoc_write_concern_get_wtimeout_int64`.
 

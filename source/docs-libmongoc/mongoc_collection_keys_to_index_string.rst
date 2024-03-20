@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``keys``: A :symbol:`bson:bson_t`. This is expected to match the form of the ``key`` field in the `createIndexes <https://www.mongodb.com/docs/manual/reference/command/createIndexes/>`_ command.
+* ``keys``: A :ref:`bson:bson_t`. This is expected to match the form of the ``key`` field in the `createIndexes <https://www.mongodb.com/docs/manual/reference/command/createIndexes/>`_ command.
 
 Description
 -----------
@@ -27,5 +27,5 @@ It is a programming error to call this function on a non-standard index, such on
 Returns
 -------
 
-A string that should be freed with :symbol:`bson:bson_free()`.
+A string that should be freed with :ref:`bson:bson_free()`.
 

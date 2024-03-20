@@ -17,7 +17,7 @@ Configure the transaction's read concern. The argument is copied into the struct
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
-* ``read_concern``: A :symbol:`mongoc_read_concern_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
+* ``read_concern``: A :ref:`mongoc_read_concern_t`.
 
 .. include:: includes/seealso/session.txt

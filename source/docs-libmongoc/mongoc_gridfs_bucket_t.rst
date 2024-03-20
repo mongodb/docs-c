@@ -15,17 +15,17 @@ Synopsis
 Description
 -----------
 
-``mongoc_gridfs_bucket_t`` provides a spec-compliant MongoDB GridFS implementation, superseding :symbol:`mongoc_gridfs_t`. See the `GridFS MongoDB documentation <https://www.mongodb.com/docs/manual/core/gridfs/>`_.
+``mongoc_gridfs_bucket_t`` provides a spec-compliant MongoDB GridFS implementation, superseding :ref:`mongoc_gridfs_t`. See the `GridFS MongoDB documentation <https://www.mongodb.com/docs/manual/core/gridfs/>`_.
 
 Thread Safety
 -------------
 
-:symbol:`mongoc_gridfs_bucket_t` is NOT thread-safe and should only be used in the same thread as the owning :symbol:`mongoc_client_t`.
+:ref:`mongoc_gridfs_bucket_t` is NOT thread-safe and should only be used in the same thread as the owning :ref:`mongoc_client_t`.
 
 Lifecycle
 ---------
 
-It is an error to free a :symbol:`mongoc_gridfs_bucket_t` before freeing all derived instances of :symbol:`mongoc_stream_t`. The owning :symbol:`mongoc_client_t` must outlive the :symbol:`mongoc_gridfs_bucket_t`.
+It is an error to free a :ref:`mongoc_gridfs_bucket_t` before freeing all derived instances of :ref:`mongoc_stream_t`. The owning :ref:`mongoc_client_t` must outlive the :ref:`mongoc_gridfs_bucket_t`.
 
 
 Example
@@ -59,5 +59,5 @@ Functions
 
   | The `MongoDB GridFS specification <https://github.com/mongodb/specifications/blob/master/source/gridfs/gridfs-spec.rst>`_.
 
-  | The non spec-compliant :symbol:`mongoc_gridfs_t`.
+  | The non spec-compliant :ref:`mongoc_gridfs_t`.
 

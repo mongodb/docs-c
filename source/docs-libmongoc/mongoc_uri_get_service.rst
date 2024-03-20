@@ -8,7 +8,7 @@ mongoc_uri_get_service()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_uri_get_srv_hostname()` in new code.
+      Please use :ref:`mongoc_uri_get_srv_hostname()` in new code.
 
 Synopsis
 --------
@@ -22,7 +22,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 
 Returns the SRV host and domain name of a MongoDB URI.
 

@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``description``: A :symbol:`mongoc_server_description_t`.
+* ``description``: A :ref:`mongoc_server_description_t`.
 
 Description
 -----------
@@ -25,4 +25,4 @@ Performs a deep copy of ``description``.
 Returns
 -------
 
-Returns a newly allocated copy of ``description`` that should be freed with :symbol:`mongoc_server_description_destroy()` when no longer in use. Returns NULL if ``description`` is NULL.
+Returns a newly allocated copy of ``description`` that should be freed with :ref:`mongoc_server_description_destroy()` when no longer in use. Returns NULL if ``description`` is NULL.

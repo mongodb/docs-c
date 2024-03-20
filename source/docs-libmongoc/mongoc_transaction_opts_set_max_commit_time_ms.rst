@@ -17,7 +17,7 @@ Configure the transaction's max commit time, in milliseconds.
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
 * ``int64_t``: Timeout for commitTransaction, in milliseconds.
 
 .. include:: includes/seealso/session.txt

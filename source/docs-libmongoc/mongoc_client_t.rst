@@ -20,21 +20,21 @@ Synopsis
 
 ``mongoc_client_t`` is an opaque type that provides access to a MongoDB server,
 replica set, or sharded cluster. It maintains management of underlying sockets
-and routing to individual nodes based on :symbol:`mongoc_read_prefs_t` or :symbol:`mongoc_write_concern_t`.
+and routing to individual nodes based on :ref:`mongoc_read_prefs_t` or :ref:`mongoc_write_concern_t`.
 
 Streams
 -------
 
-The underlying transport for a given client can be customized, wrapped or replaced by any implementation that fulfills :symbol:`mongoc_stream_t`. A custom transport can be set with :symbol:`mongoc_client_set_stream_initiator()`.
+The underlying transport for a given client can be customized, wrapped or replaced by any implementation that fulfills :ref:`mongoc_stream_t`. A custom transport can be set with :ref:`mongoc_client_set_stream_initiator()`.
 
 Thread Safety
 -------------
 
-``mongoc_client_t`` is *NOT* thread-safe and should only be used from one thread at a time. When used in multi-threaded scenarios, it is recommended that you use the thread-safe :symbol:`mongoc_client_pool_t` to retrieve a ``mongoc_client_t`` for your thread.
+``mongoc_client_t`` is *NOT* thread-safe and should only be used from one thread at a time. When used in multi-threaded scenarios, it is recommended that you use the thread-safe :ref:`mongoc_client_pool_t` to retrieve a ``mongoc_client_t`` for your thread.
 
 Fork Safety
 -----------
-A :symbol:`mongoc_client_t` is only usable in the parent process after a fork. The child process must call :symbol:`mongoc_client_reset`.
+A :ref:`mongoc_client_t` is only usable in the parent process after a fork. The child process must call :ref:`mongoc_client_reset`.
 
 Example
 -------

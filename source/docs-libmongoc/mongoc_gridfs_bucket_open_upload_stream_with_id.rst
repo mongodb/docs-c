@@ -19,11 +19,11 @@ Synopsis
 Parameters
 ----------
 
-* ``bucket``: A :symbol:`mongoc_gridfs_bucket_t`.
-* ``file_id``: A :symbol:`bson_value_t` specifying the id of the created file.
+* ``bucket``: A :ref:`mongoc_gridfs_bucket_t`.
+* ``file_id``: A :ref:`bson_value_t` specifying the id of the created file.
 * ``filename``: The name of the file to create.
-* ``opts``: A :symbol:`bson_t` or ``NULL``.
-* ``error``: A :symbol:`bson_error_t` to receive any error or ``NULL``.
+* ``opts``: A :ref:`bson_t` or ``NULL``.
+* ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
 .. include:: includes/gridfs-bucket-upload-opts.txt
 
@@ -31,16 +31,16 @@ Description
 -----------
 
 Opens a stream for writing to a new file in GridFS for a specified file id.
-To have libmongoc generate an id, use :symbol:`mongoc_gridfs_bucket_open_upload_stream()`.
+To have libmongoc generate an id, use :ref:`mongoc_gridfs_bucket_open_upload_stream()`.
 
 Returns
 -------
 
-A :symbol:`mongoc_stream_t` that can be written to or ``NULL`` on failure. Errors on this stream can be retrieved with :symbol:`mongoc_gridfs_bucket_stream_error`. After calling :symbol:`mongoc_stream_close` the file is completely written in GridFS.
+A :ref:`mongoc_stream_t` that can be written to or ``NULL`` on failure. Errors on this stream can be retrieved with :ref:`mongoc_gridfs_bucket_stream_error`. After calling :ref:`mongoc_stream_close` the file is completely written in GridFS.
 
 .. seealso::
 
-  | :symbol:`mongoc_gridfs_bucket_open_upload_stream()`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream()`
 
-  | :symbol:`mongoc_gridfs_bucket_stream_error()`
+  | :ref:`mongoc_gridfs_bucket_stream_error()`
 

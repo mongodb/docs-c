@@ -8,7 +8,7 @@ mongoc_collection_find_indexes()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_collection_find_indexes_with_opts()` in new code.
+      Please use :ref:`mongoc_collection_find_indexes_with_opts()` in new code.
 
 Synopsis
 --------
@@ -28,7 +28,7 @@ Fetches a cursor containing documents, each corresponding to an index on this co
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
@@ -43,5 +43,5 @@ Returns
 
 In the returned cursor each result corresponds to the server's representation of an index on this collection. If the collection does not exist on the server, the cursor will be empty.
 
-The cursor functions :symbol:`mongoc_cursor_set_limit`, :symbol:`mongoc_cursor_set_batch_size`, and :symbol:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
+The cursor functions :ref:`mongoc_cursor_set_limit`, :ref:`mongoc_cursor_set_batch_size`, and :ref:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
 

@@ -8,7 +8,7 @@ mongoc_client_get_server_status()
 
       This function is deprecated and should not be used in new code.
 
-      Run the `serverStatus <https://www.mongodb.com/docs/manual/reference/command/serverStatus/>`_ command directly with :symbol:`mongoc_client_read_command_with_opts()` instead.
+      Run the `serverStatus <https://www.mongodb.com/docs/manual/reference/command/serverStatus/>`_ command directly with :ref:`mongoc_client_read_command_with_opts()` instead.
 
 Synopsis
 --------
@@ -23,13 +23,13 @@ Synopsis
 
 Queries the server for the current server status. The result is stored in ``reply``.
 
-``reply`` is always initialized, even in the case of failure. Always call :symbol:`bson:bson_destroy()` to release it.
+``reply`` is always initialized, even in the case of failure. Always call :ref:`bson:bson_destroy()` to release it.
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t`.
+* ``client``: A :ref:`mongoc_client_t`.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 * ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 

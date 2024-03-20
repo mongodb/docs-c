@@ -8,7 +8,7 @@ mongoc_collection_delete()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_collection_delete_one()` or :symbol:`mongoc_collection_delete_many()` in new code.
+      Please use :ref:`mongoc_collection_delete_one()` or :ref:`mongoc_collection_delete_many()` in new code.
 
 Synopsis
 --------
@@ -27,10 +27,10 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``flags``: A :symbol:`mongoc_delete_flags_t`.
-* ``selector``: A :symbol:`bson:bson_t` containing the query to match documents.
-* ``write_concern``: A :symbol:`mongoc_write_concern_t` or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``flags``: A :ref:`mongoc_delete_flags_t`.
+* ``selector``: A :ref:`bson:bson_t` containing the query to match documents.
+* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description

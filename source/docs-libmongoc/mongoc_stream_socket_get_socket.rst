@@ -14,12 +14,12 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_socket_t`.
+* ``stream``: A :ref:`mongoc_stream_socket_t`.
 
-Retrieves the underlying :symbol:`mongoc_socket_t` for a :symbol:`mongoc_stream_socket_t`.
+Retrieves the underlying :ref:`mongoc_socket_t` for a :ref:`mongoc_stream_socket_t`.
 
 Returns
 -------
 
-A :symbol:`mongoc_stream_socket_t`.
+A :ref:`mongoc_stream_socket_t`.
 

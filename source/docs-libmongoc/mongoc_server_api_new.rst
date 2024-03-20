@@ -17,4 +17,4 @@ Create a struct to hold server API preferences.
 Returns
 -------
 
-A new ``mongoc_server_api_t`` you must free with :symbol:`mongoc_server_api_destroy`.
+A new ``mongoc_server_api_t`` you must free with :ref:`mongoc_server_api_destroy`.

@@ -12,13 +12,13 @@ Synopsis
   mongoc_server_api_version_from_string (const char *version,
                                          mongoc_server_api_version_t *out);
 
-Given a string ``version``, populates ``out`` with the equivalent :symbol:`mongoc_server_api_version_t` if ``version`` represents a valid API version.
+Given a string ``version``, populates ``out`` with the equivalent :ref:`mongoc_server_api_version_t` if ``version`` represents a valid API version.
 
 Parameters
 ----------
 
 * ``version``: A string representing the version identifier.
-* ``out``: A pointer to a :symbol:`mongoc_server_api_version_t`.
+* ``out``: A pointer to a :ref:`mongoc_server_api_version_t`.
 
 Returns
 -------

@@ -15,16 +15,16 @@ Synopsis
 
 Checks if an error has occurred when creating or iterating over a change stream.
 
-Similar to :symbol:`mongoc_cursor_error_document` if the error has occurred
+Similar to :ref:`mongoc_cursor_error_document` if the error has occurred
 client-side then the ``reply`` will be set to an empty BSON document. If the
 error occurred server-side, ``reply`` is set to the server's reply document.
 
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_change_stream_t`.
+* ``stream``: A :ref:`mongoc_change_stream_t`.
 * ``err``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-* ``reply``: A location for a :symbol:`bson:bson_t`.
+* ``reply``: A location for a :ref:`bson:bson_t`.
 
 Returns
 -------

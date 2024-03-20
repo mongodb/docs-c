@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_t` created by :symbol:`mongoc_gridfs_bucket_open_upload_stream` or :symbol:`mongoc_gridfs_bucket_open_upload_stream_with_id`.
+* ``stream``: A :ref:`mongoc_stream_t` created by :ref:`mongoc_gridfs_bucket_open_upload_stream` or :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id`.
 
 Description
 -----------
@@ -28,7 +28,7 @@ True on success. False otherwise, and sets an error on ``stream``.
 
 .. seealso::
 
-  | :symbol:`mongoc_gridfs_bucket_open_upload_stream`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream`
 
-  | :symbol:`mongoc_gridfs_bucket_open_upload_stream_with_id()`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id()`
 

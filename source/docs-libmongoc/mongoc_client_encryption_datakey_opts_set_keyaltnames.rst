@@ -19,11 +19,11 @@ Sets a list of alternate name strings that can be used to identify a data key. K
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_datakey_opts_t`
+* ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
 * ``keyaltnames``: An array of strings.
 * ``keyaltnames_count``: The number of strings in ``keyaltnames``.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_encryption_encrypt_opts_set_keyaltname`
+  | :ref:`mongoc_client_encryption_encrypt_opts_set_keyaltname`
 

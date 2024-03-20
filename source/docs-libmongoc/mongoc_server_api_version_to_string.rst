@@ -16,7 +16,7 @@ Returns the string representation of ``version``, or NULL if ``version`` has no 
 Parameters
 ----------
 
-* ``version``: A :symbol:`mongoc_server_api_version_t`
+* ``version``: A :ref:`mongoc_server_api_version_t`
 
 Returns
 -------

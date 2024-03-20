@@ -14,12 +14,12 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_t`.
+* ``stream``: A :ref:`mongoc_stream_t`.
 
-This function shall fetch the underlying stream for streams that wrap a base stream. Such implementations include :symbol:`mongoc_stream_buffered_t` and :symbol:`mongoc_stream_tls_t`.
+This function shall fetch the underlying stream for streams that wrap a base stream. Such implementations include :ref:`mongoc_stream_buffered_t` and :ref:`mongoc_stream_tls_t`.
 
 Returns
 -------
 
-A :symbol:`mongoc_stream_t` or ``NULL``.
+A :ref:`mongoc_stream_t` or ``NULL``.
 

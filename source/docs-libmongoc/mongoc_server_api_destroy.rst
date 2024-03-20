@@ -11,4 +11,4 @@ Synopsis
   void
   mongoc_server_api_destroy (mongoc_server_api_t *api);
 
-Free a :symbol:`mongoc_server_api_t`. Does nothing if ``api`` is NULL.
+Free a :ref:`mongoc_server_api_t`. Does nothing if ``api`` is NULL.

@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``tls_opts``: A :symbol:`bson_t` mapping a Key Management Service (KMS) provider to a BSON document with TLS options.
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``tls_opts``: A :ref:`bson_t` mapping a Key Management Service (KMS) provider to a BSON document with TLS options.
 
 ``tls_opts`` is a BSON document of the following form:
 
@@ -49,7 +49,7 @@ See :doc:`configuring_tls` for a description of the behavior of these options.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

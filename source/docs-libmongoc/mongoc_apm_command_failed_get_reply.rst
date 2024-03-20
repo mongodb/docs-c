@@ -17,12 +17,12 @@ Returns the server's reply to a command that failed. The reply contains details 
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_command_failed_t`.
+* ``event``: A :ref:`mongoc_apm_command_failed_t`.
 
 Returns
 -------
 
-A :symbol:`bson:bson_t` that should not be modified or freed.
+A :ref:`bson:bson_t` that should not be modified or freed.
 
 .. seealso::
 

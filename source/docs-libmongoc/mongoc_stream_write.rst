@@ -17,12 +17,12 @@ Synopsis
 Parameters
 ----------
 
-* ``stream``: A :symbol:`mongoc_stream_t`.
+* ``stream``: A :ref:`mongoc_stream_t`.
 * ``buf``: The buffer to write.
 * ``count``: The number of bytes to write.
 * ``timeout_msec``: The number of milliseconds to wait before failure, a timeout of 0 will not block. If negative, use the default timeout.
 
-The :symbol:`mongoc_stream_write()` function shall perform a write to a :symbol:`mongoc_stream_t`. It's modeled on the API and semantics of ``write()``, though the parameters map only loosely.
+The :ref:`mongoc_stream_write()` function shall perform a write to a :ref:`mongoc_stream_t`. It's modeled on the API and semantics of ``write()``, though the parameters map only loosely.
 
 .. warning::
 
@@ -34,12 +34,12 @@ The :symbol:`mongoc_stream_write()` function shall perform a write to a :symbol:
 Returns
 -------
 
-The :symbol:`mongoc_stream_write` function returns the number of bytes written on success. It returns ``-1`` and sets ``errno`` upon failure.
+The :ref:`mongoc_stream_write` function returns the number of bytes written on success. It returns ``-1`` and sets ``errno`` upon failure.
 
 .. seealso::
 
-  | :symbol:`mongoc_stream_read()`
+  | :ref:`mongoc_stream_read()`
 
-  | :symbol:`mongoc_stream_readv()`
+  | :ref:`mongoc_stream_readv()`
 
-  | :symbol:`mongoc_stream_writev()`
+  | :ref:`mongoc_stream_writev()`

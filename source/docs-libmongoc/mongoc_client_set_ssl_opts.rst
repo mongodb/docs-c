@@ -25,15 +25,15 @@ A call to ``mongoc_client_set_ssl_opts`` overrides all TLS options set through
 the connection string with which the ``mongoc_client_t`` was constructed.
 
 It is a programming error to call this function on a client from a
-:symbol:`mongoc_client_pool_t`. Instead, call
-:symbol:`mongoc_client_pool_set_ssl_opts` on the pool before popping any
+:ref:`mongoc_client_pool_t`. Instead, call
+:ref:`mongoc_client_pool_set_ssl_opts` on the pool before popping any
 clients.
 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
-* ``opts``: A :symbol:`mongoc_ssl_opt_t`.
+* ``client``: A :ref:`mongoc_client_t`.
+* ``opts``: A :ref:`mongoc_ssl_opt_t`.
 
 Availability
 ------------

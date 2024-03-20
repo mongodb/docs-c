@@ -17,12 +17,12 @@ Returns this event's reply. The data is only valid in the scope of the callback 
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_server_heartbeat_succeeded_t`.
+* ``event``: A :ref:`mongoc_apm_server_heartbeat_succeeded_t`.
 
 Returns
 -------
 
-A :symbol:`bson:bson_t` that should not be modified or freed.
+A :ref:`bson:bson_t` that should not be modified or freed.
 
 .. seealso::
 

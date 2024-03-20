@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 
 Description
 -----------
@@ -24,5 +24,5 @@ Copies the entire contents of a URI.
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_uri_t` that should be freed with :symbol:`mongoc_uri_destroy()`. May return ``NULL`` on invalid host.
+A newly allocated :ref:`mongoc_uri_t` that should be freed with :ref:`mongoc_uri_destroy()`. May return ``NULL`` on invalid host.
 

@@ -15,20 +15,20 @@ Synopsis
                                              bson_t *reply,
                                              bson_error_t *error);
 
-Execute a command on the server, applying logic that is specific to commands that write, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :symbol:`mongoc_collection_command_simple`.
+Execute a command on the server, applying logic that is specific to commands that write, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :ref:`mongoc_collection_command_simple`.
 
 .. |opts-source| replace:: ``collection``
 
 .. include:: includes/write-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
 
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``command``: A :symbol:`bson:bson_t` containing the command specification.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``command``: A :ref:`bson:bson_t` containing the command specification.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -51,10 +51,10 @@ A write concern timeout or write concern error is considered a failure.
 Basic Write Operations
 ----------------------
 
-Do not use this function to call the basic write commands "insert", "update", and "delete". Those commands require special logic not implemented in ``mongoc_collection_write_command_with_opts``. For basic write operations use CRUD functions such as :symbol:`mongoc_collection_insert_one` and the others described in :ref:`the CRUD tutorial <tutorial_crud_operations>`, or use the :doc:`Bulk API <bulk>`.
+Do not use this function to call the basic write commands "insert", "update", and "delete". Those commands require special logic not implemented in ``mongoc_collection_write_command_with_opts``. For basic write operations use CRUD functions such as :ref:`mongoc_collection_insert_one` and the others described in :ref:`the CRUD tutorial <tutorial_crud_operations>`, or use the :doc:`Bulk API <bulk>`.
 
 Example
 -------
 
-See the example code for :symbol:`mongoc_client_read_command_with_opts`.
+See the example code for :ref:`mongoc_client_read_command_with_opts`.
 

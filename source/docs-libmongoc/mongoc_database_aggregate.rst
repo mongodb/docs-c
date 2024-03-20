@@ -18,10 +18,10 @@ Synopsis
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
-* ``pipeline``: A :symbol:`bson:bson_t`, either a BSON array or a BSON document containing an array field named "pipeline".
-* ``opts``: A :symbol:`bson:bson_t` containing options for the command, or ``NULL``.
-* ``read_prefs``: A :symbol:`mongoc_read_prefs_t` or ``NULL``.
+* ``database``: A :ref:`mongoc_database_t`.
+* ``pipeline``: A :ref:`bson:bson_t`, either a BSON array or a BSON document containing an array field named "pipeline".
+* ``opts``: A :ref:`bson:bson_t` containing options for the command, or ``NULL``.
+* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``database``
 
@@ -32,7 +32,7 @@ For a list of all options, see `the MongoDB Manual entry on the aggregate comman
 Description
 -----------
 
-This function creates a cursor which sends the aggregate command on the underlying database upon the first call to :symbol:`mongoc_cursor_next()`. For more information on building aggregation pipelines, see `the MongoDB Manual entry on the aggregate command <https://www.mongodb.com/docs/manual/reference/command/aggregate/>`_. Note that the pipeline must start with a compatible stage that does not require an underlying collection (e.g. "$currentOp", "$listLocalSessions").
+This function creates a cursor which sends the aggregate command on the underlying database upon the first call to :ref:`mongoc_cursor_next()`. For more information on building aggregation pipelines, see `the MongoDB Manual entry on the aggregate command <https://www.mongodb.com/docs/manual/reference/command/aggregate/>`_. Note that the pipeline must start with a compatible stage that does not require an underlying collection (e.g. "$currentOp", "$listLocalSessions").
 
 Read preferences, read and write concern, and collation can be overridden by various sources. The highest-priority sources for these options are listed first in the following table. In a transaction, read concern and write concern are prohibited in ``opts`` and the read preference must be primary or NULL. Write concern is applied from ``opts``, or if ``opts`` has no write concern and the aggregation pipeline includes "$out", the write concern is applied from ``database``.
 

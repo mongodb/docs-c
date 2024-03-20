@@ -25,8 +25,8 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``keys``: A :symbol:`bson:bson_t`.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``keys``: A :ref:`bson:bson_t`.
 * ``index_opts``: A mongoc_index_opt_t.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
@@ -45,7 +45,7 @@ The server's reply is stored in ``reply``.
 
 If no write concern is provided in ``command_opts``, the collection's write concern is used.
 
-See :symbol:`mongoc_index_opt_t` for options on creating indexes.
+See :ref:`mongoc_index_opt_t` for options on creating indexes.
 
 Errors
 ------
@@ -57,5 +57,5 @@ Returns
 
 Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
 
-``reply`` is always initialized and must be destroyed with :symbol:`bson:bson_destroy()`. If the server is running an obsolete version of MongoDB then ``reply`` may be empty, though it will still be initialized.
+``reply`` is always initialized and must be destroyed with :ref:`bson:bson_destroy()`. If the server is running an obsolete version of MongoDB then ``reply`` may be empty, though it will still be initialized.
 

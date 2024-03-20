@@ -10,16 +10,16 @@ Synopsis
 
 ``mongoc_write_concern_t`` tells the driver what level of acknowledgement to await from the server. The default, MONGOC_WRITE_CONCERN_W_DEFAULT, is right for the great majority of applications.
 
-You can specify a write concern on connection objects, database objects, collection objects, or per-operation. Data-modifying operations typically use the write concern of the object they operate on, and check the server response for a write concern error or write concern timeout. For example, :symbol:`mongoc_collection_drop_index` uses the collection's write concern, and a write concern error or timeout in the response is considered a failure.
+You can specify a write concern on connection objects, database objects, collection objects, or per-operation. Data-modifying operations typically use the write concern of the object they operate on, and check the server response for a write concern error or write concern timeout. For example, :ref:`mongoc_collection_drop_index` uses the collection's write concern, and a write concern error or timeout in the response is considered a failure.
 
 Exceptions to this principle are the generic command functions:
 
-* :symbol:`mongoc_client_command`
-* :symbol:`mongoc_client_command_simple`
-* :symbol:`mongoc_database_command`
-* :symbol:`mongoc_database_command_simple`
-* :symbol:`mongoc_collection_command`
-* :symbol:`mongoc_collection_command_simple`
+* :ref:`mongoc_client_command`
+* :ref:`mongoc_client_command_simple`
+* :ref:`mongoc_database_command`
+* :ref:`mongoc_database_command_simple`
+* :ref:`mongoc_collection_command`
+* :ref:`mongoc_collection_command_simple`
 
 These generic command functions do not automatically apply a write concern, and they do not check the server response for a write concern error or write concern timeout.
 
@@ -28,7 +28,7 @@ See `Write Concern <https://www.mongodb.com/docs/manual/core/write-concern/>`_ o
 Write Concern Levels
 --------------------
 
-Set the write concern level with :symbol:`mongoc_write_concern_set_w`.
+Set the write concern level with :ref:`mongoc_write_concern_set_w`.
 
 ==========================================  ===============================================================================================================================================================================================================
 MONGOC_WRITE_CONCERN_W_DEFAULT (1)          By default, writes block awaiting acknowledgement from MongoDB. Acknowledged write concern allows clients to catch network, duplicate key, and other errors.
@@ -42,7 +42,7 @@ Deprecations
 
 The write concern ``MONGOC_WRITE_CONCERN_W_ERRORS_IGNORED`` (value -1) is a deprecated synonym for ``MONGOC_WRITE_CONCERN_W_UNACKNOWLEDGED`` (value 0), and will be removed in the next major release.
 
-:symbol:`mongoc_write_concern_set_fsync` is deprecated.
+:ref:`mongoc_write_concern_set_fsync` is deprecated.
 
 Functions
   ---------

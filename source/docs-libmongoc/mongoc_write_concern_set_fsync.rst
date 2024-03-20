@@ -8,7 +8,7 @@ mongoc_write_concern_set_fsync()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_write_concern_set_journal()` in new code.
+      Please use :ref:`mongoc_write_concern_set_journal()` in new code.
 
 Synopsis
 --------
@@ -22,7 +22,7 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :symbol:`mongoc_write_concern_t`.
+* ``write_concern``: A :ref:`mongoc_write_concern_t`.
 * ``fsync_``: A boolean.
 
 Description

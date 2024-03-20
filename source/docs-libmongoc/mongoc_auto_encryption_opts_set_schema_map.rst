@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``schema_map``: A :symbol:`bson_t` where keys are collection namespaces and values are JSON schemas.
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``schema_map``: A :ref:`bson_t` where keys are collection namespaces and values are JSON schemas.
 
 Supplying a schema map provides more security than relying on JSON Schemas obtained from the server. It protects against a malicious server advertising a false JSON Schema, which could trick the client into sending unencrypted data that should be encrypted.
 
@@ -49,11 +49,11 @@ The following is an example of a schema map which configures automatic encryptio
         }
     }
 
-The schema map does not apply to collections encrypted with: :doc:`Queryable Encryption </queryable-encryption>`. Use :symbol:`mongoc_auto_encryption_opts_set_encrypted_fields_map()` instead.
+The schema map does not apply to collections encrypted with: :doc:`Queryable Encryption </queryable-encryption>`. Use :ref:`mongoc_auto_encryption_opts_set_encrypted_fields_map()` instead.
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

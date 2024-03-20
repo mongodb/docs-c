@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :symbol:`mongoc_cursor_t`.
+* ``cursor``: A :ref:`mongoc_cursor_t`.
 * ``batch_size``: The requested number of documents per batch.
 
 Description
@@ -24,4 +24,4 @@ Limits the number of documents returned in one batch. Each batch requires a roun
 
 See `Cursor Batches <https://www.mongodb.com/docs/manual/core/cursors/#cursor-batches>`_ in the MongoDB Manual.
 
-This is not applicable to all cursors. Calling :symbol:`mongoc_cursor_set_batch_size` on a cursor returned by :symbol:`mongoc_client_find_databases_with_opts`, :symbol:`mongoc_database_find_collections_with_opts`, or :symbol:`mongoc_collection_find_indexes_with_opts` will not change the results.
+This is not applicable to all cursors. Calling :ref:`mongoc_cursor_set_batch_size` on a cursor returned by :ref:`mongoc_client_find_databases_with_opts`, :ref:`mongoc_database_find_collections_with_opts`, or :ref:`mongoc_collection_find_indexes_with_opts` will not change the results.

@@ -17,7 +17,7 @@ Configure the transaction's write concern. The argument is copied into the struc
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_transaction_opt_t`.
-* ``write_concern``: A :symbol:`mongoc_write_concern_t`.
+* ``opts``: A :ref:`mongoc_transaction_opt_t`.
+* ``write_concern``: A :ref:`mongoc_write_concern_t`.
 
 .. include:: includes/seealso/session.txt

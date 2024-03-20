@@ -8,7 +8,7 @@ mongoc_bulk_operation_delete_one()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_bulk_operation_remove_one()` in new code.
+      Please use :ref:`mongoc_bulk_operation_remove_one()` in new code.
 
 Synopsis
 --------
@@ -20,22 +20,22 @@ Synopsis
                                     const bson_t *selector)
     BSON_GNUC_DEPRECATED_FOR (mongoc_bulk_operation_remove_one);
 
-Delete a single document as part of a bulk operation. This only queues the operation. To execute it, call :symbol:`mongoc_bulk_operation_execute()`.
+Delete a single document as part of a bulk operation. This only queues the operation. To execute it, call :ref:`mongoc_bulk_operation_execute()`.
 
 Parameters
 ----------
 
-* ``bulk``: A :symbol:`mongoc_bulk_operation_t`.
-* ``selector``: A :symbol:`bson:bson_t`.
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson:bson_t`.
 
 Errors
 ------
 
-Errors are propagated via :symbol:`mongoc_bulk_operation_execute()`.
+Errors are propagated via :ref:`mongoc_bulk_operation_execute()`.
 
 .. seealso::
 
-  | :symbol:`mongoc_bulk_operation_remove_one_with_opts()`
+  | :ref:`mongoc_bulk_operation_remove_one_with_opts()`
 
-  | :symbol:`mongoc_bulk_operation_remove_many_with_opts()`
+  | :ref:`mongoc_bulk_operation_remove_many_with_opts()`
 

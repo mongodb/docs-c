@@ -16,10 +16,10 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``extra``: A :symbol:`bson_t` of additional options.
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``extra``: A :ref:`bson_t` of additional options.
 
-``extra`` is a :symbol:`bson_t` containing any of the following optional fields:
+``extra`` is a :ref:`bson_t` containing any of the following optional fields:
 
 * ``mongocryptdURI`` set to a URI to connect to the mongocryptd process (default is "mongodb://localhost:27020").
 * ``mongocryptdBypassSpawn`` set to true to prevent the driver from spawning the mongocryptd process (default behavior is to spawn).
@@ -56,7 +56,7 @@ Parameters
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 

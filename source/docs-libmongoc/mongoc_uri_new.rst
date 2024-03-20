@@ -19,12 +19,12 @@ Parameters
 Description
 -----------
 
-Calls :symbol:`mongoc_uri_new_with_error`.
+Calls :ref:`mongoc_uri_new_with_error`.
 
 Returns
 -------
 
-A newly allocated :symbol:`mongoc_uri_t` if successful. Otherwise ``NULL``, using
+A newly allocated :ref:`mongoc_uri_t` if successful. Otherwise ``NULL``, using
 MONGOC_WARNING on error.
 
 .. warning::

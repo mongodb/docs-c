@@ -18,16 +18,16 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :symbol:`mongoc_collection_t`.
-* ``flags``: A :symbol:`mongoc_remove_flags_t`.
-* ``selector``: A :symbol:`bson:bson_t` containing the query to match documents.
-* ``write_concern``: A :symbol:`mongoc_write_concern_t` or ``NULL``.
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``flags``: A :ref:`mongoc_remove_flags_t`.
+* ``selector``: A :ref:`bson:bson_t` containing the query to match documents.
+* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------
 
-Superseded by :symbol:`mongoc_collection_delete_one` and :symbol:`mongoc_collection_delete_many`.
+Superseded by :ref:`mongoc_collection_delete_one` and :ref:`mongoc_collection_delete_many`.
 
 This function shall remove documents in the given ``collection`` that match ``selector``. The bson ``selector`` is not validated, simply passed along as appropriate to the server.  As such, compatibility and errors should be validated in the appropriate server documentation.
 

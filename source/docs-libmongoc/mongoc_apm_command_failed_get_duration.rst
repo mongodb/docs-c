@@ -17,7 +17,7 @@ Returns this event's duration in microseconds.
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_command_failed_t`.
+* ``event``: A :ref:`mongoc_apm_command_failed_t`.
 
 Returns
 -------

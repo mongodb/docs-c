@@ -20,8 +20,8 @@ Receive an event notification whenever the driver observes a change in status of
 Parameters
 ----------
 
-* ``callbacks``: A :symbol:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :symbol:`mongoc_apm_server_changed_t` whenever the driver observes a change in status of a server it is connected to.
+* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+* ``cb``: A function to call with a :ref:`mongoc_apm_server_changed_t` whenever the driver observes a change in status of a server it is connected to.
 
 .. seealso::
 

@@ -8,7 +8,7 @@ mongoc_apm_command_failed_get_server_connection_id()
 
       This function is deprecated and should not be used in new code.
 
-      Please use :symbol:`mongoc_apm_command_failed_get_server_connection_id_int64()` in new code.
+      Please use :ref:`mongoc_apm_command_failed_get_server_connection_id_int64()` in new code.
 
 Synopsis
 --------
@@ -24,14 +24,14 @@ Synopsis
 Returns this event's context.
 
 Returns the server connection ID for the command. The server connection ID is
-distinct from the server ID (:symbol:`mongoc_apm_command_failed_get_server_id`)
+distinct from the server ID (:ref:`mongoc_apm_command_failed_get_server_id`)
 and is returned by the hello or legacy hello response as "connectionId" from the
 server on 4.2+.
 
 Parameters
 ----------
 
-* ``event``: A :symbol:`mongoc_apm_command_failed_t`.
+* ``event``: A :ref:`mongoc_apm_command_failed_t`.
 
 Returns
 -------

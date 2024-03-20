@@ -19,8 +19,8 @@ Fetches a cursor containing documents, each corresponding to a database on this 
 Parameters
 ----------
 
-* ``client``: A :symbol:`mongoc_client_t`.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``client``: A :ref:`mongoc_client_t`.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 
 .. |opts-source| replace:: ``client``
 
@@ -31,11 +31,11 @@ For a list of all options, see `the MongoDB Manual entry on the listDatabases co
 Errors
 ------
 
-Use :symbol:`mongoc_cursor_error` on the returned cursor to check for errors.
+Use :ref:`mongoc_cursor_error` on the returned cursor to check for errors.
 
 Returns
 -------
 
 A cursor where each result corresponds to the server's representation of a database.
 
-The cursor functions :symbol:`mongoc_cursor_set_limit`, :symbol:`mongoc_cursor_set_batch_size`, and :symbol:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
+The cursor functions :ref:`mongoc_cursor_set_limit`, :ref:`mongoc_cursor_set_batch_size`, and :ref:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.

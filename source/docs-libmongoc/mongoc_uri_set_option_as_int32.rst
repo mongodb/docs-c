@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``uri``: A :symbol:`mongoc_uri_t`.
+* ``uri``: A :ref:`mongoc_uri_t`.
 * ``option``: The name of an option, case insensitive.
 * ``value``: The new value.
 
@@ -27,7 +27,7 @@ Sets an individual URI option, after the URI has been parsed from a string.
 
 Only known options of type integer can be set. Some integer options, such as :ref:`minHeartbeatFrequencyMS <sdam_uri_options>`, have additional constraints.
 
-Updates the option in-place if already set, otherwise appends it to the URI's :symbol:`bson:bson_t` of options.
+Updates the option in-place if already set, otherwise appends it to the URI's :ref:`bson:bson_t` of options.
 
 Returns
 -------
@@ -36,5 +36,5 @@ True if successfully set (the named option is a known option of type int32 or in
 
 .. seealso::
 
-  | :symbol:`mongoc_uri_set_option_as_int64()`
+  | :ref:`mongoc_uri_set_option_as_int64()`
 

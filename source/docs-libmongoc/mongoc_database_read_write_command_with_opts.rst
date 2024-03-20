@@ -17,23 +17,23 @@ Synopsis
      bson_t *reply,
      bson_error_t *error);
 
-Execute a command on the server, applying logic for commands that both read and write, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :symbol:`mongoc_database_command_simple`.
+Execute a command on the server, applying logic for commands that both read and write, and taking the MongoDB server version into account. To send a raw command to the server without any of this logic, use :ref:`mongoc_database_command_simple`.
 
 .. ``opts-source`` replace:: ``database``
 
 .. include:: includes/read-write-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :symbol:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
 
-(The :symbol:`mongoc_read_prefs_t` parameter was included by mistake when this function was introduced in libmongoc 1.5. A command that writes must not obey a read preference.)
+(The :ref:`mongoc_read_prefs_t` parameter was included by mistake when this function was introduced in libmongoc 1.5. A command that writes must not obey a read preference.)
 
 Parameters
 ----------
 
-* ``database``: A :symbol:`mongoc_database_t`.
-* ``command``: A :symbol:`bson:bson_t` containing the command specification.
+* ``database``: A :ref:`mongoc_database_t`.
+* ``command``: A :ref:`bson:bson_t` containing the command specification.
 * ``read_prefs``: Ignored.
-* ``opts``: A :symbol:`bson:bson_t` containing additional options.
+* ``opts``: A :ref:`bson:bson_t` containing additional options.
 * ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 * ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
@@ -56,5 +56,5 @@ A write concern timeout or write concern error is considered a failure.
 Example
 -------
 
-See the example code for :symbol:`mongoc_client_read_command_with_opts`.
+See the example code for :ref:`mongoc_client_read_command_with_opts`.
 

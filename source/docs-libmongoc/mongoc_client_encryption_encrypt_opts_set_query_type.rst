@@ -20,11 +20,11 @@ Synopsis
 Sets a query type for explicit encryption. Currently, the supported values
 for ``query_type`` are ``"equality"`` and ``"rangePreview"``. **NOTE** that the ``qenc:range-is-experimental``
 
-Only applies when the algorithm set by :symbol:`mongoc_client_encryption_encrypt_opts_set_algorithm()` is "Indexed" or "RangePreview".
+Only applies when the algorithm set by :ref:`mongoc_client_encryption_encrypt_opts_set_algorithm()` is "Indexed" or "RangePreview".
 It is an error to set the query type when algorithm is not "Indexed" or "RangePreview".
 
 Parameters
 ----------
 
-* ``opts``: A :symbol:`mongoc_client_encryption_encrypt_opts_t`
+* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
 * ``query_type``: A query type to use for explicit encryption.

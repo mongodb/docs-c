@@ -16,12 +16,12 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :symbol:`mongoc_auto_encryption_opts_t`
-* ``bypass_auto_encryption``: A boolean. If true, a :symbol:`mongoc_client_t` configured with :symbol:`mongoc_client_enable_auto_encryption()` will only perform automatic decryption (not encryption).
+* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+* ``bypass_auto_encryption``: A boolean. If true, a :ref:`mongoc_client_t` configured with :ref:`mongoc_client_enable_auto_encryption()` will only perform automatic decryption (not encryption).
 
 .. seealso::
 
-  | :symbol:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption()`
 
   | :doc:`in-use-encryption`
 
