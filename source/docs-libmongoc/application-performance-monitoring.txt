@@ -4,12 +4,16 @@
 Application Performance Monitoring (APM)
 ========================================
 
-The MongoDB C Driver allows you to monitor all the MongoDB operations the driver executes. This event-notification system conforms to two MongoDB driver specs:
+The MongoDB C Driver allows you to monitor all the MongoDB operations the driver executes. This
+event-notification system conforms to two MongoDB driver specs:
 
-- `Command Logging and Monitoring <https://github.com/mongodb/specifications/blob/master/source/command-logging-and-monitoring/command-logging-and-monitoring.rst>`_: events related to all application operations.
-- `SDAM Monitoring <https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring-monitoring.rst>`_: events related to the driver's Server Discovery And Monitoring logic.
+- `Command Logging and Monitoring <https://github.com/mongodb/specifications/blob/master/source/command-logging-and-monitoring/command-logging-and-monitoring.rst>`_:
+  events related to all application operations.
+- `SDAM Monitoring <https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring-monitoring.rst>`_:
+  events related to the driver's Server Discovery And Monitoring logic.
 
-To receive notifications, create a ``mongoc_apm_callbacks_t`` with :ref:`mongoc_apm_callbacks_new`, set callbacks on it, then pass it to :ref:`mongoc_client_set_apm_callbacks` or :ref:`mongoc_client_pool_set_apm_callbacks`.
+To receive notifications, create a ``mongoc_apm_callbacks_t`` with :ref:`mongoc_apm_callbacks_new`,
+set callbacks on it, then pass it to :ref:`mongoc_client_set_apm_callbacks` or :ref:`mongoc_client_pool_set_apm_callbacks`.
 
 Command-Monitoring Example
 --------------------------
@@ -62,9 +66,11 @@ This example program prints:
   succeeded: 3
   failed: 0
 
-The output has been edited and formatted for clarity. Depending on your server configuration, messages may include metadata like database name, logical session ids, or cluster times that are not shown here.
+The output has been edited and formatted for clarity. Depending on your server configuration, messages may
+include metadata like database name, logical session ids, or cluster times that are not shown here.
 
-The final "insert" command is considered successful, despite the writeError, because the server replied to the overall command with ``"ok": 1``.
+The final "insert" command is considered successful, despite the writeError, because the server replied to the
+overall command with ``"ok": 1``.
 
 SDAM Monitoring Example
 -----------------------
@@ -135,7 +141,8 @@ This example program prints something like:
      heartbeat succeeded: 3
      heartbeat failed: 0
 
-The driver connects to the mongods on ports 27017 and 27018, which were specified in the URI, and determines which is primary. It also discovers the third member, "localhost:27019", and adds it to the topology.
+The driver connects to the mongods on ports 27017 and 27018, which were specified in the URI, and determines
+which is primary. It also discovers the third member, "localhost:27019", and adds it to the topology.
 
 Functions
 ---------

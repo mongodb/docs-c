@@ -1,5 +1,6 @@
-.. _mongoc_guides
+.. _mongoc_guides:
 
+======
 Guides
 ======
 

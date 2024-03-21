@@ -1,5 +1,6 @@
-.. _mongoc_logging
+.. _mongoc_logging:
 
+=======
 Logging
 =======
 
