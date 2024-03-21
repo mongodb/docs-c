@@ -25,33 +25,33 @@ After adding all of the write operations to the ``mongoc_bulk_operation_t``, cal
   | :symbol:`Bulk Write Operations <bulk>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_bulk_operation_delete
-    mongoc_bulk_operation_delete_one
-    mongoc_bulk_operation_destroy
-    mongoc_bulk_operation_execute
-    mongoc_bulk_operation_get_hint
-    mongoc_bulk_operation_get_write_concern
-    mongoc_bulk_operation_insert
-    mongoc_bulk_operation_insert_with_opts
-    mongoc_bulk_operation_remove
-    mongoc_bulk_operation_remove_many_with_opts
-    mongoc_bulk_operation_remove_one
-    mongoc_bulk_operation_remove_one_with_opts
-    mongoc_bulk_operation_replace_one
-    mongoc_bulk_operation_replace_one_with_opts
-    mongoc_bulk_operation_set_bypass_document_validation
-    mongoc_bulk_operation_set_client_session
-    mongoc_bulk_operation_set_comment
-    mongoc_bulk_operation_set_hint
-    mongoc_bulk_operation_set_let
-    mongoc_bulk_operation_update
-    mongoc_bulk_operation_update_many_with_opts
-    mongoc_bulk_operation_update_one
-    mongoc_bulk_operation_update_one_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_delete
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_delete_one
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_destroy
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_execute
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_get_hint
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_get_write_concern
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_insert
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_insert_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_remove
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_remove_many_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_remove_one
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_remove_one_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_replace_one
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_replace_one_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_set_bypass_document_validation
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_set_client_session
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_set_comment
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_set_hint
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_set_let
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_update
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_update_many_with_opts
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_update_one
+  /mongoc_bulk_operation_t/mongoc_bulk_operation_update_one_with_opts
 

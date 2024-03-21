@@ -183,10 +183,10 @@ The Error API Versions are defined with ``MONGOC_ERROR_API_VERSION_LEGACY`` and 
   | `MongoDB Server Error Codes <https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.yml>`_
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_error_has_label
+  /errors/mongoc_error_has_label

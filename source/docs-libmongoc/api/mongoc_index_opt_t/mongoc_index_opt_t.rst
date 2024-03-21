@@ -76,14 +76,16 @@ Example
   }
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    mongoc_index_opt_get_default
-    mongoc_index_opt_init
+   /mongoc_index_opt_t/mongoc_index_opt_get_default
+   /mongoc_index_opt_t/mongoc_index_opt_init
+   /mongoc_index_opt_t/mongoc_index_opt_wt_t
+   /mongoc_index_opt_t/mongoc_index_opt_geo_t
 
 .. seealso::
 

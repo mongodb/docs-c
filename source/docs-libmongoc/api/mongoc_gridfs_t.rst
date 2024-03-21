@@ -53,22 +53,26 @@ Example
   | The spec-compliant :ref:`mongoc_gridfs_bucket_t`.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_gridfs_create_file
-    mongoc_gridfs_create_file_from_stream
-    mongoc_gridfs_destroy
-    mongoc_gridfs_drop
-    mongoc_gridfs_find
-    mongoc_gridfs_find_one
-    mongoc_gridfs_find_one_by_filename
-    mongoc_gridfs_find_one_with_opts
-    mongoc_gridfs_find_with_opts
-    mongoc_gridfs_get_chunks
-    mongoc_gridfs_get_files
-    mongoc_gridfs_remove_by_filename
+  /mongoc_gridfs_t/mongoc_gridfs_create_file
+  /mongoc_gridfs_t/mongoc_gridfs_create_file_from_stream
+  /mongoc_gridfs_t/mongoc_gridfs_destroy
+  /mongoc_gridfs_t/mongoc_gridfs_drop
+  /mongoc_gridfs_t/mongoc_gridfs_find
+  /mongoc_gridfs_t/mongoc_gridfs_find_one
+  /mongoc_gridfs_t/mongoc_gridfs_find_one_by_filename
+  /mongoc_gridfs_t/mongoc_gridfs_find_one_with_opts
+  /mongoc_gridfs_t/mongoc_gridfs_find_with_opts
+  /mongoc_gridfs_t/mongoc_gridfs_get_chunks
+  /mongoc_gridfs_t/mongoc_gridfs_get_files
+  /mongoc_gridfs_t/mongoc_gridfs_remove_by_filename
+  /mongoc_gridfs_t/mongoc_gridfs_file_list_t
+  /mongoc_gridfs_t/mongoc_gridfs_file_opt_t
+  /mongoc_gridfs_t/mongoc_gridfs_file_t
+  /mongoc_gridfs_t/mongoc_gridfs_bucket_t
 

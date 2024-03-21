@@ -83,23 +83,23 @@ When the read preference mode is ``MONGOC_READ_NEAREST`` and the sharded cluster
 Appropriate values for the ``enabled`` key are ``true`` or ``false``.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    mongoc_read_prefs_add_tag
-    mongoc_read_prefs_copy
-    mongoc_read_prefs_destroy
-    mongoc_read_prefs_get_hedge
-    mongoc_read_prefs_get_max_staleness_seconds
-    mongoc_read_prefs_get_mode
-    mongoc_read_prefs_get_tags
-    mongoc_read_prefs_is_valid
-    mongoc_read_prefs_new
-    mongoc_read_prefs_set_hedge
-    mongoc_read_prefs_set_max_staleness_seconds
-    mongoc_read_prefs_set_mode
-    mongoc_read_prefs_set_tags
+   /mongoc_read_prefs_t/mongoc_read_prefs_add_tag
+   /mongoc_read_prefs_t/mongoc_read_prefs_copy
+   /mongoc_read_prefs_t/mongoc_read_prefs_destroy
+   /mongoc_read_prefs_t/mongoc_read_prefs_get_hedge
+   /mongoc_read_prefs_t/mongoc_read_prefs_get_max_staleness_seconds
+   /mongoc_read_prefs_t/mongoc_read_prefs_get_mode
+   /mongoc_read_prefs_t/mongoc_read_prefs_get_tags
+   /mongoc_read_prefs_t/mongoc_read_prefs_is_valid
+   /mongoc_read_prefs_t/mongoc_read_prefs_new
+   /mongoc_read_prefs_t/mongoc_read_prefs_set_hedge
+   /mongoc_read_prefs_t/mongoc_read_prefs_set_max_staleness_seconds
+   /mongoc_read_prefs_t/mongoc_read_prefs_set_mode
+   /mongoc_read_prefs_t/mongoc_read_prefs_set_tags
 

@@ -48,16 +48,13 @@ The following example shows using ``startAtOperationTime`` to synchronize a chan
 
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    mongoc_client_watch
-    mongoc_database_watch
-    mongoc_collection_watch
-    mongoc_change_stream_next
-    mongoc_change_stream_get_resume_token
-    mongoc_change_stream_error_document
-    mongoc_change_stream_destroy
+   /mongoc_change_stream_t/mongoc_change_stream_next
+   /mongoc_change_stream_t/mongoc_change_stream_get_resume_token
+   /mongoc_change_stream_t/mongoc_change_stream_error_document
+   /mongoc_change_stream_t/mongoc_change_stream_destroy

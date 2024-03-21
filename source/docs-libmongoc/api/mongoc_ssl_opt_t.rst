@@ -30,13 +30,13 @@ Beginning in version 1.2.0, once a pool or client has any TLS options set, all c
 As of 1.4.0, the :ref:`mongoc_client_pool_set_ssl_opts` and :ref:`mongoc_client_set_ssl_opts` will not only shallow copy the struct, but will also copy the ``const char*``. It is therefore no longer needed to make sure the values remain valid after setting them.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_ssl_opt_get_default
+  mongoc_ssl_opt_get_default
 
 .. seealso::
 

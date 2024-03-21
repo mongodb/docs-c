@@ -30,20 +30,20 @@ Example
    :caption: example-transaction.c
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_transaction_opts_new
-    mongoc_transaction_opts_get_read_concern
-    mongoc_transaction_opts_set_read_concern
-    mongoc_transaction_opts_get_write_concern
-    mongoc_transaction_opts_set_write_concern
-    mongoc_transaction_opts_get_read_prefs
-    mongoc_transaction_opts_set_read_prefs
-    mongoc_transaction_opts_get_max_commit_time_ms
-    mongoc_transaction_opts_set_max_commit_time_ms
-    mongoc_transaction_opts_clone
-    mongoc_transaction_opts_destroy
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_new
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_get_read_concern
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_set_read_concern
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_get_write_concern
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_set_write_concern
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_get_read_prefs
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_set_read_prefs
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_get_max_commit_time_ms
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_set_max_commit_time_ms
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_clone
+  /mongoc_transaction_opt_t/mongoc_transaction_opts_destroy

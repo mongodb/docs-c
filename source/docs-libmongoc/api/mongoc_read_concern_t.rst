@@ -38,17 +38,17 @@ For the sake of compatibility with future versions of MongoDB, :ref:`mongoc_read
 See `Read Concern Levels <https://www.mongodb.com/docs/manual/reference/read-concern/#read-concern-levels>`_ in the MongoDB manual for more information about the individual read concern levels.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_read_concern_append
-    mongoc_read_concern_copy
-    mongoc_read_concern_destroy
-    mongoc_read_concern_get_level
-    mongoc_read_concern_is_default
-    mongoc_read_concern_new
-    mongoc_read_concern_set_level
+  /mongoc_read_concern_t/mongoc_read_concern_append
+  /mongoc_read_concern_t/mongoc_read_concern_copy
+  /mongoc_read_concern_t/mongoc_read_concern_destroy
+  /mongoc_read_concern_t/mongoc_read_concern_get_level
+  /mongoc_read_concern_t/mongoc_read_concern_is_default
+  /mongoc_read_concern_t/mongoc_read_concern_new
+  /mongoc_read_concern_t/mongoc_read_concern_set_level
 

@@ -36,24 +36,24 @@ Example
    :caption: example-gridfs-bucket.c
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_gridfs_bucket_abort_upload
-    mongoc_gridfs_bucket_delete_by_id
-    mongoc_gridfs_bucket_destroy
-    mongoc_gridfs_bucket_download_to_stream
-    mongoc_gridfs_bucket_find
-    mongoc_gridfs_bucket_new
-    mongoc_gridfs_bucket_open_download_stream
-    mongoc_gridfs_bucket_open_upload_stream
-    mongoc_gridfs_bucket_open_upload_stream_with_id
-    mongoc_gridfs_bucket_stream_error
-    mongoc_gridfs_bucket_upload_from_stream
-    mongoc_gridfs_bucket_upload_from_stream_with_id
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_abort_upload
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_delete_by_id
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_destroy
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_download_to_stream
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_find
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_new
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_open_download_stream
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_open_upload_stream
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_open_upload_stream_with_id
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_stream_error
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_upload_from_stream
+  /mongoc_gridfs_bucket_tongoc_gridfs_bucket_upload_from_stream_with_id
 
 .. seealso::
 

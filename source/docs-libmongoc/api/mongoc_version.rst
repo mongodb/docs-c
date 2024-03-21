@@ -34,15 +34,15 @@ Only compile a block on MongoDB C Driver 1.1.0 and newer.
   #endif
 
 Run-Time Version Checks
-  -----------------------
+-----------------------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_check_version
-    mongoc_get_major_version
-    mongoc_get_micro_version
-    mongoc_get_minor_version
-    mongoc_get_version
+  /mongoc_version/mongoc_check_version
+  /mongoc_version/mongoc_get_major_version
+  /mongoc_version/mongoc_get_micro_version
+  /mongoc_version/mongoc_get_minor_version
+  /mongoc_version/mongoc_get_version
 

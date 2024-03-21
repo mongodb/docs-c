@@ -44,53 +44,53 @@ Example
    :caption: example-client.c
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_client_command
-    mongoc_client_command_simple
-    mongoc_client_command_simple_with_server_id
-    mongoc_client_command_with_opts
-    mongoc_client_destroy
-    mongoc_client_enable_auto_encryption
-    mongoc_client_find_databases_with_opts
-    mongoc_client_get_collection
-    mongoc_client_get_crypt_shared_version
-    mongoc_client_get_database
-    mongoc_client_get_database_names
-    mongoc_client_get_database_names_with_opts
-    mongoc_client_get_default_database
-    mongoc_client_get_gridfs
-    mongoc_client_get_handshake_description
-    mongoc_client_get_read_concern
-    mongoc_client_get_read_prefs
-    mongoc_client_get_server_description
-    mongoc_client_get_server_descriptions
-    mongoc_client_get_server_status
-    mongoc_client_get_uri
-    mongoc_client_get_write_concern
-    mongoc_client_new
-    mongoc_client_new_from_uri
-    mongoc_client_new_from_uri_with_error
-    mongoc_client_read_command_with_opts
-    mongoc_client_read_write_command_with_opts
-    mongoc_client_reset
-    mongoc_client_select_server
-    mongoc_client_set_apm_callbacks
-    mongoc_client_set_appname
-    mongoc_client_set_error_api
-    mongoc_client_set_read_concern
-    mongoc_client_set_read_prefs
-    mongoc_client_set_server_api
-    mongoc_client_set_ssl_opts
-    mongoc_client_set_stream_initiator
-    mongoc_client_set_write_concern
-    mongoc_client_start_session
-    mongoc_client_watch
-    mongoc_client_write_command_with_opts
-    mongoc_handshake_data_append
+  /mongoc_client_t/mongoc_client_command
+  /mongoc_client_t/mongoc_client_command_simple
+  /mongoc_client_t/mongoc_client_command_simple_with_server_id
+  /mongoc_client_t/mongoc_client_command_with_opts
+  /mongoc_client_t/mongoc_client_destroy
+  /mongoc_client_t/mongoc_client_enable_auto_encryption
+  /mongoc_client_t/mongoc_client_find_databases_with_opts
+  /mongoc_client_t/mongoc_client_get_collection
+  /mongoc_client_t/mongoc_client_get_crypt_shared_version
+  /mongoc_client_t/mongoc_client_get_database
+  /mongoc_client_t/mongoc_client_get_database_names
+  /mongoc_client_t/mongoc_client_get_database_names_with_opts
+  /mongoc_client_t/mongoc_client_get_default_database
+  /mongoc_client_t/mongoc_client_get_gridfs
+  /mongoc_client_t/mongoc_client_get_handshake_description
+  /mongoc_client_t/mongoc_client_get_read_concern
+  /mongoc_client_t/mongoc_client_get_read_prefs
+  /mongoc_client_t/mongoc_client_get_server_description
+  /mongoc_client_t/mongoc_client_get_server_descriptions
+  /mongoc_client_t/mongoc_client_get_server_status
+  /mongoc_client_t/mongoc_client_get_uri
+  /mongoc_client_t/mongoc_client_get_write_concern
+  /mongoc_client_t/mongoc_client_new
+  /mongoc_client_t/mongoc_client_new_from_uri
+  /mongoc_client_t/mongoc_client_new_from_uri_with_error
+  /mongoc_client_t/mongoc_client_read_command_with_opts
+  /mongoc_client_t/mongoc_client_read_write_command_with_opts
+  /mongoc_client_t/mongoc_client_reset
+  /mongoc_client_t/mongoc_client_select_server
+  /mongoc_client_t/mongoc_client_set_apm_callbacks
+  /mongoc_client_t/mongoc_client_set_appname
+  /mongoc_client_t/mongoc_client_set_error_api
+  /mongoc_client_t/mongoc_client_set_read_concern
+  /mongoc_client_t/mongoc_client_set_read_prefs
+  /mongoc_client_t/mongoc_client_set_server_api
+  /mongoc_client_t/mongoc_client_set_ssl_opts
+  /mongoc_client_t/mongoc_client_set_stream_initiator
+  /mongoc_client_t/mongoc_client_set_write_concern
+  /mongoc_client_t/mongoc_client_start_session
+  /mongoc_client_t/mongoc_client_watch
+  /mongoc_client_t/mongoc_client_write_command_with_opts
+  /mongoc_client_t/mongoc_handshake_data_append
 
 

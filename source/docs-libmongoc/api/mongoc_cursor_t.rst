@@ -37,30 +37,30 @@ Example
    :caption: Query MongoDB and iterate results
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_cursor_clone
-    mongoc_cursor_current
-    mongoc_cursor_destroy
-    mongoc_cursor_error
-    mongoc_cursor_error_document
-    mongoc_cursor_get_batch_size
-    mongoc_cursor_get_hint
-    mongoc_cursor_get_host
-    mongoc_cursor_get_id
-    mongoc_cursor_get_limit
-    mongoc_cursor_get_max_await_time_ms
-    mongoc_cursor_is_alive
-    mongoc_cursor_more
-    mongoc_cursor_new_from_command_reply
-    mongoc_cursor_new_from_command_reply_with_opts
-    mongoc_cursor_next
-    mongoc_cursor_set_batch_size
-    mongoc_cursor_set_hint
-    mongoc_cursor_set_limit
-    mongoc_cursor_set_max_await_time_ms
+   /mongoc_cursor_t/mongoc_cursor_clone
+   /mongoc_cursor_t/mongoc_cursor_current
+   /mongoc_cursor_t/mongoc_cursor_destroy
+   /mongoc_cursor_t/mongoc_cursor_error
+   /mongoc_cursor_t/mongoc_cursor_error_document
+   /mongoc_cursor_t/mongoc_cursor_get_batch_size
+   /mongoc_cursor_t/mongoc_cursor_get_hint
+   /mongoc_cursor_t/mongoc_cursor_get_host
+   /mongoc_cursor_t/mongoc_cursor_get_id
+   /mongoc_cursor_t/mongoc_cursor_get_limit
+   /mongoc_cursor_t/mongoc_cursor_get_max_await_time_ms
+   /mongoc_cursor_t/mongoc_cursor_is_alive
+   /mongoc_cursor_t/mongoc_cursor_more
+   /mongoc_cursor_t/mongoc_cursor_new_from_command_reply
+   /mongoc_cursor_t/mongoc_cursor_new_from_command_reply_with_opts
+   /mongoc_cursor_t/mongoc_cursor_next
+   /mongoc_cursor_t/mongoc_cursor_set_batch_size
+   /mongoc_cursor_t/mongoc_cursor_set_hint
+   /mongoc_cursor_t/mongoc_cursor_set_limit
+   /mongoc_cursor_t/mongoc_cursor_set_max_await_time_ms
 

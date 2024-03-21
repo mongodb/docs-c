@@ -156,25 +156,25 @@ Outputs:
   }
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
 
-    mongoc_find_and_modify_opts_append
-    mongoc_find_and_modify_opts_destroy
-    mongoc_find_and_modify_opts_get_bypass_document_validation
-    mongoc_find_and_modify_opts_get_fields
-    mongoc_find_and_modify_opts_get_flags
-    mongoc_find_and_modify_opts_get_max_time_ms
-    mongoc_find_and_modify_opts_get_sort
-    mongoc_find_and_modify_opts_get_update
-    mongoc_find_and_modify_opts_new
-    mongoc_find_and_modify_opts_set_bypass_document_validation
-    mongoc_find_and_modify_opts_set_fields
-    mongoc_find_and_modify_opts_set_flags
-    mongoc_find_and_modify_opts_set_max_time_ms
-    mongoc_find_and_modify_opts_set_sort
-    mongoc_find_and_modify_opts_set_update
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_append
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_destroy
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_bypass_document_validation
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_fields
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_flags
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_max_time_ms
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_sort
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_get_update
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_new
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_bypass_document_validation
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_fields
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_flags
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_max_time_ms
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_sort
+    /mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_update
 

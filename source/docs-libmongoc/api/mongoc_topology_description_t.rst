@@ -18,16 +18,16 @@ Its API conforms to the `SDAM Monitoring Specification <https://github.com/mongo
 Applications receive a temporary reference to a ``mongoc_topology_description_t`` as a parameter to an SDAM Monitoring callback that must not be destroyed. See :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_topology_description_destroy
-    mongoc_topology_description_get_servers
-    mongoc_topology_description_has_readable_server
-    mongoc_topology_description_has_writable_server
-    mongoc_topology_description_new_copy
-    mongoc_topology_description_type
+  /mongoc_topology_description_t/mongoc_topology_description_destroy
+  /mongoc_topology_description_t/mongoc_topology_description_get_servers
+  /mongoc_topology_description_t/mongoc_topology_description_has_readable_server
+  /mongoc_topology_description_t/mongoc_topology_description_has_writable_server
+  /mongoc_topology_description_t/mongoc_topology_description_new_copy
+  /mongoc_topology_description_t/mongoc_topology_description_type
 

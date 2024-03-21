@@ -22,7 +22,7 @@ Format
 
 .. code-block:: none
 
-  mongodb[+srv]://                             <1>
+  /mongoc_uri_t/mongodb[+srv]://                             <1>
      [username:password@]                      <2>
      host1                                     <3>
      [:port1]                                  <4>
@@ -64,7 +64,7 @@ You would use a connection string that resembles the following.
 
 .. code-block:: none
 
-  mongodb://db1.example.com,db2.example.com:2500/?replicaSet=test
+  /mongoc_uri_t/mongodb://db1.example.com,db2.example.com:2500/?replicaSet=test
 
 SRV Example
 -----------
@@ -150,12 +150,12 @@ The following options have been deprecated and may be removed from future releas
 ========================================== ================================= =========================================== =================================
 Constant                                   Key                               Deprecated For                              Key
 ========================================== ================================= =========================================== =================================
-MONGOC_URI_SSL                             ssl                               MONGOC_URI_TLS                              tls
-MONGOC_URI_SSLCLIENTCERTIFICATEKEYFILE     sslclientcertificatekeyfile       MONGOC_URI_TLSCERTIFICATEKEYFILE            tlscertificatekeyfile
-MONGOC_URI_SSLCLIENTCERTIFICATEKEYPASSWORD sslclientcertificatekeypassword   MONGOC_URI_TLSCERTIFICATEKEYFILEPASSWORD    tlscertificatekeypassword
-MONGOC_URI_SSLCERTIFICATEAUTHORITYFILE     sslcertificateauthorityfile       MONGOC_URI_TLSCAFILE                        tlscafile
-MONGOC_URI_SSLALLOWINVALIDCERTIFICATES     sslallowinvalidcertificates       MONGOC_URI_TLSALLOWINVALIDCERTIFICATES      tlsallowinvalidcertificates
-MONGOC_URI_SSLALLOWINVALIDHOSTNAMES        sslallowinvalidhostnames          MONGOC_URI_TLSALLOWINVALIDHOSTNAMES         tlsallowinvalidhostnames
+MONGOC_URI_SSL                             ssl                               /mongoc_uri_t/mONGOC_URI_TLS                              tls
+MONGOC_URI_SSLCLIENTCERTIFICATEKEYFILE     sslclientcertificatekeyfile       /mongoc_uri_t/mONGOC_URI_TLSCERTIFICATEKEYFILE            tlscertificatekeyfile
+MONGOC_URI_SSLCLIENTCERTIFICATEKEYPASSWORD sslclientcertificatekeypassword   /mongoc_uri_t/mONGOC_URI_TLSCERTIFICATEKEYFILEPASSWORD    tlscertificatekeypassword
+MONGOC_URI_SSLCERTIFICATEAUTHORITYFILE     sslcertificateauthorityfile       /mongoc_uri_t/mONGOC_URI_TLSCAFILE                        tlscafile
+MONGOC_URI_SSLALLOWINVALIDCERTIFICATES     sslallowinvalidcertificates       /mongoc_uri_t/mONGOC_URI_TLSALLOWINVALIDCERTIFICATES      tlsallowinvalidcertificates
+MONGOC_URI_SSLALLOWINVALIDHOSTNAMES        sslallowinvalidhostnames          /mongoc_uri_t/mONGOC_URI_TLSALLOWINVALIDHOSTNAMES         tlsallowinvalidhostnames
 ========================================== ================================= =========================================== =================================
 
 
@@ -196,9 +196,9 @@ These options govern the behavior of a :ref:`mongoc_client_pool_t`. They are ign
 ========================================== ================================= =========================================================================================================================================================================================================================
 Constant                                   Key                               Description
 ========================================== ================================= =========================================================================================================================================================================================================================
-MONGOC_URI_MAXPOOLSIZE                     maxpoolsize                       The maximum number of clients created by a :ref:`mongoc_client_pool_t` total (both in the pool and checked out). The default value is 100. Once it is reached, :ref:`mongoc_client_pool_pop` blocks until another thread pushes a client.
-MONGOC_URI_MINPOOLSIZE                     minpoolsize                       Deprecated. This option's behavior does not match its name, and its actual behavior will likely hurt performance.
-MONGOC_URI_MAXIDLETIMEMS                   maxidletimems                     Not implemented.
+MONGOC_URI_MAXPOOLSIZE                     /mongoc_uri_t/maxpoolsize                       The maximum number of clients created by a :ref:`mongoc_client_pool_t` total (both in the pool and checked out). The default value is 100. Once it is reached, :ref:`mongoc_client_pool_pop` blocks until another thread pushes a client.
+MONGOC_URI_MINPOOLSIZE                     /mongoc_uri_t/minpoolsize                       Deprecated. This option's behavior does not match its name, and its actual behavior will likely hurt performance.
+MONGOC_URI_MAXIDLETIMEMS                   /mongoc_uri_t/maxidletimems                     Not implemented.
 MONGOC_URI_WAITQUEUEMULTIPLE               waitqueuemultiple                 Not implemented.
 MONGOC_URI_WAITQUEUETIMEOUTMS              waitqueuetimeoutms                The maximum time to wait for a client to become available from the pool.
 ========================================== ================================= =========================================================================================================================================================================================================================
@@ -259,7 +259,7 @@ MONGOC_URI_READPREFERENCE                  readpreference                    Spe
                                                                              * nearest
 MONGOC_URI_READPREFERENCETAGS              readpreferencetags                A representation of a tag set. See also :ref:`mongoc-read-prefs-tag-sets`.
 MONGOC_URI_LOCALTHRESHOLDMS                localthresholdms                  How far to distribute queries, beyond the server with the fastest round-trip time. By default, only servers within 15ms of the fastest round-trip time receive queries.
-MONGOC_URI_MAXSTALENESSSECONDS             maxstalenessseconds               The maximum replication lag, in wall clock time, that a secondary can suffer and still be eligible. The smallest allowed value for maxStalenessSeconds is 90 seconds.
+MONGOC_URI_MAXSTALENESSSECONDS             /mongoc_uri_t/maxstalenessseconds               The maximum replication lag, in wall clock time, that a secondary can suffer and still be eligible. The smallest allowed value for maxStalenessSeconds is 90 seconds.
 ========================================== ================================= =======================================================================================================================================================================
 
 .. note::
@@ -278,58 +278,58 @@ MONGOC_URI_SAFE                            safe                              {tr
 ========================================== ================================= =======================================================================================================================================================================
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_uri_copy
-    mongoc_uri_destroy
-    mongoc_uri_get_auth_mechanism
-    mongoc_uri_get_auth_source
-    mongoc_uri_get_compressors
-    mongoc_uri_get_database
-    mongoc_uri_get_hosts
-    mongoc_uri_get_mechanism_properties
-    mongoc_uri_get_option_as_bool
-    mongoc_uri_get_option_as_int32
-    mongoc_uri_get_option_as_int64
-    mongoc_uri_get_option_as_utf8
-    mongoc_uri_get_options
-    mongoc_uri_get_password
-    mongoc_uri_get_read_concern
-    mongoc_uri_get_read_prefs
-    mongoc_uri_get_read_prefs_t
-    mongoc_uri_get_replica_set
-    mongoc_uri_get_service
-    mongoc_uri_get_ssl
-    mongoc_uri_get_string
-    mongoc_uri_get_srv_hostname
-    mongoc_uri_get_srv_service_name
-    mongoc_uri_get_tls
-    mongoc_uri_get_username
-    mongoc_uri_get_write_concern
-    mongoc_uri_has_option
-    mongoc_uri_new
-    mongoc_uri_new_for_host_port
-    mongoc_uri_new_with_error
-    mongoc_uri_option_is_bool
-    mongoc_uri_option_is_int32
-    mongoc_uri_option_is_int64
-    mongoc_uri_option_is_utf8
-    mongoc_uri_set_auth_mechanism
-    mongoc_uri_set_auth_source
-    mongoc_uri_set_compressors
-    mongoc_uri_set_database
-    mongoc_uri_set_mechanism_properties
-    mongoc_uri_set_option_as_bool
-    mongoc_uri_set_option_as_int32
-    mongoc_uri_set_option_as_int64
-    mongoc_uri_set_option_as_utf8
-    mongoc_uri_set_password
-    mongoc_uri_set_read_concern
-    mongoc_uri_set_read_prefs_t
-    mongoc_uri_set_username
-    mongoc_uri_set_write_concern
-    mongoc_uri_unescape
+  /mongoc_uri_t/mongoc_uri_copy
+  /mongoc_uri_t/mongoc_uri_destroy
+  /mongoc_uri_t/mongoc_uri_get_auth_mechanism
+  /mongoc_uri_t/mongoc_uri_get_auth_source
+  /mongoc_uri_t/mongoc_uri_get_compressors
+  /mongoc_uri_t/mongoc_uri_get_database
+  /mongoc_uri_t/mongoc_uri_get_hosts
+  /mongoc_uri_t/mongoc_uri_get_mechanism_properties
+  /mongoc_uri_t/mongoc_uri_get_option_as_bool
+  /mongoc_uri_t/mongoc_uri_get_option_as_int32
+  /mongoc_uri_t/mongoc_uri_get_option_as_int64
+  /mongoc_uri_t/mongoc_uri_get_option_as_utf8
+  /mongoc_uri_t/mongoc_uri_get_options
+  /mongoc_uri_t/mongoc_uri_get_password
+  /mongoc_uri_t/mongoc_uri_get_read_concern
+  /mongoc_uri_t/mongoc_uri_get_read_prefs
+  /mongoc_uri_t/mongoc_uri_get_read_prefs_t
+  /mongoc_uri_t/mongoc_uri_get_replica_set
+  /mongoc_uri_t/mongoc_uri_get_service
+  /mongoc_uri_t/mongoc_uri_get_ssl
+  /mongoc_uri_t/mongoc_uri_get_string
+  /mongoc_uri_t/mongoc_uri_get_srv_hostname
+  /mongoc_uri_t/mongoc_uri_get_srv_service_name
+  /mongoc_uri_t/mongoc_uri_get_tls
+  /mongoc_uri_t/mongoc_uri_get_username
+  /mongoc_uri_t/mongoc_uri_get_write_concern
+  /mongoc_uri_t/mongoc_uri_has_option
+  /mongoc_uri_t/mongoc_uri_new
+  /mongoc_uri_t/mongoc_uri_new_for_host_port
+  /mongoc_uri_t/mongoc_uri_new_with_error
+  /mongoc_uri_t/mongoc_uri_option_is_bool
+  /mongoc_uri_t/mongoc_uri_option_is_int32
+  /mongoc_uri_t/mongoc_uri_option_is_int64
+  /mongoc_uri_t/mongoc_uri_option_is_utf8
+  /mongoc_uri_t/mongoc_uri_set_auth_mechanism
+  /mongoc_uri_t/mongoc_uri_set_auth_source
+  /mongoc_uri_t/mongoc_uri_set_compressors
+  /mongoc_uri_t/mongoc_uri_set_database
+  /mongoc_uri_t/mongoc_uri_set_mechanism_properties
+  /mongoc_uri_t/mongoc_uri_set_option_as_bool
+  /mongoc_uri_t/mongoc_uri_set_option_as_int32
+  /mongoc_uri_t/mongoc_uri_set_option_as_int64
+  /mongoc_uri_t/mongoc_uri_set_option_as_utf8
+  /mongoc_uri_t/mongoc_uri_set_password
+  /mongoc_uri_t/mongoc_uri_set_read_concern
+  /mongoc_uri_t/mongoc_uri_set_read_prefs_t
+  /mongoc_uri_t/mongoc_uri_set_username
+  /mongoc_uri_t/mongoc_uri_set_write_concern
+  /mongoc_uri_t/mongoc_uri_unescape

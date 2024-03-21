@@ -20,26 +20,30 @@ Stream Types
 There are a number of built in stream types that come with mongoc. The default configuration is a buffered unix stream. If TLS is in use, that in turn is wrapped in a tls stream.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_stream_buffered_new
-    mongoc_stream_close
-    mongoc_stream_cork
-    mongoc_stream_destroy
-    mongoc_stream_flush
-    mongoc_stream_get_base_stream
-    mongoc_stream_read
-    mongoc_stream_readv
-    mongoc_stream_setsockopt
-    mongoc_stream_should_retry
-    mongoc_stream_timed_out
-    mongoc_stream_uncork
-    mongoc_stream_write
-    mongoc_stream_writev
+  /mongoc_stream_t/mongoc_stream_buffered_new
+  /mongoc_stream_t/mongoc_stream_close
+  /mongoc_stream_t/mongoc_stream_cork
+  /mongoc_stream_t/mongoc_stream_destroy
+  /mongoc_stream_t/mongoc_stream_flush
+  /mongoc_stream_t/mongoc_stream_get_base_stream
+  /mongoc_stream_t/mongoc_stream_read
+  /mongoc_stream_t/mongoc_stream_readv
+  /mongoc_stream_t/mongoc_stream_setsockopt
+  /mongoc_stream_t/mongoc_stream_should_retry
+  /mongoc_stream_t/mongoc_stream_timed_out
+  /mongoc_stream_t/mongoc_stream_uncork
+  /mongoc_stream_t/mongoc_stream_write
+  /mongoc_stream_t/mongoc_stream_writev
+  /mongoc_stream_t/mongoc_stream_buffered_t
+  /mongoc_stream_t/mongoc_stream_file_t
+  /mongoc_stream_t/mongoc_stream_socket_t
+  /mongoc_stream_t/mongoc_stream_tls_t
 
 .. seealso::
 

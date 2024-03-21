@@ -13,8 +13,8 @@ Synopsis
     :titlesonly:
     :maxdepth: 1
 
-    mongoc_init
-    mongoc_cleanup
+    /init-cleanup/mongoc_init
+    /init-cleanup/mongoc_cleanup
 
 Deprecated feature: automatic initialization and cleanup
 --------------------------------------------------------
