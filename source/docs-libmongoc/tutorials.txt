@@ -10,4 +10,4 @@ the C driver.
 .. toctree::
    :maxdepth: 2
 
-   get/index
+   /tutorials/obtaining-libraries
