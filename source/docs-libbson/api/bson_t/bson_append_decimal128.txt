@@ -29,7 +29,7 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_append_decimal128()` function shall append a new element to ``bson`` containing
+The :ref:`bson_append_decimal128` function shall append a new element to ``bson`` containing
 a Decimal 128.
 
 Returns

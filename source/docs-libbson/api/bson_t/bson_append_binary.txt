@@ -33,7 +33,7 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_append_binary()` function shall append a new element to ``bson`` containing
+The :ref:`bson_append_binary` function shall append a new element to ``bson`` containing
 the binary data provided.
 
 Returns

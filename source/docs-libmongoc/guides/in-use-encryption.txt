@@ -1,3 +1,5 @@
+.. _in-use-encryption::
+  
 =================
 In-Use Encryption
 =================

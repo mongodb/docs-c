@@ -31,7 +31,7 @@ Description
 
 The ``bson_iter_codewscope()`` function acts similar to :ref:`bson_iter_code` except for
 BSON_TYPE_CODEWSCOPE elements. It also will provide a pointer to the buffer for scope, which
-can be loaded into a :ref:`bson_t` :ref:`bson_init_static`
+can be loaded into a :ref:`bson_t` using :ref:`bson_init_static`
 
 Returns
 -------

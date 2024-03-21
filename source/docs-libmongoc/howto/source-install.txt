@@ -31,9 +31,9 @@ metadata.
       CMake builds a set of search paths based on a set of prefixes, which are read
       from both the environment and from configure-time CMake settings.
 
-      In particular, the `$PATH` environment variable will be used to construct
+      In particular, the ``$PATH`` environment variable will be used to construct
       the standard prefixes for the system. For each directory ``D`` in
-      `$PATH`:
+      ``$PATH``:
 
       1. If the final path component of ``D`` is "``bin``" or "``sbin``",
          ``D`` is replaced with the parent path of ``D``.
@@ -72,9 +72,9 @@ metadata.
       default, use the following command:
 
       .. code-block::
-        :caption: Ask ``pkg-config`` what directories it will search by default
+         :caption: Ask ``pkg-config`` what directories it will search by default
 
-        $ pkg-config "pkg-config" --variable="pc_path"
+         $ pkg-config "pkg-config" --variable="pc_path"
 
       Additional directories can be specified using the ``$PKG_CONFIG_PATH``
       environment variable. Such paths will be searched *before* the default
@@ -126,8 +126,8 @@ unprivileged filesystem location particular to the user account.
 
       For the purposes of uniformity with other Unix variants, this guide will
       lightly recommend using ``$HOME/.local`` as a user-local installation prefix.
-      This is based on the behavior specified by the `XDG base directory`_
-      specifications and the `systemd file-hierarchy`_ common on Linux and various
+      This is based on the behavior specified by the `XDG base directory <https://wiki.archlinux.org/title/XDG_Base_Directory>`__
+      specifications and the `systemd file-hierarchy <https://man.archlinux.org/man/file-hierarchy.7>`__ common on Linux and various
       BSDs, but it is not a standard on other platforms.
 
    .. tab:: Linux & Other Unixes
@@ -135,8 +135,8 @@ unprivileged filesystem location particular to the user account.
 
       On Linux and BSD systems, it is common to use the `$HOME/.local` directory
       as the prefix for user-specific package installations. This convention
-      originates in the `XDG base directory <https://wiki.archlinux.org/title/XDG_Base_Directory>`_
-      specification and the `systemd file-hierarchy <https://man.archlinux.org/man/file-hierarchy.7>`_
+      originates in the `XDG base directory <https://wiki.archlinux.org/title/XDG_Base_Directory>`__
+      specification and the `systemd file-hierarchy <https://man.archlinux.org/man/file-hierarchy.7>`__
 
       Because of its wide-spread use and support in many other tools, this guide
       recommends using ``$HOME/.local`` as a user-local installation prefix.

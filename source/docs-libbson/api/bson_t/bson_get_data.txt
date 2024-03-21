@@ -20,7 +20,7 @@ Parameters
 Description
 -----------
 
-The :ref:`bson_get_data()` function shall return the raw buffer of a bson document.
+The :ref:`bson_get_data` function shall return the raw buffer of a bson document.
 This can be used in conjunction with the ``len`` property of a :ref:`bson_t` if you
 want to copy the raw buffer around.
 

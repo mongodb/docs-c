@@ -1,3 +1,5 @@
+.. _installing:
+
 ##############################################
 Installing Prebuilt MongoDB C Driver Libraries
 ##############################################
