@@ -4,6 +4,12 @@
 How to: Install libbson/libmongoc from Source
 =============================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 .. important::
 
    This page assumes that you can successfully configure and build the components

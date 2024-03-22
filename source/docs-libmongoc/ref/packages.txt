@@ -4,6 +4,12 @@
 Package Installation Reference
 ==============================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 ``libbson`` and ``libmongoc`` are available from several package management tools
 on a variety of systems.
 

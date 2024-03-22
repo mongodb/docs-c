@@ -4,6 +4,12 @@
 ObjectIDs
 =========
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Libbson provides a simple way to generate ObjectIDs. It can be used in a single-threaded or
 multi-threaded manner depending on your requirements.
 

@@ -4,6 +4,12 @@
 JSON
 ====
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Libbson provides routines for converting to and from the JSON format. In particular, it
 supports the `MongoDB extended JSON <https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/>`_
 format.

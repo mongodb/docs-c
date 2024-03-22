@@ -4,6 +4,12 @@
 Application Performance Monitoring (APM)
 ========================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 The MongoDB C Driver allows you to monitor all the MongoDB operations the driver executes. This
 event-notification system conforms to two MongoDB driver specs:
 

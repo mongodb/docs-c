@@ -4,6 +4,12 @@
 Creating a BSON Document
 ========================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 The bson_t Structure
 --------------------
 

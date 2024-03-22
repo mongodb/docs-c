@@ -4,6 +4,12 @@
 Streaming BSON
 ==============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 :ref:`bson_reader_t` provides a streaming reader which can be initialized with a
 filedescriptor or memory region. :ref:`bson_writer_t` provides a streaming writer
 which can be initialized with a memory region. (Streaming BSON to a file descriptor is

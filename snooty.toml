@@ -8,7 +8,7 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
 # toc_landing_pages = ["/paths/to/pages/that/have/nested/content"]
 
 [constants]
-# constant = "value"
+
 version = "1.26"
 full-version = "{+version+}.1"
 range-is-experimental = "Range algorithm is experimental only and not intended for public use. It is subject to breaking changes."

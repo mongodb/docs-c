@@ -3,6 +3,12 @@
 Cursors
 =======
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 Handling Cursor Failures
 ------------------------
 

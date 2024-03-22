@@ -3,6 +3,12 @@
 "distinct" and "mapReduce"
 ==========================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+    
 This document provides some practical, simple, examples to demonstrate the ``distinct`` and ``mapReduce`` commands.
 
 Setup

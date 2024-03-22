@@ -15,13 +15,13 @@ An event notification sent when the driver adds a :ref:`mongoc_server_descriptio
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_server_opening_get_context
-    mongoc_apm_server_opening_get_host
-    mongoc_apm_server_opening_get_topology_id
+  mongoc_apm_server_opening_get_context
+  mongoc_apm_server_opening_get_host
+  mongoc_apm_server_opening_get_topology_id
 

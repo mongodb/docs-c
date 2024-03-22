@@ -15,15 +15,15 @@ An event notification sent when the driver completes a "hello" command to check 
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_server_heartbeat_succeeded_get_awaited
-    mongoc_apm_server_heartbeat_succeeded_get_context
-    mongoc_apm_server_heartbeat_succeeded_get_duration
-    mongoc_apm_server_heartbeat_succeeded_get_host
-    mongoc_apm_server_heartbeat_succeeded_get_reply
+  mongoc_apm_server_heartbeat_succeeded_get_awaited
+  mongoc_apm_server_heartbeat_succeeded_get_context
+  mongoc_apm_server_heartbeat_succeeded_get_duration
+  mongoc_apm_server_heartbeat_succeeded_get_host
+  mongoc_apm_server_heartbeat_succeeded_get_reply
 

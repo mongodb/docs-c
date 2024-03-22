@@ -3,6 +3,12 @@
 Advanced Connections
 ====================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 The following guide contains information specific to certain types of MongoDB configurations.
 
 For an example of connecting to a simple standalone server, see the :ref:`Tutorial <tutorial_connecting>`. To establish a connection with authentication options enabled, see the :doc:`Authentication <authentication>` page. To see an example of a connection with data compression, see the :doc:`Data Compression <data-compression>` page.

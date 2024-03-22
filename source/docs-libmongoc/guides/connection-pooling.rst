@@ -3,6 +3,12 @@
 Connection Pooling
 ==================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 The MongoDB C driver has two connection modes: single-threaded and pooled. Single-threaded mode is optimized for embedding the driver within languages like PHP. Multi-threaded programs should use pooled mode: this mode minimizes the total connection count, and in pooled mode background threads monitor the MongoDB server topology, so the program need not block to scan it.
 
 Single Mode

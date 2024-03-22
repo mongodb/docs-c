@@ -2,6 +2,12 @@
 Building the mongo-c-driver Documentation Pages
 ===============================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 This documentation is rendered using `Sphinx <https://www.sphinx-doc.org/en/master/>`__.
 To easily ensure that all tooling matches expected versions, it is recommended to use
 `Poetry <https://python-poetry.org>`__ to install and run the required tools.

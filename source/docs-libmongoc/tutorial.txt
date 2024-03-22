@@ -3,6 +3,12 @@
 Tutorial
 ========
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 This guide offers a brief introduction to the MongoDB C Driver.
 
 For more information on the C API, please refer to the :doc:`api`.

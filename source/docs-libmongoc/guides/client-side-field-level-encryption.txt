@@ -4,6 +4,12 @@
 Client-Side Field Level Encryption
 ==================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 New in MongoDB 4.2, Client-Side Field Level Encryption (also referred to as CSFLE) allows administrators
 and developers to encrypt specific data fields in addition to other MongoDB encryption features.
 

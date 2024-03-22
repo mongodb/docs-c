@@ -4,6 +4,12 @@
 Building the C Driver Libraries from Source
 ===========================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 This page details how to download, unpack, configure, and build ``libbson`` and
 ``libmongoc`` from their original source-code form.
 

@@ -4,6 +4,12 @@
 Using libbson In Your C Program
 ===============================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Include bson.h
 --------------
 

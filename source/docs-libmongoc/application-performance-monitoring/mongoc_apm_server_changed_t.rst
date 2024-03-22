@@ -15,15 +15,15 @@ An event notification sent when the driver observes a change in status of a serv
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_server_changed_get_context
-    mongoc_apm_server_changed_get_host
-    mongoc_apm_server_changed_get_new_description
-    mongoc_apm_server_changed_get_previous_description
-    mongoc_apm_server_changed_get_topology_id
+  mongoc_apm_server_changed_get_context
+  mongoc_apm_server_changed_get_host
+  mongoc_apm_server_changed_get_new_description
+  mongoc_apm_server_changed_get_previous_description
+  mongoc_apm_server_changed_get_topology_id
 

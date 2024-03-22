@@ -4,8 +4,11 @@
 Installing Prebuilt MongoDB C Driver Libraries
 ##############################################
 
-.. highlight:: shell-session
-.. default-role:: bash
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 .. Links:
 

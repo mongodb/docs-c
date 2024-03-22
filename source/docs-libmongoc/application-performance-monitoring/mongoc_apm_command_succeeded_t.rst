@@ -15,21 +15,21 @@ An event notification sent when the driver successfully executes a MongoDB comma
   | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_command_succeeded_get_command_name
-    mongoc_apm_command_succeeded_get_context
-    mongoc_apm_command_succeeded_get_duration
-    mongoc_apm_command_succeeded_get_host
-    mongoc_apm_command_succeeded_get_operation_id
-    mongoc_apm_command_succeeded_get_reply
-    mongoc_apm_command_succeeded_get_request_id
-    mongoc_apm_command_succeeded_get_server_id
-    mongoc_apm_command_succeeded_get_service_id
-    mongoc_apm_command_succeeded_get_server_connection_id
-    mongoc_apm_command_succeeded_get_server_connection_id_int64
+  mongoc_apm_command_succeeded_get_command_name
+  mongoc_apm_command_succeeded_get_context
+  mongoc_apm_command_succeeded_get_duration
+  mongoc_apm_command_succeeded_get_host
+  mongoc_apm_command_succeeded_get_operation_id
+  mongoc_apm_command_succeeded_get_reply
+  mongoc_apm_command_succeeded_get_request_id
+  mongoc_apm_command_succeeded_get_server_id
+  mongoc_apm_command_succeeded_get_service_id
+  mongoc_apm_command_succeeded_get_server_connection_id
+  mongoc_apm_command_succeeded_get_server_connection_id_int64
 

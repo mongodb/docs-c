@@ -3,6 +3,12 @@
 Aggregation Framework Examples
 ==============================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+   
 This document provides a number of practical examples that display the capabilities of the aggregation framework.
 
 The `Aggregations using the Zip Codes Data Set <https://www.mongodb.com/docs/manual/tutorial/aggregation-zip-code-data-set/>`_ examples uses a publicly available data set of all zipcodes and populations in the United States. These data are available at: `zips.json <http://media.mongodb.org/zips.json>`_.
