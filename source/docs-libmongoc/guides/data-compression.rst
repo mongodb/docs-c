@@ -1,4 +1,4 @@
-.. _mongoc_data_compression
+.. _mongoc_data_compression:
 
 Data Compression
 ================
