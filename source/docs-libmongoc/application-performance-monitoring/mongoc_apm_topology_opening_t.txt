@@ -1,5 +1,6 @@
-.. _mongoc_apm_topology_opening_t
+.. _mongoc_apm_topology_opening_t:
 
+=============================
 mongoc_apm_topology_opening_t
 =============================
 
@@ -15,12 +16,12 @@ An event notification sent when the driver initializes a :ref:`mongoc_topology_d
   | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_apm_topology_opening_get_context
-    mongoc_apm_topology_opening_get_topology_id
+  mongoc_apm_topology_opening_get_context
+  mongoc_apm_topology_opening_get_topology_id
 

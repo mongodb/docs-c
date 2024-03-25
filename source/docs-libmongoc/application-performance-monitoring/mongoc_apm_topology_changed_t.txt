@@ -1,5 +1,6 @@
-.. _mongoc_apm_topology_changed_t
+.. _mongoc_apm_topology_changed_t:
 
+=============================
 mongoc_apm_topology_changed_t
 =============================
 
@@ -8,7 +9,8 @@ Topology-changed event
 Synopsis
 --------
 
-An event notification sent when the driver observes a change in any of the servers it is connected to or a change in the overall server topology.
+An event notification sent when the driver observes a change in any of the servers it is
+connected to or a change in the overall server topology.
 
 .. seealso::
 

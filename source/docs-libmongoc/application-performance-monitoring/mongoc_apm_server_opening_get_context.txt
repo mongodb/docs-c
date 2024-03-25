@@ -1,5 +1,6 @@
-.. _mongoc_apm_server_opening_get_context
+.. _mongoc_apm_server_opening_get_context:
 
+=======================================
 mongoc_apm_server_opening_get_context()
 =======================================
 

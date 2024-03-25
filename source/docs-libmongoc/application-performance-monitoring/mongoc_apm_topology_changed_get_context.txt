@@ -1,6 +1,7 @@
-.. _mongoc_apm_topology_opening_get_context
+.. _mongoc_apm_topology_changed_get_context:
 
-mongoc_apm_topology_opening_get_context()
+=========================================
+mongoc_apm_topology_changed_get_context()
 =========================================
 
 Synopsis
@@ -8,16 +9,16 @@ Synopsis
 
 .. code-block:: c
 
-  void *
-  mongoc_apm_topology_opening_get_context (
-     const mongoc_apm_topology_opening_t *event);
+   void *
+   mongoc_apm_topology_changed_get_context (
+      const mongoc_apm_topology_changed_t *event);
 
 Returns this event's context.
 
 Parameters
 ----------
 
-- ``event``: A :ref:`mongoc_apm_topology_opening_t`.
+- ``event``: A :ref:`mongoc_apm_topology_changed_t`.
 
 Returns
 -------
