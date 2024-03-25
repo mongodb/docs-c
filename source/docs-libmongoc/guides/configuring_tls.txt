@@ -22,7 +22,6 @@ Enable TLS by including ``tls=true`` in the URI.
 
    mongoc_client_t *client = mongoc_client_new_from_uri (uri);
 
-
 The following URI options may be used to further configure TLS:
 
 .. include:: includes/tls-options.txt
@@ -201,9 +200,9 @@ When no ``tlsCAFile`` is set, the driver will use the Certificate Authorities in
 
 Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
 
-The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`_) is partially supported
+The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__) is partially supported
 with the following notes.
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`_) is ignored. Connection may continue
+- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored. Connection may continue
   if a Must-Staple certificate is presented with no stapled response (unless the client receives a revoked response from an OCSP responder).
 - Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.

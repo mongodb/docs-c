@@ -40,13 +40,13 @@ Example ``reply`` document:
 
 .. code-block:: none
 
-  {"nInserted"   : 10000,
-   "nMatched"    : 0,
-   "nModified"   : 0,
-   "nRemoved"    : 0,
-   "nUpserted"   : 0,
-   "writeErrors" : []
-   "writeConcernErrors" : [] }
+   {"nInserted"   : 10000,
+    "nMatched"    : 0,
+    "nModified"   : 0,
+    "nRemoved"    : 0,
+    "nUpserted"   : 0,
+    "writeErrors" : []
+    "writeConcernErrors" : [] }
 
 Mixed Bulk Write Operations
 ---------------------------
@@ -229,6 +229,6 @@ The ``reply`` document is empty:
 Further Reading
 ---------------
 
-See the `Driver Bulk API Spec <https://github.com/mongodb/specifications/blob/master/source/driver-bulk-update.rst>`_,
+See the `Driver Bulk API Spec <https://github.com/mongodb/specifications/blob/master/source/driver-bulk-update.rst>`__,
 which describes bulk write operations for all MongoDB drivers.
 

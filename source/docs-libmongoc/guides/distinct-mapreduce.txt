@@ -22,7 +22,7 @@ First we'll write some code to insert sample data:
    :language: c
    :caption: doc-common-insert.c
 
-"distinct" command
+"distinct" Command
 ------------------
 
 This is how to use the ``distinct`` command to get the distinct values of ``x`` which are greater
@@ -32,7 +32,7 @@ than ``1``:
    :language: c
    :caption: distinct.c
 
-"mapReduce" - basic example
+"mapReduce" - Basic Example
 ---------------------------
 
 A simple example using the map reduce framework. It simply adds up the number of occurrences
@@ -53,7 +53,7 @@ a retryable error, giving undesirable behavior for ``mapReduce``.
    :language: c
    :caption: map-reduce-basic.c
 
-"mapReduce" - more complicated example
+"mapReduce" - More Complicated Example
 --------------------------------------
 
 You must have replica set running for this.

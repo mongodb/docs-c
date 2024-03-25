@@ -7,7 +7,7 @@ Data Compression
 The following guide explains how data compression support works between the MongoDB server and client.
 It also shows an example of how to connect to a server with data compression.
 
-Compressing data to and from MongoDB
+Compressing Data To and From MongoDB
 ------------------------------------
 
 MongoDB 3.4 added Snappy compression support, while zlib compression was added in 3.6, and zstd compression
