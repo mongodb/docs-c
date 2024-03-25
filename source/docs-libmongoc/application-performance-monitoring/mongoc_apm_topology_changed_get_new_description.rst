@@ -17,7 +17,7 @@ Returns this event's new description. The data is only valid in the scope of the
 Parameters
 ----------
 
-* ``event``: A :ref:`mongoc_apm_topology_changed_t`.
+- ``event``: A :ref:`mongoc_apm_topology_changed_t`.
 
 Returns
 -------
@@ -26,5 +26,5 @@ A :ref:`mongoc_topology_description_t` that should not be modified or freed.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

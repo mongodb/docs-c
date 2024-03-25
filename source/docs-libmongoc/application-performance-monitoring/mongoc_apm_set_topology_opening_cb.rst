@@ -20,10 +20,10 @@ Receive an event notification whenever the driver initializes a :ref:`mongoc_top
 Parameters
 ----------
 
-* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :ref:`mongoc_apm_topology_opening_t` whenever the driver initializes a :ref:`mongoc_topology_description_t`.
+- ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+- ``cb``: A function to call with a :ref:`mongoc_apm_topology_opening_t` whenever the driver initializes a :ref:`mongoc_topology_description_t`.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

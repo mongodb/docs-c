@@ -20,10 +20,10 @@ Receive an event notification whenever the driver starts a MongoDB operation.
 Parameters
 ----------
 
-* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :ref:`mongoc_apm_command_started_t` whenever the driver begins a MongoDB operation.
+- ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+- ``cb``: A function to call with a :ref:`mongoc_apm_command_started_t` whenever the driver begins a MongoDB operation.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

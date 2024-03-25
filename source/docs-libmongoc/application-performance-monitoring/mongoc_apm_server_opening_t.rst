@@ -12,7 +12,7 @@ An event notification sent when the driver adds a :ref:`mongoc_server_descriptio
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 
 Functions
 ---------

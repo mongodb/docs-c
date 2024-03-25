@@ -17,7 +17,7 @@ Returns this event's context.
 Parameters
 ----------
 
-* ``event``: A :ref:`mongoc_apm_server_opening_t`.
+- ``event``: A :ref:`mongoc_apm_server_opening_t`.
 
 Returns
 -------
@@ -26,5 +26,5 @@ The pointer passed with :ref:`mongoc_client_set_apm_callbacks` or :ref:`mongoc_c
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

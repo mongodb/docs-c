@@ -12,7 +12,7 @@ An event notification sent when the driver stops monitoring a server topology an
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 
 Functions
 ---------

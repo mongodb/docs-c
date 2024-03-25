@@ -12,7 +12,7 @@ An event notification sent when the driver initializes a :ref:`mongoc_topology_d
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 
 Functions
   ---------

@@ -17,8 +17,8 @@ Returns this event's topology id.
 Parameters
 ----------
 
-* ``event``: A :ref:`mongoc_apm_topology_opening_t`.
-* ``topology_id``: A :ref:`bson:bson_oid_t` to receive the event's topology_id.
+- ``event``: A :ref:`mongoc_apm_topology_opening_t`.
+- ``topology_id``: A :ref:`bson:bson_oid_t` to receive the event's topology_id.
 
 Returns
 -------
@@ -27,5 +27,5 @@ The event's topology id.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

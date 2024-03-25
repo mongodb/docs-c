@@ -20,10 +20,10 @@ Receive an event notification whenever the driver adds a :ref:`mongoc_server_des
 Parameters
 ----------
 
-* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :ref:`mongoc_apm_server_opening_t` whenever the driver adds a :ref:`mongoc_server_description_t` for a new server it was not monitoring before.
+- ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+- ``cb``: A function to call with a :ref:`mongoc_apm_server_opening_t` whenever the driver adds a :ref:`mongoc_server_description_t` for a new server it was not monitoring before.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

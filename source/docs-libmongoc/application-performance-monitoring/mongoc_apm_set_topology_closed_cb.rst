@@ -20,10 +20,10 @@ Receive an event notification whenever the driver stops monitoring a server topo
 Parameters
 ----------
 
-* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :ref:`mongoc_apm_topology_closed_t` whenever the driver stops monitoring a server topology and destroys its :ref:`mongoc_topology_description_t`.
+- ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+- ``cb``: A function to call with a :ref:`mongoc_apm_topology_closed_t` whenever the driver stops monitoring a server topology and destroys its :ref:`mongoc_topology_description_t`.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 

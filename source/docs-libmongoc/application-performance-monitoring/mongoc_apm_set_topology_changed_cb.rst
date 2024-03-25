@@ -20,10 +20,10 @@ Receive an event notification whenever the driver observes a change in any of th
 Parameters
 ----------
 
-* ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
-* ``cb``: A function to call with a :ref:`mongoc_apm_topology_changed_t` whenever the driver observes a change in any of the servers it is connected to or a change in the overall server topology.
+- ``callbacks``: A :ref:`mongoc_apm_callbacks_t`.
+- ``cb``: A function to call with a :ref:`mongoc_apm_topology_changed_t` whenever the driver observes a change in any of the servers it is connected to or a change in the overall server topology.
 
 .. seealso::
 
-  | :doc:`Introduction to Application Performance Monitoring <application-performance-monitoring>`
+  | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`
 
