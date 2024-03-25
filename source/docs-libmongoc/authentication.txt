@@ -1,5 +1,6 @@
 .. _mongoc_authentication:
 
+==============
 Authentication
 ==============
 
@@ -9,26 +10,29 @@ Authentication
    :depth: 2
    :class: singlecol
 
-This guide covers the use of authentication options with the MongoDB C Driver. Ensure that the MongoDB server is also properly configured for authentication before making a connection. For more information, see the `MongoDB security documentation <https://www.mongodb.com/docs/manual/administration/security/>`_.
+This guide covers the use of authentication options with the MongoDB C Driver. Ensure that the MongoDB server
+is also properly configured for authentication before making a connection. For more information, see the
+`MongoDB security documentation <https://www.mongodb.com/docs/manual/administration/security/>`_.
 
 The MongoDB C driver supports several authentication mechanisms through the use of MongoDB connection URIs.
 
-By default, if a username and password are provided as part of the connection string (and an optional authentication database), they are used to connect via the default authentication mechanism of the server.
+By default, if a username and password are provided as part of the connection string (and an optional authentication
+database), they are used to connect via the default authentication mechanism of the server.
 
 To select a specific authentication mechanism other than the default, see the list of supported mechanism below.
 
 .. code-block:: none
 
-  mongoc_client_t *client = mongoc_client_new ("mongodb://user:password@localhost/?authSource=mydb");
+   mongoc_client_t *client = mongoc_client_new ("mongodb://user:password@localhost/?authSource=mydb");
 
 Currently supported values for the authMechanism connection string option are:
 
-* :ref:`SCRAM-SHA-1 <authentication_scram_sha_1>`
-* :ref:`MONGODB-CR (deprecated) <authentication_mongodbcr>`
-* :ref:`GSSAPI <authentication_kerberos>`
-* :ref:`PLAIN <authentication_plain>`
-* :ref:`X509 <authentication_x509>`
-* :ref:`MONGODB-AWS <authentication_aws>`
+- :ref:`SCRAM-SHA-1 <authentication_scram_sha_1>`
+- :ref:`MONGODB-CR (deprecated) <authentication_mongodbcr>`
+- :ref:`GSSAPI <authentication_kerberos>`
+- :ref:`PLAIN <authentication_plain>`
+- :ref:`X509 <authentication_x509>`
+- :ref:`MONGODB-AWS <authentication_aws>`
 
 .. _authentication_scram_sha_256:
 
@@ -46,37 +50,41 @@ SCRAM-SHA-1 and SCRAM-SHA-256 credentials:
 
 .. code-block:: none
 
-  mongoc_client_t *client =  mongoc_client_new ("mongodb://user:password@localhost/?authSource=mydb");
-  /* the correct authMechanism is negotiated between the driver and server. */
+   mongoc_client_t *client =  mongoc_client_new ("mongodb://user:password@localhost/?authSource=mydb");
+   /* the correct authMechanism is negotiated between the driver and server. */
 
 Alternatively, SCRAM-SHA-256 can be explicitly specified as an authMechanism.
 
 .. code-block:: none
 
-  mongoc_client_t *client =  mongoc_client_new ("mongodb://user:password@localhost/?authMechanism=SCRAM-SHA-256&authSource=mydb");
+   mongoc_client_t *client =  mongoc_client_new ("mongodb://user:password@localhost/?authMechanism=SCRAM-SHA-256&authSource=mydb");
 
 .. _authentication_scram_sha_1:
 
 Basic Authentication (SCRAM-SHA-1)
 ----------------------------------
 
-The default authentication mechanism before MongoDB 4.0 is ``SCRAM-SHA-1`` (`RFC 5802 <http://tools.ietf.org/html/rfc5802>`_). Using this authentication mechanism means that the password is never actually sent over the wire when authenticating, but rather a computed proof that the client password is the same as the password the server knows.
+The default authentication mechanism before MongoDB 4.0 is ``SCRAM-SHA-1`` (`RFC 5802
+<http://tools.ietf.org/html/rfc5802>`_). Using this authentication mechanism means that the password
+is never actually sent over the wire when authenticating, but rather a computed proof that the client
+password is the same as the password the server knows.
 
 .. code-block:: none
 
-  mongoc_client_t *client = mongoc_client_new ("mongodb://user:password@localhost/?authMechanism=SCRAM-SHA-1&authSource=mydb");
+   mongoc_client_t *client = mongoc_client_new ("mongodb://user:password@localhost/?authMechanism=SCRAM-SHA-1&authSource=mydb");
 
 .. note::
 
-  ``SCRAM-SHA-1`` authenticates against the ``admin`` database by default. If the user is created in another database, then specifying the authSource is required.
+   ``SCRAM-SHA-1`` authenticates against the ``admin`` database by default. If the user is created in
+   another database, then specifying the authSource is required.
 
 .. _authentication_mongodbcr:
 
 Legacy Authentication (MONGODB-CR)
 ----------------------------------
 
-The MONGODB-CR authMechanism is deprecated and will no longer function in MongoDB 4.0. Instead, specify no authMechanism and the driver
-will use an authentication mechanism compatible with your server.
+The MONGODB-CR authMechanism is deprecated and will no longer function in MongoDB 4.0. Instead, specify
+no authMechanism and the driver will use an authentication mechanism compatible with your server.
 
 .. _authentication_kerberos:
 
@@ -85,51 +93,55 @@ GSSAPI (Kerberos) Authentication
 
 .. note::
 
-  On UNIX-like environments, Kerberos support requires compiling the driver against ``cyrus-sasl``.
+   On UNIX-like environments, Kerberos support requires compiling the driver against ``cyrus-sasl``.
 
-  On Windows, Kerberos support requires compiling the driver against Windows Native SSPI or ``cyrus-sasl``. The default configuration of the driver will use Windows Native SSPI.
+   On Windows, Kerberos support requires compiling the driver against Windows Native SSPI or ``cyrus-sasl``.
+   The default configuration of the driver will use Windows Native SSPI.
 
-  To modify the default configuration, use the cmake option ``ENABLE_SASL``.
+   To modify the default configuration, use the cmake option ``ENABLE_SASL``.
 
-``GSSAPI`` (Kerberos) authentication is available in the Enterprise Edition of MongoDB. To authenticate using ``GSSAPI``, the MongoDB C driver must be installed with SASL support.
+``GSSAPI`` (Kerberos) authentication is available in the Enterprise Edition of MongoDB. To authenticate
+using ``GSSAPI``, the MongoDB C driver must be installed with SASL support.
 
 On UNIX-like environments, run the ``kinit`` command before using the following authentication methods:
 
 .. code-block:: none
 
-  $ kinit mongodbuser@EXAMPLE.COM
-  mongodbuser@EXAMPLE.COM's Password:
-  $ klistCredentials cache: FILE:/tmp/krb5cc_1000
+   $ kinit mongodbuser@EXAMPLE.COM
+   mongodbuser@EXAMPLE.COM's Password:
+   $ klistCredentials cache: FILE:/tmp/krb5cc_1000
           Principal: mongodbuser@EXAMPLE.COM
 
     Issued                Expires               Principal
-  Feb  9 13:48:51 2013  Feb  9 23:48:51 2013  krbtgt/EXAMPLE.COM@EXAMPLE.COM
+   Feb  9 13:48:51 2013  Feb  9 23:48:51 2013  krbtgt/EXAMPLE.COM@EXAMPLE.COM
 
-Now authenticate using the MongoDB URI. ``GSSAPI`` authenticates against the ``$external`` virtual database, so a database does not need to be specified in the URI. Note that the Kerberos principal *must* be URL-encoded:
+Now authenticate using the MongoDB URI. ``GSSAPI`` authenticates against the ``$external`` virtual database,
+so a database does not need to be specified in the URI. Note that the Kerberos principal *must* be URL-encoded:
 
 .. code-block:: none
 
-  mongoc_client_t *client;
+   mongoc_client_t *client;
 
-  client = mongoc_client_new ("mongodb://mongodbuser%40EXAMPLE.COM@mongo-server.example.com/?authMechanism=GSSAPI");
+   client = mongoc_client_new ("mongodb://mongodbuser%40EXAMPLE.COM@mongo-server.example.com/?authMechanism=GSSAPI");
 
 .. note::
 
-  ``GSSAPI`` authenticates against the ``$external`` database, so specifying the authSource database is not required.
+   ``GSSAPI`` authenticates against the ``$external`` database, so specifying the authSource database is not required.
 
 The driver supports these GSSAPI properties:
 
-* ``CANONICALIZE_HOST_NAME``: This might be required with Cyrus-SASL when the hosts report different hostnames than what is used in the Kerberos database. The default is "false".
-* ``SERVICE_NAME``: Use a different service name than the default, "mongodb".
+- ``CANONICALIZE_HOST_NAME``: This might be required with Cyrus-SASL when the hosts report different hostnames
+  than what is used in the Kerberos database. The default is "false".
+- ``SERVICE_NAME``: Use a different service name than the default, "mongodb".
 
 Set properties in the URL:
 
 .. code-block:: none
 
-  mongoc_client_t *client;
+   mongoc_client_t *client;
 
-  client = mongoc_client_new ("mongodb://mongodbuser%40EXAMPLE.COM@mongo-server.example.com/?authMechanism=GSSAPI&"
-                              "authMechanismProperties=SERVICE_NAME:other,CANONICALIZE_HOST_NAME:true");
+   client = mongoc_client_new ("mongodb://mongodbuser%40EXAMPLE.COM@mongo-server.example.com/?authMechanism=GSSAPI&"
+                               "authMechanismProperties=SERVICE_NAME:other,CANONICALIZE_HOST_NAME:true");
 
 If you encounter errors such as ``Invalid net address``, check if the application is behind a NAT (Network Address Translation) firewall. If so, create a ticket that uses ``forwardable`` and ``addressless`` Kerberos tickets. This can be done by passing ``-f -A`` to ``kinit``.
 
