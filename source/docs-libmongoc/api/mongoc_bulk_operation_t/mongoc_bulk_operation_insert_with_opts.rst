@@ -19,9 +19,15 @@ Queue an insert of a single document into a bulk operation. The insert is not pe
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 - ``document``: A :ref:`bson:bson_t`.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``document``: A :ref:`bson_t`.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 .. include:: includes/bulk-insert-opts.txt
 

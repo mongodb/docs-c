@@ -31,6 +31,7 @@ Execute a command on the server, interpreting ``opts`` according to the MongoDB 
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``client``: A :ref:`mongoc_client_t`.
 - ``db_name``: The name of the database to run the command on.
 - ``command``: A :ref:`bson:bson_t` containing the command specification.
@@ -38,6 +39,15 @@ Parameters
 - ``opts``: A :ref:`bson:bson_t` containing additional options.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``client``: A :ref:`mongoc_client_t`.
+* ``db_name``: The name of the database to run the command on.
+* ``command``: A :ref:`bson_t` containing the command specification.
+* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
+* ``opts``: A :ref:`bson_t` containing additional options.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 .. include:: includes/read-write-opts.txt
 

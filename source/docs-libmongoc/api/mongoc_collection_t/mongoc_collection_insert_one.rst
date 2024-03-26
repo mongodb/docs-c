@@ -18,10 +18,17 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``document``: A :ref:`bson:bson_t`.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``document``: A :ref:`bson_t`.
+* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 .. ``opts-source`` replace:: ``collection``
 

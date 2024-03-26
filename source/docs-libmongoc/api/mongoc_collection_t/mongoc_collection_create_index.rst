@@ -22,7 +22,14 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``keys``: A :ref:`bson:bson_t`.
 - ``opt``: A mongoc_index_opt_t.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``keys``: A :ref:`bson_t`.
+* ``opt``: A mongoc_index_opt_t.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master

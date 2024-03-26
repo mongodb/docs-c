@@ -27,10 +27,17 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``document``: A :ref:`bson:bson_t` containing the document.
 - ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL`` for default write concern.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``document``: A :ref:`bson_t` containing the document.
+* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL`` for default write concern.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 Description
 -----------

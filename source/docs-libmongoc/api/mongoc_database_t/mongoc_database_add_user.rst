@@ -19,12 +19,21 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``database``: A :ref:`mongoc_database_t`.
 - ``username``: The name of the user.
 - ``password``: The cleartext password for the user.
 - ``roles``: An optional :ref:`bson:bson_t` for roles.
 - ``custom_data``: A optional :ref:`bson:bson_t` for extra data.
 - ``error``: A location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``database``: A :ref:`mongoc_database_t`.
+* ``username``: The name of the user.
+* ``password``: The cleartext password for the user.
+* ``roles``: An optional :ref:`bson_t` for roles.
+* ``custom_data``: A optional :ref:`bson_t` for extra data.
+* ``error``: A location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 This function shall create a new user with access to ``database``.
 

@@ -21,10 +21,17 @@ This function is superseded by :ref:`mongoc_bulk_operation_update_one_with_opts(
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 - ``selector``: A :ref:`bson:bson_t` that selects which document to remove.
 - ``document``: A :ref:`bson:bson_t` containing the update document.
 - ``upsert``: ``true`` if an ``upsert`` should be performed.
+=======
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson_t` that selects which document to remove.
+* ``document``: A :ref:`bson_t` containing the update document.
+* ``upsert``: ``true`` if an ``upsert`` should be performed.
+>>>>>>> upstream/master
 
 .. warning::
 

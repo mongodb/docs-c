@@ -15,8 +15,13 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
 - ``fields``: An uninitialized :ref:`bson:bson_t`.
+=======
+* ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
+* ``fields``: An uninitialized :ref:`bson_t`.
+>>>>>>> upstream/master
 
 Description
 -----------

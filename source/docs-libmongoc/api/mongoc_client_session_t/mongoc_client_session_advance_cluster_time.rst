@@ -19,7 +19,12 @@ Use :ref:`mongoc_client_session_advance_operation_time` and :ref:`mongoc_client_
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``session``: A :ref:`mongoc_client_session_t`.
 - ``cluster_time``: The session's new cluster time, as a :ref:`bson:bson_t` like `{"cluster time": <timestamp>}`.
+=======
+* ``session``: A :ref:`mongoc_client_session_t`.
+* ``cluster_time``: The session's new cluster time, as a :ref:`bson_t` like `{"cluster time": <timestamp>}`.
+>>>>>>> upstream/master
 
 .. include:: includes/seealso/session.txt

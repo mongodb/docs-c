@@ -27,11 +27,19 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``flags``: A :ref:`mongoc_delete_flags_t`.
 - ``selector``: A :ref:`bson:bson_t` containing the query to match documents.
 - ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
 - ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``collection``: A :ref:`mongoc_collection_t`.
+* ``flags``: A :ref:`mongoc_delete_flags_t`.
+* ``selector``: A :ref:`bson_t` containing the query to match documents.
+* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
+* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 Description
 -----------

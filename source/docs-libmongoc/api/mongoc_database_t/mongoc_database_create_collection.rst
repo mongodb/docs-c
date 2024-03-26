@@ -18,10 +18,17 @@ Synopsis
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``database``: A :ref:`mongoc_database_t`.
 - ``name``: The name of the new collection.
 - ``opts``: An optional :ref:`bson:bson_t` for opts to the ``create`` command.
 - ``error``: A location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+=======
+* ``database``: A :ref:`mongoc_database_t`.
+* ``name``: The name of the new collection.
+* ``opts``: An optional :ref:`bson_t` for opts to the ``create`` command.
+* ``error``: A location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+>>>>>>> upstream/master
 
 Description
 -----------

@@ -19,8 +19,13 @@ This function is superseded by :ref:`mongoc_bulk_operation_remove_one_with_opts(
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 - ``selector``: A :ref:`bson:bson_t` that selects which document to remove.
+=======
+* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+* ``selector``: A :ref:`bson_t` that selects which document to remove.
+>>>>>>> upstream/master
 
 Errors
 ------

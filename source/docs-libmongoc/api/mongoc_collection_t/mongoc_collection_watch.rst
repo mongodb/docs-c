@@ -29,9 +29,15 @@ will be used. This may happen if the change stream encounters a resumable error.
 Parameters
 ----------
 
+<<<<<<< HEAD
 - ``coll``: A :ref:`mongoc_collection_t` specifying the collection which the change stream listens to.
 - ``pipeline``: A :ref:`bson:bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
 - ``opts``: A :ref:`bson:bson_t` containing change stream options.
+=======
+* ``coll``: A :ref:`mongoc_collection_t` specifying the collection which the change stream listens to.
+* ``pipeline``: A :ref:`bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
+* ``opts``: A :ref:`bson_t` containing change stream options.
+>>>>>>> upstream/master
 
 .. include:: includes/change-stream-opts.txt
 
