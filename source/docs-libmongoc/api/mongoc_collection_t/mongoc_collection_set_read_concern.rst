@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``read_concern``: A :ref:`mongoc_read_concern_t`.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``read_concern``: A :ref:`mongoc_read_concern_t`.
 
 Description
 -----------

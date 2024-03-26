@@ -20,5 +20,5 @@ This method is NOT thread safe, and must only be called by one thread. It should
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
 

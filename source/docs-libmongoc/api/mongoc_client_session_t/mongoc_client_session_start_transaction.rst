@@ -21,9 +21,9 @@ The transaction must be completed with :ref:`mongoc_client_session_commit_transa
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
-* ``opts``: A :ref:`mongoc_transaction_opt_t` or ``NULL``.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``session``: A :ref:`mongoc_client_session_t`.
+- ``opts``: A :ref:`mongoc_transaction_opt_t` or ``NULL``.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Return
 ------

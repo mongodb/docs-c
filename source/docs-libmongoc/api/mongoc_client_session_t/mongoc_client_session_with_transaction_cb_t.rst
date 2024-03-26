@@ -19,10 +19,10 @@ Provide this callback to :ref:`mongoc_client_session_with_transaction`. The call
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
-* ``ctx``: A ``void*`` set to the the user-provided ``ctx`` passed to :ref:`mongoc_client_session_with_transaction`.
-* ``reply``: An optional location for a :ref:`bson_t` or ``NULL``. The callback should set this if it runs any operations against the server and receives replies.
-* ``error``: A :ref:`bson_error_t`. The callback should set this if it receives any errors while running operations against the server.
+- ``session``: A :ref:`mongoc_client_session_t`.
+- ``ctx``: A ``void*`` set to the the user-provided ``ctx`` passed to :ref:`mongoc_client_session_with_transaction`.
+- ``reply``: An optional location for a :ref:`bson_t` or ``NULL``. The callback should set this if it runs any operations against the server and receives replies.
+- ``error``: A :ref:`bson_error_t`. The callback should set this if it receives any errors while running operations against the server.
 
 Return
 ------

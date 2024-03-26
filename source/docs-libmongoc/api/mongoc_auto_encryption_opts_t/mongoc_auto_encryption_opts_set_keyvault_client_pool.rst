@@ -17,8 +17,8 @@ Set an optional separate :ref:`mongoc_client_pool_t` to use during key lookup fo
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_auto_encryption_opts_t`.
-* ``pool``: A :ref:`mongoc_client_pool_t` to use for key queries. This client pool should *not* have automatic encryption enabled, as it will only execute ``find`` commands against the key vault collection to retrieve keys for automatic encryption and decryption. This ``pool`` MUST outlive any :ref:`mongoc_client_pool_t` which has been enabled to use it through :ref:`mongoc_client_pool_enable_auto_encryption()`.
+- ``opts``: A :ref:`mongoc_auto_encryption_opts_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t` to use for key queries. This client pool should *not- have automatic encryption enabled, as it will only execute ``find`` commands against the key vault collection to retrieve keys for automatic encryption and decryption. This ``pool`` MUST outlive any :ref:`mongoc_client_pool_t` which has been enabled to use it through :ref:`mongoc_client_pool_enable_auto_encryption()`.
 
 .. seealso::
 

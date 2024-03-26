@@ -19,7 +19,7 @@ Useful when you want to choose which database to use based only on the URI in a 
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 Returns
 -------

@@ -19,6 +19,6 @@ The default read concern is empty: No readConcern is sent to the server unless e
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``read_concern``: A :ref:`mongoc_read_concern_t`.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``read_concern``: A :ref:`mongoc_read_concern_t`.
 

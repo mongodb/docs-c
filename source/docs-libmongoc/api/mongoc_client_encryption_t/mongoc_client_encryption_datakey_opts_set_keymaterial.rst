@@ -19,9 +19,9 @@ Sets the custom key material to be used by the data key for encryption and decry
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
-* ``data``: A pointer to the bytes constituting the custom key material.
-* ``len``: The length of the bytes constituting the custom key material.
+- ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
+- ``data``: A pointer to the bytes constituting the custom key material.
+- ``len``: The length of the bytes constituting the custom key material.
 
 Description
 -----------

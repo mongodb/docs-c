@@ -16,4 +16,4 @@ Frees resources of a :ref:`mongoc_client_encryption_opts_t` created with :ref:`m
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
+- ``opts``: A :ref:`mongoc_client_encryption_opts_t`.

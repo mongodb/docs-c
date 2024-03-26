@@ -18,9 +18,9 @@ This function checks to see if a collection exists on the MongoDB server within 
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``name``: A string containing the name of the collection.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``name``: A string containing the name of the collection.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

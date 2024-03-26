@@ -43,9 +43,9 @@ versions of the passed in strings.
 Parameters
 ----------
 
-* ``driver_name``: An optional string storing the name of the wrapping driver
-* ``driver_version``: An optional string storing the version of the wrapping driver.
-* ``platform``: An optional string storing any information about the current platform, for example configure options or compile flags.
+- ``driver_name``: An optional string storing the name of the wrapping driver
+- ``driver_version``: An optional string storing the version of the wrapping driver.
+- ``platform``: An optional string storing any information about the current platform, for example configure options or compile flags.
 
 Returns
 -------

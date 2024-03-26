@@ -1,5 +1,6 @@
-.. _mongoc_auto_encryption_opts_set_bypass_query_analysis
+.. _mongoc_auto_encryption_opts_set_bypass_query_analysis:
 
+=======================================================
 mongoc_auto_encryption_opts_set_bypass_query_analysis()
 =======================================================
 
@@ -12,13 +13,12 @@ Synopsis
    mongoc_auto_encryption_opts_set_bypass_query_analysis (
       mongoc_auto_encryption_opts_t *opts, bool bypass_query_analysis);
 
-.. versionadded:: 1.22.0
 
 Parameters
 ----------
 
-* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
-* ``bypass_query_analysis``: A boolean.
+- ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+- ``bypass_query_analysis``: A boolean.
 
 
 ``bypass_query_analysis`` disables automatic analysis of outgoing commands.
@@ -28,7 +28,7 @@ Parameters
 
 .. seealso::
 
-  | :ref:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption`
 
   | :doc:`in-use-encryption`
 

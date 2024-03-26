@@ -16,7 +16,7 @@ Returns the :ref:`mongoc_client_t` from which this session was created. See :ref
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------

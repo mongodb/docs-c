@@ -16,7 +16,7 @@ Get the session's clusterTime as a BSON document.
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------

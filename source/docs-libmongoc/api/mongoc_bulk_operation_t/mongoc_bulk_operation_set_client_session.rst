@@ -20,8 +20,8 @@ It is an error to use a session for unacknowledged writes.
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``client_session``: A :ref:`mongoc_client_session_t`. Must be derived from the same :ref:`mongoc_client_t` as ``bulk``.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``client_session``: A :ref:`mongoc_client_session_t`. Must be derived from the same :ref:`mongoc_client_t` as ``bulk``.
 
 .. seealso::
 

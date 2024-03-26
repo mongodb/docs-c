@@ -23,11 +23,11 @@ Also removes the ``keyAltNames`` field from the key document if it would otherwi
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
-* ``keyid``: The UUID (BSON binary subtype 0x04) of the key to remove the key alternate name from.
-* ``keyaltname``: The key alternate name to remove.
-* ``key_doc``: Optional. An uninitialized :ref:`bson_t` set to the value of the key document before removal of the key alternate name, or an empty document the key does not exist. Must be freed by :ref:`bson_value_destroy`.
-* ``error``: Optional. :ref:`bson_error_t`.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
+- ``keyid``: The UUID (BSON binary subtype 0x04) of the key to remove the key alternate name from.
+- ``keyaltname``: The key alternate name to remove.
+- ``key_doc``: Optional. An uninitialized :ref:`bson_t` set to the value of the key document before removal of the key alternate name, or an empty document the key does not exist. Must be freed by :ref:`bson_value_destroy`.
+- ``error``: Optional. :ref:`bson_error_t`.
 
 Returns
 -------

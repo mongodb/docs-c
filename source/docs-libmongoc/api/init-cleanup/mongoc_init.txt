@@ -1,5 +1,6 @@
-.. _mongoc_init
+.. _mongoc_init:
 
+=============
 mongoc_init()
 =============
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_init (void);
+   void
+   mongoc_init (void);
 
 Description
 -----------

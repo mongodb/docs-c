@@ -18,7 +18,7 @@ Only call :ref:`mongoc_client_destroy` on a single-threaded client. Do not call 
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 .. seealso::
 

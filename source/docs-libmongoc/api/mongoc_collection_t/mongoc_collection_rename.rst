@@ -18,11 +18,11 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``new_db``: The name of the new database.
-* ``new_name``: The new name for the collection.
-* ``drop_target_before_rename``: If an existing collection matches the new name, drop it before the rename.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``new_db``: The name of the new database.
+- ``new_name``: The new name for the collection.
+- ``drop_target_before_rename``: If an existing collection matches the new name, drop it before the rename.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------

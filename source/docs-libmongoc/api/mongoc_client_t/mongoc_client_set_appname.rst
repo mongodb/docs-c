@@ -17,15 +17,15 @@ Sets the application name for this client. This string, along with other interna
 
 This function will log an error and return false in the following cases:
 
-* ``appname`` is longer than ``MONGOC_HANDSHAKE_APPNAME_MAX``
-* ``client`` has already initiated a handshake
-* ``client`` is from a :ref:`mongoc_client_pool_t`
+- ``appname`` is longer than ``MONGOC_HANDSHAKE_APPNAME_MAX``
+- ``client`` has already initiated a handshake
+- ``client`` is from a :ref:`mongoc_client_pool_t`
 
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``appname``: The application name, of length at most ``MONGOC_HANDSHAKE_APPNAME_MAX``.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``appname``: The application name, of length at most ``MONGOC_HANDSHAKE_APPNAME_MAX``.
 
 Returns
 -------

@@ -31,8 +31,8 @@ constructed.
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``opts``: A :ref:`mongoc_ssl_opt_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``opts``: A :ref:`mongoc_ssl_opt_t`.
 
 .. include:: includes/mongoc_client_pool_call_once.txt
 

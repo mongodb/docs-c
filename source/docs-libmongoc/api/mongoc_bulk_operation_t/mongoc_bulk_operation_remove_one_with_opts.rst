@@ -19,9 +19,9 @@ Remove a single document as part of a bulk operation. This only queues the opera
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``selector``: A :ref:`bson:bson_t` that selects which document to remove.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``selector``: A :ref:`bson:bson_t` that selects which document to remove.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 .. include:: includes/bulk-remove-one-opts.txt
 

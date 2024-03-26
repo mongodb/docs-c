@@ -35,21 +35,21 @@ operate.
 Parameters
 ----------
 
-* ``enc``: The :ref:`mongoc_client_encryption_t` to be used to configure
+- ``enc``: The :ref:`mongoc_client_encryption_t` to be used to configure
   encryption for the new collection.
-* ``database``: The :ref:`mongoc_database_t` in which the new collection will
+- ``database``: The :ref:`mongoc_database_t` in which the new collection will
   be created.
-* ``name``: The name of the new collection.
-* ``in_options``: The options for the new collection. (See below).
-* ``out_options``: An optional output option for the final create-collection
+- ``name``: The name of the new collection.
+- ``in_options``: The options for the new collection. (See below).
+- ``out_options``: An optional output option for the final create-collection
   options. Should point to storage for a :ref:`bson_t`. The pointed-to object
   must be destroyed by the caller. If ``NULL``, has no effect.
-* ``kms_provider``: The name of the KMS provider to use for generating new data
+- ``kms_provider``: The name of the KMS provider to use for generating new data
   encryption keys for encrypted fields within the collection.
-* ``opt_masterKey``: If provided, used as the masterkey option when data
+- ``opt_masterKey``: If provided, used as the masterkey option when data
   encryption keys need to be created. (See:
   :doc:`mongoc_client_encryption_datakey_opts_set_masterkey`)
-* ``error``: Optional output parameter pointing to storage for a
+- ``error``: Optional output parameter pointing to storage for a
   :ref:`bson_error_t`. If an error occurs, will be initialized with error
   information.
 

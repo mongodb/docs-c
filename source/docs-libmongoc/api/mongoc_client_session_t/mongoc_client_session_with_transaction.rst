@@ -27,12 +27,12 @@ The parameter ``reply`` is initialized even upon failure to simplify memory mana
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
-* ``cb``: A :ref:`mongoc_client_session_with_transaction_cb_t` callback, which will run inside of a new transaction on the session. See example below.
-* ``opts``: An optional :ref:`mongoc_transaction_opt_t`.
-* ``ctx``: A ``void*``. This user-provided data will be passed to ``cb``.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
+- ``session``: A :ref:`mongoc_client_session_t`.
+- ``cb``: A :ref:`mongoc_client_session_with_transaction_cb_t` callback, which will run inside of a new transaction on the session. See example below.
+- ``opts``: An optional :ref:`mongoc_transaction_opt_t`.
+- ``ctx``: A ``void*``. This user-provided data will be passed to ``cb``.
+- ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Return
 ------

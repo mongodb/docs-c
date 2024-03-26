@@ -16,7 +16,7 @@ Retrieve the default read concern configured for the client instance. The result
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 Returns
 -------

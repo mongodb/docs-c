@@ -16,7 +16,7 @@ Get the server-side "logical session ID" associated with this :ref:`mongoc_clien
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------

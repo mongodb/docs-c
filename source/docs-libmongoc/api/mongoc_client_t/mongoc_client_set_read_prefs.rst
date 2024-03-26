@@ -23,6 +23,6 @@ Please see the MongoDB website for a description of `Read Preferences <https://w
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 

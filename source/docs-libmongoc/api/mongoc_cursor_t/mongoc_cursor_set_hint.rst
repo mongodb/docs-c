@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``server_id``: An opaque id identifying the server to use.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``server_id``: An opaque id identifying the server to use.
 
 Description
 -----------

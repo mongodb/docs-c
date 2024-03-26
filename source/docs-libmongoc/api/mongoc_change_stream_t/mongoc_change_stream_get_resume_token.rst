@@ -18,7 +18,7 @@ change stream from the same point.
 Parameters
 ----------
 
-* ``stream``: A :ref:`mongoc_change_stream_t`.
+- ``stream``: A :ref:`mongoc_change_stream_t`.
 
 Returns
 -------

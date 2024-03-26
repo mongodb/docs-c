@@ -18,6 +18,6 @@ See the example code for :ref:`mongoc_client_session_t`.
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 .. include:: includes/seealso/session.txt

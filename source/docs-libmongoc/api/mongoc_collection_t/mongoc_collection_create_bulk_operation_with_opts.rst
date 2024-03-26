@@ -16,7 +16,7 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
+- ``collection``: A :ref:`mongoc_collection_t`.
 
 .. ``opts-source`` replace:: ``collection``
 

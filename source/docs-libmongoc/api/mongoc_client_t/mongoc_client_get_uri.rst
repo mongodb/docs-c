@@ -16,7 +16,7 @@ Fetches the :ref:`mongoc_uri_t` used to create the client.
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 Returns
 -------

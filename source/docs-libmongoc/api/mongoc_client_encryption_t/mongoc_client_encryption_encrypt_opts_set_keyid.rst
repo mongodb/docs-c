@@ -17,8 +17,8 @@ Identifies the data key to use for encryption. This option is mutually exclusive
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``keyid``: The UUID (BSON binary subtype 0x04) corresponding to the ``_id`` of the data key.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``keyid``: The UUID (BSON binary subtype 0x04) corresponding to the ``_id`` of the data key.
 
 .. seealso::
 

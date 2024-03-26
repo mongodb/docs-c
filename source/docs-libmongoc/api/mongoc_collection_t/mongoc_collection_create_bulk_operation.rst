@@ -25,9 +25,9 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``ordered``: If the operations must be performed in order.
-* ``write_concern``: An optional :ref:`mongoc_write_concern_t` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``ordered``: If the operations must be performed in order.
+- ``write_concern``: An optional :ref:`mongoc_write_concern_t` or ``NULL``.
 
 Description
 -----------

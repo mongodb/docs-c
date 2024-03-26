@@ -17,4 +17,4 @@ Frees resources of a :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t
 Parameters
 ----------
 
-* ``result``: A :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`.
+- ``result``: A :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`.

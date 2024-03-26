@@ -45,8 +45,8 @@ Fetches an array of :ref:`mongoc_server_description_t` structs for all known ser
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``n``: Receives the length of the descriptions array.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``n``: Receives the length of the descriptions array.
 
 Returns
 -------

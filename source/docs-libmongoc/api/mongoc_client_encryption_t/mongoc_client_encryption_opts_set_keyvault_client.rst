@@ -18,8 +18,8 @@ Set the :ref:`mongoc_client_t` to use during key creation and key lookup for enc
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
-* ``client``: A :ref:`mongoc_client_t` to use for key lookup and creation. This ``client`` MUST outlive any :ref:`mongoc_client_encryption_t` configured to use it with :ref:`mongoc_client_encryption_new()`.
+- ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
+- ``client``: A :ref:`mongoc_client_t` to use for key lookup and creation. This ``client`` MUST outlive any :ref:`mongoc_client_encryption_t` configured to use it with :ref:`mongoc_client_encryption_new()`.
 
 .. seealso::
 

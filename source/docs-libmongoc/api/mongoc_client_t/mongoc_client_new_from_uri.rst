@@ -17,7 +17,7 @@ Creates a new :ref:`mongoc_client_t` using the :ref:`mongoc_uri_t` provided.
 Parameters
 ----------
 
-* ``uri``: A :ref:`mongoc_uri_t`.
+- ``uri``: A :ref:`mongoc_uri_t`.
 
 Returns
 -------

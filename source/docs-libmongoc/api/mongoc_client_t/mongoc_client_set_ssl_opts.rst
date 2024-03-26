@@ -32,8 +32,8 @@ clients.
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``opts``: A :ref:`mongoc_ssl_opt_t`.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``opts``: A :ref:`mongoc_ssl_opt_t`.
 
 Availability
 ------------

@@ -18,8 +18,8 @@ Do not use this function with pooled clients, see :ref:`mongoc_client_pool_set_e
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``version``: The version of the error API, either ``MONGOC_ERROR_API_VERSION_LEGACY`` or ``MONGOC_ERROR_API_VERSION_2``.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``version``: The version of the error API, either ``MONGOC_ERROR_API_VERSION_LEGACY`` or ``MONGOC_ERROR_API_VERSION_2``.
 
 Returns
 -------

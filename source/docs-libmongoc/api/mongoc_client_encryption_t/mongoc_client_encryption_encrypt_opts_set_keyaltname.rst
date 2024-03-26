@@ -17,8 +17,8 @@ Identifies the data key to use for encryption. This option is mutually exclusive
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``keyaltname``: A string identifying a data key by alternate name.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``keyaltname``: A string identifying a data key by alternate name.
 
 .. seealso::
 

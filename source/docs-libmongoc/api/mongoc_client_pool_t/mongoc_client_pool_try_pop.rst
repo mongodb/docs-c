@@ -17,7 +17,7 @@ This function is identical to :ref:`mongoc_client_pool_pop()` except it will ret
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
 
 Returns
 -------

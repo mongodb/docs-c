@@ -17,8 +17,8 @@ Configure how the C Driver reports errors. See :ref:`Setting the Error API Versi
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``version``: The version of the error API, either ``MONGOC_ERROR_API_VERSION_LEGACY`` or ``MONGOC_ERROR_API_VERSION_2``.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``version``: The version of the error API, either ``MONGOC_ERROR_API_VERSION_LEGACY`` or ``MONGOC_ERROR_API_VERSION_2``.
 
 Returns
 -------

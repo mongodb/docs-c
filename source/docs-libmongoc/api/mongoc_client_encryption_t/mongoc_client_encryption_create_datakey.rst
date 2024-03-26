@@ -25,11 +25,11 @@ The created key document is inserted into the key vault collection (identified v
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
-* ``kms_provider``: A string identifying the Key Management Service (KMS) provider used to encrypt the datakey (e.g. "aws" or "local").
-* ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
-* ``keyid``: Optional. An uninitialized :ref:`bson_value_t` set to the UUID (BSON binary subtype 0x04) of the newly created key. Must be freed by :ref:`bson_value_destroy`.
-* ``error``: Optional. A :ref:`bson_error_t`.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
+- ``kms_provider``: A string identifying the Key Management Service (KMS) provider used to encrypt the datakey (e.g. "aws" or "local").
+- ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
+- ``keyid``: Optional. An uninitialized :ref:`bson_value_t` set to the UUID (BSON binary subtype 0x04) of the newly created key. Must be freed by :ref:`bson_value_destroy`.
+- ``error``: Optional. A :ref:`bson_error_t`.
 
 Returns
 -------

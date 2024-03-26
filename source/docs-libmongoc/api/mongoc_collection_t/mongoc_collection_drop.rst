@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------

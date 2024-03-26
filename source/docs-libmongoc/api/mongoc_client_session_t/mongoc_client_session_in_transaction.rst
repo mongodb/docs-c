@@ -16,7 +16,7 @@ Check whether a multi-document transaction is in progress for this session.
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Return
 ------

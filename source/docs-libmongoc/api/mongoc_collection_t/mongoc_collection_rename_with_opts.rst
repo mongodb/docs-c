@@ -19,19 +19,19 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``new_db``: The name of the new database.
-* ``new_name``: The new name for the collection.
-* ``drop_target_before_rename``: If an existing collection matches the new name, drop it before the rename.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``new_db``: The name of the new database.
+- ``new_name``: The new name for the collection.
+- ``drop_target_before_rename``: If an existing collection matches the new name, drop it before the rename.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 .. ``opts-source`` replace:: ``collection``
 
 ``opts`` may be NULL or a BSON document with additional command options:
 
-* ``writeConcern``: Construct a :ref:`mongoc_write_concern_t` and use :ref:`mongoc_write_concern_append` to add the write concern to ``opts``. See the example code for :ref:`mongoc_client_write_command_with_opts`.
-* ``sessionId``: First, construct a :ref:`mongoc_client_session_t` with :ref:`mongoc_client_start_session`. You can begin a transaction with :ref:`mongoc_client_session_start_transaction`, optionally with a :ref:`mongoc_transaction_opt_t` that overrides the options inherited from ``opts-source``, and use :ref:`mongoc_client_session_append` to add the session to ``opts``. See the example code for :ref:`mongoc_client_session_t`.
-* ``serverId``: To target a specific server, include an int32 "serverId" field. Obtain the id by calling :ref:`mongoc_client_select_server`, then :ref:`mongoc_server_description_id` on its return value.
+- ``writeConcern``: Construct a :ref:`mongoc_write_concern_t` and use :ref:`mongoc_write_concern_append` to add the write concern to ``opts``. See the example code for :ref:`mongoc_client_write_command_with_opts`.
+- ``sessionId``: First, construct a :ref:`mongoc_client_session_t` with :ref:`mongoc_client_start_session`. You can begin a transaction with :ref:`mongoc_client_session_start_transaction`, optionally with a :ref:`mongoc_transaction_opt_t` that overrides the options inherited from ``opts-source``, and use :ref:`mongoc_client_session_append` to add the session to ``opts``. See the example code for :ref:`mongoc_client_session_t`.
+- ``serverId``: To target a specific server, include an int32 "serverId" field. Obtain the id by calling :ref:`mongoc_client_select_server`, then :ref:`mongoc_server_description_id` on its return value.
 
 Description
 -----------

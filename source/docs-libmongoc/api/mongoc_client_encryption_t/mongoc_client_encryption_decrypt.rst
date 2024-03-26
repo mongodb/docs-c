@@ -21,10 +21,10 @@ Performs explicit decryption.
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`
-* ``ciphertext``: The ciphertext (a BSON binary with subtype 6) to decrypt.
-* ``value``: A :ref:`bson_value_t` for the resulting decrypted value.
-* ``error``: A :ref:`bson_error_t` set on failure.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`
+- ``ciphertext``: The ciphertext (a BSON binary with subtype 6) to decrypt.
+- ``value``: A :ref:`bson_value_t` for the resulting decrypted value.
+- ``error``: A :ref:`bson_error_t` set on failure.
 
 Returns
 -------

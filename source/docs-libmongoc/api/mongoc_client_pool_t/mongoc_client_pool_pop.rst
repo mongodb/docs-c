@@ -19,7 +19,7 @@ The returned :ref:`mongoc_client_t` must be returned to the pool with :ref:`mong
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
 
 Returns
 -------

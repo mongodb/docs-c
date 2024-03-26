@@ -28,8 +28,8 @@ Fetches a cursor containing documents, each corresponding to an index on this co
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

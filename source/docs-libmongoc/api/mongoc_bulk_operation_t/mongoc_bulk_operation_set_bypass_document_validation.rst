@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``bypass``: A boolean.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``bypass``: A boolean.
 
 Description
 -----------

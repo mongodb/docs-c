@@ -19,7 +19,7 @@ the returned pointer will be ``NULL``.
 Parameters
 ----------
 
-* ``client``: A live :ref:`mongoc_client_t`
+- ``client``: A live :ref:`mongoc_client_t`
 
 Returns
 -------

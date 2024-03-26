@@ -20,7 +20,7 @@ Returns ``NULL`` if no bulk write operation was executed or if the bulk write op
 Parameters
 ----------
 
-* ``result``: A :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`.
+- ``result``: A :ref:`mongoc_client_encryption_rewrap_many_datakey_result_t`.
 
 Returns
 -------

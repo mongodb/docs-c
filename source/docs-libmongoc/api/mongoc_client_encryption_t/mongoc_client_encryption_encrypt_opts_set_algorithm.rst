@@ -48,5 +48,5 @@ Identifies the algorithm to use for encryption. Valid values of ``algorithm`` ar
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``algorithm``: A ``char *`` identifying the algorithm.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``algorithm``: A ``char *`` identifying the algorithm.

@@ -20,9 +20,9 @@ The ``callbacks`` are copied by the client and may be destroyed at any time afte
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``callbacks``: Optional :ref:`mongoc_apm_callbacks_t`. Pass NULL to clear all callbacks.
-* ``context``: Optional pointer to include with each event notification.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``callbacks``: Optional :ref:`mongoc_apm_callbacks_t`. Pass NULL to clear all callbacks.
+- ``context``: Optional pointer to include with each event notification.
 
 Returns
 -------

@@ -18,8 +18,8 @@ Abort a multi-document transaction.
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``session``: A :ref:`mongoc_client_session_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Return
 ------

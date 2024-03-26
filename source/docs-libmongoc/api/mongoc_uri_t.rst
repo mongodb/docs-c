@@ -57,8 +57,8 @@ Replica Set Example
 
 To describe a connection to a replica set named 'test' with the following mongod hosts:
 
-* ``db1.example.com`` on port ``27017``
-* ``db2.example.com`` on port ``2500``
+- ``db1.example.com`` on port ``27017``
+- ``db2.example.com`` on port ``2500``
 
 You would use a connection string that resembles the following.
 

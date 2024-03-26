@@ -21,6 +21,6 @@ Please see the MongoDB website for a description of `Read Preferences <https://w
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
 

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``limit``: The maximum number of documents to retrieve for this query.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``limit``: The maximum number of documents to retrieve for this query.
 
 Description
 -----------

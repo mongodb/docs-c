@@ -16,7 +16,7 @@ Get a reference to the :ref:`mongoc_session_opt_t` with which this session was c
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------

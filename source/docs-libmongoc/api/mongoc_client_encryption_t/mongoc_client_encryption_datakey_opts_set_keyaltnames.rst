@@ -19,9 +19,9 @@ Sets a list of alternate name strings that can be used to identify a data key. K
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
-* ``keyaltnames``: An array of strings.
-* ``keyaltnames_count``: The number of strings in ``keyaltnames``.
+- ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
+- ``keyaltnames``: An array of strings.
+- ``keyaltnames_count``: The number of strings in ``keyaltnames``.
 
 .. seealso::
 

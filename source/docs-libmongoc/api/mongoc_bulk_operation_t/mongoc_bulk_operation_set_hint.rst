@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``server_id``: An opaque id identifying the server to use.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``server_id``: An opaque id identifying the server to use.
 
 Description
 -----------

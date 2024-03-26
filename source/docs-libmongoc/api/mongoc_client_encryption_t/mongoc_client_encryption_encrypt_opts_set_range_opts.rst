@@ -23,8 +23,8 @@ It is an error to set ``range_opts`` when algorithm is not "RangePreview".
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
 
 .. seealso::
 

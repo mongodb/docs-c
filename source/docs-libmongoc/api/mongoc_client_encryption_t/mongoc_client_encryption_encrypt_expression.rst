@@ -51,11 +51,11 @@ To query with a ``RangePreview`` payload, ``expr`` must be one of the following 
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`
-* ``expr``: The expression to encrypt.
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`.
-* ``expr_out``: A :ref:`bson_t` for the resulting encrypted expression. ``expr_out`` is always initialized (even on failure). Caller must call :ref:`bson_destroy()` to free.
-* ``error``: A :ref:`bson_error_t` set on failure.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`
+- ``expr``: The expression to encrypt.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`.
+- ``expr_out``: A :ref:`bson_t` for the resulting encrypted expression. ``expr_out`` is always initialized (even on failure). Caller must call :ref:`bson_destroy()` to free.
+- ``error``: A :ref:`bson_error_t` set on failure.
 
 Returns
 -------

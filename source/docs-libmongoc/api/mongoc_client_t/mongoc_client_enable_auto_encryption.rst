@@ -26,9 +26,9 @@ Only applies to a single-threaded :ref:`mongoc_client_t`. To use with client poo
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``opts``: A required :ref:`mongoc_auto_encryption_opts_t`.
-* ``error``: A :ref:`bson_error_t` which is set on error.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``opts``: A required :ref:`mongoc_auto_encryption_opts_t`.
+- ``error``: A :ref:`bson_error_t` which is set on error.
 
 Returns
 -------

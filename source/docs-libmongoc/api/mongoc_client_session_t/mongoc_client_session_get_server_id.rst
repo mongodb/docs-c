@@ -16,7 +16,7 @@ Get the "server ID" of the ``mongos`` this :ref:`mongoc_client_session_t` is pin
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
+- ``session``: A :ref:`mongoc_client_session_t`.
 
 Returns
 -------

@@ -17,8 +17,8 @@ Get information about the server specified by ``server_id``.
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``server_id``: An opaque id specifying the server.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``server_id``: An opaque id specifying the server.
 
 Returns
 -------

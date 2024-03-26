@@ -20,7 +20,7 @@ If ``user_data`` is passed, it is the application's responsibility to ensure ``u
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``initiator``: A :symbol:`mongoc_stream_initiator_t <mongoc_client_t>`.
-* ``user_data``: User supplied pointer for callback function.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``initiator``: A :symbol:`mongoc_stream_initiator_t <mongoc_client_t>`.
+- ``user_data``: User supplied pointer for callback function.
 

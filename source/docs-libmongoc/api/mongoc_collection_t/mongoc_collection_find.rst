@@ -30,14 +30,14 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``flags``: A :ref:`mongoc_query_flags_t`.
-* ``skip``: A uint32_t of number of documents to skip or 0.
-* ``limit``: A uint32_t of max number of documents to return or 0.
-* ``batch_size``: A uint32_t containing batch size of document result sets or 0 for default. Default is 100.
-* ``query``: A :ref:`bson:bson_t` containing the query and options to execute.
-* ``fields``: A :ref:`bson:bson_t` containing fields to return or ``NULL``.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL`` for default read preferences.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``flags``: A :ref:`mongoc_query_flags_t`.
+- ``skip``: A uint32_t of number of documents to skip or 0.
+- ``limit``: A uint32_t of max number of documents to return or 0.
+- ``batch_size``: A uint32_t containing batch size of document result sets or 0 for default. Default is 100.
+- ``query``: A :ref:`bson:bson_t` containing the query and options to execute.
+- ``fields``: A :ref:`bson:bson_t` containing fields to return or ``NULL``.
+- ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL`` for default read preferences.
 
 Description
 -----------

@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``host``: A :ref:`mongoc_host_list_t`.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``host``: A :ref:`mongoc_host_list_t`.
 
 Description
 -----------

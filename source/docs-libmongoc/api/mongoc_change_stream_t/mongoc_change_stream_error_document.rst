@@ -22,9 +22,9 @@ error occurred server-side, ``reply`` is set to the server's reply document.
 Parameters
 ----------
 
-* ``stream``: A :ref:`mongoc_change_stream_t`.
-* ``err``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-* ``reply``: A location for a :ref:`bson:bson_t`.
+- ``stream``: A :ref:`mongoc_change_stream_t`.
+- ``err``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``reply``: A location for a :ref:`bson:bson_t`.
 
 Returns
 -------

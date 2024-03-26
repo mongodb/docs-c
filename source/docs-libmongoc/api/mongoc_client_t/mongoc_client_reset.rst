@@ -23,5 +23,5 @@ This method causes the client to clear its session pool without sending endSessi
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 

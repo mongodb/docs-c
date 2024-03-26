@@ -21,8 +21,8 @@ Get a newly allocated :ref:`mongoc_database_t` for the database named ``name``.
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``name``: The name of the database.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``name``: The name of the database.
 
 Returns
 -------

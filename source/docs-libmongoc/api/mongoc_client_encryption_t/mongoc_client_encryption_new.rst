@@ -17,8 +17,8 @@ Create a new :ref:`mongoc_client_encryption_t`.
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
-* ``error``: A :ref:`bson_error_t`.
+- ``opts``: A :ref:`mongoc_client_encryption_opts_t`.
+- ``error``: A :ref:`bson_error_t`.
 
 Returns
 -------

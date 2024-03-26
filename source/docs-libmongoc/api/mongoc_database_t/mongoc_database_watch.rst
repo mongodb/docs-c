@@ -29,9 +29,9 @@ will be used. This may happen if the change stream encounters a resumable error.
 Parameters
 ----------
 
-* ``db``: A :ref:`mongoc_database_t` specifying the database which the change stream listens to.
-* ``pipeline``: A :ref:`bson:bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
-* ``opts``: A :ref:`bson:bson_t` containing change stream options.
+- ``db``: A :ref:`mongoc_database_t` specifying the database which the change stream listens to.
+- ``pipeline``: A :ref:`bson:bson_t` representing an aggregation pipeline appended to the change stream. This may be an empty document.
+- ``opts``: A :ref:`bson:bson_t` containing change stream options.
 
 .. include:: includes/change-stream-opts.txt
 

@@ -18,8 +18,8 @@ Also note that :ref:`mongoc_client_set_appname()` cannot be called on a client r
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``appname``: The application name, of length at most ``MONGOC_HANDSHAKE_APPNAME_MAX``.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``appname``: The application name, of length at most ``MONGOC_HANDSHAKE_APPNAME_MAX``.
 
 Returns
 -------

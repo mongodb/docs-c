@@ -28,8 +28,8 @@ For double and decimal128 fields, min/max/precision must all be set, or all be u
 Parameters
 ----------
 
-* ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
-* ``min``: The minimum bson value of the range.
+- ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
+- ``min``: The minimum bson value of the range.
 
 .. seealso::
 

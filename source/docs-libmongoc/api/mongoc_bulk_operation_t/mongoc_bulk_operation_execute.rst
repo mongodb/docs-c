@@ -24,9 +24,9 @@ It is only valid to call :ref:`mongoc_bulk_operation_execute()` once. The ``mong
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

@@ -16,7 +16,7 @@ Creates a new :ref:`mongoc_client_t` using the URI string provided.
 Parameters
 ----------
 
-* ``uri_string``: A string containing the MongoDB connection URI.
+- ``uri_string``: A string containing the MongoDB connection URI.
 
 Returns
 -------

@@ -25,8 +25,8 @@ Deletes documents as part of a bulk operation. This only queues the operation. T
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``selector``: A :ref:`bson:bson_t`.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``selector``: A :ref:`bson:bson_t`.
 
 Errors
 ------

@@ -18,9 +18,9 @@ Set the API version to use for clients created through ``pool``. Once the API ve
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``api``: A :ref:`mongoc_server_api_t`.
-* ``error``: A :ref:`bson_error_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``api``: A :ref:`mongoc_server_api_t`.
+- ``error``: A :ref:`bson_error_t`.
 
 Returns
 -------

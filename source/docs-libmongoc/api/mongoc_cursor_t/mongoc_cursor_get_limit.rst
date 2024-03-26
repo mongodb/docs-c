@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
 
 Description
 -----------

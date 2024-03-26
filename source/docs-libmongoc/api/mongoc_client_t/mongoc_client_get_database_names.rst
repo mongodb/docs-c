@@ -30,8 +30,8 @@ This function queries the MongoDB server for a list of known databases.
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

@@ -21,8 +21,8 @@ may be returned before the timeout. If no data is returned this function returns
 Parameters
 ----------
 
-* ``stream``: A :ref:`mongoc_change_stream_t`.
-* ``bson``: The location for the resulting document.
+- ``stream``: A :ref:`mongoc_change_stream_t`.
+- ``bson``: The location for the resulting document.
 
 Returns
 -------

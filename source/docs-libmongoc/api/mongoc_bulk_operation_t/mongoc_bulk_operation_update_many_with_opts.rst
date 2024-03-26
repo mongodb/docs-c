@@ -24,10 +24,10 @@ This function queues an update as part of a bulk operation. This does not execut
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``selector``: A :ref:`bson:bson_t` that selects which documents to remove.
-* ``document``: A :ref:`bson:bson_t` containing the update document.
-* ``error``: A :ref:`bson:bson_error_t` any errors that may have occurred.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``selector``: A :ref:`bson:bson_t` that selects which documents to remove.
+- ``document``: A :ref:`bson:bson_t` containing the update document.
+- ``error``: A :ref:`bson:bson_error_t` any errors that may have occurred.
 
 .. include:: includes/bulk-update-many-opts.txt
 

@@ -16,7 +16,7 @@ This function returns a :ref:`mongoc_client_t` back to the client pool.
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``client``: A :ref:`mongoc_client_t`.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 .. include:: includes/mongoc_client_pool_thread_safe.txt

@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``let``: A BSON document consisting of any number of parameter names, each followed by definitions of constants in the MQL Aggregate Expression language.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``let``: A BSON document consisting of any number of parameter names, each followed by definitions of constants in the MQL Aggregate Expression language.
 
 Description
 -----------

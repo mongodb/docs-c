@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``batch_size``: The requested number of documents per batch.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``batch_size``: The requested number of documents per batch.
 
 Description
 -----------

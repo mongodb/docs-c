@@ -25,8 +25,8 @@ It is an error to set a different value.
 Parameters
 ----------
 
-* ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
-* ``sparsity``: A non-negative sparsity.
+- ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`
+- ``sparsity``: A non-negative sparsity.
 
 .. seealso::
     | :ref:`mongoc_client_encryption_encrypt_range_opts_t`

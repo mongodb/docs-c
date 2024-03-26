@@ -14,8 +14,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``bson``: A location for a :symbol:`const bson_t * <bson:bson_t>`.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``bson``: A location for a :symbol:`const bson_t - <bson:bson_t>`.
 
 Description
 -----------

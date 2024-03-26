@@ -22,5 +22,5 @@ If contention factor is not supplied, it defaults to a value of 0.
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``contention_factor``: A non-negative contention factor.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``contention_factor``: A non-negative contention factor.

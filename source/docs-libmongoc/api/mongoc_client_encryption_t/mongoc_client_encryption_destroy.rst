@@ -17,4 +17,4 @@ Release all resources associated with ``client_encryption`` and free the structu
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`.

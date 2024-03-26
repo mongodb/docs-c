@@ -16,5 +16,5 @@ Destroys a :ref:`mongoc_bulk_operation_t` and frees the structure. Does nothing 
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 

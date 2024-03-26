@@ -19,8 +19,8 @@ This function is superseded by :ref:`mongoc_bulk_operation_insert_with_opts()`.
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
-* ``document``: A :ref:`bson:bson_t`.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``document``: A :ref:`bson:bson_t`.
 
 Errors
 ------

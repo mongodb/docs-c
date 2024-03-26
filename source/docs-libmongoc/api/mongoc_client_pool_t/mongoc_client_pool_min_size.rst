@@ -25,8 +25,8 @@ This function sets the *maximum* number of idle clients to be kept in the pool. 
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``min_pool_size``: The number of idle clients to keep in the pool.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``min_pool_size``: The number of idle clients to keep in the pool.
 
 .. include:: includes/mongoc_client_pool_thread_safe.txt
 

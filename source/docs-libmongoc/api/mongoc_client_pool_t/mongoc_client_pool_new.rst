@@ -16,7 +16,7 @@ This function creates a new :ref:`mongoc_client_pool_t` using the :ref:`mongoc_u
 Parameters
 ----------
 
-* ``uri``: A :ref:`mongoc_uri_t`.
+- ``uri``: A :ref:`mongoc_uri_t`.
 
 Returns
 -------

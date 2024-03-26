@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``bulk``: A :ref:`mongoc_bulk_operation_t`.
+- ``bulk``: A :ref:`mongoc_bulk_operation_t`.
 
 Description
 -----------

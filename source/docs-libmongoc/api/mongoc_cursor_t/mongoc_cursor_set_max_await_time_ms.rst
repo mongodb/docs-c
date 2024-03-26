@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``cursor``: A :ref:`mongoc_cursor_t`.
-* ``max_await_time_ms``: A timeout in milliseconds.
+- ``cursor``: A :ref:`mongoc_cursor_t`.
+- ``max_await_time_ms``: A timeout in milliseconds.
 
 Description
 -----------

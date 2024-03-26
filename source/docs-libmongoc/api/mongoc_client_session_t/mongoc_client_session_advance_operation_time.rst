@@ -20,8 +20,8 @@ Use :ref:`mongoc_client_session_advance_operation_time` and :ref:`mongoc_client_
 Parameters
 ----------
 
-* ``session``: A :ref:`mongoc_client_session_t`.
-* ``timestamp``: The new operationTime's timestamp component.
-* ``increment``: The new operationTime's increment component.
+- ``session``: A :ref:`mongoc_client_session_t`.
+- ``timestamp``: The new operationTime's timestamp component.
+- ``increment``: The new operationTime's increment component.
 
 .. include:: includes/seealso/session.txt

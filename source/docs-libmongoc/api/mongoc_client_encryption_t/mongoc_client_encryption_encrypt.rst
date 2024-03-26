@@ -40,11 +40,11 @@ To query with a ``RangePreview`` payload, use :ref:`mongoc_client_encryption_enc
 Parameters
 ----------
 
-* ``client_encryption``: A :ref:`mongoc_client_encryption_t`
-* ``value``: The value to encrypt.
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`.
-* ``ciphertext``: A :ref:`bson_value_t` for the resulting ciphertext (a BSON binary with subtype 6).
-* ``error``: A :ref:`bson_error_t` set on failure.
+- ``client_encryption``: A :ref:`mongoc_client_encryption_t`
+- ``value``: The value to encrypt.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`.
+- ``ciphertext``: A :ref:`bson_value_t` for the resulting ciphertext (a BSON binary with subtype 6).
+- ``error``: A :ref:`bson_error_t` set on failure.
 
 Returns
 -------

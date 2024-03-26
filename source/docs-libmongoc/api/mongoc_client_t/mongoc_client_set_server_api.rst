@@ -18,9 +18,9 @@ Set the API version to use for ``client``. Once the API version is set on a clie
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``api``: A :ref:`mongoc_server_api_t`.
-* ``error``: A :ref:`bson_error_t`.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``api``: A :ref:`mongoc_server_api_t`.
+- ``error``: A :ref:`bson_error_t`.
 
 Returns
 -------

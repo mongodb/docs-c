@@ -27,12 +27,12 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``flags``: A bitwise or of :ref:`mongoc_insert_flags_t`.
-* ``documents``: An array of :symbol:`const bson_t * <bson:bson_t>`.
-* ``n_documents``: The number of documents in ``documents``.
-* ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``flags``: A bitwise or of :ref:`mongoc_insert_flags_t`.
+- ``documents``: An array of :symbol:`const bson_t * <bson:bson_t>`.
+- ``n_documents``: The number of documents in ``documents``.
+- ``write_concern``: A :ref:`mongoc_write_concern_t` or ``NULL``.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------

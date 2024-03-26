@@ -21,6 +21,6 @@ It is a programming error to call this function on a client from a :ref:`mongoc_
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``write_concern``: A :ref:`mongoc_write_concern_t`.
 

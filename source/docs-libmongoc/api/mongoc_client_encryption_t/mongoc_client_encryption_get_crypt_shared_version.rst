@@ -19,7 +19,7 @@ pointer will be ``NULL``.
 Parameters
 ----------
 
-* ``enc``: A live :ref:`mongoc_client_encryption_t`
+- ``enc``: A live :ref:`mongoc_client_encryption_t`
 
 Returns
 -------

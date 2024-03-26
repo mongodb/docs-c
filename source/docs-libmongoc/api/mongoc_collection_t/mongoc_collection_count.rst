@@ -34,13 +34,13 @@ Synopsis
 Parameters
 ----------
 
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``flags``: A :ref:`mongoc_query_flags_t`.
-* ``query``: A :ref:`bson:bson_t` containing the query.
-* ``skip``: A int64_t, zero to ignore.
-* ``limit``: A int64_t, zero to ignore.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``collection``: A :ref:`mongoc_collection_t`.
+- ``flags``: A :ref:`mongoc_query_flags_t`.
+- ``query``: A :ref:`bson:bson_t` containing the query.
+- ``skip``: A int64_t, zero to ignore.
+- ``limit``: A int64_t, zero to ignore.
+- ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Description
 -----------

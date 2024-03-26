@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :ref:`mongoc_client_encryption_opts_t`
-* ``kms_providers``: A :ref:`bson_t` containing configuration for an external Key Management Service (KMS).
+- ``opts``: The :ref:`mongoc_client_encryption_opts_t`
+- ``kms_providers``: A :ref:`bson_t` containing configuration for an external Key Management Service (KMS).
 
 ``kms_providers`` is a BSON document containing configuration for each KMS provider.
 

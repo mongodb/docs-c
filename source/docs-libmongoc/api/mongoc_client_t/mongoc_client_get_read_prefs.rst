@@ -16,7 +16,7 @@ Retrieves the default read preferences configured for the client instance. The r
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
+- ``client``: A :ref:`mongoc_client_t`.
 
 Returns
 -------

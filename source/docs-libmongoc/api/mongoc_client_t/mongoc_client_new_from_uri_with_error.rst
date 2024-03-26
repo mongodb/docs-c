@@ -18,8 +18,8 @@ Creates a new :ref:`mongoc_client_t` using the :ref:`mongoc_uri_t` provided.
 Parameters
 ----------
 
-* ``uri``: A :ref:`mongoc_uri_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``uri``: A :ref:`mongoc_uri_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Returns
 -------

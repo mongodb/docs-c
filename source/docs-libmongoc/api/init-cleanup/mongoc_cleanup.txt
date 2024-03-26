@@ -1,5 +1,6 @@
-.. _mongoc_cleanup
+.. _mongoc_cleanup:
 
+================
 mongoc_cleanup()
 ================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_cleanup (void);
+   void
+   mongoc_cleanup (void);
 
 Description
 -----------

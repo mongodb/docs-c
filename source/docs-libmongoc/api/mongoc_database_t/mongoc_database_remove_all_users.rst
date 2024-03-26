@@ -17,8 +17,8 @@ This function will remove all users configured to access ``database``.
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

@@ -19,7 +19,7 @@ Frees resources of a :ref:`mongoc_client_encryption_encrypt_range_opts_t` create
 Parameters
 ----------
 
-* ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`.
+- ``range_opts``: A :ref:`mongoc_client_encryption_encrypt_range_opts_t`.
 
 .. seealso::
     | :ref:`mongoc_client_encryption_encrypt_range_opts_t`

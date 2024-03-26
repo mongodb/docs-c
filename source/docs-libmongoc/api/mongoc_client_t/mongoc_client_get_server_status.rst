@@ -28,10 +28,10 @@ Queries the server for the current server status. The result is stored in ``repl
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
-* ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``read_prefs``: A :ref:`mongoc_read_prefs_t`.
+- ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
 
 Errors
 ------

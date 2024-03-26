@@ -16,8 +16,8 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
-* ``schema_map``: A :ref:`bson_t` where keys are collection namespaces and values are JSON schemas.
+- ``opts``: The :ref:`mongoc_auto_encryption_opts_t`
+- ``schema_map``: A :ref:`bson_t` where keys are collection namespaces and values are JSON schemas.
 
 Supplying a schema map provides more security than relying on JSON Schemas obtained from the server. It protects against a malicious server advertising a false JSON Schema, which could trick the client into sending unencrypted data that should be encrypted.
 

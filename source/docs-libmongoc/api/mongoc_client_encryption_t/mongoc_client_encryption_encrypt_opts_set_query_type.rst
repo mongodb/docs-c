@@ -26,5 +26,5 @@ It is an error to set the query type when algorithm is not "Indexed" or "RangePr
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
-* ``query_type``: A query type to use for explicit encryption.
+- ``opts``: A :ref:`mongoc_client_encryption_encrypt_opts_t`
+- ``query_type``: A query type to use for explicit encryption.

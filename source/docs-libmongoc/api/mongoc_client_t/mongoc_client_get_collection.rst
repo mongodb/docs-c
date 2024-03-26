@@ -23,9 +23,9 @@ Get a newly allocated :ref:`mongoc_collection_t` for the collection named ``coll
 Parameters
 ----------
 
-* ``client``: A :ref:`mongoc_client_t`.
-* ``db``: The name of the database containing the collection.
-* ``collection``: The name of the collection.
+- ``client``: A :ref:`mongoc_client_t`.
+- ``db``: The name of the database containing the collection.
+- ``collection``: The name of the collection.
 
 Returns
 -------

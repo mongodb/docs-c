@@ -17,7 +17,7 @@ This function sets the maximum number of pooled connections available from a :re
 Parameters
 ----------
 
-* ``pool``: A :ref:`mongoc_client_pool_t`.
-* ``max_pool_size``: The maximum number of connections which shall be available from the pool.
+- ``pool``: A :ref:`mongoc_client_pool_t`.
+- ``max_pool_size``: The maximum number of connections which shall be available from the pool.
 
 .. include:: includes/mongoc_client_pool_thread_safe.txt
