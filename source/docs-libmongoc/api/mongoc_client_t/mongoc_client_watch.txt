@@ -1,5 +1,6 @@
-.. _mongoc_client_watch
+.. _mongoc_client_watch:
 
+=====================
 mongoc_client_watch()
 =====================
 
@@ -8,10 +9,10 @@ Synopsis
 
 .. code-block:: c
 
-  mongoc_change_stream_t*
-  mongoc_client_watch (mongoc_client_t *client,
-                       const bson_t *pipeline,
-                       const bson_t *opts) BSON_GNUC_WARN_UNUSED_RESULT;
+   mongoc_change_stream_t*
+   mongoc_client_watch (mongoc_client_t *client,
+                        const bson_t *pipeline,
+                        const bson_t *opts) BSON_GNUC_WARN_UNUSED_RESULT;
 
 A helper function to create a change stream. It is preferred to call this
 function over using a raw aggregation to create a change stream.
@@ -46,7 +47,7 @@ calls to :ref:`mongoc_change_stream_next` will return ``false``.
 
 .. seealso::
 
-  | :doc:`mongoc_database_watch`
+  | :ref:`mongoc_database_watch`
 
-  | :doc:`mongoc_collection_watch`
+  | :ref:`mongoc_collection_watch`
 

@@ -1,5 +1,6 @@
-.. _mongoc_client_set_ssl_opts
+.. _mongoc_client_set_ssl_opts:
 
+============================
 mongoc_client_set_ssl_opts()
 ============================
 
@@ -8,11 +9,11 @@ Synopsis
 
 .. code-block:: c
 
-  #ifdef MONGOC_ENABLE_SSL
-  void
-  mongoc_client_set_ssl_opts (mongoc_client_t *client,
-                              const mongoc_ssl_opt_t *opts);
-  #endif
+   #ifdef MONGOC_ENABLE_SSL
+   void
+   mongoc_client_set_ssl_opts (mongoc_client_t *client,
+                               const mongoc_ssl_opt_t *opts);
+   #endif
 
 Sets the TLS (SSL) options to use when connecting to TLS enabled MongoDB servers.
 
