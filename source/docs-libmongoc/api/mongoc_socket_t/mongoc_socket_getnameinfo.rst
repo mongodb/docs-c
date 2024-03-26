@@ -24,5 +24,5 @@ This is a helper around getting the local name of a socket. It is a wrapper arou
 Returns
 -------
 
-A newly allocated string that should be freed with :ref:`bson:bson_free()`.
+A newly allocated string that should be freed with :ref:`bson_free()`.
 

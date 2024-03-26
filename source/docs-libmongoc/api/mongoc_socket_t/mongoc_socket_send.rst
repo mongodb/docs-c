@@ -20,7 +20,7 @@ Parameters
 * ``sock``: A :ref:`mongoc_socket_t`.
 * ``buf``: A buffer to send.
 * ``buflen``: A size_t with the number of bytes in buf.
-* ``expire_at``: A int64_t with an absolute timeout for the operation or 0. The timeout is in monotonic time using microseconds. You can retrieve the current monotonic time with :ref:`bson:bson_get_monotonic_time()`.
+* ``expire_at``: A int64_t with an absolute timeout for the operation or 0. The timeout is in monotonic time using microseconds. You can retrieve the current monotonic time with :ref:`bson_get_monotonic_time()`.
 
 Description
 -----------

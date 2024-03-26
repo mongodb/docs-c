@@ -26,5 +26,5 @@ The C Driver always uses an ObjectId for ``_id``, but files created by other dri
 Returns
 -------
 
-Returns a :symbol:`const bson_value_t * <bson:bson_value_t>` that should not be modified or freed.
+Returns a :symbol:`const bson_value_t * <bson_value_t>` that should not be modified or freed.
 

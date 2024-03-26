@@ -42,4 +42,4 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed with :ref:`bson:bson_strfreev()`. Upon failure, ``NULL`` is returned and ``error`` is set.
+A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed with :ref:`bson_strfreev()`. Upon failure, ``NULL`` is returned and ``error`` is set.

@@ -215,7 +215,7 @@ Notice that BCON can create arrays, subdocuments and arbitrary fields.
 Creating BSON from JSON
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-For *single* documents, BSON can be created from JSON strings via :doc:`bson_new_from_json <bson:bson_new_from_json>`.
+For *single* documents, BSON can be created from JSON strings via :doc:`bson_new_from_json <bson_new_from_json>`.
 
 .. code-block:: c
 
@@ -244,7 +244,7 @@ For *single* documents, BSON can be created from JSON strings via :doc:`bson_new
      return 0;
   }
 
-To initialize BSON from a sequence of JSON documents, use :doc:`bson_json_reader_t <bson:bson_json_reader_t>`.
+To initialize BSON from a sequence of JSON documents, use :doc:`bson_json_reader_t <bson_json_reader_t>`.
 
 .. _tutorial_crud_operations:
 

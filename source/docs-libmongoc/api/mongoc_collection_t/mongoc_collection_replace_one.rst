@@ -34,7 +34,7 @@ Description
 
 This function shall replace documents in ``collection`` that match ``selector`` with ``replacement``.
 
-If provided, ``reply`` will be initialized and populated with the fields ``matchedCount``, ``modifiedCount``, ``upsertedCount``, and optionally ``upsertedId`` if applicable. If there is a server error then ``reply`` contains either a ``writeErrors`` array with one subdocument or a ``writeConcernErrors`` array. The reply must be freed with :ref:`bson:bson_destroy`.
+If provided, ``reply`` will be initialized and populated with the fields ``matchedCount``, ``modifiedCount``, ``upsertedCount``, and optionally ``upsertedId`` if applicable. If there is a server error then ``reply`` contains either a ``writeErrors`` array with one subdocument or a ``writeConcernErrors`` array. The reply must be freed with :ref:`bson_destroy`.
 
 Errors
 ------

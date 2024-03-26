@@ -22,7 +22,7 @@ Parameters
 * ``buf``: A buffer to read into.
 * ``buflen``: A size_t with the number of bytes to receive.
 * ``flags``: flags for ``recv()``.
-* ``expire_at``: A int64_t with the time to expire in monotonic time using :ref:`bson:bson_get_monotonic_time()`, which is in microseconds.
+* ``expire_at``: A int64_t with the time to expire in monotonic time using :ref:`bson_get_monotonic_time()`, which is in microseconds.
 
 Description
 -----------

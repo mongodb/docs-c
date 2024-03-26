@@ -31,7 +31,7 @@ Superseded by :ref:`mongoc_collection_insert_one()` and :ref:`mongoc_collection_
 
 This function shall insert ``document`` into ``collection``.
 
-If no ``_id`` element is found in ``document``, then a :ref:`bson:bson_oid_t` will be generated locally and added to the document. If you must know the inserted document's ``_id``, generate it in your code and include it in the ``document``. The ``_id`` you generate can be a :ref:`bson:bson_oid_t` or any other non-array BSON type.
+If no ``_id`` element is found in ``document``, then a :ref:`bson_oid_t` will be generated locally and added to the document. If you must know the inserted document's ``_id``, generate it in your code and include it in the ``document``. The ``_id`` you generate can be a :ref:`bson_oid_t` or any other non-array BSON type.
 
 Errors
 ------

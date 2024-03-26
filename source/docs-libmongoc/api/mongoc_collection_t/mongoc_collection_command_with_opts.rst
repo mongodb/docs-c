@@ -23,7 +23,7 @@ Execute a command on the server, interpreting ``opts`` according to the MongoDB 
 
 .. include:: includes/opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 Parameters
 ----------

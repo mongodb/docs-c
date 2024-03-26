@@ -36,9 +36,9 @@ Insert ``documents`` into ``collection``.
 
 To insert a single document, see :ref:`mongoc_collection_insert_one`.
 
-For any document that does not have an "_id" field, a :ref:`bson:bson_oid_t` will be generated locally and added to the document. If you must know the inserted document's ``_id``, generate it in your code and include it in the ``document``. The ``_id`` you generate can be a :ref:`bson:bson_oid_t` or any other non-array BSON type.
+For any document that does not have an "_id" field, a :ref:`bson_oid_t` will be generated locally and added to the document. If you must know the inserted document's ``_id``, generate it in your code and include it in the ``document``. The ``_id`` you generate can be a :ref:`bson_oid_t` or any other non-array BSON type.
 
-If you pass a non-NULL ``reply``, it is filled out with an "insertedCount" field. If there is a server error then ``reply`` may contain a "writeErrors" array and/or a "writeConcernErrors" array (see :ref:`Bulk Write Operations <mongoc_bulk>` for examples). The reply must be freed with :ref:`bson:bson_destroy`.
+If you pass a non-NULL ``reply``, it is filled out with an "insertedCount" field. If there is a server error then ``reply`` may contain a "writeErrors" array and/or a "writeConcernErrors" array (see :ref:`Bulk Write Operations <mongoc_bulk>` for examples). The reply must be freed with :ref:`bson_destroy`.
 
 Errors
 ------

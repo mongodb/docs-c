@@ -30,7 +30,7 @@ Description
 
 Update and return an object.
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 If an unacknowledged write concern is set (through :ref:`mongoc_find_and_modify_opts_append`), the output ``reply`` is always an empty document.
 

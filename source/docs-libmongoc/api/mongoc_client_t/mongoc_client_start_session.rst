@@ -22,7 +22,7 @@ Parameters
 
 - ``client``: A :ref:`mongoc_client_t`.
 - ``opts``: An optional :ref:`mongoc_session_opt_t`.
-- ``error``: A :ref:`bson:bson_error_t`.
+- ``error``: A :ref:`bson_error_t`.
 
 Returns
 -------

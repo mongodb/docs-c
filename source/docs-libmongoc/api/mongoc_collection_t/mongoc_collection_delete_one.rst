@@ -34,7 +34,7 @@ This function removes at most one document in the given ``collection`` that matc
 
 To delete all matching documents, use :ref:`mongoc_collection_delete_many`.
 
-If you pass a non-NULL ``reply``, it is filled out with the field "deletedCount". If there is a server error then ``reply`` contains either a "writeErrors" array with one subdocument or a "writeConcernErrors" array. The reply must be freed with :ref:`bson:bson_destroy`.
+If you pass a non-NULL ``reply``, it is filled out with the field "deletedCount". If there is a server error then ``reply`` contains either a "writeErrors" array with one subdocument or a "writeConcernErrors" array. The reply must be freed with :ref:`bson_destroy`.
 
 Errors
 ------

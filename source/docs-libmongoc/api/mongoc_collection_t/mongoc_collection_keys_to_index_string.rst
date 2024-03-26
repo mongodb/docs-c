@@ -27,5 +27,5 @@ It is a programming error to call this function on a non-standard index, such on
 Returns
 -------
 
-A string that should be freed with :ref:`bson:bson_free()`.
+A string that should be freed with :ref:`bson_free()`.
 

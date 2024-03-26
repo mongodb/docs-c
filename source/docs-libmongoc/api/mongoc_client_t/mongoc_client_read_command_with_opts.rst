@@ -23,7 +23,7 @@ Execute a command on the server, applying logic that is specific to commands tha
 
 .. include:: includes/read-cmd-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 .. |generic-cmd| replace:: :ref:`mongoc_client_command_with_opts`
 .. include:: includes/retryable-read.txt
@@ -37,7 +37,7 @@ Parameters
 - ``command``: A :ref:`bson_t` containing the command specification.
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
 - ``opts``: A :ref:`bson_t` containing additional options.
-- ``reply``: A |bson_t-opt-storage-ptr| to contain the results.
+- ``reply``: A maybe-NULL pointer to overwritable storage for a ``bson_t`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. include:: includes/read-opts.txt

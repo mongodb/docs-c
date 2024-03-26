@@ -17,7 +17,7 @@ Parameters
 ----------
 
 * ``file``: A :symbol:` mongoc_gridfs_file_t <mongoc_gridfs_file_t>`.
-* ``id``: A :ref:`bson:bson_value_t`.
+* ``id``: A :ref:`bson_value_t`.
 * ``error``: A :ref:`bson_error_t`.
 
 Description

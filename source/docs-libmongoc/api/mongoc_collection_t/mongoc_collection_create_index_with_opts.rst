@@ -57,5 +57,5 @@ Returns
 
 Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
 
-``reply`` is always initialized and must be destroyed with :ref:`bson:bson_destroy()`. If the server is running an obsolete version of MongoDB then ``reply`` may be empty, though it will still be initialized.
+``reply`` is always initialized and must be destroyed with :ref:`bson_destroy()`. If the server is running an obsolete version of MongoDB then ``reply`` may be empty, though it will still be initialized.
 

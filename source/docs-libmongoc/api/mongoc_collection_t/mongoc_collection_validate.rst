@@ -46,5 +46,5 @@ Returns
 
 Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
 
-``reply`` is always initialized if it's not ``NULL`` and must be destroyed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized if it's not ``NULL`` and must be destroyed with :ref:`bson_destroy()`.
 

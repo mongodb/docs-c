@@ -22,7 +22,7 @@ Execute a command on the server, applying logic that is specific to commands tha
 
 .. include:: includes/read-cmd-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 .. include:: includes/retryable-read.txt
 .. |generic-cmd| replace:: :ref:`mongoc_collection_command_with_opts`

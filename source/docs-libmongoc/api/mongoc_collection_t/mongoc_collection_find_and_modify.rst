@@ -43,7 +43,7 @@ This is a thin wrapper around the ``findAndModify`` command. Either ``update`` o
 
 As of MongoDB 3.2, the :ref:`mongoc_write_concern_t` specified on the :ref:`mongoc_collection_t` will be used, if any.
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 On success, the output ``reply`` contains the full server reply to the ``findAndModify`` command. See the `MongoDB Manual page for findAndModify <https://www.mongodb.com/docs/manual/reference/command/findAndModify/#output>`_ for the expected server reply.
 
