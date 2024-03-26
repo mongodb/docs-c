@@ -34,7 +34,7 @@ Parameters
 
 - ``database``: A :ref:`mongoc_database_t`.
 - ``filter``: A matcher used by the server to filter the returned collections. May be ``NULL``.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Errors
 ------

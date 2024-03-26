@@ -18,7 +18,7 @@ Parameters
 
 * ``gridfs``: A :ref:`mongoc_gridfs_t`.
 * ``filename``: A UTF-8 encoded string containing the filename.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+* ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

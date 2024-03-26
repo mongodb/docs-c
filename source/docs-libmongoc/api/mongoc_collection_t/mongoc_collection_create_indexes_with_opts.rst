@@ -31,7 +31,7 @@ Parameters
 - ``n_models``: The number of ``models``.
 - ``opts``: Optional options.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``collection``
 

@@ -26,25 +26,14 @@ This function is superseded by :ref:`mongoc_collection_command_with_opts()`, :re
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``flags``: A :ref:`mongoc_query_flags_t`.
 - ``skip``: A uint32_t with the number of documents to skip or zero.
 - ``limit``: A uint32_t with the max number of documents to return or zero.
 - ``batch_size``: A uint32_t with the number of documents in each batch or zero. Default is 100.
-- ``command``: A :ref:`bson:bson_t` containing the command to execute.
-- ``fields``: A :ref:`bson:bson_t` containing the fields to return or ``NULL``. Not all commands support this option.
+- ``command``: A :ref:`bson_t` containing the command to execute.
+- ``fields``: A :ref:`bson_t` containing the fields to return or ``NULL``. Not all commands support this option.
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``flags``: A :ref:`mongoc_query_flags_t`.
-* ``skip``: A uint32_t with the number of documents to skip or zero.
-* ``limit``: A uint32_t with the max number of documents to return or zero.
-* ``batch_size``: A uint32_t with the number of documents in each batch or zero. Default is 100.
-* ``command``: A :ref:`bson_t` containing the command to execute.
-* ``fields``: A :ref:`bson_t` containing the fields to return or ``NULL``. Not all commands support this option.
-* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
->>>>>>> upstream/master
 
 Returns
 -------

@@ -19,13 +19,8 @@ Fetches a cursor containing documents, each corresponding to a database on this 
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``client``: A :ref:`mongoc_client_t`.
-- ``opts``: A :ref:`bson:bson_t` containing additional options.
-=======
-* ``client``: A :ref:`mongoc_client_t`.
-* ``opts``: A :ref:`bson_t` containing additional options.
->>>>>>> upstream/master
+- ``opts``: A :ref:`bson_t` containing additional options.
 
 .. |opts-source| replace:: ``client``
 

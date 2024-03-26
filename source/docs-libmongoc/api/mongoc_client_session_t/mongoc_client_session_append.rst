@@ -16,15 +16,9 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``client_session``: A pointer to a :ref:`mongoc_client_session_t`.
-- ``opts``: A pointer to a :ref:`bson:bson_t`.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``client_session``: A pointer to a :ref:`mongoc_client_session_t`.
-* ``opts``: A pointer to a :ref:`bson_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``opts``: A pointer to a :ref:`bson_t`.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

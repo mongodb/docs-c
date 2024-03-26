@@ -17,8 +17,8 @@ Parameters
 ----------
 
 - ``cursor``: A :ref:`mongoc_cursor_t`.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-- ``reply``: A location for a :symbol:`const bson_t * <bson:bson_t>`.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
+- ``reply``: A location for a :symbol:`const bson_t * <bson_t>`.
 
 Description
 -----------

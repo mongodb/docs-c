@@ -21,7 +21,7 @@ Parameters
 
 .. seealso::
 
-  | :ref:`mongoc_auto_encryption_opts_new()`
+  | :ref:`mongoc_auto_encryption_opts_new`
 
-  | :doc:`in-use-encryption`
+  | :ref:`in-use-encryption`
 

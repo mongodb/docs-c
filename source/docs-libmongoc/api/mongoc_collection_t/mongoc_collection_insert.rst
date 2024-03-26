@@ -18,19 +18,11 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``flags``: A :ref:`mongoc_insert_flags_t`.
-- ``document``: A :ref:`bson:bson_t`.
+- ``document``: A :ref:`bson_t`.
 - ``write_concern``: A :ref:`mongoc_write_concern_t`.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``flags``: A :ref:`mongoc_insert_flags_t`.
-* ``document``: A :ref:`bson_t`.
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

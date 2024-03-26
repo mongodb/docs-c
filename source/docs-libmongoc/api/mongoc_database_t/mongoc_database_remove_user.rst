@@ -20,7 +20,7 @@ Parameters
 
 - ``database``: A :ref:`mongoc_database_t`.
 - ``username``: A string containing the username of the user to remove.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Errors
 ------

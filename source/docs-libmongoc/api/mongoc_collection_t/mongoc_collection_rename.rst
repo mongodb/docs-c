@@ -22,10 +22,10 @@ Parameters
 - ``new_db``: The name of the new database.
 - ``new_name``: The new name for the collection.
 - ``drop_target_before_rename``: If an existing collection matches the new name, drop it before the rename.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------
 
-For more information, see :ref:`mongoc_collection_rename_with_opts()`. This function is a thin wrapper, passing ``NULL`` in as :symbol:`opts <bson:bson_t>` parameter.
+For more information, see :ref:`mongoc_collection_rename_with_opts()`. This function is a thin wrapper, passing ``NULL`` in as :symbol:`opts <bson_t>` parameter.
 

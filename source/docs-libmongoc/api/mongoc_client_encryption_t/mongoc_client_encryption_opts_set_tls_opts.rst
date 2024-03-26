@@ -50,5 +50,5 @@ See :doc:`configuring_tls` for a description of the behavior of these options.
 
 .. seealso::
 
-  | :doc:`in-use-encryption`
+  | :ref:`in-use-encryption`
 

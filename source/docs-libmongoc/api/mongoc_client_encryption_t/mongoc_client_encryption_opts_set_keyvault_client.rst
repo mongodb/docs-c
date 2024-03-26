@@ -25,5 +25,5 @@ Parameters
 
   | :ref:`mongoc_client_encryption_new()`
 
-  | :doc:`in-use-encryption`
+  | :ref:`in-use-encryption`
 

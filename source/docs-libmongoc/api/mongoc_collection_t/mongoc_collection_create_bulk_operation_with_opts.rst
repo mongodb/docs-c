@@ -45,7 +45,7 @@ A newly allocated :ref:`mongoc_bulk_operation_t` that should be freed with :ref:
 
 .. seealso::
 
-  | :symbol:`Bulk Write Operations <bulk>`
+  | :ref:`Bulk Write Operations <mongoc_bulk>`
 
   | :ref:`mongoc_bulk_operation_t`
 

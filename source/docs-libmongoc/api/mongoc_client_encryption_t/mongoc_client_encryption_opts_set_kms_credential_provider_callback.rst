@@ -31,9 +31,10 @@ Parameters
 
 .. seealso:: :doc:`mongoc_auto_encryption_opts_set_kms_credential_provider_callback`
 
-.. rubric:: Related:
+.. _related_mongoc_kms:
 
-.. c:type:: mongoc_kms_credentials_provider_callback_fn
+Related
+-------
 
   .. -
     The :noindexentry: prevents a one-off index entry for this item.

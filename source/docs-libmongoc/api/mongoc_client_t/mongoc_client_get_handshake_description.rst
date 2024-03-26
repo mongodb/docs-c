@@ -37,7 +37,7 @@ Parameters
 - ``client``: A :ref:`mongoc_client_t`.
 - ``server_id``: The ID of the server. This can be obtained from the server description of :ref:`mongoc_client_select_server`.
 - ``opts``: Unused. Pass ``NULL``.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Returns
 -------

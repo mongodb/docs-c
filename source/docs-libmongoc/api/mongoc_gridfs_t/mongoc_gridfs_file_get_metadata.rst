@@ -24,5 +24,5 @@ Fetches a bson document containing the metadata for the gridfs file.
 Returns
 -------
 
-Returns a :symbol:`const bson_t * <bson:bson_t>` that should not be modified or freed.
+Returns a :symbol:`const bson_t * <bson_t>` that should not be modified or freed.
 

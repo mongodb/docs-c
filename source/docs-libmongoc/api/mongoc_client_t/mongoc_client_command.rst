@@ -34,27 +34,15 @@ If :ref:`mongoc_cursor_next()` returns ``false``, then retrieve error details wi
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``client``: A :ref:`mongoc_client_t`.
 - ``db_name``: The name of the database to run the command on.
 - ``flags``: Unused.
 - ``skip``: Unused.
 - ``limit``: Unused.
 - ``batch_size``: Unused.
-- ``query``: A :ref:`bson:bson_t` containing the command specification.
+- ``query``: A :ref:`bson_t` containing the command specification.
 - ``fields``: Unused.
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
-=======
-* ``client``: A :ref:`mongoc_client_t`.
-* ``db_name``: The name of the database to run the command on.
-* ``flags``: Unused.
-* ``skip``: Unused.
-* ``limit``: Unused.
-* ``batch_size``: Unused.
-* ``query``: A :ref:`bson_t` containing the command specification.
-* ``fields``: Unused.
-* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
->>>>>>> upstream/master
 
 Returns
 -------

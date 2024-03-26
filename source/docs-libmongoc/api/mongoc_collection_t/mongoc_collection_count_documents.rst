@@ -19,21 +19,12 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
-- ``filter``: A :ref:`bson:bson_t` containing the filter.
-- ``opts``: A :ref:`bson:bson_t`, ``NULL`` to ignore.
+- ``filter``: A :ref:`bson_t` containing the filter.
+- ``opts``: A :ref:`bson_t`, ``NULL`` to ignore.
 - ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``filter``: A :ref:`bson_t` containing the filter.
-* ``opts``: A :ref:`bson_t`, ``NULL`` to ignore.
-* ``read_prefs``: A :ref:`mongoc_read_prefs_t` or ``NULL``.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``collection``
 

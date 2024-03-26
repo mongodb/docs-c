@@ -21,7 +21,7 @@ Parameters
 
 - ``session``: A :ref:`mongoc_client_session_t`.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Return
 ------

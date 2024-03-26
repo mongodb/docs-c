@@ -21,15 +21,9 @@ Fetches a ``NULL`` terminated array of ``NULL-byte`` terminated ``char*`` string
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``database``: A :ref:`mongoc_database_t`.
-- ``opts``: A :ref:`bson:bson_t` containing additional options.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``database``: A :ref:`mongoc_database_t`.
-* ``opts``: A :ref:`bson_t` containing additional options.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``opts``: A :ref:`bson_t` containing additional options.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``database``
 

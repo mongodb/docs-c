@@ -20,7 +20,7 @@ Parameters
 
 - ``database``: A :ref:`mongoc_database_t`.
 - ``name``: A string containing the name of the collection.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Errors
 ------

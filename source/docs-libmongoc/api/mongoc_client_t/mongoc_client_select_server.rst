@@ -24,7 +24,7 @@ Parameters
 - ``client``: A :ref:`mongoc_client_t`.
 - ``for_writes``: Whether to choose a server suitable for writes or reads.
 - ``prefs``: An optional :ref:`mongoc_read_prefs_t`. If ``for_writes`` is true, ``prefs`` must be NULL. Otherwise, use ``prefs`` to customize server selection, or pass NULL to use read preference PRIMARY.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Returns
 -------

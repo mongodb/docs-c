@@ -22,7 +22,7 @@ Parameters
 - ``client``: A :ref:`mongoc_client_t`.
 - ``db``: The database name.
 - ``prefix``: Optional prefix for gridfs collection names or ``NULL``.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Errors
 ------

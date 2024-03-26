@@ -30,7 +30,7 @@ Parameters
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
 - ``server_id``: An opaque id specifying which server to use.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or a ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or a ``NULL``.
 
 Returns
 -------

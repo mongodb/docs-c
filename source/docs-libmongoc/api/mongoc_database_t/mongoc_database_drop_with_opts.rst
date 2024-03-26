@@ -17,7 +17,7 @@ Parameters
 ----------
 
 - ``database``: A :ref:`mongoc_database_t`.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``database``
 

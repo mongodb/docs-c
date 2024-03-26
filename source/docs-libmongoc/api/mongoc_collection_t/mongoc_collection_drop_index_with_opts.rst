@@ -19,7 +19,7 @@ Parameters
 
 - ``collection``: A :ref:`mongoc_collection_t`.
 - ``index_name``: A string containing the name of the index.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``collection``
 

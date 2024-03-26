@@ -30,5 +30,5 @@ Parameters
 
   | :ref:`mongoc_client_enable_auto_encryption`
 
-  | :doc:`in-use-encryption`
+  | :ref:`in-use-encryption`
 

@@ -19,7 +19,7 @@ Parameters
 ----------
 
 - ``session``: A :ref:`mongoc_client_session_t`.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Return
 ------

@@ -23,29 +23,16 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
-- ``query``: A :ref:`bson:bson_t` containing the query to locate target document(s).
-- ``sort``: A :ref:`bson:bson_t` containing the sort order for ``query``.
-- ``update``: A :ref:`bson:bson_t` containing an update spec.
-- ``fields``: An optional :ref:`bson:bson_t` containing the fields to return or ``NULL``.
+- ``query``: A :ref:`bson_t` containing the query to locate target document(s).
+- ``sort``: A :ref:`bson_t` containing the sort order for ``query``.
+- ``update``: A :ref:`bson_t` containing an update spec.
+- ``fields``: An optional :ref:`bson_t` containing the fields to return or ``NULL``.
 - ``_remove``: If the matching documents should be removed.
 - ``upsert``: If an upsert should be performed.
 - ``_new``: If the new version of the document should be returned.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``query``: A :ref:`bson_t` containing the query to locate target document(s).
-* ``sort``: A :ref:`bson_t` containing the sort order for ``query``.
-* ``update``: A :ref:`bson_t` containing an update spec.
-* ``fields``: An optional :ref:`bson_t` containing the fields to return or ``NULL``.
-* ``_remove``: If the matching documents should be removed.
-* ``upsert``: If an upsert should be performed.
-* ``_new``: If the new version of the document should be returned.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

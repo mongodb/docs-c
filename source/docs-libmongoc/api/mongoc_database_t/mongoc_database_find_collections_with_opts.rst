@@ -22,13 +22,8 @@ To get collection names only, use :ref:`mongoc_database_get_collection_names_wit
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``database``: A :ref:`mongoc_database_t`.
-- ``opts``: A :ref:`bson:bson_t` containing additional options.
-=======
-* ``database``: A :ref:`mongoc_database_t`.
-* ``opts``: A :ref:`bson_t` containing additional options.
->>>>>>> upstream/master
+- ``opts``: A :ref:`bson_t` containing additional options.
 
 .. ``opts-source`` replace:: ``database``
 

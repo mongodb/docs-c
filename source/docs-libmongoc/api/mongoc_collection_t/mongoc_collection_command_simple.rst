@@ -18,19 +18,11 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
-- ``command``: A :ref:`bson:bson_t` containing the command to execute.
+- ``command``: A :ref:`bson_t` containing the command to execute.
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``command``: A :ref:`bson_t` containing the command to execute.
-* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`. Otherwise, the command uses mode ``MONGOC_READ_PRIMARY``.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

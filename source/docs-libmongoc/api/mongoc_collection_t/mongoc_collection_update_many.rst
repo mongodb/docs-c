@@ -19,19 +19,11 @@ Synopsis
 Parameters
 ----------
 
-<<<<<<< HEAD
 - ``collection``: A :ref:`mongoc_collection_t`.
-- ``selector``: A :ref:`bson:bson_t` containing the query to match documents for updating.
-- ``update``: A :ref:`bson:bson_t` containing the update to perform. If updating with a pipeline, a :ref:`bson:bson_t` array.
+- ``selector``: A :ref:`bson_t` containing the query to match documents for updating.
+- ``update``: A :ref:`bson_t` containing the update to perform. If updating with a pipeline, a :ref:`bson_t` array.
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-- ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
-=======
-* ``collection``: A :ref:`mongoc_collection_t`.
-* ``selector``: A :ref:`bson_t` containing the query to match documents for updating.
-* ``update``: A :ref:`bson_t` containing the update to perform. If updating with a pipeline, a :ref:`bson_t` array.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
->>>>>>> upstream/master
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. ``opts-source`` replace:: ``collection``
 
