@@ -9,15 +9,16 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_find_and_modify_opts_set_fields (mongoc_find_and_modify_opts_t *opts,
-                                          const bson_t *fields);
+   bool
+   mongoc_find_and_modify_opts_set_fields (mongoc_find_and_modify_opts_t *opts,
+                                           const bson_t *fields);
 
 Parameters
 ----------
 
 - ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
-- ``fields``: A subset of fields to return. Choose which fields to include by appending ``{fieldname: 1}`` for each fieldname, or excluding it with ``{fieldname: 0}``.
+- ``fields``: A subset of fields to return. Choose which fields to include by appending
+  ``{fieldname: 1}`` for each fieldname, or excluding it with ``{fieldname: 0}``.
 
 Description
 -----------
@@ -34,7 +35,7 @@ Returns ``true`` if it successfully added the option to the builder, otherwise `
 Setting fields
 --------------
 
-.. literalinclude:: ../examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_FIELDS_BEGIN */
    :end-before: /* EXAMPLE_FAM_FIELDS_END */
