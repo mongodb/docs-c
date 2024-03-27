@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_copy
+.. _mongoc_write_concern_copy:
 
 mongoc_write_concern_copy()
 ===========================

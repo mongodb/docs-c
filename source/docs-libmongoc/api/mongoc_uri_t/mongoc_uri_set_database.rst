@@ -1,4 +1,4 @@
-.. _mongoc_uri_set_database
+.. _mongoc_uri_set_database:
 
 mongoc_uri_set_database()
 =========================

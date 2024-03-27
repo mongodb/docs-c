@@ -1,4 +1,4 @@
-.. _mongoc_uri_set_username
+.. _mongoc_uri_set_username:
 
 mongoc_uri_set_username()
 =========================

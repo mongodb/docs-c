@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_new
+.. _mongoc_transaction_opts_new:
 
 mongoc_transaction_opts_new()
 =============================

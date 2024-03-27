@@ -1,4 +1,4 @@
-.. _mongoc_topology_description_new_copy
+.. _mongoc_topology_description_new_copy:
 
 mongoc_topology_description_new_copy()
 ======================================

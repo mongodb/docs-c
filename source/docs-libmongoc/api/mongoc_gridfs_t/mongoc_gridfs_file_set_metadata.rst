@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_set_metadata
+.. _mongoc_gridfs_file_set_metadata:
 
 mongoc_gridfs_file_set_metadata()
 =================================

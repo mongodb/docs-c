@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_save
+.. _mongoc_gridfs_file_save:
 
 mongoc_gridfs_file_save()
 =========================

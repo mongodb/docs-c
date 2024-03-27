@@ -1,4 +1,4 @@
-.. _mongoc_stream_destroy
+.. _mongoc_stream_destroy:
 
 mongoc_stream_destroy()
 =======================

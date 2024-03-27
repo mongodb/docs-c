@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_readv
+.. _mongoc_gridfs_file_readv:
 
 mongoc_gridfs_file_readv()
 ==========================

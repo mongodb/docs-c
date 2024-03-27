@@ -1,4 +1,4 @@
-.. _mongoc_optional_init
+.. _mongoc_optional_init:
 
 mongoc_optional_init()
 ======================

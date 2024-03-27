@@ -1,4 +1,4 @@
-.. _mongoc_stream_file_get_fd
+.. _mongoc_stream_file_get_fd:
 
 mongoc_stream_file_get_fd()
 ===========================

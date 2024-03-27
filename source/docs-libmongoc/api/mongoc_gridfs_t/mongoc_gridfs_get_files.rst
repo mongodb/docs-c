@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_get_files
+.. _mongoc_gridfs_get_files:
 
 mongoc_gridfs_get_files()
 =========================

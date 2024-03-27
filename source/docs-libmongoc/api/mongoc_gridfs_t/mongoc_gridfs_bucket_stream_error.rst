@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_stream_error
+.. _mongoc_gridfs_bucket_stream_error:
 
 mongoc_gridfs_bucket_stream_error()
 ===================================

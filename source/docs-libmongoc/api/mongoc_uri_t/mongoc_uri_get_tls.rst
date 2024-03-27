@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_tls
+.. _mongoc_uri_get_tls:
 
 mongoc_uri_get_tls()
 ====================

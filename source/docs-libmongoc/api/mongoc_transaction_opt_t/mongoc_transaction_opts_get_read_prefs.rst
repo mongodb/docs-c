@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_get_read_prefs
+.. _mongoc_transaction_opts_get_read_prefs:
 
 mongoc_transaction_opts_get_read_prefs()
 ========================================

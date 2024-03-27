@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_set_id
+.. _mongoc_gridfs_file_set_id:
 
 mongoc_gridfs_file_set_id()
 ===========================

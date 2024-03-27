@@ -1,4 +1,4 @@
-.. _mongoc_stream_timed_out
+.. _mongoc_stream_timed_out:
 
 mongoc_stream_timed_out()
 =========================

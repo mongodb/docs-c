@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_find
+.. _mongoc_gridfs_bucket_find:
 
 mongoc_gridfs_bucket_find()
 ===========================

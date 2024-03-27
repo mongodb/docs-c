@@ -1,4 +1,4 @@
-.. _mongoc_stream_close
+.. _mongoc_stream_close:
 
 mongoc_stream_close()
 =====================

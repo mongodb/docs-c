@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_srv_service_name
+.. _mongoc_uri_get_srv_service_name:
 
 mongoc_uri_get_srv_service_name()
 =================================

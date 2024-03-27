@@ -1,4 +1,4 @@
-.. _mongoc_server_api_new
+.. _mongoc_server_api_new:
 
 mongoc_server_api_new()
 =======================

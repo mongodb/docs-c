@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_option_as_bool
+.. _mongoc_uri_get_option_as_bool:
 
 mongoc_uri_get_option_as_bool()
 ===============================

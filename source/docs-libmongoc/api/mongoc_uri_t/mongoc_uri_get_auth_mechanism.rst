@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_auth_mechanism
+.. _mongoc_uri_get_auth_mechanism:
 
 mongoc_uri_get_auth_mechanism()
 ===============================

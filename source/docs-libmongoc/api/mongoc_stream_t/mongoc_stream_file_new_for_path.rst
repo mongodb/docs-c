@@ -1,4 +1,4 @@
-.. _mongoc_stream_file_new_for_path
+.. _mongoc_stream_file_new_for_path:
 
 mongoc_stream_file_new_for_path()
 =================================

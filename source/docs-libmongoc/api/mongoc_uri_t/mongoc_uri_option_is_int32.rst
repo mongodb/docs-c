@@ -1,4 +1,4 @@
-.. _mongoc_uri_option_is_int32
+.. _mongoc_uri_option_is_int32:
 
 mongoc_uri_option_is_int32()
 ============================

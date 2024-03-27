@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_abort_upload
+.. _mongoc_gridfs_bucket_abort_upload:
 
 mongoc_gridfs_bucket_abort_upload()
 ===================================

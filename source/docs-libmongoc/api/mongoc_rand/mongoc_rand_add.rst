@@ -1,4 +1,4 @@
-.. _mongoc_rand_add
+.. _mongoc_rand_add:
 
 mongoc_rand_add()
 =================

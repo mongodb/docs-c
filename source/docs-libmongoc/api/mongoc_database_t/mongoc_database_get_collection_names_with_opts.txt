@@ -1,5 +1,6 @@
-.. _mongoc_database_get_collection_names_with_opts
+.. _mongoc_database_get_collection_names_with_opts:
 
+================================================
 mongoc_database_get_collection_names_with_opts()
 ================================================
 
@@ -8,15 +9,16 @@ Synopsis
 
 .. code-block:: c
 
-  char **
-  mongoc_database_get_collection_names_with_opts (mongoc_database_t *database,
-                                                  const bson_t *opts,
-                                                  bson_error_t *error)
-     BSON_GNUC_WARN_UNUSED_RESULT;
+   char **
+   mongoc_database_get_collection_names_with_opts (mongoc_database_t *database,
+                                                   const bson_t *opts,
+                                                   bson_error_t *error)
+      BSON_GNUC_WARN_UNUSED_RESULT;
 
-Fetches a ``NULL`` terminated array of ``NULL-byte`` terminated ``char*`` strings containing the names of all of the collections in ``database``.
+Fetches a ``NULL`` terminated array of ``NULL-byte`` terminated ``char*`` strings
+containing the names of all of the collections in ``database``.
 
-.. include:: includes/retryable-read.txt
+.. include:: ../../includes/retryable-read.txt
 
 Parameters
 ----------
@@ -27,9 +29,10 @@ Parameters
 
 .. ``opts-source`` replace:: ``database``
 
-.. include:: includes/generic-opts.txt
+.. include:: ../../includes/generic-opts.txt
 
-For a list of all options, see `the MongoDB Manual entry on the listCollections command <https://www.mongodb.com/docs/manual/reference/command/listCollections/>`_.
+For a list of all options, see `the MongoDB Manual entry on the listCollections command
+<https://www.mongodb.com/docs/manual/reference/command/listCollections/>`__.
 
 Errors
 ------
@@ -39,7 +42,8 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed with :ref:`bson_strfreev()`. Upon failure, ``NULL`` is returned and ``error`` is set.
+A ``NULL`` terminated array of ``NULL`` terminated ``char*`` strings that should be freed
+with :ref:`bson_strfreev`. Upon failure, ``NULL`` is returned and ``error`` is set.
 
 Examples
 --------

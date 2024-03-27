@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_tell
+.. _mongoc_gridfs_file_tell:
 
 mongoc_gridfs_file_tell()
 =========================

@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_is_default
+.. _mongoc_write_concern_is_default:
 
 mongoc_write_concern_is_default()
 =================================

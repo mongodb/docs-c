@@ -1,4 +1,4 @@
-.. _mongoc_server_api_destroy
+.. _mongoc_server_api_destroy:
 
 mongoc_server_api_destroy()
 ===========================

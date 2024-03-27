@@ -1,4 +1,4 @@
-.. _mongoc_server_description_id
+.. _mongoc_server_description_id:
 
 mongoc_server_description_id()
 ==============================

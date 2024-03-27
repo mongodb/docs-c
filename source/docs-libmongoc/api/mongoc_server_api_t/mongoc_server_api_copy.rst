@@ -1,4 +1,4 @@
-.. _mongoc_server_api_copy
+.. _mongoc_server_api_copy:
 
 mongoc_server_api_copy()
 ========================

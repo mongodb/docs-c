@@ -1,4 +1,4 @@
-.. _mongoc_get_version
+.. _mongoc_get_version:
 
 mongoc_get_version()
 ====================

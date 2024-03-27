@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_ssl
+.. _mongoc_uri_get_ssl:
 
 mongoc_uri_get_ssl()
 ====================

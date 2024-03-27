@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_set_md5
+.. _mongoc_gridfs_file_set_md5:
 
 mongoc_gridfs_file_set_md5()
 ============================

@@ -1,4 +1,4 @@
-.. _mongoc_stream_file_t
+.. _mongoc_stream_file_t:
 
 mongoc_stream_file_t
 ====================

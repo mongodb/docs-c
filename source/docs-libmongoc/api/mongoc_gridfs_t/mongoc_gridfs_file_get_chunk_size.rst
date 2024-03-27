@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_get_chunk_size
+.. _mongoc_gridfs_file_get_chunk_size:
 
 mongoc_gridfs_file_get_chunk_size()
 ===================================

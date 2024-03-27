@@ -1,4 +1,4 @@
-.. _mongoc_socket_getnameinfo
+.. _mongoc_socket_getnameinfo:
 
 mongoc_socket_getnameinfo()
 ===========================

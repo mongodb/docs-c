@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_fsync
+.. _mongoc_write_concern_set_fsync:
 
 mongoc_write_concern_set_fsync()
 ================================

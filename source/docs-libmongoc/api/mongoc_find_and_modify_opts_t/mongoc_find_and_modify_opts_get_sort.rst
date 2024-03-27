@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_get_sort
+.. _mongoc_find_and_modify_opts_get_sort:
 
 mongoc_find_and_modify_opts_get_sort()
 ======================================

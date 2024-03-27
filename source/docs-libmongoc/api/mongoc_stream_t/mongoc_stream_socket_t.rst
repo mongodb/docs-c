@@ -1,4 +1,4 @@
-.. _mongoc_stream_socket_t
+.. _mongoc_stream_socket_t:
 
 mongoc_stream_socket_t
 ======================

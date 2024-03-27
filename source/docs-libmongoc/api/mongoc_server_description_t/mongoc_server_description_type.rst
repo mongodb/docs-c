@@ -1,4 +1,4 @@
-.. _mongoc_server_description_type
+.. _mongoc_server_description_type:
 
 mongoc_server_description_type()
 ================================

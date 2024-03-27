@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_find_one_by_filename
+.. _mongoc_gridfs_find_one_by_filename:
 
 mongoc_gridfs_find_one_by_filename()
 ====================================

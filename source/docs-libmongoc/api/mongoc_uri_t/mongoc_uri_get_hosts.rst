@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_hosts
+.. _mongoc_uri_get_hosts:
 
 mongoc_uri_get_hosts()
 ======================

@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_open_upload_stream
+.. _mongoc_gridfs_bucket_open_upload_stream:
 
 mongoc_gridfs_bucket_open_upload_stream()
 =========================================

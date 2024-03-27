@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_compressors
+.. _mongoc_uri_get_compressors:
 
 mongoc_uri_get_compressors()
 ============================

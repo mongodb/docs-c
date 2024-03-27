@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_error
+.. _mongoc_gridfs_file_error:
 
 mongoc_gridfs_file_error()
 ==========================

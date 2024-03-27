@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_set_max_time_ms
+.. _mongoc_find_and_modify_opts_set_max_time_ms:
 
 mongoc_find_and_modify_opts_set_max_time_ms()
 =============================================

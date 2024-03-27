@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_get_aliases
+.. _mongoc_gridfs_file_get_aliases:
 
 mongoc_gridfs_file_get_aliases()
 ================================

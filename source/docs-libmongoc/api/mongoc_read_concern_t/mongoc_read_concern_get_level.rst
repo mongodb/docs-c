@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_get_level
+.. _mongoc_read_concern_get_level:
 
 mongoc_read_concern_get_level()
 ===============================

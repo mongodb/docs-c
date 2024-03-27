@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_destroy
+.. _mongoc_read_prefs_destroy:
 
 mongoc_read_prefs_destroy()
 ===========================

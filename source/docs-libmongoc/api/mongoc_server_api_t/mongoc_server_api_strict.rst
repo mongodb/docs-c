@@ -1,4 +1,4 @@
-.. _mongoc_server_api_strict
+.. _mongoc_server_api_strict:
 
 mongoc_server_api_strict()
 ==========================

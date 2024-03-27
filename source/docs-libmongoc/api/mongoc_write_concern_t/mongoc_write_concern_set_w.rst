@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_w
+.. _mongoc_write_concern_set_w:
 
 mongoc_write_concern_set_w()
 ============================

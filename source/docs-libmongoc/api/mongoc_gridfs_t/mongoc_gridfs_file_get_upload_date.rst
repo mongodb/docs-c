@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_get_upload_date
+.. _mongoc_gridfs_file_get_upload_date:
 
 mongoc_gridfs_file_get_upload_date()
 ====================================

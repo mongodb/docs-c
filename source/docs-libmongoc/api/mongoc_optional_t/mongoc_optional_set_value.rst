@@ -1,4 +1,4 @@
-.. _mongoc_optional_set_value
+.. _mongoc_optional_set_value:
 
 mongoc_optional_set_value()
 ===========================

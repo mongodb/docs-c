@@ -1,4 +1,4 @@
-.. _mongoc_uri_option_is_utf8
+.. _mongoc_uri_option_is_utf8:
 
 mongoc_uri_option_is_utf8()
 ===========================

@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_wtimeout_int64
+.. _mongoc_write_concern_set_wtimeout_int64:
 
 mongoc_write_concern_set_wtimeout_int64()
 =========================================

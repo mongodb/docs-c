@@ -1,4 +1,4 @@
-.. _mongoc_server_description_destroy
+.. _mongoc_server_description_destroy:
 
 mongoc_server_description_destroy()
 ===================================

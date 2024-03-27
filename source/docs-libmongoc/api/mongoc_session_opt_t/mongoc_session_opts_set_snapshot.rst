@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_set_snapshot
+.. _mongoc_session_opts_set_snapshot:
 
 mongoc_session_opts_set_snapshot()
 ==================================

@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_mechanism_properties
+.. _mongoc_uri_get_mechanism_properties:
 
 mongoc_uri_get_mechanism_properties()
 =====================================

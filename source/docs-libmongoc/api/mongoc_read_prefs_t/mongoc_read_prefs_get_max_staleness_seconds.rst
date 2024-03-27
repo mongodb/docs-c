@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_get_max_staleness_seconds
+.. _mongoc_read_prefs_get_max_staleness_seconds:
 
 mongoc_read_prefs_get_max_staleness_seconds()
 =============================================

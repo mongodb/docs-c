@@ -1,4 +1,4 @@
-.. _mongoc_socket_recv
+.. _mongoc_socket_recv:
 
 mongoc_socket_recv()
 ====================

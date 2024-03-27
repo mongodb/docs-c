@@ -1,4 +1,4 @@
-.. _mongoc_index_opt_geo_t
+.. _mongoc_index_opt_geo_t:
 
 mongoc_index_opt_geo_t
 ======================

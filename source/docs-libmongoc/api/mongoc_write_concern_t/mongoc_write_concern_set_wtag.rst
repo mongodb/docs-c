@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_wtag
+.. _mongoc_write_concern_set_wtag:
 
 mongoc_write_concern_set_wtag()
 ===============================

@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_password
+.. _mongoc_uri_get_password:
 
 mongoc_uri_get_password()
 =========================

@@ -1,4 +1,4 @@
-.. _mongoc_server_description_host
+.. _mongoc_server_description_host:
 
 mongoc_server_description_host()
 ================================

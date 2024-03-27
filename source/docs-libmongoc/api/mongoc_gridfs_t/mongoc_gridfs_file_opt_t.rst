@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_opt_t
+.. _mongoc_gridfs_file_opt_t:
 
 mongoc_gridfs_file_opt_t
 ========================

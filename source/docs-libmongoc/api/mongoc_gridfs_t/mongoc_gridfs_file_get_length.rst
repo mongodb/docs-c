@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_get_length
+.. _mongoc_gridfs_file_get_length:
 
 mongoc_gridfs_file_get_length()
 ===============================

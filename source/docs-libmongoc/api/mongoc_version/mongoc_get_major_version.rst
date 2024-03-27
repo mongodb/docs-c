@@ -1,4 +1,4 @@
-.. _mongoc_get_major_version
+.. _mongoc_get_major_version:
 
 mongoc_get_major_version()
 ==========================

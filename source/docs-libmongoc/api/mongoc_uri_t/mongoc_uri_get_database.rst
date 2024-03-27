@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_database
+.. _mongoc_uri_get_database:
 
 mongoc_uri_get_database()
 =========================

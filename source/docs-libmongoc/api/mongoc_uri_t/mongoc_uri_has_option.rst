@@ -1,4 +1,4 @@
-.. _mongoc_uri_has_option
+.. _mongoc_uri_has_option:
 
 mongoc_uri_has_option()
 =======================

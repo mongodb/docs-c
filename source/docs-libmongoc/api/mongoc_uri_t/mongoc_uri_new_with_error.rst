@@ -1,4 +1,4 @@
-.. _mongoc_uri_new_with_error
+.. _mongoc_uri_new_with_error:
 
 mongoc_uri_new_with_error()
 ===========================

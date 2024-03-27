@@ -1,4 +1,4 @@
-.. _mongoc_index_opt_init
+.. _mongoc_index_opt_init:
 
 mongoc_index_opt_init()
 =======================

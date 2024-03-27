@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_set_causal_consistency
+.. _mongoc_session_opts_set_causal_consistency:
 
 mongoc_session_opts_set_causal_consistency()
 ============================================

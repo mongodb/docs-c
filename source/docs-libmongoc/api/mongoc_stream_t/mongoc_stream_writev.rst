@@ -1,4 +1,4 @@
-.. _mongoc_stream_writev
+.. _mongoc_stream_writev:
 
 mongoc_stream_writev()
 ======================

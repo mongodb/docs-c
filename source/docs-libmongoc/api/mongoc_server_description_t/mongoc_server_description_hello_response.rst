@@ -1,4 +1,4 @@
-.. _mongoc_server_description_hello_response
+.. _mongoc_server_description_hello_response:
 
 mongoc_server_description_hello_response()
 ==========================================

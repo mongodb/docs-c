@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_remove
+.. _mongoc_gridfs_file_remove:
 
 mongoc_gridfs_file_remove()
 ===========================

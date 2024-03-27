@@ -1,4 +1,4 @@
-.. _mongoc_socket_send
+.. _mongoc_socket_send:
 
 mongoc_socket_send()
 ====================

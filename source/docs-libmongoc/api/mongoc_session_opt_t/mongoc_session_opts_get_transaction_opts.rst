@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_get_transaction_opts
+.. _mongoc_session_opts_get_transaction_opts:
 
 mongoc_session_opts_get_transaction_opts()
 ==========================================

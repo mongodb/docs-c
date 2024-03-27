@@ -1,4 +1,4 @@
-.. _mongoc_server_description_new_copy
+.. _mongoc_server_description_new_copy:
 
 mongoc_server_description_new_copy()
 ====================================

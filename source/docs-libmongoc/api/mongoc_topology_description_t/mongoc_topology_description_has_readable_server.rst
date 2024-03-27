@@ -1,4 +1,4 @@
-.. _mongoc_topology_description_has_readable_server
+.. _mongoc_topology_description_has_readable_server:
 
 mongoc_topology_description_has_readable_server()
 =================================================

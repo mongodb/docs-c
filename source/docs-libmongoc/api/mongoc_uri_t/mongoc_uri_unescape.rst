@@ -1,4 +1,4 @@
-.. _mongoc_uri_unescape
+.. _mongoc_uri_unescape:
 
 mongoc_uri_unescape()
 =====================

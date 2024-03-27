@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_journal
+.. _mongoc_write_concern_set_journal:
 
 mongoc_write_concern_set_journal()
 ==================================

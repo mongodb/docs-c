@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_get_max_commit_time_ms
+.. _mongoc_transaction_opts_get_max_commit_time_ms:
 
 mongoc_transaction_opts_get_max_commit_time_ms()
 ================================================

@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_set_write_concern
+.. _mongoc_transaction_opts_set_write_concern:
 
 mongoc_transaction_opts_set_write_concern()
 ===========================================

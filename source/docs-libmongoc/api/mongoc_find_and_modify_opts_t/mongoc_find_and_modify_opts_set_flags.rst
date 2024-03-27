@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_set_flags
+.. _mongoc_find_and_modify_opts_set_flags:
 
 mongoc_find_and_modify_opts_set_flags()
 =======================================

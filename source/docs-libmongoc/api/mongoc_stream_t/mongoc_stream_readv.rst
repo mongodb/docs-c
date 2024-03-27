@@ -1,4 +1,4 @@
-.. _mongoc_stream_readv
+.. _mongoc_stream_readv:
 
 mongoc_stream_readv()
 =====================

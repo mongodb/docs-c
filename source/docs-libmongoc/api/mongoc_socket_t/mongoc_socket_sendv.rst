@@ -1,4 +1,4 @@
-.. _mongoc_socket_sendv
+.. _mongoc_socket_sendv:
 
 mongoc_socket_sendv()
 =====================

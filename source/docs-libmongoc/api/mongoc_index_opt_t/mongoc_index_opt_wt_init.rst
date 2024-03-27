@@ -1,4 +1,4 @@
-.. _mongoc_index_opt_wt_init
+.. _mongoc_index_opt_wt_init:
 
 mongoc_index_opt_wt_init()
 ==========================

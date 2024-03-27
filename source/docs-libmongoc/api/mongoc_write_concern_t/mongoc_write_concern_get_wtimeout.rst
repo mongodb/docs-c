@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_get_wtimeout
+.. _mongoc_write_concern_get_wtimeout:
 
 mongoc_write_concern_get_wtimeout()
 ===================================

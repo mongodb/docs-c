@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_copy
+.. _mongoc_read_prefs_copy:
 
 mongoc_read_prefs_copy()
 ========================

@@ -1,4 +1,4 @@
-.. _mongoc_socket_setsockopt
+.. _mongoc_socket_setsockopt:
 
 mongoc_socket_setsockopt()
 ==========================

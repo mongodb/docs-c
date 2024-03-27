@@ -1,4 +1,4 @@
-.. _mongoc_uri_copy
+.. _mongoc_uri_copy:
 
 mongoc_uri_copy()
 =================

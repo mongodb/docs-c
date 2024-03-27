@@ -1,4 +1,4 @@
-.. _mongoc_database_get_name
+.. _mongoc_database_get_name:
 
 mongoc_database_get_name()
 ==========================

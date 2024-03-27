@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_destroy
+.. _mongoc_session_opts_destroy:
 
 mongoc_session_opts_destroy()
 =============================

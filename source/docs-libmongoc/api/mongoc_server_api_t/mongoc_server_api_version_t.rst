@@ -1,4 +1,4 @@
-.. _mongoc_server_api_version_t
+.. _mongoc_server_api_version_t:
 
 mongoc_server_api_version_t
 ===========================

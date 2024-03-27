@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_clone
+.. _mongoc_session_opts_clone:
 
 mongoc_session_opts_clone()
 ===========================

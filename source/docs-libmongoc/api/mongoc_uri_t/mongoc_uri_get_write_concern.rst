@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_write_concern
+.. _mongoc_uri_get_write_concern:
 
 mongoc_uri_get_write_concern()
 ==============================

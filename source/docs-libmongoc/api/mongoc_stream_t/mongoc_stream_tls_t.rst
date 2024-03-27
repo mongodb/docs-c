@@ -1,4 +1,4 @@
-.. _mongoc_stream_tls_t
+.. _mongoc_stream_tls_t:
 
 mongoc_stream_tls_t
 ===================

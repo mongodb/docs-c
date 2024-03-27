@@ -1,4 +1,4 @@
-.. _mongoc_stream_socket_get_socket
+.. _mongoc_stream_socket_get_socket:
 
 mongoc_stream_socket_get_socket()
 =================================

@@ -1,4 +1,4 @@
-.. _mongoc_stream_buffered_t
+.. _mongoc_stream_buffered_t:
 
 mongoc_stream_buffered_t
 ========================

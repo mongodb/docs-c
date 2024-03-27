@@ -1,4 +1,4 @@
-.. _mongoc_database_get_read_prefs
+.. _mongoc_database_get_read_prefs:
 
 mongoc_database_get_read_prefs()
 ================================

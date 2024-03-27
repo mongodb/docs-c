@@ -1,4 +1,4 @@
-.. _mongoc_uri_new
+.. _mongoc_uri_new:
 
 mongoc_uri_new()
 ================

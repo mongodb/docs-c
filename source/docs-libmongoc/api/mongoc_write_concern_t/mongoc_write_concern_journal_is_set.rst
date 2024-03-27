@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_journal_is_set
+.. _mongoc_write_concern_journal_is_set:
 
 mongoc_write_concern_journal_is_set()
 =====================================

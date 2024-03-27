@@ -1,4 +1,4 @@
-.. _mongoc_socket_close
+.. _mongoc_socket_close:
 
 mongoc_socket_close()
 =====================

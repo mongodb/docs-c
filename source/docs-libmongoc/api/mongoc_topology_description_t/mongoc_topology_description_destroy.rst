@@ -1,4 +1,4 @@
-.. _mongoc_topology_description_destroy
+.. _mongoc_topology_description_destroy:
 
 mongoc_topology_description_destroy()
 =====================================

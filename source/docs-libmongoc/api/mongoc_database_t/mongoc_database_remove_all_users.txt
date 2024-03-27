@@ -1,4 +1,4 @@
-.. _mongoc_database_remove_all_users
+.. _mongoc_database_remove_all_users:
 
 mongoc_database_remove_all_users()
 ==================================

@@ -1,4 +1,4 @@
-.. _mongoc_socket_listen
+.. _mongoc_socket_listen:
 
 mongoc_socket_listen()
 ======================

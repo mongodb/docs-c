@@ -1,4 +1,4 @@
-.. _mongoc_stream_buffered_new
+.. _mongoc_stream_buffered_new:
 
 mongoc_stream_buffered_new()
 ============================

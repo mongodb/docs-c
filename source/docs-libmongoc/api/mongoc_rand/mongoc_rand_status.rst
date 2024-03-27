@@ -1,4 +1,4 @@
-.. _mongoc_rand_status
+.. _mongoc_rand_status:
 
 mongoc_rand_status()
 ====================

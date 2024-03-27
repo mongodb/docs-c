@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_get_content_type
+.. _mongoc_gridfs_file_get_content_type:
 
 mongoc_gridfs_file_get_content_type()
 =====================================

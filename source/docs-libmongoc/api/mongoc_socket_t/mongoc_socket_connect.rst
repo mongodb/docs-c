@@ -1,4 +1,4 @@
-.. _mongoc_socket_connect
+.. _mongoc_socket_connect:
 
 mongoc_socket_connect()
 =======================

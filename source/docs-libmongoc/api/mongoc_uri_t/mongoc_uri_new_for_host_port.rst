@@ -1,4 +1,4 @@
-.. _mongoc_uri_new_for_host_port
+.. _mongoc_uri_new_for_host_port:
 
 mongoc_uri_new_for_host_port()
 ==============================

@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_append
+.. _mongoc_read_concern_append:
 
 mongoc_read_concern_append()
 ============================

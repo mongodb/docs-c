@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_read_prefs_t
+.. _mongoc_uri_get_read_prefs_t:
 
 mongoc_uri_get_read_prefs_t()
 =============================

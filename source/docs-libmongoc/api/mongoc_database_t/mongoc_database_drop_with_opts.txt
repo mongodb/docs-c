@@ -1,5 +1,6 @@
-.. _mongoc_database_drop_with_opts
+.. _mongoc_database_drop_with_opts:
 
+================================
 mongoc_database_drop_with_opts()
 ================================
 

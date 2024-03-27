@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_srv_hostname
+.. _mongoc_uri_get_srv_hostname:
 
 mongoc_uri_get_srv_hostname()
 =============================

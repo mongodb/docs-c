@@ -1,4 +1,4 @@
-.. _mongoc_stream_cork
+.. _mongoc_stream_cork:
 
 mongoc_stream_cork()
 ====================

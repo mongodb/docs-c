@@ -1,4 +1,4 @@
-.. _mongoc_socket_accept
+.. _mongoc_socket_accept:
 
 mongoc_socket_accept()
 ======================

@@ -1,4 +1,4 @@
-.. _mongoc_server_description_ismaster
+.. _mongoc_server_description_ismaster:
 
 mongoc_server_description_ismaster()
 ====================================

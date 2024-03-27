@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_get_update
+.. _mongoc_find_and_modify_opts_get_update:
 
 mongoc_find_and_modify_opts_get_update()
 ========================================

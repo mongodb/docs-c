@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_seek
+.. _mongoc_gridfs_file_seek:
 
 mongoc_gridfs_file_seek()
 =========================

@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_destroy
+.. _mongoc_transaction_opts_destroy:
 
 mongoc_transaction_opts_destroy()
 =================================

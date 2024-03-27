@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_get_chunks
+.. _mongoc_gridfs_get_chunks:
 
 mongoc_gridfs_get_chunks()
 ==========================

@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_copy
+.. _mongoc_read_concern_copy:
 
 mongoc_read_concern_copy()
 ==========================

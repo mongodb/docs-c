@@ -1,4 +1,4 @@
-.. _mongoc_get_micro_version
+.. _mongoc_get_micro_version:
 
 mongoc_get_micro_version()
 ==========================

@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_find_with_opts
+.. _mongoc_gridfs_find_with_opts:
 
 mongoc_gridfs_find_with_opts()
 ==============================

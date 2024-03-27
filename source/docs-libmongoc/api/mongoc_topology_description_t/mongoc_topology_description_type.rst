@@ -1,4 +1,4 @@
-.. _mongoc_topology_description_type
+.. _mongoc_topology_description_type:
 
 mongoc_topology_description_type()
 ==================================

@@ -1,4 +1,4 @@
-.. _mongoc_uri_set_auth_source
+.. _mongoc_uri_set_auth_source:
 
 mongoc_uri_set_auth_source()
 ============================

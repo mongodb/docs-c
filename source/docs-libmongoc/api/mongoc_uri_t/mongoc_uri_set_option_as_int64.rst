@@ -1,4 +1,4 @@
-.. _mongoc_uri_set_option_as_int64
+.. _mongoc_uri_set_option_as_int64:
 
 mongoc_uri_set_option_as_int64()
 ================================

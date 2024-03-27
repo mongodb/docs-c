@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_list_t
+.. _mongoc_gridfs_file_list_t:
 
 mongoc_gridfs_file_list_t
 =========================
@@ -10,7 +10,7 @@ Synopsis
 
   #include <mongoc/mongoc.h>
 
-  typedef struct _mongoc_gridfs_file_list_t mongoc_gridfs_file_list_t;
+  typedef stru.. _mongoc_gridfs_file_list_t: mongoc_gridfs_file_list_t;
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _mongoc_stream_get_base_stream
+.. _mongoc_stream_get_base_stream:
 
 mongoc_stream_get_base_stream()
 ===============================

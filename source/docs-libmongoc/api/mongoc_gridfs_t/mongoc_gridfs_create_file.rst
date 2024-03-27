@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_create_file
+.. _mongoc_gridfs_create_file:
 
 mongoc_gridfs_create_file()
 ===========================

@@ -1,4 +1,4 @@
-.. _mongoc_stream_should_retry
+.. _mongoc_stream_should_retry:
 
 mongoc_stream_should_retry()
 ============================

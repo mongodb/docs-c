@@ -1,4 +1,4 @@
-.. _mongoc_socket_destroy
+.. _mongoc_socket_destroy:
 
 mongoc_socket_destroy()
 =======================

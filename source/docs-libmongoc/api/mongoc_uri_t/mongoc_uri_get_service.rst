@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_service
+.. _mongoc_uri_get_service:
 
 mongoc_uri_get_service()
 ========================

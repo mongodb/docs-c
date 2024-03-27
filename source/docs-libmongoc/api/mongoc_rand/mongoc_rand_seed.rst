@@ -1,4 +1,4 @@
-.. _mongoc_rand_seed
+.. _mongoc_rand_seed:
 
 mongoc_rand_seed()
 ==================

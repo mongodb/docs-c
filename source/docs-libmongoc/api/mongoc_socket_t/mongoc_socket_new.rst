@@ -1,4 +1,4 @@
-.. _mongoc_socket_new
+.. _mongoc_socket_new:
 
 mongoc_socket_new()
 ===================

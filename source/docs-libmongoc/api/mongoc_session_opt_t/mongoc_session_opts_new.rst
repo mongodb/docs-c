@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_new
+.. _mongoc_session_opts_new:
 
 mongoc_session_opts_new()
 =========================

@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_set_fields
+.. _mongoc_find_and_modify_opts_set_fields:
 
 mongoc_find_and_modify_opts_set_fields()
 ========================================

@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_new
+.. _mongoc_find_and_modify_opts_new:
 
 mongoc_find_and_modify_opts_new()
 =================================

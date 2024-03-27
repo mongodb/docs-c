@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_new
+.. _mongoc_read_prefs_new:
 
 mongoc_read_prefs_new()
 =======================

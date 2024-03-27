@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_get_hedge
+.. _mongoc_read_prefs_get_hedge:
 
 mongoc_read_prefs_get_hedge()
 =============================

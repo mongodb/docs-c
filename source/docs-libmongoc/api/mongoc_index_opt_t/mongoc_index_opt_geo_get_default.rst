@@ -1,4 +1,4 @@
-.. _mongoc_index_opt_geo_get_default
+.. _mongoc_index_opt_geo_get_default:
 
 mongoc_index_opt_geo_get_default()
 ==================================

@@ -1,4 +1,4 @@
-.. _mongoc_optional_is_set
+.. _mongoc_optional_is_set:
 
 mongoc_optional_is_set()
 ========================

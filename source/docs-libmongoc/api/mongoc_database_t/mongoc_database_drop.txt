@@ -1,4 +1,4 @@
-.. _mongoc_database_drop
+.. _mongoc_database_drop:
 
 mongoc_database_drop()
 ======================

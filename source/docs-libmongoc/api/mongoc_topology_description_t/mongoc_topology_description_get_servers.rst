@@ -1,4 +1,4 @@
-.. _mongoc_topology_description_get_servers
+.. _mongoc_topology_description_get_servers:
 
 mongoc_topology_description_get_servers()
 =========================================

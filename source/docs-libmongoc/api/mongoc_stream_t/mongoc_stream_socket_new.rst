@@ -1,4 +1,4 @@
-.. _mongoc_stream_socket_new
+.. _mongoc_stream_socket_new:
 
 mongoc_stream_socket_new()
 ==========================

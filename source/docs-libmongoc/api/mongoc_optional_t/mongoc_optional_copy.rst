@@ -1,4 +1,4 @@
-.. _mongoc_optional_copy
+.. _mongoc_optional_copy:
 
 mongoc_optional_copy()
 ======================

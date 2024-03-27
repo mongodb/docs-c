@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_set_level
+.. _mongoc_read_concern_set_level:
 
 mongoc_read_concern_set_level()
 ===============================

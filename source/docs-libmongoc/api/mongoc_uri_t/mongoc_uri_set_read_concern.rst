@@ -1,4 +1,4 @@
-.. _mongoc_uri_set_read_concern
+.. _mongoc_uri_set_read_concern:
 
 mongoc_uri_set_read_concern()
 =============================

@@ -1,4 +1,4 @@
-.. _mongoc_server_api_get_deprecation_errors
+.. _mongoc_server_api_get_deprecation_errors:
 
 mongoc_server_api_get_deprecation_errors()
 ==========================================

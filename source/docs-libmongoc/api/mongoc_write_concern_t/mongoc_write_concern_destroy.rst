@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_destroy
+.. _mongoc_write_concern_destroy:
 
 mongoc_write_concern_destroy()
 ==============================

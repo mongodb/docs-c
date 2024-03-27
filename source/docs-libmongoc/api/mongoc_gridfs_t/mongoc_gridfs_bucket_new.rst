@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_new
+.. _mongoc_gridfs_bucket_new:
 
 mongoc_gridfs_bucket_new()
 ==========================

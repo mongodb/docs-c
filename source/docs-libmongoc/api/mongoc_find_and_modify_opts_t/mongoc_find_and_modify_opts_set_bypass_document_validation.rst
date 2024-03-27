@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_set_bypass_document_validation
+.. _mongoc_find_and_modify_opts_set_bypass_document_validation:
 
 mongoc_find_and_modify_opts_set_bypass_document_validation()
 ============================================================

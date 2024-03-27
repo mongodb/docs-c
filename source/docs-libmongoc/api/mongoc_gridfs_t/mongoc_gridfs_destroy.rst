@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_destroy
+.. _mongoc_gridfs_destroy:
 
 mongoc_gridfs_destroy()
 =======================

@@ -1,4 +1,4 @@
-.. _mongoc_uri_get_replica_set
+.. _mongoc_uri_get_replica_set:
 
 mongoc_uri_get_replica_set()
 ============================

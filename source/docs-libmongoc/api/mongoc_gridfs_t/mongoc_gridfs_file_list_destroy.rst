@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_list_destroy
+.. _mongoc_gridfs_file_list_destroy:
 
 mongoc_gridfs_file_list_destroy()
 =================================

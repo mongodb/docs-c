@@ -1,4 +1,4 @@
-.. _mongoc_server_description_last_update_time
+.. _mongoc_server_description_last_update_time:
 
 mongoc_server_description_last_update_time()
 ============================================

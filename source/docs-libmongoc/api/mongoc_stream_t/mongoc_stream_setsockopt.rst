@@ -1,4 +1,4 @@
-.. _mongoc_stream_setsockopt
+.. _mongoc_stream_setsockopt:
 
 mongoc_stream_setsockopt()
 ==========================

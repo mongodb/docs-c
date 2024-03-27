@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_find_one
+.. _mongoc_gridfs_find_one:
 
 mongoc_gridfs_find_one()
 ========================

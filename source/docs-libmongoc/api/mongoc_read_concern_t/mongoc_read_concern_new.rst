@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_new
+.. _mongoc_read_concern_new:
 
 mongoc_read_concern_new()
 =========================

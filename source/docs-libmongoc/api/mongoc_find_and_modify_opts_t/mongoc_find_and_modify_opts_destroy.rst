@@ -1,4 +1,4 @@
-.. _mongoc_find_and_modify_opts_destroy
+.. _mongoc_find_and_modify_opts_destroy:
 
 mongoc_find_and_modify_opts_destroy()
 =====================================

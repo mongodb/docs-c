@@ -1,4 +1,4 @@
-.. _mongoc_server_description_round_trip_time
+.. _mongoc_server_description_round_trip_time:
 
 mongoc_server_description_round_trip_time()
 ===========================================

@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_get_read_concern
+.. _mongoc_transaction_opts_get_read_concern:
 
 mongoc_transaction_opts_get_read_concern()
 ==========================================

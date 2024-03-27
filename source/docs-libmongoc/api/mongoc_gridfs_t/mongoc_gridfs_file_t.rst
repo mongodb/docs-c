@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_t
+.. _mongoc_gridfs_file_t:
 
 mongoc_gridfs_file_t
 ====================
@@ -8,7 +8,7 @@ Synopsis
 
 .. code-block:: c
 
-  typedef struct _mongoc_gridfs_file_t mongoc_gridfs_file_t;
+  typedef stru.. _mongoc_gridfs_file_t: mongoc_gridfs_file_t;
 
 Description
 -----------

@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_is_valid
+.. _mongoc_read_prefs_is_valid:
 
 mongoc_read_prefs_is_valid()
 ============================

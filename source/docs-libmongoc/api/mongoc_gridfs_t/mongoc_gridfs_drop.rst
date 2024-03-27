@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_drop
+.. _mongoc_gridfs_drop:
 
 mongoc_gridfs_drop()
 ====================

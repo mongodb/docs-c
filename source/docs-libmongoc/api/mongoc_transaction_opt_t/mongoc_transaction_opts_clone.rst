@@ -1,4 +1,4 @@
-.. _mongoc_transaction_opts_clone
+.. _mongoc_transaction_opts_clone:
 
 mongoc_transaction_opts_clone()
 ===============================

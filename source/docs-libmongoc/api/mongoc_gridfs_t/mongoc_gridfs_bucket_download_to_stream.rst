@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_download_to_stream
+.. _mongoc_gridfs_bucket_download_to_stream:
 
 mongoc_gridfs_bucket_download_to_stream()
 =========================================

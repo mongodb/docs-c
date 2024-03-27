@@ -1,4 +1,4 @@
-.. _mongoc_socket_errno
+.. _mongoc_socket_errno:
 
 mongoc_socket_errno()
 =====================

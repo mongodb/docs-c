@@ -1,4 +1,4 @@
-.. _mongoc_session_opts_set_default_transaction_opts
+.. _mongoc_session_opts_set_default_transaction_opts:
 
 mongoc_session_opts_set_default_transaction_opts()
 ==================================================

@@ -1,4 +1,4 @@
-.. _mongoc_check_version
+.. _mongoc_check_version:
 
 mongoc_check_version()
 ======================

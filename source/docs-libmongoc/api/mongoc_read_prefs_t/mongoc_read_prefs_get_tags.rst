@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_get_tags
+.. _mongoc_read_prefs_get_tags:
 
 mongoc_read_prefs_get_tags()
 ============================

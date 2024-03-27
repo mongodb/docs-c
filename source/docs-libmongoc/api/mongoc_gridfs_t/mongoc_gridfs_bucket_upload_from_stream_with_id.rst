@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_upload_from_stream_with_id
+.. _mongoc_gridfs_bucket_upload_from_stream_with_id:
 
 mongoc_gridfs_bucket_upload_from_stream_with_id()
 =================================================

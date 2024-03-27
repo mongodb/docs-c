@@ -1,4 +1,4 @@
-.. _mongoc_server_api_version_to_string
+.. _mongoc_server_api_version_to_string:
 
 mongoc_server_api_version_to_string()
 =====================================

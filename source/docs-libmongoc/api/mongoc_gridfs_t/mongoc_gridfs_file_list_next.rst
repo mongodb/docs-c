@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_list_next
+.. _mongoc_gridfs_file_list_next:
 
 mongoc_gridfs_file_list_next()
 ==============================

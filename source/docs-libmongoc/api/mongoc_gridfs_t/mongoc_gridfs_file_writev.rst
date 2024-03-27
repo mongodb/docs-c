@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_file_writev
+.. _mongoc_gridfs_file_writev:
 
 mongoc_gridfs_file_writev()
 ===========================

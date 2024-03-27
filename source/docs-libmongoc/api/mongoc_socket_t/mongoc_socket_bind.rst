@@ -1,4 +1,4 @@
-.. _mongoc_socket_bind
+.. _mongoc_socket_bind:
 
 mongoc_socket_bind()
 ====================

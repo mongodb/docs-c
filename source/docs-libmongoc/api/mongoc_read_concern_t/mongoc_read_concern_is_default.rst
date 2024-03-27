@@ -1,4 +1,4 @@
-.. _mongoc_read_concern_is_default
+.. _mongoc_read_concern_is_default:
 
 mongoc_read_concern_is_default()
 ================================

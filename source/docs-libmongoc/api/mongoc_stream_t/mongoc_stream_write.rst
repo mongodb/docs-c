@@ -1,4 +1,4 @@
-.. _mongoc_stream_write
+.. _mongoc_stream_write:
 
 mongoc_stream_write()
 =====================

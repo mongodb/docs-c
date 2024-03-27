@@ -1,4 +1,4 @@
-.. _mongoc_uri_option_is_bool
+.. _mongoc_uri_option_is_bool:
 
 mongoc_uri_option_is_bool()
 ===========================

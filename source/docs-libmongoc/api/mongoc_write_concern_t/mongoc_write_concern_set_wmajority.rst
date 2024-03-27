@@ -1,4 +1,4 @@
-.. _mongoc_write_concern_set_wmajority
+.. _mongoc_write_concern_set_wmajority:
 
 mongoc_write_concern_set_wmajority()
 ====================================

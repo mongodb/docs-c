@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_bucket_delete_by_id
+.. _mongoc_gridfs_bucket_delete_by_id:
 
 mongoc_gridfs_bucket_delete_by_id()
 ===================================

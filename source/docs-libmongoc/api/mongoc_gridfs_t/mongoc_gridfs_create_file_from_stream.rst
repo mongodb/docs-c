@@ -1,4 +1,4 @@
-.. _mongoc_gridfs_create_file_from_stream
+.. _mongoc_gridfs_create_file_from_stream:
 
 mongoc_gridfs_create_file_from_stream()
 =======================================

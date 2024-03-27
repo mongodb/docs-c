@@ -1,4 +1,4 @@
-.. _mongoc_read_prefs_set_mode
+.. _mongoc_read_prefs_set_mode:
 
 mongoc_read_prefs_set_mode()
 ============================
