@@ -16,7 +16,7 @@ This function retrieves the default :ref:`mongoc_write_concern_t` to use with ``
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
+- ``database``: A :ref:`mongoc_database_t`.
 
 Returns
 -------

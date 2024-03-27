@@ -22,7 +22,7 @@ After adding all of the write operations to the ``mongoc_bulk_operation_t``, cal
 
 .. seealso::
 
-  | :symbol:`Bulk Write Operations <bulk>`
+  | :ref:`Bulk Write Operations <mongoc_bulk>`
 
 Functions
 ---------

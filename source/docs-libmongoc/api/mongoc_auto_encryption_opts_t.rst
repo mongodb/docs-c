@@ -4,7 +4,7 @@
 mongoc_auto_encryption_opts_t
 =============================
 
-Options for enabling automatic encryption and decryption for :doc:`in-use-encryption`.
+Options for enabling automatic encryption and decryption for :ref:`in-use-encryption`.
 
 Synopsis
 --------
@@ -15,7 +15,7 @@ Synopsis
 
 .. seealso::
 
-  | :doc:`in-use-encryption`
+  | :ref:`in-use-encryption`
 
 Functions
 ---------

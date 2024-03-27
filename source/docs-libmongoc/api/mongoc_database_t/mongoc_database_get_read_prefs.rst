@@ -16,7 +16,7 @@ Fetches the default read preferences to use with ``database``.
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
+- ``database``: A :ref:`mongoc_database_t`.
 
 Returns
 -------

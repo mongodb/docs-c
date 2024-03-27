@@ -14,7 +14,7 @@ Synopsis
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
+- ``database``: A :ref:`mongoc_database_t`.
 
 Description
 -----------

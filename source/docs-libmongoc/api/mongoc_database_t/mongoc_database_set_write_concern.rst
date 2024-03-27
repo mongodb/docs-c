@@ -19,6 +19,6 @@ The default write concern is MONGOC_WRITE_CONCERN_W_DEFAULT: the driver blocks a
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``write_concern``: A :ref:`mongoc_write_concern_t`.
 

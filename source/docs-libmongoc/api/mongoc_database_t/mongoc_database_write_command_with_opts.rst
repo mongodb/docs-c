@@ -21,17 +21,17 @@ Execute a command on the server, applying logic that is specific to commands tha
 
 .. include:: includes/write-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``db_name``: The name of the database to run the command on.
-* ``command``: A :ref:`bson_t` containing the command specification.
-* ``opts``: A :ref:`bson_t` containing additional options.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``db_name``: The name of the database to run the command on.
+- ``command``: A :ref:`bson_t` containing the command specification.
+- ``opts``: A :ref:`bson_t` containing additional options.
+- ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. include:: includes/write-opts.txt
 

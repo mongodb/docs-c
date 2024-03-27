@@ -11,7 +11,7 @@ Synopsis
    typedef struct _mongoc_client_encryption_t mongoc_client_encryption_t;
 
 
-``mongoc_client_encryption_t`` provides utility functions for :doc:`in-use-encryption`.
+``mongoc_client_encryption_t`` provides utility functions for :ref:`in-use-encryption`.
 
 Thread Safety
 -------------
@@ -59,7 +59,7 @@ Functions
 
   | :ref:`mongoc_client_pool_enable_auto_encryption()`
 
-  | :doc:`in-use-encryption` for libmongoc
+  | :ref:`in-use-encryption` for libmongoc
 
   | The MongoDB Manual for `Client-Side Field Level Encryption <https://www.mongodb.com/docs/manual/core/security-client-side-encryption/>`_
 

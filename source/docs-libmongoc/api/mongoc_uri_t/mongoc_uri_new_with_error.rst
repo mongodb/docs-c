@@ -16,7 +16,7 @@ Parameters
 ----------
 
 * ``uri_string``: A string containing a URI.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+* ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------

@@ -34,10 +34,10 @@ Custom read preferences and write concerns evaluate tags sets in different ways:
 
 You can specify tag sets with the following read preference modes:
 
-* primaryPreferred
-* secondary
-* secondaryPreferred
-* nearest
+- primaryPreferred
+- secondary
+- secondaryPreferred
+- nearest
 
 Tags are not compatible with ``MONGOC_READ_PRIMARY`` and, in general, only apply when selecting a secondary member of a set for a read operation. However, the nearest read mode, when combined with a tag set, will select the nearest member that matches the specified tag set, which may be a primary or secondary.
 

@@ -15,7 +15,7 @@ Synopsis
 Parameters
 ----------
 
-* ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
+- ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
 
 Returns
 -------

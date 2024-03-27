@@ -12,7 +12,7 @@ mongoc_session_opt_t
 Synopsis
 --------
 
-.. include:: includes/session-lifecycle.txt
+.. include:: ../includes/session-lifecycle.txt
 
 See the example code for :ref:`mongoc_session_opts_set_causal_consistency`.
 

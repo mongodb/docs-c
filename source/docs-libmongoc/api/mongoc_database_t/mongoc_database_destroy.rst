@@ -16,5 +16,5 @@ Releases all resources associated with ``database``, including freeing the struc
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
+- ``database``: A :ref:`mongoc_database_t`.
 

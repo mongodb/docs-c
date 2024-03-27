@@ -22,7 +22,7 @@ Execute a command on the server, applying logic that is specific to commands tha
 
 .. include:: includes/read-cmd-opts-sources.txt
 
-``reply`` is always initialized, and must be freed with :ref:`bson:bson_destroy()`.
+``reply`` is always initialized, and must be freed with :ref:`bson_destroy()`.
 
 .. ``generic-cmd`` replace:: :ref:`mongoc_database_command_with_opts`
 .. include:: includes/retryable-read.txt
@@ -31,12 +31,12 @@ Execute a command on the server, applying logic that is specific to commands tha
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
-* ``command``: A :ref:`bson_t` containing the command specification.
-* ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
-* ``opts``: A :ref:`bson_t` containing additional options.
-* ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+- ``database``: A :ref:`mongoc_database_t`.
+- ``command``: A :ref:`bson_t` containing the command specification.
+- ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`.
+- ``opts``: A :ref:`bson_t` containing additional options.
+- ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
+- ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 .. include:: includes/read-opts.txt
 

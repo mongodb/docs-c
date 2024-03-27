@@ -16,7 +16,7 @@ This function retrieves the default :ref:`mongoc_read_concern_t` to use with ``d
 Parameters
 ----------
 
-* ``database``: A :ref:`mongoc_database_t`.
+- ``database``: A :ref:`mongoc_database_t`.
 
 Returns
 -------

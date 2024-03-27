@@ -24,7 +24,7 @@ Parameters
 
 * ``gridfs``: A :ref:`mongoc_gridfs_t`.
 * ``query``: A :ref:`bson_t`.
-* ``error``: An optional location for a :symbol:`bson_error_t <errors>` or ``NULL``.
+* ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
 Description
 -----------
