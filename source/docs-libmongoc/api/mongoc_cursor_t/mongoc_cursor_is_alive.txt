@@ -1,14 +1,14 @@
-.. _mongoc_cursor_is_alive
+.. _mongoc_cursor_is_alive:
 
+========================
 mongoc_cursor_is_alive()
 ========================
 
 .. warning::
-   .. deprecated:: 1.10.0
 
-      This function is deprecated and should not be used in new code.
+   This function is deprecated and should not be used in new code.
 
-      Please use :ref:`mongoc_cursor_more()` in new code.
+   Please use :ref:`mongoc_cursor_more` in new code.
 
 
 Synopsis
@@ -29,4 +29,4 @@ Parameters
 Returns
 -------
 
-See :ref:`mongoc_cursor_more()`.
+See :ref:`mongoc_cursor_more`.
