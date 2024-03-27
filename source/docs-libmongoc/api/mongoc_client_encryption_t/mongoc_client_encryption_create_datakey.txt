@@ -26,15 +26,18 @@ automatic encryption (see :ref:`mongoc_client_enable_auto_encryption` and
 The created key document is inserted into the key vault collection (identified via
 :ref:`mongoc_client_encryption_opts_set_keyvault_namespace`) with majority write concern.
 
-``keyid`` is always initialized (even on error). Caller must call :ref:`bson_value_destroy()` on ``keyid`` to free.
+``keyid`` is always initialized (even on error). Caller must call :ref:`bson_value_destroy`
+on ``keyid`` to free.
 
 Parameters
 ----------
 
 - ``client_encryption``: A :ref:`mongoc_client_encryption_t`.
-- ``kms_provider``: A string identifying the Key Management Service (KMS) provider used to encrypt the datakey (e.g. "aws" or "local").
+- ``kms_provider``: A string identifying the Key Management Service (KMS) provider used to encrypt
+  the datakey (e.g. "aws" or "local").
 - ``opts``: A :ref:`mongoc_client_encryption_datakey_opts_t`
-- ``keyid``: Optional. An uninitialized :ref:`bson_value_t` set to the UUID (BSON binary subtype 0x04) of the newly created key. Must be freed by :ref:`bson_value_destroy`.
+- ``keyid``: Optional. An uninitialized :ref:`bson_value_t` set to the UUID (BSON binary subtype 0x04)
+  of the newly created key. Must be freed by :ref:`bson_value_destroy`.
 - ``error``: Optional. A :ref:`bson_error_t`.
 
 Returns

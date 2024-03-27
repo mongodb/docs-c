@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const bson_t *
-  mongoc_change_stream_get_resume_token (mongoc_change_stream_t *stream);
+   const bson_t *
+   mongoc_change_stream_get_resume_token (mongoc_change_stream_t *stream);
 
 This function returns the cached resume token, which may be passed as either the
 ``resumeAfter`` or ``startAfter`` option of a ``watch`` function to start a new

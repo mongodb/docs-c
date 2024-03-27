@@ -15,4 +15,5 @@ Synopsis
 Returns
 -------
 
-A new :ref:`mongoc_client_encryption_encrypt_opts_t` that must be freed with :ref:`mongoc_client_encryption_encrypt_opts_destroy`.
+A new :ref:`mongoc_client_encryption_encrypt_opts_t` that must be freed with
+:ref:`mongoc_client_encryption_encrypt_opts_destroy`.

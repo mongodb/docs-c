@@ -19,7 +19,7 @@ Synopsis
    The {+range-is-experimental+} {+api-is-experimental+}
 
 Sets the minimum value of the range for explicit encryption.
-Only applies when the algorithm set by :ref:`mongoc_client_encryption_encrypt_opts_set_algorithm()` is "RangePreview".
+Only applies when the algorithm set by :ref:`mongoc_client_encryption_encrypt_opts_set_algorithm` is "RangePreview".
 It is an error to set minimum when algorithm is not "RangePreview".
 
 The minimum must match the value set in the encryptedFields of the destination collection.

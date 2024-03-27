@@ -82,7 +82,7 @@ On Unix, the MongoDB C Driver relies on libresolv to look up SRV and TXT records
 IPv4 and IPv6
 -------------
 
-.. include:: includes/ipv4-and-ipv6.txt
+.. include:: ../includes/ipv4-and-ipv6.txt
 
 Connection Options
 ------------------
@@ -138,7 +138,7 @@ MONGOC_URI_GSSAPISERVICENAME               gssapiservicename                 Use
 TLS Options
 -----------
 
-.. include:: includes/tls-options.txt
+.. include:: ../includes/tls-options.txt
 
 See :doc:`configuring_tls` for details about these options and about building libmongoc with TLS support.
 

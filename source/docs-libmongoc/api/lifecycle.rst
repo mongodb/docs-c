@@ -37,7 +37,7 @@ A :ref:`mongoc_stream_t` may be created from the :ref:`mongoc_gridfs_bucket_t`. 
 Sessions
 --------
 
-.. include:: includes/session-lifecycle.txt
+.. include:: ../includes/session-lifecycle.txt
 
 Client Side Encryption
 ----------------------

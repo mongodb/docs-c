@@ -13,7 +13,8 @@ Synopsis
    mongoc_client_encryption_datakey_opts_set_masterkey (
       mongoc_client_encryption_datakey_opts_t *opts, const bson_t *masterkey);
 
-Identifies the masterkey for the Key Management Service (KMS) provider used to encrypt a new data key.
+Identifies the masterkey for the Key Management Service (KMS) provider used to encrypt
+a new data key.
 
 Parameters
 ----------
@@ -24,7 +25,8 @@ Parameters
 Description
 -----------
 
-Setting the masterkey is required when creating a data key with the KMS provider types: ``aws``, ``azure``, ``gcp``, and ``kmip``.
+Setting the masterkey is required when creating a data key with the KMS provider types:
+``aws``, ``azure``, ``gcp``, and ``kmip``.
 
 Setting the masterkey is prohibited with the KMS provider type ``local``.
 

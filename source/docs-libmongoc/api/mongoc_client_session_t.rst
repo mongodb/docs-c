@@ -9,7 +9,7 @@ Use a session for a sequence of operations, optionally with causal consistency. 
 Synopsis
 --------
 
-.. include:: includes/session-lifecycle.txt
+.. include:: ../includes/session-lifecycle.txt
 
 Fork Safety
 -----------

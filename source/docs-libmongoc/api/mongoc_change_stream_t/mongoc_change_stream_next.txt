@@ -1,5 +1,6 @@
-.. _mongoc_change_stream_next
+.. _mongoc_change_stream_next:
 
+===========================
 mongoc_change_stream_next()
 ===========================
 
@@ -8,9 +9,9 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_change_stream_next (mongoc_change_stream_t *stream,
-                             const bson_t **bson);
+   bool
+   mongoc_change_stream_next (mongoc_change_stream_t *stream,
+                              const bson_t **bson);
 
 This function iterates the underlying cursor, setting ``bson`` to the next
 document. This will block for a maximum of ``maxAwaitTimeMS`` milliseconds as

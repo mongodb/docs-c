@@ -1,5 +1,6 @@
-.. _mongoc_change_stream_error_document
+.. _mongoc_change_stream_error_document:
 
+=====================================
 mongoc_change_stream_error_document()
 =====================================
 
@@ -8,10 +9,10 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_change_stream_error_document (mongoc_change_stream_t *stream,
-                                       bson_error_t *err,
-                                       const bson_t **reply);
+   bool
+   mongoc_change_stream_error_document (mongoc_change_stream_t *stream,
+                                        bson_error_t *err,
+                                        const bson_t **reply);
 
 Checks if an error has occurred when creating or iterating over a change stream.
 
