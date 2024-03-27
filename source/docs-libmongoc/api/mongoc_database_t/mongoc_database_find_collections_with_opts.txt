@@ -41,11 +41,13 @@ Use :ref:`mongoc_cursor_error` on the returned cursor to check for errors.
 Returns
 -------
 
-.. include:: includes/returns-cursor.txt
+.. include:: ../../includes/returns-cursor.txt
 
-In the returned cursor each result corresponds to the server's representation of a collection in this database.
+In the returned cursor each result corresponds to the server's representation of a
+collection in this database.
 
-The cursor functions :ref:`mongoc_cursor_set_limit`, :ref:`mongoc_cursor_set_batch_size`, and :ref:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
+The cursor functions :ref:`mongoc_cursor_set_limit`, :ref:`mongoc_cursor_set_batch_size`,
+and :ref:`mongoc_cursor_set_max_await_time_ms` have no use on the returned cursor.
 
 Examples
 --------
@@ -81,5 +83,5 @@ Examples
 
 .. seealso::
 
-  | :ref:`mongoc_database_get_collection_names_with_opts()`
+  | :ref:`mongoc_database_get_collection_names_with_opts`
 

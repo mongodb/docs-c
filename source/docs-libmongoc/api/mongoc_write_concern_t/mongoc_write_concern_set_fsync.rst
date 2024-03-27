@@ -22,8 +22,8 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
-* ``fsync_``: A boolean.
+- ``write_concern``: A :ref:`mongoc_write_concern_t`.
+- ``fsync_``: A boolean.
 
 Description
 -----------

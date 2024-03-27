@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
-* ``journal``: A boolean.
+- ``write_concern``: A :ref:`mongoc_write_concern_t`.
+- ``journal``: A boolean.
 
 Description
 -----------

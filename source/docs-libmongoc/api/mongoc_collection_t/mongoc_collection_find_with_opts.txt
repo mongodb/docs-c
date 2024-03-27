@@ -239,12 +239,13 @@ by the C Driver with older MongoDB versions.
   | MongoDB Manual. All options listed there are supported by the C Driver.  For MongoDB servers
   | before 3.2, the driver transparently converts the query to a legacy OP_QUERY message.
 
-.. _the "find" command: https://www.mongodb.com/docs/master/reference/command/find/
-
 The "explain" command
 ---------------------
 
-With MongoDB before 3.2, a query with option ``$explain: true`` returns information about the query plan, instead of the query results. Beginning in MongoDB 3.2, there is a separate "explain" command. The driver will not convert "$explain" queries to "explain" commands, you must call the "explain" command explicitly:
+With MongoDB before 3.2, a query with option ``$explain: true`` returns information about the
+query plan, instead of the query results. Beginning in MongoDB 3.2, there is a separate "explain"
+command. The driver will not convert "$explain" queries to "explain" commands, you must call the 
+"explain" command explicitly:
 
 .. code-block:: c
 

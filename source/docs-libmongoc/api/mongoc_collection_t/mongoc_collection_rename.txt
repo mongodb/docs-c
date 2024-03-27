@@ -1,5 +1,6 @@
-.. _mongoc_collection_rename
+.. _mongoc_collection_rename:
 
+==========================
 mongoc_collection_rename()
 ==========================
 
@@ -8,12 +9,12 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_collection_rename (mongoc_collection_t *collection,
-                            const char *new_db,
-                            const char *new_name,
-                            bool drop_target_before_rename,
-                            bson_error_t *error);
+   bool
+   mongoc_collection_rename (mongoc_collection_t *collection,
+                             const char *new_db,
+                             const char *new_name,
+                             bool drop_target_before_rename,
+                             bson_error_t *error);
 
 Parameters
 ----------
@@ -27,5 +28,6 @@ Parameters
 Description
 -----------
 
-For more information, see :ref:`mongoc_collection_rename_with_opts()`. This function is a thin wrapper, passing ``NULL`` in as :symbol:`opts <bson_t>` parameter.
+For more information, see :ref:`mongoc_collection_rename_with_opts`. This function is a thin wrapper,
+passing ``NULL`` in as :ref:`opts <bson_t>` parameter.
 

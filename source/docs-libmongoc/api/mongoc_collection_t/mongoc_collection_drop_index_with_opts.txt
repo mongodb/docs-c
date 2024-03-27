@@ -1,5 +1,6 @@
-.. _mongoc_collection_drop_index_with_opts
+.. _mongoc_collection_drop_index_with_opts:
 
+========================================
 mongoc_collection_drop_index_with_opts()
 ========================================
 
@@ -8,11 +9,11 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_collection_drop_index_with_opts (mongoc_collection_t *collection,
-                                          const char *index_name,
-                                          const bson_t *opts,
-                                          bson_error_t *error);
+   bool
+   mongoc_collection_drop_index_with_opts (mongoc_collection_t *collection,
+                                           const char *index_name,
+                                           const bson_t *opts,
+                                           bson_error_t *error);
 
 Parameters
 ----------
@@ -40,7 +41,8 @@ Errors are propagated via the ``error`` parameter.
 Returns
 -------
 
-Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
+Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid
+arguments or a server or network error.
 
 .. seealso::
 

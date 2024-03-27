@@ -1,5 +1,6 @@
-.. _mongoc_cursor_get_limit
+.. _mongoc_cursor_get_limit:
 
+=========================
 mongoc_cursor_get_limit()
 =========================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  int64_t
-  mongoc_cursor_get_limit (mongoc_cursor_t *cursor);
+   int64_t
+   mongoc_cursor_get_limit (mongoc_cursor_t *cursor);
 
 Parameters
 ----------

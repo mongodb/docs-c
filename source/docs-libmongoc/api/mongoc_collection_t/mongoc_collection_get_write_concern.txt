@@ -1,5 +1,6 @@
-.. _mongoc_collection_get_write_concern
+.. _mongoc_collection_get_write_concern:
 
+=====================================
 mongoc_collection_get_write_concern()
 =====================================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const mongoc_write_concern_t *
-  mongoc_collection_get_write_concern (const mongoc_collection_t *collection);
+   const mongoc_write_concern_t *
+   mongoc_collection_get_write_concern (const mongoc_collection_t *collection);
 
 Parameters
 ----------
@@ -19,7 +20,8 @@ Parameters
 Description
 -----------
 
-Fetches the default write concern to be used on write operations originating from ``collection`` and not specifying a write concern.
+Fetches the default write concern to be used on write operations originating from ``collection``
+and not specifying a write concern.
 
 Returns
 -------

@@ -1,5 +1,6 @@
 .. _mongoc_database_get_name:
 
+==========================
 mongoc_database_get_name()
 ==========================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const char *
-  mongoc_database_get_name (mongoc_database_t *database);
+   const char *
+   mongoc_database_get_name (mongoc_database_t *database);
 
 Fetches the name of the database.
 

@@ -1,5 +1,6 @@
-.. _mongoc_cursor_current
+.. _mongoc_cursor_current:
 
+=======================
 mongoc_cursor_current()
 =======================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const bson_t *
-  mongoc_cursor_current (const mongoc_cursor_t *cursor);
+   const bson_t *
+   mongoc_cursor_current (const mongoc_cursor_t *cursor);
 
 Parameters
 ----------

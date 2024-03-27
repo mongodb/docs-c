@@ -15,8 +15,8 @@ Synopsis
 Parameters
 ----------
 
-* ``write_concern``: A :ref:`mongoc_write_concern_t`.
-* ``tag``: A string containing the write tag.
+- ``write_concern``: A :ref:`mongoc_write_concern_t`.
+- ``tag``: A string containing the write tag.
 
 Description
 -----------

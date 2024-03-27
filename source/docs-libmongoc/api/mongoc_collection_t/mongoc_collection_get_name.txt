@@ -1,5 +1,6 @@
-.. _mongoc_collection_get_name
+.. _mongoc_collection_get_name:
 
+============================
 mongoc_collection_get_name()
 ============================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const char *
-  mongoc_collection_get_name (mongoc_collection_t *collection);
+   const char *
+   mongoc_collection_get_name (mongoc_collection_t *collection);
 
 Parameters
 ----------

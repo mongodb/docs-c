@@ -1,5 +1,6 @@
-.. _mongoc_cursor_get_batch_size
+.. _mongoc_cursor_get_batch_size:
 
+==============================
 mongoc_cursor_get_batch_size()
 ==============================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  uint32_t
-  mongoc_cursor_get_batch_size (const mongoc_cursor_t *cursor);
+   uint32_t
+   mongoc_cursor_get_batch_size (const mongoc_cursor_t *cursor);
 
 Parameters
 ----------
@@ -19,7 +20,10 @@ Parameters
 Description
 -----------
 
-Retrieve the cursor's batch size, the maximum number of documents returned per round trip to the server. A batch size of zero means the cursor accepts the server's maximum batch size.
+Retrieve the cursor's batch size, the maximum number of documents returned per round
+trip to the server. A batch size of zero means the cursor accepts the server's maximum
+batch size.
 
-See `Cursor Batches <https://www.mongodb.com/docs/manual/core/cursors/#cursor-batches>`_ in the MongoDB Manual.
+See `Cursor Batches <https://www.mongodb.com/docs/manual/core/cursors/#cursor-batches>`__
+in the MongoDB Manual.
 
