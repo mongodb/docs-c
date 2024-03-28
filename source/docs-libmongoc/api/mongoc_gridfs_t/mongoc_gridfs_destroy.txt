@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_gridfs_destroy (mongoc_gridfs_t *gridfs);
+   void
+   mongoc_gridfs_destroy (mongoc_gridfs_t *gridfs);
 
 Parameters
 ----------
@@ -20,4 +20,5 @@ Parameters
 Description
 -----------
 
-This function shall destroy the gridfs structure referenced by ``gridfs`` and any resources associated with the gridfs. Does nothing if ``gridfs`` is NULL.
+This function shall destroy the gridfs structure referenced by ``gridfs`` and any resources
+associated with the gridfs. Does nothing if ``gridfs`` is NULL.

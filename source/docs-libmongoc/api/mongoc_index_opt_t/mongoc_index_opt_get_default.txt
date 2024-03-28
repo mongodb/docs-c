@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const mongoc_index_opt_t *
-  mongoc_index_opt_get_default (void) BSON_GNUC_PURE;
+   const mongoc_index_opt_t *
+   mongoc_index_opt_get_default (void) BSON_GNUC_PURE;
 
 Returns
 -------

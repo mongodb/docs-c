@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const bson_t *
-  mongoc_gridfs_file_get_aliases (mongoc_gridfs_file_t *file);
+   const bson_t *
+   mongoc_gridfs_file_get_aliases (mongoc_gridfs_file_t *file);
 
 Parameters
 ----------
@@ -25,5 +25,5 @@ Fetches the aliases associated with a gridfs file.
 Returns
 -------
 
-Returns a :symbol:`const bson_t * <bson_t>` that should not be modified or freed.
+Returns a :ref:`const bson_t * <bson_t>` that should not be modified or freed.
 

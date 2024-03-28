@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_gridfs_file_list_destroy (mongoc_gridfs_file_list_t *list);
+   void
+   mongoc_gridfs_file_list_destroy (mongoc_gridfs_file_list_t *list);
 
 Parameters
 ----------
@@ -20,4 +20,5 @@ Parameters
 Description
 -----------
 
-Frees a ``mongoc_gridfs_file_list_t`` and releases any associated resources. Does nothing if ``list`` is NULL.
+Frees a ``mongoc_gridfs_file_list_t`` and releases any associated resources. Does nothing
+if ``list`` is NULL.

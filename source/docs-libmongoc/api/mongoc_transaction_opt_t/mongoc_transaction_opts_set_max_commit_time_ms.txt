@@ -1,5 +1,6 @@
 .. _mongoc_transaction_opts_set_max_commit_time_ms:
 
+================================================
 mongoc_transaction_opts_set_max_commit_time_ms()
 ================================================
 

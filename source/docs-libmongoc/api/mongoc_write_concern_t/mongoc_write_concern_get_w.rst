@@ -1,5 +1,6 @@
 .. _mongoc_write_concern_get_w:
 
+============================
 mongoc_write_concern_get_w()
 ============================
 

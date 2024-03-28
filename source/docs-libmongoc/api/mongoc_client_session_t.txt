@@ -1,10 +1,11 @@
-.. _mongoc_client_session_t
-:tags: session
+.. _mongoc_client_session_t:
 
+=======================
 mongoc_client_session_t
 =======================
 
-Use a session for a sequence of operations, optionally with causal consistency. See `the MongoDB Manual Entry for Causal Consistency <https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency>`_.
+Use a session for a sequence of operations, optionally with causal consistency. See
+`the MongoDB Manual Entry for Causal Consistency <https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency>`__.
 
 Synopsis
 --------
@@ -13,7 +14,8 @@ Synopsis
 
 Fork Safety
 -----------
-A :ref:`mongoc_client_session_t` is only usable in the parent process after a fork. The child process must call :ref:`mongoc_client_reset` on the ``client`` field.
+A :ref:`mongoc_client_session_t` is only usable in the parent process after a fork.
+The child process must call :ref:`mongoc_client_reset` on the ``client`` field.
 
 Example
 -------

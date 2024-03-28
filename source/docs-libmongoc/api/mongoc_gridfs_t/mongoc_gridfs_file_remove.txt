@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_gridfs_file_remove (mongoc_gridfs_file_t *file, bson_error_t *error);
+   bool
+   mongoc_gridfs_file_remove (mongoc_gridfs_file_t *file, bson_error_t *error);
 
 Parameters
 ----------
@@ -26,7 +26,8 @@ Removes ``file`` and its data chunks from the MongoDB server.
 Returns
 -------
 
-Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid arguments or a server or network error.
+Returns ``true`` if successful. Returns ``false`` and sets ``error`` if there are invalid
+arguments or a server or network error.
 
 Errors
 ------

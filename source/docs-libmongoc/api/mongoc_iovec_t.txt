@@ -1,5 +1,6 @@
-.. _mongoc_iovec_t
+.. _mongoc_iovec_t:
 
+==============
 mongoc_iovec_t
 ==============
 
@@ -22,9 +23,12 @@ Synopsis
   typedef struct iovec mongoc_iovec_t;
   #endif
 
-The ``mongoc_iovec_t`` structure is a portability abstraction for consumers of the :ref:`mongoc_stream_t` interfaces. It allows for scatter/gather I/O through the socket subsystem.
+The ``mongoc_iovec_t`` structure is a portability abstraction for consumers of the
+:ref:`mongoc_stream_t` interfaces. It allows for scatter/gather I/O through the socket subsystem.
 
 .. warning::
 
-  When writing portable code, beware of the ordering of ``iov_len`` and ``iov_base`` as they are different on various platforms. Therefore, you should not use C initializers for initialization.
+   When writing portable code, beware of the ordering of ``iov_len`` and ``iov_base`` as
+   they are different on various platforms. Therefore, you should not use C initializers
+   for initialization.
 

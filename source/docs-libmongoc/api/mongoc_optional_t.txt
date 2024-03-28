@@ -1,5 +1,6 @@
-.. _mongoc_optional_t
+.. _mongoc_optional_t:
 
+=================
 mongoc_optional_t
 =================
 

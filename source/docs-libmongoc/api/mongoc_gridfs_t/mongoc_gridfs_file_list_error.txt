@@ -9,9 +9,9 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_gridfs_file_list_error (mongoc_gridfs_file_list_t *list,
-                                 bson_error_t *error);
+   bool
+   mongoc_gridfs_file_list_error (mongoc_gridfs_file_list_t *list,
+                                  bson_error_t *error);
 
 Parameters
 ----------

@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_gridfs_bucket_destroy (mongoc_gridfs_bucket_t *bucket);
+   void
+   mongoc_gridfs_bucket_destroy (mongoc_gridfs_bucket_t *bucket);
 
 Parameters
 ----------

@@ -1,5 +1,6 @@
-.. _mongoc_client_encryption_t
+.. _mongoc_client_encryption_t:
 
+==========================
 mongoc_client_encryption_t
 ==========================
 
@@ -16,12 +17,14 @@ Synopsis
 Thread Safety
 -------------
 
-:ref:`mongoc_client_encryption_t` is NOT thread-safe and should only be used in the same thread as the :ref:`mongoc_client_t` that is configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client()`.
+:ref:`mongoc_client_encryption_t` is NOT thread-safe and should only be used in the same
+thread as the :ref:`mongoc_client_t` that is configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client`.
 
 Lifecycle
 ---------
 
-The key vault client, configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client()`, must outlive the :ref:`mongoc_client_encryption_t`.
+The key vault client, configured via :ref:`mongoc_client_encryption_opts_set_keyvault_client`,
+must outlive the :ref:`mongoc_client_encryption_t`.
 
 Functions
 ---------
@@ -55,9 +58,9 @@ Functions
 
 .. seealso::
 
-  | :ref:`mongoc_client_enable_auto_encryption()`
+  | :ref:`mongoc_client_enable_auto_encryption`
 
-  | :ref:`mongoc_client_pool_enable_auto_encryption()`
+  | :ref:`mongoc_client_pool_enable_auto_encryption`
 
   | :ref:`in-use-encryption` for libmongoc
 

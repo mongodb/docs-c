@@ -1,5 +1,6 @@
 .. _mongoc_write_concern_set_wtimeout:
 
+===================================
 mongoc_write_concern_set_wtimeout()
 ===================================
 

@@ -9,15 +9,16 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_find_and_modify_opts_set_update (mongoc_find_and_modify_opts_t *opts,
-                                          const bson_t *update);
+   bool
+   mongoc_find_and_modify_opts_set_update (mongoc_find_and_modify_opts_t *opts,
+                                           const bson_t *update);
 
 Parameters
 ----------
 
 - ``opts``: A :ref:`mongoc_find_and_modify_opts_t`.
-- ``update``: The ``update`` document is the same format as the ``update`` document passed to :ref:`mongoc_collection_update`.
+- ``update``: The ``update`` document is the same format as the ``update`` document
+  passed to :ref:`mongoc_collection_update`.
 
 Description
 -----------
@@ -34,7 +35,7 @@ Returns ``true`` if it successfully added the option to the builder, otherwise `
 Setting update
 --------------
 
-.. literalinclude:: ../examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_UPDATE_BEGIN */
    :end-before: /* EXAMPLE_FAM_UPDATE_END */

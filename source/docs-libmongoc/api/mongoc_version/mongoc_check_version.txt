@@ -1,5 +1,6 @@
 .. _mongoc_check_version:
 
+======================
 mongoc_check_version()
 ======================
 

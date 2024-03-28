@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_index_opt_init (mongoc_index_opt_t *opt);
+   void
+   mongoc_index_opt_init (mongoc_index_opt_t *opt);
 
 Parameters
 ----------
@@ -20,5 +20,6 @@ Parameters
 Description
 -----------
 
-This function will initialize ``opt`` to the default values. It should be called before modifying any fields within the structure.
+This function will initialize ``opt`` to the default values. It should be called
+before modifying any fields within the structure.
 

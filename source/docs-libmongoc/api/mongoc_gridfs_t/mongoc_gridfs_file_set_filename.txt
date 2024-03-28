@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_gridfs_file_set_filename (mongoc_gridfs_file_t *file,
+   void
+   mongoc_gridfs_file_set_filename (mongoc_gridfs_file_t *file,
                                    const char *filename);
 
 Parameters
@@ -24,5 +24,5 @@ Description
 
 Sets the filename for ``file``.
 
-You need to call :ref:`mongoc_gridfs_file_save()` to persist this change.
+You need to call :ref:`mongoc_gridfs_file_save` to persist this change.
 

@@ -1,5 +1,6 @@
 .. _mongoc_uri_destroy:
 
+====================
 mongoc_uri_destroy()
 ====================
 

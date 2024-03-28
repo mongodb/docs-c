@@ -32,16 +32,18 @@ Description
 -----------
 
 Opens a stream for writing to a new file in GridFS. The file id is generated automatically.
-To specify an explicit file id, use :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id()`.
+To specify an explicit file id, use :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id`.
 
 Returns
 -------
 
-A :ref:`mongoc_stream_t` that can be written to or ``NULL`` on failure. Errors on this stream can be retrieved with :ref:`mongoc_gridfs_bucket_stream_error`. After calling :ref:`mongoc_stream_close` the file is completely written in GridFS.
+A :ref:`mongoc_stream_t` that can be written to or ``NULL`` on failure. Errors on this
+stream can be retrieved with :ref:`mongoc_gridfs_bucket_stream_error`. After calling
+:ref:`mongoc_stream_close` the file is completely written in GridFS.
 
 .. seealso::
 
-  | :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id()`
+  | :ref:`mongoc_gridfs_bucket_open_upload_stream_with_id`
 
-  | :ref:`mongoc_gridfs_bucket_stream_error()`
+  | :ref:`mongoc_gridfs_bucket_stream_error`
 

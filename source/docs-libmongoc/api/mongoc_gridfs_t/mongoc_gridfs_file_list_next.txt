@@ -9,9 +9,9 @@ Synopsis
 
 .. code-block:: c
 
-  mongoc_gridfs_file_t *
-  mongoc_gridfs_file_list_next (mongoc_gridfs_file_list_t *list)
-     BSON_GNUC_WARN_UNUSED_RESULT;
+   mongoc_gridfs_file_t *
+   mongoc_gridfs_file_list_next (mongoc_gridfs_file_list_t *list)
+      BSON_GNUC_WARN_UNUSED_RESULT;
 
 Parameters
 ----------
@@ -21,10 +21,12 @@ Parameters
 Description
 -----------
 
-This function shall iterate the underlying gridfs file list, returning the next file each iteration. This is a blocking function.
+This function shall iterate the underlying gridfs file list, returning the next file each
+iteration. This is a blocking function.
 
 Returns
 -------
 
-A newly allocated :ref:`mongoc_gridfs_file_t` that should be freed with :ref:`mongoc_gridfs_file_destroy()` when no longer in use.
+A newly allocated :ref:`mongoc_gridfs_file_t` that should be freed with :ref:`mongoc_gridfs_file_destroy`
+when no longer in use.
 

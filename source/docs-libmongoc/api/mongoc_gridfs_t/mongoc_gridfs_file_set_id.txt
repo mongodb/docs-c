@@ -9,15 +9,15 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_gridfs_file_set_id (mongoc_gridfs_file_t *file,
-                             const bson_value_t *id,
-                             bson_error_t error);
+   bool
+   mongoc_gridfs_file_set_id (mongoc_gridfs_file_t *file,
+                              const bson_value_t *id,
+                              bson_error_t error);
 
 Parameters
 ----------
 
-- ``file``: A :symbol:` mongoc_gridfs_file_t <mongoc_gridfs_file_t>`.
+- ``file``: A :ref:` mongoc_gridfs_file_t <mongoc_gridfs_file_t>`.
 - ``id``: A :ref:`bson_value_t`.
 - ``error``: A :ref:`bson_error_t`.
 

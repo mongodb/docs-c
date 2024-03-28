@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  int32_t
-  mongoc_gridfs_file_get_chunk_size (mongoc_gridfs_file_t *file);
+   int32_t
+   mongoc_gridfs_file_get_chunk_size (mongoc_gridfs_file_t *file);
 
 Parameters
 ----------

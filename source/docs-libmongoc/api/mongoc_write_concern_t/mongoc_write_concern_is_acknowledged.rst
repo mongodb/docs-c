@@ -1,5 +1,6 @@
 .. _mongoc_write_concern_is_acknowledged:
 
+======================================
 mongoc_write_concern_is_acknowledged()
 ======================================
 

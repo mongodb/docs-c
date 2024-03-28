@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  const char *
-  mongoc_gridfs_file_get_md5 (mongoc_gridfs_file_t *file);
+   const char *
+   mongoc_gridfs_file_get_md5 (mongoc_gridfs_file_t *file);
 
 Parameters
 ----------
