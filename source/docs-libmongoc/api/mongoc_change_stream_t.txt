@@ -1,5 +1,6 @@
-.. _mongoc_change_stream_t
+.. _mongoc_change_stream_t:
 
+======================
 mongoc_change_stream_t
 ======================
 
@@ -15,11 +16,14 @@ Synopsis
 :ref:`mongoc_change_stream_t` is a handle to a change stream. A collection
 change stream can be obtained using :ref:`mongoc_collection_watch`.
 
-It is recommended to use a :ref:`mongoc_change_stream_t` and its functions instead of a raw aggregation with a ``$changeStream`` stage. For more information see the `MongoDB Manual Entry on Change Streams <https://www.mongodb.com/docs/manual/changeStreams>`_.
+It is recommended to use a :ref:`mongoc_change_stream_t` and its functions instead of a
+raw aggregation with a ``$changeStream`` stage. For more information see the `MongoDB Manual Entry on Change Streams
+<https://www.mongodb.com/docs/manual/changeStreams>`__.
 
 Example
 -------
-.. literalinclude:: ../examples/example-collection-watch.c
+
+.. literalinclude:: ../includes/examples/example-collection-watch.c
    :language: c
    :caption: example-collection-watch.c
 

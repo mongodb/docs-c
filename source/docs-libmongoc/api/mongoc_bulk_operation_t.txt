@@ -1,5 +1,6 @@
-.. _mongoc_bulk_operation_t
+.. _mongoc_bulk_operation_t:
 
+=======================
 mongoc_bulk_operation_t
 =======================
 
@@ -10,15 +11,18 @@ Synopsis
 
 .. code-block:: c
 
-  typedef struct _mongoc_bulk_operation_t mongoc_bulk_operation_t;
+   typedef struct _mongoc_bulk_operation_t mongoc_bulk_operation_t;
 
-The opaque type ``mongoc_bulk_operation_t`` provides an abstraction for submitting multiple write operations as a single batch.
+The opaque type ``mongoc_bulk_operation_t`` provides an abstraction for submitting multiple
+write operations as a single batch.
 
-After adding all of the write operations to the ``mongoc_bulk_operation_t``, call :ref:`mongoc_bulk_operation_execute()` to execute the operation.
+After adding all of the write operations to the ``mongoc_bulk_operation_t``, call
+:ref:`mongoc_bulk_operation_execute` to execute the operation.
 
 .. warning::
 
-  It is only valid to call :ref:`mongoc_bulk_operation_execute()` once. The ``mongoc_bulk_operation_t`` must be destroyed afterwards.
+   It is only valid to call :ref:`mongoc_bulk_operation_execute` once. The ``mongoc_bulk_operation_t`` 
+   must be destroyed afterwards.
 
 .. seealso::
 

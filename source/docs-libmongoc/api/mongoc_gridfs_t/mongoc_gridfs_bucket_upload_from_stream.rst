@@ -33,11 +33,10 @@ Description
 -----------
 
 Reads from the ``source`` stream and writes to a new file in GridFS. The file id is generated automatically.
-To specify an explicit file id, use :ref:`mongoc_gridfs_bucket_upload_from_stream_with_id`.
+To specify an explicit file id, use :ref:`mongoc_gridfs_bucket_upload_from_stream_with_id()`.
 
-Reads from the ``source`` stream using :ref:`mongoc_stream_read` until the return value indicates end-of-file.
-The ``source`` stream is not closed after calling :ref:`mongoc_gridfs_bucket_upload_from_stream`; call
-:ref:`mongoc_stream_close` after.
+Reads from the ``source`` stream using :ref:`mongoc_stream_read()` until the return value indicates end-of-file.
+The ``source`` stream is not closed after calling :ref:`mongoc_gridfs_bucket_upload_from_stream()`; call :ref:`mongoc_stream_close()` after.
 
 Returns
 -------
@@ -46,6 +45,5 @@ True if the operation succeeded. False otherwise and sets ``error``.
 
 .. seealso::
 
-  | :ref:`mongoc_stream_file_new` and :ref:`mongoc_stream_file_new_for_path`, which can be used to create
-  | a source stream from a file.
+  | :ref:`mongoc_stream_file_new` and :ref:`mongoc_stream_file_new_for_path`, which can be used to create a source stream from a file.
 

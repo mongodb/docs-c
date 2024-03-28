@@ -28,4 +28,4 @@ Parameters
 - ``opts``: A :ref:`mongoc_session_opt_t`.
 - ``txn_opts``: A :ref:`mongoc_transaction_opt_t`.
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt

@@ -39,7 +39,7 @@ Parameters
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: includes/read-opts.txt
+.. include:: ../../includes/read-opts.txt
 
 Consult `the MongoDB Manual entry on Database Commands
 <https://www.mongodb.com/docs/manual/reference/command/>`__ for each command's arguments.

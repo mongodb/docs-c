@@ -20,4 +20,4 @@ Parameters
 - ``opts``: A :ref:`mongoc_transaction_opt_t`.
 - ``write_concern``: A :ref:`mongoc_write_concern_t`.
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt

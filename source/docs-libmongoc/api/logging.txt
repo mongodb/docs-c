@@ -52,7 +52,8 @@ Synopsis
   void
   mongoc_log_trace_disable (void);
 
-The MongoDB C driver comes with an abstraction for logging that you can use in your application, or integrate with an existing logging system.
+The MongoDB C driver comes with an abstraction for logging that you can use in your application,
+or integrate with an existing logging system.
 
 Macros
 ------
@@ -61,19 +62,20 @@ To make logging a little less painful, various helper macros are provided. See t
 
 .. code-block:: c
 
-  #undef MONGOC_LOG_DOMAIN
-  #define MONGOC_LOG_DOMAIN "my-custom-domain"
+   #undef MONGOC_LOG_DOMAIN
+   #define MONGOC_LOG_DOMAIN "my-custom-domain"
 
-  MONGOC_WARNING ("An error occurred: %s", strerror (errno));
+   MONGOC_WARNING ("An error occurred: %s", strerror (errno));
 
 .. _custom_log_handlers:
 
 Custom Log Handlers
 -------------------
 
-The default log handler prints a timestamp and the log message to ``stdout``, or to ``stderr`` for warnings, critical messages, and errors.
-    You can override the handler with ``mongoc_log_set_handler()``.
-    Your handler function is called in a mutex for thread safety.
+The default log handler prints a timestamp and the log message to ``stdout``, or to ``stderr``
+for warnings, critical messages, and errors.
+You can override the handler with ``mongoc_log_set_handler()``.
+Your handler function is called in a mutex for thread safety.
 
 For example, you could register a custom handler to suppress messages at INFO level and below:
 
@@ -110,7 +112,7 @@ To restore the default handler:
 
 .. code-block:: c
 
-  mongoc_log_set_handler (mongoc_log_default_handler, NULL);
+   mongoc_log_set_handler (mongoc_log_default_handler, NULL);
 
 Disable logging
 ---------------
@@ -124,7 +126,9 @@ To disable all logging, including warnings, critical messages and errors, provid
 Tracing
 -------
 
-If compiling your own copy of the MongoDB C driver, consider configuring with ``-DENABLE_TRACING=ON`` to enable function tracing and hex dumps of network packets to ``STDERR`` and ``STDOUT`` during development and debugging.
+If compiling your own copy of the MongoDB C driver, consider configuring with ``-DENABLE_TRACING=ON``
+to enable function tracing and hex dumps of network packets to ``STDERR`` and ``STDOUT`` during development
+and debugging.
 
 This is especially useful when debugging what may be going on internally in the driver.
 
@@ -132,5 +136,6 @@ Trace messages can be enabled and disabled by calling ``mongoc_log_trace_enable(
 
 .. note::
 
-        Compiling the driver with ``-DENABLE_TRACING=ON`` will affect its performance. Disabling tracing with ``mongoc_log_trace_disable()`` significantly reduces the overhead, but cannot remove it completely.
+   Compiling the driver with ``-DENABLE_TRACING=ON`` will affect its performance. Disabling tracing
+   with ``mongoc_log_trace_disable()`` significantly reduces the overhead, but cannot remove it completely.
 

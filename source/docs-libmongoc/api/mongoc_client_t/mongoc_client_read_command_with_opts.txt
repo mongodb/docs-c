@@ -22,12 +22,12 @@ Execute a command on the server, applying logic that is specific to commands tha
 taking the MongoDB server version into account. To send a raw command to the server without
 any of this logic, use :ref:`mongoc_client_command_simple`.
 
-.. include:: includes/read-cmd-opts-sources.txt
+.. include:: ../../includes/read-cmd-opts-sources.txt
 
 ``reply`` is always initialized, and must be freed with :ref:`bson_destroy`.
 
-.. include:: includes/retryable-read.txt
-.. include:: includes/retryable-read-command.txt
+.. include:: ../../includes/retryable-read.txt
+.. include:: ../../includes/retryable-read-command.txt
 
 Parameters
 ----------
@@ -40,7 +40,7 @@ Parameters
 - ``reply``: A maybe-NULL pointer to overwritable storage for a ``bson_t`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: includes/read-opts.txt
+.. include:: ../../includes/read-opts.txt
 
 Consult `the MongoDB Manual entry on Database Commands <https://www.mongodb.com/docs/manual/reference/command/>`__
 for each command's arguments.

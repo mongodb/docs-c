@@ -24,7 +24,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: includes/write-opts.txt
+.. include:: ../../includes/write-opts.txt
 
 Description
 -----------

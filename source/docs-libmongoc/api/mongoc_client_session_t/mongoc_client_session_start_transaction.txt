@@ -49,4 +49,4 @@ multi-document transaction despite network errors and other transient failures.
    :language: c
    :caption: example-transaction.c
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt

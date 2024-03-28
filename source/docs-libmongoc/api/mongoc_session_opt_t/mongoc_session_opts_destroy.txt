@@ -23,4 +23,4 @@ Example
 
 See the example code for :ref:`mongoc_session_opts_set_causal_consistency`.
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt

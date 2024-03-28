@@ -21,7 +21,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: includes/bulk-opts.txt
+.. include:: ../../includes/bulk-opts.txt
 
 Description
 -----------

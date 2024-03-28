@@ -24,7 +24,7 @@ This function is superseded by :ref:`mongoc_collection_command_with_opts`,
 :ref:`mongoc_collection_read_command_with_opts`, :ref:`mongoc_collection_write_command_with_opts`,
 and :ref:`mongoc_collection_read_write_command_with_opts`.
 
-.. include:: includes/not-retryable-read.txt
+.. include:: ../../includes/not-retryable-read.txt
 
 Parameters
 ----------
@@ -41,4 +41,4 @@ Parameters
 Returns
 -------
 
-.. include:: includes/returns-cursor.txt
+.. include:: ../../includes/returns-cursor.txt

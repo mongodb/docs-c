@@ -26,5 +26,5 @@ Returns
 
 If the session is in a transaction, a new :ref:`mongoc_transaction_opt_t` that must be freed with :ref:`mongoc_transaction_opts_destroy()`. Otherwise, ``NULL``.
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt
 

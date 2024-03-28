@@ -28,7 +28,7 @@ Parameters
 - ``document``: A :ref:`bson_t` containing the update document.
 - ``error``: A :ref:`bson_error_t` any errors that may have occurred.
 
-.. include:: includes/bulk-update-one-opts.txt
+.. include:: ../../includes/bulk-update-one-opts.txt
 
 .. warning::
 

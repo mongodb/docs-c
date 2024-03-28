@@ -25,7 +25,7 @@ Parameters
 - ``selector``: A :ref:`bson_t` that selects which document to remove.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: includes/bulk-remove-one-opts.txt
+.. include:: ../../includes/bulk-remove-one-opts.txt
 
 Errors
 ------

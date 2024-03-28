@@ -42,7 +42,7 @@ its return value.
 Returns
 -------
 
-.. include:: includes/returns-cursor.txt
+.. include:: ../../includes/returns-cursor.txt
 
 Examples
 --------

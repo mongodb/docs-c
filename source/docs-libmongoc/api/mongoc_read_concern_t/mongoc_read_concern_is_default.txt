@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_read_concern_is_default (mongoc_read_concern_t *read_concern);
+   bool
+   mongoc_read_concern_is_default (mongoc_read_concern_t *read_concern);
 
 Parameters
 ----------
@@ -20,4 +20,7 @@ Parameters
 Description
 -----------
 
-Returns true if ``read_concern`` has not been modified from the default. For example, if no "readConcern" option is set in the MongoDB URI and you have not called :ref:`mongoc_client_set_read_concern()`, then :ref:`mongoc_read_concern_is_default()` is true for the read concern returned by :ref:`mongoc_client_get_read_concern()`.
+Returns true if ``read_concern`` has not been modified from the default. For example, if no
+"readConcern" option is set in the MongoDB URI and you have not called :ref:`mongoc_client_set_read_concern`,
+then :ref:`mongoc_read_concern_is_default` is true for the read concern returned by
+:ref:`mongoc_client_get_read_concern`.

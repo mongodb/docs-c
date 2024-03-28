@@ -24,4 +24,4 @@ Returns
 
 A :ref:`mongoc_client_t` that should not be freed.
 
-.. include:: includes/seealso/session.txt
+.. include:: ../../includes/seealso/session.txt

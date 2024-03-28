@@ -16,7 +16,7 @@ Synopsis
 Fetches a cursor containing documents, each corresponding to a database on this
 MongoDB server.
 
-.. include:: includes/retryable-read.txt
+.. include:: ../../includes/retryable-read.txt
 
 Parameters
 ----------
@@ -24,7 +24,7 @@ Parameters
 - ``client``: A :ref:`mongoc_client_t`.
 - ``opts``: A :ref:`bson_t` containing additional options.
 
-.. include:: includes/generic-opts.txt
+.. include:: ../../includes/generic-opts.txt
 
 For a list of all options, see `the MongoDB Manual entry on the listDatabases command
 <https://www.mongodb.com/docs/manual/reference/command/listDatabases/>`__.
