@@ -10,4 +10,6 @@ the C driver.
 .. toctree::
    :maxdepth: 2
 
-   /tutorials/obtaining-libraries
+   /libmongoc/tutorials/obtaining-libraries
+
+- :ref:`obtaining_libraries`

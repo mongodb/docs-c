@@ -7,8 +7,9 @@ Reference
 .. toctree::
    :maxdepth: 1
 
-   /ref/packages
-   /ref/platforms
+   /libmongoc/ref/packages
+   /libmongoc/ref/platforms
     
-
+- :ref:`package-installation`
+- :ref:`platform-support`
     

@@ -157,16 +157,30 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /application-performance-monitoring/mongoc_apm_callbacks_t
-  /application-performance-monitoring/mongoc_apm_command_failed_t
-  /application-performance-monitoring/mongoc_apm_command_started_t
-  /application-performance-monitoring/mongoc_apm_command_succeeded_t
-  /application-performance-monitoring/mongoc_apm_server_changed_t
-  /application-performance-monitoring/mongoc_apm_server_closed_t
-  /application-performance-monitoring/mongoc_apm_server_heartbeat_failed_t
-  /application-performance-monitoring/mongoc_apm_server_heartbeat_started_t
-  /application-performance-monitoring/mongoc_apm_server_heartbeat_succeeded_t
-  /application-performance-monitoring/mongoc_apm_server_opening_t
-  /application-performance-monitoring/mongoc_apm_topology_changed_t
-  /application-performance-monitoring/mongoc_apm_topology_closed_t
-  /application-performance-monitoring/mongoc_apm_topology_opening_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_callbacks_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_command_failed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_command_started_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_command_succeeded_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_closed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_started_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_succeeded_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_opening_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_topology_changed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_topology_closed_t
+  /libmongoc/application-performance-monitoring/mongoc_apm_topology_opening_t
+
+- :ref:`mongoc_apm_callbacks_t`
+- :ref:`mongoc_apm_command_failed_t`
+- :ref:`mongoc_apm_command_started_t`
+- :ref:`mongoc_apm_command_succeeded_t`
+- :ref:`mongoc_apm_server_changed_t`
+- :ref:`mongoc_apm_server_closed_t`
+- :ref:`mongoc_apm_server_heartbeat_failed_t`
+- :ref:`mongoc_apm_server_heartbeat_started_t`
+- :ref:`mongoc_apm_server_heartbeat_succeeded_t`
+- :ref:`mongoc_apm_server_opening_t`
+- :ref:`mongoc_apm_topology_changed_t`
+- :ref:`mongoc_apm_topology_closed_t`
+- :ref:`mongoc_apm_topology_opening_t`
