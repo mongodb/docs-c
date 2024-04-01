@@ -19,7 +19,7 @@ libbson
    :titlesonly:
    :maxdepth: 1
 
-   /libbson/tutorial
+   /libbson/tutorials
    /libbson/guides
    /libbson/cross-platform-notes
    /libbson/api
