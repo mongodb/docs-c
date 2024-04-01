@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_optional_value (const mongoc_optional_t *opt);
+   bool
+   mongoc_optional_value (const mongoc_optional_t *opt);
 
 Returns the value for a :ref:`mongoc_optional_t`.
 

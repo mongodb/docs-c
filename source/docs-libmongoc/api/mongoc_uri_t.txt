@@ -176,7 +176,7 @@ Connection Options
    Setting any of the \*timeoutMS options above to either ``0`` or a negative value is discouraged due to unspecified and inconsistent behavior.
    The "default value" historically specified as a fallback for ``0`` or a negative value is NOT related to the default values for the \*timeoutMS options documented above.
    The meaning of a timeout of ``0`` or a negative value may vary depending on the operation being executed, even when specified by the same URI option.
-   To specify the documented default value for a \*timeoutMS option, use the `MONGOC_DEFAULT_*` constants defined in ``mongoc-client.h`` instead.
+   To specify the documented default value for a \*timeoutMS option, use the ``MONGOC_DEFAULT_*`` constants defined in ``mongoc-client.h`` instead.
 
 Authentication Options
 ----------------------
@@ -400,7 +400,7 @@ Write Concern Options
   * - | MONGOC_URI_W
     - | w
     - | Determines the write concern (guarantee). Valid values:
-
+     
         **0** = The driver will not acknowledge write operations but will pass or handle any network and socket errors
         that it receives to the client. If you disable write concern but enable the getLastError command's w option,
         w overrides the w option.
@@ -423,7 +423,7 @@ Write Concern Options
   * - | MONGOC_URI_JOURNAL
     - | journal
     - | Controls whether write operations will wait until the mongod acknowledges the write operations and commits the data to the on disk journal.
-  
+      
         **true** = Enables journal commit acknowledgement write concern. Equivalent to specifying the getLastError command with the j option enabled.
         **false** = Does not require that mongod commit write operations to the journal before acknowledging the write operation. This is the default option
         for the journal parameter.

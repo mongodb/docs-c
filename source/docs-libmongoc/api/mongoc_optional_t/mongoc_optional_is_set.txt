@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_optional_is_set (const mongoc_optional_t *opt);
+   bool
+   mongoc_optional_is_set (const mongoc_optional_t *opt);
 
 Returns whether a value for a :ref:`mongoc_optional_t` was set.
 

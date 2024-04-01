@@ -1,8 +1,8 @@
 .. _queryable-encryption:
 
-####################
+====================
 Queryable Encryption
-####################
+====================
 
 Using Queryable Encryption requires MongoDB Server 7.0 or higher.
 
@@ -31,5 +31,5 @@ when using the incompatible protocol.
 
 .. seealso::
 
-    | The MongoDB Manual for `Queryable Encryption <https://www.mongodb.com/docs/manual/core/queryable-encryption/>`_
+   | The MongoDB Manual for `Queryable Encryption <https://www.mongodb.com/docs/manual/core/queryable-encryption/>`_
     

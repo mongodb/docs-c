@@ -15,10 +15,12 @@ then open Visual Studio, select "File -> New -> Project...", and
 create a new Win32 Console Application.
 
 .. figure:: ../static/msvc-create-project.png
+   :alt: Create a New Project
 
 Remember to switch the platform from 32-bit to 64-bit:
 
 .. figure:: ../static/msvc-switch-architecture.png
+   :alt: Switch Platform
 
 Right-click on your console application in the Solution Explorer and select "Properties".
 Choose to edit properties for "All Configurations", expand the "C/C++" options and choose
@@ -30,6 +32,7 @@ Choose to edit properties for "All Configurations", expand the "C/C++" options a
   C:\mongo-c-driver\include\libmongoc-1.0
 
 .. figure:: ../static/msvc-add-include-directories.png
+   :alt: Include Directories
 
 (If you chose a different ``$PREFIX``
 :ref:`when you installed mongo-c-driver <howto.source-install.choosing-a-prefix>`,
@@ -44,6 +47,7 @@ the "Additional Dependencies" these libraries:
    C:\mongo-c-driver\lib\mongoc-1.0.lib
 
 .. figure:: ../static/msvc-add-dependencies.png
+   :alt: Add Dependencies
 
 Adding these libraries as dependencies provides linker symbols to build your application,
 but to actually run it, libbson's and libmongoc's DLLs must be in your executable path. Select
@@ -54,6 +58,7 @@ but to actually run it, libbson's and libmongoc's DLLs must be in your executabl
   PATH=c:/mongo-c-driver/bin
 
 .. figure:: ../static/msvc-set-path.png
+   :alt: Set Path
 
 Finally, include "mongoc/mongoc.h" in your project's "stdafx.h":
 
@@ -79,6 +84,7 @@ them with these libraries:
   BCrypt.lib
 
 .. figure:: ../static/msvc-add-dependencies-static.png
+   :alt: Add Dependencies (static)
 
 (To explain the purpose of each library: ``bson-static-1.0.lib`` and ``mongoc-static-1.0.lib`` are
 static archives of the driver code. The socket library ``ws2_32`` is required by libbson, which uses the

@@ -184,7 +184,7 @@ X.509 Certificate Authentication
 --------------------------------
 
 .. note::
-
+   
    The MongoDB C Driver must be compiled with TLS support for X.509 authentication support. Once this is done,
    start a server with the following options:
 

@@ -9,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_optional_init (mongoc_optional_t *opt);
+   void
+   mongoc_optional_init (mongoc_optional_t *opt);
 
 Initializes values for a :ref:`mongoc_optional_t`.
 

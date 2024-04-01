@@ -66,7 +66,7 @@ metadata.
       .. seealso::
 
          For detailed information on package lookup, refer to CMake's
-         `search procedure <https://cmake.org/cmake/help/latest/command/find_package.html#search-procedure>`
+         `search procedure <https://cmake.org/cmake/help/latest/command/find_package.html#search-procedure>`__
          section for full details.
 
    .. tab:: pkg-config Package Lookup
@@ -139,7 +139,7 @@ unprivileged filesystem location particular to the user account.
    .. tab:: Linux & Other Unixes
       :tabid: linux
 
-      On Linux and BSD systems, it is common to use the `$HOME/.local` directory
+      On Linux and BSD systems, it is common to use the ``$HOME/.local`` directory
       as the prefix for user-specific package installations. This convention
       originates in the `XDG base directory <https://wiki.archlinux.org/title/XDG_Base_Directory>`__
       specification and the `systemd file-hierarchy <https://man.archlinux.org/man/file-hierarchy.7>`__
@@ -235,9 +235,9 @@ CMake using the ``cmake --install subcommand <cmake.--install>`` option:
    If you chose to use a system-wide installation ``$PREFIX``, it is possible that
    you will need to execute the installation as a privileged user. If you *cannot
    run* or *do not want to run* the installation as a privileged user, you should
-   instead `use a per-user installation prefix <per-user-prefix_>`_.
+   instead :ref:`use a per-user installation prefix <per-user-prefix>`.
 
-.. hint::
+.. tip::
 
    It is not necessary to set a ``CMAKE_INSTALL_PREFIX`` if you use the
    ``--prefix <cmake--install.--prefix>`` command-line option with

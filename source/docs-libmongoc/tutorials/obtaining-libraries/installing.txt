@@ -23,15 +23,15 @@ management repositories of :ref:`common Linux distributions <installing.linux>` 
   by using a from-source library package management tool such as `Conan <https://conan.io/>`_ or
   `vcpkg <https://vcpkg.io/>`_ (See: :ref:`installing.pkgman`).
 
-.. caution::
+.. warning::
 
-  If you install and use prebuilt binaries from a third-party packager, it is
-  possible that it lags behind the version of the libraries described in these
-  documentation pages ({+version+}). Note the version that you install and keep it
-  in mind when reading these pages.
+   If you install and use prebuilt binaries from a third-party packager, it is
+   possible that it lags behind the version of the libraries described in these
+   documentation pages ({+version+}). Note the version that you install and keep it
+   in mind when reading these pages.
 
-  For the most up-to-date versions of the C driver libraries, prefer to instead
-  :ref:`build from source <build-libraries>`.
+   For the most up-to-date versions of the C driver libraries, prefer to instead
+   :ref:`build from source <build-libraries>`.
 
 .. seealso::
 
@@ -130,7 +130,7 @@ distributions, but generally follows a similar pattern.
 
 The following Linux distributions provide ``libbson`` and ``libmongoc`` packages:
 
-- :ref:`Fedora <redhat>` via `dnf`
+- :ref:`Fedora <redhat>` via ``dnf``
 - :ref:`RedHat Enterprise Linux (RHEL) 7 and Newer <redhat>` and distributions
   based on RHEL 7 or newer, including
   CentOS, Rocky Linux, and AlmaLinux, via ``yum`` / ``dnf`` and EPEL.
@@ -152,7 +152,7 @@ In RedHat-based Linux distributions, including **Fedora**, **CentOS**,
 Yum/DNF.
 
 .. note::
-
+   
    For Fedora and enterprise Linux of version 8 or greater, it is recommended to
    use the ``dnf`` command in place of any ``yum`` command.
 
@@ -223,7 +223,7 @@ To install ``libmongoc`` (which will also install ``libbson``):
 
 To check which version is available, run ``apt-cache policy libmongoc-dev``.
 
-The development packages (ending in `-dev`) include files required to build applications using
+The development packages (ending in ``-dev``) include files required to build applications using
 ``libbson`` and ``libmongoc``. To only install the libraries without development files, install
 the ``libbson-1.0-0`` or ``libmongoc-1.0-0`` packages.
 

@@ -104,7 +104,7 @@ Error code from server: https://github.com/mongodb/mongo/blob/master/src/mongo/b
   * - | ``MONGOC_ERROR_BSON``
     - | ``MONGOC_ERROR_BSON_INVALID``
     - | You passed an invalid or oversized BSON document as a parameter, or called :ref:`mongoc_collection_create_index`
-      with invalid keys, or the server reply was corrupt.
+        with invalid keys, or the server reply was corrupt.
   
   * - ``MONGOC_ERROR_NAMESPACE``
     -  ``MONGOC_ERROR_NAMESPACE_INVALID``
@@ -129,7 +129,7 @@ Error code from server: https://github.com/mongodb/mongo/blob/master/src/mongo/b
   * - | 
     - | ``MONGOC_ERROR_SERVER_SELECTION_INVALID_ID``
     - | The ``serverId`` option for an operation conflicts with the pinned server for that operation's
-      client session (denoted by the ``sessionId`` option)
+        client session (denoted by the ``sessionId`` option)
   
   * - ``MONGOC_ERROR_COMMAND``
     -  :github:`Error code from server <mongodb/mongo/blob/master/src/mongo/base/error_codes.yml>`.
@@ -193,7 +193,7 @@ Error code from server: https://github.com/mongodb/mongo/blob/master/src/mongo/b
   * - | ``MONGOC_ERROR_WRITE_CONCERN``
     - | :github:`Error code from server <mongodb/mongo/blob/master/src/mongo/base/error_codes.yml>`.
     - | There was a :ref:`write concern error <mongoc_write_concern_t>` or :ref:`timeout <mongoc_write_concern_set_wtimeout>`
-      from the server.
+        from the server.
   
   * - ``MONGOC_ERROR_TRANSACTION``
     -  ``MONGOC_ERROR_TRANSACTION_INVALID``

@@ -141,7 +141,7 @@ documents. There are several ways to construct them: appending key-value pairs, 
 Appending BSON
 ~~~~~~~~~~~~~~
 
-A BSON document, represented as a :doc:`bson_t <bson_t>` in code, can be constructed one field at a time using
+A BSON document, represented as a :ref:`bson_t <bson_t>` in code, can be constructed one field at a time using
 libbson's append functions.
 
 For example, to create a document like this:

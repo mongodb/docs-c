@@ -17,14 +17,14 @@ It depends on :ref:`libbson` to generate and parse BSON documents, the native da
 .. toctree::
    :maxdepth: 2
 
-   tutorials
-   howto
-   ref
-   tutorial
-   authentication
-   basic-troubleshooting
-   guides
-   api
-   application-performance-monitoring
+   /tutorials
+   /howto
+   /ref
+   /tutorial
+   /authentication
+   /basic-troubleshooting
+   /guides
+   /api
+   /application-performance-monitoring
 
 
