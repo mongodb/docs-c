@@ -9,6 +9,6 @@ There are a few methods of obtaining the ``mongo-c-driver`` codebase:
 .. toctree::
     :maxdepth: 1
 
-    /obtaining-libraries/from-source
-    /obtaining-libraries/installing
-    /obtaining-libraries/docs
+    /libmongoc/tutorials/obtaining-libraries/from-source
+    /libmongoc/tutorials/obtaining-libraries/installing
+    /libmongoc/tutorials/obtaining-libraries/docs

@@ -63,6 +63,7 @@ toc_landing_pages = [
     "/libmongoc/howto",
     "/libmongoc/ref",
     "/libmongoc/tutorials",
+    "/libmongoc/tutorials/obtaining-libraries",
 ]
 
 [constants]
