@@ -79,8 +79,8 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   /bson_value_t/bson_value_copy
-   /bson_value_t/bson_value_destroy
+   /libbson/api/bson_value_t/bson_value_copy
+   /libbson/api/bson_value_t/bson_value_destroy
 
 Example
 -------

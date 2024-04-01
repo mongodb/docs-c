@@ -23,7 +23,7 @@ Description
 
 The :ref:`bson_as_json` function shall encode ``bson`` as a UTF-8 string using
 libbson's legacy JSON format. This function is superseded by :ref:`bson_as_canonical_extended_json`
-and :ref:`bson_as_relaxed_extended_json`, which use the same `MongoDB Extended JSON format`_
+and :ref:`bson_as_relaxed_extended_json`, which use the same `MongoDB Extended JSON format <https://github.com/mongodb/specifications/blob/master/source/extended-json.rst>`_
 as all other MongoDB drivers.
 
 The caller is responsible for freeing the resulting UTF-8 encoded string by calling
@@ -65,6 +65,3 @@ Example
    }
 
 .. include:: ../../includes/seealso/bson-as-json.rst
-
-.. _MongoDB Extended JSON format: https://github.com/mongodb/specifications/blob/master/source/extended-json.rst
-

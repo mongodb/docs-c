@@ -41,7 +41,7 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_ssl_opt_get_default
+  /libmongoc/api/mongoc_ssl_opt_get_default
 
 .. seealso::
 

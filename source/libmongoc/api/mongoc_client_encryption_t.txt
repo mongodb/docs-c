@@ -33,26 +33,26 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-   /mongoc_client_encryption_t/mongoc_client_encryption_new
-   /mongoc_client_encryption_t/mongoc_client_encryption_destroy
-   /mongoc_client_encryption_t/mongoc_client_encryption_create_datakey
-   /mongoc_client_encryption_t/mongoc_client_encryption_create_encrypted_collection
-   /mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey
-   /mongoc_client_encryption_t/mongoc_client_encryption_delete_key
-   /mongoc_client_encryption_t/mongoc_client_encryption_get_crypt_shared_version
-   /mongoc_client_encryption_t/mongoc_client_encryption_get_key
-   /mongoc_client_encryption_t/mongoc_client_encryption_get_keys
-   /mongoc_client_encryption_t/mongoc_client_encryption_add_key_alt_name
-   /mongoc_client_encryption_t/mongoc_client_encryption_remove_key_alt_name
-   /mongoc_client_encryption_t/mongoc_client_encryption_get_key_by_alt_name
-   /mongoc_client_encryption_t/mongoc_client_encryption_encrypt
-   /mongoc_client_encryption_t/mongoc_client_encryption_encrypt_expression
-   /mongoc_client_encryption_t/mongoc_client_encryption_decrypt
-   /mongoc_client_encryption_t/mongoc_client_encryption_datakey_opts_t
-   /mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey_result_t
-   /mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_t
-   /mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_t
-   /mongoc_client_encryption_t/mongoc_client_encryption_opts_t
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_new
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_destroy
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_create_datakey
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_create_encrypted_collection
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_delete_key
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_get_crypt_shared_version
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_get_key
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_get_keys
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_add_key_alt_name
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_remove_key_alt_name
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_get_key_by_alt_name
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_expression
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_decrypt
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_datakey_opts_t
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey_result_t
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_t
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_t
+   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_opts_t
    
 
 
