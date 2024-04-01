@@ -36,9 +36,7 @@ toc_landing_pages = [
     "/source/docs-libmongoc/application-performance-monitoring",
     "/source/docs-libmongoc/guides",
     "/source/docs-libmongoc/howto",
-    "/source/docs-libmongoc/includes",
     "/source/docs-libmongoc/ref",
-    "/source/docs-libmongoc/static",
     "/source/docs-libmongoc/tutorials",
 ]
 
