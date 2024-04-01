@@ -14,3 +14,10 @@ Tutorial
    /tutorials/oid
    /tutorials/parsing
    /tutorials/utf8
+
+- :ref:`bson_include_and_link`
+- :ref:`bson_creating`
+- :ref:`bson_errors`
+- :ref:`bson_oid`
+- :ref:`bson_parsing`
+- :ref:`bson_utf8`

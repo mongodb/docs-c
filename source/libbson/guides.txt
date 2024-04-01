@@ -10,3 +10,7 @@ Guides
    /guides/streaming-bson
    /guides/json
    /guides/lifetimes
+
+- :ref:`bson_streaming_bson`
+- :ref:`bson_json`
+- :ref:`bson_lifetimes`

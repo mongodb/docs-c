@@ -26,3 +26,24 @@ API Reference
    /api/bson_get_monotonic_time
    /api/bson_memory
    /api/version
+
+- :ref:`bson_t`
+- :ref:`bson_array_builder_t`
+- :ref:`bson_context_t`
+- :ref:`bson_decimal128_t`
+- :ref:`bson_error_t`
+- :ref:`bson_iter_t`
+- :ref:`bson_json_reader_t`
+- :ref:`bson_oid_t`
+- :ref:`bson_reader_t`
+- :ref:`bson_character_and_string_routines`
+- :ref:`bson_string_t`
+- :ref:`bson_subtype_t`
+- :ref:`bson_type_t`
+- :ref:`bson_unichar_t`
+- :ref:`bson_value_t`
+- :ref:`bson_visitor_t`
+- :ref:`bson_writer_t`
+- :ref:`bson_get_monotonic_time`
+- :ref:`bson_memory`
+- :ref:`bson_version`
