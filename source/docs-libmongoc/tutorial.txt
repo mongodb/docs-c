@@ -1,5 +1,6 @@
-.. _mongoc_tutorial
+.. _mongoc_tutorial:
 
+========
 Tutorial
 ========
 
@@ -11,18 +12,20 @@ Tutorial
    
 This guide offers a brief introduction to the MongoDB C Driver.
 
-For more information on the C API, please refer to the :doc:`api`.
+For more information on the C API, please refer to the :ref:`api`.
 
 
 Installing
 ----------
 
-For detailed instructions on installing the MongoDB C Driver on a particular platform, please see the :doc:`installation guide <installing>`.
+For detailed instructions on installing the MongoDB C Driver on a particular platform, please see
+the :ref:`installation guide <installing>`.
 
 Starting MongoDB
 ----------------
 
-To run the examples in this tutorial, MongoDB must be installed and running on ``localhost`` on the default port, 27017. To check if it is up and running, connect to it with the MongoDB shell.
+To run the examples in this tutorial, MongoDB must be installed and running on ``localhost`` on the
+default port, 27017. To check if it is up and running, connect to it with the MongoDB shell.
 
 .. code-block:: none
 
@@ -35,7 +38,7 @@ Include and link libmongoc in your C program
 --------------------------------------------
 
 Include mongoc.h
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 All libmongoc's functions and types are available in one header file. Simply include ``mongoc/mongoc.h``:
 
@@ -44,40 +47,38 @@ All libmongoc's functions and types are available in one header file. Simply inc
   #include <mongoc/mongoc.h>
 
 CMake
-'''''
+~~~~~
 
-The libmongoc installation includes a `CMake config-file package`_, so you can use CMake's `find_package`_ command to import libmongoc's CMake target and link to libmongoc (as a shared library):
+The libmongoc installation includes a `CMake config-file package <https://cmake.org/cmake/help/latest/manual/cmake-packages.7.html#config-file-packages>`_,
+so you can use CMake's `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_
+command to import libmongoc's CMake target and link to libmongoc (as a shared library):
 
-.. literalinclude:: ../examples/cmake/find_package/CMakeLists.txt
+.. literalinclude:: includes/examples/cmake/find_package/CMakeLists.txt
   :caption: CMakeLists.txt
   :start-after: -- sphinx-include-start --
 
 You can also use libmongoc as a static library instead: Use the ``mongo::mongoc_static`` CMake target:
 
-.. literalinclude:: ../examples/cmake/find_package_static/CMakeLists.txt
+.. literalinclude:: includes/examples/cmake/find_package_static/CMakeLists.txt
   :start-after: -- sphinx-include-start --
   :emphasize-lines: 2
 
-.. _CMake config-file package: https://cmake.org/cmake/help/latest/manual/cmake-packages.7.html#config-file-packages
-.. _find_package: https://cmake.org/cmake/help/latest/command/find_package.html
-
 pkg-config
-''''''''''
+~~~~~~~~~~
 
-If you're not using CMake, use `pkg-config`_ on the command line to set header and library paths:
+If you're not using CMake, use `pkg-config <https://www.freedesktop.org/wiki/Software/pkg-config/>`_
+on the command line to set header and library paths:
 
-.. literalinclude:: ../examples/compile-with-pkg-config.sh
+.. literalinclude:: includes/examples/compile-with-pkg-config.sh
   :start-after: -- sphinx-include-start --
 
 Or to statically link to libmongoc:
 
-.. literalinclude:: ../examples/compile-with-pkg-config-static.sh
+.. literalinclude:: includes/examples/compile-with-pkg-config-static.sh
   :start-after: -- sphinx-include-start --
 
-.. _pkg-config: https://www.freedesktop.org/wiki/Software/pkg-config/
-
 Specifying header and include paths manually
-''''''''''''''''''''''''''''''''''''''''''''
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you aren't using CMake or pkg-config, paths and libraries can be managed manually.
 
@@ -89,7 +90,8 @@ If you aren't using CMake or pkg-config, paths and libraries can be managed manu
   $ ./hello_mongoc
   { "ok" : 1.000000 }
 
-For Windows users, the code can be compiled and run with the following commands. (This assumes that the MongoDB C Driver has been installed to ``C:\mongo-c-driver``; change the include directory as needed.)
+For Windows users, the code can be compiled and run with the following commands. (This assumes that the
+MongoDB C Driver has been installed to ``C:\mongo-c-driver``; change the include directory as needed.)
 
 .. code-block:: none
 
@@ -102,22 +104,30 @@ For Windows users, the code can be compiled and run with the following commands.
 Use libmongoc in a Microsoft Visual Studio Project
 --------------------------------------------------
 
-See the :doc:`libmongoc and Visual Studio guide <visual-studio-guide>`.
+See the :ref:`libmongoc and Visual Studio guide <visual-studio-guide>`.
 
 .. _making-a-connection:
 
 Making a Connection
 -------------------
 
-Access MongoDB with a :ref:`mongoc_client_t`. It transparently connects to standalone servers, replica sets and sharded clusters on demand. To perform operations on a database or collection, create a :ref:`mongoc_database_t` or :ref:`mongoc_collection_t` struct from the :ref:`mongoc_client_t`.
+Access MongoDB with a :ref:`mongoc_client_t`. It transparently connects to standalone servers, replica sets
+and sharded clusters on demand. To perform operations on a database or collection, create a :ref:`mongoc_database_t`
+or :ref:`mongoc_collection_t` struct from the :ref:`mongoc_client_t`.
 
-At the start of an application, call :ref:`mongoc_init` before any other libmongoc functions. At the end, call the appropriate destroy function for each collection, database, or client handle, in reverse order from how they were constructed. Call :ref:`mongoc_cleanup` before exiting.
+At the start of an application, call :ref:`mongoc_init` before any other libmongoc functions. At the end, call
+the appropriate destroy function for each collection, database, or client handle, in reverse order from how they
+were constructed. Call :ref:`mongoc_cleanup` before exiting.
 
-The example below establishes a connection to a standalone server on ``localhost``, registers the client application as "connect-example," and performs a simple command.
+The example below establishes a connection to a standalone server on ``localhost``, registers the client application
+as "connect-example," and performs a simple command.
 
-More information about database operations can be found in the :ref:`CRUD Operations <tutorial_crud_operations>` and :ref:`Executing Commands <tutorial_executing_commands>` sections. Examples of connecting to replica sets and sharded clusters can be found in the :doc:`Advanced Connections <advanced-connections>` page, while examples of data compression can be found in the :doc:`Data Compression <data-compression>` page.
+More information about database operations can be found in the :ref:`CRUD Operations <tutorial_crud_operations>`
+and :ref:`Executing Commands <tutorial_executing_commands>` sections. Examples of connecting to replica sets and
+sharded clusters can be found in the :ref:`Advanced Connections <mongoc_advanced_connections>` page, while examples of
+data compression can be found in the :ref:`Data Compression <mongoc_data_compression>` page.
 
-.. literalinclude:: ../examples/hello_mongoc.c
+.. literalinclude:: includes/examples/hello_mongoc.c
   :caption: hello_mongoc.c
   :language: c
   :start-after: -- sphinx-include-start --
@@ -125,12 +135,14 @@ More information about database operations can be found in the :ref:`CRUD Operat
 Creating BSON Documents
 -----------------------
 
-Documents are stored in MongoDB's data format, BSON. The C driver uses :doc:`libbson <bson:index>` to create BSON documents. There are several ways to construct them: appending key-value pairs, using BCON, or parsing JSON.
+Documents are stored in MongoDB's data format, BSON. The C driver uses :ref:`libbson <libbson>` to create BSON
+documents. There are several ways to construct them: appending key-value pairs, using BCON, or parsing JSON.
 
 Appending BSON
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
-A BSON document, represented as a :doc:`bson_t <bson_t>` in code, can be constructed one field at a time using libbson's append functions.
+A BSON document, represented as a :doc:`bson_t <bson_t>` in code, can be constructed one field at a time using
+libbson's append functions.
 
 For example, to create a document like this:
 
@@ -149,14 +161,15 @@ For example, to create a document like this:
 
 Use the following code:
 
-.. literalinclude:: ../examples/tutorial/appending.c
+.. literalinclude:: includes/examples/tutorial/appending.c
 
-See the :doc:`libbson documentation <bson_t>` for all of the types that can be appended to a :ref:`bson_t`.
+See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a :ref:`bson_t`.
 
 Using BCON
-^^^^^^^^^^
+~~~~~~~~~~
 
-*BSON C Object Notation*, BCON for short, is an alternative way of constructing BSON documents in a manner closer to the intended format. It has less type-safety than BSON's append functions but results in less code.
+*BSON C Object Notation*, BCON for short, is an alternative way of constructing BSON documents in a manner 
+closer to the intended format. It has less type-safety than BSON's append functions but results in less code.
 
 .. code-block:: c
 
@@ -213,9 +226,9 @@ Using BCON
 Notice that BCON can create arrays, subdocuments and arbitrary fields.
 
 Creating BSON from JSON
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
-For *single* documents, BSON can be created from JSON strings via :doc:`bson_new_from_json <bson_new_from_json>`.
+For *single* documents, BSON can be created from JSON strings via :ref:`bson_new_from_json <bson_new_from_json>`.
 
 .. code-block:: c
 
@@ -244,7 +257,7 @@ For *single* documents, BSON can be created from JSON strings via :doc:`bson_new
      return 0;
   }
 
-To initialize BSON from a sequence of JSON documents, use :doc:`bson_json_reader_t <bson_json_reader_t>`.
+To initialize BSON from a sequence of JSON documents, use :ref:`bson_json_reader_t <bson_json_reader_t>`.
 
 .. _tutorial_crud_operations:
 
@@ -254,9 +267,11 @@ Basic CRUD Operations
 This section demonstrates the basics of using the C Driver to interact with MongoDB.
 
 Inserting a Document
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
-To insert documents into a collection, first obtain a handle to a ``mongoc_collection_t`` via a ``mongoc_client_t``. Then, use :ref:`mongoc_collection_insert_one` to add BSON documents to the collection. This example inserts into the database "mydb" and collection "mycoll".
+To insert documents into a collection, first obtain a handle to a ``mongoc_collection_t`` via a
+``mongoc_client_t``. Then, use :ref:`mongoc_collection_insert_one` to add BSON documents to the collection.
+This example inserts into the database "mydb" and collection "mycoll".
 
 When finished, ensure that allocated structures are freed by using their respective destroy functions.
 
@@ -301,21 +316,21 @@ When finished, ensure that allocated structures are freed by using their respect
 
 Compile the code and run it:
 
-.. code-block:: none
+.. code-block:: bash
 
   $ gcc -o insert insert.c $(pkg-config --cflags --libs libmongoc-1.0)
   $ ./insert
 
 On Windows:
 
-.. code-block:: none
+.. code-block:: bash
 
   C:\> cl.exe /IC:\mongo-c-driver\include\libbson-1.0 /IC:\mongo-c-driver\include\libmongoc-1.0 insert.c
   C:\> insert
 
 To verify that the insert succeeded, connect with the MongoDB shell.
 
-.. code-block:: none
+.. code-block:: bash
 
   $ mongo
   MongoDB shell version: 3.0.6
@@ -329,9 +344,11 @@ To verify that the insert succeeded, connect with the MongoDB shell.
 .. _tutorial_find:
 
 Finding a Document
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
-To query a MongoDB collection with the C driver, use the function :doc:`mongoc_collection_find_with_opts() <mongoc_collection_find_with_opts>`. This returns a :doc:`cursor <mongoc_cursor_t>` to the matching documents. The following examples iterate through the result cursors and print the matches to ``stdout`` as JSON strings.
+To query a MongoDB collection with the C driver, use the function :ref:`mongoc_collection_find_with_opts()
+<mongoc_collection_find_with_opts>`. This returns a :ref:`cursor <mongoc_cursor_t>` to the matching documents.
+The following examples iterate through the result cursors and print the matches to ``stdout`` as JSON strings.
 
 Use a document as a query specifier; for example,
 
@@ -384,7 +401,7 @@ This first example uses an empty query specifier to find all documents in the da
 
 Compile the code and run it:
 
-.. code-block:: none
+.. code-block:: bash
 
   $ gcc -o find find.c $(pkg-config --cflags --libs libmongoc-1.0)
   $ ./find
@@ -392,13 +409,14 @@ Compile the code and run it:
 
 On Windows:
 
-.. code-block:: none
+.. code-block:: bash
 
   C:\> cl.exe /IC:\mongo-c-driver\include\libbson-1.0 /IC:\mongo-c-driver\include\libmongoc-1.0 find.c
   C:\> find
   { "_id" : { "$oid" : "55ef43766cb5f36a3bae6ee4" }, "hello" : "world" }
 
-To look for a specific document, add a specifier to ``query``. This example adds a call to ``BSON_APPEND_UTF8()`` to look for all documents matching ``{"hello" : "world"}``.
+To look for a specific document, add a specifier to ``query``. This example adds a call to ``BSON_APPEND_UTF8()``
+to look for all documents matching ``{"hello" : "world"}``.
 
 .. code-block:: c
 
@@ -441,24 +459,26 @@ To look for a specific document, add a specifier to ``query``. This example adds
      return 0;
   }
 
-.. code-block:: none
+.. code-block:: bash
 
   $ gcc -o find-specific find-specific.c $(pkg-config --cflags --libs libmongoc-1.0)
   $ ./find-specific
   { "_id" : { "$oid" : "55ef43766cb5f36a3bae6ee4" }, "hello" : "world" }
 
-.. code-block:: none
+.. code-block:: bash
 
   C:\> cl.exe /IC:\mongo-c-driver\include\libbson-1.0 /IC:\mongo-c-driver\include\libmongoc-1.0 find-specific.c
   C:\> find-specific
   { "_id" : { "$oid" : "55ef43766cb5f36a3bae6ee4" }, "hello" : "world" }
 
 Updating a Document
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
-This code snippet gives an example of using :doc:`mongoc_collection_update_one() <mongoc_collection_update_one>` to update the fields of a document.
+This code snippet gives an example of using :ref:`mongoc_collection_update_one() <mongoc_collection_update_one>` to
+update the fields of a document.
 
-Using the "mydb" database, the following example inserts an example document into the "mycoll" collection. Then, using its ``_id`` field, the document is updated with different values and a new field.
+Using the "mydb" database, the following example inserts an example document into the "mycoll" collection. Then,
+using its ``_id`` field, the document is updated with different values and a new field.
 
 .. code-block:: c
 
@@ -550,11 +570,12 @@ To verify that the update succeeded, connect with the MongoDB shell.
   >
 
 Deleting a Document
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
-This example illustrates the use of :ref:`mongoc_collection_delete_one()` to delete a document.
+This example illustrates the use of :ref:`mongoc_collection_delete_one` to delete a document.
 
-The following code inserts a sample document into the database "mydb" and collection "mycoll". Then, it deletes all documents matching ``{"hello" : "world"}``.
+The following code inserts a sample document into the database "mydb" and collection "mycoll". Then,
+it deletes all documents matching ``{"hello" : "world"}``.
 
 .. code-block:: c
 
@@ -632,9 +653,10 @@ Use the MongoDB shell to prove that the documents have been removed successfully
   >
 
 Counting Documents
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
-Counting the number of documents in a MongoDB collection is similar to performing a :ref:`find operation <tutorial_find>`. This example counts the number of documents matching ``{"hello" : "world"}`` in the database "mydb" and collection "mycoll".
+Counting the number of documents in a MongoDB collection is similar to performing a :ref:`find operation <tutorial_find>`.
+This example counts the number of documents matching ``{"hello" : "world"}`` in the database "mydb" and collection "mycoll".
 
 .. code-block:: c
 
@@ -697,11 +719,13 @@ On Windows:
 Executing Commands
 ------------------
 
-The driver provides helper functions for executing MongoDB commands on client, database and collection structures. The ``_simple`` variants return booleans indicating success or failure.
+The driver provides helper functions for executing MongoDB commands on client, database and collection structures.
+The ``_simple`` variants return booleans indicating success or failure.
 
-This example executes the `ping <https://www.mongodb.com/docs/manual/reference/command/ping/>`_ command against the database "mydb".
+This example executes the `ping <https://www.mongodb.com/docs/manual/reference/command/ping/>`_ command against
+the database "mydb".
 
-.. literalinclude:: ../examples/tutorial/executing.c
+.. literalinclude:: includes/examples/tutorial/executing.c
 
 Compile the code and run it:
 
@@ -722,18 +746,23 @@ On Windows:
 Threading
 ---------
 
-The MongoDB C Driver is thread-unaware in the vast majority of its operations. This means it is up to the programmer to guarantee thread-safety.
+The MongoDB C Driver is thread-unaware in the vast majority of its operations. This means it is up to the programmer
+to guarantee thread-safety.
 
-However, :ref:`mongoc_client_pool_t` is thread-safe and is used to fetch a ``mongoc_client_t`` in a thread-safe manner. After retrieving a client from the pool, the client structure should be considered owned by the calling thread. When the thread is finished, the client should be placed back into the pool.
+However, :ref:`mongoc_client_pool_t` is thread-safe and is used to fetch a ``mongoc_client_t`` in a thread-safe manner.
+After retrieving a client from the pool, the client structure should be considered owned by the calling thread. When
+the thread is finished, the client should be placed back into the pool.
 
-.. literalinclude:: ../examples/example-pool.c
+.. literalinclude:: includes/examples/example-pool.c
    :language: c
    :caption: example-pool.c
 
 Next Steps
 ----------
 
-To find information on advanced topics, browse the rest of the :doc:`C driver guide <index>` or the `official MongoDB documentation <https://www.mongodb.com/docs>`_.
+To find information on advanced topics, browse the rest of the :ref:`C driver guide <index>` or the `official MongoDB documentation
+<https://www.mongodb.com/docs>`_.
 
-For help with common issues, consult the :doc:`Troubleshooting <basic-troubleshooting>` page. To report a bug or request a new feature, follow :ref:`these instructions <basic-troubleshooting_file_bug>`.
+For help with common issues, consult the :ref:`Troubleshooting <mongoc_basic_troubleshooting>` page. To report a bug or request
+a new feature, follow :ref:`these instructions <basic-troubleshooting_file_bug>`.
 

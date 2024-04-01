@@ -1,10 +1,30 @@
-==================
-Atlas App Services
-==================
+================
+MongoDB C Driver
+================
 
-.. default-domain:: mongodb
+.. facet::
+   :name: programming_language
+   :values: c
 
-Your words here. Don't forget to add a toctree!
 
-Have a lovely day!
+.. facet::
+   :name: genre
+   :values: reference 
 
+.. meta:: 
+   :keywords: libbson, libmongoc
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   /docs-libbson/libbson-index
+   /docs-libmongoc/libmongoc-index
+
+Introduction
+------------
+
+Welcome to the documentation site for the official MongoDB C driver. You can
+add the driver to your application to work with MongoDB in C. Download the required
+libraries, ``libmongoc`` and ``libbson``, by following the instructions on :ref:`installing`
+or set up a runnable project by following our :ref:`mongoc_tutorial`.

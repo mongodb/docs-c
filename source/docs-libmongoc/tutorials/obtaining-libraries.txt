@@ -1,3 +1,5 @@
+.. _obtaining_libraries:
+
 ========================================
 Obtaining the MongoDB C Driver Libraries
 ========================================

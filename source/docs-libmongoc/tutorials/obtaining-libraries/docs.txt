@@ -1,3 +1,5 @@
+.. _build_documentation:
+
 ===============================================
 Building the mongo-c-driver Documentation Pages
 ===============================================
