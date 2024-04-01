@@ -4,6 +4,17 @@
 libbson
 =======
 
+.. facet::
+   :name: programming_language
+   :values: c
+
+.. facet::
+   :name: genre
+   :values: reference 
+
+.. meta:: 
+   :keywords: bson
+
 .. toctree::
    :titlesonly:
    :maxdepth: 1
@@ -12,9 +23,6 @@ libbson
    /guides
    /cross-platform-notes
    /api
-
-
-A Cross Platform BSON Library for C
 
 Introduction
 ------------
