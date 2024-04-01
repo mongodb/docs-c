@@ -152,13 +152,10 @@ In RedHat-based Linux distributions, including **Fedora**, **CentOS**,
 Yum/DNF.
 
 .. note::
+
+  For Fedora and enterprise Linux of version 8 or greater, it is recommended to
+  use the ``dnf`` command in place of any ``yum`` command.
    
-   For Fedora and enterprise Linux of version 8 or greater, it is recommended to
-   use the ``dnf`` command in place of any ``yum`` command.
-
-  .. XXX: Once RHEL 7 support is dropped, all supported RedHat systems will use
-    `dnf`, so these docs should be updated accordingly.
-
 .. important:: **Except for Fedora:**
 
    The C driver libraries are only available in version 7 and newer of the

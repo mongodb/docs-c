@@ -19,8 +19,10 @@ Setup
 First we'll write some code to insert sample data:
 
 .. literalinclude:: ../includes/examples/doc-common-insert.c
+   :start-after: start-common-insert
+   :end-before: end-common-insert
    :language: c
-   :caption: doc-common-insert.c
+   :dedent:
 
 "distinct" Command
 ------------------

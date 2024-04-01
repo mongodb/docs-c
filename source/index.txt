@@ -20,8 +20,8 @@ MongoDB C Driver
    :titlesonly:
    :maxdepth: 1
 
-   /docs-libbson/libbson-index
-   /docs-libmongoc/libmongoc-index
+   /libbson
+   /libmongoc
 
 Introduction
 ------------

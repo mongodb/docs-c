@@ -2,6 +2,7 @@
    by example code */
 
 /* Insert some sample data */
+// start-common-insert
 bool
 insert_data (mongoc_collection_t *collection)
 {
@@ -45,3 +46,4 @@ print_res (const bson_t *reply)
    printf ("%s\n", str);
    bson_free (str);
 }
+// end-common-insert
