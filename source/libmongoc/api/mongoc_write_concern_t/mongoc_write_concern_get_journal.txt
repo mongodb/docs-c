@@ -1,5 +1,6 @@
 .. _mongoc_write_concern_get_journal:
 
+==================================
 mongoc_write_concern_get_journal()
 ==================================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_write_concern_get_journal (const mongoc_write_concern_t *write_concern);
+   bool
+   mongoc_write_concern_get_journal (const mongoc_write_concern_t *write_concern);
 
 Parameters
 ----------

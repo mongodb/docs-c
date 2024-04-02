@@ -1,5 +1,6 @@
 .. _mongoc_write_concern_destroy:
 
+==============================
 mongoc_write_concern_destroy()
 ==============================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  void
-  mongoc_write_concern_destroy (mongoc_write_concern_t *write_concern);
+   void
+   mongoc_write_concern_destroy (mongoc_write_concern_t *write_concern);
 
 Parameters
 ----------
@@ -19,4 +20,5 @@ Parameters
 Description
 -----------
 
-Frees all resources associated with the write concern structure. Does nothing if ``write_concern`` is NULL.
+Frees all resources associated with the write concern structure. Does nothing if ``write_concern``
+is NULL.
