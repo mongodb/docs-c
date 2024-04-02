@@ -58,7 +58,7 @@ Do not use this function to call the basic write commands "insert", "update", an
 Those commands require special logic not implemented in ``mongoc_collection_write_command_with_opts``.
 For basic write operations use CRUD functions such as :ref:`mongoc_collection_insert_one`
 and the others described in :ref:`the CRUD tutorial <tutorial_crud_operations>`, or use the
-:ref:`Bulk API <bulk>`.
+:ref:`Bulk API <mongoc_bulk>`.
 
 Example
 -------

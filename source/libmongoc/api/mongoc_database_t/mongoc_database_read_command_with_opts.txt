@@ -21,8 +21,6 @@ Execute a command on the server, applying logic that is specific to commands tha
 read, and taking the MongoDB server version into account. To send a raw command to
 the server without any of this logic, use :ref:`mongoc_database_command_simple`.
 
-.. ``opts-source`` replace:: ``database``
-
 .. include:: /libmongoc/includes/read-cmd-opts-sources.txt
 
 ``reply`` is always initialized, and must be freed with :ref:`bson_destroy`.

@@ -7,7 +7,7 @@ Read Concern   Write Concern  Collation
 ============== ============== =========
 ``opts``       ``opts``       ``opts``
 Transaction    Transaction
-|opts-source|  |opts-source|
+``database,`` ``collection``, or ``client``  ``database,`` ``collection``, or ``client``
 ============== ============== =========
 
 :ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for :ref:`the "distinct" command with opts <mongoc_client_read_command_with_opts_example>`.

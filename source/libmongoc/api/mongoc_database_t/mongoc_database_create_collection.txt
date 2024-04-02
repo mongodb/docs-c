@@ -32,7 +32,7 @@ This function creates a :ref:`mongoc_collection_t` from the given :ref:`mongoc_d
 If no write concern is provided in ``opts``, the database's write concern is used.
 
 The ``encryptedFields`` document in ``opts`` may be used to create a collection used for
-:ref:`Queryable Encryption </queryable-encryption>`.
+:ref:`Queryable Encryption <queryable-encryption>`.
 
 For a list of all options, see `the MongoDB Manual entry on the create command
 <https://www.mongodb.com/docs/manual/reference/command/create/>`__.

@@ -45,7 +45,7 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_gridfs_file_list_destroy
-  mongoc_gridfs_file_list_error
-  mongoc_gridfs_file_list_next
+  /libmongoc/api/mongoc_gridfs_t/mongoc_gridfs_file_list_destroy
+  /libmongoc/api/mongoc_gridfs_t/mongoc_gridfs_file_list_error
+  /libmongoc/api/mongoc_gridfs_t/mongoc_gridfs_file_list_next
 

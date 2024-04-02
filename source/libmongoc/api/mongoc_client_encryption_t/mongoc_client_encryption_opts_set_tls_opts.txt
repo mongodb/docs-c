@@ -51,7 +51,7 @@ The BSON document for TLS options may contain the following keys:
    :end-before: END:mongoc_client_encryption_opts_set_tls_opts
    :dedent: 6
 
-See :ref:`configuring_tls` for a description of the behavior of these options.
+See :ref:`mongoc_configuring_tls` for a description of the behavior of these options.
 
 .. seealso::
 
