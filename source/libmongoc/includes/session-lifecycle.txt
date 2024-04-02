@@ -1,3 +1,5 @@
+:orphan:
+
 Start a session with :ref:`mongoc_client_start_session`, use the session for a sequence of operations and multi-document transactions, then free it with :ref:`mongoc_client_session_destroy`. Any :ref:`mongoc_cursor_t` or :ref:`mongoc_change_stream_t` using a session must be destroyed before the session, and a session must be destroyed before the :ref:`mongoc_client_t` it came from.
 
 By default, sessions are `causally consistent <https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency>`_. To disable causal consistency, before starting a session create a :ref:`mongoc_session_opt_t` with :ref:`mongoc_session_opts_new` and call :ref:`mongoc_session_opts_set_causal_consistency`, then free the struct with :ref:`mongoc_session_opts_destroy`.

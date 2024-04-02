@@ -553,3 +553,4 @@ Functions
   /libmongoc/api/mongoc_uri_t/mongoc_uri_set_username
   /libmongoc/api/mongoc_uri_t/mongoc_uri_set_write_concern
   /libmongoc/api/mongoc_uri_t/mongoc_uri_unescape
+

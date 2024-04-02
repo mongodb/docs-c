@@ -82,4 +82,5 @@ Functions
   /libmongoc/api/mongoc_collection_t/mongoc_collection_update_many
   /libmongoc/api/mongoc_collection_t/mongoc_collection_validate
   /libmongoc/api/mongoc_collection_t/mongoc_collection_write_command_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_watch
 

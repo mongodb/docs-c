@@ -33,3 +33,6 @@ Functions
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_get_version
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_new
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_strict
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_t

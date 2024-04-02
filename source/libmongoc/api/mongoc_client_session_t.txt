@@ -48,3 +48,5 @@ Functions
   /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_lsid
   /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_server_id
   /libmongoc/api/mongoc_client_session_t/mongoc_client_session_destroy
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_with_transaction_cb_t
+
