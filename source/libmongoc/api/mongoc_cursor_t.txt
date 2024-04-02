@@ -44,8 +44,8 @@ Functions
 ---------
 
 .. toctree::
-  :titlesonly:
-  :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
    /libmongoc/api/mongoc_cursor_t/mongoc_cursor_clone
    /libmongoc/api/mongoc_cursor_t/mongoc_cursor_current

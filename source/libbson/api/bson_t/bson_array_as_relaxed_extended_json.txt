@@ -66,4 +66,4 @@ Example
       bson_destroy (&bson);
    }
 
-.. include:: ../../includes/seealso/bson-as-json.rst
+.. include:: /libbson/includes/seealso/bson-as-json.rst

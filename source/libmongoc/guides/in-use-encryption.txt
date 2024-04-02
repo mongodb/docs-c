@@ -7,15 +7,14 @@ In-Use Encryption
 In-Use Encryption consists of two features:
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+  :titlesonly:
+  :maxdepth: 1
 
-   /libmongoc/guides/client-side-field-level-encryption
-   /libmongoc/guides/queryable-encryption
+  /libmongoc/guides/client-side-field-level-encryption
+  /libmongoc/guides/queryable-encryption
 
-
-  - :ref:`csfle`
-  - :ref:`queryable-encryption`
+- :ref:`csfle`
+- :ref:`queryable-encryption`
 
 Installation
 ------------

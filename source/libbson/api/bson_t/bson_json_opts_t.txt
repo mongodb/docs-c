@@ -48,6 +48,6 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   bson_json_opts_new
-   bson_json_opts_destroy
-   bson_json_opts_set_outermost_array
+   /libbson/api/bson_t/bson_json_opts_new
+   /libbson/api/bson_t/bson_json_opts_destroy
+   /libbson/api/bson_t/bson_json_opts_set_outermost_array

@@ -46,4 +46,4 @@ Example
    bson_free (str);
 
 
-.. include:: ../../includes/seealso/bson-as-json.rst
+.. include:: /libbson/includes/seealso/bson-as-json.rst

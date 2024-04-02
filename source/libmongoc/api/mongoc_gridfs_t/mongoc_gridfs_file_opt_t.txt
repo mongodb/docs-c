@@ -24,10 +24,3 @@ Description
 This structure contains options that can be set on a :ref:`mongoc_gridfs_file_t`. It can
 be used by various functions when creating a new gridfs file.
 
-Functions
----------
-
-.. toctree::
-  :titlesonly:
-  :maxdepth: 1
-

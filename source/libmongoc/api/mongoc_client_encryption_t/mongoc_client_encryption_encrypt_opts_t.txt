@@ -21,14 +21,14 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_client_encryption_encrypt_opts_new
-  mongoc_client_encryption_encrypt_opts_destroy
-  mongoc_client_encryption_encrypt_opts_set_keyid
-  mongoc_client_encryption_encrypt_opts_set_keyaltname
-  mongoc_client_encryption_encrypt_opts_set_algorithm
-  mongoc_client_encryption_encrypt_opts_set_contention_factor
-  mongoc_client_encryption_encrypt_opts_set_query_type
-  mongoc_client_encryption_encrypt_opts_set_range_opts
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_new
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_destroy
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_keyid
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_keyaltname
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_algorithm
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_contention_factor
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_query_type
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_range_opts
 
 .. seealso::
 

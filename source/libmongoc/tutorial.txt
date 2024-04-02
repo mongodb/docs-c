@@ -53,13 +53,13 @@ The libmongoc installation includes a `CMake config-file package <https://cmake.
 so you can use CMake's `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_
 command to import libmongoc's CMake target and link to libmongoc (as a shared library):
 
-.. literalinclude:: includes/examples/cmake/find_package/CMakeLists.txt
+.. literalinclude:: /libmongoc/includes/examples/cmake/find_package/CMakeLists.txt
   :caption: CMakeLists.txt
   :start-after: -- sphinx-include-start --
 
 You can also use libmongoc as a static library instead: Use the ``mongo::mongoc_static`` CMake target:
 
-.. literalinclude:: includes/examples/cmake/find_package_static/CMakeLists.txt
+.. literalinclude:: /libmongoc/includes/examples/cmake/find_package_static/CMakeLists.txt
   :start-after: -- sphinx-include-start --
   :emphasize-lines: 2
 
@@ -69,12 +69,12 @@ pkg-config
 If you're not using CMake, use `pkg-config <https://www.freedesktop.org/wiki/Software/pkg-config/>`_
 on the command line to set header and library paths:
 
-.. literalinclude:: includes/examples/compile-with-pkg-config.sh
+.. literalinclude:: /libmongoc/includes/examples/compile-with-pkg-config.sh
   :start-after: -- sphinx-include-start --
 
 Or to statically link to libmongoc:
 
-.. literalinclude:: includes/examples/compile-with-pkg-config-static.sh
+.. literalinclude:: /libmongoc/includes/examples/compile-with-pkg-config-static.sh
   :start-after: -- sphinx-include-start --
 
 Specifying header and include paths manually
@@ -127,7 +127,7 @@ and :ref:`Executing Commands <tutorial_executing_commands>` sections. Examples o
 sharded clusters can be found in the :ref:`Advanced Connections <mongoc_advanced_connections>` page, while examples of
 data compression can be found in the :ref:`Data Compression <mongoc_data_compression>` page.
 
-.. literalinclude:: includes/examples/hello_mongoc.c
+.. literalinclude:: /libmongoc/includes/examples/hello_mongoc.c
   :caption: hello_mongoc.c
   :language: c
   :start-after: -- sphinx-include-start --
@@ -161,7 +161,7 @@ For example, to create a document like this:
 
 Use the following code:
 
-.. literalinclude:: includes/examples/tutorial/appending.c
+.. literalinclude:: /libmongoc/includes/examples/tutorial/appending.c
 
 See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a :ref:`bson_t`.
 
@@ -725,7 +725,7 @@ The ``_simple`` variants return booleans indicating success or failure.
 This example executes the `ping <https://www.mongodb.com/docs/manual/reference/command/ping/>`_ command against
 the database "mydb".
 
-.. literalinclude:: includes/examples/tutorial/executing.c
+.. literalinclude:: /libmongoc/includes/examples/tutorial/executing.c
 
 Compile the code and run it:
 
@@ -753,7 +753,7 @@ However, :ref:`mongoc_client_pool_t` is thread-safe and is used to fetch a ``mon
 After retrieving a client from the pool, the client structure should be considered owned by the calling thread. When
 the thread is finished, the client should be placed back into the pool.
 
-.. literalinclude:: includes/examples/example-pool.c
+.. literalinclude:: /libmongoc/includes/examples/example-pool.c
    :language: c
    :caption: example-pool.c
 

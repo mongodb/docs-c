@@ -30,8 +30,8 @@ Functions
 ---------
 
 .. toctree::
-  :titlesonly:
-  :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 1
 
    /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_new
    /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_destroy

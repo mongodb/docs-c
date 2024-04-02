@@ -10,4 +10,5 @@ Transaction        Transaction
 ``database,`` ``client``, ``collection``
 ================== ============== =========
 
-:ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for :ref:`the "distinct" command with opts <mongoc_client_read_command_with_opts_example>`.
+:ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for :ref:`the "distinct" command with opts
+<mongoc_client_read_command_with_opts_example>`.

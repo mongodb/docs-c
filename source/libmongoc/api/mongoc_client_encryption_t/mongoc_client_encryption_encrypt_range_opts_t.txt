@@ -30,13 +30,13 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_client_encryption_encrypt_range_opts_new
-  mongoc_client_encryption_encrypt_range_opts_destroy
-  mongoc_client_encryption_encrypt_range_opts_set_sparsity
-  mongoc_client_encryption_encrypt_range_opts_set_min
-  mongoc_client_encryption_encrypt_range_opts_set_max
-  mongoc_client_encryption_encrypt_range_opts_set_precision
-  mongoc_client_encryption_encrypt_opts_set_range_opts
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_new
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_destroy
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_set_sparsity
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_set_min
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_set_max
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_range_opts_set_precision
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_range_opts
 
 .. seealso::
 

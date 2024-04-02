@@ -22,9 +22,9 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_client_encryption_rewrap_many_datakey_result_new
-  mongoc_client_encryption_rewrap_many_datakey_result_destroy
-  mongoc_client_encryption_rewrap_many_datakey_result_get_bulk_write_result
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey_result_new
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey_result_destroy
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_rewrap_many_datakey_result_get_bulk_write_result
 
 .. seealso::
 
