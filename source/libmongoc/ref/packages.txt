@@ -135,7 +135,7 @@ correspond to the configure-time build settings available when building the
 
   * - ``with_ssl``
     - ``openssl``, ``libressl``, ``windows``, ``darwin``, ``False``
-    - ``openssl`` [#oss-default]_
+    - ``openssl`` (:ref:`See note <oss-default>`)
     - Select a TLS backend. Setting to "``False``" disables TLS support.
 
   * - ``with_sasl``
@@ -157,6 +157,8 @@ correspond to the configure-time build settings available when building the
     - (Boolean)
     - ``True``
     - Enable `Zstd <https://github.com/facebook/zstd>`_ compression
+
+.. _oss-default:
 
 .. note::
 
