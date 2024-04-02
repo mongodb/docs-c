@@ -34,3 +34,14 @@ Functions
   /libmongoc/application-performance-monitoring/mongoc_apm_command_started_get_server_connection_id
   /libmongoc/application-performance-monitoring/mongoc_apm_command_started_get_server_connection_id_int64
 
+- :ref:`mongoc_apm_command_started_get_command`
+- :ref:`mongoc_apm_command_started_get_command_name`
+- :ref:`mongoc_apm_command_started_get_context`
+- :ref:`mongoc_apm_command_started_get_database_name`
+- :ref:`mongoc_apm_command_started_get_host`
+- :ref:`mongoc_apm_command_started_get_operation_id`
+- :ref:`mongoc_apm_command_started_get_request_id`
+- :ref:`mongoc_apm_command_started_get_server_id`
+- :ref:`mongoc_apm_command_started_get_service_id`
+- :ref:`mongoc_apm_command_started_get_server_connection_id`
+- :ref:`mongoc_apm_command_started_get_server_connection_id_int64`

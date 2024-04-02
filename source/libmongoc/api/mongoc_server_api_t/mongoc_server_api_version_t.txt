@@ -29,3 +29,6 @@ Functions
 
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string
+
+- :ref:`mongoc_server_api_version_from_string`
+- :ref:`mongoc_server_api_version_to_string`

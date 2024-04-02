@@ -31,6 +31,19 @@ Functions
   /libmongoc/application-performance-monitoring/mongoc_apm_command_failed_get_server_connection_id
   /libmongoc/application-performance-monitoring/mongoc_apm_command_failed_get_server_connection_id_int64
 
+- :ref:`mongoc_apm_command_failed_get_command_name`
+- :ref:`mongoc_apm_command_failed_get_context`
+- :ref:`mongoc_apm_command_failed_get_duration`
+- :ref:`mongoc_apm_command_failed_get_error`
+- :ref:`mongoc_apm_command_failed_get_host`
+- :ref:`mongoc_apm_command_failed_get_operation_id`
+- :ref:`mongoc_apm_command_failed_get_reply`
+- :ref:`mongoc_apm_command_failed_get_request_id`
+- :ref:`mongoc_apm_command_failed_get_server_id`
+- :ref:`mongoc_apm_command_failed_get_service_id`
+- :ref:`mongoc_apm_command_failed_get_server_connection_id`
+- :ref:`mongoc_apm_command_failed_get_server_connection_id_int64`
+
 .. seealso::
 
   | :ref:`Introduction to Application Performance Monitoring <mongoc_application_performance_monitoring>`

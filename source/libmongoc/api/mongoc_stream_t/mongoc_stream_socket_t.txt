@@ -23,3 +23,6 @@ Functions
   /libmongoc/api/mongoc_stream_t/mongoc_stream_socket_get_socket
   /libmongoc/api/mongoc_stream_t/mongoc_stream_socket_new
 
+- :ref:`mongoc_stream_socket_get_socket`
+- :ref:`mongoc_stream_socket_new`
+

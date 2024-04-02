@@ -29,3 +29,8 @@ Functions
   /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_error
   /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_host
 
+- :ref:`mongoc_apm_server_heartbeat_failed_get_awaited`
+- :ref:`mongoc_apm_server_heartbeat_failed_get_context`
+- :ref:`mongoc_apm_server_heartbeat_failed_get_duration`
+- :ref:`mongoc_apm_server_heartbeat_failed_get_error`
+- :ref:`mongoc_apm_server_heartbeat_failed_get_host`

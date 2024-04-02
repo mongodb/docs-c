@@ -7,8 +7,12 @@ Obtaining the MongoDB C Driver Libraries
 There are a few methods of obtaining the ``mongo-c-driver`` codebase:
 
 .. toctree::
-    :maxdepth: 1
+  :maxdepth: 1
 
-    /libmongoc/tutorials/obtaining-libraries/from-source
-    /libmongoc/tutorials/obtaining-libraries/installing
-    /libmongoc/tutorials/obtaining-libraries/docs
+  /libmongoc/tutorials/obtaining-libraries/from-source
+  /libmongoc/tutorials/obtaining-libraries/installing
+  /libmongoc/tutorials/obtaining-libraries/docs
+
+- :ref:`build-libraries`
+- :ref:`installing`
+- :ref:`build_documentation`

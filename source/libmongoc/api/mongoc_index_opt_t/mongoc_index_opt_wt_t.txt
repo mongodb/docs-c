@@ -32,6 +32,9 @@ Functions
   /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_wt_get_default
   /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_wt_init
 
+- :ref:`mongoc_index_opt_wt_get_default`
+- :ref:`mongoc_index_opt_wt_init`
+
 .. seealso::
 
   | :ref:`mongoc_index_opt_t`

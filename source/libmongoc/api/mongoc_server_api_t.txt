@@ -36,3 +36,15 @@ Functions
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string
   /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_t
+
+- :ref:`mongoc_server_api_copy`
+- :ref:`mongoc_server_api_deprecation_errors`
+- :ref:`mongoc_server_api_destroy`
+- :ref:`mongoc_server_api_get_deprecation_errors`
+- :ref:`mongoc_server_api_get_strict`
+- :ref:`mongoc_server_api_get_version`
+- :ref:`mongoc_server_api_new`
+- :ref:`mongoc_server_api_strict`
+- :ref:`mongoc_server_api_version_from_string`
+- :ref:`mongoc_server_api_version_to_string`
+- :ref:`mongoc_server_api_version_t`

@@ -35,6 +35,9 @@ Functions
   /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_geo_get_default
   /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_geo_init
 
+- :ref:`mongoc_index_opt_geo_get_default`
+- :ref:`mongoc_index_opt_geo_init`
+
 .. seealso::
 
   | :ref:`mongoc_index_opt_t`

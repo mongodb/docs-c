@@ -25,3 +25,5 @@ Functions
   /libmongoc/application-performance-monitoring/mongoc_apm_topology_opening_get_context
   /libmongoc/application-performance-monitoring/mongoc_apm_topology_opening_get_topology_id
 
+- :ref:`mongoc_apm_topology_opening_get_context`
+- :ref:`mongoc_apm_topology_opening_get_topology_id`
