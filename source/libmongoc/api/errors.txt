@@ -324,4 +324,4 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /errors/mongoc_error_has_label
+  /libmongoc/api/errors/mongoc_error_has_label

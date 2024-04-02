@@ -33,18 +33,18 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_client_pool_destroy
-  mongoc_client_pool_enable_auto_encryption
-  mongoc_client_pool_max_size
-  mongoc_client_pool_min_size
-  mongoc_client_pool_new
-  mongoc_client_pool_new_with_error
-  mongoc_client_pool_pop
-  mongoc_client_pool_push
-  mongoc_client_pool_set_apm_callbacks
-  mongoc_client_pool_set_appname
-  mongoc_client_pool_set_error_api
-  mongoc_client_pool_set_server_api
-  mongoc_client_pool_set_ssl_opts
-  mongoc_client_pool_try_pop
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_destroy
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_enable_auto_encryption
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_max_size
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_min_size
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_new
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_new_with_errors
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_pop
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_push
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_apm_callbacks
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_appname
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_error_api
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_server_api
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_ssl_opts
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_try_pop
 

@@ -28,10 +28,10 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_topology_description_t/mongoc_topology_description_destroy
-  /mongoc_topology_description_t/mongoc_topology_description_get_servers
-  /mongoc_topology_description_t/mongoc_topology_description_has_readable_server
-  /mongoc_topology_description_t/mongoc_topology_description_has_writable_server
-  /mongoc_topology_description_t/mongoc_topology_description_new_copy
-  /mongoc_topology_description_t/mongoc_topology_description_type
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_destroy
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_get_servers
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_has_readable_server
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_has_writable_server
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_new_copy
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_type
 

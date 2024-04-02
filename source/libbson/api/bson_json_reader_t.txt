@@ -42,13 +42,13 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   /bson_json_reader_t/bson_json_data_reader_ingest
-   /bson_json_reader_t/bson_json_data_reader_new
-   /bson_json_reader_t/bson_json_reader_destroy
-   /bson_json_reader_t/bson_json_reader_new
-   /bson_json_reader_t/bson_json_reader_new_from_fd
-   /bson_json_reader_t/bson_json_reader_new_from_file
-   /bson_json_reader_t/bson_json_reader_read
+   /libbson/api/bson_json_reader_t/bson_json_data_reader_ingest
+   /libbson/api/bson_json_reader_t/bson_json_data_reader_new
+   /libbson/api/bson_json_reader_t/bson_json_reader_destroy
+   /libbson/api/bson_json_reader_t/bson_json_reader_new
+   /libbson/api/bson_json_reader_t/bson_json_reader_new_from_fd
+   /libbson/api/bson_json_reader_t/bson_json_reader_new_from_file
+   /libbson/api/bson_json_reader_t/bson_json_reader_read
 
 Example
 -------

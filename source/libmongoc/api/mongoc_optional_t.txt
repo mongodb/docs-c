@@ -20,8 +20,8 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_optional_t/mongoc_optional_copy
-  /mongoc_optional_t/mongoc_optional_init
-  /mongoc_optional_t/mongoc_optional_is_set
-  /mongoc_optional_t/mongoc_optional_set_value
-  /mongoc_optional_t/mongoc_optional_value
+  /libmongoc/api/mongoc_optional_t/mongoc_optional_copy
+  /libmongoc/api/mongoc_optional_t/mongoc_optional_init
+  /libmongoc/api/mongoc_optional_t/mongoc_optional_is_set
+  /libmongoc/api/mongoc_optional_t/mongoc_optional_set_value
+  /libmongoc/api/mongoc_optional_t/mongoc_optional_value

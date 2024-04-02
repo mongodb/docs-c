@@ -126,13 +126,6 @@ in the specific case of an unrecognized field type. (Parsing is aborted in eithe
 callback to report an error like "unrecognized type" instead of simply "corrupt BSON". This future-proofs
 code that may use an older version of libbson to parse future BSON formats.
 
-Functions
----------
-
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
 Basic Example
 -------------
 
@@ -232,6 +225,6 @@ Example Corruption Check
 Example Custom Validation
 -------------------------
 
-.. literalinclude:: includes/examples/bson-check-depth.c
+.. literalinclude:: ../includes/examples/bson-check-depth.c
    :caption: bson-check-depth.c
    :start-after: -- sphinx-include-start --

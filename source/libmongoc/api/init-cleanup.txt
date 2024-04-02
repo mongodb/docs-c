@@ -7,14 +7,14 @@ Initialization and cleanup
 Synopsis
 --------
 
-.. include:: ../includes/init_cleanup.txt
+.. include:: /libmongoc/includes/init_cleanup.txt
 
 .. toctree::
     :titlesonly:
     :maxdepth: 1
 
-    /init-cleanup/mongoc_init
-    /init-cleanup/mongoc_cleanup
+    /libmongoc/api/init-cleanup/mongoc_init
+    /libmongoc/api/init-cleanup/mongoc_cleanup
 
 Deprecated feature: automatic initialization and cleanup
 --------------------------------------------------------

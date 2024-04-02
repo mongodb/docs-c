@@ -25,14 +25,14 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /bson_memory/bson_free
-  /bson_memory/bson_malloc
-  /bson_memory/bson_malloc0
-  /bson_memory/bson_aligned_alloc
-  /bson_memory/bson_aligned_alloc0
-  /bson_memory/bson_mem_restore_vtable
-  /bson_memory/bson_mem_set_vtable
-  /bson_memory/bson_realloc
-  /bson_memory/bson_realloc_ctx
-  /bson_memory/bson_realloc_func
-  /bson_memory/bson_zero_free
+  /libbson/api/bson_memory/bson_free
+  /libbson/api/bson_memory/bson_malloc
+  /libbson/api/bson_memory/bson_malloc0
+  /libbson/api/bson_memory/bson_aligned_alloc
+  /libbson/api/bson_memory/bson_aligned_alloc0
+  /libbson/api/bson_memory/bson_mem_restore_vtable
+  /libbson/api/bson_memory/bson_mem_set_vtable
+  /libbson/api/bson_memory/bson_realloc
+  /libbson/api/bson_memory/bson_realloc_ctx
+  /libbson/api/bson_memory/bson_realloc_func
+  /libbson/api/bson_memory/bson_zero_free

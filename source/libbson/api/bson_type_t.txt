@@ -44,13 +44,6 @@ Description
 The :ref:`bson_type_t` enumeration contains all of the types from the `BSON Specification
 <http://bsonspec.org>`_. It can be used to determine the type of a field at runtime.
 
-Functions
----------
-
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
 Example
 -------
 

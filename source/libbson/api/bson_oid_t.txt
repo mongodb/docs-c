@@ -60,23 +60,23 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   /bson_oid_t/bson_oid_compare
-   /bson_oid_t/bson_oid_compare_unsafe
-   /bson_oid_t/bson_oid_copy
-   /bson_oid_t/bson_oid_copy_unsafe
-   /bson_oid_t/bson_oid_equal
-   /bson_oid_t/bson_oid_equal_unsafe
-   /bson_oid_t/bson_oid_get_time_t
-   /bson_oid_t/bson_oid_get_time_t_unsafe
-   /bson_oid_t/bson_oid_hash
-   /bson_oid_t/bson_oid_hash_unsafe
-   /bson_oid_t/bson_oid_init
-   /bson_oid_t/bson_oid_init_from_data
-   /bson_oid_t/bson_oid_init_from_string
-   /bson_oid_t/bson_oid_init_from_string_unsafe
-   /bson_oid_t/bson_oid_init_sequence
-   /bson_oid_t/bson_oid_is_valid
-   /bson_oid_t/bson_oid_to_string
+   /libbson/api/bson_oid_t/bson_oid_compare
+   /libbson/api/bson_oid_t/bson_oid_compare_unsafe
+   /libbson/api/bson_oid_t/bson_oid_copy
+   /libbson/api/bson_oid_t/bson_oid_copy_unsafe
+   /libbson/api/bson_oid_t/bson_oid_equal
+   /libbson/api/bson_oid_t/bson_oid_equal_unsafe
+   /libbson/api/bson_oid_t/bson_oid_get_time_t
+   /libbson/api/bson_oid_t/bson_oid_get_time_t_unsafe
+   /libbson/api/bson_oid_t/bson_oid_hash
+   /libbson/api/bson_oid_t/bson_oid_hash_unsafe
+   /libbson/api/bson_oid_t/bson_oid_init
+   /libbson/api/bson_oid_t/bson_oid_init_from_data
+   /libbson/api/bson_oid_t/bson_oid_init_from_string
+   /libbson/api/bson_oid_t/bson_oid_init_from_string_unsafe
+   /libbson/api/bson_oid_t/bson_oid_init_sequence
+   /libbson/api/bson_oid_t/bson_oid_is_valid
+   /libbson/api/bson_oid_t/bson_oid_to_string
 
 Example
 -------

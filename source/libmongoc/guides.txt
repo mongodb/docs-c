@@ -29,6 +29,7 @@ Guides
 - :ref:`mongoc_connection_pooling`
 - :ref:`mongoc_cursors`
 - :ref:`mongoc_bulk`
+- :ref:`csfle`
 - :ref:`mongoc_aggregate`
 - :ref:`mongoc_distinct_mapreduce`
 - :ref:`visual-studio-guide`

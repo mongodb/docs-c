@@ -40,12 +40,12 @@ Functions
    :titlesonly:
    :maxdepth: 1
 
-   /bson_writer_t/bson_writer_begin
-   /bson_writer_t/bson_writer_destroy
-   /bson_writer_t/bson_writer_end
-   /bson_writer_t/bson_writer_get_length
-   /bson_writer_t/bson_writer_new
-   /bson_writer_t/bson_writer_rollback
+   /libbson/api/bson_writer_t/bson_writer_begin
+   /libbson/api/bson_writer_t/bson_writer_destroy
+   /libbson/api/bson_writer_t/bson_writer_end
+   /libbson/api/bson_writer_t/bson_writer_get_length
+   /libbson/api/bson_writer_t/bson_writer_new
+   /libbson/api/bson_writer_t/bson_writer_rollback
 
 Example
 -------

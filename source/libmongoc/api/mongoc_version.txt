@@ -42,9 +42,9 @@ Run-Time Version Checks
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_version/mongoc_check_version
-  /mongoc_version/mongoc_get_major_version
-  /mongoc_version/mongoc_get_micro_version
-  /mongoc_version/mongoc_get_minor_version
-  /mongoc_version/mongoc_get_version
+  /libmongoc/api/mongoc_version/mongoc_check_version
+  /libmongoc/api/mongoc_version/mongoc_get_major_version
+  /libmongoc/api/mongoc_version/mongoc_get_micro_version
+  /libmongoc/api/mongoc_version/mongoc_get_minor_version
+  /libmongoc/api/mongoc_version/mongoc_get_version
 

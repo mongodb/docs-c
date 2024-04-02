@@ -69,11 +69,11 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_read_concern_t/mongoc_read_concern_append
-  /mongoc_read_concern_t/mongoc_read_concern_copy
-  /mongoc_read_concern_t/mongoc_read_concern_destroy
-  /mongoc_read_concern_t/mongoc_read_concern_get_level
-  /mongoc_read_concern_t/mongoc_read_concern_is_default
-  /mongoc_read_concern_t/mongoc_read_concern_new
-  /mongoc_read_concern_t/mongoc_read_concern_set_level
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_append
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_copy
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_destroy
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_get_level
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_is_default
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_new
+  /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_set_level
 

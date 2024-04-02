@@ -28,18 +28,18 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_socket_t/mongoc_socket_accept
-  /mongoc_socket_t/mongoc_socket_bind
-  /mongoc_socket_t/mongoc_socket_close
-  /mongoc_socket_t/mongoc_socket_connect
-  /mongoc_socket_t/mongoc_socket_destroy
-  /mongoc_socket_t/mongoc_socket_errno
-  /mongoc_socket_t/mongoc_socket_getnameinfo
-  /mongoc_socket_t/mongoc_socket_getsockname
-  /mongoc_socket_t/mongoc_socket_listen
-  /mongoc_socket_t/mongoc_socket_new
-  /mongoc_socket_t/mongoc_socket_recv
-  /mongoc_socket_t/mongoc_socket_send
-  /mongoc_socket_t/mongoc_socket_sendv
-  /mongoc_socket_t/mongoc_socket_setsockopt
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_accept
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_bind
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_close
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_connect
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_destroy
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_errno
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_getnameinfo
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_getsockname
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_listen
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_new
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_recv
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_send
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_sendv
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_setsockopt
 

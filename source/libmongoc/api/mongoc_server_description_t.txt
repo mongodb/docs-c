@@ -32,16 +32,16 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_server_description_t/mongoc_server_description_destroy
-  /mongoc_server_description_t/mongoc_server_description_hello_response
-  /mongoc_server_description_t/mongoc_server_description_host
-  /mongoc_server_description_t/mongoc_server_description_id
-  /mongoc_server_description_t/mongoc_server_description_ismaster
-  /mongoc_server_description_t/mongoc_server_description_last_update_time
-  /mongoc_server_description_t/mongoc_server_description_new_copy
-  /mongoc_server_description_t/mongoc_server_description_round_trip_time
-  /mongoc_server_description_t/mongoc_server_description_type
-  /mongoc_server_description_t/mongoc_server_descriptions_destroy_all
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_destroy
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_hello_response
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_host
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_id
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_ismaster
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_last_update_time
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_new_copy
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_round_trip_time
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_description_type
+  /libmongoc/api/mongoc_server_description_t/mongoc_server_descriptions_destroy_all
 
 .. seealso::
 

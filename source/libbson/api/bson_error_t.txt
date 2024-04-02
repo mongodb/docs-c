@@ -24,7 +24,7 @@ Description
 
 The :ref:`bson_error_t` structure is used as an out-parameter to pass error information to the caller. It should be stack-allocated and does not requiring freeing.
 
-See :doc:`Handling Errors <errors>`.
+See :ref:`Handling Errors <bson_errors>`.
 
 Functions
 ---------
@@ -33,8 +33,8 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /bson_error_t/bson_set_error
-  /bson_error_t/bson_strerror_r
+  /libbson/api/bson_error_t/bson_set_error
+  /libbson/api/bson_error_t/bson_strerror_r
 
 Example
 -------

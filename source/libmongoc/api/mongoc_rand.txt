@@ -53,7 +53,7 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  /mongoc_rand/mongoc_rand_add
-  /mongoc_rand/mongoc_rand_seed
-  /mongoc_rand/mongoc_rand_status
+  /libmongoc/api/mongoc_rand/mongoc_rand_add
+  /libmongoc/api/mongoc_rand/mongoc_rand_seed
+  /libmongoc/api/mongoc_rand/mongoc_rand_status
 
