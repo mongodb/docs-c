@@ -54,6 +54,8 @@ or a server or network error.
 
 A write concern timeout or write concern error is considered a failure.
 
+.. _basic-write-ops:
+
 Basic Write Operations
 ----------------------
 

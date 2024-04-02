@@ -1,3 +1,5 @@
+:orphan:
+
 Read preferences, read and write concern, and collation can be overridden by various sources. The highest-priority sources for these options are listed first:
 
 ================== ============== ============== =========

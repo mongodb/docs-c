@@ -1,11 +1,26 @@
-Use this function for commands that write such as "drop" or "createRole" (but not for "insert", "update", or "delete", see `Basic Write Operations`_). Write concern and collation can be overridden by various sources. In a transaction, read concern and write concern are prohibited in ``opts``. The highest-priority sources for these options are listed first in the following table. The write concern is omitted for MongoDB before 3.4.
+:orphan:
 
-============== =========
-Write Concern  Collation
-============== =========
-``opts``       ``opts``
-Transaction
-``database,`` ``collection``, or ``client``
-============== =========
+Use this function for commands that write such as "drop" or "createRole" (but not for "insert",
+"update", or "delete", see :ref:`basic-write-ops`). Write concern and collation can be overridden
+by various sources. In a transaction, read concern and write concern are prohibited in ``opts``.
+The highest-priority sources for these options are listed first in the following table. The write
+concern is omitted for MongoDB before 3.4.
 
-:ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for :ref:`the "distinct" command with opts <mongoc_client_read_command_with_opts_example>`.
+.. list-table::
+   :header-rows: 1
+   :widths: 1 1
+
+   * - Write Concern
+     - Collation
+
+   * - ``opts``
+     - ``opts``
+
+   * - Transaction
+     - 
+
+   * - ``database,`` ``collection``, or ``client``
+     -
+
+:ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for
+:ref:`the "distinct" command with opts <mongoc_client_read_command_with_opts_example>`.
