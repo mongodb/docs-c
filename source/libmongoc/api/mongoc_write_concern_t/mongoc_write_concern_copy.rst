@@ -26,5 +26,5 @@ Performs a deep copy of ``write_concern``.
 Returns
 -------
 
-Returns a newly allocated copy of ``write_concern`` that should be freed with :ref:`mongoc_write_concern_destroy()` when no longer in use.
+Returns a newly allocated copy of ``write_concern`` that should be freed with :ref:`mongoc_write_concern_destroy` when no longer in use.
 

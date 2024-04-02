@@ -22,7 +22,6 @@ Synopsis
 Execute a command on the server, interpreting ``opts`` according to the MongoDB server
 version. To send a raw command to the server without any of this logic, use :ref:`mongoc_client_command_simple`.
 
-.. |opts-source| replace:: ``client``
 
 .. include:: /libmongoc/includes/opts-sources.txt
 
