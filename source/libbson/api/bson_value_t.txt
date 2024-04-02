@@ -82,6 +82,9 @@ Functions
    /libbson/api/bson_value_t/bson_value_copy
    /libbson/api/bson_value_t/bson_value_destroy
 
+- :ref:`bson_value_copy`
+- :ref:`bson_value_destroy`
+
 Example
 -------
 

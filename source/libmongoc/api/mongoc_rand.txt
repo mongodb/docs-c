@@ -57,3 +57,6 @@ Functions
   /libmongoc/api/mongoc_rand/mongoc_rand_seed
   /libmongoc/api/mongoc_rand/mongoc_rand_status
 
+- :ref:`mongoc_rand_add`
+- :ref:`mongoc_rand_seed`
+- :ref:`mongoc_rand_status`

@@ -48,3 +48,8 @@ Run-Time Version Checks
   /libmongoc/api/mongoc_version/mongoc_get_minor_version
   /libmongoc/api/mongoc_version/mongoc_get_version
 
+- :ref:`mongoc_check_version`
+- :ref:`mongoc_get_major_version`
+- :ref:`mongoc_get_micro_version`
+- :ref:`mongoc_get_minor_version`
+- :ref:`mongoc_get_version`

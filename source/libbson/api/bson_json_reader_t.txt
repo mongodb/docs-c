@@ -50,6 +50,14 @@ Functions
    /libbson/api/bson_json_reader_t/bson_json_reader_new_from_file
    /libbson/api/bson_json_reader_t/bson_json_reader_read
 
+- :ref:`bson_json_data_reader_ingest`
+- :ref:`bson_json_data_reader_new`
+- :ref:`bson_json_reader_destroy`
+- :ref:`bson_json_reader_new`
+- :ref:`bson_json_reader_new_from_fd`
+- :ref:`bson_json_reader_new_from_file`
+- :ref:`bson_json_reader_read`
+  
 Example
 -------
 

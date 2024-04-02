@@ -112,3 +112,17 @@ Functions
    /libmongoc/api/mongoc_read_prefs_t/mongoc_read_prefs_set_mode
    /libmongoc/api/mongoc_read_prefs_t/mongoc_read_prefs_set_tags
 
+- :ref:`mongoc_read_prefs_add_tag`
+- :ref:`mongoc_read_prefs_copy`
+- :ref:`mongoc_read_prefs_destroy`
+- :ref:`mongoc_read_prefs_get_hedge`
+- :ref:`mongoc_read_prefs_get_max_staleness_seconds`
+- :ref:`mongoc_read_prefs_get_mode`
+- :ref:`mongoc_read_prefs_get_tags`
+- :ref:`mongoc_read_prefs_is_valid`
+- :ref:`mongoc_read_prefs_new`
+- :ref:`mongoc_read_prefs_set_hedge`
+- :ref:`mongoc_read_prefs_set_max_staleness_seconds`
+- :ref:`mongoc_read_prefs_set_mode`
+- :ref:`mongoc_read_prefs_set_tags`
+

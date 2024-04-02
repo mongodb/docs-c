@@ -49,7 +49,9 @@ Functions
    /libbson/api/bson_decimal128_t/bson_decimal128_from_string_w_len
    /libbson/api/bson_decimal128_t/bson_decimal128_to_string
 
-- :ref:``
+- :ref:`bson_decimal128_from_string`
+- :ref:`bson_decimal128_from_string_w_len`
+- :ref:`bson_decimal128_to_string`
 
 Example
 -------

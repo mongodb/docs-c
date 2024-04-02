@@ -51,3 +51,7 @@ Functions
    /libbson/api/bson_t/bson_json_opts_new
    /libbson/api/bson_t/bson_json_opts_destroy
    /libbson/api/bson_t/bson_json_opts_set_outermost_array
+
+- :ref:`bson_json_opts_new`
+- :ref:`bson_json_opts_destroy`
+- :ref:`bson_json_opts_set_outermost_array`

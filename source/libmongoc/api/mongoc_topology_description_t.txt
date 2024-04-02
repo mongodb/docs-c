@@ -35,3 +35,9 @@ Functions
   /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_new_copy
   /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_type
 
+- :ref:`mongoc_topology_description_destroy`
+- :ref:`mongoc_topology_description_get_servers`
+- :ref:`mongoc_topology_description_has_readable_server`
+- :ref:`mongoc_topology_description_has_writable_server`
+- :ref:`mongoc_topology_description_new_copy`
+- :ref:`mongoc_topology_description_type`

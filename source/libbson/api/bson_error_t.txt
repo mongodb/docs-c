@@ -36,6 +36,9 @@ Functions
   /libbson/api/bson_error_t/bson_set_error
   /libbson/api/bson_error_t/bson_strerror_r
 
+- :ref:`bson_set_error`
+- :ref:`bson_strerror_r`
+
 Example
 -------
 

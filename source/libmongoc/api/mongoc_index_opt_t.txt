@@ -89,6 +89,11 @@ Functions
    /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_wt_t
    /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_geo_t
 
+- :ref:`mongoc_index_opt_get_default`
+- :ref:`mongoc_index_opt_init`
+- :ref:`mongoc_index_opt_wt_t`
+- :ref:`mongoc_index_opt_geo_t`
+
 .. seealso::
 
   | :ref:`mongoc_index_opt_geo_t`

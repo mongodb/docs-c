@@ -43,6 +43,8 @@ Functions
 
   /libmongoc/api/mongoc_ssl_opt_get_default
 
+- :ref:`mongoc_ssl_opt_get_default`
+
 .. seealso::
 
   | :ref:`mongoc_configuring_tls`

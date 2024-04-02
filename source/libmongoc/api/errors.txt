@@ -325,3 +325,5 @@ Functions
   :maxdepth: 1
 
   /libmongoc/api/errors/mongoc_error_has_label
+
+- :ref:`mongoc_error_has_label`

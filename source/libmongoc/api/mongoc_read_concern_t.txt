@@ -77,3 +77,10 @@ Functions
   /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_new
   /libmongoc/api/mongoc_read_concern_t/mongoc_read_concern_set_level
 
+- :ref:`mongoc_read_concern_append`
+- :ref:`mongoc_read_concern_copy`
+- :ref:`mongoc_read_concern_destroy`
+- :ref:`mongoc_read_concern_get_level`
+- :ref:`mongoc_read_concern_is_default`
+- :ref:`mongoc_read_concern_new`
+- :ref:`mongoc_read_concern_set_level`

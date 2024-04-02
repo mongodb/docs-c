@@ -38,3 +38,16 @@ Functions
   /libmongoc/api/mongoc_auto_encryption_opts_t/mongoc_auto_encryption_opts_set_encrypted_fields_map
   /libmongoc/api/mongoc_auto_encryption_opts_t/mongoc_auto_encryption_opts_set_bypass_query_analysis
 
+- :ref:`mongoc_auto_encryption_opts_new`
+- :ref:`mongoc_auto_encryption_opts_destroy`
+- :ref:`mongoc_auto_encryption_opts_set_keyvault_client`
+- :ref:`mongoc_auto_encryption_opts_set_keyvault_client_pool`
+- :ref:`mongoc_auto_encryption_opts_set_keyvault_namespace`
+- :ref:`mongoc_auto_encryption_opts_set_kms_providers`
+- :ref:`mongoc_auto_encryption_opts_set_kms_credential_provider_callback`
+- :ref:`mongoc_auto_encryption_opts_set_schema_map`
+- :ref:`mongoc_auto_encryption_opts_set_bypass_auto_encryption`
+- :ref:`mongoc_auto_encryption_opts_set_extra`
+- :ref:`mongoc_auto_encryption_opts_set_tls_opts`
+- :ref:`mongoc_auto_encryption_opts_set_encrypted_fields_map`
+- :ref:`mongoc_auto_encryption_opts_set_bypass_query_analysis`

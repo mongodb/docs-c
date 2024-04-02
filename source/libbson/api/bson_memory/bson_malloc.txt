@@ -1,4 +1,4 @@
-.. _lloc:
+.. _bson_malloc:
 
 =============
 bson_malloc()

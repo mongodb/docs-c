@@ -43,6 +43,17 @@ Functions
   /libmongoc/api/mongoc_server_description_t/mongoc_server_description_type
   /libmongoc/api/mongoc_server_description_t/mongoc_server_descriptions_destroy_all
 
+- :ref:`mongoc_server_description_destroy`
+- :ref:`mongoc_server_description_hello_response`
+- :ref:`mongoc_server_description_host`
+- :ref:`mongoc_server_description_id`
+- :ref:`mongoc_server_description_ismaster`
+- :ref:`mongoc_server_description_last_update_time`
+- :ref:`mongoc_server_description_new_copy`
+- :ref:`mongoc_server_description_round_trip_time`
+- :ref:`mongoc_server_description_type`
+- :ref:`mongoc_server_descriptions_destroy_all`
+
 .. seealso::
 
   | :ref:`mongoc_client_get_server_descriptions`.

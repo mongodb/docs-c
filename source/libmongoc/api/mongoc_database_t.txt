@@ -57,6 +57,36 @@ Functions
   /libmongoc/api/mongoc_database_t/mongoc_database_watch
   /libmongoc/api/mongoc_database_t/mongoc_database_write_command_with_opts
 
+- :ref:`mongoc_database_add_user`
+- :ref:`mongoc_database_aggregate`
+- :ref:`mongoc_database_command`
+- :ref:`mongoc_database_command_simple`
+- :ref:`mongoc_database_command_with_opts`
+- :ref:`mongoc_database_copy`
+- :ref:`mongoc_database_create_collection`
+- :ref:`mongoc_database_destroy`
+- :ref:`mongoc_database_drop`
+- :ref:`mongoc_database_drop_with_opts`
+- :ref:`mongoc_database_find_collections`
+- :ref:`mongoc_database_find_collections_with_opts`
+- :ref:`mongoc_database_get_collection`
+- :ref:`mongoc_database_get_collection_names`
+- :ref:`mongoc_database_get_collection_names_with_opts`
+- :ref:`mongoc_database_get_name`
+- :ref:`mongoc_database_get_read_concern`
+- :ref:`mongoc_database_get_read_prefs`
+- :ref:`mongoc_database_get_write_concern`
+- :ref:`mongoc_database_has_collection`
+- :ref:`mongoc_database_read_command_with_opts`
+- :ref:`mongoc_database_read_write_command_with_opts`
+- :ref:`mongoc_database_remove_all_users`
+- :ref:`mongoc_database_remove_user`
+- :ref:`mongoc_database_set_read_concern`
+- :ref:`mongoc_database_set_read_prefs`
+- :ref:`mongoc_database_set_write_concern`
+- :ref:`mongoc_database_watch`
+- :ref:`mongoc_database_write_command_with_opts`
+
 Examples
 --------
 

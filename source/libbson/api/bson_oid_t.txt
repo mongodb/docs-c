@@ -78,6 +78,24 @@ Functions
    /libbson/api/bson_oid_t/bson_oid_is_valid
    /libbson/api/bson_oid_t/bson_oid_to_string
 
+- :ref:`bson_oid_compare`
+- :ref:`bson_oid_compare_unsafe`
+- :ref:`bson_oid_copy`
+- :ref:`bson_oid_copy_unsafe`
+- :ref:`bson_oid_equal`
+- :ref:`bson_oid_equal_unsafe`
+- :ref:`bson_oid_get_time_t`
+- :ref:`bson_oid_get_time_t_unsafe`
+- :ref:`bson_oid_hash`
+- :ref:`bson_oid_hash_unsafe`
+- :ref:`bson_oid_init`
+- :ref:`bson_oid_init_from_data`
+- :ref:`bson_oid_init_from_string`
+- :ref:`bson_oid_init_from_string_unsafe`
+- :ref:`bson_oid_init_sequence`
+- :ref:`bson_oid_is_valid`
+- :ref:`bson_oid_to_string`
+
 Example
 -------
 

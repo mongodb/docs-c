@@ -59,3 +59,26 @@ Functions
   /libmongoc/api/mongoc_bulk_operation_t/mongoc_bulk_operation_update_one
   /libmongoc/api/mongoc_bulk_operation_t/mongoc_bulk_operation_update_one_with_opts
 
+- :ref:`mongoc_bulk_operation_delete`
+- :ref:`mongoc_bulk_operation_delete_one`
+- :ref:`mongoc_bulk_operation_destroy`
+- :ref:`mongoc_bulk_operation_execute`
+- :ref:`mongoc_bulk_operation_get_hint`
+- :ref:`mongoc_bulk_operation_get_write_concern`
+- :ref:`mongoc_bulk_operation_insert`
+- :ref:`mongoc_bulk_operation_insert_with_opts`
+- :ref:`mongoc_bulk_operation_remove`
+- :ref:`mongoc_bulk_operation_remove_many_with_opts`
+- :ref:`mongoc_bulk_operation_remove_one`
+- :ref:`mongoc_bulk_operation_remove_one_with_opts`
+- :ref:`mongoc_bulk_operation_replace_one`
+- :ref:`mongoc_bulk_operation_replace_one_with_opts`
+- :ref:`mongoc_bulk_operation_set_bypass_document_validation`
+- :ref:`mongoc_bulk_operation_set_client_session`
+- :ref:`mongoc_bulk_operation_set_comment`
+- :ref:`mongoc_bulk_operation_set_hint`
+- :ref:`mongoc_bulk_operation_set_let`
+- :ref:`mongoc_bulk_operation_update`
+- :ref:`mongoc_bulk_operation_update_many_with_opts`
+- :ref:`mongoc_bulk_operation_update_one`
+- :ref:`mongoc_bulk_operation_update_one_with_opts`

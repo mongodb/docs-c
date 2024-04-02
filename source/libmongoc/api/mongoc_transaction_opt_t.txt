@@ -53,3 +53,15 @@ Functions
   /libmongoc/api/mongoc_transaction_opt_t/mongoc_transaction_opts_set_max_commit_time_ms
   /libmongoc/api/mongoc_transaction_opt_t/mongoc_transaction_opts_clone
   /libmongoc/api/mongoc_transaction_opt_t/mongoc_transaction_opts_destroy
+
+- :ref:`mongoc_transaction_opts_new`
+- :ref:`mongoc_transaction_opts_get_read_concern`
+- :ref:`mongoc_transaction_opts_set_read_concern`
+- :ref:`mongoc_transaction_opts_get_write_concern`
+- :ref:`mongoc_transaction_opts_set_write_concern`
+- :ref:`mongoc_transaction_opts_get_read_prefs`
+- :ref:`mongoc_transaction_opts_set_read_prefs`
+- :ref:`mongoc_transaction_opts_get_max_commit_time_ms`
+- :ref:`mongoc_transaction_opts_set_max_commit_time_ms`
+- :ref:`mongoc_transaction_opts_clone`
+- :ref:`mongoc_transaction_opts_destroy`

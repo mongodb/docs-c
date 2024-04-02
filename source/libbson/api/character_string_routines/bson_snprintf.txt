@@ -1,4 +1,4 @@
-.. _printf:
+.. _bson_snprintf:
 
 ===============
 bson_snprintf()

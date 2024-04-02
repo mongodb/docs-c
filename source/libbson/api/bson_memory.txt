@@ -36,3 +36,15 @@ Functions
   /libbson/api/bson_memory/bson_realloc_ctx
   /libbson/api/bson_memory/bson_realloc_func
   /libbson/api/bson_memory/bson_zero_free
+
+- :ref:`bson_free`
+- :ref:`bson_malloc`
+- :ref:`bson_malloc0`
+- :ref:`bson_aligned_alloc`
+- :ref:`bson_aligned_alloc0`
+- :ref:`bson_mem_restore_vtable`
+- :ref:`bson_mem_set_vtable`
+- :ref:`bson_realloc`
+- :ref:`bson_realloc_ctx`
+- :ref:`bson_realloc_func`
+- :ref:`bson_zero_free`

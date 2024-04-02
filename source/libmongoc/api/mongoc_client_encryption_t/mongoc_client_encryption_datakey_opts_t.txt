@@ -26,6 +26,13 @@ Functions
   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_datakey_opts_set_keyaltnames
   /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_datakey_opts_set_keymaterial
 
+- :ref:`mongoc_client_encryption_datakey_opts_new`
+- :ref:`mongoc_client_encryption_datakey_opts_destroy`
+- :ref:`mongoc_client_encryption_datakey_opts_set_masterkey`
+- :ref:`mongoc_client_encryption_datakey_opts_set_keyaltnames`
+- :ref:`mongoc_client_encryption_datakey_opts_set_keymaterial`
+
+
 .. seealso::
 
   | :ref:`mongoc_client_encryption_create_datakey`

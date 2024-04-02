@@ -43,3 +43,17 @@ Functions
   /libmongoc/api/mongoc_socket_t/mongoc_socket_sendv
   /libmongoc/api/mongoc_socket_t/mongoc_socket_setsockopt
 
+- :ref:`mongoc_socket_accept`
+- :ref:`mongoc_socket_bind`
+- :ref:`mongoc_socket_close`
+- :ref:`mongoc_socket_connect`
+- :ref:`mongoc_socket_destroy`
+- :ref:`mongoc_socket_errno`
+- :ref:`mongoc_socket_getnameinfo`
+- :ref:`mongoc_socket_getsockname`
+- :ref:`mongoc_socket_listen`
+- :ref:`mongoc_socket_new`
+- :ref:`mongoc_socket_recv`
+- :ref:`mongoc_socket_send`
+- :ref:`mongoc_socket_sendv`
+- :ref:`mongoc_socket_setsockopt`

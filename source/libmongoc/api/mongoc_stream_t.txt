@@ -49,6 +49,25 @@ Functions
   /libmongoc/api/mongoc_stream_t/mongoc_stream_socket_t
   /libmongoc/api/mongoc_stream_t/mongoc_stream_tls_t
 
+- :ref:`mongoc_stream_buffered_new`
+- :ref:`mongoc_stream_close`
+- :ref:`mongoc_stream_cork`
+- :ref:`mongoc_stream_destroy`
+- :ref:`mongoc_stream_flush`
+- :ref:`mongoc_stream_get_base_stream`
+- :ref:`mongoc_stream_read`
+- :ref:`mongoc_stream_readv`
+- :ref:`mongoc_stream_setsockopt`
+- :ref:`mongoc_stream_should_retry`
+- :ref:`mongoc_stream_timed_out`
+- :ref:`mongoc_stream_uncork`
+- :ref:`mongoc_stream_write`
+- :ref:`mongoc_stream_writev`
+- :ref:`mongoc_stream_buffered_t`
+- :ref:`mongoc_stream_file_t`
+- :ref:`mongoc_stream_socket_t`
+- :ref:`mongoc_stream_tls_t`
+
 .. seealso::
 
   | :ref:`mongoc_stream_buffered_t`

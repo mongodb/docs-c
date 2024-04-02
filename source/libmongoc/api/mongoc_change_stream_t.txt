@@ -71,3 +71,8 @@ Functions
    /libmongoc/api/mongoc_change_stream_t/mongoc_change_stream_get_resume_token
    /libmongoc/api/mongoc_change_stream_t/mongoc_change_stream_error_document
    /libmongoc/api/mongoc_change_stream_t/mongoc_change_stream_destroy
+
+- :ref:`mongoc_change_stream_next`
+- :ref:`mongoc_change_stream_get_resume_token`
+- :ref:`mongoc_change_stream_error_document`
+- :ref:`mongoc_change_stream_destroy`

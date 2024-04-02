@@ -55,6 +55,19 @@ Functions
    /libbson/api/bson_reader_t/bson_reader_set_read_func
    /libbson/api/bson_reader_t/bson_reader_tell
 
+- :ref:`bson_reader_destroy`
+- :ref:`bson_reader_destroy_func_t`
+- :ref:`bson_reader_new_from_data`
+- :ref:`bson_reader_new_from_fd`
+- :ref:`bson_reader_new_from_file`
+- :ref:`bson_reader_new_from_handle`
+- :ref:`bson_reader_read`
+- :ref:`bson_reader_read_func_t`
+- :ref:`bson_reader_reset`
+- :ref:`bson_reader_set_destroy_func`
+- :ref:`bson_reader_set_read_func`
+- :ref:`bson_reader_tell`
+
 Example
 -------
 

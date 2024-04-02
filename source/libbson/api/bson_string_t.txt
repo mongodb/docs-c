@@ -42,6 +42,14 @@ Functions
    /libbson/api/bson_string_t/bson_string_new
    /libbson/api/bson_string_t/bson_string_truncate
 
+- :ref:`bson_string_append`
+- :ref:`bson_string_append_c`
+- :ref:`bson_string_append_printf`
+- :ref:`bson_string_append_unichar`
+- :ref:`bson_string_free`
+- :ref:`bson_string_new`
+- :ref:`bson_string_truncate`
+
 Example
 -------
 

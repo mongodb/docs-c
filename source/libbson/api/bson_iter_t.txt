@@ -136,6 +136,61 @@ Functions
    /libbson/api/bson_iter_t/bson_iter_value
    /libbson/api/bson_iter_t/bson_iter_visit_all
 
+- :ref:`bson_iter_array`
+- :ref:`bson_iter_as_bool`
+- :ref:`bson_iter_as_double`
+- :ref:`bson_iter_as_int64`
+- :ref:`bson_iter_binary`
+- :ref:`bson_iter_bool`
+- :ref:`bson_iter_code`
+- :ref:`bson_iter_codewscope`
+- :ref:`bson_iter_date_time`
+- :ref:`bson_iter_dbpointer`
+- :ref:`bson_iter_decimal128`
+- :ref:`bson_iter_document`
+- :ref:`bson_iter_double`
+- :ref:`bson_iter_dup_utf8`
+- :ref:`bson_iter_find`
+- :ref:`bson_iter_find_case`
+- :ref:`bson_iter_find_descendant`
+- :ref:`bson_iter_find_w_len`
+- :ref:`bson_iter_init`
+- :ref:`bson_iter_init_find`
+- :ref:`bson_iter_init_find_case`
+- :ref:`bson_iter_find_descendant`
+- :ref:`bson_iter_find_w_len`
+- :ref:`bson_iter_init`
+- :ref:`bson_iter_init_find`
+- :ref:`bson_iter_init_find_case`
+- :ref:`bson_iter_init_find_w_len`
+- :ref:`bson_iter_init_from_data`
+- :ref:`bson_iter_init_from_data_at_offset`
+- :ref:`bson_iter_int32`
+- :ref:`bson_iter_int64`
+- :ref:`bson_iter_key`
+- :ref:`bson_iter_key_len`
+- :ref:`bson_iter_next`
+- :ref:`bson_iter_offset`
+- :ref:`bson_iter_oid`
+- :ref:`bson_iter_overwrite_bool`
+- :ref:`bson_iter_overwrite_date_time`
+- :ref:`bson_iter_overwrite_decimal128`
+- :ref:`bson_iter_overwrite_double`
+- :ref:`bson_iter_overwrite_int32`
+- :ref:`bson_iter_overwrite_int64`
+- :ref:`bson_iter_overwrite_oid`
+- :ref:`bson_iter_overwrite_timestamp`
+- :ref:`bson_iter_recurse`
+- :ref:`bson_iter_regex`
+- :ref:`bson_iter_symbol`
+- :ref:`bson_iter_time_t`
+- :ref:`bson_iter_timestamp`
+- :ref:`bson_iter_timeval`
+- :ref:`bson_iter_type`
+- :ref:`bson_iter_utf8`
+- :ref:`bson_iter_value`
+- :ref:`bson_iter_visit_all`
+
 Examples
 --------
 

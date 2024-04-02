@@ -181,3 +181,18 @@ Functions
    /libmongoc/api/mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_sort
    /libmongoc/api/mongoc_find_and_modify_opts_t/mongoc_find_and_modify_opts_set_update
 
+- :ref:`mongoc_find_and_modify_opts_append`
+- :ref:`mongoc_find_and_modify_opts_destroy`
+- :ref:`mongoc_find_and_modify_opts_get_bypass_document_validation`
+- :ref:`mongoc_find_and_modify_opts_get_fields`
+- :ref:`mongoc_find_and_modify_opts_get_flags`
+- :ref:`mongoc_find_and_modify_opts_get_max_time_ms`
+- :ref:`mongoc_find_and_modify_opts_get_sort`
+- :ref:`mongoc_find_and_modify_opts_get_update`
+- :ref:`mongoc_find_and_modify_opts_new`
+- :ref:`mongoc_find_and_modify_opts_set_bypass_document_validation`
+- :ref:`mongoc_find_and_modify_opts_set_fields`
+- :ref:`mongoc_find_and_modify_opts_set_flags`
+- :ref:`mongoc_find_and_modify_opts_set_max_time_ms`
+- :ref:`mongoc_find_and_modify_opts_set_sort`
+- :ref:`mongoc_find_and_modify_opts_set_update`

@@ -47,6 +47,13 @@ Functions
    /libbson/api/bson_writer_t/bson_writer_new
    /libbson/api/bson_writer_t/bson_writer_rollback
 
+- :ref:`bson_writer_begin`
+- :ref:`bson_writer_destroy`
+- :ref:`bson_writer_end`
+- :ref:`bson_writer_get_length`
+- :ref:`bson_writer_new`
+- :ref:`bson_writer_rollback`
+
 Example
 -------
 

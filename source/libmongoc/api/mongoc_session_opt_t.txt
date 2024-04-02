@@ -34,3 +34,14 @@ Functions
   /libmongoc/api/mongoc_session_opt_t/mongoc_session_opts_get_transaction_opts
   /libmongoc/api/mongoc_session_opt_t/mongoc_session_opts_clone
   /libmongoc/api/mongoc_session_opt_t/mongoc_session_opts_destroy
+
+- :ref:`mongoc_session_opts_new`
+- :ref:`mongoc_session_opts_get_causal_consistency`
+- :ref:`mongoc_session_opts_set_causal_consistency`
+- :ref:`mongoc_session_opts_get_default_transaction_opts`
+- :ref:`mongoc_session_opts_set_default_transaction_opts`
+- :ref:`mongoc_session_opts_get_snapshot`
+- :ref:`mongoc_session_opts_set_snapshot`
+- :ref:`mongoc_session_opts_get_transaction_opts`
+- :ref:`mongoc_session_opts_clone`
+- :ref:`mongoc_session_opts_destroy`

@@ -84,5 +84,26 @@ Functions
   /libmongoc/api/mongoc_write_concern_t/mongoc_write_concern_set_wtimeout
   /libmongoc/api/mongoc_write_concern_t/mongoc_write_concern_set_wtimeout_int64
 
-
+- :ref:`mongoc_write_concern_append`
+- :ref:`mongoc_write_concern_copy`
+- :ref:`mongoc_write_concern_destroy`
+- :ref:`mongoc_write_concern_get_fsync`
+- :ref:`mongoc_write_concern_get_journal`
+- :ref:`mongoc_write_concern_get_w`
+- :ref:`mongoc_write_concern_get_wmajority`
+- :ref:`mongoc_write_concern_get_wtag`
+- :ref:`mongoc_write_concern_get_wtimeout`
+- :ref:`mongoc_write_concern_get_wtimeout_int64`
+- :ref:`mongoc_write_concern_is_acknowledged`
+- :ref:`mongoc_write_concern_is_default`
+- :ref:`mongoc_write_concern_is_valid`
+- :ref:`mongoc_write_concern_journal_is_set`
+- :ref:`mongoc_write_concern_new`
+- :ref:`mongoc_write_concern_set_fsync`
+- :ref:`mongoc_write_concern_set_journal`
+- :ref:`mongoc_write_concern_set_w`
+- :ref:`mongoc_write_concern_set_wmajority`
+- :ref:`mongoc_write_concern_set_wtag`
+- :ref:`mongoc_write_concern_set_wtimeout`
+- :ref:`mongoc_write_concern_set_wtimeout_int64`
 

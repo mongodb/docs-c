@@ -33,3 +33,22 @@ Functions
   /libbson/api/character_string_routines/bson_utf8_next_char
   /libbson/api/character_string_routines/bson_utf8_validate
   /libbson/api/character_string_routines/bson_vsnprintf
+
+- :ref:`bson_ascii_strtoll`
+- :ref:`bson_isspace`
+- :ref:`bson_snprintf`
+- :ref:`bson_strcasecmp`
+- :ref:`bson_strdup`
+- :ref:`bson_strdup_printf`
+- :ref:`bson_strdupv_printf`
+- :ref:`bson_strfreev`
+- :ref:`bson_strncpy`
+- :ref:`bson_strndup`
+- :ref:`bson_strnlen`
+- :ref:`bson_uint32_to_string`
+- :ref:`bson_utf8_escape_for_json`
+- :ref:`bson_utf8_from_unichar`
+- :ref:`bson_utf8_get_char`
+- :ref:`bson_utf8_next_char`
+- :ref:`bson_utf8_validate`
+- :ref:`bson_vsnprintf`

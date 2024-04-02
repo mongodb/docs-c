@@ -50,3 +50,21 @@ Functions
   /libmongoc/api/mongoc_client_session_t/mongoc_client_session_destroy
   /libmongoc/api/mongoc_client_session_t/mongoc_client_session_with_transaction_cb_t
 
+- :ref:`mongoc_client_session_start_transaction`
+- :ref:`mongoc_client_session_in_transaction`
+- :ref:`mongoc_client_session_get_transaction_state`
+- :ref:`mongoc_client_session_commit_transaction`
+- :ref:`mongoc_client_session_abort_transaction`
+- :ref:`mongoc_client_session_advance_cluster_time`
+- :ref:`mongoc_client_session_advance_operation_time`
+- :ref:`mongoc_client_session_with_transaction`
+- :ref:`mongoc_client_session_append`
+- :ref:`mongoc_client_session_get_client`
+- :ref:`mongoc_client_session_get_cluster_time`
+- :ref:`mongoc_client_session_get_dirty`
+- :ref:`mongoc_client_session_get_operation_time`
+- :ref:`mongoc_client_session_get_opts`
+- :ref:`mongoc_client_session_get_lsid`
+- :ref:`mongoc_client_session_get_server_id`
+- :ref:`mongoc_client_session_destroy`
+- :ref:`mongoc_client_session_with_transaction_cb_t`
