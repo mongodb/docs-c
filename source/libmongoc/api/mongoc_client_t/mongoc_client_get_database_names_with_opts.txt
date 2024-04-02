@@ -17,7 +17,7 @@ Synopsis
 
 This function queries the MongoDB server for a list of known databases.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Parameters
 ----------
@@ -26,7 +26,7 @@ Parameters
 - ``opts``: A :ref:`bson_t` containing additional options.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/generic-opts.txt
+.. include:: /libmongoc/includes/generic-opts.txt
 
 For a list of all options, see `the MongoDB Manual entry on the listDatabases command
 <https://www.mongodb.com/docs/manual/reference/command/listDatabases/>`__.

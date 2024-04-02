@@ -31,7 +31,7 @@ field set in the transaction options overrides the inherited client configuratio
 Example
 -------
 
-.. literalinclude:: ../includes/examples/example-transaction.c
+.. literalinclude:: /libmongoc/includes/examples/example-transaction.c
    :language: c
    :caption: example-transaction.c
 

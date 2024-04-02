@@ -1,4 +1,4 @@
-.. _mongoc_auto_encryption_opts_set_key_vault_client:
+.. _mongoc_auto_encryption_opts_set_keyvault_client:
 
 =================================================
 mongoc_auto_encryption_opts_set_keyvault_client()

@@ -73,4 +73,4 @@ Example
       abort ();
    }
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

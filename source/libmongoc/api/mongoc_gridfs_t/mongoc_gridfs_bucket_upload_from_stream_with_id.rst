@@ -27,7 +27,7 @@ Parameters
 - ``opts``: A :ref:`bson_t` or ``NULL``.
 - ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
-.. include:: ../../includes/gridfs-bucket-upload-opts.txt
+.. include:: /libmongoc/includes/gridfs-bucket-upload-opts.txt
 
 Description
 -----------

@@ -49,5 +49,5 @@ Example
 
   bson_destroy (&props);
 
-.. include:: ../../includes/seealso/authmechanism.txt
+.. include:: /libmongoc/includes/seealso/authmechanism.txt
 

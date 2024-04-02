@@ -24,7 +24,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/write-opts.txt
+.. include:: /libmongoc/includes/write-opts.txt
 
 Description
 -----------

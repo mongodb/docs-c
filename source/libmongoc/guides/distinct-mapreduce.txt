@@ -10,15 +10,15 @@
    :depth: 2
    :class: singlecol
 
-This document provides some practical, simple, examples to demonstrate the ``distinct`` and
-``mapReduce``commands.
+This document provides some practical, simple, examples to demonstrate the ``distinct``
+and ``mapReduce`` commands.
 
 Setup
 -----
 
 First we'll write some code to insert sample data:
 
-.. literalinclude:: ../includes/examples/doc-common-insert.c
+.. literalinclude:: /libmongoc/includes/examples/doc-common-insert.c
    :start-after: start-common-insert
    :end-before: end-common-insert
    :language: c
@@ -30,7 +30,7 @@ First we'll write some code to insert sample data:
 This is how to use the ``distinct`` command to get the distinct values of ``x`` which are greater
 than ``1``:
 
-.. literalinclude:: ../includes/examples/basic_aggregation/distinct.c
+.. literalinclude:: /libmongoc/includes/examples/basic_aggregation/distinct.c
    :language: c
    :caption: distinct.c
 
@@ -42,7 +42,7 @@ of each "tag".
 
 First define the ``map`` and ``reduce`` functions:
 
-.. literalinclude:: ../includes/examples/basic_aggregation/constants.c
+.. literalinclude:: /libmongoc/includes/examples/basic_aggregation/constants.c
    :language: c
    :caption: constants.c
 
@@ -51,7 +51,7 @@ Do not the read command helpers (e.g. :ref:`mongoc_database_read_command_with_op
 considered retryable read operations. If retryable reads are enabled, those operations will retry once on
 a retryable error, giving undesirable behavior for ``mapReduce``.
 
-.. literalinclude:: ../includes/examples/basic_aggregation/map-reduce-basic.c
+.. literalinclude:: /libmongoc/includes/examples/basic_aggregation/map-reduce-basic.c
    :language: c
    :caption: map-reduce-basic.c
 
@@ -63,7 +63,7 @@ You must have replica set running for this.
 In this example we contact a secondary in the replica set and do an "inline" map reduce, so the
 results are returned immediately:
 
-.. literalinclude:: ../includes/examples/basic_aggregation/map-reduce-advanced.c
+.. literalinclude:: /libmongoc/includes/examples/basic_aggregation/map-reduce-advanced.c
    :language: c
    :caption: map-reduce-advanced.c
 
@@ -72,7 +72,7 @@ Running the Examples
 
 Here's how to run the example code
 
-.. literalinclude:: ../includes/examples/basic_aggregation/basic-aggregation.c
+.. literalinclude:: /libmongoc/includes/examples/basic_aggregation/basic-aggregation.c
    :language: c
    :caption: basic-aggregation.c
 

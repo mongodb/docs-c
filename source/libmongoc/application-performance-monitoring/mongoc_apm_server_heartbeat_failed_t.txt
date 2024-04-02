@@ -23,9 +23,9 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_apm_server_heartbeat_failed_get_awaited
-  mongoc_apm_server_heartbeat_failed_get_context
-  mongoc_apm_server_heartbeat_failed_get_duration
-  mongoc_apm_server_heartbeat_failed_get_error
-  mongoc_apm_server_heartbeat_failed_get_host
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_awaited
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_context
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_duration
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_error
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_heartbeat_failed_get_host
 

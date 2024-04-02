@@ -35,14 +35,14 @@ its return value.
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/read-opts-sources.txt
+.. include:: /libmongoc/includes/read-opts-sources.txt
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Returns
 -------
 
-.. include:: ../../includes/returns-cursor.txt
+.. include:: /libmongoc/includes/returns-cursor.txt
 
 Examples
 --------

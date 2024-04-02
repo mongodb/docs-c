@@ -36,7 +36,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/write-opts.txt
+.. include:: /libmongoc/includes/write-opts.txt
 
 Additional options passed in ``opts`` are appended to the ``createIndexes`` command.
 See the `MongoDB Manual for createIndexes <https://www.mongodb.com/docs/manual/reference/command/createIndexes/>`__

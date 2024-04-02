@@ -27,4 +27,4 @@ Returns
 
 A string which should not be modified or freed if the ``authSource`` parameter is provided, otherwise ``NULL``.
 
-.. include:: ../../includes/seealso/authmechanism.txt
+.. include:: /libmongoc/includes/seealso/authmechanism.txt

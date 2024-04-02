@@ -264,7 +264,7 @@ messages and information. Ensure that configuration succeeds before proceeding.
   The ``ENABLE_MONGOC=OFF`` argument disabled building ``libmongoc``. We'll build
   that in the next section.
 
-  The |cmvar:CMAKE_BUILD_TYPE| setting tells CMake what variant of code will be
+  The ``CMAKE_BUILD_TYPE`` setting tells CMake what variant of code will be
   generated. In the case of ``RelWithDebInfo``, optimized binaries will be
   produced, but still include debug information. The `CMAKE_BUILD_TYPE <https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html>`__
   has no effect on Multi-Config generators (i.e. Visual Studio), which instead rely on

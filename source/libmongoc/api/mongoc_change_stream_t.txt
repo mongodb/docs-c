@@ -23,7 +23,7 @@ raw aggregation with a ``$changeStream`` stage. For more information see the `Mo
 Example
 -------
 
-.. literalinclude:: ../includes/examples/example-collection-watch.c
+.. literalinclude:: /libmongoc/includes/examples/example-collection-watch.c
    :language: c
    :caption: example-collection-watch.c
 
@@ -49,13 +49,13 @@ than one will result in a server error.
 
 The following example implements custom resuming logic, persisting the resume token in a file.
 
-.. literalinclude:: ../examples/example-resume.c
+.. literalinclude:: /libmongoc/includes/examples/example-resume.c
    :language: c
    :caption: example-resume.c
 
 The following example shows using ``startAtOperationTime`` to synchronize a change stream with another operation.
 
-.. literalinclude:: ../examples/example-start-at-optime.c
+.. literalinclude:: /libmongoc/includes/examples/example-start-at-optime.c
    :language: c
    :caption: example-start-at-optime.c
 

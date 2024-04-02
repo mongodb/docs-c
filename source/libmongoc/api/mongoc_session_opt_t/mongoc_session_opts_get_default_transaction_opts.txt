@@ -24,4 +24,4 @@ Returns
 
 A :ref:`mongoc_transaction_opt_t` that is valid only for the lifetime of ``opts``.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

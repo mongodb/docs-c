@@ -6,7 +6,7 @@ Manage Collection Indexes
 
 To create indexes on a MongoDB collection, use :ref:`mongoc_collection_create_indexes_with_opts`:
 
-.. literalinclude:: ../includes/examples/example-manage-collection-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-collection-indexes.c
    :language: c
    :start-after: // Create an index ... begin
    :end-before: // Create an index ... end
@@ -14,7 +14,7 @@ To create indexes on a MongoDB collection, use :ref:`mongoc_collection_create_in
 
 To list indexes, use :ref:`mongoc_collection_find_indexes_with_opts`:
 
-.. literalinclude:: ../includes/examples/example-manage-collection-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-collection-indexes.c
    :language: c
    :start-after: // List indexes ... begin
    :end-before: // List indexes ... end
@@ -23,7 +23,7 @@ To list indexes, use :ref:`mongoc_collection_find_indexes_with_opts`:
 To drop an index, use :ref:`mongoc_collection_drop_index_with_opts`. The index name may be obtained
 from the ``keys`` document with :ref:`mongoc_collection_keys_to_index_string`:
 
-.. literalinclude:: ../includes/examples/example-manage-collection-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-collection-indexes.c
    :language: c
    :start-after: // Drop an index ... begin
    :end-before: // Drop an index ... end
@@ -37,7 +37,7 @@ Manage Atlas Search Indexes
 
 To create an Atlas Search Index, use the ``createSearchIndexes`` command:
 
-.. literalinclude:: ../includes/examples/example-manage-search-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-search-indexes.c
    :language: c
    :start-after: // Create an Atlas Search Index ... begin
    :end-before: // Create an Atlas Search Index ... end
@@ -45,7 +45,7 @@ To create an Atlas Search Index, use the ``createSearchIndexes`` command:
 
 To list Atlas Search Indexes, use the ``$listSearchIndexes`` aggregation stage:
 
-.. literalinclude:: ../includes/examples/example-manage-search-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-search-indexes.c
    :language: c
    :start-after: // List Atlas Search Indexes ... begin
    :end-before: // List Atlas Search Indexes ... end
@@ -53,7 +53,7 @@ To list Atlas Search Indexes, use the ``$listSearchIndexes`` aggregation stage:
 
 To update an Atlas Search Index, use the ``updateSearchIndex`` command:
 
-.. literalinclude:: ../includes/examples/example-manage-search-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-search-indexes.c
    :language: c
    :start-after: // Update an Atlas Search Index ... begin
    :end-before: // Update an Atlas Search Index ... end
@@ -61,7 +61,7 @@ To update an Atlas Search Index, use the ``updateSearchIndex`` command:
 
 To drop an Atlas Search Index, use the ``dropSearchIndex`` command:
 
-.. literalinclude:: ../includes/examples/example-manage-search-indexes.c
+.. literalinclude:: /libmongoc/includes/examples/example-manage-search-indexes.c
    :language: c
    :start-after: // Drop an Atlas Search Index ... begin
    :end-before: // Drop an Atlas Search Index ... end

@@ -53,7 +53,7 @@ must outlive the :ref:`mongoc_stream_t`.
 Sessions
 --------
 
-.. include:: ../includes/session-lifecycle.txt
+.. include:: /libmongoc/includes/session-lifecycle.txt
 
 Client Side Encryption
 ----------------------

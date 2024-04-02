@@ -25,4 +25,4 @@ Returns
 
 A new :ref:`mongoc_session_opt_t` that must be freed with :ref:`mongoc_session_opts_destroy`.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

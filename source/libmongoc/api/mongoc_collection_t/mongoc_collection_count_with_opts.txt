@@ -46,7 +46,7 @@ Parameters
 - ``read_prefs``: An optional :ref:`mongoc_read_prefs_t`, otherwise uses the collection's read preference.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/read-opts.txt
+.. include:: /libmongoc/includes/read-opts.txt
 
 Description
 -----------
@@ -65,7 +65,7 @@ such as hinting for counts.
 For more information, see the `query reference <https://www.mongodb.com/docs/manual/reference/operator/query/>`__
 at the MongoDB website.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Errors
 ------

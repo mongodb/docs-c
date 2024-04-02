@@ -21,7 +21,7 @@ Synopsis
 Execute a command on the server, interpreting ``opts`` according to the MongoDB server version.
 To send a raw command to the server without any of this logic, use :ref:`mongoc_client_command_simple`.
 
-.. include:: ../../includes/opts-sources.txt
+.. include:: /libmongoc/includes/opts-sources.txt
 
 ``reply`` is always initialized, and must be freed with :ref:`bson_destroy`.
 
@@ -35,12 +35,12 @@ Parameters
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/read-write-opts.txt
+.. include:: /libmongoc/includes/read-write-opts.txt
 
 Consult `the MongoDB Manual entry on Database Commands <https://www.mongodb.com/docs/manual/reference/command/>`__
 for each command's arguments.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Errors
 ------

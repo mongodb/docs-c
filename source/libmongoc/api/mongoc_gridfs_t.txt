@@ -55,7 +55,7 @@ It is an error to free a ``mongoc_gridfs_t`` before freeing all related instance
 Example
 -------
 
-.. literalinclude:: ../includes/examples/example-gridfs.c
+.. literalinclude:: /libmongoc/includes/examples/example-gridfs.c
    :language: c
    :caption: example-gridfs.c
 

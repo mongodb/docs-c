@@ -35,7 +35,7 @@ of :ref:`mongoc_stream_t`. The owning :ref:`mongoc_client_t` must outlive the :r
 Example
 -------
 
-.. literalinclude:: ../../includes/examples/example-gridfs-bucket.c
+.. literalinclude:: /libmongoc/includes/examples/example-gridfs-bucket.c
    :language: c
    :caption: example-gridfs-bucket.c
 

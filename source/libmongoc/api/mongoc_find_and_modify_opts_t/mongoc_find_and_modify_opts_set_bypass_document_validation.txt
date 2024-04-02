@@ -38,7 +38,7 @@ and logs an error.
 Setting bypassDocumentValidation
 --------------------------------
 
-.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: /libmongoc/includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_BYPASS_BEGIN */
    :end-before: /* EXAMPLE_FAM_BYPASS_END */

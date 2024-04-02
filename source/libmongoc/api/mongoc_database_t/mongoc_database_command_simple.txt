@@ -30,7 +30,7 @@ result document. The database's read preference, read concern, and write concern
 applied to the command.  The parameter ``reply`` is initialized even upon failure to
 simplify memory management.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Errors
 ------

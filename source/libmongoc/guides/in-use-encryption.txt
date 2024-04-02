@@ -10,8 +10,12 @@ In-Use Encryption consists of two features:
    :titlesonly:
    :maxdepth: 1
 
-   client-side-field-level-encryption
-   queryable-encryption
+   /libmongoc/guides/client-side-field-level-encryption
+   /libmongoc/guides/queryable-encryption
+
+
+  - :ref:`csfle`
+  - :ref:`queryable-encryption`
 
 Installation
 ------------

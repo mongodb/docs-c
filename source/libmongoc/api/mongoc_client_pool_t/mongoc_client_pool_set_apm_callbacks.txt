@@ -32,7 +32,7 @@ Returns
 
 Returns true on success. If any arguments are invalid, returns false and logs an error.
 
-.. include:: ../../includes/mongoc_client_pool_call_once.txt
+.. include:: /libmongoc/includes/mongoc_client_pool_call_once.txt
 
 .. seealso::
 

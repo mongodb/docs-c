@@ -10,7 +10,7 @@ Use a session for a sequence of operations, optionally with causal consistency. 
 Synopsis
 --------
 
-.. include:: ../includes/session-lifecycle.txt
+.. include:: /libmongoc/includes/session-lifecycle.txt
 
 Fork Safety
 -----------
@@ -20,7 +20,7 @@ The child process must call :ref:`mongoc_client_reset` on the ``client`` field.
 Example
 -------
 
-.. literalinclude:: ../includes/examples/example-session.c
+.. literalinclude:: /libmongoc/includes/examples/example-session.c
    :language: c
    :caption: example-session.c
 

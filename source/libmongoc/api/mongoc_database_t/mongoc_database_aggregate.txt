@@ -27,7 +27,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``database``
 
-.. include:: ../../includes/aggregate-opts.txt
+.. include:: /libmongoc/includes/aggregate-opts.txt
 
 For a list of all options, see :manual:`the MongoDB Manual entry on the aggregate command </reference/command/aggregate/>`.
 
@@ -75,12 +75,12 @@ concern and the aggregation pipeline includes "$out", the write concern is appli
 :ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for
 :ref:`the "distinct" command with opts <mongoc_client_read_command_with_opts_example>`.
 
-.. include:: ../../includes/retryable-read-aggregate.txt
+.. include:: /libmongoc/includes/retryable-read-aggregate.txt
 
 Returns
 -------
 
-.. include:: ../../includes/returns-cursor.txt
+.. include:: /libmongoc/includes/returns-cursor.txt
 
 Example
 -------

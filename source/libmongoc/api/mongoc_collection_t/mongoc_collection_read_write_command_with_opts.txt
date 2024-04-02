@@ -24,7 +24,7 @@ to the server without any of this logic, use :ref:`mongoc_collection_command_sim
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/read-write-opts-sources.txt
+.. include:: /libmongoc/includes/read-write-opts-sources.txt
 
 ``reply`` is always initialized, and must be freed with :ref:`bson_destroy`.
 
@@ -41,7 +41,7 @@ Parameters
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/read-write-opts.txt
+.. include:: /libmongoc/includes/read-write-opts.txt
 
 Consult `the MongoDB Manual entry on Database Commands <https://www.mongodb.com/docs/manual/reference/command/>`_
 for each command's arguments.

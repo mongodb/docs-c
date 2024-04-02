@@ -22,6 +22,6 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_apm_topology_opening_get_context
-  mongoc_apm_topology_opening_get_topology_id
+  /libmongoc/application-performance-monitoring/mongoc_apm_topology_opening_get_context
+  /libmongoc/application-performance-monitoring/mongoc_apm_topology_opening_get_topology_id
 

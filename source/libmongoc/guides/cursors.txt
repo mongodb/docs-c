@@ -72,7 +72,7 @@ Here's a complete test case that demonstrates the use of tailable cursors.
 
 An example to tail the oplog from a replica set.
 
-.. literalinclude:: ../includes/examples/mongoc-tail.c
+.. literalinclude:: /libmongoc/includes/examples/mongoc-tail.c
    :language: c
    :caption: mongoc-tail.c
 

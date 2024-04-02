@@ -25,7 +25,7 @@ concern are not applied to the command.
 
   ``reply`` is always set, and should be released with :ref:`bson_destroy`.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Parameters
 ----------

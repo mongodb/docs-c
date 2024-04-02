@@ -24,7 +24,7 @@ Parameters
   read preferences from ``db``.
 - ``error``: A :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/gridfs-bucket-opts.txt
+.. include:: /libmongoc/includes/gridfs-bucket-opts.txt
 
 Description
 -----------

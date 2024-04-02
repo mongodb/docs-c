@@ -1,5 +1,6 @@
 .. _mongoc_uri_option_is_int64:
 
+============================
 mongoc_uri_option_is_int64()
 ============================
 
@@ -8,8 +9,8 @@ Synopsis
 
 .. code-block:: c
 
-  bool
-  mongoc_uri_option_is_int64 (const char *option);
+   bool
+   mongoc_uri_option_is_int64 (const char *option);
 
 Parameters
 ----------
@@ -19,9 +20,11 @@ Parameters
 Description
 -----------
 
-Returns true if the option is a known MongoDB URI option of 64-bit integer type. For example, "wTimeoutMS=100" is a valid 64-bit integer MongoDB URI option, so ``mongoc_uri_option_is_int64 ("wTimeoutMS")`` is true.
+Returns true if the option is a known MongoDB URI option of 64-bit integer type. For example,
+"wTimeoutMS=100" is a valid 64-bit integer MongoDB URI option, so ``mongoc_uri_option_is_int64
+("wTimeoutMS")`` is true.
 
 .. seealso::
 
-  | :ref:`mongoc_uri_option_is_int32()`
+  | :ref:`mongoc_uri_option_is_int32`
 

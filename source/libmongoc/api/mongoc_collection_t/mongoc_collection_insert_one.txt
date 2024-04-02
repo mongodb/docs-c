@@ -26,7 +26,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/insert-one-opts.txt
+.. include:: /libmongoc/includes/insert-one-opts.txt
 
 Description
 -----------

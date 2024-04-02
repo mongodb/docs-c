@@ -18,7 +18,7 @@ mongoc_collection_count()
    :ref:`mongoc_collection_count` with a NULL ``query``, but is not guaranteed to retrieve an accurate
    collection count.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Synopsis
 --------

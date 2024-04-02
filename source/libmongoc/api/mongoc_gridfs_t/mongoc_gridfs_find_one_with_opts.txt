@@ -35,7 +35,7 @@ and the error code and domain are 0.
 See :ref:`mongoc_collection_find_with_opts` for a description of the ``filter`` and ``opts``
 parameters.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Errors
 ------

@@ -141,4 +141,4 @@ reply document, with fields ``errmsg`` and ``code``.
       return 0;
    }
 
-.. include:: ../../includes/seealso/cursor-error.txt
+.. include:: /libmongoc/includes/seealso/cursor-error.txt

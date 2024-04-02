@@ -23,4 +23,4 @@ Parameters
 
 - ``session``: A :ref:`mongoc_client_session_t`.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

@@ -27,7 +27,7 @@ Parameters
 - ``reply``: A ``bson_t-opt-storage-ptr`` to contain the results.
 - ``error``: An optional location for a :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/count-document-opts.txt
+.. include:: /libmongoc/includes/count-document-opts.txt
 
 Other options are included in the sent ``aggregate`` command. For a list of all options,
 see `the MongoDB Manual entry on the aggregate command <https://www.mongodb.com/docs/manual/reference/command/aggregate/>`__.
@@ -38,7 +38,7 @@ Description
 This functions executes a count query on ``collection``. In contrast with :ref:`mongoc_collection_estimated_document_count`,
 the count returned is guaranteed to be accurate.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Errors
 ------

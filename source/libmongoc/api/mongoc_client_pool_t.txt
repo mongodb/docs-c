@@ -22,7 +22,7 @@ only be called from one thread.
 Example
 -------
 
-.. literalinclude:: ../../includes/examples/example-pool.c
+.. literalinclude:: /libmongoc/includes/examples/example-pool.c
    :language: c
    :caption: example-pool.c
 
@@ -38,7 +38,7 @@ Functions
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_max_size
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_min_size
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_new
-  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_new_with_errors
+  /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_new_with_error
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_pop
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_push
   /libmongoc/api/mongoc_client_pool_t/mongoc_client_pool_set_apm_callbacks

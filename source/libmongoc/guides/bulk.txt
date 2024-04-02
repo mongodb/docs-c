@@ -32,7 +32,7 @@ The bulk operation will coalesce insertions as a single batch for each consecuti
 
 To execute the bulk operation and receive the result we call :ref:`mongoc_bulk_operation_execute`.
 
-.. literalinclude:: ../includes/examples/bulk/bulk1.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk1.c
    :language: c
    :caption: bulk1.c
 
@@ -60,7 +60,7 @@ Ordered Bulk Write Operations
 Ordered bulk write operations are batched and sent to the server in the order provided for serial
 execution. The ``reply`` document describes the type and count of operations performed.
 
-.. literalinclude:: ../includes/examples/bulk/bulk2.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk2.c
    :language: c
    :caption: bulk2.c
 
@@ -89,7 +89,7 @@ be executed in parallel. Any errors that occur are reported after all operations
 In the next example the first and third operations fail due to the unique constraint on ``_id``. Since
 we are doing unordered execution the second and fourth operations succeed.
 
-.. literalinclude:: ../includes/examples/bulk/bulk3.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk3.c
    :language: c
    :caption: bulk3.c
 
@@ -125,7 +125,7 @@ This feature is only available when using MongoDB 3.2 and later.
 By default bulk operations are validated against the schema, if any is defined. In certain cases however
 it may be necessary to bypass the document validation.
 
-.. literalinclude:: ../includes/examples/bulk/bulk5.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk5.c
    :language: c
    :caption: bulk5.c
 
@@ -162,7 +162,7 @@ are executed against. A custom write concern can be passed to the :ref:`mongoc_c
 method. Write concern errors (e.g. wtimeout) will be reported after all operations are attempted,
 regardless of execution order.
 
-.. literalinclude:: ../includes/examples/bulk/bulk4.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk4.c
    :language: c
    :caption: bulk4.c
 
@@ -194,7 +194,7 @@ Setting Collation Order
 
 This feature is only available when using MongoDB 3.4 and later.
 
-.. literalinclude:: ../includes/examples/bulk/bulk-collation.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk-collation.c
    :language: c
    :caption: bulk-collation.c
 
@@ -216,7 +216,7 @@ Unacknowledged Bulk Writes
 Set "w" to zero for an unacknowledged write. The driver sends unacknowledged writes using the legacy
 opcodes ``OP_INSERT``, ``OP_UPDATE``, and ``OP_DELETE``.
 
-.. literalinclude:: ../includes/examples/bulk/bulk6.c
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulk6.c
    :language: c
    :caption: bulk6.c
 

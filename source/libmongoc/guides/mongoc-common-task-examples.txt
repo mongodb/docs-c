@@ -12,7 +12,7 @@ Setup
 
 First we'll write some code to insert sample data:
 
-.. literalinclude:: ../includes/examples/doc-common-insert.c
+.. literalinclude:: /libmongoc/includes/examples/doc-common-insert.c
    :language: c
    :caption: doc-common-insert.c
 
@@ -21,14 +21,14 @@ First we'll write some code to insert sample data:
 
 This is how to use the ``explain`` command in MongoDB 3.2+:
 
-.. literalinclude:: ../includes/examples/common_operations/explain.c
+.. literalinclude:: /libmongoc/includes/examples/common_operations/explain.c
    :language: c
    :caption: explain.c
 
 Running the Examples
 --------------------
 
-.. literalinclude:: ../includes/examples/common_operations/common-operations.c
+.. literalinclude:: /libmongoc/includes/examples/common_operations/common-operations.c
    :language: c
    :caption: common-operations.c
 

@@ -45,7 +45,7 @@ must call :ref:`mongoc_client_reset`.
 Example
 -------
 
-.. literalinclude:: ../includes/examples/example-client.c
+.. literalinclude:: /libmongoc/includes/examples/example-client.c
    :language: c
    :caption: example-client.c
 

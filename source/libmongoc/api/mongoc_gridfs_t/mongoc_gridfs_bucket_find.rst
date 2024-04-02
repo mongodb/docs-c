@@ -26,7 +26,7 @@ Description
 
 Finds file documents from the bucket's ``files`` collection.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Returns
 -------

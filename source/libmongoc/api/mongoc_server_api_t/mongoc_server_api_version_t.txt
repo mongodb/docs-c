@@ -1,5 +1,6 @@
 .. _mongoc_server_api_version_t:
 
+===========================
 mongoc_server_api_version_t
 ===========================
 
@@ -15,18 +16,16 @@ Supported API Versions
 
 The driver currently supports the following MongoDB API versions:
 
-====================  ======================
-Enum value            MongoDB version string
-====================  ======================
-MONGOC_SERVER_API_V1  "1"
-====================  ======================
+- MONGOC_SERVER_API_V1
+
+  - MongoDB version string: "1"
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_server_api_version_from_string
-    mongoc_server_api_version_to_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string

@@ -184,13 +184,13 @@ X.509 Certificate Authentication
 --------------------------------
 
 .. note::
-   
+
    The MongoDB C Driver must be compiled with TLS support for X.509 authentication support. Once this is done,
    start a server with the following options:
 
-  .. code-block:: none
+   .. code-block:: none
 
-     $ mongod --tlsMode requireTLS --tlsCertificateKeyFile server.pem --tlsCAFile ca.pem
+      $ mongod --tlsMode requireTLS --tlsCertificateKeyFile server.pem --tlsCAFile ca.pem
 
 The ``MONGODB-X509`` mechanism authenticates a username derived from the distinguished subject name of the X.509
 certificate presented by the driver during TLS negotiation. This authentication method requires the use of TLS
@@ -278,4 +278,4 @@ If credentials are not passed in the URI or with environment variables, and the 
 ``AWS_CONTAINER_CREDENTIALS_RELATIVE_URI`` is not set, libmongoc will attempt to retrieve temporary credentials
 from the EC2 machine metadata by querying link local addresses.
 
-.. include:: includes/seealso/authmechanism.txt
+.. include:: /libmongoc/includes/seealso/authmechanism.txt

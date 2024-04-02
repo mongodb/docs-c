@@ -28,7 +28,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/update-one-opts.txt
+.. include:: /libmongoc/includes/update-one-opts.txt
 
 Description
 -----------
@@ -57,7 +57,7 @@ A write concern timeout or write concern error is considered a failure.
 
 Example
 -------
-.. literalinclude:: ../../includes/examples/example-update.c
+.. literalinclude:: /libmongoc/includes/examples/example-update.c
    :language: c
    :caption: example-update.c
 

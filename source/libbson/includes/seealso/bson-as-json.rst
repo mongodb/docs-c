@@ -1,4 +1,5 @@
 .. seealso::
+  
   | :ref: `bson_array_as_canonical_extended_json`
 
   | :ref:`bson_array_as_json`

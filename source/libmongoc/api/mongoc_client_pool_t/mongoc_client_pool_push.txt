@@ -20,4 +20,4 @@ Parameters
 - ``pool``: A :ref:`mongoc_client_pool_t`.
 - ``client``: A :ref:`mongoc_client_t`.
 
-.. include:: ../../includes/mongoc_client_pool_thread_safe.txt
+.. include:: /libmongoc/includes/mongoc_client_pool_thread_safe.txt

@@ -23,9 +23,9 @@ Functions
   :titlesonly:
   :maxdepth: 1
 
-  mongoc_apm_server_changed_get_context
-  mongoc_apm_server_changed_get_host
-  mongoc_apm_server_changed_get_new_description
-  mongoc_apm_server_changed_get_previous_description
-  mongoc_apm_server_changed_get_topology_id
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_get_context
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_get_host
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_get_new_description
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_get_previous_description
+  /libmongoc/application-performance-monitoring/mongoc_apm_server_changed_get_topology_id
 

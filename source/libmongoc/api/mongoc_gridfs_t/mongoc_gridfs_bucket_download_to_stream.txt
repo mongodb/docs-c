@@ -32,7 +32,7 @@ Writes the full contents of the file to the ``destination`` stream.
 The ``destination`` stream is not closed after calling :ref:`mongoc_gridfs_bucket_download_to_stream`;
 call :ref:`mongoc_stream_close` after.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Returns
 -------

@@ -35,7 +35,7 @@ Returns ``true`` if it successfully added the option to the builder, otherwise `
 Setting sort
 ------------
 
-.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: /libmongoc/includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_SORT_BEGIN */
    :end-before: /* EXAMPLE_FAM_SORT_END */

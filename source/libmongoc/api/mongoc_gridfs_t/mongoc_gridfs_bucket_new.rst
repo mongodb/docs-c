@@ -23,7 +23,7 @@ Parameters
 - ``read_prefs``: A :ref:`mongoc_read_prefs_t` used for read operations or ``NULL`` to inherit read preferences from ``db``.
 - ``error``: A :ref:`bson_error_t` or ``NULL``.
 
-.. include:: ../../includes/gridfs-bucket-opts.txt
+.. include:: /libmongoc/includes/gridfs-bucket-opts.txt
 
 Description
 -----------

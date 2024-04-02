@@ -25,7 +25,7 @@ will be used. This may happen if the change stream encounters a resumable error.
 
    A change stream is only supported with majority read concern.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Parameters
 ----------
@@ -35,7 +35,7 @@ Parameters
   This may be an empty document.
 - ``opts``: A :ref:`bson_t` containing change stream options.
 
-.. include:: ../../includes/change-stream-opts.txt
+.. include:: /libmongoc/includes/change-stream-opts.txt
 
 Returns
 -------

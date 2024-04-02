@@ -1,5 +1,6 @@
 .. _mongoc_uri_set_option_as_int32:
 
+================================
 mongoc_uri_set_option_as_int32()
 ================================
 
@@ -25,7 +26,8 @@ Description
 
 Sets an individual URI option, after the URI has been parsed from a string.
 
-Only known options of type integer can be set. Some integer options, such as :ref:`minHeartbeatFrequencyMS <sdam_uri_options>`, have additional constraints.
+Only known options of type integer can be set. Some integer options, such as :ref:`minHeartbeatFrequencyMS <sdam_uri_options>`,
+have additional constraints.
 
 Updates the option in-place if already set, otherwise appends it to the URI's :ref:`bson_t` of options.
 
@@ -36,5 +38,5 @@ True if successfully set (the named option is a known option of type int32 or in
 
 .. seealso::
 
-  | :ref:`mongoc_uri_set_option_as_int64()`
+  | :ref:`mongoc_uri_set_option_as_int64`
 

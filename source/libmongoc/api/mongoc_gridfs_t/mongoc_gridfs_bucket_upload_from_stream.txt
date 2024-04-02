@@ -27,7 +27,7 @@ Parameters
 - ``file_id``: A :ref:`bson_value_t` to receive the generated id of the file or ``NULL``.
 - ``error``: A :ref:`bson_error_t` to receive any error or ``NULL``.
 
-.. include:: ../../includes/gridfs-bucket-upload-opts.txt
+.. include:: /libmongoc/includes/gridfs-bucket-upload-opts.txt
 
 Description
 -----------

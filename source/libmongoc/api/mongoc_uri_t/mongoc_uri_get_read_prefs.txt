@@ -1,14 +1,14 @@
 .. _mongoc_uri_get_read_prefs:
 
+===========================
 mongoc_uri_get_read_prefs()
 ===========================
 
 .. warning::
-   .. deprecated:: 1.2.0
 
-      This function is deprecated and should not be used in new code.
+   This function is deprecated and should not be used in new code.
 
-      Please use :doc:`mongoc_uri_get_read_prefs_t() <mongoc_uri_get_read_prefs_t>` in new code.
+   Please use :ref:`mongoc_uri_get_read_prefs_t() <mongoc_uri_get_read_prefs_t>` in new code.
 
 Synopsis
 --------
@@ -26,10 +26,12 @@ Parameters
 Description
 -----------
 
-Fetches a bson document containing read preference tag information from a URI. Note that this does not include the read preference mode.
+Fetches a bson document containing read preference tag information from a URI. Note that this
+does not include the read preference mode.
 
 Returns
 -------
 
-Returns a bson document that should not be modified or freed if ``uri`` has read preferences, otherwise ``NULL``.
+Returns a bson document that should not be modified or freed if ``uri`` has read preferences,
+otherwise ``NULL``.
 

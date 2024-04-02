@@ -28,7 +28,7 @@ Adds arbitrary options to :manual:`the findAndModify command </reference/command
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/find-and-modify-appended-opts.txt
+.. include:: /libmongoc/includes/find-and-modify-appended-opts.txt
 
 Returns
 -------
@@ -38,7 +38,7 @@ Returns true on success. If any arguments are invalid, returns false and logs an
 Appending options to findAndModify
 ----------------------------------
 
-.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: /libmongoc/includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_OPTS_BEGIN */
    :end-before: /* EXAMPLE_FAM_OPTS_END */

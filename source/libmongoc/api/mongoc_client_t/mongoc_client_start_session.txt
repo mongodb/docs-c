@@ -16,7 +16,7 @@ Synopsis
 
 Create a session for a sequence of operations.
 
-.. include:: ../../includes/session-lifecycle.txt
+.. include:: /libmongoc/includes/session-lifecycle.txt
 
 Parameters
 ----------
@@ -38,4 +38,4 @@ Errors
 This function can fail if the driver is not built with crypto support, if ``opts`` is
 misconfigured, or if the session is configured with options that the server does not support.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

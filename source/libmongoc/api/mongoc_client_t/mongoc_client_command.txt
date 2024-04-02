@@ -24,7 +24,7 @@ Synopsis
 This function is superseded by :ref:`mongoc_client_command_with_opts`, :ref:`mongoc_client_read_command_with_opts`,
 :ref:`mongoc_client_write_command_with_opts`, and :ref:`mongoc_client_read_write_command_with_opts`.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Description
 -----------

@@ -75,8 +75,6 @@ unlike the schema documented for the ``create`` command, accepts a value of
 
 This function has the following as-if effect:
 
-.. default-role:: math
-
 1. A new set of options ``O`` will be created based on ``in_options``.
 2. For each element ``F`` in the ``$.encryptedFields.fields`` array of ``O``:
 

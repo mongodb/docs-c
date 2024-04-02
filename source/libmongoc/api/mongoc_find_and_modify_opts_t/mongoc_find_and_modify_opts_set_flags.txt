@@ -51,7 +51,7 @@ and logs an error.
 Setting flags
 -------------
 
-.. literalinclude:: ../../includes/examples/find_and_modify_with_opts/fam.c
+.. literalinclude:: /libmongoc/includes/examples/find_and_modify_with_opts/fam.c
    :language: c
    :start-after: /* EXAMPLE_FAM_FLAGS_BEGIN */
    :end-before: /* EXAMPLE_FAM_FLAGS_END */

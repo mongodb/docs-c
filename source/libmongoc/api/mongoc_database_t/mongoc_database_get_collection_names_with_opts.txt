@@ -18,7 +18,7 @@ Synopsis
 Fetches a ``NULL`` terminated array of ``NULL-byte`` terminated ``char*`` strings
 containing the names of all of the collections in ``database``.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Parameters
 ----------
@@ -29,7 +29,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``database``
 
-.. include:: ../../includes/generic-opts.txt
+.. include:: /libmongoc/includes/generic-opts.txt
 
 For a list of all options, see `the MongoDB Manual entry on the listCollections command
 <https://www.mongodb.com/docs/manual/reference/command/listCollections/>`__.

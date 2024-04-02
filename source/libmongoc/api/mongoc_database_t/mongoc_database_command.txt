@@ -32,7 +32,7 @@ called on it. The database's read preference, read concern, and write concern ar
 the command, and :ref:`mongoc_cursor_next` will not check the server response for a write concern
 error or write concern timeout.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Parameters
 ----------
@@ -49,5 +49,5 @@ Parameters
 Returns
 -------
 
-.. include:: ../../includes/returns-cursor.txt
+.. include:: /libmongoc/includes/returns-cursor.txt
 

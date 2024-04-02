@@ -1,5 +1,6 @@
 .. _mongoc_uri_get_option_as_int64:
 
+================================
 mongoc_uri_get_option_as_int64()
 ================================
 
@@ -23,7 +24,8 @@ Parameters
 Description
 -----------
 
-Returns the value of the URI option if it is set and of the correct type (integer). Returns ``fallback`` if the option is not set, set to an invalid type, or zero.
+Returns the value of the URI option if it is set and of the correct type (integer). Returns ``fallback``
+if the option is not set, set to an invalid type, or zero.
 
 Zero is considered "unset", so URIs can be constructed like so, and still accept default values:
 
@@ -35,5 +37,5 @@ If ``myvalue`` is non-zero it is the write concern timeout; if it is zero the dr
 
 .. seealso::
 
-  | :ref:`mongoc_uri_get_option_as_int32()`
+  | :ref:`mongoc_uri_get_option_as_int32`
 

@@ -18,7 +18,7 @@ Fetches a cursor containing documents, each corresponding to a collection on thi
 
 To get collection names only, use :ref:`mongoc_database_get_collection_names_with_opts`.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Parameters
 ----------
@@ -28,7 +28,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``database``
 
-.. include:: ../../includes/generic-opts.txt
+.. include:: /libmongoc/includes/generic-opts.txt
 
 For a list of all options, see `the MongoDB Manual entry on the listCollections command
 <https://www.mongodb.com/docs/manual/reference/command/listCollections/>`__.
@@ -41,7 +41,7 @@ Use :ref:`mongoc_cursor_error` on the returned cursor to check for errors.
 Returns
 -------
 
-.. include:: ../../includes/returns-cursor.txt
+.. include:: /libmongoc/includes/returns-cursor.txt
 
 In the returned cursor each result corresponds to the server's representation of a
 collection in this database.

@@ -37,10 +37,9 @@ This table details the names and usage notes of such packages.
 
 
 .. list-table::
-  :name: Available Packages
+  :widths: 1 1 1 1 1
   :header-rows: 1
   :align: left
-  :widths: auto
 
   * - Packaging Tool
     - Platform(s)

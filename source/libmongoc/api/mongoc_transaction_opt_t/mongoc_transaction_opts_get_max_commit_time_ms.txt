@@ -19,4 +19,4 @@ Parameters
 
 - ``opts``: A :ref:`mongoc_transaction_opt_t`.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

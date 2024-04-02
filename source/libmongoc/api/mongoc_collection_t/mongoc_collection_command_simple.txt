@@ -36,7 +36,7 @@ management.
 This function tries to unwrap an embedded error in the command when possible. The unwrapped error will
 be propagated via the ``error`` parameter. Additionally, the result document is set in ``reply``.
 
-.. include:: ../../includes/not-retryable-read.txt
+.. include:: /libmongoc/includes/not-retryable-read.txt
 
 Errors
 ------
@@ -56,6 +56,6 @@ Example
 
 The following is an example of executing the ``ping`` command.
 
-.. literalinclude:: ../../includes/examples/example-collection-command.c
-   :start-after: BEGIN:mongoc_collection_command
-   :end-before: END:mongoc_collection_command
+.. literalinclude:: /libmongoc/includes/examples/example-collection-command.c
+   :start-after: BEGIN:mongoc_collection_command_simple
+   :end-before: END:mongoc_collection_command_simple

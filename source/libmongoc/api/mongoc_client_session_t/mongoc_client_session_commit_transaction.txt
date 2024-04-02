@@ -33,4 +33,4 @@ is a server or network error.
 
 If a ``reply`` is supplied, it is always initialized and must be freed with :ref:`bson_destroy`.
 
-.. include:: ../../includes/seealso/session.txt
+.. include:: /libmongoc/includes/seealso/session.txt

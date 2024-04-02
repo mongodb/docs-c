@@ -1,7 +1,7 @@
-.. _mongoc_client_decryption_decrypt:
+.. _mongoc_client_encryption_decrypt:
 
 ==================================
-mongoc_client_decryption_decrypt()
+mongoc_client_encryption_decrypt()
 ==================================
 
 Synopsis

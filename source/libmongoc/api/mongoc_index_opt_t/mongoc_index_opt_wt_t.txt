@@ -23,18 +23,18 @@ Description
 This structure contains the options that may be used for tuning a WiredTiger specific index.
 
 Functions
-  ---------
+---------
 
-  .. toctree::
-    :titlesonly:
-    :maxdepth: 1
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
 
-    mongoc_index_opt_wt_get_default
-    mongoc_index_opt_wt_init
+  /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_wt_get_default
+  /libmongoc/api/mongoc_index_opt_t/mongoc_index_opt_wt_init
 
 .. seealso::
 
-  | :doc:`mongoc_index_opt_t`
+  | :ref:`mongoc_index_opt_t`
 
-  | :doc:`mongoc_index_opt_geo_t`
+  | :ref:`mongoc_index_opt_geo_t`
 

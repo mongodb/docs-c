@@ -76,7 +76,7 @@ States with Populations Over 10 Million
 
 To get all states with a population greater than 10 million, use the following aggregation pipeline:
 
-.. literalinclude:: ../includes/examples/aggregation/aggregation1.c
+.. literalinclude:: /libmongoc/includes/examples/aggregation/aggregation1.c
    :language: c
    :caption: aggregation1.c
 

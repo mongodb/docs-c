@@ -33,7 +33,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/create-index-opts.txt
+.. include:: /libmongoc/includes/create-index-opts.txt
 
 Description
 -----------

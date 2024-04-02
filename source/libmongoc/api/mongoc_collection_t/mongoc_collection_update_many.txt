@@ -28,7 +28,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/update-many-opts.txt
+.. include:: /libmongoc/includes/update-many-opts.txt
 
 Description
 -----------

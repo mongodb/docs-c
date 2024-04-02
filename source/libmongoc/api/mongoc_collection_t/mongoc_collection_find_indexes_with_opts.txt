@@ -16,7 +16,7 @@ Synopsis
 
 Fetches a cursor containing documents, each corresponding to an index on this collection.
 
-.. include:: ../../includes/retryable-read.txt
+.. include:: /libmongoc/includes/retryable-read.txt
 
 Parameters
 ----------
@@ -26,7 +26,7 @@ Parameters
 
 .. ``opts-source`` replace:: ``collection``
 
-.. include:: ../../includes/generic-opts.txt
+.. include:: /libmongoc/includes/generic-opts.txt
 
 For a list of all options, see `the MongoDB Manual entry on the listIndexes command
 <https://www.mongodb.com/docs/manual/reference/command/listIndexes/>`__.
@@ -39,7 +39,7 @@ Use :ref:`mongoc_cursor_error` on the returned cursor to check for errors.
 Returns
 -------
 
-.. include:: ../../includes/returns-cursor.txt
+.. include:: /libmongoc/includes/returns-cursor.txt
 
 In the returned cursor each result corresponds to the server's representation of an index
 on this collection. If the collection does not exist on the server, the cursor will be empty.

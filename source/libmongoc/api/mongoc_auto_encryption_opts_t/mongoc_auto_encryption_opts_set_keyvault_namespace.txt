@@ -1,4 +1,4 @@
-.. _mongoc_auto_encryption_opts_set_key_vault_namespace:
+.. _mongoc_auto_encryption_opts_set_keyvault_namespace:
 
 ====================================================
 mongoc_auto_encryption_opts_set_keyvault_namespace()
