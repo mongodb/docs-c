@@ -17,16 +17,16 @@ Synopsis
 Parameters
 ----------
 
-- ``iter``: A :refson_iter_t`.
+- ``iter``: A :ref:`bson_iter_t`.
 
 Description
 -----------
 
-Fetches the :refson_oid_t` for a BSON_TYPE_OID element. You should verify it is an element of type
+Fetches the :ref:`bson_oid_t` for a BSON_TYPE_OID element. You should verify it is an element of type
 BSON_TYPE_OID before calling this function.
 
 Returns
 -------
 
-A :refson_oid_t` that should not be modified or freed.
+A :ref:`bson_oid_t` that should not be modified or freed.
 
