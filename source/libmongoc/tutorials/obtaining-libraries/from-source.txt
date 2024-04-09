@@ -80,7 +80,7 @@ clone the repository using the command line, the following command may be used:
 
 .. tip::
 
-  Despite the name, ``git-clone`\ 's `--branch`` argument may also be used to
+  Despite the name, ``git-clone``'s ``--branch`` argument may also be used to
   clone from repository *tags*.
 
 .. _learn.obtaining.archive:
@@ -216,7 +216,7 @@ Configuring for libbson
 
 .. important::
 
-  If you are building with Xcode or Visual Studio, you
+  If you are building with Xcode [1]_ or Visual Studio [2]_, you
   may need to execute CMake from within a special environment in which the
   respective toolchain is available.
 
@@ -290,10 +290,9 @@ more information.
 
 .. tip:: The ``--config`` option
 
-  The ``--config <cmake--build.--config>`` option is used to set the build
-  configuration to use in the case of Multi-Config generators (i.e. Visual
-  Studio). It has no effect on other generators, which instead use
-  ``CMAKE_BUILD_TYPE``.
+  The ``--config`` option is used to set the build configuration to use in the case of
+  Multi-Config generators (i.e. Visual Studio). It has no effect on other generators,
+  which instead use ``CMAKE_BUILD_TYPE``.
 
 .. _learn.get.install:
 
@@ -312,10 +311,9 @@ directory.
 
 .. tip:: The ``--config`` option
 
-  The ``--config <cmake--install.--config>`` option is only used
-  for Multi-Config generators (i.e. Visual Studio) and is otherwise ignored. The
-  value given for ``--config`` must be the same as was given for
-  ``--config <cmake--build.--config>`` with ``cmake --build``.
+  The ``--config`` option is only used for Multi-Config generators (i.e. Visual Studio)
+  and is otherwise ignored. The value given for ``--config`` must be the same as was given for
+  ``--config`` with ``cmake --build``.
 
 .. seealso::
 
@@ -349,7 +347,7 @@ with ``libmongoc``. Follow the process at :ref:`learn.get.build` and
 Footnotes
 ~~~~~~~~~
 
-1. If you wish to configure and build the project with Xcode, the Xcode
+.. [1] If you wish to configure and build the project with Xcode, the Xcode
    command-line tools need to be installed and made available in the environment.
    From within a command-line environment, run:
 
@@ -359,7 +357,7 @@ Footnotes
 
    This will ensure that the compilers and linkers are available on your ``$PATH``.
 
-2. If you wish to configure and build the project using Microsoft Visual C++,
+.. [2] If you wish to configure and build the project using Microsoft Visual C++,
    then the Visual C++ tools and environment variables may need to be set when
    running any CMake or build command.
 

@@ -16,7 +16,7 @@ Parameters
 ----------
 
 - ``iter``: A :refson_iter_t`.
-- ``bson``: A :refson_t`.
+- ``bson``: A :ref:`bson_t`.
 - ``key``: A key to locate after initializing the iter.
 
 Description

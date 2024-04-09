@@ -60,6 +60,7 @@ command to import libmongoc's CMake target and link to libmongoc (as a shared li
 You can also use libmongoc as a static library instead: Use the ``mongo::mongoc_static`` CMake target:
 
 .. literalinclude:: /libmongoc/includes/examples/cmake/find_package_static/CMakeLists.txt
+  :language: c
   :start-after: -- sphinx-include-start --
   :emphasize-lines: 2
 
@@ -70,11 +71,13 @@ If you're not using CMake, use `pkg-config <https://www.freedesktop.org/wiki/Sof
 on the command line to set header and library paths:
 
 .. literalinclude:: /libmongoc/includes/examples/compile-with-pkg-config.sh
+  :language: c
   :start-after: -- sphinx-include-start --
 
 Or to statically link to libmongoc:
 
 .. literalinclude:: /libmongoc/includes/examples/compile-with-pkg-config-static.sh
+  :language: c
   :start-after: -- sphinx-include-start --
 
 Specifying header and include paths manually
@@ -162,6 +165,7 @@ For example, to create a document like this:
 Use the following code:
 
 .. literalinclude:: /libmongoc/includes/examples/tutorial/appending.c
+   :language: c
 
 See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a :ref:`bson_t`.
 
@@ -726,6 +730,7 @@ This example executes the `ping <https://www.mongodb.com/docs/manual/reference/c
 the database "mydb".
 
 .. literalinclude:: /libmongoc/includes/examples/tutorial/executing.c
+   :language: c
 
 Compile the code and run it:
 

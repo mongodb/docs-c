@@ -57,5 +57,6 @@ Example
 The following is an example of executing the ``ping`` command.
 
 .. literalinclude:: /libmongoc/includes/examples/example-collection-command.c
+   :language: c
    :start-after: BEGIN:mongoc_collection_command_simple
    :end-before: END:mongoc_collection_command_simple

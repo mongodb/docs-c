@@ -15,7 +15,6 @@ Guides
    /libmongoc/guides/data-compression
    /libmongoc/guides/cursors
    /libmongoc/guides/bulk
-   /libmongoc/guides/client-side-field-level-encryption
    /libmongoc/guides/aggregate
    /libmongoc/guides/distinct-mapreduce
    /libmongoc/guides/visual-studio-guide
@@ -29,7 +28,6 @@ Guides
 - :ref:`mongoc_connection_pooling`
 - :ref:`mongoc_cursors`
 - :ref:`mongoc_bulk`
-- :ref:`csfle`
 - :ref:`mongoc_aggregate`
 - :ref:`mongoc_distinct_mapreduce`
 - :ref:`visual-studio-guide`

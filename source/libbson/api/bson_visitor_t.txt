@@ -226,5 +226,6 @@ Example Custom Validation
 -------------------------
 
 .. literalinclude:: ../includes/examples/bson-check-depth.c
+   :language: c
    :caption: bson-check-depth.c
    :start-after: -- sphinx-include-start --

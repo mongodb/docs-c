@@ -78,7 +78,7 @@ metadata.
       default, use the following command:
 
       .. code-block::
-         :caption: Ask ``pkg-config`` what directories it will search by default
+         :caption: Ask `pkg-config` what directories it will search by default
 
          $ pkg-config "pkg-config" --variable="pc_path"
 
@@ -214,7 +214,7 @@ refer to the directory where you executed the build (this is the directory that
 contains ``CMakeCache.txt``, among many other files).
 
 From a command line, the installation into your chosen ``$PREFIX`` can be run via
-CMake using the ``cmake --install subcommand <cmake.--install>`` option:
+CMake using the ``cmake --install subcommand`` option:
 
 .. code-block:: c
 
@@ -224,10 +224,9 @@ CMake using the ``cmake --install subcommand <cmake.--install>`` option:
 
    If you configured the libraries while using a *multi-config generator* (e.g
    Visual Studio, Xcode), then you will also need to pass the
-   ``--config <cmake--install.--config>`` command-line option, and
-   must pass the value for the build configuration that you wish to install. For
-   any chosen value of ``--config`` used for installation, you must also have
-   previously executed a ``cmake --build <cmake.--build>`` within
+   ``--config`` command-line option, and must pass the value for the build configuration
+   that you wish to install. For any chosen value of ``--config`` used for installation,
+   you must also have previously executed a ``cmake --build`` within
    that directory with that same ``--config`` value.
 
 .. note::
@@ -240,6 +239,6 @@ CMake using the ``cmake --install subcommand <cmake.--install>`` option:
 .. tip::
 
    It is not necessary to set a ``CMAKE_INSTALL_PREFIX`` if you use the
-   ``--prefix <cmake--install.--prefix>`` command-line option with
-   ``cmake --install``. The ``--prefix`` option will override whatever was specified
-   by ``CMAKE_INSTALL_PREFIX`` when the project was configured.
+   ``--prefix`` command-line option with ``cmake --install``. The ``--prefix``
+   option will override whatever was specified by ``CMAKE_INSTALL_PREFIX`` when the
+   project was configured.
