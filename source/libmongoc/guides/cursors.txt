@@ -50,7 +50,7 @@ how to robustly check for errors.
 Destroying Server-Side Cursors
 ------------------------------
 
-The MongoDB C driver will automatically destroy a server-side cursor when :ref:`mongoc_cursor_destroy`
+The MongoDB C driver will automatically destroy a server-side cursor when `mongoc_cursor_destroy <{+api-libmongoc+}/mongoc_cursor_destroy.html>`__
 is called. Failure to call this function when done with a cursor will leak memory client side as well
 as consume extra memory server side. If the cursor was configured to never timeout, it will become a
 memory leak on the server.
@@ -62,7 +62,7 @@ Tailable Cursors
 
 Tailable cursors are cursors that remain open even after they've returned a final result. This way, if
 more documents are added to a collection (i.e., to the cursor's result set), then you can continue to
-call :ref:`mongoc_cursor_next` to retrieve those additional results.
+call `mongoc_cursor_next <{+api-libmongoc+}/mongoc_cursor_next.html>`__ to retrieve those additional results.
 
 Here's a complete test case that demonstrates the use of tailable cursors.
 
@@ -104,5 +104,5 @@ The line of output is a sample from performing ``db.test.insert({})`` from the m
 
 .. seealso::
 
-  | :ref:`mongoc_cursor_set_max_await_time_ms`.
+  | `mongoc_cursor_set_max_await_time_ms <{+api-libmongoc+}/mongoc_cursor_set_max_await_time_ms.html>`__.
 

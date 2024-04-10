@@ -4,14 +4,14 @@
 
   | :ref:`authentication`
 
-  | :ref:`mongoc_uri_get_auth_mechanism`
+  | `mongoc_uri_get_auth_mechanism <{+api-libmongoc+}/mongoc_uri_get_auth_mechanism.html>`__
 
-  | :ref:`mongoc_uri_get_auth_source`
+  | `mongoc_uri_get_auth_source <{+api-libmongoc+}/mongoc_uri_get_auth_source.html>`__
 
-  | :ref:`mongoc_uri_get_mechanism_properties`
+  | `mongoc_uri_get_mechanism_properties <{+api-libmongoc+}/mongoc_uri_get_mechanism_properties.html>`__
 
-  | :ref:`mongoc_uri_set_auth_mechanism`
+  | `mongoc_uri_set_auth_mechanism <{+api-libmongoc+}/mongoc_uri_set_auth_mechanism.html>`__
 
-  | :ref:`mongoc_uri_set_auth_source`
+  | `mongoc_uri_set_auth_source <{+api-libmongoc+}/mongoc_uri_set_auth_source.html>`__
 
-  | :ref:`mongoc_uri_set_mechanism_properties`
+  | `mongoc_uri_set_mechanism_properties <{+api-libmongoc+}/mongoc_uri_set_mechanism_properties.html>`__

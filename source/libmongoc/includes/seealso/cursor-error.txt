@@ -2,6 +2,6 @@
 
 .. seealso::
 
-  | :ref:`mongoc_cursor_error`
+  | `mongoc_cursor_error <{+api-libmongoc+}/mongoc_cursor_error.html>`__
 
-  | :ref:`mongoc_cursor_error_document`
+  | `mongoc_cursor_error_document <{+api-libmongoc+}/mongoc_cursor_error_document.html>`__
