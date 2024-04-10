@@ -78,7 +78,7 @@ metadata.
       default, use the following command:
 
       .. code-block::
-         :caption: Ask `pkg-config` what directories it will search by default
+         :caption: Ask pkg-config what directories it will search by default
 
          $ pkg-config "pkg-config" --variable="pc_path"
 
