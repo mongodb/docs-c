@@ -116,7 +116,7 @@ Making a Connection
 
 Access MongoDB with a :ref:`mongoc_client_t`. It transparently connects to standalone servers, replica sets
 and sharded clusters on demand. To perform operations on a database or collection, create a :ref:`mongoc_database_t`
-or :ref:`mongoc_collection_t` struct from the :ref:`mongoc_client_t`.
+or `mongoc_collection_t <{+api-libmongoc+}/mongoc_collection_t.html>`__ struct from the :ref:`mongoc_client_t`.
 
 At the start of an application, call :ref:`mongoc_init` before any other libmongoc functions. At the end, call
 the appropriate destroy function for each collection, database, or client handle, in reverse order from how they
@@ -167,7 +167,7 @@ Use the following code:
 .. literalinclude:: /libmongoc/includes/examples/tutorial/appending.c
    :language: c
 
-See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a :ref:`bson_t`.
+See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a `bson_t <{+api-libbson+}/bson_t.html>`__.
 
 Using BCON
 ~~~~~~~~~~

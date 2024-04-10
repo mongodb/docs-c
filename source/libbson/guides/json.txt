@@ -19,9 +19,9 @@ Converting BSON to JSON
 
 There are often times where you might want to convert a BSON document to JSON. It is convenient for
 debugging as well as an interchange format. To help with this, Libbson contains the functions
-:ref:`bson_as_canonical_extended_json` and :ref:`bson_as_relaxed_extended_json`. The
-canonical format preserves BSON type information for values that may have ambiguous representations
-in JSON (e.g. numeric types).
+`bson_as_canonical_extended_json <{+api-libbson+}/bson_as_canonical_extended_json.html>`__ and `bson_as_relaxed_extended_json
+<{+api-libbson+}/bson_as_relaxed_extended_json.html>`__. The canonical format preserves BSON type information
+for values that may have ambiguous representations in JSON (e.g. numeric types).
 
 .. code-block:: c
 
@@ -66,9 +66,9 @@ Converting JSON to BSON
 -----------------------
 
 Converting back from JSON is also useful and common enough that we added :ref:`bson_init_from_json`
-and :ref:`bson_new_from_json`.
+and `bson_new_from_json <{+api-libbson+}/bson_new_from_json.html>`__.
 
-The following example creates a new :ref:`bson_t` from the JSON string ``{"a":1}``.
+The following example creates a new `bson_t <{+api-libbson+}/bson_t.html>`__ from the JSON string ``{"a":1}``.
 
 .. code-block:: c
 
@@ -86,9 +86,10 @@ The following example creates a new :ref:`bson_t` from the JSON string ``{"a":1}
 Streaming JSON Parsing
 ----------------------
 
-Libbson provides :ref:`bson_json_reader_t` to allow for parsing a sequence of JSON documents into BSON.
-The interface is similar to :ref:`bson_reader_t` but expects the input to be in the `MongoDB extended JSON
-<https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/>`_ format.
+Libbson provides `bson_json_reader_t <{+api-libbson+}/bson_json_reader_t.html>`__ to allow for parsing a
+sequence of JSON documents into BSON. The interface is similar to `bson_reader_t <{+api-libbson+}/bson_reader_t/html>`__
+but expects the input to be in the `MongoDB extended JSON <https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/>`_
+format.
 
 .. code-block:: c
 

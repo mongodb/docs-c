@@ -171,7 +171,7 @@ This content has been relocated to the :ref:`Data Compression <mongoc_data_compr
 Additional Connection Options
 -----------------------------
 
-The full list of connection options can be found in the :ref:`mongoc_uri_t` docs.
+The full list of connection options can be found in the `mongoc_uri_t <{+api-libmongoc+}/mongoc_uri_t.html>`__ docs.
 
 Certain socket/connection related options are not configurable:
 

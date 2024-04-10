@@ -4,7 +4,7 @@ This function returns a newly allocated :ref:`mongoc_cursor_t` that should be fr
 when no longer in use. The returned :ref:`mongoc_cursor_t` is never ``NULL``, even on error. The user must call
 :ref:`mongoc_cursor_next` on the returned :ref:`mongoc_cursor_t` to execute the initial command.
 
-Cursor errors can be checked with :ref:`mongoc_cursor_error_document`. It always fills out the :ref:`bson_error_t` if
+Cursor errors can be checked with :ref:`mongoc_cursor_error_document`. It always fills out the `bson_error_t <{+api-libbson+}/bson_error_t.html>`__ if
 an error occurred, and optionally includes a server reply document if the error occurred server-side.
 
 .. warning::

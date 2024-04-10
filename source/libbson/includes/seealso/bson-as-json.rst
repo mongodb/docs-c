@@ -1,15 +1,15 @@
 .. seealso::
   
-  | :ref:`bson_array_as_canonical_extended_json`
+  | `bson_array_as_canonical_extended_json <{+api-libbson+}/bson_array_as_canonical_extended_json.html>`__
 
-  | :ref:`bson_array_as_json`
+  | `bson_array_as_json <{+api-libbson+}/bson_array_as_json.html>`__
 
-  | :ref:`bson_array_as_relaxed_extended_json`
+  | `bson_array_as_relaxed_extended_json <{+api-libbson+}/bson_array_as_relaxed_extended_json.html>`__
 
-  | :ref:`bson_as_canonical_extended_json`
+  | `bson_as_canonical_extended_json <{+api-libbson+}/bson_as_canonical_extended_json.html>`__
 
-  | :ref:`bson_as_json`
+  | `bson_as_json <{+api-libbson+}/bson_as_json.html>`__
 
-  | :ref:`bson_as_json_with_opts`
+  | `bson_as_json_with_opts <{+api-libbson+}/bson_as_json_with_opts.html>`__
 
-  | :ref:`bson_as_relaxed_extended_json`
+  | `bson_as_relaxed_extended_json <{+api-libbson+}/bson_as_relaxed_extended_json.html>`__

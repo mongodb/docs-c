@@ -1,9 +1,9 @@
 .. seealso::
 
-  | :ref:`bson_iter_init`
+  | `bson_iter_init <{+api-libbson+}/bson_iter_init.html>`__
 
-  | :ref:`bson_iter_init_find`
+  | `bson_iter_init_find <{+api-libbson+}/bson_iter_init_find.html>`__
 
-  | :ref:`bson_iter_init_find_case`
+  | `bson_iter_init_find_case <{+api-libbson+}/bson_iter_init_find_case.html>`__
 
-  | :ref:`bson_iter_init_from_data`
+  | `bson_iter_init_from_data <{+api-libbson+}/bson_iter_init_from_data.html>`__
