@@ -21,6 +21,13 @@ MongoDB C Driver
    :depth: 1
    :class: twocols
 
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   /libbson
+   /libmongoc
+
 Introduction
 ------------
 
