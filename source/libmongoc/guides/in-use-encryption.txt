@@ -36,18 +36,16 @@ to require In-Use Encryption be enabled.
 API
 ---
 
-`mongoc_client_encryption_t <{+api-libmongoc+}/mongoc_client_encryption_t.html>`__ is used for explicit encryption and key management.
-`mongoc_client_enable_auto_encryption <{+api-libmongoc+}/mongoc_client_enable_auto_encryption.html>`__ and
-`mongoc_client_pool_enable_auto_encryption <{+api-libmongoc+}/mongoc_client_pool_enable_auto_encryption.html>`__
+:ref:`mongoc_client_encryption_t` is used for explicit encryption and key management.
+:ref:`mongoc_client_enable_auto_encryption` and :ref:`mongoc_client_pool_enable_auto_encryption`
 is used to enable automatic encryption.
 
 The Queryable Encryption and CSFLE features share much of the same API with some exceptions.
 
-- The supported algorithms documented in `mongoc_client_encryption_encrypt_opts_set_algorithm <{+api-libmongoc+}/mongoc_client_encryption_encrypt_opts_set_algorithm.html>`__
+- The supported algorithms documented in :ref:`mongoc_client_encryption_encrypt_opts_set_algorithm`
   do not apply to both features.
-- `mongoc_auto_encryption_opts_set_encrypted_fields_map <{+api-libmongoc+}/mongoc_auto_encryption_opts_set_encrypted_fields_map.html>`__
-  only applies to Queryable Encryption.
-- `mongoc_auto_encryption_opts_set_schema_map <{+api-libmongoc+}/mongoc_auto_encryption_opts_set_schema_map.html>`__ only applies to CSFLE.
+- :ref:`mongoc_auto_encryption_opts_set_encrypted_fields_map` only applies to Queryable Encryption.
+- :ref:`mongoc_auto_encryption_opts_set_schema_map` only applies to CSFLE.
 
 .. _query_analysis:
 
@@ -61,7 +59,7 @@ To support the automatic encryption feature, one of the following dependencies a
 - The ``crypt_shared`` library. See the MongoDB Manual documentation: `Automatic Encryption Shared Library
   <https://www.mongodb.com/docs/manual/core/queryable-encryption/reference/shared-library/>`__
 
-A `mongoc_client_t <{+api-libmongoc+}/mongoc_client_t.html>`__ or `mongoc_client_pool_t <{+api-libmongoc+}/mongoc_client_pool_t.html>`__ configured with auto encryption will automatically
-try to load the ``crypt_shared`` library. If loading the ``crypt_shared`` library fails, the `mongoc_client_t <{+api-libmongoc+}/mongoc_client_t.html>`__
-or `mongoc_client_pool_t <{+api-libmongoc+}/mongoc_client_pool_t.html>`__ will try to spawn the ``mongocryptd`` process from the application's ``PATH``.
-To configure use of ``crypt_shared`` and ``mongocryptd`` see `mongoc_auto_encryption_opts_set_extra <{+api-libmongoc+}/mongoc_auto_encryption_opts_set_extra.html>`__.
+A :ref:`mongoc_client_t` or :ref:`mongoc_client_pool_t` configured with auto encryption will automatically
+try to load the ``crypt_shared`` library. If loading the ``crypt_shared`` library fails, the :ref:`mongoc_client_t`
+or :ref:`mongoc_client_pool_t` will try to spawn the ``mongocryptd`` process from the application's ``PATH``.
+To configure use of ``crypt_shared`` and ``mongocryptd`` see :ref:`mongoc_auto_encryption_opts_set_extra`.

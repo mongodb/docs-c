@@ -12,7 +12,7 @@ Tutorial
    
 This guide offers a brief introduction to the MongoDB C Driver.
 
-For more information on the C API, please refer to the `api <{+api-libmongoc+}/api.html>`__.
+For more information on the C API, please refer to the :ref:`api`.
 
 
 Installing
@@ -114,13 +114,13 @@ See the :ref:`libmongoc and Visual Studio guide <visual-studio-guide>`.
 Making a Connection
 -------------------
 
-Access MongoDB with a `mongoc_client_t <{+api-libmongoc+}/mongoc_client_t.html>`__. It transparently connects to standalone servers, replica sets
-and sharded clusters on demand. To perform operations on a database or collection, create a `mongoc_database_t <{+api-libmongoc+}/mongoc_database_t.html>`__
-or `mongoc_collection_t <{+api-libmongoc+}/mongoc_collection_t.html>`__ struct from the `mongoc_client_t <{+api-libmongoc+}/mongoc_client_t.html>`__.
+Access MongoDB with a :ref:`mongoc_client_t`. It transparently connects to standalone servers, replica sets
+and sharded clusters on demand. To perform operations on a database or collection, create a :ref:`mongoc_database_t`
+or `mongoc_collection_t <{+api-libmongoc+}/mongoc_collection_t.html>`__ struct from the :ref:`mongoc_client_t`.
 
-At the start of an application, call `mongoc_init <{+api-libmongoc+}/mongoc_init.html>`__ before any other libmongoc functions. At the end, call
+At the start of an application, call :ref:`mongoc_init` before any other libmongoc functions. At the end, call
 the appropriate destroy function for each collection, database, or client handle, in reverse order from how they
-were constructed. Call `mongoc_cleanup <{+api-libmongoc+}/mongoc_cleanup.html>`__ before exiting.
+were constructed. Call :ref:`mongoc_cleanup` before exiting.
 
 The example below establishes a connection to a standalone server on ``localhost``, registers the client application
 as "connect-example," and performs a simple command.
@@ -144,7 +144,7 @@ documents. There are several ways to construct them: appending key-value pairs, 
 Appending BSON
 ~~~~~~~~~~~~~~
 
-A BSON document, represented as a `bson_t <{+api-libbson+}/bson_t.html>`__ in code, can be constructed one field at a time using
+A BSON document, represented as a :ref:`bson_t <bson_t>` in code, can be constructed one field at a time using
 libbson's append functions.
 
 For example, to create a document like this:
@@ -167,7 +167,7 @@ Use the following code:
 .. literalinclude:: /libmongoc/includes/examples/tutorial/appending.c
    :language: c
 
-See the :ref:`libbson documentation <libbson>` for all of the types that can be appended to a `bson_t <{+api-libbson+}/bson_t.html>`__.
+See the :ref:`libbson documentation <bson_t>` for all of the types that can be appended to a `bson_t <{+api-libbson+}/bson_t.html>`__.
 
 Using BCON
 ~~~~~~~~~~
@@ -232,7 +232,7 @@ Notice that BCON can create arrays, subdocuments and arbitrary fields.
 Creating BSON from JSON
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-For *single* documents, BSON can be created from JSON strings via `bson_new_from_json <{+api-libbson+}/bson_new_from_json.html>`__.
+For *single* documents, BSON can be created from JSON strings via :ref:`bson_new_from_json <bson_new_from_json>`.
 
 .. code-block:: c
 
@@ -261,7 +261,7 @@ For *single* documents, BSON can be created from JSON strings via `bson_new_from
      return 0;
   }
 
-To initialize BSON from a sequence of JSON documents, use `bson_json_reader_t <{+api-libbson+}/bson_json_reader_t.html>`__.
+To initialize BSON from a sequence of JSON documents, use :ref:`bson_json_reader_t <bson_json_reader_t>`.
 
 .. _tutorial_crud_operations:
 
@@ -274,7 +274,7 @@ Inserting a Document
 ~~~~~~~~~~~~~~~~~~~~
 
 To insert documents into a collection, first obtain a handle to a ``mongoc_collection_t`` via a
-``mongoc_client_t``. Then, use `mongoc_collection_insert_one <{+api-libmongoc+}/mongoc_collection_insert_one.html>`__ to add BSON documents to the collection.
+``mongoc_client_t``. Then, use :ref:`mongoc_collection_insert_one` to add BSON documents to the collection.
 This example inserts into the database "mydb" and collection "mycoll".
 
 When finished, ensure that allocated structures are freed by using their respective destroy functions.
@@ -350,8 +350,8 @@ To verify that the insert succeeded, connect with the MongoDB shell.
 Finding a Document
 ~~~~~~~~~~~~~~~~~~
 
-To query a MongoDB collection with the C driver, use the function `mongoc_collection_find_with_opts <{+api-libmongoc+}/mongoc_collection_find_with_opts.html>`__.
-This returns a `cursor <{+api-libmongoc+}/mongoc_cursor_t.html>`__ to the matching documents.
+To query a MongoDB collection with the C driver, use the function :ref:`mongoc_collection_find_with_opts()
+<mongoc_collection_find_with_opts>`. This returns a :ref:`cursor <mongoc_cursor_t>` to the matching documents.
 The following examples iterate through the result cursors and print the matches to ``stdout`` as JSON strings.
 
 Use a document as a query specifier; for example,
@@ -478,7 +478,7 @@ to look for all documents matching ``{"hello" : "world"}``.
 Updating a Document
 ~~~~~~~~~~~~~~~~~~~
 
-This code snippet gives an example of using `mongoc_collection_update_one <{+api-libmongoc+}/mongoc_collection_update_one.html>`__ to
+This code snippet gives an example of using :ref:`mongoc_collection_update_one() <mongoc_collection_update_one>` to
 update the fields of a document.
 
 Using the "mydb" database, the following example inserts an example document into the "mycoll" collection. Then,
@@ -576,7 +576,7 @@ To verify that the update succeeded, connect with the MongoDB shell.
 Deleting a Document
 ~~~~~~~~~~~~~~~~~~~
 
-This example illustrates the use of `mongoc_collection_delete_one <{+api-libmongoc+}/mongoc_collection_delete_one.html>`__ to delete a document.
+This example illustrates the use of :ref:`mongoc_collection_delete_one` to delete a document.
 
 The following code inserts a sample document into the database "mydb" and collection "mycoll". Then,
 it deletes all documents matching ``{"hello" : "world"}``.
@@ -754,7 +754,7 @@ Threading
 The MongoDB C Driver is thread-unaware in the vast majority of its operations. This means it is up to the programmer
 to guarantee thread-safety.
 
-However, `mongoc_client_pool_t <{+api-libmongoc+}/mongoc_client_pool_t.html>`__ is thread-safe and is used to fetch a ``mongoc_client_t`` in a thread-safe manner.
+However, :ref:`mongoc_client_pool_t` is thread-safe and is used to fetch a ``mongoc_client_t`` in a thread-safe manner.
 After retrieving a client from the pool, the client structure should be considered owned by the calling thread. When
 the thread is finished, the client should be placed back into the pool.
 
