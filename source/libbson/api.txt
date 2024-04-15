@@ -1,3 +1,5 @@
+.. _libbson-api:
+
 =============
 API Reference
 =============
