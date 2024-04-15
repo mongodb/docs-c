@@ -1,0 +1,115 @@
+.. _mongoc_database_t:
+
+=================
+mongoc_database_t
+=================
+
+MongoDB Database Abstraction
+
+Synopsis
+--------
+
+.. code-block:: c
+
+   typedef struct _mongoc_database_t mongoc_database_t;
+
+``mongoc_database_t`` provides access to a MongoDB database. This handle is useful for
+actions a particular database object. It *is not* a container for :ref:`mongoc_collection_t`
+structures.
+
+Read preferences and write concerns are inherited from the parent client. They can be
+overridden with :ref:`mongoc_database_set_read_prefs` and :ref:`mongoc_database_set_write_concern`.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_database_t/mongoc_database_add_user
+  /libmongoc/api/mongoc_database_t/mongoc_database_aggregate
+  /libmongoc/api/mongoc_database_t/mongoc_database_command
+  /libmongoc/api/mongoc_database_t/mongoc_database_command_simple
+  /libmongoc/api/mongoc_database_t/mongoc_database_command_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_copy
+  /libmongoc/api/mongoc_database_t/mongoc_database_create_collection
+  /libmongoc/api/mongoc_database_t/mongoc_database_destroy
+  /libmongoc/api/mongoc_database_t/mongoc_database_drop
+  /libmongoc/api/mongoc_database_t/mongoc_database_drop_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_find_collections
+  /libmongoc/api/mongoc_database_t/mongoc_database_find_collections_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_collection
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_collection_names
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_collection_names_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_name
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_read_concern
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_read_prefs
+  /libmongoc/api/mongoc_database_t/mongoc_database_get_write_concern
+  /libmongoc/api/mongoc_database_t/mongoc_database_has_collection
+  /libmongoc/api/mongoc_database_t/mongoc_database_read_command_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_read_write_command_with_opts
+  /libmongoc/api/mongoc_database_t/mongoc_database_remove_all_users
+  /libmongoc/api/mongoc_database_t/mongoc_database_remove_user
+  /libmongoc/api/mongoc_database_t/mongoc_database_set_read_concern
+  /libmongoc/api/mongoc_database_t/mongoc_database_set_read_prefs
+  /libmongoc/api/mongoc_database_t/mongoc_database_set_write_concern
+  /libmongoc/api/mongoc_database_t/mongoc_database_watch
+  /libmongoc/api/mongoc_database_t/mongoc_database_write_command_with_opts
+
+- :ref:`mongoc_database_add_user`
+- :ref:`mongoc_database_aggregate`
+- :ref:`mongoc_database_command`
+- :ref:`mongoc_database_command_simple`
+- :ref:`mongoc_database_command_with_opts`
+- :ref:`mongoc_database_copy`
+- :ref:`mongoc_database_create_collection`
+- :ref:`mongoc_database_destroy`
+- :ref:`mongoc_database_drop`
+- :ref:`mongoc_database_drop_with_opts`
+- :ref:`mongoc_database_find_collections`
+- :ref:`mongoc_database_find_collections_with_opts`
+- :ref:`mongoc_database_get_collection`
+- :ref:`mongoc_database_get_collection_names`
+- :ref:`mongoc_database_get_collection_names_with_opts`
+- :ref:`mongoc_database_get_name`
+- :ref:`mongoc_database_get_read_concern`
+- :ref:`mongoc_database_get_read_prefs`
+- :ref:`mongoc_database_get_write_concern`
+- :ref:`mongoc_database_has_collection`
+- :ref:`mongoc_database_read_command_with_opts`
+- :ref:`mongoc_database_read_write_command_with_opts`
+- :ref:`mongoc_database_remove_all_users`
+- :ref:`mongoc_database_remove_user`
+- :ref:`mongoc_database_set_read_concern`
+- :ref:`mongoc_database_set_read_prefs`
+- :ref:`mongoc_database_set_write_concern`
+- :ref:`mongoc_database_watch`
+- :ref:`mongoc_database_write_command_with_opts`
+
+Examples
+--------
+
+.. code-block:: c
+
+  #include <mongoc/mongoc.h>
+
+  int
+  main (int argc, char *argv[])
+  {
+     mongoc_database_t *database;
+     mongoc_client_t *client;
+
+     mongoc_init ();
+
+     client = mongoc_client_new ("mongodb://localhost/");
+     database = mongoc_client_get_database (client, "test");
+
+     mongoc_database_destroy (database);
+     mongoc_client_destroy (client);
+
+     mongoc_cleanup ();
+
+     return 0;
+  }
+

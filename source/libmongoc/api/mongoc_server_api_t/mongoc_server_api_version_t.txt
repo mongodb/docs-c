@@ -1,0 +1,34 @@
+.. _mongoc_server_api_version_t:
+
+===========================
+mongoc_server_api_version_t
+===========================
+
+A representation of server API version numbers.
+
+Synopsis
+--------
+
+Used to specify which version of the MongoDB server's API to use for driver connections.
+
+Supported API Versions
+----------------------
+
+The driver currently supports the following MongoDB API versions:
+
+- MONGOC_SERVER_API_V1
+
+  - MongoDB version string: "1"
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string
+
+- :ref:`mongoc_server_api_version_from_string`
+- :ref:`mongoc_server_api_version_to_string`

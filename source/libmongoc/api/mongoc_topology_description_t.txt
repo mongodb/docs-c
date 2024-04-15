@@ -1,0 +1,43 @@
+.. _mongoc_topology_description_t:
+
+=============================
+mongoc_topology_description_t
+=============================
+
+Status of MongoDB Servers
+
+Synopsis
+--------
+
+.. code-block:: c
+
+   typedef struct _mongoc_topology_description_t mongoc_topology_description_t;
+
+``mongoc_topology_description_t`` is an opaque type representing the driver's knowledge of the
+MongoDB server or servers it is connected to. Its API conforms to the `SDAM Monitoring Specification
+<https://github.com/mongodb/specifications/blob/master/source/server-discovery-and-monitoring/server-discovery-and-monitoring-monitoring.rst>`__.
+
+Applications receive a temporary reference to a ``mongoc_topology_description_t`` as a parameter
+to an SDAM Monitoring callback that must not be destroyed. See :ref:`Introduction to Application Performance Monitoring
+<mongoc_application_performance_monitoring>`.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_destroy
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_get_servers
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_has_readable_server
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_has_writable_server
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_new_copy
+  /libmongoc/api/mongoc_topology_description_t/mongoc_topology_description_type
+
+- :ref:`mongoc_topology_description_destroy`
+- :ref:`mongoc_topology_description_get_servers`
+- :ref:`mongoc_topology_description_has_readable_server`
+- :ref:`mongoc_topology_description_has_writable_server`
+- :ref:`mongoc_topology_description_new_copy`
+- :ref:`mongoc_topology_description_type`

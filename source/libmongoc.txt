@@ -25,7 +25,6 @@ libmongoc
    /libmongoc/guides
    /libmongoc/api
    /libmongoc/application-performance-monitoring
-   API Documentation <https://mongoc.org/libmongoc/current/api.html>
 
 Introduction
 ------------

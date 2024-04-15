@@ -1,0 +1,142 @@
+.. _mongoc_collection_t:
+
+===================
+mongoc_collection_t
+===================
+
+Synopsis
+--------
+
+.. code-block:: c
+
+   typedef struct _mongoc_collection_t mongoc_collection_t;
+
+``mongoc_collection_t`` provides access to a MongoDB collection.  This handle is useful
+for actions for most CRUD operations, I.e. insert, update, delete, find, etc.
+
+Read Preferences and Write Concerns
+-----------------------------------
+
+Read preferences and write concerns are inherited from the parent client. They can be
+overridden by ``set`` commands if so desired.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_aggregate
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_command
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_command_simple
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_command_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_copy
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_count_documents
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_estimated_document_count
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_count
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_count_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_create_bulk_operation
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_create_bulk_operation_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_create_index
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_create_index_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_create_indexes_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_delete
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_delete_many
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_delete_one
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_destroy
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_drop
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_drop_index
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_drop_index_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_drop_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_ensure_index
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find_and_modify
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find_and_modify_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find_indexes
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find_indexes_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_find_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_get_last_error
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_get_name
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_get_read_concern
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_get_read_prefs
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_get_write_concern
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_insert
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_insert_bulk
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_insert_many
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_insert_one
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_keys_to_index_string
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_read_command_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_read_write_command_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_remove
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_rename
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_rename_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_replace_one
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_save
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_set_read_concern
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_set_read_prefs
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_set_write_concern
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_stats
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_update
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_update_one
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_update_many
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_validate
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_write_command_with_opts
+  /libmongoc/api/mongoc_collection_t/mongoc_collection_watch
+
+- :ref:`mongoc_collection_aggregate`
+- :ref:`mongoc_collection_command`
+- :ref:`mongoc_collection_command_simple`
+- :ref:`mongoc_collection_command_with_opts`
+- :ref:`mongoc_collection_copy`
+- :ref:`mongoc_collection_count_documents`
+- :ref:`mongoc_collection_estimated_document_count`
+- :ref:`mongoc_collection_count`
+- :ref:`mongoc_collection_count_with_opts`
+- :ref:`mongoc_collection_create_bulk_operation`
+- :ref:`mongoc_collection_create_bulk_operation_with_opts`
+- :ref:`mongoc_collection_create_index`
+- :ref:`mongoc_collection_create_index_with_opts`
+- :ref:`mongoc_collection_create_indexes_with_opts`
+- :ref:`mongoc_collection_delete`
+- :ref:`mongoc_collection_delete_many`
+- :ref:`mongoc_collection_delete_one`
+- :ref:`mongoc_collection_destroy`
+- :ref:`mongoc_collection_drop`
+- :ref:`mongoc_collection_drop_index`
+- :ref:`mongoc_collection_drop_index_with_opts`
+- :ref:`mongoc_collection_drop_with_opts`
+- :ref:`mongoc_collection_ensure_index`
+- :ref:`mongoc_collection_find`
+- :ref:`mongoc_collection_find_and_modify`
+- :ref:`mongoc_collection_find_and_modify_with_opts`
+- :ref:`mongoc_collection_find_indexes`
+- :ref:`mongoc_collection_find_indexes_with_opts`
+- :ref:`mongoc_collection_find_with_opts`
+- :ref:`mongoc_collection_get_last_error`
+- :ref:`mongoc_collection_get_name`
+- :ref:`mongoc_collection_get_read_concern`
+- :ref:`mongoc_collection_get_read_prefs`
+- :ref:`mongoc_collection_get_write_concern`
+- :ref:`mongoc_collection_insert`
+- :ref:`mongoc_collection_insert_bulk`
+- :ref:`mongoc_collection_insert_many`
+- :ref:`mongoc_collection_insert_one`
+- :ref:`mongoc_collection_keys_to_index_string`
+- :ref:`mongoc_collection_read_command_with_opts`
+- :ref:`mongoc_collection_read_write_command_with_opts`
+- :ref:`mongoc_collection_remove`
+- :ref:`mongoc_collection_rename`
+- :ref:`mongoc_collection_rename_with_opts`
+- :ref:`mongoc_collection_replace_one`
+- :ref:`mongoc_collection_save`
+- :ref:`mongoc_collection_set_read_concern`
+- :ref:`mongoc_collection_set_read_prefs`
+- :ref:`mongoc_collection_set_write_concern`
+- :ref:`mongoc_collection_stats`
+- :ref:`mongoc_collection_update`
+- :ref:`mongoc_collection_update_one`
+- :ref:`mongoc_collection_update_many`
+- :ref:`mongoc_collection_validate`
+- :ref:`mongoc_collection_write_command_with_opts`
+- :ref:`mongoc_collection_watch`
