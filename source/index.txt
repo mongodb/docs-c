@@ -43,7 +43,7 @@ following our tutorial.
 
 - `MongoDB Developer Center <https://www.mongodb.com/developer/languages/c/>`__
 
-- `API Reference <https://mongoc.org/libmongoc/current/api.html>`_
+- :ref:`API Reference <libmongoc-api>`
 
 - `Changelog <https://github.com/mongodb/mongo-c-driver/releases>`__
 

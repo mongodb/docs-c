@@ -1,0 +1,50 @@
+.. _mongoc_server_api_t:
+
+===================
+mongoc_server_api_t
+===================
+
+A versioned API to use for connections.
+
+Synopsis
+--------
+
+Used to specify which version of the MongoDB server's API to use for driver connections.
+
+The server API type takes a :ref:`mongoc_server_api_version_t`. It can optionally be strict
+about the list of allowed commands in that API version, and can also optionally provide errors
+for deprecated commands in that API version.
+
+A :ref:`mongoc_server_api_t` can be set on a client, and will then be sent to MongoDB for most
+commands run using that client.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_copy
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_deprecation_errors
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_destroy
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_get_deprecation_errors
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_get_strict
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_get_version
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_new
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_strict
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_from_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_to_string
+  /libmongoc/api/mongoc_server_api_t/mongoc_server_api_version_t
+
+- :ref:`mongoc_server_api_copy`
+- :ref:`mongoc_server_api_deprecation_errors`
+- :ref:`mongoc_server_api_destroy`
+- :ref:`mongoc_server_api_get_deprecation_errors`
+- :ref:`mongoc_server_api_get_strict`
+- :ref:`mongoc_server_api_get_version`
+- :ref:`mongoc_server_api_new`
+- :ref:`mongoc_server_api_strict`
+- :ref:`mongoc_server_api_version_from_string`
+- :ref:`mongoc_server_api_version_to_string`
+- :ref:`mongoc_server_api_version_t`

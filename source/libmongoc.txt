@@ -23,8 +23,8 @@ libmongoc
    /libmongoc/authentication
    /libmongoc/basic-troubleshooting
    /libmongoc/guides
-   API Documentation <https://mongoc.org/libmongoc/current/api.html>
-   Application Performance Monitoring <https://mongoc.org/libmongoc/current/application-performance-monitoring.html>
+   /libmongoc/api
+   /libmongoc/application-performance-monitoring
 
 Introduction
 ------------

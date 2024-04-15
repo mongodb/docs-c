@@ -1,0 +1,59 @@
+.. _mongoc_socket_t:
+
+===============
+mongoc_socket_t
+===============
+
+Portable socket abstraction
+
+Synopsis
+--------
+
+.. code-block:: c
+
+  #include <mongoc/mongoc.h>
+
+  typedef struct _mongoc_socket_t mongoc_socket_t
+
+Synopsis
+--------
+
+This structure provides a socket abstraction that is friendlier for portability than BSD sockets
+directly. Inconsistencies between Linux, various BSDs, Solaris, and Windows are handled here.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_accept
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_bind
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_close
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_connect
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_destroy
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_errno
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_getnameinfo
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_getsockname
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_listen
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_new
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_recv
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_send
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_sendv
+  /libmongoc/api/mongoc_socket_t/mongoc_socket_setsockopt
+
+- :ref:`mongoc_socket_accept`
+- :ref:`mongoc_socket_bind`
+- :ref:`mongoc_socket_close`
+- :ref:`mongoc_socket_connect`
+- :ref:`mongoc_socket_destroy`
+- :ref:`mongoc_socket_errno`
+- :ref:`mongoc_socket_getnameinfo`
+- :ref:`mongoc_socket_getsockname`
+- :ref:`mongoc_socket_listen`
+- :ref:`mongoc_socket_new`
+- :ref:`mongoc_socket_recv`
+- :ref:`mongoc_socket_send`
+- :ref:`mongoc_socket_sendv`
+- :ref:`mongoc_socket_setsockopt`

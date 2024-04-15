@@ -1,0 +1,70 @@
+.. _mongoc_client_session_t:
+
+=======================
+mongoc_client_session_t
+=======================
+
+Use a session for a sequence of operations, optionally with causal consistency. See
+`the MongoDB Manual Entry for Causal Consistency <https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency>`__.
+
+Synopsis
+--------
+
+.. include:: /libmongoc/includes/session-lifecycle.txt
+
+Fork Safety
+-----------
+A :ref:`mongoc_client_session_t` is only usable in the parent process after a fork.
+The child process must call :ref:`mongoc_client_reset` on the ``client`` field.
+
+Example
+-------
+
+.. literalinclude:: /libmongoc/includes/examples/example-session.c
+   :language: c
+   :caption: example-session.c
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_start_transaction
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_in_transaction
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_transaction_state
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_commit_transaction
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_abort_transaction
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_advance_cluster_time
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_advance_operation_time
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_with_transaction
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_append
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_client
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_cluster_time
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_dirty
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_operation_time
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_opts
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_lsid
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_get_server_id
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_destroy
+  /libmongoc/api/mongoc_client_session_t/mongoc_client_session_with_transaction_cb_t
+
+- :ref:`mongoc_client_session_start_transaction`
+- :ref:`mongoc_client_session_in_transaction`
+- :ref:`mongoc_client_session_get_transaction_state`
+- :ref:`mongoc_client_session_commit_transaction`
+- :ref:`mongoc_client_session_abort_transaction`
+- :ref:`mongoc_client_session_advance_cluster_time`
+- :ref:`mongoc_client_session_advance_operation_time`
+- :ref:`mongoc_client_session_with_transaction`
+- :ref:`mongoc_client_session_append`
+- :ref:`mongoc_client_session_get_client`
+- :ref:`mongoc_client_session_get_cluster_time`
+- :ref:`mongoc_client_session_get_dirty`
+- :ref:`mongoc_client_session_get_operation_time`
+- :ref:`mongoc_client_session_get_opts`
+- :ref:`mongoc_client_session_get_lsid`
+- :ref:`mongoc_client_session_get_server_id`
+- :ref:`mongoc_client_session_destroy`
+- :ref:`mongoc_client_session_with_transaction_cb_t`

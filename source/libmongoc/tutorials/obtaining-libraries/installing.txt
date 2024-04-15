@@ -15,7 +15,7 @@ The ``libmongoc`` and ``libbson`` libraries are often available in the package
 management repositories of :ref:`common Linux distributions <installing.linux>` and
 :ref:`macOS via Homebrew <installing.macos>`.
 
-.. note:: 
+.. note::
 
   For Windows, it is recommended to instead
   :ref:`build the libraries from source <build-libraries>`, for maximum

@@ -1,0 +1,45 @@
+.. _mongoc_client_encryption_encrypt_opts_t:
+
+=======================================
+mongoc_client_encryption_encrypt_opts_t
+=======================================
+
+Synopsis
+--------
+
+.. code-block:: c
+
+   typedef struct _mongoc_client_encryption_encrypt_opts_t mongoc_client_encryption_encrypt_opts_t;
+
+
+Used to set options for :ref:`mongoc_client_encryption_encrypt`.
+
+Functions
+---------
+
+.. toctree::
+  :titlesonly:
+  :maxdepth: 1
+
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_new
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_destroy
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_keyid
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_keyaltname
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_algorithm
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_contention_factor
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_query_type
+  /libmongoc/api/mongoc_client_encryption_t/mongoc_client_encryption_encrypt_opts_set_range_opts
+
+- :ref:`mongoc_client_encryption_encrypt_opts_new`
+- :ref:`mongoc_client_encryption_encrypt_opts_destroy`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_keyid`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_keyaltname`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_algorithm`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_contention_factor`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_query_type`
+- :ref:`mongoc_client_encryption_encrypt_opts_set_range_opts`
+
+.. seealso::
+
+  | :ref:`mongoc_client_encryption_encrypt`
+

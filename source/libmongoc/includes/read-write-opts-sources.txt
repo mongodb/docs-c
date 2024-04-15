@@ -27,4 +27,5 @@ before 3.4.
      - ``database,`` ``collection``, or ``client``
      - 
 
-`See the example for transactions <{+api-libmongoc+}/mongoc_client_session_start_transaction.html>`__ and for `the "distinct" command with opts <{+api-libmongoc+}/mongoc_client_read_command_with_opts.html>`__.
+:ref:`See the example for transactions <mongoc_client_session_start_transaction_example>` and for :ref:`the "distinct" command with opts
+<mongoc_client_read_command_with_opts_example>`.
