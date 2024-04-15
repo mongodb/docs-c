@@ -100,6 +100,6 @@ to confirm that a client was actually returned:
       /* take appropriate action for a timeout */
    }
 
-See `connection pool options <{+api-libmongoc+}/mongoc_uri_t.html#connection-pool-options>`__ to configure pool size and behavior, and see `mongoc_client_pool_t
+See :ref:`connection_pool_options` to configure pool size and behavior, and see `mongoc_client_pool_t
 <{+api-libmongoc+}/mongoc_client_pool_t.html>`__ for an extended example of a multi-threaded program that uses
 the driver in pooled mode.

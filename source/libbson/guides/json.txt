@@ -65,7 +65,7 @@ not required.
 Converting JSON to BSON
 -----------------------
 
-Converting back from JSON is also useful and common enough that we added `bson_init_from_json <{+api-libbson+}/bson_init_from_json.html>`__
+Converting back from JSON is also useful and common enough that we added :ref:`bson_init_from_json`
 and `bson_new_from_json <{+api-libbson+}/bson_new_from_json.html>`__.
 
 The following example creates a new `bson_t <{+api-libbson+}/bson_t.html>`__ from the JSON string ``{"a":1}``.
