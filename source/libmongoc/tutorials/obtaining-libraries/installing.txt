@@ -99,7 +99,7 @@ With CMake, the standard config-file package will be available, as well as the
 generated ``IMPORTED`` targets:
 
 .. code-block:: cmake
-  :caption: `CMakeLists.txt`
+  :caption: CMakeLists.txt
 
   find_package(mongoc-1.0 CONFIG REQUIRED)
   target_link_libraries(my-application
