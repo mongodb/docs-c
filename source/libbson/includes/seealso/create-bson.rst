@@ -1,23 +1,23 @@
 .. seealso::
 
-  | `bson_concat <{+api-libbson+}/bson_concat.html>`__
+  | :ref:`bson_concat`
 
-  | `bson_init <{+api-libbson+}/bson_init.html>`__
+  | :ref:`bson_init`
 
-  | `bson_init_from_json <{+api-libbson+}/bson_init_from_json.html>`__
+  | :ref:`bson_init_from_json`
 
-  | `bson_init_static <{+api-libbson+}/bson_init_static.html>`__
+  | :ref:`bson_init_static`
 
-  | `bson_new <{+api-libbson+}/bson_new.html>`__
+  | :ref:`bson_new`
 
-  | `bson_new_from_buffer <{+api-libbson+}/bson_new_from_buffer.html>`__
+  | :ref:`bson_new_from_buffer`
 
-  | `bson_new_from_data <{+api-libbson+}/bson_new_from_data.html>`__
+  | :ref:`bson_new_from_data`
 
-  | `bson_new_from_json <{+api-libbson+}/bson_new_from_json.html>`__
+  | :ref:`bson_new_from_json`
 
-  | `bson_reinit <{+api-libbson+}/bson_reinit.html>`__
+  | :ref:`bson_reinit`
 
-  | `bson_reserve_buffer <{+api-libbson+}/bson_reserve_buffer.html>`__
+  | :ref:`bson_reserve_buffer`
 
-  | `bson_sized_new <{+api-libbson+}/bson_sized_new.html>`__
+  | :ref:`bson_sized_new`

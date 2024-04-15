@@ -33,7 +33,7 @@ have completed or timed out. Once the scan completes, the client executes your p
 
 In single mode, the client re-scans the server topology roughly once per minute. If more than a minute has
 elapsed since the previous scan, the next operation on the client will block while the client completes its
-scan. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See `mongoc_uri_t <{+api-libmongoc+}/mongoc_uri_t.html>`__.)
+scan. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :ref:`mongoc_uri_t`.)
 
 A single client opens one connection per server in your topology: these connections are used both for scanning
 the topology and performing normal operations.
@@ -74,10 +74,10 @@ as soon as the primary is discovered, rather than waiting for all secondaries to
 
 The pool opens one connection per server for monitoring, and each client opens its own connection to each server
 it uses for application operations. Background monitoring threads re-scan servers independently roughly every 10
-seconds. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See `mongoc_uri_t <{+api-libmongoc+}/mongoc_uri_t.html>`__.)
+seconds. This interval is configurable with ``heartbeatFrequencyMS`` in the connection string. (See :ref:`mongoc_uri_t`.)
 
 The connection string can also specify ``waitQueueTimeoutMS`` to limit the time that :ref:`mongoc_client_pool_pop` will
-wait for a client from the pool.  (See `mongoc_uri_t <{+api-libmongoc+}/mongoc_uri_t.html>`__.)  If ``waitQueueTimeoutMS`` is specified, then it is necessary
+wait for a client from the pool.  (See :ref:`mongoc_uri_t`.)  If ``waitQueueTimeoutMS`` is specified, then it is necessary
 to confirm that a client was actually returned:
 
 .. code-block:: c

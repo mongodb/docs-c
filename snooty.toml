@@ -11,6 +11,21 @@ toc_landing_pages = [
     "/libbson/tutorials",
     "/libbson/guides",
     "/libbson/cross-platform-notes",
+    "/libbson/api",
+    "/libbson/api/bson_context_t",
+    "/libbson/api/bson_decimal128_t",
+    "/libbson/api/bson_error_t",
+    "/libbson/api/bson_iter_t",
+    "/libbson/api/bson_json_reader_t",
+    "/libbson/api/bson_memory",
+    "/libbson/api/bson_oid_t",
+    "/libbson/api/bson_reader_t",
+    "/libbson/api/bson_string_t",
+    "/libbson/api/bson_t",
+    "/libbson/api/bson_value_t",
+    "/libbson/api/bson_writer_t",
+    "/libbson/api/character_string_routines",
+    "/libbson/api/version",
     "/libbson/tutorial",
     "/libmongoc",
     "/libmongoc/api",
@@ -60,4 +75,3 @@ is-experimental = "is part of the experimental Queryable Encryption API and may 
 range-is-experimental = "Range algorithm is experimental only and not intended for public use. It is subject to breaking changes."
 api-is-experimental = "This API {+is-experimental+}"
 opt-is-experimental = "This option {+is-experimental+}"
-api-libbson = "https://mongoc.org/libbson/current"

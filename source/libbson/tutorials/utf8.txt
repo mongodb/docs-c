@@ -33,5 +33,5 @@ format. Notice the ``true`` at the end indicating ``\0`` is allowed.
       printf ("Validation failed.\n");
    }
 
-For more information see the API reference for `bson_utf8_validate <{+api-libbson+}/bson_utf8_validate.html>`__.
+For more information see the API reference for :ref:`bson_utf8_validate`.
 

@@ -10,21 +10,20 @@ bson_t Lifetimes
    :depth: 2
    :class: singlecol
    
-A `bson_t <{+api-libbson+}/bson_t.html>`__ may contain its data directly or may contain pointers to heap-allocated memory.
-Overwriting an existing `bson_t <{+api-libbson+}/bson_t.html>`__ or allowing a stack-allocated `bson_t <{+api-libbson+}/bson_t.html>`__ to go out of
-scope may cause a memory leak. A `bson_t <{+api-libbson+}/bson_t.html>`__ should always be destroyed with `bson_destroy <{+api-libbson+}/bson_destroy.html>`__.
+A :ref:`bson_t` may contain its data directly or may contain pointers to heap-allocated memory.
+Overwriting an existing :ref:`bson_t` or allowing a stack-allocated :ref:`bson_t` to go out of
+scope may cause a memory leak. A :ref:`bson_t` should always be destroyed with :ref:`bson_destroy`.
 
 bson_t Out Parameters
 ---------------------
 
-A `bson_t <{+api-libbson+}/bson_t.html>`__ pointer used as an out parameter must point to valid overwritable storage for a
-new `bson_t <{+api-libbson+}/bson_t.html>`__ which must be one of:
+A :ref:`bson_t` pointer used as an out parameter must point to valid overwritable storage for a
+new :ref:`bson_t` which must be one of:
 
-- Uninitialized storage for a `bson_t <{+api-libbson+}/bson_t.html>`__.
-- A zero-initialized `bson_t <{+api-libbson+}/bson_t.html>`__ object.
-- A `bson_t <{+api-libbson+}/bson_t.html>`__ object initialized with ``BSON_INITIALIZER``.
-- A `bson_t <{+api-libbson+}/bson_t.html>`__ object not created with `bson_new <{+api-libbson+}/bson_new.html>`__ that was destroyed 
-  with `bson_destroy <{+api-libbson+}/bson_destroy.html>`__.
+- Uninitialized storage for a :ref:`bson_t`.
+- A zero-initialized :ref:`bson_t` object.
+- A :ref:`bson_t` object initialized with ``BSON_INITIALIZER``.
+- A :ref:`bson_t` object not created with :ref:`bson_new` that was destroyed with :ref:`bson_destroy`.
 
 This can be on the stack:
 
@@ -43,12 +42,11 @@ Or on the heap:
    bson_destroy (heap_doc);
    bson_free (heap_doc);
 
-Omitting `bson_destroy <{+api-libbson+}/bson_destroy.html>`__ in either case may cause memory leaks.
+Omitting :ref:`bson_destroy` in either case may cause memory leaks.
 
 .. warning::
 
-   Passing a `bson_t <{+api-libbson+}/bson_t.html>`__ pointer obtained from `bson_new <{+api-libbson+}/bson_new.html>`__ as an
-   out parameter will result in a leak of the `bson_t <{+api-libbson+}/bson_t.html>`__ struct.
+   Passing a :ref:`bson_t` pointer obtained from :ref:`bson_new` as an out parameter will result in a leak of the :ref:`bson_t` struct.
 
    .. code-block:: c
 

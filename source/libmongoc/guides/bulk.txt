@@ -17,7 +17,7 @@ throughput.
 Bulk Insert
 -----------
 
-First we need to fetch a bulk operation handle from the `mongoc_collection_t <{+api-libmongoc+}/mongoc_collection_t.html>`__.
+First we need to fetch a bulk operation handle from the :ref:`mongoc_collection_t`.
 
 .. code-block:: c
 
@@ -28,11 +28,9 @@ We can now start inserting documents to the bulk operation. These will be buffer
 operation.
 
 The bulk operation will coalesce insertions as a single batch for each consecutive call to
-`mongoc_bulk_operation_insert <{+api-libmongoc+}/mongoc_bulk_operation_insert.html>`__. This creates
-a pipelined effect when possible.
+:ref:`mongoc_bulk_operation_insert`. This creates a pipelined effect when possible.
 
-To execute the bulk operation and receive the result we call `mongoc_bulk_operation_execute
-<{+api-libmongoc+}/mongoc_bulk_operation_execute.html>`__.
+To execute the bulk operation and receive the result we call :ref:`mongoc_bulk_operation_execute`.
 
 .. literalinclude:: /libmongoc/includes/examples/bulk/bulk1.c
    :language: c
@@ -115,7 +113,7 @@ Example ``reply`` document:
 
    Error: E11000 duplicate key error index: test.test.$_id_ dup key: { : 1 }
 
-The `bson_error_t <{+api-libbson+}/bson_error_t.html>`__ domain is ``MONGOC_ERROR_COMMAND`` and its code is 11000.
+The :ref:`bson_error_t` domain is ``MONGOC_ERROR_COMMAND`` and its code is 11000.
 
 .. _bulk_operation_bypassing_document_validation:
 
@@ -154,14 +152,13 @@ Running the above example will result in:
      "nUpserted" : 0,
      "writeErrors" : [] }
 
-The `bson_error_t <{+api-libbson+}/bson_error_t.html>`__ domain is ``MONGOC_ERROR_COMMAND``.
+The :ref:`bson_error_t` domain is ``MONGOC_ERROR_COMMAND``.
 
 Bulk Operation Write Concerns
 -----------------------------
 
-By default bulk operations are executed with the `mongoc_write_concern_t <{+api-libmongoc+}/mongoc_write_concern_t.html>`__
-of the collection they are executed against. A custom write concern can be passed to the
-`mongoc_collection_create_bulk_operation_with_opts <{+api-libmongoc+}/mongoc_collection_create_bulk_operation_with_opts.html>`__
+By default bulk operations are executed with the :ref:`mongoc_write_concern_t` of the collection they
+are executed against. A custom write concern can be passed to the :ref:`mongoc_collection_create_bulk_operation_with_opts`
 method. Write concern errors (e.g. wtimeout) will be reported after all operations are attempted,
 regardless of execution order.
 
@@ -186,7 +183,7 @@ Example ``reply`` document and error message:
 
    Error: waiting for replication timed out
 
-The `bson_error_t <{+api-libbson+}/bson_error_t.html>`__ domain is ``MONGOC_ERROR_WRITE_CONCERN`` if there are write concern errors and no
+The :ref:`bson_error_t` domain is ``MONGOC_ERROR_WRITE_CONCERN`` if there are write concern errors and no
 write errors. Write errors indicate failed operations, so they take precedence over write concern errors,
 which mean merely that the write concern is not satisfied *yet*.
 
