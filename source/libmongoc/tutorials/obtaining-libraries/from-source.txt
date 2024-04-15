@@ -363,7 +363,8 @@ Footnotes
 
    In many cases, CMake will detect a Visual Studio installation and
    automatically load the environment itself when it is executed. This automatic
-   detection can be controlled with CMake's ``-G``, ``-T``, and ``-A`` options. The ``-G`` option
+   detection can be controlled with CMake's ``-G <cmake.-G>``,
+   ``-T <cmake.-T>``, and ``-A <cmake.-A>`` options. The ``-G`` option
    is the most significant, as it selects which Visual Studio version will be
    used. The versions of Visual Studio supported depends on the version of CMake
    that you have installed.

@@ -23,6 +23,7 @@ libbson
    /libbson/guides
    /libbson/cross-platform-notes
    API Documentation <https://mongoc.org/libbson/current/api.html>
+   /libbson/api
 
 Introduction
 ------------

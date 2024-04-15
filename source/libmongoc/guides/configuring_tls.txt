@@ -56,8 +56,7 @@ Most of the configurable options can be set using the :manual:`Connection String
    * - | allow_invalid_hostname
      - | tlsAllowInvalidHostnames
 
-The only exclusions are ``crl_file`` and ``ca_dir``. Those may only be set with `mongoc_ssl_opt_t
-<{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__.
+The only exclusions are ``crl_file`` and ``ca_dir``. Those may only be set with `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__.
 
 Client Authentication
 ---------------------
