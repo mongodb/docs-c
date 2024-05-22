@@ -14,6 +14,13 @@ This tutorial explains how to take advantage of MongoDB C driver bulk write oper
 Executing write operations in batches reduces the number of network round trips, increasing write
 throughput.
 
+.. tip::
+
+   Beginning in MongoDB Server version 8.0 and C Driver version 1.28, you can use `mongoc_bulkwrite_t
+   <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ instead of `mongoc_bulk_operation_t
+   <{+api-libmongoc+}/mongoc_bulk_operation_t.html>`__ to perform bulk write operations. For more
+   information, see the :ref:`bulk_operations_mongoc_bulkwrite_t` section of this guide.
+
 Bulk Insert
 -----------
 
@@ -228,6 +235,39 @@ The ``reply`` document is empty:
 .. code-block:: none
 
    { }
+
+.. _bulk_operations_mongoc_bulkwrite_t:
+
+``mongoc_bulk_operation_t`` and ``mongoc_bulkwrite_t``
+------------------------------------------------------
+
+The previous examples on this page use the `mongoc_bulk_operation_t <{+api-libmongoc+}/mongoc_bulk_operation_t.html>`__
+type to perform bulk write operations. Alternatively, you can perform bulk writes by using the
+`mongoc_bulkwrite_t <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ type and the ``mongoc_bulkwrite_execute()``
+method.
+
+`mongoc_bulkwrite_t <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ uses the ``bulkWrite`` server
+command introduced in MongoDB Server 8.0. The ``bulkWrite`` command supports insert, update, and delete
+operations in the same payload. You can also specify multiple collection namespaces in the same payload
+when using this command.
+
+`mongoc_bulk_operation_t <{+api-libmongoc+}/mongoc_bulk_operation_t.html>`__ uses the ``insert``,
+``update`` and ``delete`` server commands available in all current MongoDB server versions. Write
+operations are grouped by type (insert, update, or delete) and sent in separate commands. You can
+specify only one collection for each bulk write.
+
+When connected to MongoDB Server version 8.0 or later, we recommend using ``mongoc_bulkwrite_t`` over
+``mongoc_bulk_operation_t`` to reduce network round trips.
+
+``mongoc_bulkwrite_t`` Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following example demonstrates how to use ``mongoc_bulkwrite_t`` and ``mongoc_bulkwrite_execute()`` to
+insert documents into two different collections:
+
+.. literalinclude:: /libmongoc/includes/examples/bulk/bulkwrite.c
+   :language: c
+   :caption: bulkwrite.c
 
 Further Reading
 ---------------
