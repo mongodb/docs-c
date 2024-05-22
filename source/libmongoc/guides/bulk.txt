@@ -57,6 +57,12 @@ Example ``reply`` document:
     "writeErrors" : []
     "writeConcernErrors" : [] }
 
+Mixed Bulk Write Operations
+---------------------------
+
+MongoDB C driver also supports executing mixed bulk write operations. A batch of insert, update,
+and remove operations can be executed together using the bulk write operations API.
+
 Ordered Bulk Write Operations
 -----------------------------
 
