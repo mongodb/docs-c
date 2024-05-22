@@ -18,7 +18,7 @@ throughput.
 
    Beginning in MongoDB Server version 8.0 and C Driver version 1.28, you can use the `mongoc_bulkwrite_t
    <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ type. This type uses the ``bulkWrite`` server command to
-   perform multiple types of write operations against mixed namespaces in a single request. For more
+   perform multiple kinds of write operations against mixed namespaces in a single request. For more
    information, see the :ref:`bulkwrite_server` section of this guide.
 
 Bulk Insert
@@ -56,12 +56,6 @@ Example ``reply`` document:
     "nUpserted"   : 0,
     "writeErrors" : []
     "writeConcernErrors" : [] }
-
-Mixed Bulk Write Operations
----------------------------
-
-MongoDB C driver also supports executing mixed bulk write operations. A batch of insert, update,
-and remove operations can be executed together using the bulk write operations API.
 
 Ordered Bulk Write Operations
 -----------------------------
