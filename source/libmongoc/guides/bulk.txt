@@ -242,17 +242,13 @@ The ``reply`` document is empty:
 ----------------------------
 
 The previous examples on this page use the `mongoc_bulk_operation_t <{+api-libmongoc+}/mongoc_bulk_operation_t.html>`__
-type to perform bulk write operations. Alternatively, you can perform bulk writes by using the
-`mongoc_bulkwrite_t <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ type, which runs the ``bulkWrite`` server
-command.
+type to perform bulk write operations. ``mongoc_bulk_operation_t`` runs the ``insert``, ``update`` and ``delete`` server
+commands. Bulk write operations that use the ``mongoc_bulk_operation_t`` type group operation types and sends them in
+separate commands. You can specify only one collection for each bulk write.
 
-`mongoc_bulkwrite_t <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__ uses the ``bulkWrite`` command
-introduced in MongoDB Server 8.0. The ``bulkWrite`` command supports insert, update, and delete
-operations on multiple collection namespaces in the same payload.
-
-In contrast, `mongoc_bulk_operation_t <{+api-libmongoc+}/mongoc_bulk_operation_t.html>`__ uses the ``insert``,
-``update`` and ``delete`` server commands. Bulk write operations that use the ``mongoc_bulk_operation_t`` type
-group operation types and sends them in separate commands. You can specify only one collection for each bulk write.
+Alternatively, you can perform bulk writes by using the `mongoc_bulkwrite_t <{+api-libmongoc+}/mongoc_bulkwrite_t.html>`__
+type, which runs the ``bulkWrite`` server command. The ``bulkWrite`` command was introduced in MongoDB Server 8.0 and
+supports insert, update, and delete operations on multiple namespaces in the same payload.
 
 When connected to MongoDB Server version 8.0 or later, we recommend using ``mongoc_bulkwrite_t`` over
 ``mongoc_bulk_operation_t`` to reduce network round trips.
