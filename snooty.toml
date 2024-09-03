@@ -7,17 +7,7 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
               ]
 
 toc_landing_pages = [
-    "/libbson",
-    "/libbson/tutorials",
-    "/libbson/guides",
-    "/libbson/cross-platform-notes",
-    "/libbson/tutorial",
-    "/libmongoc",
-    "/libmongoc/guides",
-    "/libmongoc/howto",
-    "/libmongoc/ref",
-    "/libmongoc/tutorials",
-    "/libmongoc/tutorials/obtaining-libraries",
+    "/read"
 ]
 sharedinclude_root = "https://raw.githubusercontent.com/10gen/docs-shared/main/"
 

@@ -6,6 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
+   /read
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -46,11 +47,10 @@ the official MongoDB driver for {+language+} applications.
 
 .. Learn how you can write data to MongoDB in the :ref:`c-write` section.
 
-.. TODO
-.. Read Data from MongoDB
-.. ----------------------
+Read Data from MongoDB
+----------------------
 
-.. Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
+Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 
 .. TODO
 .. Optimize Queries with Indexes
