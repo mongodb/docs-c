@@ -43,7 +43,11 @@ the relevant values for your MongoDB deployment.
 
 .. include:: /includes/usage-examples/sample-app-intro.rst
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/sample-read-app.kt
+    :language: c
+    :copyable:
+    :linenos:
+    :emphasize-lines: 24-26
 
 .. TODO: uncomment when installation guide is complete
 .. .. tip::
@@ -56,6 +60,13 @@ Find Documents
 The following example retrieves a list of documents that match the criteria specified by the
 given filter:
 
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-find
+   :end-before: end-find
+   :language: c
+   :copyable:
+   :dedent:
+
 .. TODO
 
 .. TODO: uncomment when retrieve/find guide is complete
@@ -66,7 +77,12 @@ Count Documents in a Collection
 
 The following example returns the number of documents in the specified collection:
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-count-all
+   :end-before: end-count-all
+   :language: c
+   :copyable:
+   :dedent:
 
 .. TODO: uncomment when count guide is complete
 .. To learn more about the ``mongoc_collection_count_documents()`` method, see the
@@ -78,7 +94,12 @@ Count Documents Returned from a Query
 The following example returns the number of documents that match the criteria specified by
 the given filter:
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-count-query
+   :end-before: end-count-query
+   :language: c
+   :copyable:
+   :dedent:
 
 .. TODO: uncomment when count guide is complete
 .. To learn more about the ``mongoc_collection_count_documents()`` method, see the
@@ -90,7 +111,12 @@ Estimated Document Count
 The following example returns an approximate number of documents in the specified
 collection based on collection metadata:
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-estimated-count
+   :end-before: end-estimated-count
+   :language: c
+   :copyable:
+   :dedent:
 
 .. TODO: uncomment when count guide is complete
 .. To learn more about the ``mongoc_collection_estimated_document_count()`` method, see the
@@ -102,7 +128,12 @@ Retrieve Distinct Values
 The following example returns all distinct values of the specified field name in a given
 collection:
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-distinct
+   :end-before: end-distinct
+   :language: c
+   :copyable:
+   :dedent:
 
 .. TODO: uncomment when distinct guide is complete
 .. To learn more about the ``distinct()`` method, see the :ref:`c-distinct` guide.
@@ -113,7 +144,12 @@ Monitor Data Changes
 The following example creates a change stream for a given collection and prints out
 subsequent change events in that collection:
 
-.. TODO
+.. literalinclude:: /includes/usage-examples/retrieve-code-examples.c
+   :start-after: start-watch
+   :end-before: end-watch
+   :language: c
+   :copyable:
+   :dedent:
 
 .. TODO: uncomment when watch change stream guide is complete
 .. To learn more about the ``mongoc_collection_watch()`` method, see the
