@@ -43,7 +43,7 @@ the relevant values for your MongoDB deployment.
 
 .. include:: /includes/usage-examples/sample-app-intro.rst
 
-.. literalinclude:: /includes/usage-examples/sample-read-app.kt
+.. literalinclude:: /includes/usage-examples/sample-read-app.c
     :language: c
     :copyable:
     :linenos:
