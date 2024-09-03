@@ -26,7 +26,6 @@ main (int argc, char *argv[])
     // End example code here
 
     bson_destroy (query);
-    mongoc_cursor_destroy (results);
     mongoc_collection_destroy (collection);
     mongoc_client_destroy (client);
     mongoc_cleanup ();
