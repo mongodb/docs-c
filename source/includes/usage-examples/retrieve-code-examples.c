@@ -39,7 +39,7 @@ main (int argc, char *argv[])
     query = bson_new ();
     count = mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
 
-    printf("%" PRId64 "\n", count);
+    printf ("%" PRId64 "\n", count);
     // end-count-all
 
     // start-count-query
@@ -47,22 +47,22 @@ main (int argc, char *argv[])
     <query definition>
     count = mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
 
-    printf("%" PRId64 "\n", count);
+    printf ("%" PRId64 "\n", count);
     // end-count-query
 
     // start-estimated-count
     count = mongoc_collection_estimated_document_count (collection, NULL, NULL, NULL, &error);
 
-    printf("%" PRId64 "\n", count);
+    printf ("%" PRId64 "\n", count);
     // end-estimated-count
 
     // start-distinct
     command = BCON_NEW ("distinct",
-                        BCON_UTF8("<collection name>"),
+                        BCON_UTF8 ("<collection name>"),
                         "key",
-                        BCON_UTF8("<field name>"));
+                        BCON_UTF8 ("<field name>"));
     
-    if (!mongoc_collection_read_command_with_opts(collection, command, NULL, NULL, &reply, &error)) {
+    if (!mongoc_collection_read_command_with_opts (collection, command, NULL, NULL, &reply, &error)) {
         fprintf (stderr, "An error occurred: %s\n", error.message);
     } else {
         str = bson_as_canonical_extended_json (&reply, NULL);
@@ -78,7 +78,7 @@ main (int argc, char *argv[])
 
     change_stream = mongoc_collection_watch (collection, pipeline, NULL);
 
-    while (mongoc_change_stream_next(change_stream, &doc)) {
+    while (mongoc_change_stream_next (change_stream, &doc)) {
       str = bson_as_canonical_extended_json (doc, NULL);
       printf ("Change: %s\n", str);
       bson_free (str);
