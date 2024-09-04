@@ -6,6 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
+   /databases-collections
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
