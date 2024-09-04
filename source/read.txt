@@ -27,11 +27,11 @@ Overview
 --------
 
 On this page, you can see copyable code examples that show common
-methods you can use to retrieve documents by using the {+driver-short+}.
+functions you can use to retrieve documents by using the {+driver-short+}.
 
 .. tip::
 
-  To learn more about any of the methods shown on this page, see the link
+  To learn more about any of the functions shown on this page, see the link
   to a relevant guide provided in each section.
 
 To use an example from this page, copy the code example into the
@@ -70,7 +70,7 @@ given filter:
 .. TODO
 
 .. TODO: uncomment when retrieve/find guide is complete
-.. To learn more about the ``mongoc_collection_find_with_opts()`` method, see the :ref:`c-retrieve-find` guide.
+.. To learn more about the ``mongoc_collection_find_with_opts()`` function, see the :ref:`c-retrieve-find` guide.
 
 Count Documents in a Collection
 -------------------------------
@@ -85,7 +85,7 @@ The following example returns the number of documents in the specified collectio
    :dedent:
 
 .. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_count_documents()`` method, see the
+.. To learn more about the ``mongoc_collection_count_documents()`` function, see the
 .. :ref:`c-accurate-count` section of the Count Documents guide.
 
 Count Documents Returned from a Query
@@ -102,7 +102,7 @@ the given filter:
    :dedent:
 
 .. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_count_documents()`` method, see the
+.. To learn more about the ``mongoc_collection_count_documents()`` function, see the
 .. :ref:`c-accurate-count` section of the Count Documents guide.
 
 Estimated Document Count
@@ -119,7 +119,7 @@ collection based on collection metadata:
    :dedent:
 
 .. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_estimated_document_count()`` method, see the
+.. To learn more about the ``mongoc_collection_estimated_document_count()`` function, see the
 .. :ref:`c-estimated-count` section of the Count Documents guide.
 
 Retrieve Distinct Values
@@ -136,7 +136,7 @@ collection:
    :dedent:
 
 .. TODO: uncomment when distinct guide is complete
-.. To learn more about the ``distinct()`` method, see the :ref:`c-distinct` guide.
+.. To learn more about the ``distinct()`` function, see the :ref:`c-distinct` guide.
 
 Monitor Data Changes
 --------------------
@@ -152,5 +152,5 @@ subsequent change events in that collection:
    :dedent:
 
 .. TODO: uncomment when watch change stream guide is complete
-.. To learn more about the ``mongoc_collection_watch()`` method, see the
+.. To learn more about the ``mongoc_collection_watch()`` function, see the
 .. :ref:`c-change-streams` guide.
