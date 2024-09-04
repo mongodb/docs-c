@@ -34,6 +34,11 @@ the official MongoDB driver for {+language+} applications.
 .. Learn how to create and configure a connection to a MongoDB deployment
 .. in the :ref:`c-connect` section.
 
+Databases and Collections
+-------------------------
+Learn how to use the {+driver-short+} to work with MongoDB databases and collections in the
+:ref:`c-databases-collections` section.
+
 .. TODO
 .. What's New
 .. ----------

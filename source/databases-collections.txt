@@ -35,7 +35,7 @@ For more information about document field types and structure, see the
 Access a Database
 -----------------
 
-Access a database by using the ``mongoc_client_get_database`` function and passing in
+Access a database by using the ``mongoc_client_get_database()`` function and passing in
 a ``mongo_client_t`` instance and the name of the database as parameters.
 
 The following example accesses a database named ``"test_database"``:
@@ -74,7 +74,8 @@ The following example creates a collection called ``"example_collection"``:
 .. code-block:: c
 
    bson_error_t error;
-   mongoc_collection_t *collection = mongoc_database_create_collection (database, "example_collection", NULL, &error);
+   mongoc_collection_t *collection = mongoc_database_create_collection (
+     database, "example_collection", NULL, &error);
 
 You can specify collection options, such as maximum size and document
 validation rules, by passing them inside a ``bson_t`` structure. For a full list of
@@ -112,7 +113,7 @@ To query for only the names of the collections in the database, call the
    bson_error_t error;
    unsigned i;
 
-   if ((strv = mongoc_database_get_collection_names_with_opts (database, NULL, $error))) {
+   if ((strv = mongoc_database_get_collection_names_with_opts (database, NULL, &error))) {
      for (i = 0; strv[i]; i++)
        printf ("%s\n", strv[i]);
 
@@ -156,7 +157,7 @@ read and write operations on a replica set by setting a **read concern** and a
 
 By default, databases inherit these settings from the ``mongoc_client_t`` instance,
 and collections inherit them from the database. However, you can change these
-settings on your database or collection by using one of the following methods:
+settings on your database or collection by using one of the following functions:
 
 - For ``mongoc_database_t`` instances, use the ``mongoc_database_set_read_prefs()``, 
   ``mongoc_database_set_read_concern()``, and ``mongoc_database_set_write_concern()`` functions
@@ -174,7 +175,7 @@ The following example shows how to change the read preference of a collection by
    mongoc_collection_set_read_prefs (collection, read_prefs);
 
 The following example shows how to change the read concern of a
-collection by using the ``mongoc_collection_set_read_concern()`` method:
+collection by using the ``mongoc_collection_set_read_concern()`` function:
 
 .. code-block:: c
 
@@ -183,7 +184,7 @@ collection by using the ``mongoc_collection_set_read_concern()`` method:
    mongoc_collection_set_read_concern (collection, read_concern);
 
 The following example shows how to change the write concern of a
-collection by using the ``mongoc_collection_set_write_concern()`` method:
+collection by using the ``mongoc_collection_set_write_concern()`` function:
 
 .. code-block:: c
 
@@ -194,7 +195,7 @@ collection by using the ``mongoc_collection_set_write_concern()`` method:
 .. tip::
 
    To see the types of available read preferences, see the
-   `API documentation <{+api-libbson+}/mongoc_read_prefs_t.html#read-modes>`__. 
+   `API documentation <{+api-libmongoc+}/mongoc_read_prefs_t.html#read-modes>`__. 
 
 To learn more about the read and write settings, see the following guides in the
 {+mdb-server+} manual:
@@ -224,7 +225,7 @@ center (``'dc': 'sf'``):
 .. code-block:: c
 
    mongoc_read_prefs_t *read_prefs = mongoc_read_prefs_new (MONGOC_READ_SECONDARY_PREFERRED);
-   bson_t *tags = BCON_NEW("DC", BCON_UTF8("ny"), "DC", BCON_UTF8("sf"));
+   bson_t *tags = BCON_NEW ("DC", BCON_UTF8("ny"), "DC", BCON_UTF8("sf"));
 
    mongoc_read_prefs_set_tags (read_prefs, tags);
 
@@ -239,13 +240,13 @@ By default, the driver uses only those members whose ping times are within 15 mi
 of the nearest member for queries. To distribute reads between members with
 higher latencies, include the ``localThresholdMS`` parameter in your connection string URI.
 
-The following example connects to a MongoDB deployment running on ``localhost:27017```
+The following example connects to a MongoDB deployment running on ``localhost:27017``
 and specifies a local threshold of 35 milliseconds:
 
 .. code-block:: c
 
    const char *uri_string = "mongodb://localhost:27017/?localThresholdMS=100";
-   mongoc_client_t *client = mongoc_client_new(uri_string);
+   mongoc_client_t *client = mongoc_client_new (uri_string);
 
 In the preceding example, {+driver-short+} distributes reads between matching members
 within 35 milliseconds of the closest member's ping time.
@@ -253,7 +254,7 @@ within 35 milliseconds of the closest member's ping time.
 API Documentation
 -----------------
 
-To learn more about any of the methods or types discussed in this
+To learn more about any of the functions discussed in this
 guide, see the following API documentation:
 
 - `mongoc_database_create_collection() <{+api-libmongoc+}/mongoc_database_create_collection.html>`__
