@@ -42,7 +42,8 @@ The following example accesses a database named ``"test_database"``:
 
 .. code-block:: c
 
-   mongoc_database_t *database = mongoc_client.get_database (client, "test_database");
+   mongoc_database_t *database = mongoc_client.get_database (
+       client, "test_database");
 
 Access a Collection
 -------------------
@@ -55,7 +56,8 @@ The following example accesses a collection named ``"test_collection"`` by using
 
 .. code-block:: c
 
-   mongoc_collection_t *collection = mongoc_database_get_collection (database, "test_collection");
+   mongoc_collection_t *collection = mongoc_database_get_collection (
+       database, "test_collection");
 
 .. tip::
 
@@ -75,7 +77,7 @@ The following example creates a collection called ``"example_collection"``:
 
    bson_error_t error;
    mongoc_collection_t *collection = mongoc_database_create_collection (
-     database, "example_collection", NULL, &error);
+       database, "example_collection", NULL, &error);
 
 You can specify collection options, such as maximum size and document
 validation rules, by passing them inside a ``bson_t`` structure. For a full list of
