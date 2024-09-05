@@ -36,8 +36,7 @@ main (int argc, char *argv[])
     // end-find
 
     // start-count-all
-    query = bson_new ();
-    count = mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
+    count = mongoc_collection_count_documents (collection, bson_new (), NULL, NULL, NULL, &error);
 
     printf ("%" PRId64 "\n", count);
     // end-count-all

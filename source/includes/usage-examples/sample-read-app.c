@@ -19,7 +19,8 @@ main (int argc, char *argv[])
 
     client =
         mongoc_client_new ("<connection string URI>");
-    collection = mongoc_client_get_collection (client, "<database name>", "collection name");
+    collection =
+        mongoc_client_get_collection (client, "<database name>", "collection name");
 
     // Start example code here
 
