@@ -21,29 +21,29 @@ Overview
 --------
 
 In this guide, you can learn how to interact with MongoDB databases and
-collections with the {+driver-short+}.
+collections by using the {+driver-short+}.
 
 MongoDB organizes data into a hierarchy of the following levels:
 
-- **Databases**: The top level of data organization in a MongoDB instance.
-- **Collections**: MongoDB stores documents in collections. They are analogous to tables in relational databases.
-- **Documents**: Contain literal data such as string, numbers, dates, and other embedded documents.
-
-For more information about document field types and structure, see the
-:manual:`Documents </core/document/>` guide in the {+mdb-server+} manual.
+- **Databases**: Top-level data structures in a MongoDB deployment that store collections.
+- **Collections**: Groups of MongoDB documents. They are analogous to tables in relational databases.
+- **Documents**: Units that store literal data such as string, numbers, dates, and other embedded documents.
+  For more information about document field types and structure, see the
+  :manual:`Documents </core/document/>` guide in the {+mdb-server+} manual.
 
 Access a Database
 -----------------
 
-Access a database by using the ``mongoc_client_get_database()`` function and passing in
-a ``mongo_client_t`` instance and the name of the database as parameters.
+Access a database by using the ``mongoc_client_get_database()`` function.
 
 The following example accesses a database named ``"test_database"``:
 
-.. code-block:: c
-
-   mongoc_database_t *database = mongoc_client.get_database (
-       client, "test_database");
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-access-database
+   :end-before: end-access-database
+   :language: c
+   :copyable:
+   :dedent:
 
 Access a Collection
 -------------------
@@ -54,10 +54,12 @@ functions.
 The following example accesses a collection named ``"test_collection"`` by using the 
 ``mongoc_database_get_collection()`` function:
 
-.. code-block:: c
-
-   mongoc_collection_t *collection = mongoc_database_get_collection (
-       database, "test_collection");
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-access-collection
+   :end-before: end-access-collection
+   :language: c
+   :copyable:
+   :dedent:
 
 .. tip::
 
@@ -73,14 +75,16 @@ MongoDB database.
 
 The following example creates a collection called ``"example_collection"``:
 
-.. code-block:: c
-
-   bson_error_t error;
-   mongoc_collection_t *collection = mongoc_database_create_collection (
-       database, "example_collection", NULL, &error);
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-create-collection
+   :end-before: end-create-collection
+   :language: c
+   :copyable:
+   :dedent:
 
 You can specify collection options, such as maximum size and document
-validation rules, by passing them inside a ``bson_t`` structure. For a full list of
+validation rules, by passing them inside a ``bson_t`` structure as the third parameter
+to the ``mongoc_database_create_collection()`` function. For a full list of
 optional parameters, see the :manual:`create documentation </reference/command/create>`
 in the {+mdb-server+} manual.
 
@@ -94,35 +98,36 @@ collections in the database and their associated metadata.
 The following example calls the ``mongoc_database_find_collections_with_opts()`` function and iterates over
 the cursor to print the results:
 
-.. code-block:: c
-   char *str;
-   const bson_t *doc;
+.. io-code-block::
 
-   cursor = mongoc_database_find_collections_with_opts (database, NULL, NULL);
-   
-   while (mongoc_cursor_next (cursor, &doc)) {
-        str = bson_as_canonical_extended_json(doc, NULL);
-        printf("Collection: %s\n", str);
-        bson_free(str);
-    }
+   .. input:: /includes/databases-collections/databases-collections.c
+      :language: c:
+      :start-after: start-find-collections
+      :end-before: end-find-collections
+      :dedent:
+
+   .. output::
+      :language: console
+
+      Collection: { "name" : "test_collection", "type" : "collection", ...}
+      Collection: { "name" : "example_collection", "type" : "collection", ... }
 
 To query for only the names of the collections in the database, call the
 ``mongoc_database_get_collection_names_with_opts()`` function as follows:
 
-.. code-block:: c
+.. io-code-block::
 
-   char **strv;
-   bson_error_t error;
-   unsigned i;
+   .. input:: /includes/databases-collections/databases-collections.c
+      :language: c:
+      :start-after: start-find-collection-names
+      :end-before: end-find-collection-names
+      :dedent:
 
-   if ((strv = mongoc_database_get_collection_names_with_opts (database, NULL, &error))) {
-     for (i = 0; strv[i]; i++)
-       printf ("%s\n", strv[i]);
+   .. output::
+      :language: console
 
-     bson_strfreev (strv);
-   } else {
-     fprintf (sterr, "Command failed: %s\n", error.message);
-   }
+      test_collection
+      example_collection
 
 .. TODO: Uncomment when cursors page is created
 .. For more information about iterating over a cursor, see :ref:`c-cursors`. 
@@ -133,12 +138,14 @@ Delete a Collection
 You can delete a collection from the database by using the ``mongoc_collection_drop()``
 function.
 
-The following example deletes the ``test_collection`` collection:
+The following example deletes the ``"test_collection"`` collection:
 
-.. code-block:: c
-
-   mongoc_collection_t *collection = mongoc_database_get_collection (database, "test_collection");
-   monogc_collection_drop (collection, NULL);
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-delete-collection
+   :end-before: end-delete-collection
+   :language: c
+   :copyable:
+   :dedent:
 
 .. warning:: Dropping a Collection Deletes All Data in the Collection
 
@@ -159,40 +166,37 @@ read and write operations on a replica set by setting a **read concern** and a
 
 By default, databases inherit these settings from the ``mongoc_client_t`` instance,
 and collections inherit them from the database. However, you can change these
-settings on your database or collection by using one of the following functions:
+settings on your database by using one of the following functions:
 
-- For ``mongoc_database_t`` instances, use the ``mongoc_database_set_read_prefs()``, 
-  ``mongoc_database_set_read_concern()``, and ``mongoc_database_set_write_concern()`` functions
-  to set the read preferences, read concern, and write concern for the database.
-- For ``mongoc_collection_t`` instances, use the use the ``mongoc_collection_set_read_prefs()``, 
-  ``mongoc_collection_set_read_concern()``, and ``mongoc_collection_set_write_concern()`` functions
-  to set the read preferences, read concern, and write concern for the collection.
+- ``mongoc_database_set_read_prefs()``
+- ``mongoc_database_set_read_concern()``
+- ``mongoc_database_set_write_concern()``
+
+The following example shows how to change the read preference of a database by using the
+``mongoc_database_set_read_prefs()`` function:
+
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-database-read-prefs
+   :end-before: end-database-read-prefs
+   :language: c
+   :copyable:
+   :dedent:
+
+You can change the read and write settings on your collections by using one of the following functions:
+
+- ``mongoc_collection_set_read_prefs()``
+- ``mongoc_collection_set_read_concern()``
+- ``mongoc_collection_set_write_concern()``
 
 The following example shows how to change the read preference of a collection by using the
 ``mongoc_collection_set_read_prefs()`` function:
 
-.. code-block:: c
-
-   mongoc_read_prefs_t *read_prefs = mongoc_read_prefs_new (MONGOC_READ_PRIMARY_PREFERRED);
-   mongoc_collection_set_read_prefs (collection, read_prefs);
-
-The following example shows how to change the read concern of a
-collection by using the ``mongoc_collection_set_read_concern()`` function:
-
-.. code-block:: c
-
-   mongoc_read_concern_t *read_concern = mongoc_read_concern_new ();
-   monogc_read_concern_set_level (read_concern, MONGOC_READ_CONCERN_LEVEL_LOCAL);
-   mongoc_collection_set_read_concern (collection, read_concern);
-
-The following example shows how to change the write concern of a
-collection by using the ``mongoc_collection_set_write_concern()`` function:
-
-.. code-block:: c
-
-   mongoc_write_concern_t *write_concern = mongoc_write_concern_new ();
-   mongoc_write_concern_set_w(write_concern, MONGOC_WRITE_CONCERN_W_MAJORITY);
-   mongoc_collection_set_write_concern(collection, write_concern);
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-collection-read-prefs
+   :end-before: end-collection-read-prefs
+   :language: c
+   :copyable:
+   :dedent:
 
 .. tip::
 
@@ -219,17 +223,17 @@ when choosing a member to read from. To instruct the {+driver-short+}
 to prefer certain tags, use the ``mongoc_read_prefs_set_tags()`` function to set the
 tags in an instance of ``mongoc_read_prefs_t``. 
 
-In the following code example, the tag set passed to the ``mongoc_read_prefs_t`` instance
-instructs the {+driver-short+} to prefer reads from the
+In the following code example, the tag set passed to the ``mongoc_read_prefs_set_tags()``
+function instructs the {+driver-short+} to prefer reads from the
 New York data center (``'dc': 'ny'``) and to fall back to the San Francisco data
 center (``'dc': 'sf'``):
 
-.. code-block:: c
-
-   mongoc_read_prefs_t *read_prefs = mongoc_read_prefs_new (MONGOC_READ_SECONDARY_PREFERRED);
-   bson_t *tags = BCON_NEW ("DC", BCON_UTF8("ny"), "DC", BCON_UTF8("sf"));
-
-   mongoc_read_prefs_set_tags (read_prefs, tags);
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-tags
+   :end-before: end-tags
+   :language: c
+   :copyable:
+   :dedent:
 
 Local Threshold
 ~~~~~~~~~~~~~~~
@@ -245,12 +249,14 @@ higher latencies, include the ``localThresholdMS`` parameter in your connection 
 The following example connects to a MongoDB deployment running on ``localhost:27017``
 and specifies a local threshold of 35 milliseconds:
 
-.. code-block:: c
+.. literalinclude:: /includes/databases-collections/databases-collections.c
+   :start-after: start-local-threshold
+   :end-before: end-local-threshold
+   :language: c
+   :copyable:
+   :dedent:
 
-   const char *uri_string = "mongodb://localhost:27017/?localThresholdMS=100";
-   mongoc_client_t *client = mongoc_client_new (uri_string);
-
-In the preceding example, {+driver-short+} distributes reads between matching members
+In the preceding example, the {+driver-short+} distributes reads between matching members
 within 35 milliseconds of the closest member's ping time.
 
 API Documentation
