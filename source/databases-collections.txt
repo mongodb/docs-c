@@ -85,8 +85,8 @@ The following example creates a collection called ``"example_collection"``:
 You can specify collection options, such as maximum size and document
 validation rules, by passing them inside a ``bson_t`` structure as the third parameter
 to the ``mongoc_database_create_collection()`` function. For a full list of
-optional parameters, see the :manual:`create documentation </reference/command/create>`
-in the {+mdb-server+} manual.
+optional parameters, see the :manual:`create command </reference/command/create>`
+documentation in the {+mdb-server+} manual.
 
 Get a List of Collections
 -------------------------
@@ -99,15 +99,17 @@ The following example calls the ``mongoc_database_find_collections_with_opts()``
 the cursor to print the results:
 
 .. io-code-block::
+   :copyable:
 
    .. input:: /includes/databases-collections/databases-collections.c
-      :language: c:
+      :language: c
       :start-after: start-find-collections
       :end-before: end-find-collections
       :dedent:
 
    .. output::
       :language: console
+      :visible: false
 
       Collection: { "name" : "test_collection", "type" : "collection", ...}
       Collection: { "name" : "example_collection", "type" : "collection", ... }
@@ -116,15 +118,17 @@ To query for only the names of the collections in the database, call the
 ``mongoc_database_get_collection_names_with_opts()`` function as follows:
 
 .. io-code-block::
+   :copyable:
 
    .. input:: /includes/databases-collections/databases-collections.c
-      :language: c:
+      :language: c
       :start-after: start-find-collection-names
       :end-before: end-find-collection-names
       :dedent:
 
    .. output::
       :language: console
+      :visible: false
 
       test_collection
       example_collection
