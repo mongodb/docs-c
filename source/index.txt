@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    /databases-collections
+   /read
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -52,11 +53,10 @@ Learn how to use the {+driver-short+} to work with MongoDB databases and collect
 
 .. Learn how you can write data to MongoDB in the :ref:`c-write` section.
 
-.. TODO
-.. Read Data from MongoDB
-.. ----------------------
+Read Data from MongoDB
+----------------------
 
-.. Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
+Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 
 .. TODO
 .. Optimize Queries with Indexes
