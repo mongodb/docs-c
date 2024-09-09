@@ -20,7 +20,7 @@ main (int argc, char *argv[])
         // start-find
         bson_t *query = bson_new ();
         // Add fields to query here
-        mongoc_cursor_t results = mongoc_collection_find_with_opts (collection, query, NULL, NULL);
+        mongoc_cursor_t* results = mongoc_collection_find_with_opts (collection, query, NULL, NULL);
         const bson_t *doc;
 
         while (mongoc_cursor_next (results, &doc)) {
