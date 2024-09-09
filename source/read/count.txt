@@ -121,7 +121,7 @@ The following table describes the options you can set to customize ``countDocume
    * - ``hint``
      - | Sets the index to scan for documents.
 
-For a complete list of options, see the `API Documentation <{+api-libmongoc+}/mongoc_collection_count_documents.htm#parameters>`__
+For a complete list of options, see the `API Documentation <{+api-libmongoc+}/mongoc_collection_count_documents.html#parameters>`__
 for ``mongoc_collection_count_documents()``.
 
 The following example uses a ``bson_t`` structure to add a comment to the
