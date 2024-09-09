@@ -1,0 +1,80 @@
+#include <bson/bson.h>
+#include <mongoc/mongoc.h>
+#include <stdio.h>
+
+int
+main (int argc, char *argv[])
+{
+    mongoc_client_t *client;
+    mongoc_collection_t *collection;
+    bson_error_t error;
+
+    mongoc_init ();
+
+    client =
+        mongoc_client_new ("<connection string URI>");
+    collection = mongoc_client_get_collection (client, "sample_mflix", "movies");
+
+    {
+        // start-count-all
+        int64_t count = 
+            mongoc_collection_count_documents (collection, bson_new (), NULL, NULL, NULL, &error);
+
+        printf ("%" PRId64 "\n", count);
+        // end-count-all
+    }
+    
+    {
+        // start-count-query
+        bson_t *query = BCON_NEW ("year", BCON_INT32 (1930));
+
+        int64_t count =
+            mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
+
+        printf ("%" PRId64 "\n", count);
+        
+        bson_destroy (query);
+        // end-count-query
+    }
+
+    {
+        // start-count-options
+        bson_t *opts = BCON_NEW ("comment", BCON_UTF8 ("Retrieving count"));
+
+        int64_t count =
+            mongoc_collection_count_documents (collection, bson_new (), opts, NULL, NULL, &error);
+        
+        printf ("%" PRId64 "\n", count);
+
+        bson_destroy (opts);
+        // end-count-options
+    }
+
+    {
+        // start-estimated-count
+        int64_t count =
+            mongoc_collection_estimated_document_count (collection, NULL, NULL, NULL, &error);
+
+        printf ("%" PRId64 "\n", count);
+        // end-estimated-count
+    }
+
+    {
+        // start-estimated-count-options
+        bson_t *opts = BCON_NEW ("comment", BCON_UTF8 ("Retrieving count"));
+
+        int64_t count =
+            mongoc_collection_estimated_document_count (collection, opts, NULL, NULL, &error);
+        
+        printf ("%" PRId64 "\n", count);
+
+        bson_destroy (opts);
+        // end-estimated-count-options
+    }
+    
+    mongoc_collection_destroy (collection);
+    mongoc_client_destroy (client);
+    mongoc_cleanup ();
+
+    return EXIT_SUCCESS;
+}
