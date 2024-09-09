@@ -77,16 +77,16 @@ int main(int argc, char *argv[])
         char **strv;
         unsigned i;
 
-        if ((strv = mongoc_database_get_collection_names_with_opts(database, NULL, &error)))
+        if ((strv = mongoc_database_get_collection_names_with_opts (database, NULL, &error)))
         {
             for (i = 0; strv[i]; i++)
-                printf("%s\n", strv[i]);
+                printf ("%s\n", strv[i]);
 
-            bson_strfreev(strv);
+            bson_strfreev (strv);
         }
         else
         {
-            fprint f(stderr, "Command failed: %s\n", error.message);
+            fprintf (stderr, "Command failed: %s\n", error.message);
         }
         // end-find-collection-names
         mongoc_database_destroy (database);
