@@ -49,21 +49,11 @@ To remove the ``_id`` field from the returned document, you must
 Specify Fields to Include
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the following syntax to specify the fields to include in the result:
-
-.. TODO
-.. code-block:: c
-
-   val projection = Projection.fields(
-       Projections.include(<fieldName1>, <fieldName2>, ...)
-   )
-
 The following example uses the ``mongoc_collection_find_with_opts()`` function to find all
 restaurants with the ``name`` field value of ``"Emerald Pub"``. It specifies a projection to
 return only the ``name``, ``cuisine``, and ``borough`` fields of the returned
 documents by using the options parameter of ``mongoc_collection_find_with_opts()``.
 
-.. TODO
 .. io-code-block::
    :copyable: true
 
@@ -90,7 +80,6 @@ the returned document.
 The following example runs the same query as the preceding example, but
 excludes the ``_id`` field from the projection:
 
-.. TODO
 .. io-code-block::
    :copyable: true
 
