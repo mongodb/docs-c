@@ -47,7 +47,7 @@ the relevant values for your MongoDB deployment.
     :language: c
     :copyable:
     :linenos:
-    :emphasize-lines: 24-26
+    :emphasize-lines: 20-22
 
 .. TODO: uncomment when installation guide is complete
 .. .. tip::

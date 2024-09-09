@@ -7,7 +7,6 @@ main (int argc, char *argv[])
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    mongoc_cursor_t *results;
     char *str;
     bson_error_t error;
 
@@ -17,11 +16,11 @@ main (int argc, char *argv[])
         mongoc_client_new ("<connection string URI>");
     collection = mongoc_client_get_collection (client, "<database name>", "collection name");
 
-    // start-find
     {
+        // start-find
         bson_t *query = bson_new ();
         // Add fields to query here
-        results = mongoc_collection_find_with_opts (collection, query, NULL, NULL);
+        mongoc_cursor_t results = mongoc_collection_find_with_opts (collection, query, NULL, NULL);
         const bson_t *doc;
 
         while (mongoc_cursor_next (results, &doc)) {
@@ -32,20 +31,22 @@ main (int argc, char *argv[])
 
         mongoc_cursor_destroy (results);
         bson_destroy (query);
+        // end-find
     }
-    // end-find
 
-    // start-count-all
     {
+        // start-count-all
+        bson_t *query = bson_new ();
         int64_t count = 
-            mongoc_collection_count_documents (collection, bson_new (), NULL, NULL, NULL, &error);
+            mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
 
         printf ("%" PRId64 "\n", count);
+        bson_destroy (query);
+        // end-count-all
     }
-    // end-count-all
 
-    // start-count-query
     {
+        // start-count-query
         bson_t *query = bson_new ();
         // Add fields to query here
         int64_t count =
@@ -54,20 +55,20 @@ main (int argc, char *argv[])
         printf ("%" PRId64 "\n", count);
 
         bson_destroy (query);
+        // end-count-query
     }
-    // end-count-query
 
-    // start-estimated-count
     {
+        // start-estimated-count       
         int64_t count =
             mongoc_collection_estimated_document_count (collection, NULL, NULL, NULL, &error);
 
         printf ("%" PRId64 "\n", count);
+        // end-estimated-count
     }
-    // end-estimated-count
 
-    // start-distinct
     {
+        // start-distinct
         bson_t reply;
         bson_t *command = BCON_NEW ("distinct",
                             BCON_UTF8 ("<collection name>"),
@@ -83,13 +84,14 @@ main (int argc, char *argv[])
         }
         bson_destroy(&reply);
         bson_destroy(command);
+        // end-distinct
     }
-    // end-distinct
 
-    // start-watch
     {
+        // start-watch
         mongoc_change_stream_t *change_stream;
-        bson_t *pipeline = <pipeline definition>;
+        bson_t *pipeline = bson_new ();
+        // Add stages to pipeline here
         const bson_t *doc;
 
         change_stream = mongoc_collection_watch (collection, pipeline, NULL);
@@ -102,8 +104,8 @@ main (int argc, char *argv[])
 
         bson_destroy (pipeline);
         mongoc_change_stream_destroy (change_stream);
+        // end-watch
     }
-    // end-watch
 
     mongoc_collection_destroy (collection);
     mongoc_client_destroy (client);

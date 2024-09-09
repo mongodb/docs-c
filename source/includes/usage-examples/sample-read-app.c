@@ -7,7 +7,6 @@ main (int argc, char *argv[])
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    mongoc_cursor_t *results;
     char *str;
     bson_error_t error;
 
