@@ -32,17 +32,6 @@ int main(int argc, char *argv[])
     {
         mongoc_client_t *client = mongoc_client_new ("<connection string URI>");
         mongoc_database_t *database = mongoc_client_get_database (client, "test_database");
-        // start-access-collection
-        mongoc_collection_t *collection = mongoc_database_get_collection (database, "test_collection");
-        // end-access-collection
-        mongoc_collection_destroy (collection);
-        mongoc_database_destroy (database);
-        mongoc_client_destroy (client);
-    }
-
-    {
-        mongoc_client_t *client = mongoc_client_new ("<connection string URI>");
-        mongoc_database_t *database = mongoc_client_get_database (client, "test_database");
         // start-create-collection
         mongoc_collection_t *new_collection = mongoc_database_create_collection (database, "example_collection", NULL, &error);
         // end-create-collection
