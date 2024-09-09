@@ -7,7 +7,6 @@ main (int argc, char *argv[])
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    bson_error_t error;
 
     mongoc_init ();
 
@@ -17,15 +16,20 @@ main (int argc, char *argv[])
 
     {
         // start-count-all
-        int64_t count = 
-            mongoc_collection_count_documents (collection, bson_new (), NULL, NULL, NULL, &error);
+        bson_error_t error;
+        bson_t *empty_query = bson_new ();
 
+        int64_t count = 
+            mongoc_collection_count_documents (collection, empty_query, NULL, NULL, NULL, &error);
         printf ("%" PRId64 "\n", count);
+
+        bson_destroy (empty_query);
         // end-count-all
     }
     
     {
         // start-count-query
+        bson_error_t error;
         bson_t *query = BCON_NEW ("year", BCON_INT32 (1930));
 
         int64_t count =
