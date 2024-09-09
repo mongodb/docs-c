@@ -18,10 +18,11 @@ Read Data from MongoDB
    :description: Learn how to use the C Driver to read data from MongoDB.
    :keywords: usage examples, query, find, code example
 
-.. TODO: uncomment and add to as pages are built
-.. .. toctree::
-..    :titlesonly:
-..    :maxdepth: 1
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   /read/project
 
 Overview
 --------
