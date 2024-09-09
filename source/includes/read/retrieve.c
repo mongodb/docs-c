@@ -40,9 +40,13 @@ main (int argc, char *argv[])
 
     {
         // start-find-all
+        bson_t *empty_filter = bson_new ()
+
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, bson_new (), NULL, NULL);
+        
         mongoc_cursor_destroy (results);
+        bson_destroy (empty_filter);
         // end-find-all
     }
 
@@ -52,9 +56,11 @@ main (int argc, char *argv[])
         bson_t *opts = BCON_NEW ("limit", BCON_INT32 (10), "maxTimeMS", BCON_INT32 (10000));
 
         mongoc_cursor_t *results = 
-            mongoc_collection_find_with_opts (collection, bson_new (), opts, NULL);
+            mongoc_collection_find_with_opts (collection, filter, opts, NULL);
 
         mongoc_cursor_destroy (results);
+        bson_destroy (filter);
+        bson_destroy (opts);
         // end-modified-find
     }
 

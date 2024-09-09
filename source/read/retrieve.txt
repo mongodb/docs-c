@@ -131,7 +131,7 @@ table describes commonly used options used for modifying queries:
    * - ``sort``
      - | Defines the sort criteria to apply to the query.
 
-The following example uses the ``limit`` and ``maxTime`` options to limit the
+The following example uses the ``limit`` and ``maxTimeMS`` options to limit the
 number of documents returned by the query to ``10`` and set a maximum execution time of
 ``10000`` milliseconds on the operation:
 
@@ -141,8 +141,8 @@ number of documents returned by the query to ``10`` and set a maximum execution 
    :language: c
    :dedent:
 
-For a full list of options that modify the behavior of ``find()``, see the
-:manual:`db.collection.find() documentation </reference/method/db.collection.find/>`
+For a full list of options that modify the behavior of ``mongoc_collection_find_with_opts()``,
+see the :manual:`find method documentation </reference/method/db.collection.find/>`
 documentation in the {+mdb-server+} manual.
 
 Additional Information
