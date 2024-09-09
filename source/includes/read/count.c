@@ -34,7 +34,6 @@ main (int argc, char *argv[])
 
         int64_t count =
             mongoc_collection_count_documents (collection, query, NULL, NULL, NULL, &error);
-
         printf ("%" PRId64 "\n", count);
         
         bson_destroy (query);
@@ -43,11 +42,11 @@ main (int argc, char *argv[])
 
     {
         // start-count-options
+        bson_error_t error;
         bson_t *opts = BCON_NEW ("comment", BCON_UTF8 ("Retrieving count"));
 
         int64_t count =
             mongoc_collection_count_documents (collection, bson_new (), opts, NULL, NULL, &error);
-        
         printf ("%" PRId64 "\n", count);
 
         bson_destroy (opts);
@@ -56,20 +55,21 @@ main (int argc, char *argv[])
 
     {
         // start-estimated-count
+        bson_error_t error;
+
         int64_t count =
             mongoc_collection_estimated_document_count (collection, NULL, NULL, NULL, &error);
-
         printf ("%" PRId64 "\n", count);
         // end-estimated-count
     }
 
     {
         // start-estimated-count-options
+        bson_error_t error;
         bson_t *opts = BCON_NEW ("comment", BCON_UTF8 ("Retrieving count"));
 
         int64_t count =
             mongoc_collection_estimated_document_count (collection, opts, NULL, NULL, &error);
-        
         printf ("%" PRId64 "\n", count);
 
         bson_destroy (opts);
