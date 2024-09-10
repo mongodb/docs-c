@@ -17,7 +17,6 @@ main (int argc, char *argv[])
 
     {
         // start-project
-        char *str;
         const bson_t *doc;
 
         bson_t *filter = BCON_NEW ("name", BCON_UTF8 ("Emerald Pub"));
@@ -31,7 +30,7 @@ main (int argc, char *argv[])
             mongoc_collection_find_with_opts (collection, filter, opts, NULL);
 
         while (mongoc_cursor_next (results, &doc)) {
-            str = bson_as_canonical_extended_json (doc, NULL);
+            char *str = bson_as_canonical_extended_json (doc, NULL);
             printf ("%s\n", str);
             bson_free (str);
         }
@@ -44,7 +43,6 @@ main (int argc, char *argv[])
 
     {
         // start-project-exclude
-        char *str;
         const bson_t *doc;
 
         bson_t *filter = BCON_NEW ("name", BCON_UTF8 ("Emerald Pub"));
@@ -59,7 +57,7 @@ main (int argc, char *argv[])
             mongoc_collection_find_with_opts (collection, filter, opts, NULL);
 
         while (mongoc_cursor_next (results, &doc)) {
-            str = bson_as_canonical_extended_json (doc, NULL);
+            char *str = bson_as_canonical_extended_json (doc, NULL);
             printf ("%s\n", str);
             bson_free (str);
         }
