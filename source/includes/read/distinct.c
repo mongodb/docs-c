@@ -18,6 +18,7 @@ main (int argc, char *argv[])
         // start-distinct
         bson_t reply;
         bson_error_t error;
+
         bson_t *command = BCON_NEW ("distinct",
                             BCON_UTF8 ("restaurants"),
                             "key",

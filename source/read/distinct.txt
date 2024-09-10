@@ -115,9 +115,6 @@ The following table describes some methods you can use to customize the
    * - ``comment``
      - | Specifies a comment to attach to the operation.
 
-   * - ``maxTimeMS``
-     - | Sets the maximum amount of time to allow the operation to run, in milliseconds.
-
 For a complete list of methods you can use to modify the ``distinct`` method, see
 the :manual:`distinct command </reference/command/distinct>` documentation in the
 {+mdb-server+} manual.
