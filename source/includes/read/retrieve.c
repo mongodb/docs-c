@@ -47,7 +47,7 @@ main (int argc, char *argv[])
         bson_t *empty_filter = bson_new ();
 
         mongoc_cursor_t *results = 
-            mongoc_collection_find_with_opts (collection, bson_new (), NULL, NULL);
+            mongoc_collection_find_with_opts (collection, empty_filter, NULL, NULL);
         
         mongoc_cursor_destroy (results);
         bson_destroy (empty_filter);
