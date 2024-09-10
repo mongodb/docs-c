@@ -147,7 +147,7 @@ The following example uses a ``bson_t`` structure to add a comment to the
 Retrieve an Estimated Count
 ---------------------------
 
-Use the ``estimatedDocumentCount()`` function to retrieve an estimate of the number of
+Use the ``mongoc_collection_estimated_document_count()`` function to retrieve an estimate of the number of
 documents in a collection. The function estimates the amount of documents based on
 collection metadata, which can be faster than performing an accurate count.
 
