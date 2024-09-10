@@ -24,6 +24,7 @@ Read Data from MongoDB
 
    /read/project
    /read/count
+   /read/distinct
 
 Overview
 --------
@@ -136,8 +137,7 @@ collection:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when distinct guide is complete
-.. To learn more about the ``distinct()`` function, see the :ref:`c-distinct` guide.
+To learn more about the ``distinct`` command, see the :ref:`c-distinct` guide.
 
 Monitor Data Changes
 --------------------
