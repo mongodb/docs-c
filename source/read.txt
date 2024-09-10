@@ -22,6 +22,7 @@ Read Data from MongoDB
    :titlesonly:
    :maxdepth: 1
 
+   /read/project
    /read/count
 
 Overview
