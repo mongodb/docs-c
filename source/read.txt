@@ -22,6 +22,7 @@ Read Data from MongoDB
    :titlesonly:
    :maxdepth: 1
 
+   /read/retrieve
    /read/project
    /read/count
 
@@ -69,10 +70,8 @@ given filter:
    :copyable:
    :dedent:
 
-.. TODO
 
-.. TODO: uncomment when retrieve/find guide is complete
-.. To learn more about the ``mongoc_collection_find_with_opts()`` function, see the :ref:`c-retrieve-find` guide.
+To learn more about the ``mongoc_collection_find_with_opts()`` function, see the :ref:`c-retrieve-find` guide.
 
 Count Documents in a Collection
 -------------------------------
@@ -102,9 +101,8 @@ the given filter:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_count_documents()`` function, see the
-.. :ref:`c-accurate-count` section of the Count Documents guide.
+To learn more about the ``mongoc_collection_count_documents()`` function, see the
+:ref:`c-accurate-count` section of the Count Documents guide.
 
 Estimated Document Count
 ------------------------
@@ -119,9 +117,8 @@ collection based on collection metadata:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_estimated_document_count()`` function, see the
-.. :ref:`c-estimated-count` section of the Count Documents guide.
+To learn more about the ``mongoc_collection_estimated_document_count()`` function, see the
+:ref:`c-estimated-count` section of the Count Documents guide.
 
 Retrieve Distinct Values
 ------------------------
