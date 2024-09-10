@@ -7,7 +7,6 @@ main (int argc, char *argv[])
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    bson_error_t error;
 
     mongoc_init ();
 
@@ -24,13 +23,18 @@ main (int argc, char *argv[])
         // end-find
         
         // start-find-iterate
-        char *str;
         const bson_t *doc;
+        bson_error_t error;
 
         while (mongoc_cursor_next (results, &doc)) {
-            str = bson_as_canonical_extended_json (doc, NULL);
+            char *str = bson_as_canonical_extended_json (doc, NULL);
             printf ("%s\n", str);
             bson_free (str);
+        }
+
+        // Ensure we iterated through cursor without error
+        if (mongoc_cursor_error (results, &error)) {
+            fprintf (stderr, "Error getting results: %s\n", error.message);
         }
 
         mongoc_cursor_destroy (results);
@@ -40,7 +44,7 @@ main (int argc, char *argv[])
 
     {
         // start-find-all
-        bson_t *empty_filter = bson_new ()
+        bson_t *empty_filter = bson_new ();
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, bson_new (), NULL, NULL);
