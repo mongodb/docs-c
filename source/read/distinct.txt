@@ -120,7 +120,7 @@ The following table describes some options you can use to customize the
    * - ``comment``
      - | Specifies a comment to attach to the operation.
 
-For a complete list of methods you can use to modify the ``distinct`` method, see
+For a complete list of options you can use to modify the ``distinct`` operation, see
 the :manual:`Distinct </reference/command/distinct>` documentation in the
 {+mdb-server+} manual.
 
