@@ -23,6 +23,8 @@ Read Data from MongoDB
    :maxdepth: 1
 
    /read/retrieve
+   /read/project
+   /read/count
 
 Overview
 --------
@@ -83,9 +85,8 @@ The following example returns the number of documents in the specified collectio
    :copyable:
    :dedent:
 
-.. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_count_documents()`` function, see the
-.. :ref:`c-accurate-count` section of the Count Documents guide.
+To learn more about the ``mongoc_collection_count_documents()`` function, see the
+:ref:`c-accurate-count` section of the Count Documents guide.
 
 Count Documents Returned from a Query
 -------------------------------------
@@ -100,9 +101,8 @@ the given filter:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_count_documents()`` function, see the
-.. :ref:`c-accurate-count` section of the Count Documents guide.
+To learn more about the ``mongoc_collection_count_documents()`` function, see the
+:ref:`c-accurate-count` section of the Count Documents guide.
 
 Estimated Document Count
 ------------------------
@@ -117,9 +117,8 @@ collection based on collection metadata:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when count guide is complete
-.. To learn more about the ``mongoc_collection_estimated_document_count()`` function, see the
-.. :ref:`c-estimated-count` section of the Count Documents guide.
+To learn more about the ``mongoc_collection_estimated_document_count()`` function, see the
+:ref:`c-estimated-count` section of the Count Documents guide.
 
 Retrieve Distinct Values
 ------------------------
