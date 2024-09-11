@@ -15,6 +15,7 @@ main (int argc, char *argv[])
     collection = mongoc_client_get_collection (client, "sample_restaurants", "restaurants");
 
     {
+        // Retrieves the distinct values of the "borough" field from the restaurants collection
         // start-distinct
         bson_t reply;
         bson_error_t error;
@@ -38,6 +39,9 @@ main (int argc, char *argv[])
     }
 
     {
+        // Retrieves the distinct values of the "borough" field from the restaurants collection
+        // while using a query filter to only fetch values from documents with a cuisine field
+        // value of "Italian"
         // start-distinct-query
         bson_t reply;
         bson_error_t error;
@@ -62,6 +66,9 @@ main (int argc, char *argv[])
         // end-distinct-query
     }
     {
+        // Retrieves the distinct values of the "name" field from the restaurants collection
+        // while using a query filter to only fetch values from documents with a cuisine field
+        // value of "Pizza", and adds a comment to the operation
         // start-distinct-comment
         bson_t reply;
         bson_error_t error;
