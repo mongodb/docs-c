@@ -5,7 +5,7 @@ Download and Install
 ====================
 
 .. procedure::
-   :style: connected
+   :style: normal
 
    .. step:: Download the {+driver-short+}
 
@@ -196,7 +196,4 @@ Download and Install
     .. To learn how to install the driver libraries from source, see the
     .. :ref:`c-install-from-source`` guide.
 
-After you complete these steps, you have the {+driver-short+} installed 
-on your machine.
-
-.. include:: /includes/get-started/troubleshoot.rst
+   .. include:: /includes/get-started/troubleshoot.rst
