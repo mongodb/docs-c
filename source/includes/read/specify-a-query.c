@@ -5,8 +5,6 @@
 int
 main (int argc, char *argv[])
 {
-    // Inserts sample data for this guide into example collection
-    // start-sample-data
     mongoc_client_t *client;
     mongoc_collection_t *collection;
     mongoc_init ();
@@ -15,61 +13,11 @@ main (int argc, char *argv[])
         mongoc_client_new ("<connection string URI>");
     collection = mongoc_client_get_collection (client, "sample_fruit", "fruits");
 
-    bson_t *doc1, *doc2, *doc3, *doc4;
-    const bson_t *docs[4];
-
-    doc1 = BCON_NEW (
-        "_id", BCON_INT32 (1),
-        "name", BCON_UTF8 ("apples"),
-        "quantity", BCON_INT32 (5),
-        "rating", BCON_INT32 (3),
-        "color", BCON_UTF8 ("red"),
-        "type", "[", BCON_UTF8 ("fuji"), BCON_UTF8 ("honeycrisp"), "]"
-    );
-
-    doc2 = BCON_NEW(
-        "_id", BCON_INT32 (2),
-        "name", BCON_UTF8 ("bananas"),
-        "quantity", BCON_INT32 (7),
-        "rating", BCON_INT32 (4),
-        "color", BCON_UTF8 ("yellow"),
-        "type", "[", BCON_UTF8 ("cavendish"), "]"
-    );
-
-    doc3 = BCON_NEW (
-        "_id", BCON_INT32 (3),
-        "name", BCON_UTF8 ("oranges"),
-        "quantity", BCON_INT32 (6),
-        "rating", BCON_INT32 (2),
-        "type", "[", BCON_UTF8 ("naval"), BCON_UTF8 ("mandarin"), "]"
-    );
-
-    doc4 = BCON_NEW (
-        "_id", BCON_INT32 (4),
-        "name", BCON_UTF8 ("pineapple"),
-        "quantity", BCON_INT32 (3),
-        "rating", BCON_INT32 (5),
-        "color", BCON_UTF8 ("yellow")
-    );
-
-    docs[0] = doc1;
-    docs[1] = doc2;
-    docs[2] = doc3;
-    docs[3] = doc4;
-
-    mongoc_collection_insert_many (collection, docs, 4, NULL, NULL, NULL);
-
-    bson_destroy (doc1);
-    bson_destroy (doc2);
-    bson_destroy (doc3);
-    bson_destroy (doc4);
-    // end-sample-data
-
     {
-        // Uses a query filter to query for documents with a color field value of "yellow"
+        // Uses a query filter to query for documents with a type field value of "movie"
         // start-find-exact
         const bson_t *doc;
-        bson_t *filter = BCON_NEW ("color", BCON_UTF8 ("yellow"));
+        bson_t *filter = BCON_NEW ("type", BCON_UTF8 ("movie"));
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, filter, NULL, NULL);
@@ -86,10 +34,10 @@ main (int argc, char *argv[])
     }
 
     {
-        // Uses a query filter to query for documents with a rating field value greater than 2
+        // Uses a query filter to query for documents with a year field value greater than 2015
         // start-find-comparison
         const bson_t *doc;
-        bson_t *filter = BCON_NEW ("rating", "{", "$gt", BCON_INT32 (2), "}");
+        bson_t *filter = BCON_NEW ("year", "{", "$gt", BCON_INT32 (2015), "}");
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, filter, NULL, NULL);
@@ -106,13 +54,13 @@ main (int argc, char *argv[])
     }
 
     {
-        // Uses a query filter to query for documents with a quantity field value of 5 OR a color field value of "yellow"
+        // Uses a query filter to query for documents with a year field value of 1983 or 1985
         // start-find-logical
         const bson_t *doc;
         bson_t *filter = BCON_NEW (
             "$or", "[",
-                "{", "quantity", BCON_INT32(5), "}",
-                "{", "color", BCON_UTF8("yellow"), "}",
+                "{", "year", BCON_INT64 (1983), "}",
+                "{", "year", BCON_INT64 (1985), "}",
             "]"
         );
 
@@ -131,10 +79,10 @@ main (int argc, char *argv[])
     }
 
     {
-        // Uses a query filter to query for documents with a size array field of size 2
+        // Uses a query filter to query for documents with a genres array field of size 2
         // start-find-array
         const bson_t *doc;
-        bson_t *filter = BCON_NEW ("type", "{", "$size", BCON_INT32 (2), "}");
+        bson_t *filter = BCON_NEW ("genres", "{", "$size", BCON_INT32 (2), "}");
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, filter, NULL, NULL);
@@ -151,10 +99,10 @@ main (int argc, char *argv[])
     }
 
     {
-        // Uses a query filter to query for documents that have a color field
+        // Uses a query filter to query for documents that have a num_mflix_comments field
         // start-find-element
         const bson_t *doc;
-        bson_t *filter = BCON_NEW ("color", "{", "$exists", BCON_BOOL (true), "}");
+        bson_t *filter = BCON_NEW ("num_mflix_comments", "{", "$exists", BCON_BOOL (true), "}");
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, filter, NULL, NULL);
@@ -171,10 +119,10 @@ main (int argc, char *argv[])
     }
 
     {
-        // Uses a query filter to query for documents with a name field value that contains two consecutive "p" characters
+        // Uses a query filter to query for documents with a title field value that contains two consecutive "p" characters
         // start-find-evaluation
         const bson_t *doc;
-        bson_t *filter = BCON_NEW("name", "{", "$regex", BCON_UTF8("p{2,}"), "}");
+        bson_t *filter = BCON_NEW("title", "{", "$regex", BCON_UTF8("p{2,}"), "}");
 
         mongoc_cursor_t *results = 
             mongoc_collection_find_with_opts (collection, filter, NULL, NULL);

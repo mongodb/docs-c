@@ -22,35 +22,20 @@ Overview
 
 In this guide, you can learn how to specify a query by using the {+driver-short+}.
 
-You can refine the set of documents that a query returns by creating a
-**query filter**. A query filter is an expression that specifies the search
+You can define a **query filter** to retrieve specific documents from a collection when
+performing a query. A query filter is an expression that specifies the search
 criteria MongoDB uses to match documents in a read or write operation.
-In a query filter, you can prompt the driver to search for documents with an
+By defining a query filter, you can direct the driver to search for documents with an
 exact match to your query, or you can compose query filters to express more
 complex matching criteria.
 
 Sample Data
 ~~~~~~~~~~~
 
-The examples in this guide run operations on a collection called
-``fruits`` that contains the following documents:
-
-.. code-block:: json
-
-   { "_id": 1, "name": "apples", "quantity": 5, "rating": 3, "color": "red", "type": ["fuji", "honeycrisp"] },
-   { "_id": 2, "name": "bananas", "quantity": 7, "rating": 4, "color": "yellow", "type": ["cavendish"] },
-   { "_id": 3, "name": "oranges", "quantity": 6, "rating": 2, "type": ["naval", "mandarin"] },
-   { "_id": 4, "name": "pineapple", "quantity": 3, "rating": 5, "color": "yellow" },
-
-The following code example shows how to create a database and collection, then
-insert the sample documents into your collection:
-
-.. literalinclude:: /includes/read/specify-a-query.c
-   :start-after: start-sample-data
-   :end-before: end-sample-data
-   :language: c
-   :dedent:
-   :copyable:
+The examples in this guide use the ``movies`` collection in the ``sample_mflix``
+database from the :atlas:`Atlas sample datasets </sample-data>`. To learn how to create a
+free MongoDB Atlas cluster and load the sample datasets, see the
+:atlas:`Get Started with Atlas </getting-started>` guide.
 
 Exact Match
 -----------
@@ -58,7 +43,7 @@ Exact Match
 Literal value queries return documents with an exact match to your query filter.
 
 The following example specifies a query filter as a parameter to the ``mongoc_collection_find_with_opts()``
-function. The code returns all documents with a ``color`` field value of ``"yellow"``.
+function. The code returns all documents with a ``type`` field value of ``"movie"``.
 
 .. io-code-block::
    :copyable: true
@@ -72,8 +57,12 @@ function. The code returns all documents with a ``color`` field value of ``"yell
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "2" }, "name" : "bananas", "quantity" : { "$numberInt" : "7" }, "rating" : { "$numberInt" : "4" }, "color" : "yellow", "type" : [ "cavendish" ] }
-      { "_id" : { "$numberInt" : "4" }, "name" : "pineapple", "quantity" : { "$numberInt" : "3" }, "rating" : { "$numberInt" : "5" }, "color" : "yellow" }
+      { "_id" : { "$oid" : "..." }, "title" : "Wild and Woolly", "type" : "movie", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "The Devil to Pay!", "type" : "movie", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Traffic in Souls", "type" : "movie", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "The Poor Little Rich Girl", "type" : "movie", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "High and Dizzy", "type" : "movie", ... }
+      ...
 
 Comparison Operators
 --------------------
@@ -90,7 +79,7 @@ To view a full list of comparison operators, see the :manual:`Comparison Query O
 
 The following example specifies a comparison operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
-``rating`` field value greater than ``2``.
+``year`` field value greater than ``2015``.
 
 .. io-code-block::
    :copyable: true
@@ -104,9 +93,7 @@ parameter to the ``mongoc_collection_find_with_opts()`` function. The code retur
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "1" }, "name" : "apples", "quantity" : { "$numberInt" : "5" }, "rating" : { "$numberInt" : "3" }, "color" : "red", "type" : [ "fuji", "honeycrisp" ] }
-      { "_id" : { "$numberInt" : "2" }, "name" : "bananas", "quantity" : { "$numberInt" : "7" }, "rating" : { "$numberInt" : "4" }, "color" : "yellow", "type" : [ "cavendish" ] }
-      { "_id" : { "$numberInt" : "4" }, "name" : "pineapple", "quantity" : { "$numberInt" : "3" }, "rating" : { "$numberInt" : "5" }, "color" : "yellow" }
+      { "_id" : { "$oid" : "..." }, "title" : "The Masked Saint", "year" : { "$numberInt" : "2016" }, ... }
 
 Logical Operators
 -----------------
@@ -124,8 +111,7 @@ To learn more about logical operators, see the :manual:`Logical Query Operators
 
 The following example specifies a logical operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
-documents with a ``quantity`` field value greater than ``5`` **or** a ``color`` field
-value of ``"yellow"``.
+documents with a ``year`` field value of ``1983`` **or** ``1985``.
 
 .. io-code-block::
    :copyable: true
@@ -139,9 +125,12 @@ value of ``"yellow"``.
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "1" }, "name" : "apples", "quantity" : { "$numberInt" : "5" }, "rating" : { "$numberInt" : "3" }, "color" : "red", "type" : [ "fuji", "honeycrisp" ] }
-      { "_id" : { "$numberInt" : "2" }, "name" : "bananas", "quantity" : { "$numberInt" : "7" }, "rating" : { "$numberInt" : "4" }, "color" : "yellow", "type" : [ "cavendish" ] }
-      { "_id" : { "$numberInt" : "4" }, "name" : "pineapple", "quantity" : { "$numberInt" : "3" }, "rating" : { "$numberInt" : "5" }, "color"
+      { "_id" : { "$oid" : "..." }, "title" : "Amityville 3-D", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Barefoot Gen", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Betrayal", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : { "$oid" : "..." }, "title" : "You're a Good Man, Charlie Brown", "year" : { "$numberInt" : "1985" }, ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Yes: 9012 Live", "year" : { "$numberInt" : "1985" }, ... }
+      ...
 
 Array Operators
 ---------------
@@ -158,7 +147,7 @@ To learn more about array operators, see the :manual:`Array Query Operators
 
 The following example specifies an array operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
-``type`` array field containing exactly ``2`` elements.
+``genres`` array field containing exactly ``2`` elements.
 
 .. io-code-block::
    :copyable: true
@@ -172,8 +161,12 @@ parameter to the ``mongoc_collection_find_with_opts()`` function. The code retur
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "1" }, "name" : "apples", "quantity" : { "$numberInt" : "5" }, "rating" : { "$numberInt" : "3" }, "color" : "red", "type" : [ "fuji", "honeycrisp" ] }
-      { "_id" : { "$numberInt" : "3" }, "name" : "oranges", "quantity" : { "$numberInt" : "6" }, "rating" : { "$numberInt" : "2" }, "type" : [ "naval", "mandarin" ] }
+      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Romance" ], "title" : "The Devil to Pay!", ... }
+      { "_id" : { "$oid" : "..." }, "genres" : [ "Crime", "Drama" ], "title" : "Traffic in Souls", ... }
+      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Short" ], "title" : "High and Dizzy", ... }
+      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Short" ], "title" : "Now or Never", ... }
+      { "_id" : { "$oid" : "..." }, "genres" : [ "Drama", "Romance" ], "title" : "A Woman of Paris: A Drama of Fate", ... }
+      ...
 
 Element Operators
 -----------------
@@ -185,7 +178,7 @@ To learn more about element operators, see the :manual:`Element Query Operators
 
 The following example specifies the ``$exists`` operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
-documents that have a ``color`` field.
+documents that have a ``num_mflix_comments`` field.
 
 .. io-code-block::
    :copyable: true
@@ -199,9 +192,12 @@ documents that have a ``color`` field.
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "1" }, "name" : "apples", "quantity" : { "$numberInt" : "5" }, "rating" : { "$numberInt" : "3" }, "color" : "red", "type" : [ "fuji", "honeycrisp" ] }
-      { "_id" : { "$numberInt" : "2" }, "name" : "bananas", "quantity" : { "$numberInt" : "7" }, "rating" : { "$numberInt" : "4" }, "color" : "yellow", "type" : [ "cavendish" ] }
-      { "_id" : { "$numberInt" : "4" }, "name" : "pineapple", "quantity" : { "$numberInt" : "3" }, "rating" : { "$numberInt" : "5" }, "color" : "yellow" }
+      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "The Park Is Mine", ...}
+      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "The Good Father", ... }
+      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Alpine Fire", ... }
+      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "Huang jia shi jie", ... }
+      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Twenty Years Later", ... }
+      ...
 
 Evaluation Operators
 --------------------
@@ -222,7 +218,7 @@ To view a full list of evaluation operators, see the :manual:`Evaluation Query O
 
 The following example specifies an evaluation operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code uses a regular
-expression to return all documents with a ``name`` field value that has at least two
+expression to return all documents with a ``title`` field value that has at least two
 consecutive ``"p"`` characters.
 
 .. io-code-block::
@@ -237,8 +233,12 @@ consecutive ``"p"`` characters.
    .. output::
       :visible: false
 
-      { "_id" : { "$numberInt" : "1" }, "name" : "apples", "quantity" : { "$numberInt" : "5" }, "rating" : { "$numberInt" : "3" }, "color" : "red", "type" : [ "fuji", "honeycrisp" ] }
-      { "_id" : { "$numberInt" : "4" }, "name" : "pineapple", "quantity" : { "$numberInt" : "3" }, "rating" : { "$numberInt" : "5" }, "color" : "yellow" }
+      { "_id" : { "$oid" : "..." }, "title" : "He Who Gets Slapped", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "David Copperfield", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Applause", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Skippy", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "This Happy Breed", ... }
+      ...
 
 Additional Information
 ----------------------
