@@ -4,196 +4,181 @@
 Download and Install
 ====================
 
-.. procedure::
-   :style: normal
+Download the {+driver-short+}
+----------------------
 
-   .. step:: Download the {+driver-short+}
+The {+driver-short+} consists of two libraries: ``libbson`` and
+``libmongoc``. In this guide, you will learn how to install ``libmongoc``,
+which comes bundled with ``libbson``.
+    
+You can install the {+driver-short+} by using
+a package manager, or by installing the libraries from source. To learn
+how to install by using a package manager, select the tab corresponding to
+your operating system:
 
-      THe {+driver-short+} consists of two libraries: ``libbson`` and
-      ``libmongoc``. In this guide, you will learn how to install ``libmongoc``,
-      which comes bundled with ``libbson``.
-      
-      You can install the {+driver-short+} by using
-      a package manager, or by installing the libraries from source. To learn
-      how to install by using a package manager, select the tab corresponding to
-      your operating system:
+.. tabs::
 
-      .. tabs::
+   .. tab:: Linux
+      :tabid: install-linux
 
-         .. tab:: MacOS
-            :tabid: install-mac
+      .. _c-redhat-install:
 
-            You can download the {+driver-short+} on MacOS by using the `Homebrew
-            package manager <https://brew.sh/>`__. To do so, run the following command in
-            your shell:
+      RedHat Enterprise Linux Distributions
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            .. code-block:: bash
+      You can install the driver on RedHat Enterprise Linux (RHEL)
+      distributions, version 7 or later, or distributions based on RHEL,
+      such as:
 
-               brew install mongo-c-driver
-         
-         .. tab:: Linux
-            :tabid: install-linux
+      - `CentOS <https://www.centos.org/>`__
+      - `Rocky Linux <https://rockylinux.org/>`__
+      - `AlmaLinux <https://almalinux.org/>`__
 
-            You can download the {+driver-short+} on the following Linux
-            distrubutions:
+      Before you install the driver on a RHEL distribution, not including
+      Fedora, you must first enable the Extra Packages for Enterprise
+      Linux (EPEL) repository. You can enable the EPEL repository by
+      installing the ``epel-release`` package, as shown in the following
+      example:
 
-            .. _c-redhat-install:
+      .. code-block:: bash
 
-            RedHat Enterprise Linux
-            ~~~~~~~~~~~~~~~~~~~~~~~
+          yum install epel-release
 
-            You can install the driver on RedHat Enterprise Linux (RHEL)
-            distribution version 7 or later, or distributions based on RHEL
-            version 7 or later such as:
+      Then, you can install the {+driver-short+}
+      by using ``yum``. To do so, run the following command in
+      your shell:
 
-            - CentOS
-            - Rocky Linux
-            - AlmaLinux
+      .. code-block:: bash
 
-            Before you install the driver on a RHEL distribution, not including
-            Fedora, you must first enable the Extra Packages for Enterprise
-            Linux (EPEL) repository. You can enable the EPEL repository by
-            installing the ``epel-release`` package, as shown in the following
-            example:
+         yum install mongo-c-driver-devel
+        
+      The preceding code example installs the developer packages, which
+      are required to build applications that use the {+driver-short+}. To
+      install only the libraries, without development files, run the
+      following command:
 
-            .. code-block:: bash
+      .. code-block:: bash
 
-               yum install epel-release
+         yum install mongo-c-driver
 
-            Then, you can install the {+driver-short+}
-            by using ``yum``. To do so, run the following command in
-            your shell:
+      .. tip::
 
-            .. code-block:: bash
+         If you are installing on a RHEL distribution that is version 8 or
+         later, we recommend running the preceding code examples by using
+         ``dnf`` instead of ``yum``   
 
-               yum install mongo-c-driver-devel
+      Fedora
+      ~~~~~~
+
+      If you are using Fedora or an enterprise Linux distribution of
+      version 8 or later, you can install the driver by using the same
+      commands as shown in the :ref:`preceding example <c-redhat-install>`
+      and replacing ``yum`` with ``dnf``.
+
+      The following example shows how to install the {+driver-short+} in a
+      Fedora distribution:
+
+      .. code-block:: bash
+
+         dnf install mongo-c-driver-devel
+
+      Debian-Based Distributions
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      In Debian-Based Linux distributions, including Ubuntu and Ubuntu
+      derivatives, the driver libraries are available through the Advanced
+      Packaging Tool (APT). You can install the driver with APT by running
+      the following command in your shell:
+
+      .. code-block:: bash
+
+         apt install libmongoc-dev
+        
+      The preceding code example installs the developer packages, which
+      are required to build applications that use the {+driver-short+}. To
+      install only the libraries, without development files, run the
+      following command:
+
+      .. code-block:: bash
+
+         apt install libmongoc-1.0-0
+
+   .. tab:: Windows
+      :tabid: install-windows
+
+      For windows environments, we recommend building the {+driver-short+}
+      libraries from source to ensure maximum compatibility with the local
+      toolchain. You can automate building from source by using a
+      from-source library package management tool, such as 
+      `vcpkg <https://vcpkg.io>`__.
+        
+      In `vcpkg manifest mode <https://learn.microsoft.com/en-us/vcpkg/users/manifests>`__, add the
+      driver library to your project's ``vcpkg.json`` manifest file,
+      as shown in the following example:
+ 
+      .. code-block:: js
+          
+          {
+             // ...
+             "dependencies": [
+               // ...
+               "mongo-c-driver"
+             ]
+          }
+                
+      When you build a CMake project with vcpkg integration and have a
+      ``vcpkg.json`` manifest file, vcpkg automatically installs the project's
+      dependencies before proceeding with configuration.
+
+      In `vcpkg classic mode <https://learn.microsoft.com/en-us/vcpkg/users/classic-mode>`__,
+      you can install the driver by running the following command in
+      your shell:
+        
+      .. code-block:: bash
+
+         vcpkg install mongo-c-driver
+
+      After you install the driver, the standard CMake configuration file
+      is available, as well as the generated ``IMPORTED`` targets. You can
+      create a ``CMakeLists.txt`` file as shown in the following example:
+        
+      .. code-block:: cmake
+       
+         find_package(mongoc-1.0 CONFIG REQUIRED)
+         target_link_libraries(my-application
+             PRIVATE $<IF:$<TARGET_EXISTS:mongo::mongoc_shared>,mongo::mongoc_shared,mongo::mongoc_static>)
+        
+      .. note::
+        
+         You can use the ``$<IF:$<TARGET_EXISTS...>:...>`` generator
+         expression in the preceding example to switch the link type of
+         ``libmongoc`` based on the form that is available from the
+         ``find_package()`` command. ``libmongoc`` supports building with
+         both *dynamic* and *static* library types, but vcpkg
+         installs only one type at a time.
+        
+      To configure the CMake project with vcpkg integration, set the CMake
+      toolchain file in the configuration command, as shown in the
+      following example:
+        
+      .. code-block:: bash
+        
+         cmake -S . -B _build -D
+         CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
             
-            The preceding code example installs the developer packages, which
-            are required to build applications that use the {+driver-short+}. To
-            install only the libraries, without development files, run the
-            following command:
+   .. tab:: MacOS
+      :tabid: install-mac
 
-            .. code-block:: bash
+      You can download the {+driver-short+} on MacOS by using the `Homebrew
+      package manager <https://brew.sh/>`__. To do so, run the following command in
+      your shell:
 
-               yum install mongo-c-driver
+      .. code-block:: bash
 
-            .. tip::
-
-               If you are installing on a RHEL distribution that is version 8 or
-               later, we recommend running the preceding code examples by using
-               ``dnf`` instead of ``yum``.
-
-            Fedora
-            ~~~~~~
-
-            If you are using Fedora or an enterprise Linux distribution of
-            version 8 or later, you can install the driver by using the same
-            commands as shown in the :ref:`preceding example <c-redhat-install>`
-            and replacing ``yum`` with ``dnf``.
-
-            The following example shows how to install the {+driver-short+} in a
-            Fedora distribution:
-
-            .. code-block:: bash
-
-                dnf install mongo-c-driver-devel
-
-            Debian-Based Distributions
-            ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-            In Debian-Based Linux distributions, including Ubuntu and Ubuntu
-            derivatives, the driver libraries are available through the Advanced
-            Packaging Tool (APT). You can install the driver with APT by running
-            the following command in your shell:
-
-            .. code-block:: bash
-
-               apt install libmongoc-dev
-            
-            The preceding code example installs the developer packages, which
-            are required to build applications that use the {+driver-short+}. To
-            install only the libraries, without development files, run the
-            following command:
-
-            .. code-block:: bash
-
-               apt install libmongoc-1.0-0
-
-         .. tab:: Windows
-            :tabid: install-windows
-
-            For windows environments, we recommend building the {+driver-short+}
-            libraries from source to ensure maximum compatibility with the local
-            toolchain. You can automate building from source by using a
-            from-source library package management tool, such as 
-            `vcpkg <https://vcpkg.io>`__.
-
-            To learn how to install the driver by using vcpkg, select the
-            tab corresponding to the mode you want to use:
-
-            .. tabs::
-            
-               .. tab:: vcpkg Manifest Mode (Recommended)
-                  :tabid: vcpkg-manifest
-            
-                  In `vcpkg manifest mode <https://learn.microsoft.com/en-us/vcpkg/users/manifests>`__, add the
-                  driver library to your project's ``vcpkg.json`` manifest file,
-                  as shown in the following example:
-            
-                  .. code-block:: js
-                    
-                     {
-                       // ...
-                       "dependencies": [
-                         // ...
-                         "mongo-c-driver"
-                       ]
-                     }
-                  
-                  When you build a CMake project with vcpkg integration and have a
-                  ``vcpkg.json`` manifest file, vcpkg automatically installs the project's
-                  dependencies before proceeding with configuration.
-
-               .. tab:: vcpkg Classic Mode
-                  :tabid: vcpkg-classic
-            
-                  In `vcpkg classic mode <https://learn.microsoft.com/en-us/vcpkg/users/classic-mode>`__,
-                  you can install the driver by running the following command in
-                  your shell:
-            
-                  .. code-block:: bash
-
-                     vcpkg install mongo-c-driver
-
-            After you install the driver, the standard CMake configuration file
-            is available, as well as the generated ``IMPORTED`` targets. You can
-            create a ``CMakeLists.txt`` file as shown in the following example:
-            
-            .. code-block:: cmake
-            
-               find_package(mongoc-1.0 CONFIG REQUIRED)
-               target_link_libraries(my-application
-                   PRIVATE $<IF:$<TARGET_EXISTS:mongo::mongoc_shared>,mongo::mongoc_shared,mongo::mongoc_static>)
-            
-            .. note::
-            
-               You can use the ``$<IF:$<TARGET_EXISTS...>:...>`` generator
-               expression in the preceding example to switch the link type of
-               ``libmongoc`` based on the form that is available from the
-               ``find_package()`` command. ``libmongoc`` supports building with
-               both *dynamic* and *static* library types, but vcpkg
-               installs only one type at a time.
-            
-            To configure the CMake project with vcpkg integration, set the CMake
-            toolchain file in the configuration command, as shown in the
-            following example:
-            
-            .. code-block:: bash
-            
-               cmake -S . -B _build -D CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+          brew install mongo-c-driver
 
 .. TODO:
     .. To learn how to install the driver libraries from source, see the
     .. :ref:`c-install-from-source`` guide.
 
-   .. include:: /includes/get-started/troubleshoot.rst
+.. include:: /includes/get-started/troubleshoot.rst
