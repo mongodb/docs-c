@@ -41,7 +41,7 @@ Limit
 -----
 
 To specify the maximum number of documents returned from a read operation,
-specify the ``limit`` option to your ``mongoc_collection_find_with_opts()``
+pass the ``limit`` option to your ``mongoc_collection_find_with_opts()``
 function call.
 
 The following example finds all restaurants that have a ``cuisine`` field value
@@ -78,7 +78,7 @@ Sort
 
 To return documents in a specified order, use the ``sort`` option. The ``sort``
 option takes a sort direction as a parameter. To specify the sort direction,
-pass a ``1`` to specify an ascending sort or a ``-1`` to specify a descending sort.
+pass a ``1`` for an ascending sort or a ``-1`` for a descending sort.
 Ascending sorts order values from lowest to highest, and descending sorts order values from
 highest to lowest.
 
@@ -112,7 +112,7 @@ Skip
 To skip a specified number of documents before returning your query results,
 use the ``skip`` option and pass in the number of documents to skip. The
 ``skip`` option ignores the specified number of documents in your query
-results and returns the rest.
+results, then returns the rest.
 
 The following example returns all documents that have a ``cuisine`` field value
 of ``"Italian"`` and skips the first 10 documents:
