@@ -66,6 +66,7 @@ main (int argc, char *argv[])
     // end-sample-data
 
     {
+        // Uses a query filter to query for documents with a color field value of "yellow"
         // start-find-exact
         const bson_t *doc;
         bson_t *filter = BCON_NEW ("color", BCON_UTF8 ("yellow"));
@@ -85,6 +86,7 @@ main (int argc, char *argv[])
     }
 
     {
+        // Uses a query filter to query for documents with a rating field value greater than 2
         // start-find-comparison
         const bson_t *doc;
         bson_t *filter = BCON_NEW ("rating", "{", "$gt", BCON_INT32 (2), "}");
@@ -104,6 +106,7 @@ main (int argc, char *argv[])
     }
 
     {
+        // Uses a query filter to query for documents with a quantity field value of 5 OR a color field value of "yellow"
         // start-find-logical
         const bson_t *doc;
         bson_t *filter = BCON_NEW (
@@ -128,6 +131,7 @@ main (int argc, char *argv[])
     }
 
     {
+        // Uses a query filter to query for documents with a size array field of size 2
         // start-find-array
         const bson_t *doc;
         bson_t *filter = BCON_NEW ("type", "{", "$size", BCON_INT32 (2), "}");
@@ -147,6 +151,7 @@ main (int argc, char *argv[])
     }
 
     {
+        // Uses a query filter to query for documents that have a color field
         // start-find-element
         const bson_t *doc;
         bson_t *filter = BCON_NEW ("color", "{", "$exists", BCON_BOOL (true), "}");
@@ -166,6 +171,7 @@ main (int argc, char *argv[])
     }
 
     {
+        // Uses a query filter to query for documents with a name field value that contains two consecutive "p" characters
         // start-find-evaluation
         const bson_t *doc;
         bson_t *filter = BCON_NEW("name", "{", "$regex", BCON_UTF8("p{2,}"), "}");

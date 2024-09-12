@@ -45,7 +45,6 @@ The examples in this guide run operations on a collection called
 The following code example shows how to create a database and collection, then
 insert the sample documents into your collection:
 
-.. TODO
 .. literalinclude:: /includes/read/specify-a-query.c
    :start-after: start-sample-data
    :end-before: end-sample-data
@@ -61,7 +60,6 @@ Literal value queries return documents with an exact match to your query filter.
 The following example specifies a query filter as a parameter to the ``mongoc_collection_find_with_opts()``
 function. The code returns all documents with a ``color`` field value of ``"yellow"``.
 
-.. TODO
 .. io-code-block::
    :copyable: true
 
@@ -91,7 +89,7 @@ To view a full list of comparison operators, see the :manual:`Comparison Query O
 </reference/operator/query-comparison/>` guide in the MongoDB Server manual.
 
 The following example specifies a comparison operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` method. The code returns all documents with a
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
 ``rating`` field value greater than ``2``.
 
 .. io-code-block::
@@ -125,9 +123,9 @@ To learn more about logical operators, see the :manual:`Logical Query Operators
 </reference/operator/query-logical/>` guide in the MongoDB Server manual.
 
 The following example specifies a logical operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` method. The code returns all documents with a
-``quantity`` field value greater than ``5`` **or** a ``color`` field value of
-``"yellow"``.
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
+documents with a ``quantity`` field value greater than ``5`` **or** a ``color`` field
+value of ``"yellow"``.
 
 .. io-code-block::
    :copyable: true
@@ -223,7 +221,7 @@ To view a full list of evaluation operators, see the :manual:`Evaluation Query O
 </reference/operator/query-evaluation/>` guide in the MongoDB Server manual.
 
 The following example specifies an evaluation operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` method. The code uses a regular
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code uses a regular
 expression to return all documents with a ``name`` field value that has at least two
 consecutive ``"p"`` characters.
 
