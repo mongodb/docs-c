@@ -157,7 +157,7 @@ To learn more about array operators, see the :manual:`Array Query Operators
 </reference/operator/query-array/>` guide in the MongoDB Server manual.
 
 The following example specifies an array operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` method. The code returns all documents with a
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
 ``type`` array field containing exactly ``2`` elements.
 
 .. io-code-block::
@@ -184,7 +184,7 @@ To learn more about element operators, see the :manual:`Element Query Operators
 </reference/operator/query-element/>` guide in the MongoDB Server manual.
 
 The following example specifies the ``$exists`` operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` method. The code returns all
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
 documents that have a ``color`` field.
 
 .. io-code-block::
