@@ -42,7 +42,7 @@ main (int argc, char *argv[])
         const bson_t *doc;
 
         bson_t *filter = BCON_NEW ("cuisine", BCON_UTF8 ("Italian"));
-        bson_t *opts = BCON_NEW("sort", "{", "name", BCON_INT32(1), "}");
+        bson_t *opts = BCON_NEW ("sort", "{", "name", BCON_INT32 (1), "}");
 
         mongoc_cursor_t *results =
             mongoc_collection_find_with_opts (collection, filter, opts, NULL);
@@ -54,7 +54,6 @@ main (int argc, char *argv[])
         }
 
         bson_destroy (filter);
-        bson_destroy (sort);
         bson_destroy (opts);
         mongoc_cursor_destroy (results);
         // end-sort
@@ -87,10 +86,10 @@ main (int argc, char *argv[])
         const bson_t *doc;
 
         bson_t *filter = BCON_NEW ("cuisine", BCON_UTF8 ("Italian"));
-        bson_t *opts = BCON_NEW ("limit", BCON_INT64 (5), "skip", BCON_INT64 (10));
-        bson_t *sort = BCON_NEW ("name", BCON_INT32 (1));
-        BSON_APPEND_DOCUMENT (opts, "sort", sort);
-
+        bson_t *opts = BCON_NEW ("limit", BCON_INT64 (5),
+                                "skip", BCON_INT64 (10), 
+                                "sort", "{", "name", BCON_INT32 (1), "}");
+                                
         mongoc_cursor_t *results =
             mongoc_collection_find_with_opts (collection, filter, opts, NULL);
 
@@ -101,10 +100,8 @@ main (int argc, char *argv[])
         }
 
         bson_destroy (filter);
-        bson_destroy (sort);
         bson_destroy (opts);
         mongoc_cursor_destroy (results);
-
         // end-limit-sort-skip
     }
 
