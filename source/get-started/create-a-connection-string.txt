@@ -32,7 +32,7 @@ when applicable, and connection options.
          :alt: The connect button in the clusters section of the Atlas UI
 
       Proceed to the :guilabel:`Connect your application` section and select
-      "C++" from the :guilabel:`Driver` selection menu and the version
+      "C" from the :guilabel:`Driver` selection menu and the version
       that best matches the version you installed from the :guilabel:`Version`
       selection menu.
 
@@ -51,10 +51,10 @@ when applicable, and connection options.
 
    .. step:: Update the Placeholders
 
-      Paste this connection string into a file in your preferred text editor
-	   and replace the ``<db_username>`` and ``<db_password>`` placeholders with
-	   your database user's username and password.
-      
+      Paste this connection string into a file in your preferred text editor and
+      replace the ``<db_username>`` and ``<db_password>`` placeholders with your
+      database user's username and password.
+
       Save this file to a safe location for use in the next step.
 
 After completing these steps, you have a connection string that
