@@ -76,7 +76,7 @@ set the ``bson`` parameter to the next document in the cursor.
 
 The following example finds all documents in a collection with a ``name`` value
 of ``"Dunkin' Donuts"``. It then prints the first document in the cursor by calling the
-``mongoc_cursor_next()`` method.
+``mongoc_cursor_next()`` function.
 
 .. io-code-block::
    :copyable:
@@ -96,11 +96,13 @@ Close a Cursor
 --------------
 
 To close a cursor and release all associated resources, call the
-``mongoc_cursor_destroy()`` method as shown in the following example:
+``mongoc_cursor_destroy()`` function as shown in the following example:
 
 .. literalinclude:: /includes/read/cursors.c
    :start-after: start-cursor-close
    :end-before: end-cursor-close
+   :language: c
+   :dedent:
 
 Tailable Cursors
 ----------------
