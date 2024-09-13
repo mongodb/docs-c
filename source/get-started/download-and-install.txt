@@ -111,6 +111,12 @@ your operating system:
       toolchain. You can automate building from source by using a
       from-source library package management tool, such as 
       `vcpkg <https://vcpkg.io>`__.
+
+      .. tip::
+
+         To learn how to get started with vcpkg, see the `vcpkg Get Started
+         guide <https://learn.microsoft.com/en-us/vcpkg/get_started/overview>`__
+         in the Microsoft documentation.
         
       In `vcpkg manifest mode <https://learn.microsoft.com/en-us/vcpkg/users/manifests>`__, add the
       driver library to your project's ``vcpkg.json`` manifest file,
@@ -130,7 +136,7 @@ your operating system:
       ``vcpkg.json`` manifest file, vcpkg automatically installs the project's
       dependencies before proceeding with configuration.
 
-      In `vcpkg classic mode <https://learn.microsoft.com/en-us/vcpkg/users/classic-mode>`__,
+      If you are using `vcpkg classic mode <https://learn.microsoft.com/en-us/vcpkg/users/classic-mode>`__,
       you can install the driver by running the following command in
       your shell:
         
@@ -180,5 +186,8 @@ your operating system:
 .. TODO:
     .. To learn how to install the driver libraries from source, see the
     .. :ref:`c-install-from-source`` guide.
+
+After you complete these steps, you have the {+driver-short+} installed 
+on your machine.
 
 .. include:: /includes/get-started/troubleshoot.rst
