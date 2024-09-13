@@ -38,6 +38,7 @@ Connect to MongoDB
       the ``movies`` collection in the ``sample_mflix`` database:
 
       .. literalinclude:: /includes/get-started/quickstart.c
+         :language: c
 
    .. step:: Assign the connection string
 
