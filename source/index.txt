@@ -8,6 +8,7 @@
 
    /databases-collections
    /read
+   /whats-new
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -40,12 +41,11 @@ Databases and Collections
 Learn how to use the {+driver-short+} to work with MongoDB databases and collections in the
 :ref:`c-databases-collections` section.
 
-.. TODO
-.. What's New
-.. ----------
+What's New
+----------
 
-.. For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
-.. section.
+For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
+section.
 
 .. TODO
 .. Write Data to MongoDB
