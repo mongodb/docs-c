@@ -52,20 +52,20 @@ your operating system:
 
          yum install mongo-c-driver-devel
         
-      The preceding code example installs the developer packages, which
-      are required to build applications that use the {+driver-short+}. To
-      install only the libraries, without development files, run the
-      following command:
+      .. note:: Developer Packages
+      
+         The preceding code example installs the developer packages, which
+         are required to build applications that use the {+driver-short+}. To
+         install only the libraries, without development files, run the
+         following command:
 
-      .. code-block:: bash
+         .. code-block:: bash
 
-         yum install mongo-c-driver
+            yum install mongo-c-driver
 
-      .. tip::
-
-         If you are installing on a RHEL distribution that is version 8 or
-         later, we recommend running the preceding code examples by using
-         ``dnf`` instead of ``yum``   
+      If you are installing on a RHEL distribution that is version 8 or
+      later, we recommend running the preceding code examples by using
+      ``dnf`` instead of ``yum``.
 
       Fedora
       ~~~~~~
@@ -106,7 +106,7 @@ your operating system:
    .. tab:: Windows
       :tabid: install-windows
 
-      For windows environments, we recommend building the {+driver-short+}
+      For Windows environments, we recommend building the {+driver-short+}
       libraries from source to ensure maximum compatibility with the local
       toolchain. You can automate building from source by using a
       from-source library package management tool, such as 
@@ -164,11 +164,11 @@ your operating system:
          installs only one type at a time.
         
       To configure the CMake project with vcpkg integration, set the CMake
-      toolchain file in the configuration command, as shown in the
-      following example:
+      toolchain file in the configuration command by running the following
+      commands in your shell:
         
       .. code-block:: bash
-        
+
          cmake -S . -B _build -D
          CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
             
