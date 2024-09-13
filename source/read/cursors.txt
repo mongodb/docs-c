@@ -1,0 +1,143 @@
+.. _c-cursors:
+
+=========================
+Access Data From a Cursor
+=========================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. meta::
+   :keywords: read, results, oplog
+
+Overview
+--------
+
+In this guide, you can learn how to access data from a **cursor** with the
+{+driver-short+}.
+
+A cursor is a mechanism that returns the results of a read operation in iterable
+batches. Because a cursor holds only a subset of documents at any given time,
+cursors reduce both memory consumption and the number of requests the driver sends to
+the server.
+
+Whenever the {+driver-short+} performs a read operation that returns multiple
+documents, it automatically returns those documents in a cursor.
+
+Sample Data
+~~~~~~~~~~~
+
+The examples in this guide use the ``restaurants`` collection in the ``sample_restaurants``
+database from the :atlas:`Atlas sample datasets </sample-data>`. To learn how to create a
+free MongoDB Atlas cluster and load the sample datasets, see the
+:atlas:`Get Started with Atlas </getting-started>` guide.
+
+.. _c-cursors-iterate:
+
+Access Cursor Contents Iteratively
+----------------------------------
+
+To iterate over the contents of a cursor, use a while loop. The following example retrieves
+all documents in the ``restaurants`` collection and prints each document by iterating over
+the cursor:
+
+.. io-code-block::
+   :copyable:
+
+   .. input:: /includes/read/cursors.c
+      :start-after: start-cursor-iterate
+      :end-before: end-cursor-iterate
+      :language: c
+      :dedent:
+
+   .. output::
+      :visible: false
+
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "976", "coord" : [ { "$numberDouble" : "-73.927015099999991321" }, { "$numberDouble" : "40.662019200000003138" } ], "street" : "Rutland Road", "zipcode" : "11212" }, "borough" : "Brooklyn", "cuisine" : "Chinese", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1398211200000" } }, "grade" : "A", "score" : { "$numberInt" : "13" } }, { "date" : { "$date" : { "$numberLong" : "1364256000000" } }, "grade" : "A", "score" : { "$numberInt" : "10" } }, { "date" : { "$date" : { "$numberLong" : "1331596800000" } }, "grade" : "A", "score" : { "$numberInt" : "4" } }, { "date" : { "$date" : { "$numberLong" : "1321401600000" } }, "grade" : "A", "score" : { "$numberInt" : "13" } } ], "name" : "Golden Pavillion", "restaurant_id" : "40363920" }
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "1007", "coord" : [ { "$numberDouble" : "-73.856076999999999089" }, { "$numberDouble" : "40.848447000000000173" } ], "street" : "Morris Park Ave", "zipcode" : "10462" }, "borough" : "Bronx", "cuisine" : "Bakery", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1393804800000" } }, "grade" : "A", "score" : { "$numberInt" : "2" } }, { "date" : { "$date" : { "$numberLong" : "1378857600000" } }, "grade" : "A", "score" : { "$numberInt" : "6" } }, { "date" : { "$date" : { "$numberLong" : "1358985600000" } }, "grade" : "A", "score" : { "$numberInt" : "10" } }, { "date" : { "$date" : { "$numberLong" : "1322006400000" } }, "grade" : "A", "score" : { "$numberInt" : "9" } }, { "date" : { "$date" : { "$numberLong" : "1299715200000" } }, "grade" : "B", "score" : { "$numberInt" : "14" } } ], "name" : "Morris Park Bake Shop", "restaurant_id" : "30075445" }
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "100", "coord" : [ { "$numberDouble" : "-74.001048400000001948" }, { "$numberDouble" : "40.715990000000012117" } ], "street" : "Centre Street", "zipcode" : "10013" }, "borough" : "Manhattan", "cuisine" : "American", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1393804800000" } }, "grade" : "A", "score" : { "$numberInt" : "8" } }, { "date" : { "$date" : { "$numberLong" : "1362700800000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } }, { "date" : { "$date" : { "$numberLong" : "1331251200000" } }, "grade" : "A", "score" : { "$numberInt" : "13" } }, { "date" : { "$date" : { "$numberLong" : "1301529600000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } } ], "name" : "Criminal Court Bldg Cafeteria", "restaurant_id" : "40364443" }
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "108", "coord" : [ { "$numberDouble" : "-73.981459999999998445" }, { "$numberDouble" : "40.725006700000001558" } ], "street" : "Avenue B", "zipcode" : "10009" }, "borough" : "Manhattan", "cuisine" : "American", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1405296000000" } }, "grade" : "B", "score" : { "$numberInt" : "17" } }, { "date" : { "$date" : { "$numberLong" : "1388448000000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } }, { "date" : { "$date" : { "$numberLong" : "1350864000000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } }, { "date" : { "$date" : { "$numberLong" : "1336348800000" } }, "grade" : "A", "score" : { "$numberInt" : "13" } }, { "date" : { "$date" : { "$numberLong" : "1318550400000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } } ], "name" : "7B Bar", "restaurant_id" : "40364518" }
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "180", "coord" : [ { "$numberDouble" : "-73.978869399999993561" }, { "$numberDouble" : "40.766596100000001002" } ], "street" : "Central Park South", "zipcode" : "10019" }, "borough" : "Manhattan", "cuisine" : "American", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1418601600000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } }, { "date" : { "$date" : { "$numberLong" : "1407369600000" } }, "grade" : "C", "score" : { "$numberInt" : "40" } }, { "date" : { "$date" : { "$numberLong" : "1375056000000" } }, "grade" : "A", "score" : { "$numberInt" : "2" } }, { "date" : { "$date" : { "$numberLong" : "1355356800000" } }, "grade" : "A", "score" : { "$numberInt" : "11" } }, { "date" : { "$date" : { "$numberLong" : "1343606400000" } }, "grade" : "C", "score" : { "$numberInt" : "4" } }, { "date" : { "$date" : { "$numberLong" : "1329350400000" } }, "grade" : "A", "score" : { "$numberInt" : "2" } } ], "name" : "Nyac Main Dining Room", "restaurant_id" : "40364467" }
+      ...
+
+Retrieve Documents Individually
+-------------------------------
+
+Retrieve documents from a cursor individually by calling the ``mongoc_cursor_next()`` function.
+When calling the ``mongoc_cursor_next()`` function, the function will iterate the cursor and
+set the ``bson`` parameter to the next document in the cursor.
+
+The following example finds all documents in a collection with a ``name`` value
+of ``"Dunkin' Donuts"``. It then prints the first document in the cursor by calling the
+``mongoc_cursor_next()`` method.
+
+.. io-code-block::
+   :copyable:
+
+   .. input:: /includes/read/cursors.c
+      :start-after: start-cursor-next
+      :end-before: end-cursor-next
+      :language: c
+      :dedent:
+
+   .. output::
+      :visible: false
+
+      { "_id" : { "$oid" : "..." }, "address" : { "building" : "87-77", "coord" : [ { "$numberDouble" : "-73.802179999999992788" }, { "$numberDouble" : "40.707304000000000599" } ], "street" : "Parsons Boulevard", "zipcode" : "11432" }, "borough" : "Queens", "cuisine" : "Donuts", "grades" : [ { "date" : { "$date" : { "$numberLong" : "1409616000000" } }, "grade" : "A", "score" : { "$numberInt" : "12" } }, { "date" : { "$date" : { "$numberLong" : "1377561600000" } }, "grade" : "A", "score" : { "$numberInt" : "10" } }, { "date" : { "$date" : { "$numberLong" : "1365638400000" } }, "grade" : "A", "score" : { "$numberInt" : "4" } }, { "date" : { "$date" : { "$numberLong" : "1332460800000" } }, "grade" : "A", "score" : { "$numberInt" : "9" } } ], "name" : "Dunkin' Donuts", "restaurant_id" : "40392410" }
+
+Close a Cursor
+--------------
+
+To close a cursor and release all associated resources, call the
+``mongoc_cursor_destroy()`` method as shown in the following example:
+
+.. literalinclude:: /includes/read/cursors.c
+   :start-after: start-cursor-close
+   :end-before: end-cursor-close
+
+Tailable Cursors
+----------------
+
+When querying on a :manual:`capped collection </core/capped-collections/>`, you
+can use a **tailable cursor** that remains open after the client exhausts the
+results in a cursor. To create a tailable cursor on a capped collection,
+specify the ``tailable`` and ``awaitData`` options when performing a find operation.
+
+The following example creates a tailable cursor on a capped collection:
+
+.. literalinclude:: /includes/read/cursors.c
+   :start-after: start-tailable-cursor
+   :end-before: end-tailable-cursor
+   :language: c
+   :copyable:
+   :dedent:
+
+To learn more about tailable cursors and their usage, see the :manual:`Tailable Cursors guide
+</core/tailable-cursors/>` in the {+mdb-server+} manual.
+
+Troubleshooting
+---------------
+
+"*CursorNotFound* cursor id not valid at server"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cursors in MongoDB can timeout on the server if they've been open for
+a long time without any operations being performed on them. This can
+lead to a ``CursorNotFound`` exception when you try to iterate through the cursor.
+
+API Documentation
+-----------------
+
+To learn more about any of the functions discussed in this guide, see the following API
+documentation:
+
+- `mongoc_collection_find_with_opts() <{+api-libmongoc+}/mongoc_collection_find_with_opts.html>`__
+- `mongoc_cursor_next() <{+api-libmongoc+}/mongoc_cursor_next.html>`__
+- `mongoc_cursor_destroy() <{+api-libmongoc+}/mongoc_cursor_destroy.html>`__
