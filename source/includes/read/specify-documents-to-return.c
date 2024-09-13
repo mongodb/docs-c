@@ -54,7 +54,6 @@ main (int argc, char *argv[])
         }
 
         bson_destroy (filter);
-        bson_destroy (sort);
         bson_destroy (opts);
         mongoc_cursor_destroy (results);
         // end-sort
@@ -101,7 +100,6 @@ main (int argc, char *argv[])
         }
 
         bson_destroy (filter);
-        bson_destroy (sort);
         bson_destroy (opts);
         mongoc_cursor_destroy (results);
         // end-limit-sort-skip
