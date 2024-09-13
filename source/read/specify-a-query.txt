@@ -60,6 +60,7 @@ function. The code returns all documents with a ``type`` field value of ``"movie
       { "_id" : { "$oid" : "..." }, "title" : "Wild and Woolly", "type" : "movie", ... }
       { "_id" : { "$oid" : "..." }, "title" : "The Devil to Pay!", "type" : "movie", ... }
       { "_id" : { "$oid" : "..." }, "title" : "Traffic in Souls", "type" : "movie", ... }
+      { "_id" : { "$oid" : "..." }, "title" : "Now or Never", "type" : "movie", ... }
       { "_id" : { "$oid" : "..." }, "title" : "High and Dizzy", "type" : "movie", ... }
       ...
 
