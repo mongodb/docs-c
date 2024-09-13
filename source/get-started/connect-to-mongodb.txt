@@ -61,7 +61,7 @@ Connect to MongoDB
       .. code-block:: none
          :copyable: false
 
-         { "_id" : { "$oid" : "573a1399f29313caabceeb20" },
+         { "_id" : { "$oid" : "..." },
          "plot" : "Two imprisoned men bond over a number of years, finding solace
          and eventual redemption through acts of common decency.",
          ...
