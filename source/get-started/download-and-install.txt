@@ -10,10 +10,32 @@ Download the {+driver-short+}
 The {+driver-short+} consists of two libraries: ``libbson`` and
 ``libmongoc``. In this guide, you will learn how to install ``libmongoc``,
 which comes bundled with ``libbson``.
-    
+
 You can install the {+driver-short+} by using
-a package manager, or by installing the libraries from source. To learn
-how to install by using a package manager, select the tab corresponding to
+a package manager, or by installing the libraries from source. Different Linux
+distributions install different versions of the driver when installed with a
+package manager. Because of this, you should check the version your distribution
+includes before installing the driver.
+
+On RedHat Enterprise Linux (RHEL) distributions, you can check the version by
+running the following command in your shell:
+
+.. code-block:: bash
+
+   sudo dnf info mongo-c-driver-devel
+
+On Debian-based distributions, you can check the version by running the
+following command in your shell:
+
+.. code-block:: bash
+
+   apt-cache policy libmongoc-dev
+
+If the version of the driver that is available is not the version you want, you
+can install the driver from source.
+.. TODO: To learn how to install the driver from source, see the c-install-from-source guide.
+
+To learn how to install the driver by using a package manager, select the tab corresponding to
 your operating system:
 
 .. tabs::
