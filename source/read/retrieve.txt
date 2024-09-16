@@ -41,8 +41,7 @@ The ``mongoc_collection_find_with_opts()`` function takes a **query filter** and
 all matching documents from a collection. A query filter is a document that specifies the
 criteria that the driver uses to match documents from the collection.
 
-.. TODO
-.. To learn more about query filters, see the :ref:`c-specify-query` guide.
+To learn more about query filters, see the :ref:`c-specify-query` guide.
 
 Find Documents Example
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -147,8 +146,7 @@ see the :manual:`find method </reference/method/db.collection.find/>` documentat
 Additional Information
 ----------------------
 
-.. TODO
- **To learn more about query filters, see :ref:`c-specify-query`.
+To learn more about query filters, see :ref:`c-specify-query`.
 
 To view runnable code examples that retrieve documents by using the {+driver-short+}, see
 :ref:`c-read`.
