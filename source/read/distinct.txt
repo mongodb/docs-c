@@ -75,7 +75,7 @@ You can provide a **query filter** to the ``distinct`` command to find the disti
 field values across a subset of documents in a collection. A query filter is an expression that specifies search
 criteria used to match documents in an operation.
 
-For more information about creating a query filter, see :ref:`c-specify-query`.
+To learn more about creating query filters, see :ref:`c-specify-query`.
 
 The following example retrieves the distinct values of the ``borough`` field for
 all documents that have a ``cuisine`` field value of ``"Italian"``:

@@ -43,7 +43,8 @@ Exact Match
 Literal value queries return documents with an exact match to your query filter.
 
 The following example specifies a query filter as a parameter to the ``mongoc_collection_find_with_opts()``
-function. The code returns all documents with a ``type`` field value of ``"movie"``.
+function. The code returns all documents in which the value of the ``type`` field 
+is ``"movie"``.
 
 .. io-code-block::
    :copyable: true
@@ -78,8 +79,8 @@ To view a full list of comparison operators, see the :manual:`Comparison Query O
 </reference/operator/query-comparison/>` guide in the MongoDB Server manual.
 
 The following example specifies a comparison operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
-``year`` field value greater than ``2015``.
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents
+in which the value of the  ``year`` field is greater than ``2015``.
 
 .. io-code-block::
    :copyable: true
@@ -93,7 +94,7 @@ parameter to the ``mongoc_collection_find_with_opts()`` function. The code retur
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "title" : "The Masked Saint", "year" : { "$numberInt" : "2016" }, ... }
+      { "_id" : ..., "title" : "The Masked Saint", "year" : { "$numberInt" : "2016" }, ... }
 
 Logical Operators
 -----------------
@@ -111,7 +112,7 @@ To learn more about logical operators, see the :manual:`Logical Query Operators
 
 The following example specifies a logical operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
-documents with a ``year`` field value of ``1983`` **or** ``1985``.
+documents in which the value of the ``year`` field is ``1983`` **or** ``1985``.
 
 .. io-code-block::
    :copyable: true
@@ -125,11 +126,11 @@ documents with a ``year`` field value of ``1983`` **or** ``1985``.
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "title" : "Amityville 3-D", "year" : { "$numberInt" : "1983" }, ... }
-      { "_id" : { "$oid" : "..." }, "title" : "Barefoot Gen", "year" : { "$numberInt" : "1983" }, ... }
-      { "_id" : { "$oid" : "..." }, "title" : "Betrayal", "year" : { "$numberInt" : "1983" }, ... }
-      { "_id" : { "$oid" : "..." }, "title" : "You're a Good Man, Charlie Brown", "year" : { "$numberInt" : "1985" }, ... }
-      { "_id" : { "$oid" : "..." }, "title" : "Yes: 9012 Live", "year" : { "$numberInt" : "1985" }, ... }
+      { "_id" : ..., "title" : "Amityville 3-D", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : ..., "title" : "Barefoot Gen", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : ..., "title" : "Betrayal", "year" : { "$numberInt" : "1983" }, ... }
+      { "_id" : ..., "title" : "You're a Good Man, Charlie Brown", "year" : { "$numberInt" : "1985" }, ... }
+      { "_id" : ..., "title" : "Yes: 9012 Live", "year" : { "$numberInt" : "1985" }, ... }
       ...
 
 Array Operators
@@ -146,8 +147,8 @@ To learn more about array operators, see the :manual:`Array Query Operators
 </reference/operator/query-array/>` guide in the MongoDB Server manual.
 
 The following example specifies an array operator in a query filter as a
-parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all documents with a
-``genres`` array field containing exactly ``2`` elements.
+parameter to the ``mongoc_collection_find_with_opts()`` function. The code returns all
+documents in which the value of the ``genres`` array field contains exactly ``2`` elements.
 
 .. io-code-block::
    :copyable: true
@@ -161,11 +162,11 @@ parameter to the ``mongoc_collection_find_with_opts()`` function. The code retur
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Romance" ], "title" : "The Devil to Pay!", ... }
-      { "_id" : { "$oid" : "..." }, "genres" : [ "Crime", "Drama" ], "title" : "Traffic in Souls", ... }
-      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Short" ], "title" : "High and Dizzy", ... }
-      { "_id" : { "$oid" : "..." }, "genres" : [ "Comedy", "Short" ], "title" : "Now or Never", ... }
-      { "_id" : { "$oid" : "..." }, "genres" : [ "Drama", "Romance" ], "title" : "A Woman of Paris: A Drama of Fate", ... }
+      { "_id" : ..., "genres" : [ "Comedy", "Romance" ], "title" : "The Devil to Pay!", ... }
+      { "_id" : ..., "genres" : [ "Crime", "Drama" ], "title" : "Traffic in Souls", ... }
+      { "_id" : ..., "genres" : [ "Comedy", "Short" ], "title" : "High and Dizzy", ... }
+      { "_id" : ..., "genres" : [ "Comedy", "Short" ], "title" : "Now or Never", ... }
+      { "_id" : ..., "genres" : [ "Drama", "Romance" ], "title" : "A Woman of Paris: A Drama of Fate", ... }
       ...
 
 Element Operators
@@ -192,11 +193,11 @@ documents that have a ``num_mflix_comments`` field.
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "The Park Is Mine", ...}
-      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "The Good Father", ... }
-      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Alpine Fire", ... }
-      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "Huang jia shi jie", ... }
-      { "_id" : { "$oid" : "..." }, "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Twenty Years Later", ... }
+      { "_id" : ..., "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "The Park Is Mine", ...}
+      { "_id" : ..., "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "The Good Father", ... }
+      { "_id" : ..., "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Alpine Fire", ... }
+      { "_id" : ..., "num_mflix_comments" : { "$numberInt" : "1" }, "title" : "Huang jia shi jie", ... }
+      { "_id" : ..., "num_mflix_comments" : { "$numberInt" : "0" }, "title" : "Twenty Years Later", ... }
       ...
 
 Evaluation Operators
@@ -218,7 +219,7 @@ To view a full list of evaluation operators, see the :manual:`Evaluation Query O
 
 The following example specifies an evaluation operator in a query filter as a
 parameter to the ``mongoc_collection_find_with_opts()`` function. The code uses a regular
-expression to return all documents with a ``title`` field value that has at least two
+expression to return all documents in which the value of the ``title`` field has at least two
 consecutive ``"p"`` characters.
 
 .. io-code-block::
@@ -233,11 +234,11 @@ consecutive ``"p"`` characters.
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "title" : "He Who Gets Slapped", ... }
-      { "_id" : { "$oid" : "..." }, "title" : "David Copperfield", ... }
-      { "_id" : { "$oid" : "..." }, "title" : "Applause", ... }
-      { "_id" : { "$oid" : "..." }, "title" : "Skippy", ... }
-      { "_id" : { "$oid" : "..." }, "title" : "This Happy Breed", ... }
+      { "_id" : ..., "title" : "He Who Gets Slapped", ... }
+      { "_id" : ..., "title" : "David Copperfield", ... }
+      { "_id" : ..., "title" : "Applause", ... }
+      { "_id" : ..., "title" : "Skippy", ... }
+      { "_id" : ..., "title" : "This Happy Breed", ... }
       ...
 
 Additional Information
@@ -246,7 +247,7 @@ Additional Information
 To learn more about querying documents, see the :manual:`Query Documents
 </tutorial/query-documents/>` guide in the MongoDB Server manual.
 
-To learn more about retrieving documents with the {+driver-short+}, see
+To learn more about using the {+driver-short+} to retrieve documents, see
 :ref:`c-retrieve`.
 
 API Documentation
