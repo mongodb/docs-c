@@ -45,9 +45,6 @@ libbson
 
 The 1.27.6 release of ``libbson`` includes the following changes:
 
-Fixes
-`````
-
 - Fixes handling of malformed extended JSON for special BSON types.
 
 libmongoc
@@ -79,18 +76,12 @@ libbson
 
 The 1.27.5 release of ``libbson`` includes the following changes:
 
-Fixes
-`````
-
 - Fixes large string handling in ``bson_append_utf8``.
 
 libmongoc
 ~~~~~~~~~
 
 The 1.27.5 release of ``libmongoc`` includes the following changes:
-
-Fixes
-`````
 
 - Fixes possible build error in environments where ``bool`` or ``_Bool`` is a macro.
 
@@ -107,18 +98,12 @@ libbson
 
 The 1.27.4 release of ``libbson`` includes the following changes:
 
-Fixes
-`````
-
 - Fixes build issues with Visual Studio 2013.
 
 libmongoc
 ~~~~~~~~~
 
 The 1.27.4 release of ``libmongoc`` includes the following changes:
-
-Fixes
-`````
 
 - Fixes possible crash reading malformed wired protocol message.
 - Fixes build issues with Visual Studio 2013.
@@ -199,9 +184,6 @@ libbson
 
 The 1.27.1 release of ``libbson`` includes the following changes:
 
-Fixes
-`````
-
 - Fixes large string handling in ``bson_string_new`` and ``bson_string_append``.
 
 libmongoc
@@ -259,9 +241,6 @@ libbson
 
 The 1.27.1 release of ``libbson`` includes the following changes:
 
-Fixes
-`````
-
 - Fixes iteration on ``bson_strfreev``.
 
 libmongoc
@@ -306,9 +285,6 @@ libmongoc
 ~~~~~~~~~
 
 The 1.26.1 release of ``libmongoc`` includes the following changes:
-
-Fixes
-`````
 
 - Fixes 32-bit compile with 64-bit ``time_t``.
 
