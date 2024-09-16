@@ -1,0 +1,5 @@
+.. _c-get-started-connection-string:
+
+==========================
+Create a Connection String
+==========================

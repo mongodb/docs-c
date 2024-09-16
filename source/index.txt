@@ -6,6 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
+   /get-started
    /databases-collections
    /read
    libbson API Documentation <{+api-libbson+}>
@@ -21,12 +22,11 @@ the official MongoDB driver for {+language+} applications.
 .. ``libmongoc`` depends on the ``libbson`` library. To learn more about ``libbson``, see
 .. <BSON guide link>.
 
-.. TODO
-.. Get Started
-.. -----------
+Get Started
+-----------
 
-.. Learn how to install the driver, establish a connection to MongoDB, and begin
-.. working with data in the :ref:`c-get-started` tutorial.
+Learn how to install the driver, establish a connection to MongoDB, and begin
+working with data in the :ref:`c-get-started` tutorial.
 
 .. TODO
 .. Connect to MongoDB
