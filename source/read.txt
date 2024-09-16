@@ -22,11 +22,13 @@ Read Data from MongoDB
    :titlesonly:
    :maxdepth: 1
 
+   /read/specify-a-query
    /read/retrieve
    /read/project
    /read/specify-documents-to-return
    /read/count
    /read/distinct
+   /read/cursors
 
 Overview
 --------

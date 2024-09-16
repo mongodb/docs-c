@@ -1,0 +1,5 @@
+.. _c-get-started-connect-to-mongodb:
+
+==================
+Connect to MongoDB
+==================

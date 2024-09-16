@@ -133,8 +133,7 @@ To query for only the names of the collections in the database, call the
       test_collection
       example_collection
 
-.. TODO: Uncomment when cursors page is created
-.. For more information about iterating over a cursor, see :ref:`c-cursors`. 
+For more information about iterating over a cursor, see :ref:`c-cursors`. 
 
 Delete a Collection
 -------------------

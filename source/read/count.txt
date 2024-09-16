@@ -40,8 +40,7 @@ Use the ``mongoc_collection_count_documents()`` function to count the number of 
 collection. To count the number of documents that match specified search
 critera, pass a query filter to the ``mongoc_collection_count_documents()`` function.
 
-.. TODO: uncomment when page is created
-.. To learn more about specifying a query, see :ref:`c-specify-query`.
+To learn more about specifying a query, see :ref:`c-specify-query`.
 
 Count All Documents
 ~~~~~~~~~~~~~~~~~~~
