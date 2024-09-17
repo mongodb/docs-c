@@ -179,7 +179,7 @@ The 1.27.2 release of ``libmongoc`` includes the following changes:
 Fixes
 `````
 
-- Closes lefotver connections to remote servers
+- Closes leftover connections to remote servers
 
 New Features
 ````````````
