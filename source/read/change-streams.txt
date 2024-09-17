@@ -98,7 +98,7 @@ Modify the Change Stream Output
 
 You can pass the ``pipeline`` parameter to any watch function to modify the
 change stream output. This parameter allows you to watch for only specified
-change events. Format the parameter as a list of object, where each object represents an
+change events. Format the parameter as a list of objects, where each object represents an
 aggregation stage.
 
 You can specify the following stages in the ``pipeline`` parameter:
