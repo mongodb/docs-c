@@ -21,7 +21,7 @@ Overview
 --------
 
 In this guide, you can learn how to use the {+driver-short+} to monitor a  **change stream**,
-allowing you to view real-time changes to your database. A change stream is a {+mdb-server+} feature that
+allowing you to view real-time changes to your data. A change stream is a {+mdb-server+} feature that
 publishes data changes on a collection, database, or deployment. Your application can
 subscribe to a change stream and use events to perform other actions.
 
@@ -37,11 +37,11 @@ Open a Change Stream
 --------------------
 
 To open a change stream, call one of the following functions that corresponds to the
-scope of events you want to observe.
+scope of events you want to observe:
 
-- ``mongoc_client_watch()``: To monitor all changes in the MongoDB deployment
-- ``mongoc_database_watch()``: To monitor changes in all collections in the database
-- ``mongoc_collection_watch()``: To monitor changes in the collection
+- ``mongoc_client_watch()``: Monitors all changes in the MongoDB deployment
+- ``mongoc_database_watch()``: Monitors changes in all collections in the database
+- ``mongoc_collection_watch()``: Monitors changes in the collection
 
 Open a Change Stream Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -98,7 +98,7 @@ Modify the Change Stream Output
 
 You can pass the ``pipeline`` parameter to any watch function to modify the
 change stream output. This parameter allows you to watch for only specified
-change events. Format the parameter as a list of objects that each represents an
+change events. Format the parameter as a list of object, where each object represents an
 aggregation stage.
 
 You can specify the following stages in the ``pipeline`` parameter:
@@ -112,11 +112,11 @@ You can specify the following stages in the ``pipeline`` parameter:
 - ``$set``
 - ``$unset``
 
-Match Specific events Example
+Match Specific Events Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following example uses the ``pipeline`` parameter to include a ``$match`` stage
-to open a change stream that only records update operations:
+to open a change stream that records only update operations:
 
 .. literalinclude:: /includes/read/change-streams.c
    :start-after: start-change-stream-pipeline
