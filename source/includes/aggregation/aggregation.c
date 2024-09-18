@@ -28,10 +28,16 @@ main (int argc, char *argv[])
         mongoc_cursor_t *results =
             mongoc_collection_aggregate (collection, MONGOC_QUERY_NONE, pipeline, NULL, NULL);
         
-        while (mongoc_cursor_next (results, &doc)) {
-            char *str = bson_as_canonical_extended_json (doc, NULL);
-            printf ("%s\n", str);
-            bson_free (str);
+        bson_error_t error;
+        if (mongoc_cursor_error (results, &error))
+        {
+            fprintf (stderr, "Aggregate failed: %s\n", error.message);
+        } else {
+            while (mongoc_cursor_next (results, &doc)) {
+                char *str = bson_as_canonical_extended_json (doc, NULL);
+                printf ("%s\n", str);
+                bson_free (str);
+            }
         }
 
         bson_destroy (pipeline);
