@@ -89,7 +89,7 @@ To perform an aggregation on the documents in a collection, pass a ``bson_t`` st
 that represents the pipeline stages to the ``mongoc_collection_aggregate()`` function.
 
 This example outputs a count of the number of bakeries in each borough
-of New York City. The following code creates aggregation pipeline that contains the
+of New York City. The following code creates an aggregation pipeline that contains the
 following stages:
 
 - A :manual:`$match </reference/operator/aggregation/match/>` stage to filter for documents
