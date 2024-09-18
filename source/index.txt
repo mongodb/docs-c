@@ -6,7 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
-   /get-started
+   Get Started </get-started>
    /databases-collections
    /read
    /aggregation
