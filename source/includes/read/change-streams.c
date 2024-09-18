@@ -17,21 +17,24 @@ main (int argc, char *argv[])
         // Opens a change stream on the collection and prints each change
         // start-open-change-stream
         bson_t *pipeline = bson_new ();
-        // Change stream will wait 1 minute for changes
-        bson_t *opts = BCON_NEW ("maxAwaitTimeMS", BCON_INT64 (60000));
         const bson_t *doc;
 
         mongoc_change_stream_t *change_stream =
-            mongoc_collection_watch (collection, pipeline, opts);
+            mongoc_collection_watch (collection, pipeline, NULL);
 
-        while (mongoc_change_stream_next (change_stream, &doc)) {
-          char *str = bson_as_canonical_extended_json (doc, NULL);
-          printf ("Received change: %s\n", str);
-          bson_free (str);
+        while (true) {
+            bson_error_t error;
+            if (mongoc_change_stream_next (change_stream, &doc)) {
+                char *str = bson_as_canonical_extended_json (doc, NULL);
+                printf ("Received change: %s\n", str);
+                bson_free (str);
+            } else if (mongoc_change_stream_error_document (change_stream, &error, NULL)) {
+                printf("Got error on change stream: %s\n", error.message);
+                break;
+            }
         }
 
         bson_destroy (pipeline);
-        bson_destroy (opts);
         mongoc_change_stream_destroy (change_stream);
         // end-open-change-stream
     }
@@ -70,18 +73,22 @@ main (int argc, char *argv[])
         // Opens a change stream on the collection and specifies options to receive the full document for update events
         // start-change-stream-post-image
         bson_t *pipeline = bson_new ();
-        // Change stream will wait 1 minute for changes
-        bson_t *opts = BCON_NEW ("maxAwaitTimeMS", BCON_INT64 (60000),
-                                 "fullDocument", BCON_UTF8 ("updateLookup"));
+        bson_t *opts = BCON_NEW ("fullDocument", BCON_UTF8 ("updateLookup"));
         const bson_t *doc;
 
         mongoc_change_stream_t *change_stream =
             mongoc_collection_watch (collection, pipeline, opts);
 
-        while (mongoc_change_stream_next (change_stream, &doc)) {
-          char *str = bson_as_canonical_extended_json (doc, NULL);
-          printf ("Received change: %s\n", str);
-          bson_free (str);
+        while (true) {
+            bson_error_t error;
+            if (mongoc_change_stream_next (change_stream, &doc)) {
+                char *str = bson_as_canonical_extended_json (doc, NULL);
+                printf ("Received change: %s\n", str);
+                bson_free (str);
+            } else if (mongoc_change_stream_error_document (change_stream, &error, NULL)) {
+                printf("Got error on change stream: %s\n", error.message);
+                break;
+            }
         }
 
         bson_destroy (pipeline);
