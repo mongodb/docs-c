@@ -121,15 +121,14 @@ Explain an Aggregation
 ~~~~~~~~~~~~~~~~~~~~~~
 
 To view information about how MongoDB executes your operation, you can
-enable the ``explain`` option on your pipeline. When MongoDB explains an
+run the the ``explain`` operation on your pipeline. When MongoDB explains an
 operation, it returns **execution plans** and performance statistics. An execution
 plan is a potential way MongoDB can complete an operation.
 When you instruct MongoDB to explain an operation, it returns both the
 plan MongoDB selected for the operation and any rejected execution plans.
 
 The following code example runs the same aggregation shown in the preceding section, but
-uses the ``mongoc_client_command_simple()`` function to run the ``explain`` operation to
-output the operation details:
+uses the ``mongoc_client_command_simple()`` function to explain the operation details:
 
 .. io-code-block::
 
