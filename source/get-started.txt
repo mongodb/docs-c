@@ -1,7 +1,7 @@
 .. _c-get-started:
 
 =============================
-Get Started with the {+driver-short+}
+Get Started with the C Driver
 =============================
 
 .. contents:: On this page

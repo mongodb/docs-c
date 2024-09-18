@@ -6,9 +6,10 @@
    :titlesonly:
    :maxdepth: 1
 
-   /get-started
+   Get Started </get-started>
    /databases-collections
    /read
+   /aggregation
    /whats-new
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
@@ -65,16 +66,11 @@ Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 .. Learn how to work with common types of indexes in the :ref:`c-indexes`
 .. section.
 
-.. TODO
-.. Transform Your Data with Aggregation
-.. ------------------------------------
+Transform Your Data with Aggregation
+------------------------------------
 
-.. Learn how to use the {+driver-short+} to perform aggregation operations in the
-.. :ref:`c-aggregation` section.
-
-.. Learn how to use aggregation expression operations to build
-.. aggregation stages in the :ref:`c-aggregation-expression-operations` section.
-
+Learn how to use the {+driver-short+} to perform aggregation operations in the
+:ref:`c-aggregation` section.
 
 .. TODO:
 .. FAQ
