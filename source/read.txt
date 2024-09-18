@@ -29,6 +29,7 @@ Read Data from MongoDB
    /read/count
    /read/distinct
    /read/cursors
+   /read/change-streams
 
 Overview
 --------
@@ -152,6 +153,5 @@ subsequent change events in that collection:
    :copyable:
    :dedent:
 
-.. TODO: uncomment when watch change stream guide is complete
-.. To learn more about the ``mongoc_collection_watch()`` function, see the
-.. :ref:`c-change-streams` guide.
+To learn more about the ``mongoc_collection_watch()`` function, see the
+:ref:`c-change-streams` guide.
