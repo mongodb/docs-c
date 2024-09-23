@@ -10,6 +10,7 @@
    /databases-collections
    /read
    /whats-new
+   /compatibility
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -98,12 +99,12 @@ Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 .. Learn how to report bugs, contribute to the driver, and find more resources for
 .. asking questions and receiving help in the :ref:`Issues & Help <c-issues-and-help>` section.
 
-.. TODO
-.. Compatibility
-.. -------------
 
-.. For the compatibility charts that show the recommended {+driver-short+} version for each
-.. {+mdb-server+} version, see the :ref:`Compatibility <c-compatibility>` section.
+Compatibility
+------------
+
+For the compatibility charts that show the recommended {+driver-short+} version for each
+{+mdb-server+} version, see the :ref:`Compatibility <c-compatibility>` section.
 
 Learn
 ------
