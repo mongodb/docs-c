@@ -60,7 +60,7 @@ Read Data from MongoDB
 
 Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 
-Optimize Queries by using Indexes
+Optimize Queries by Using Indexes
 ---------------------------------
 
 Learn how to work with common types of indexes in the :ref:`c-indexes`
