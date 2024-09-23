@@ -20,7 +20,6 @@ int main(void) {
     uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
     client = mongoc_client_new (uri);
 		database = mongoc_client_get_database (client, "admin");
-    //end-connect-to-atlas
 
     // Set the version of the Stable API on the client
     api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
@@ -35,6 +34,7 @@ int main(void) {
       return EXIT_FAILURE;
     }
     printf ("Pinged your deployment. You successfully connected to MongoDB!\n");
+    //end-connect-to-atlas
 
     // Cleanup
     bson_destroy (&reply);
