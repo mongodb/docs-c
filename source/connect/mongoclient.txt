@@ -41,7 +41,7 @@ Connection URI
 A standard connection string includes the following components:
 
 .. TODO, add this as last sentence for ``username:password`` description once a c auth page is made: 
-.. For more information about the ``authSource`` connection option, see :ref:`c-sync-auth`. 
+.. For more information about the ``authSource`` connection option, see :ref:`c-auth`. 
 
 .. list-table::
    :widths: 20 80
@@ -98,18 +98,10 @@ to connect to a MongoDB instance:
    :copyable:
    :dedent:
 
-.. TODO: edit this for C
-.. You can also create a client with your desired configurations by passing a 
-.. ``MongoClientSettings`` object to the ``MongoClient.mongoc_client_new()`` method.
-
-.. To instantiate a ``MongoClientSettings`` object, use the builder method to 
-.. specify your connection string, using the ``applyConnectionString()`` method, 
-.. and any other client options. Once you have your desired configuration, 
-.. call the ``build()`` method.
-
 You can set the Stable API version client option to avoid breaking changes when 
 you upgrade to a new server version. 
 
+.. TODO, uncomment these once the Stable API for C Driver page is made.
 .. To learn more about the Stable API feature, 
 .. see the :ref:`Stable API page <c-stable-api>`. 
 
@@ -130,5 +122,4 @@ API Documentation
 For more information about creating a ``MongoClient`` object with the 
 {+driver-short+}, see the following API documentation: 
 
-- `MongoClient <{+api+}/mongodb-driver-c/com.mongodb.c.client/-mongo-client/index.html>`__
-- `MongoClientSettings <{+core-api+}com/mongodb/MongoClientSettings.html>`__
+- `MongoClient <https://mongoc.org/libmongoc/current/mongoc_client_t.html>`__
