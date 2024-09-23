@@ -1,7 +1,8 @@
 .. list-table::
    :header-rows: 1
    :stub-columns: 1
-   :class: compatibility-large
+   :class: compatibility
+   :widths: 40 15 15 15 15
 
    * - C Driver Version
      - C17/C18
