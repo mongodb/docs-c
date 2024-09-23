@@ -27,9 +27,6 @@ To connect to a MongoDB deployment, you need two things:
 - A **MongoClient** object, which creates the connection to and performs 
   operations on the MongoDB deployment.
 
-You can also use ``MongoClientSettings`` to customize the way the {+driver-short+} behaves
-while connected to MongoDB.
-
 This guide shows you how to create a connection string and use a ``MongoClient`` object
 to connect to MongoDB.
 
