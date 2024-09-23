@@ -27,8 +27,6 @@ The first column lists the driver version.
 
 .. sharedinclude:: dbx/lifecycle-schedule-callout.rst
 
-.. sharedinclude:: dbx/compatibility-table-legend.rst
-
 .. include:: /includes/compatibility/mongodb-compatibility-table-c.rst
 
 .. include:: /includes/compatibility/older-server-versions-unsupported.rst
