@@ -13,7 +13,7 @@ int main(void) {
   bool ok = true;
 
   // Intialize the MongoDB C Driver
-	mongoc_init();
+  mongoc_init();
 
   // Create a new client and connect to the server
   uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
