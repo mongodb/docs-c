@@ -7,9 +7,9 @@ int main(void) {
   mongoc_client_t *client
   mongoc_server_api_t *api = NULL;
   bson_t *command, reply;
-	bson_error_t error;
+  bson_error_t error;
   char *uri
-	bool retval;
+  bool retval;
   bool ok = true;
 
   // Intialize the MongoDB C Driver
@@ -18,7 +18,7 @@ int main(void) {
   // Create a new client and connect to the server
   uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
   client = mongoc_client_new (uri);
-	database = mongoc_client_get_database (client, "admin");
+  database = mongoc_client_get_database (client, "admin");
 
   // Set the version of the Stable API on the client
   api = mongoc_server_api_new(MONGOC_SERVER_API_V1);

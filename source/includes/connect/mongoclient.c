@@ -8,12 +8,12 @@ int main(void) {
   mongoc_database_t *database
   char *uri
 
-	mongoc_init();
+  mongoc_init();
 
   // Create a new client and connect to the server
   uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
   client = mongoc_client_new (uri);
-	database = mongoc_client_get_database (client, "admin");
+  database = mongoc_client_get_database (client, "admin");
 
   // Cleanup
   bson_free (uri);
