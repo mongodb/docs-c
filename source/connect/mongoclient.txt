@@ -109,6 +109,7 @@ to connect to a MongoDB instance:
 
 You can set the Stable API version client option to avoid breaking changes when 
 you upgrade to a new server version. 
+
 .. To learn more about the Stable API feature, 
 .. see the :ref:`Stable API page <c-stable-api>`. 
 
