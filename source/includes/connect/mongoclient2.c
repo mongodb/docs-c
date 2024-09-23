@@ -4,9 +4,9 @@
 int main(void) {
 
   //start-connect-to-atlas
-	mongoc_client_t *client
+  mongoc_client_t *client
   mongoc_server_api_t *api = NULL;
-	bson_t *command, reply;
+  bson_t *command, reply;
 	bson_error_t error;
   char *uri
 	bool retval;

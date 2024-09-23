@@ -24,10 +24,10 @@ To connect to a MongoDB deployment, you need two things:
 
 - A **connection URI**, also known as a *connection string*, which tells the {+driver-short+}
   which MongoDB deployment to connect to.
-- A **MongoClient** object, which creates the connection to and performs 
+- A ``mongoc_client_t`` object, which creates the connection to and performs 
   operations on the MongoDB deployment.
 
-This guide shows you how to create a connection string and use a ``MongoClient`` object
+This guide shows you how to create a connection string and use a ``mongoc_client_t`` object
 to connect to MongoDB.
 
 .. _c-connection-uri:
@@ -72,9 +72,7 @@ A standard connection string includes the following components:
    * - ``?<options>``
 
      - Optional. A query string that specifies connection-specific
-       options as ``<name>=<value>`` pairs. See
-       :ref:`kotlin-sync-connection-options` for a full description of
-       these options.
+       options as ``<name>=<value>`` pairs.
 
 For more information about creating a connection string, see
 :manual:`Connection Strings </reference/connection-string>` in the
@@ -85,7 +83,7 @@ Atlas Connection Example
 
 To connect to a MongoDB deployment on Atlas, you must first create a client. 
 
-You can pass a connection URI as a string to the ``MongoClient.mongoc_client_new()`` method 
+You can pass a connection URI as a string to the ``mongoc_client_new()`` method 
 to connect to a MongoDB instance:
 
 .. literalinclude:: /includes/connect/mongoclient.c
