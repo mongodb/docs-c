@@ -9,6 +9,7 @@
    Get Started </get-started>
    /databases-collections
    /read
+   /indexes
    /aggregation
    /whats-new
    libbson API Documentation <{+api-libbson+}>
@@ -59,12 +60,11 @@ Read Data from MongoDB
 
 Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 
-.. TODO
-.. Optimize Queries with Indexes
-.. -----------------------------
+Optimize Queries by using Indexes
+---------------------------------
 
-.. Learn how to work with common types of indexes in the :ref:`c-indexes`
-.. section.
+Learn how to work with common types of indexes in the :ref:`c-indexes`
+section.
 
 Transform Your Data with Aggregation
 ------------------------------------
