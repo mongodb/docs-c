@@ -4,11 +4,11 @@
 int main(void) {
 
   //start-connect-to-atlas
-  mongoc_client_t *client
+  mongoc_client_t *client;
   mongoc_server_api_t *api = NULL;
   bson_t *command, reply;
   bson_error_t error;
-  char *uri
+  char *uri;
   bool retval;
   bool ok = true;
 
@@ -16,7 +16,7 @@ int main(void) {
   mongoc_init();
 
   // Create a new client and connect to the server
-  uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
+  uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>";
   client = mongoc_client_new (uri);
   database = mongoc_client_get_database (client, "admin");
 
@@ -38,7 +38,6 @@ int main(void) {
   // Cleanup
   bson_destroy (&reply);
   bson_destroy (command);
-  bson_free (uri);
   mongoc_database_destroy (database);
   mongoc_server_api_destroy(api);
   mongoc_client_destroy (client);

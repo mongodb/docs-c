@@ -4,14 +4,14 @@
 int main(void) {
 
   // start-connect-to-atlas-w-uri
-  mongoc_client_t *client
-  mongoc_database_t *database
-  char *uri
+  mongoc_client_t *client;
+  mongoc_database_t *database;
+  char *uri;
 
   mongoc_init();
 
   // Create a new client and connect to the server
-  uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>"
+  uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>";
   client = mongoc_client_new (uri);
   database = mongoc_client_get_database (client, "admin");
 
