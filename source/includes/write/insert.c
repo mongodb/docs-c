@@ -21,7 +21,7 @@ main(int argc, char *argv[])
         bson_error_t error;
 
         if (!mongoc_collection_insert_one(collection, document, NULL, NULL, &error)) {
-            fprintf(stderr, "Insert failed: %s\n", error.message);
+            fprintf(stderr, "Insert one operation failed: %s\n", error.message);
         }
         bson_destroy(document);
         // end-insert-one
@@ -34,13 +34,9 @@ main(int argc, char *argv[])
         docs[0] = BCON_NEW("name", BCON_UTF8("Mongo's Burgers"));
         docs[1] = BCON_NEW("name", BCON_UTF8("Mongo's Pizza"));
 
-        bson_t opts;
-        bson_init(&opts);
-        bson_append_bool(&opts, "ordered", -1, false);
-
         bson_error_t error;
-        if (!mongoc_collection_insert_many(collection, (const bson_t **)docs, 2, &opts, NULL, &error)) {
-            fprintf(stderr, "Insert many failed: %s\n", error.message);
+        if (!mongoc_collection_insert_many(collection, (const bson_t **)docs, 2, NULL, NULL, &error)) {
+            fprintf(stderr, "Insert many operation failed: %s\n", error.message);
         }
 
         bson_destroy(docs[0]);
@@ -63,7 +59,7 @@ main(int argc, char *argv[])
 
         bson_error_t error;
         if (!mongoc_collection_insert_many(collection, (const bson_t **)docs, 3, &opts, NULL, &error)) {
-            fprintf(stderr, "Insert many with bypass validation failed: %s\n", error.message);
+            fprintf(stderr, "Insert many operation failed: %s\n", error.message);
         }
 
         bson_destroy(docs[0]);

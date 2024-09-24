@@ -112,7 +112,7 @@ Modify Insert Behavior
 You can modify the behavior of the ``mongoc_collection_insert_one()`` and
 ``mongoc_collection_insert_many()`` methods by passing a BSON document that
 specifies option values. The following table describes some options
-you can set in the document
+you can set in the document:
 
 .. list-table::
    :widths: 30 70
@@ -173,4 +173,4 @@ To learn more about any of the methods or types discussed in this
 guide, see the following API documentation:
 
 - `mongoc_collection_insert_one() <{+api-libmongoc+}/mongoc_collection_insert_one.html>`__
-- `mongoc_collection_insert_many() <{+api-libmongoc+}/mongoc_collection_insert_one.html>`__
+- `mongoc_collection_insert_many() <{+api-libmongoc+}/mongoc_collection_insert_many.html>`__
