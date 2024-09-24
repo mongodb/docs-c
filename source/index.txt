@@ -9,8 +9,10 @@
    Get Started </get-started>
    /databases-collections
    /read
+   /indexes
    /aggregation
    /whats-new
+   /compatibility
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -59,12 +61,11 @@ Read Data from MongoDB
 
 Learn how you can retrieve data from MongoDB in the :ref:`c-read` section.
 
-.. TODO
-.. Optimize Queries with Indexes
-.. -----------------------------
+Optimize Queries by Using Indexes
+---------------------------------
 
-.. Learn how to work with common types of indexes in the :ref:`c-indexes`
-.. section.
+Learn how to work with common types of indexes in the :ref:`c-indexes`
+section.
 
 Transform Your Data with Aggregation
 ------------------------------------
@@ -94,12 +95,12 @@ Learn how to use the {+driver-short+} to perform aggregation operations in the
 .. Learn how to report bugs, contribute to the driver, and find more resources for
 .. asking questions and receiving help in the :ref:`Issues & Help <c-issues-and-help>` section.
 
-.. TODO
-.. Compatibility
-.. -------------
 
-.. For the compatibility charts that show the recommended {+driver-short+} version for each
-.. {+mdb-server+} version, see the :ref:`Compatibility <c-compatibility>` section.
+Compatibility
+------------
+
+To learn about the versions of the {+mdb-server+} and the C language that are compatible with 
+each version of the {+driver-short+}, see the :ref:`Compatibility <c-compatibility>` section.
 
 Learn
 ------
