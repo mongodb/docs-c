@@ -114,7 +114,5 @@ and verify that the connection is successful:
 API Documentation
 -----------------
 
-For more information about creating a ``mongoc_client_t`` structure with the 
-{+driver-short+}, see the following API documentation: 
-
-- `mongoc_client_t <https://mongoc.org/libmongoc/current/mongoc_client_t.html>`__
+For more information about the ``mongoc_client_t`` structure, see the `API documentation
+<https://mongoc.org/libmongoc/current/mongoc_client_t.html>`__.
