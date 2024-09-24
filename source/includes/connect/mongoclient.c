@@ -16,7 +16,6 @@ int main(void) {
   database = mongoc_client_get_database (client, "admin");
 
   // Cleanup
-  bson_free (uri);
   mongoc_database_destroy (database);
   mongoc_client_destroy (client);
   mongoc_cleanup ();
