@@ -47,7 +47,7 @@ main (void)
         // Inserts multiple documents and instructs the insert operation to skip document-level validation
         // start-modify
         size_t num_docs = 3;
-	    bson_t *docs[num_docs];
+        bson_t *docs[num_docs];
         docs[0] = BCON_NEW ("name", BCON_UTF8("Mongo's Burgers"));
         docs[1] = BCON_NEW ("name", BCON_UTF8("Mongo's Pizza"));
         docs[2] = BCON_NEW ("name", BCON_UTF8("Mongo's Tacos"));
