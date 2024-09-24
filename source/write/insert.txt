@@ -37,8 +37,8 @@ database from the :atlas:`Atlas sample datasets </sample-data>`. To learn how to
 free MongoDB Atlas cluster and load the sample datasets, see the
 :atlas:`Get Started with Atlas </getting-started>` guide.
 
-The ``_id`` Field
------------------
+The _id Field
+-------------
 
 In a MongoDB collection, each document *must* contain an ``_id`` field
 with a unique field value.
