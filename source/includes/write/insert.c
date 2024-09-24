@@ -29,7 +29,7 @@ main (void)
         // Inserts documents representing restaurants into the collection
         // start-insert-many
         size_t num_docs = 2;
-	    bson_t *docs[num_docs];
+        bson_t *docs[num_docs];
         docs[0] = BCON_NEW ("name", BCON_UTF8 ("Mongo's Burgers"));
         docs[1] = BCON_NEW ("name", BCON_UTF8 ("Mongo's Pizza"));
 
