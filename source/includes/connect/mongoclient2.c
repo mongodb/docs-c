@@ -5,7 +5,6 @@ int main(void) {
 
   //start-connect-to-atlas
   mongoc_client_t *client;
-  mongoc_database_t *database;
   mongoc_server_api_t *api = NULL;
   bson_t *command, reply;
   bson_error_t error;
@@ -42,7 +41,6 @@ int main(void) {
   // Cleanup
   bson_destroy (&reply);
   bson_destroy (command);
-  mongoc_database_destroy (database);
   mongoc_server_api_destroy(api);
   mongoc_client_destroy (client);
   mongoc_cleanup ();
