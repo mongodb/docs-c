@@ -1,14 +1,14 @@
 #include <mongoc/mongoc.h>
 #include <bson/bson.h>
 
-int main(void) {
+int main (void) {
 
   // start-connect-to-atlas-w-uri
   mongoc_client_t *client;
   mongoc_database_t *database;
   char *uri;
 
-  mongoc_init();
+  mongoc_init ();
 
   // Create a new client and connect to the server
   uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>";

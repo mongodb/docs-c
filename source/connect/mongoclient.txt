@@ -83,7 +83,7 @@ Atlas Connection Example
 
 To connect to a MongoDB deployment on Atlas, you must first create a client. 
 
-You can pass a connection URI as a string to the ``mongoc_client_new ()`` function 
+You can pass a connection URI as a string to the ``mongoc_client_new()`` function 
 to connect to a MongoDB instance:
 
 .. literalinclude:: /includes/connect/mongoclient.c
@@ -103,8 +103,8 @@ you upgrade to a new server version.
 The following code shows how you can specify the connection string and the 
 Stable API client option when connecting to a MongoDB deployment on Atlas 
 and verify that the connection is successful:
-
-.. literalinclude:: /includes/connect/mongoclient2.c
+(
+.. literalinclude:: /includes/connect/mongoclient2.c)
    :start-after: start-connect-to-atlas
    :end-before: end-connect-to-atlas
    :language: c
