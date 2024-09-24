@@ -19,12 +19,11 @@ int main(void) {
   // Create a new client and connect to the server
   uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>";
   client = mongoc_client_new (uri);
-  // database = mongoc_client_get_database (client, "admin");
 
   // Set the version of the Stable API on the client
   api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
   ok = mongoc_client_set_server_api(client, api, &error);
-  
+
   if (!ok) {
     fprintf(stderr, "error: %s\n", error.message);
     return EXIT_FAILURE;
