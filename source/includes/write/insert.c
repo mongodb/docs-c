@@ -4,11 +4,11 @@
 #include <mongoc/mongoc.h>
 
 int
-main(int argc, char *argv[])
+main (int argc, char *argv[])
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    mongoc_init();
+    mongoc_init ();
 
     client =
         mongoc_client_new ("<connection string URI>");
@@ -17,13 +17,13 @@ main(int argc, char *argv[])
     {
         // Inserts a document that stores a "name" value of "Mongo's Burgers" into the collection
         // start-insert-one
-        bson_t *document = BCON_NEW("name", BCON_UTF8("Mongo's Burgers"));
+        bson_t *document = BCON_NEW ("name", BCON_UTF8 ("Mongo's Burgers"));
         bson_error_t error;
 
-        if (!mongoc_collection_insert_one(collection, document, NULL, NULL, &error)) {
-            fprintf(stderr, "Insert one operation failed: %s\n", error.message);
+        if (!mongoc_collection_insert_one (collection, document, NULL, NULL, &error)) {
+            fprintf (stderr, "Insert one operation failed: %s\n", error.message);
         }
-        bson_destroy(document);
+        bson_destroy (document);
         // end-insert-one
     }
 
@@ -31,17 +31,17 @@ main(int argc, char *argv[])
         // Inserts documents representing restaurants into the collection
         // start-insert-many
         bson_t *docs[2];
-        docs[0] = BCON_NEW("name", BCON_UTF8("Mongo's Burgers"));
-        docs[1] = BCON_NEW("name", BCON_UTF8("Mongo's Pizza"));
+        docs[0] = BCON_NEW ("name", BCON_UTF8 ("Mongo's Burgers"));
+        docs[1] = BCON_NEW ("name", BCON_UTF8 ("Mongo's Pizza"));
 
         bson_error_t error;
-        if (!mongoc_collection_insert_many(collection, (const bson_t **)docs, 2, NULL, NULL, &error)) {
-            fprintf(stderr, "Insert many operation failed: %s\n", error.message);
+        if (!mongoc_collection_insert_many (collection, (const bson_t **)docs, 2, NULL, NULL, &error)) {
+            fprintf (stderr, "Insert many operation failed: %s\n", error.message);
         }
 
-        bson_destroy(docs[0]);
-        bson_destroy(docs[1]);
-        bson_destroy(&opts);
+        bson_destroy (docs[0]);
+        bson_destroy (docs[1]);
+        bson_destroy (&opts);
         // end-insert-many
     }
 
@@ -49,29 +49,29 @@ main(int argc, char *argv[])
         // Inserts multiple documents and instructs the insert operation to skip document-level validation
         // start-modify
         bson_t *docs[3];
-        docs[0] = BCON_NEW("name", BCON_UTF8("Mongo's Burgers"));
-        docs[1] = BCON_NEW("name", BCON_UTF8("Mongo's Pizza"));
-        docs[2] = BCON_NEW("name", BCON_UTF8("Mongo's Tacos"));
+        docs[0] = BCON_NEW ("name", BCON_UTF8("Mongo's Burgers"));
+        docs[1] = BCON_NEW ("name", BCON_UTF8("Mongo's Pizza"));
+        docs[2] = BCON_NEW ("name", BCON_UTF8("Mongo's Tacos"));
 
         bson_t opts;
-        bson_init(&opts);
-        bson_append_bool(&opts, "bypassDocumentValidation", -1, true);
+        bson_init (&opts);
+        bson_append_bool (&opts, "bypassDocumentValidation", -1, true);
 
         bson_error_t error;
-        if (!mongoc_collection_insert_many(collection, (const bson_t **)docs, 3, &opts, NULL, &error)) {
-            fprintf(stderr, "Insert many operation failed: %s\n", error.message);
+        if (!mongoc_collection_insert_many (collection, (const bson_t **)docs, 3, &opts, NULL, &error)) {
+            fprintf (stderr, "Insert many operation failed: %s\n", error.message);
         }
 
-        bson_destroy(docs[0]);
-        bson_destroy(docs[1]);
-        bson_destroy(docs[2]);
-        bson_destroy(&opts);
+        bson_destroy (docs[0]);
+        bson_destroy (docs[1]);
+        bson_destroy (docs[2]);
+        bson_destroy (&opts);
         // end-modify
     }
 
-    mongoc_collection_destroy(collection);
-    mongoc_client_destroy(client);
-    mongoc_cleanup();
+    mongoc_collection_destroy (collection);
+    mongoc_client_destroy (client);
+    mongoc_cleanup ();
 
     return EXIT_SUCCESS;
 }
