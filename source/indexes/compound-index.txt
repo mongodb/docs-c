@@ -66,7 +66,7 @@ the preceding code sample:
       :visible: false
 
       { "_id" : ..., "genres" : [ "Crime", "Drama" ], "title" : "Traffic in Souls", "type" : "movie", ... }
-      { "_id" : ..., "genres" : [ "Comedy", "Drama", "Family" ], "title" : "The Poor Little Rich Girl", "type" : "movie", ... }
+      { "_id" : ..., "genres" : [ "Drama" ], "title" : "Laugh, Clown, Laugh", "type" : "movie", ... }
       { "_id" : ..., "genres" : [ "Drama", "Romance" ], "title" : "A Woman of Paris: A Drama of Fate", "type" : "movie", ... }
       { "_id" : ..., "genres" : [ "Drama", "Romance", "Thriller" ], "title" : "He Who Gets Slapped", "type" : "movie", ... }
       { "_id" : ..., "genres" : [ "Drama", "Romance" ], "title" : "Wild Oranges", "type" : "movie", ... }
