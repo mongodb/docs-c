@@ -20,6 +20,7 @@ Work with Indexes
 .. toctree::
 
    /indexes/single-field-index.txt
+   /indexes/compound-index.txt
 
 Overview
 --------
