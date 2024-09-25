@@ -50,7 +50,7 @@ A standard connection string includes the following components:
    * - ``mongodb+srv://``
 
      - Required. A prefix that identifies this as a string in the
-       standard connection format.
+       SRV connection format.
 
    * - ``username:password``
 
