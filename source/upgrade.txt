@@ -31,8 +31,8 @@ Before you upgrade, perform the following actions:
   compatibility information, see the :ref:`{+driver-short+} Compatibility <c-compatibility>` 
   page.
 - Address any breaking changes between the current driver version
-  your application is using and your planned upgrade version in the
-  :ref:`Breaking Changes <c-breaking-changes>` section. To learn more about the
+  your application uses and your planned upgrade version in the
+  :ref:`Breaking Changes <c-breaking-changes>` section. To learn more about
   {+mdb-server+} release compatibility changes, see the 
   :ref:`Server Release Compatibility Changes <c-server-release-compatability-changes>` section.
 
@@ -67,10 +67,10 @@ and upgrade versions.
 Version 1.24.0 Breaking Changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The 1.24.0 release of ``libmongoc``, one of the libraries constituting the C driver, introduces the following backwards 
-breaking changes:
+The 1.24.0 release of ``libmongoc``, one of the libraries constituting the C driver, introduces 
+the following backward-breaking change:
 
-- Requires MongoDB server version 7.0 and greater to use Queryable Encryption.
+- Requires MongoDB server version 7.0 and later to use Queryable Encryption.
 
 .. _c-server-release-compatability-changes:
 
@@ -94,5 +94,5 @@ Version 1.28.0 Release Support Changes
 
 - This driver version drops support for {+mdb-server+} versions 3.6 and earlier. To use any driver 
   from versions 1.28.0 and later, your {+mdb-server+} must be versions 4.0 or later. This driver version 
-  includes support for {+mdb-server+} 8.0 features. To learn how to upgrade your {+mdb-server+} 
+  supports {+mdb-server+} 8.0 features. To learn how to upgrade your {+mdb-server+} 
   deployment, see :manual:`Release Notes </release-notes>` in the {+mdb-server+} manual.
