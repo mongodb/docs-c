@@ -7,8 +7,7 @@ int main (void) {
   mongoc_init ();
 
   // Create a new client and connect to the server
-  char *uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>";
-  mongoc_client_t *client = mongoc_client_new (uri);
+  mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname/port>/?<options>");
   mongoc_database_t *database = mongoc_client_get_database (client, "admin");
 
   // Cleanup
