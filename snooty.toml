@@ -11,8 +11,10 @@ toc_landing_pages = [
   "/read", 
   "/get-started", 
   "/indexes", 
+  "/work-with-indexes",
   "/connect"
  ]
+
 sharedinclude_root = "https://raw.githubusercontent.com/10gen/docs-shared/main/"
 
 [constants]
