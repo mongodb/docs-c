@@ -47,7 +47,7 @@ A standard connection string includes the following components:
    * - Component
      - Description
 
-   * - ``mongodb://``
+   * - ``mongodb+srv://``
 
      - Required. A prefix that identifies this as a string in the
        standard connection format.
@@ -115,4 +115,4 @@ API Documentation
 -----------------
 
 For more information about the ``mongoc_client_t`` structure, see the `API documentation
-<https://mongoc.org/libmongoc/current/mongoc_client_t.html>`__.
+<https://mongoc.org/libmongoc/current/mongoc_client_t.html>`__. 

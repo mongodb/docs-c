@@ -15,7 +15,7 @@ Connect to MongoDB
    :values: reference
  
 .. meta::
-   :description: Learn how to use the C driver to connect to MongoDB.
+   :description: Learn how to use the C Driver to connect to MongoDB.
    :keywords: client, ssl, tls, localhost
 
 .. toctree::
