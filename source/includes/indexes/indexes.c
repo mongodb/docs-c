@@ -63,7 +63,7 @@ main (int argc, char *argv[])
         {
         // start-index-compound
         bson_error_t error;
-        bson_t *keys = BCON_NEW ("type", BCON_INT32 (1), "genre", BCON_INT32 (1));
+        bson_t *keys = BCON_NEW ("type", BCON_INT32 (1), "genres", BCON_INT32 (1));
         mongoc_index_model_t *index_model = mongoc_index_model_new (keys, NULL);
 
         if (mongoc_collection_create_indexes_with_opts (collection, &index_model, 1, NULL, NULL, &error)) {
