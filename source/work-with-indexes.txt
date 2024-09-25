@@ -68,6 +68,7 @@ The following pages describe the most common index types and provide sample
 code for creating each index type.
 
 - :ref:`c-single-field-index`
+- :ref:`c-compound-index`
 
 Remove an Index
 ---------------
