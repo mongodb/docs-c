@@ -1,8 +1,8 @@
 .. _c-upgrade:
 
-=================================
-Upgrade {+driver-short+} Versions
-=================================
+=======================
+Upgrade Driver Versions
+=======================
 
 .. contents:: On this page
    :local:
@@ -21,7 +21,7 @@ Overview
 --------
 
 This page describes the changes you must make to your application
-when you upgrade to a new version of {+driver-short+}.
+when you upgrade to a new version of the {+driver-short+}.
 
 Before you upgrade, perform the following actions:
 
@@ -32,7 +32,7 @@ Before you upgrade, perform the following actions:
   page.
 - Address any breaking changes between the current driver version
   your application is using and your planned upgrade version in the
-  :ref:`Breaking changes <c-breaking-changes>` section. To learn more about the
+  :ref:`Breaking Changes <c-breaking-changes>` section. To learn more about the
   {+mdb-server+} release compatibility changes, see the 
   :ref:`Server Release Compatibility Changes <c-server-release-compatability-changes>` section.
 
@@ -67,10 +67,10 @@ and upgrade versions.
 Version 1.24.0 Breaking Changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The 1.24.0 release of libmongoc, one of the libraries constituting the C driver, introduces the following backwards 
+The 1.24.0 release of ``libmongoc``, one of the libraries constituting the C driver, introduces the following backwards 
 breaking changes:
 
-- Using Queryable Encryption requires MongoDB server version 7.0 and greater.
+- Requires MongoDB server version 7.0 and greater to use Queryable Encryption.
 
 .. _c-server-release-compatability-changes:
 
@@ -92,7 +92,7 @@ see the `Legacy Support Policy <https://www.mongodb.com/support-policy/legacy>`_
 Version 1.28.0 Release Support Changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- The v1.28.0 driver drops support for {+mdb-server+} v3.6 and earlier. To use any driver from v1.28.0 
-  and later, your {+mdb-server+} must be v4.0 or later. The v1.28.0 driver includes support for 
-  {+mdb-server+} 8.0 features. To learn how to upgrade your {+mdb-server+} deployment, see 
-  :manual:`Release Notes </release-notes>` in the {+mdb-server+} manual.
+- This driver version drops support for {+mdb-server+} versions 3.6 and earlier. To use any driver 
+  from versions 1.28.0 and later, your {+mdb-server+} must be versions 4.0 or later. This driver version 
+  includes support for {+mdb-server+} 8.0 features. To learn how to upgrade your {+mdb-server+} 
+  deployment, see :manual:`Release Notes </release-notes>` in the {+mdb-server+} manual.
