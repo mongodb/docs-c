@@ -13,6 +13,7 @@
    /aggregation
    /whats-new
    /compatibility
+   /upgrade
    libbson API Documentation <{+api-libbson+}>
    libmongoc API Documentation <{+api-libmongoc+}>
 
@@ -101,6 +102,12 @@ Compatibility
 
 To learn about the versions of the {+mdb-server+} and the C language that are compatible with 
 each version of the {+driver-short+}, see the :ref:`Compatibility <c-compatibility>` section.
+
+Upgrade Driver Versions
+-----------------------
+
+Learn what changes you might need to make to your application to upgrade driver versions in the 
+:ref:`Upgrade Driver Versions <c-upgrade>` section.
 
 Learn
 ------
