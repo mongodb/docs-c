@@ -60,7 +60,7 @@ main (int argc, char *argv[])
         bson_destroy (filter);
         // end-index-single-query
     }
-        {
+    {
         // start-index-compound
         bson_error_t error;
         bson_t *keys = BCON_NEW ("type", BCON_INT32 (1), "genres", BCON_INT32 (1));

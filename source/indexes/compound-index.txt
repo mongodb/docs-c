@@ -21,11 +21,12 @@ Overview
 --------
 
 :manual:`Compound indexes </core/index-compound/>` hold references to multiple
-fields within a collection's documents, improving query and sort performance.
+fields within a collection's documents, improving query and sort performance. Use the
+``mongoc_collection_create_indexes_with_opts()`` function to create compound indexes.
 
-When creating a compound index, you must specify the following:
+When creating a compound index, you must specify the following components:
 
-- The fields on which to create the index. 
+- The fields to index. 
 - The sort order for each field (ascending or descending). Specify ``BCON_INT32 (1)``
   for ascending order and ``BCON_INT32 (-1)`` for descending order.
 
@@ -50,8 +51,8 @@ both fields indexed in ascending order:
    :copyable:
    :dedent:
 
-The following is an example of a query that uses the index created in
-the preceding code sample:
+The following example performs a query that uses the index created in the preceding code
+sample:
 
 .. io-code-block::
    :copyable: true
