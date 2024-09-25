@@ -4,8 +4,6 @@
 int main(void) {
 
   //start-connect-to-atlas
-  bson_t reply;
-  bson_error_t error;
 
   // Intialize the MongoDB C Driver
   mongoc_init();
