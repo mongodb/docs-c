@@ -20,8 +20,8 @@ Multikey Indexes
 Overview
 --------
 
-**Multikey indexes** are indexes that improve performance for queries that specify a field
-that contains an array value. You can define a multikey index by using the same syntax as
+**Multikey indexes** are indexes that improve performance for queries on array-valued
+fields. You can define a multikey index by using the same syntax as
 a single field or compound index.
 
 Sample Data
@@ -44,7 +44,8 @@ The following example creates a multikey index on the ``cast`` field:
    :copyable:
    :dedent:
 
-The following is an example of a query that uses the index created in the preceding code example:
+The following example performs a query that uses the index created in the preceding code
+sample:
 
 .. io-code-block::
    :copyable: true
