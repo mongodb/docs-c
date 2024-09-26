@@ -85,8 +85,6 @@ in the following ways:
 Specify a CA File
 ------------------
 
-
-
 When MongoDB is started with TLS enabled, it will by default require the client to provide
 a client certificate issued by a certificate authority specified by `--tlsCAFile`, or an authority
 trusted by the native certificate store in use on the server.
