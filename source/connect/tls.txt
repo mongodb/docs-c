@@ -48,8 +48,8 @@ You can enable TLS on a connection to your MongoDB instance
 in the following ways:
 
 - Setting the ``tls`` parameter in your connection string
-- Using the ``mongoc_uri_set_option_as_bool()`` function to set the ``tls`` connection
-  option to ``True``
+- Using the ``mongoc_uri_set_option_as_bool()`` function to set the ``MONGOC_URI_TLS`` connection
+  option to ``true``
 
 .. include:: /includes/connect/tls-tabs.rst
 
@@ -76,9 +76,6 @@ trusted by the native certificate store in use on the server.
 To provide the client certificate, set the `tlsCertificateKeyFile` in the URI to a PEM armored
 certificate file:
 
-..TODO, if decide to make all these code examples more comprehensive
-.. then make this an include rather than an inline code-block
-
 .. code-block:: c
 
    mongoc_uri_t *uri = mongoc_uri_new ("mongodb://localhost:27017/");
@@ -86,6 +83,9 @@ certificate file:
    mongoc_uri_set_option_as_utf8 (uri, MONGOC_URI_TLSCERTIFICATEKEYFILE, "/path/to/client-certificate.pem");
 
    mongoc_client_t *client = mongoc_client_new_from_uri (uri);
+
+.. TODO, if decide to make all these code examples more comprehensive
+.. then make this an include rather than an inline code-block
 
 .. _c-certificate-revocation:
 
@@ -123,7 +123,7 @@ by the cmake flag ``ENABLE_SSL``, which is set to ``AUTO`` by default. Valid val
 OpenSSL
 ~~~~~~~
 
-If available, the MongoDB C Driver uses OpenSSL on Linux and Unix platforms (besides macOS). Industry best practices
+The MongoDB C Driver uses OpenSSL on Linux and Unix platforms (besides macOS). Industry best practices
 and some regulations require the use of TLS 1.1 or newer, which requires at least OpenSSL 1.0.1. Use the following command
 to check your OpenSSL version:
 
@@ -131,8 +131,8 @@ to check your OpenSSL version:
 
    $ openssl version
 
-Ensure your system's OpenSSL is a recent version (at least 1.0.1), or install a recent version in a non-system path and 
-build against it with:
+Ensure your system's OpenSSL is a recent version (at least 1.0.1), or use the following command to install a recent version in a
+non-system path and build against it:
 
 .. code-block:: bash
 
@@ -145,8 +145,8 @@ in the `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__.
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__) is fully supported
 when using OpenSSL 1.0.1+ with the following notes:
 
-- When a ``crl_file`` is set with `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__, and the ``crl_file`` revokes the server's certificate, the certificate
-  is considered revoked (even if the certificate has a valid stapled OCSP response)
+- When a ``crl_file`` is set with `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ and the ``crl_file`` revokes
+  the server's certificate, the certificate is considered revoked (even if the certificate has a valid stapled OCSP response).
 
 LibreSSL / libtls
 ~~~~~~~~~~~~~~~~~
@@ -162,21 +162,20 @@ Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationChe
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__) is partially supported
 with the following notes:
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored. Connection may continue if a
-- Must-Staple certificate is presented with no stapled response (unless the client receives a revoked response from an OCSP
-  responder).
+- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
 - Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
+- Connection will not continue if the client receives a revoked response from an OCSP responder.
 
 Native TLS Support on Windows (Secure Channel)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The MongoDB C Driver supports the Windows native TLS library (Secure Channel, or SChannel), and its native crypto library
+The MongoDB C Driver supports the Windows native TLS library (Secure Channel, or SChannel) and its native crypto library
 (Cryptography API: Next Generation, or CNG).
 
-When compiled against the Windows native libraries, the ``ca_dir`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported,
+When compiled against the Windows native libraries, the ``ca_dir`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported
 and will issue an error if used.
 
-Encrypted PEM files (e.g., setting ``tlsCertificateKeyPassword``) are also not supported, and will result in error when
+Encrypted PEM files (e.g., setting ``tlsCertificateKeyPassword``) are also not supported and will result in error when
 attempting to load them.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided.
@@ -191,12 +190,12 @@ Setting ``tlsDisableOCSPEndpointCheck`` has no effect.
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__) is partially supported
 with the following notes:
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored. Connection may continue if a
-  Must-Staple certificate is presented with no stapled response (unless the client receives a revoked response from an OCSP responder).
+- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
+- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
+- Connection will not continue if the client receives a revoked response from an OCSP responder.
 - When a ``crl_file`` is set with `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__, and the ``crl_file`` revokes the server's certificate, the OCSP response
   takes precedence. For example, if the server presents a certificate with a valid stapled OCSP response, the certificate is considered
   valid even if the ``crl_file`` marks it as revoked.
-- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
 
 .. _secure-transport:
 
@@ -217,10 +216,9 @@ Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationChe
 The Online Certificate Status Protocol (OCSP) (see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__) is partially supported
 with the following notes.
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored. Connection may continue
-  if a Must-Staple certificate is presented with no stapled response (unless the client receives a revoked response from an OCSP responder).
+- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
 - Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
-
+- Connection will not continue if the client receives a revoked response from an OCSP responder.
 
 API Documentation
 -----------------
