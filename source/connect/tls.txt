@@ -241,7 +241,7 @@ with the following notes.
 API Documentation
 -----------------
 
-For more information about the structures and functions mentioned in this guide, see
+For more information about the objects and functions mentioned in this guide, see
 the following API documentation: 
 
 - `mongoc_uri_t <https://mongoc.org/libmongoc/current/mongoc_uri_t.html>`__
