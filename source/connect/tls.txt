@@ -23,7 +23,7 @@ Overview
 In this guide, you can learn how to use the :wikipedia:`TLS <Transport_Layer_Security>`
 protocol to secure your connection to a MongoDB deployment.
 
-When you enable TLS for a connection, {+driver-short+} performs the following actions:
+When you enable TLS for a connection, the {+driver-short+} performs the following actions:
 
 - Uses TLS to connect to the MongoDB deployment
 - Verifies the deployment's certificate
@@ -49,7 +49,7 @@ in the following ways:
 
 - Setting the ``tls`` parameter in your connection string
 - Using the ``mongoc_uri_set_option_as_bool()`` function to set the ``tls`` connection
-  option to ``True`` when connecting to a local MongoDB instance
+  option to ``True``
 
 .. include:: /includes/connect/tls-tabs.rst
 
@@ -67,15 +67,18 @@ in the following ways:
 Specify a CA File
 ------------------
 
+
+
 When MongoDB is started with TLS enabled, it will by default require the client to provide
 a client certificate issued by a certificate authority specified by `--tlsCAFile`, or an authority
 trusted by the native certificate store in use on the server.
 
 To provide the client certificate, set the `tlsCertificateKeyFile` in the URI to a PEM armored
-certificate file.
+certificate file:
 
 ..TODO, if decide to make all these code examples more comprehensive
 .. then this should be an include rather than an inline code-block
+
 .. code-block:: c
 
    mongoc_uri_t *uri = mongoc_uri_new ("mongodb://localhost:27017/");
@@ -222,9 +225,8 @@ with the following notes.
 API Documentation
 -----------------
 
-For more information about the functions mentioned in this guide, see
+For more information about the structures and functions mentioned in this guide, see
 the following API documentation: 
 
-- `mongoc_uri_set_option_as_bool() <https://mongoc.org/libmongoc/current/mongoc_uri_set_option_as_bool.html>`__
 - `mongoc_uri_t <https://mongoc.org/libmongoc/current/mongoc_uri_t.html>`__
-
+- `mongoc_uri_set_option_as_bool() <https://mongoc.org/libmongoc/current/mongoc_uri_set_option_as_bool.html>`__

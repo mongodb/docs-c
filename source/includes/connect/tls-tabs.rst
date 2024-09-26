@@ -8,8 +8,8 @@
          char *uri = "mongodb+srv://<db_username>:<db_password>@<hostname/port>/?replicaSet=myRepl&tls=true";
          client = mongoc_client_new (uri);
 
-   .. tab:: Local MongoDB
-      :tabid: localmongodb
+   .. tab:: MongoC URI Options
+      :tabid: mongocurioptions
 
       .. code-block:: c
 
