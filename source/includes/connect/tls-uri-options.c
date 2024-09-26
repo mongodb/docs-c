@@ -15,8 +15,8 @@ int main(void) {
 
   // { Do database work here }
   
-  cleanup:
-    mongoc_client_destroy (client);
-    mongoc_cleanup ();
+  // Cleanup
+  mongoc_client_destroy (client);
+  mongoc_cleanup ();
   // end-connect
 }
