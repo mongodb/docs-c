@@ -67,8 +67,8 @@ in the following ways:
 
       .. literalinclude:: /includes/connect/tls-uri-options.c
          :language: c
-         :start-after: start-connect-to-atlas
-         :end-before: end-connect-to-atlas
+         :start-after: start-connect
+         :end-before: end-connect
          :dedent:
 
 .. tip::
