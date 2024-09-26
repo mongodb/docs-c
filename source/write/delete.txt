@@ -136,9 +136,9 @@ operation:
 
 .. tip::
 
-   If the preceding example used the ``mongoc_collection_delete_one()`` function instead of
-   ``mongoc_collection_delete_many()``, the driver would delete only the first document that has
-   a ``name`` value containing ``"Mongo"``.
+   If you use the ``mongoc_collection_delete_one()`` function instead of
+   ``mongoc_collection_delete_many()`` in the preceding example, the driver
+   deletes only the first document that has a ``name`` value containing ``"Mongo"``.
 
 API Documentation
 ~~~~~~~~~~~~~~~~~

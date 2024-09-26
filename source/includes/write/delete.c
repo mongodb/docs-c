@@ -35,7 +35,7 @@ main (void)
         if (!mongoc_collection_delete_many (collection, filter, NULL, NULL, &error)) {
             printf ("Delete error: %s\n", error.message);
         }
-        
+
         bson_destroy (filter);
         // end-delete-many
     }
@@ -43,9 +43,9 @@ main (void)
     {
         // Deletes matching documents and attaches a comment to the operation
         // start-delete-options
-        bson_t opts;
         bson_t *filter = BCON_NEW ("name", "{", "$regex", BCON_UTF8 ("Mongo"), "}");
         bson_error_t error;
+        bson_t opts;
 
         BCON_APPEND (&opts, "comment", BCON_UTF8 ("Deleting Mongo restaurants"));
 
