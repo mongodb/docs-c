@@ -1,10 +1,10 @@
 #include <mongoc/mongoc.h>
 #include <bson/bson.h>
 
-int main(void) {
+int main (void) {
 
   // start-connect
-  // Intialize the MongoDB C Driver
+  // Initialize the MongoDB C Driver
   mongoc_init ();
   
   // Create a new client and set TLS option to true
