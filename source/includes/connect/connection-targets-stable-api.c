@@ -4,18 +4,19 @@
 int main(void) {
 
   // start-connect
-  // Intialize the MongoDB C Driver
+  // Initialize the MongoDB C Driver
   mongoc_init ();
-
-  // Create a new client 
-  mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname:port>/?<options>");
-
-  // Set the version of the Stable API on the client
-  mongoc_server_api_t *api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
 
   bson_t *ping = BCON_NEW ("ping", BCON_INT32 (1));
   bson_t reply = BSON_INITIALIZER;
   bson_error_t error;
+  mongoc_client_t *client = NULL;
+
+  // Create a new client 
+  client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname:port>/?<options>");
+
+  // Set the version of the Stable API on the client
+  mongoc_server_api_t *api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
   
   if (!mongoc_client_set_server_api(client, api, &error)) {
     fprintf(stderr, "error: %s\n", error.message);
