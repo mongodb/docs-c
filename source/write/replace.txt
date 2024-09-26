@@ -150,5 +150,5 @@ To learn more about creating query filters, see the :ref:`c-specify-query` guide
 API Documentation
 ~~~~~~~~~~~~~~~~~
 
-To learn more about the ``mongoc_collection_replace_one()``, see the
+To learn more about the ``mongoc_collection_replace_one()`` function, see the
 `API documentation <{+api-libmongoc+}/mongoc_collection_replace_one.html>`__.
