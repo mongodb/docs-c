@@ -94,16 +94,11 @@ trusted by the native certificate store in use on the server.
 To provide the client certificate, set the `tlsCertificateKeyFile` in the URI to a PEM armored
 certificate file:
 
-.. code-block:: c
-
-   mongoc_uri_t *uri = mongoc_uri_new ("mongodb://localhost:27017/");
-   mongoc_uri_set_option_as_bool (uri, MONGOC_URI_TLS, true);
-   mongoc_uri_set_option_as_utf8 (uri, MONGOC_URI_TLSCERTIFICATEKEYFILE, "/path/to/client-certificate.pem");
-
-   mongoc_client_t *client = mongoc_client_new_from_uri (uri);
-
-.. TODO, if decide to make all these code examples more comprehensive
-.. then make this an include rather than an inline code-block
+.. literalinclude:: /includes/connect/tls-ca-file.c
+         :language: c
+         :start-after: start-connect
+         :end-before: end-connect
+         :dedent:
 
 .. _c-certificate-revocation:
 
