@@ -52,6 +52,9 @@ code also uses the ``mongoc_server_api_new()`` function to specify a {+stable-ap
    :end-before: end-connect
    :dedent:
 
+
+.. TODO, add link to Stable API page for C Driver once created
+
 .. tip::
 
    When you connect to Atlas, we recommend using the {+stable-api+} client option to avoid
