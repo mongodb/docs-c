@@ -22,6 +22,7 @@ main (void)
         if (!mongoc_collection_update_one (collection, query, update, NULL, NULL, &error)) {
             fprintf (stderr, "Update one operation failed: %s\n", error.message);
         }
+
         bson_destroy (query);
         bson_destroy (update);
         // end-update-one
@@ -37,6 +38,7 @@ main (void)
         if (!mongoc_collection_update_many (collection, query, update, NULL, NULL, &error)) {
             fprintf (stderr, "Update many operation failed: %s\n", error.message);
         }
+
         bson_destroy (query);
         bson_destroy (update);
         // end-update-many
@@ -47,8 +49,8 @@ main (void)
         // start-update-options
         bson_t *query = BCON_NEW ("borough", BCON_UTF8 ("Manhattan"));
         bson_t *update = BCON_NEW ("$set", "{", "borough", BCON_UTF8 ("Manhattan (north)"), "}");
-        bson_t opts;
         bson_error_t error;
+        bson_t opts;
 
         bson_init (&opts);
         bson_append_bool (&opts, "upsert", -1, true);
