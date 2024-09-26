@@ -4,7 +4,7 @@
 int main (void) {
 
   // start-connect-to-atlas
-  // Initialize the C Driver
+  // Initialize the MongoDB C Driver
   mongoc_init ();
 
   // Create a new client and set tls option to true
