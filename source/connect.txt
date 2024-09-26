@@ -24,7 +24,7 @@ Connect to MongoDB
     
    /connect/mongoclient
 ..   /connect/connection-targets
-..   /connect/tls
+   /connect/tls
 ..   /connect/server-selection
 ..   /connect/stable-api
 
