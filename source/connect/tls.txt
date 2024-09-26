@@ -51,7 +51,25 @@ in the following ways:
 - Using the ``mongoc_uri_set_option_as_bool()`` function to set the ``MONGOC_URI_TLS`` connection
   option to ``true``
 
-.. include:: /includes/connect/tls-tabs.rst
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: connectionstring
+
+      .. literalinclude:: /includes/connect/tls-connection-str.c
+         :language: c
+         :start-after: start-connect-to-atlas
+         :end-before: end-connect-to-atlas
+         :dedent:
+
+   .. tab:: MongoC URI Options
+      :tabid: mongocurioptions
+
+      .. literalinclude:: /includes/connect/tls-uri-options.c
+         :language: c
+         :start-after: start-connect-to-atlas
+         :end-before: end-connect-to-atlas
+         :dedent:
 
 .. tip::
    
