@@ -16,6 +16,7 @@ int main (void) {
   
   // Cleanup
   mongoc_client_destroy (client);
+  mongoc_uri_destroy (uri);
   mongoc_cleanup ();
   // end-connect
 }
