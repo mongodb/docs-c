@@ -81,6 +81,7 @@ The following example creates a time series collection named ``october2024`` in 
    :start-after: start-create-time-series
    :end-before: end-create-time-series
    :dedent:
+   :emphasize-lines: 13-19
 
 To verify that you successfully created the time series collection, run
 the ``mongoc_database_find_collections_with_opts()`` method on the
@@ -94,6 +95,7 @@ the ``mongoc_database_find_collections_with_opts()`` method on the
       :start-after: start-list-collections
       :end-before: end-list-collections
       :dedent:
+      :emphasize-lines: 4-11
 
    .. output::
 
@@ -105,14 +107,12 @@ the ``mongoc_database_find_collections_with_opts()`` method on the
 Store Time Series Data
 ----------------------
 
-You can insert data into a time series collection by using the ``insertOne()``
-or ``insertMany()`` methods and specifying the measurement, timestamp, and metadata
+You can insert data into a time series collection by using the ``mongoc_collection_insert_one()``
+or ``mongoc_collection_insert_many()`` methods and specifying the measurement, timestamp, and metadata
 in each inserted document.
 
-.. tip::
-
-   To learn more about inserting documents into a collection, see the :ref:`c-write-insert`
-   guide.
+To learn more about inserting documents into a collection, see the :ref:`c-write-insert`
+guide.
 
 Example
 ~~~~~~~
@@ -164,6 +164,6 @@ API Documentation
 To learn more about the methods mentioned in this guide, see the following
 API documentation:
 
-- `mongoc_database_create_collection() <{+api-libmongoc+}/current/mongoc_database_create_collection.html#mongoc-database-create-collection>`__
+- `mongoc_database_create_collection() <{+api-libmongoc+}/mongoc_database_create_collection.html#mongoc-database-create-collection>`__
 - `mongoc_database_find_collections_with_opts() <{+api-libmongoc+}/mongoc_database_find_collections_with_opts.html>`__
 - `mongoc_collection_insert_one() <{+api-libmongoc+}/mongoc_collection_insert_one.html#mongoc-collection-insert-one>`__
