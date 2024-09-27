@@ -49,7 +49,7 @@ Required Parameters
 
 The ``mongoc_collection_replace_one()`` function requires the following parameters:
 
-- Collection: Specifies which collection to perform the replace operation on.
+- Collection: Specifies the collection on which to perform the replace operation.
 
 - Query filter document: Specifies which collection documents to match. The
   function selects the first matching document to replace. For more information
