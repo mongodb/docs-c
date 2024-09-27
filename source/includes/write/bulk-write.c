@@ -20,11 +20,11 @@ int main (void)
     {
         // Creates a write model to specify an insert operation and adds it to the bulk operation
         // start-bulk-insert-one
-        bson_t *insert_doc = BCON_NEW(
-            "name", BCON_UTF8("Mongo's Deli"),
-            "cuisine", BCON_UTF8("Sandwiches"),
-            "borough", BCON_UTF8("Manhattan"),
-            "restaurant_id", BCON_UTF8("1234")
+        bson_t *insert_doc = BCON_NEW (
+            "name", BCON_UTF8 ("Mongo's Deli"),
+            "cuisine", BCON_UTF8 ("Sandwiches"),
+            "borough", BCON_UTF8 ("Manhattan"),
+            "restaurant_id", BCON_UTF8 ("1234")
         );
 
         mongoc_bulk_operation_insert_with_opts (bulk, insert_doc, NULL);
@@ -35,8 +35,8 @@ int main (void)
     {
         // Creates a write model to specify an update one operation and adds it to the bulk operation
         // start-bulk-update-one
-        bson_t *filter_doc = BCON_NEW("name", BCON_UTF8("Mongo's Deli"));
-        bson_t *update_doc = BCON_NEW("$set", "{", "cuisine", BCON_UTF8("Sandwiches and Salads"), "}");
+        bson_t *filter_doc = BCON_NEW ("name", BCON_UTF8 ("Mongo's Deli"));
+        bson_t *update_doc = BCON_NEW ("$set", "{", "cuisine", BCON_UTF8 ("Sandwiches and Salads"), "}");
 
         mongoc_bulk_operation_update_one_with_opts (bulk, filter_doc, update_doc, NULL);
         bson_destroy (filter_doc);
@@ -47,8 +47,8 @@ int main (void)
     {
         // Creates a write model to specify an update many operation and adds it to the bulk operation
         // start-bulk-update-many
-        bson_t *filter_doc = BCON_NEW("name", BCON_UTF8("Mongo's Deli"));
-        bson_t *update_doc = BCON_NEW("$set", "{", "cuisine", BCON_UTF8("Sandwiches and Salads"), "}");
+        bson_t *filter_doc = BCON_NEW ("name", BCON_UTF8 ("Mongo's Deli"));
+        bson_t *update_doc = BCON_NEW ("$set", "{", "cuisine", BCON_UTF8 ("Sandwiches and Salads"), "}");
 
         mongoc_bulk_operation_update_many_with_opts (bulk, filter_doc, update_doc, NULL);
         bson_destroy (filter_doc);
@@ -59,8 +59,8 @@ int main (void)
     {
         // Creates a write model to specify a replace one operation and adds it to the bulk operation
         // start-bulk-replace-one
-        bson_t *filter_doc = BCON_NEW("restaurant_id", BCON_UTF8("1234"));
-        bson_t *replace_doc = BCON_NEW(
+        bson_t *filter_doc = BCON_NEW ("restaurant_id", BCON_UTF8 ("1234"));
+        bson_t *replace_doc = BCON_NEW (
             "name", BCON_UTF8("Mongo's Deli"),
             "cuisine", BCON_UTF8("Sandwiches and Salads"),
             "borough", BCON_UTF8("Brooklyn"),
@@ -76,7 +76,7 @@ int main (void)
     {
         // Creates a write model to specify a delete one operation and adds it to the bulk operation
         // start-bulk-delete-one
-        bson_t *filter_doc = BCON_NEW("restaurant_id", BCON_UTF8("5678"));
+        bson_t *filter_doc = BCON_NEW ("restaurant_id", BCON_UTF8 ("5678"));
 
         mongoc_bulk_operation_remove_one_with_opts (bulk, filter_doc, NULL);
         bson_destroy (filter_doc);
@@ -86,7 +86,7 @@ int main (void)
     {
         // Creates a write model to specify a delete many operation and adds it to the bulk operation
         // start-bulk-delete-many
-        bson_t *filter_doc = BCON_NEW("borough", BCON_UTF8("Manhattan"));
+        bson_t *filter_doc = BCON_NEW ("borough", BCON_UTF8 ("Manhattan"));
 
         mongoc_bulk_operation_remove_many_with_opts (bulk, filter_doc, NULL);
         bson_destroy (filter_doc);

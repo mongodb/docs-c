@@ -48,8 +48,8 @@ to store instructions about which bulk writes to perform.
 The ``mongoc_collection_create_bulk_operation_with_opts()`` function accepts the following
 parameters:
 
-- Collection: Specifies the collection to modify.
-- Options document: Specifies options to customize the operation, or ``NULL``.
+- Collection: Specifies the collection to modify
+- Options document: Specifies options to customize the operation, or ``NULL``
 
 The following example calls the ``mongoc_collection_create_bulk_operation_with_opts()`` function and
 passes the ``restaurants`` collection as a parameter:
@@ -91,7 +91,7 @@ To perform an insert operation, add the insert instructions to the ``mongoc_bulk
 which queues the operation as part of the bulk write.
 
 The following example calls the ``mongoc_bulk_operation_insert_with_opts()`` function,
-passing the insert instructions and the ``mongoc_bulk_operation_t`` value as parameters:
+passing the document to insert and the ``mongoc_bulk_operation_t`` value as parameters:
 
 .. literalinclude:: /includes/write/bulk-write.c
    :start-after: start-bulk-insert-one
@@ -111,7 +111,7 @@ To perform an update operation, add the update instructions to the ``mongoc_bulk
 which queues the operation as part of the bulk write.
 
 The following example calls the ``mongoc_bulk_operation_update_one_with_opts()`` function,
-passing a query filter, update instructions, and the ``mongoc_bulk_operation_t`` value as
+passing a query filter, document updates, and the ``mongoc_bulk_operation_t`` value as
 parameters:
 
 .. literalinclude:: /includes/write/bulk-write.c
@@ -143,7 +143,7 @@ instructions to the ``mongoc_bulk_operation_t``, which queues the operation as p
 of the bulk write.
 
 The following example calls the ``mongoc_bulk_operation_replace_one_with_opts()`` function,
-passing a query filter, replacement instructions, and the ``mongoc_bulk_operation_t`` value as
+passing a query filter, replacement document, and the ``mongoc_bulk_operation_t`` value as
 parameters:
 
 .. literalinclude:: /includes/write/bulk-write.c
@@ -254,8 +254,8 @@ describes the options you can set in the document:
          information, see the :manual:`let statement
          </reference/command/delete/#std-label-delete-let-syntax>` in the {+mdb-server+} manual.
 
-The following example calls the ``mongoc_collection_create_bulk_operation_with_opts()`` function from the
-:ref:`c-bulk-start-operation` example on this page but sets the ``ordered`` option to ``false``:
+The following example calls the ``mongoc_collection_create_bulk_operation_with_opts()`` function
+and sets the ``ordered`` option to ``false``:
 
 .. literalinclude:: /includes/write/bulk-write.c
    :start-after: start-bulk-write-unordered
