@@ -47,17 +47,17 @@ You can perform delete operations by using the following functions:
 
 Each delete function accepts the following parameters:
 
-- Collection: Specifies the collection to update.
+- **Collection**: Specifies the collection to modify.
 
-- Query filter document: Specifies which collection documents to update. For
+- **Query filter** document: Specifies which collection documents to delete. For
   more information about query filters, see the 
   :manual:`Query Filter Documents section </core/document/#query-filter-documents>` in
   the {+mdb-server+} manual.
 
-- Results location: Specifies a pointer to overwritable storage that will contain
+- **Results** location: Specifies a pointer to overwritable storage that will contain
   operation results, or ``NULL``.
 
-- Error location: Specifies a location for an error value, or ``NULL``.
+- **Error** location: Specifies a location for an error value, or ``NULL``.
 
 Delete One Document
 ~~~~~~~~~~~~~~~~~~~
