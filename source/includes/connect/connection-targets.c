@@ -75,6 +75,7 @@ int main(void) {
   }
 
   {
+    // start-connect-replica
     bson_t *ping = BCON_NEW ("ping", BCON_INT32 (1));
     bson_t reply = BSON_INITIALIZER;
     bson_error_t error;
@@ -98,6 +99,7 @@ int main(void) {
       bson_destroy (&reply);
       bson_destroy (ping);
       mongoc_client_destroy (client);
+    // end-connect-replica
   }
 
   // Cleanup the C Driver

@@ -46,10 +46,10 @@ Then, pass your connection string to the ``mongoc_client_new()`` function.
 The following code shows how to use the {+driver-short+} to connect to an Atlas cluster. The
 code also uses the ``mongoc_server_api_new()`` function to specify a {+stable-api+} version.
 
-.. literalinclude:: /includes/connect/connection-targets-stable-api.c
+.. literalinclude:: /includes/connect/connection-targets.c
    :language: c
-   :start-after: start-connect
-   :end-before: end-connect
+   :start-after: start-connect-stable-api
+   :end-before: end-connect-stable-api
    :dedent:
 
 
@@ -70,10 +70,10 @@ your deployment.
 The following code shows how to use the {+driver-short+} to connect to a local MongoDB
 deployment:
 
-.. literalinclude:: /includes/connect/connection-targets-local.c
+.. literalinclude:: /includes/connect/connection-targets.c
    :language: c
-   :start-after: start-connect
-   :end-before: end-connect
+   :start-after: start-connect-local
+   :end-before: end-connect-local
    :dedent:
 
 Replica Sets
@@ -94,10 +94,10 @@ automatic discovery, perform one of the following actions:
 The following example uses a sample connection URI to connect to the MongoDB replica
 set ``myreplset``, which is running on port ``27017`` of three different hosts:
 
-.. literalinclude:: /includes/connect/connection-targets-replica.c
+.. literalinclude:: /includes/connect/connection-targets.c
    :language: c
-   :start-after: start-connect
-   :end-before: end-connect
+   :start-after: start-connect-replica
+   :end-before: end-connect-replica
    :dedent:
 
 .. note::
