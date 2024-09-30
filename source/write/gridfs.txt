@@ -268,23 +268,24 @@ Read From a Download Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can download files from your MongoDB database by using the
-``MongoDB\GridFS\Bucket::openDownloadStreamByName()`` function to
+``mongoc_gridfs_bucket_open_download_stream()`` function to
 create a download stream.
 
 This example uses a download stream to perform the following actions:
 
-- Selects a GridFS file named ``'my_file'``, uploaded in the
+- Selects a GridFS file named ``"my_file"``, uploaded in the
   :ref:`gridfs-open-upload-stream` example, and opens it as a readable stream 
-- Calls the ``stream_get_contents()`` function to read the contents of ``"my_file"``
+- Calls the ``mongoc_stream_read()`` function to read the contents of ``"my_file"``
 - Prints the file contents
-- Calls the ``fclose()`` function to close the download stream pointing to ``"my_file"`` 
+- Calls the ``mongoc_stream_close()`` function to close the download stream
+  pointing to ``"my_file"`` 
 
 .. io-code-block::
    :copyable:
 
    .. input:: /includes/write/gridfs.c
-      :start-after: start-open-download-stream-name
-      :end-before: end-open-download-stream-name
+      :start-after: start-open-download-stream
+      :end-before: end-open-download-stream
       :language: c
       :dedent:
 
@@ -299,60 +300,16 @@ This example uses a download stream to perform the following actions:
    GridFS will stream the most recent file with the given name (as
    determined by the ``uploadDate`` field).
 
-Alternatively, you can use the ``MongoDB\GridFS\Bucket::openDownloadStream()``
-function, which takes the ``_id`` field of a file as a parameter:
-
-.. literalinclude:: /includes/write/gridfs.c
-   :language: c
-   :dedent:
-   :start-after: start-download-files-id
-   :end-before: end-download-files-id
-
-.. note::
-
-   The GridFS streaming API cannot load partial chunks. When a download
-   stream needs to pull a chunk from MongoDB, it pulls the entire chunk
-   into memory. The 255-kilobyte default chunk size is usually
-   sufficient, but you can reduce the chunk size to reduce memory
-   overhead or increase the chunk size when working with larger files.
-   For more information about setting the chunk size, see the 
-   :ref:`gridfs-create-custom-bucket` section of this page.
-
-Download a File Revision
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-When your bucket contains multiple files that share the same file name,
-GridFS chooses the most recently uploaded version of the file by default.
-To differentiate between each file that shares the same name, GridFS assigns them
-a revision number, ordered by upload time.
-
-The original file revision number is ``0`` and the next most recent file revision
-number is ``1``. You can also specify negative values that correspond to the recency
-of the revision. The revision value ``-1`` references the most recent revision and ``-2``
-references the next most recent revision.
-
-You can instruct GridFS to download a specific file revision by passing an options
-array to the ``openDownloadStreamByName()`` function and specifying the ``revision``
-option. The following example reads the contents of the original file named
-``'my_file'`` rather than the most recent revision:
-
-.. literalinclude:: /includes/write/gridfs.c
-   :language: c
-   :dedent:
-   :start-after: start-download-file-revision
-   :end-before: end-download-file-revision
-
 Download to an Existing Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can download the contents of a GridFS file to an existing stream
-by calling the ``MongoDB\GridFS\Bucket::downloadToStream()`` function
-on your bucket.
+by calling the ``mongoc_gridfs_bucket_download_to_stream()`` function.
 
 This example performs the following actions:
 
-- Calls the ``fopen()`` function to open a file located at ``/path/to/output_file``
-  as a stream in binary write (``wb``) mode
+- Calls the ``mongoc_stream_file_new_for_path()`` function to open a file
+  located at ``/path/to/output_file`` as a stream in read and write (``O_RDWR``) mode
 - Downloads a GridFS file that has an ``_id`` value of ``ObjectId('66e0a5487c880f844c0a32b1')``
   to the stream
 
@@ -367,7 +324,7 @@ This example performs the following actions:
 Rename Files
 ------------
 
-Use the ``MongoDB\GridFS\Bucket::rename()`` function to update the name of
+Use the ``mongoc_gridfs_file_set_metadata()`` function to update the name of
 a GridFS file in your bucket. You must specify the file to rename by its
 ``_id`` field rather than its file name. 
 
@@ -392,9 +349,8 @@ The following example shows how to update the ``filename`` field to
 Delete Files
 ------------
 
-Use the ``MongoDB\GridFS\Bucket::delete()`` function to remove a file's collection
+Use the ``mongoc_gridfs_bucket_delete_by_id`` function to remove a file's collection
 document and associated chunks from your bucket. This effectively deletes the file.
-You must specify the file by its ``_id`` field rather than its file name.
 
 The following example shows you how to delete a file by referencing its ``_id`` field:
 
@@ -417,12 +373,11 @@ API Documentation
 To learn more about using the {+driver-short+} to store and retrieve large files,
 see the following API documentation:
 
-- :cfunction:`MongoDB\Database::selectGridFSBucket()`
-- :cfunction:`MongoDB\GridFS\Bucket::openUploadStream()`
-- :cfunction:`MongoDB\GridFS\Bucket::uploadFromStream()`
-- :cfunction:`MongoDB\GridFS\Bucket::find()`
-- :cfunction:`MongoDB\GridFS\Bucket::openDownloadStreamByName()`
-- :cfunction:`MongoDB\GridFS\Bucket::openDownloadStream()`
-- :cfunction:`MongoDB\GridFS\Bucket::downloadToStream()`
-- :cfunction:`MongoDB\GridFS\Bucket::rename()`
-- :cfunction:`MongoDB\GridFS\Bucket::delete()`
+- `mongoc_gridfs_bucket_new() <{+libmongoc-api}\mongoc_gridfs_bucket_new.html>`__
+- `mongoc_gridfs_bucket_open_upload_stream() <{+libmongoc-api}\mongoc_gridfs_bucket_open_upload_stream.html>`__
+- `mongoc_gridfs_bucket_upload_from_stream() <{+libmongoc-api}\mongoc_gridfs_bucket_upload_from_stream.html>`__
+- `mongoc_gridfs_bucket_find() <{+libmongoc-api}\mongoc_gridfs_bucket_find.html>`__
+- `mongoc_gridfs_bucket_open_download_stream() <{+libmongoc-api}\mongoc_gridfs_bucket_open_download_stream.html>`__
+- `mongoc_gridfs_bucket_download_to_stream() <{+libmongoc-api}\mongoc_gridfs_bucket_download_to_stream.html>`__
+- `mongoc_gridfs_file_set_metadata() <{+libmongoc-api}\mongoc_gridfs_file_set_metadata.html>`__
+- `mongoc_gridfs_bucket_delete_by_id() <{+libmongoc-api}\mongoc_gridfs_bucket_delete_by_id.html>`__
