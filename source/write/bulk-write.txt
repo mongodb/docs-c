@@ -48,8 +48,8 @@ to store instructions about which bulk writes to perform.
 The ``mongoc_collection_create_bulk_operation_with_opts()`` function accepts the following
 parameters:
 
-- Collection: Specifies the collection to modify
-- Options document: Specifies options to customize the operation, or ``NULL``
+- **Collection**: Specifies the collection to modify
+- **Options document**: Specifies options to customize the operation, or ``NULL``
 
 The following example calls the ``mongoc_collection_create_bulk_operation_with_opts()`` function and
 passes the ``restaurants`` collection as a parameter:
@@ -190,12 +190,12 @@ Run the Bulk Operation
 To run each write operation queued in the bulk write, call the ``mongoc_bulk_operation_execute()``
 function. This function accepts the following parameters:
 
-- ``mongoc_bulk_operation_t`` value: Contains the instructions for each write operation
+- **``mongoc_bulk_operation_t`` value**: Contains the instructions for each write operation
 
-- Results location: Specifies a pointer to overwritable storage that will contain
+- **Results location**: Specifies a pointer to overwritable storage that will contain
   operation results, or ``NULL``
 
-- Error location: Specifies a location for an error value, or ``NULL``
+- **Error location**: Specifies a location for an error value, or ``NULL``
 
 The following example performs the :ref:`insert <c-bulk-add-insert>`,
 :ref:`update <c-bulk-add-update>`, :ref:`replace <c-bulk-add-replace>`,

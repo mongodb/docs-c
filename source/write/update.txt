@@ -45,24 +45,24 @@ You can perform update operations in MongoDB by using the following functions:
 
 Each update function accepts the following parameters:
 
-- Collection: Specifies the collection to update.
+- **Collection**: Specifies the collection to update.
 
-- Query filter document: Specifies which collection documents to update. For
+- **Query filter document**: Specifies which collection documents to update. For
   more information about query filters, see the 
   :manual:`Query Filter Documents section </core/document/#query-filter-documents>` in
   the {+mdb-server+} manual.
 
-- Update document: Specifies the **update operator**, or the kind of update to
+- **Update document**: Specifies the **update operator**, or the kind of update to
   perform, and the fields and values to change. For a list of update operators
   and their usage, see the :manual:`Field Update Operators guide
   </reference/operator/update-field/>` in the {+mdb-server+} manual.
 
-- Options document: Specifies options to customize the operation, or ``NULL``.
+- **Options document**: Specifies options to customize the operation, or ``NULL``.
 
-- Results location: Specifies a pointer to overwritable storage that will contain
+- **Results location**: Specifies a pointer to overwritable storage that will contain
   operation results, or ``NULL``.
 
-- Error location: Specifies a location for an error value, or ``NULL``.
+- **Error location**: Specifies a location for an error value, or ``NULL``.
 
 Update One Document
 ~~~~~~~~~~~~~~~~~~~
