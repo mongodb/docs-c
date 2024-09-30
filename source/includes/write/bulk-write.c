@@ -26,8 +26,12 @@ int main (void)
             "borough", BCON_UTF8 ("Manhattan"),
             "restaurant_id", BCON_UTF8 ("1234")
         );
+        bson_error_t error;
 
-        mongoc_bulk_operation_insert_with_opts (bulk, insert_doc, NULL);
+        if (!mongoc_bulk_operation_insert_with_opts (bulk, insert_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add insert operation: %s\n", error.message);
+        }
+
         bson_destroy (insert_doc);
         // end-bulk-insert-one
     }
@@ -37,8 +41,12 @@ int main (void)
         // start-bulk-update-one
         bson_t *filter_doc = BCON_NEW ("name", BCON_UTF8 ("Mongo's Deli"));
         bson_t *update_doc = BCON_NEW ("$set", "{", "cuisine", BCON_UTF8 ("Sandwiches and Salads"), "}");
+        bson_error_t error;
 
-        mongoc_bulk_operation_update_one_with_opts (bulk, filter_doc, update_doc, NULL);
+        if (!mongoc_bulk_operation_update_one_with_opts (bulk, filter_doc, update_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add update operation: %s\n", error.message);
+        }
+
         bson_destroy (filter_doc);
         bson_destroy (update_doc);
         // end-bulk-update-one
@@ -49,8 +57,12 @@ int main (void)
         // start-bulk-update-many
         bson_t *filter_doc = BCON_NEW ("name", BCON_UTF8 ("Mongo's Deli"));
         bson_t *update_doc = BCON_NEW ("$set", "{", "cuisine", BCON_UTF8 ("Sandwiches and Salads"), "}");
+        bson_error_t error;
 
-        mongoc_bulk_operation_update_many_with_opts (bulk, filter_doc, update_doc, NULL);
+        if (!mongoc_bulk_operation_update_many_with_opts (bulk, filter_doc, update_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add update operation: %s\n", error.message);
+        }
+
         bson_destroy (filter_doc);
         bson_destroy (update_doc);
         // end-bulk-update-many
@@ -66,8 +78,12 @@ int main (void)
             "borough", BCON_UTF8 ("Brooklyn"),
             "restaurant_id", BCON_UTF8 ("5678")
         );
+        bson_error_t error;
 
-        mongoc_bulk_operation_replace_one_with_opts (bulk, filter_doc, replace_doc, NULL);
+        if (!mongoc_bulk_operation_replace_one_with_opts (bulk, filter_doc, replace_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add replace operation: %s\n", error.message);
+        }
+
         bson_destroy (filter_doc);
         bson_destroy (replace_doc);
         // end-bulk-replace-one
@@ -77,8 +93,12 @@ int main (void)
         // Creates delete one operation instructions and adds the operation to the bulk write
         // start-bulk-delete-one
         bson_t *filter_doc = BCON_NEW ("restaurant_id", BCON_UTF8 ("5678"));
+        bson_error_t error;
 
-        mongoc_bulk_operation_remove_one_with_opts (bulk, filter_doc, NULL);
+        if (!mongoc_bulk_operation_remove_one_with_opts (bulk, filter_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add delete operation: %s\n", error.message);
+        }
+
         bson_destroy (filter_doc);
         // end-bulk-delete-one
     }
@@ -87,8 +107,12 @@ int main (void)
         // Creates delete many operation instructions and adds the operation to the bulk write
         // start-bulk-delete-many
         bson_t *filter_doc = BCON_NEW ("borough", BCON_UTF8 ("Manhattan"));
+        bson_error_t error;
 
-        mongoc_bulk_operation_remove_many_with_opts (bulk, filter_doc, NULL);
+        if (!mongoc_bulk_operation_remove_many_with_opts (bulk, filter_doc, NULL, &error)) {
+            fprintf (stderr, "Failed to add delete operation: %s\n", error.message);
+        }
+
         bson_destroy (filter_doc);
         // end-bulk-delete-many
     }
