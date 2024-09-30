@@ -51,7 +51,7 @@ int main(void) {
     mongoc_uri_t *uri = mongoc_uri_new_with_error ("mongodb://localhost:27017", &error);  
     if (!uri) {
       fprintf (stderr, "failed to parse URI, error: %s\n", error.message);
-      goto cleanup2;
+      goto cleanup;
     }
 
     client = mongoc_client_new_from_uri (uri);
