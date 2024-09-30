@@ -55,8 +55,8 @@ database from the :atlas:`Atlas sample datasets </sample-data>`. To learn how to
 free MongoDB Atlas cluster and load the sample datasets, see the
 :atlas:`Get Started with Atlas </getting-started>` guide.
 
-Methods
--------
+Functions
+---------
 
 After you start a session by using the ``mongoc_client_start_session()`` function, you can
 manage the session state by using the following functions:
@@ -86,7 +86,7 @@ manage the session state by using the following functions:
      - | Commits the active transaction for this session. Returns an
          error if there is no active transaction for the session or if the
          transaction was ended. To learn more about
-         this method, see the :manual:`commitTransaction() page
+         this function, see the :manual:`commitTransaction() page
          </reference/method/Session.commitTransaction/>`  in the Server manual.
 
    * - ``mongoc_client_session_with_transaction()``
