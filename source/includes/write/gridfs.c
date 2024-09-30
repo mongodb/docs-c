@@ -6,7 +6,6 @@ int
 main (void)
 {
     mongoc_client_t *client;
-    mongoc_collection_t *collection;
     mongoc_init ();
 
     client = mongoc_client_new ("<connection string URI>");
@@ -42,7 +41,8 @@ main (void)
         // Opens an upload stream for a given file name
         // start-open-upload-stream
         bson_error_t error;
-        if (!mongoc_gridfs_bucket_open_upload_stream (bucket, "my_file", NULL, NULL, &error)) {
+        mongoc_stream_t *upload_stream = mongoc_gridfs_bucket_open_upload_stream (bucket, "my_file", NULL, NULL, &error);
+        if (upload_stream == NULL) {
             fprintf (stderr, "Failed to create upload stream: %s\n", error.message);
         }
         const char *data = "Data to store";
@@ -59,7 +59,7 @@ main (void)
         mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/input_file", O_RDONLY, 0);
         
         bson_error_t error;
-        if (!mongoc_gridfs_bucket_upload_from_stream (bucket, "my-file", file_stream, NULL, NULL, &error)) {
+        if (!mongoc_gridfs_bucket_upload_from_stream (bucket, "new_file", file_stream, NULL, NULL, &error)) {
             fprintf (stderr, "Failed to upload file: %s\n", error.message);
         }
 
@@ -106,18 +106,18 @@ main (void)
     {
         // Downloads a GridFS file to a local file
         // start-download-to-stream
-        bson_oid_t oid;
-        bson_oid_init_from_string (&oid, "56789012345678901234567");
-
         mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/output_file", O_RDWR, 0);
         bson_error_t error;
         if (!file_stream) {
             fprintf (stderr, "Error opening file stream: %s\n", error.message);
         }
 
+        bson_oid_t oid;
+        bson_oid_init_from_string (&oid, "56789012345678901234567");
         if (!mongoc_gridfs_bucket_download_to_stream (bucket, &oid, file_stream, &error)) {
             fprintf (stderr, "Failed to download file: %s\n", error.message);
         }
+        
         mongoc_stream_close (file_stream);
         mongoc_stream_destroy (file_stream);
         // end-download-to-stream
