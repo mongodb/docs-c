@@ -190,7 +190,7 @@ Run the Bulk Operation
 To run each write operation queued in the bulk write, call the ``mongoc_bulk_operation_execute()``
 function. This function accepts the following parameters:
 
-- **``mongoc_bulk_operation_t`` value**: Contains the instructions for each write operation
+- **mongoc_bulk_operation_t value**: Contains the instructions for each write operation
 
 - **Results location**: Specifies a pointer to overwritable storage that will contain
   operation results, or ``NULL``

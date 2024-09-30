@@ -61,10 +61,10 @@ int main (void)
         // start-bulk-replace-one
         bson_t *filter_doc = BCON_NEW ("restaurant_id", BCON_UTF8 ("1234"));
         bson_t *replace_doc = BCON_NEW (
-            "name", BCON_UTF8("Mongo's Deli"),
-            "cuisine", BCON_UTF8("Sandwiches and Salads"),
-            "borough", BCON_UTF8("Brooklyn"),
-            "restaurant_id", BCON_UTF8("5678")
+            "name", BCON_UTF8 ("Mongo's Deli"),
+            "cuisine", BCON_UTF8 ("Sandwiches and Salads"),
+            "borough", BCON_UTF8 ("Brooklyn"),
+            "restaurant_id", BCON_UTF8 ("5678")
         );
 
         mongoc_bulk_operation_replace_one_with_opts (bulk, filter_doc, replace_doc, NULL);
