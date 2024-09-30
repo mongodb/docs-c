@@ -64,8 +64,7 @@ The following example creates an ascending index on the specified field:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about single field indexes, see the :ref:`c-single-field-index` guide.
+To learn more about single field indexes, see the :ref:`c-single-field-index` guide.
 
 Compound Index
 --------------
@@ -80,8 +79,7 @@ fields:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about compound indexes, see the :ref:`c-compound-index` guide.
+To learn more about compound indexes, see the :ref:`c-compound-index` guide.
 
 Multikey Index
 --------------
