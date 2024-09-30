@@ -91,7 +91,7 @@ trusted by the native certificate store in use on the server.
 
 You can provide the client certificate in the following ways:
 
-- Setting the ``tlscertificatekeyfile`` parameter in your connection string to a PEM armored certificate file
+- Setting the ``tlscertificatekeyfile`` parameter in your connection string to a `.pem` file containing the root certificate chain
 - Using the `mongoc_uri_set_option_as_utf8()` function to set the `MONGOC_URI_TLSCERTIFICATEKEYFILE` option
   to a `.pem` file containing the root certificate chain
 
@@ -124,16 +124,18 @@ The MongoDB C Driver will automatically verify the validity of a server certific
 by the configured Certificate Authority. The driver also performs hostname validation and revocation checking.
 
 To overwrite this behavior, it is possible to disable hostname validation, OCSP endpoint revocation checking,
-revocation checking entirely, and allow invalid certificates.
+all revocation checking, and allow invalid certificates.
 
 This behavior is controlled using the ``tlsAllowInvalidHostnames``, ``tlsDisableOCSPEndpointCheck``,
 ``tlsDisableCertificateRevocationCheck``, and ``tlsAllowInvalidCertificates`` options. By default,
 all are set to ``false``.
 
-It is not recommended to change these defaults as it exposes the client to *Man In The Middle* attacks (when
-``tlsAllowInvalidHostnames`` is set), invalid certificates (when ``tlsAllowInvalidCertificates`` is set), or
-potentially revoked certificates (when ``tlsDisableOCSPEndpointCheck`` or ``tlsDisableCertificateRevocationCheck``
-are set).
+It is not recommended to change these defaults, since you might expose your client to the following security risks:
+
+- `Man In The Middle attacks <https://en.wikipedia.org/wiki/Man-in-the-middle_attack.'_, when
+  ``tlsAllowInvalidHostnames`` is set
+- Invalid certificates, when ``tlsAllowInvalidCertificates`` is set
+- Potentially revoked certificates, when ``tlsDisableOCSPEndpointCheck`` or ``tlsDisableCertificateRevocationCheck`` are set
 
 Supported Libraries
 -------------------
@@ -142,10 +144,10 @@ By default, libmongoc will attempt to find a supported TLS library and enable TL
 by the cmake flag ``ENABLE_SSL``, which is set to ``AUTO`` by default. This flag accepts the following values:
 
 - ``AUTO``: Links to the system's native TLS library, or attempts to find OpenSSL. This is the default value.
-- ``DARWIN``: Links to Secure Transport, the native TLS library on macOS.
-- ``WINDOWS``: Links to Secure Channel, the native TLS library on Windows.
 - ``OPENSSL``: Links to OpenSSL (libssl). An optional install path may be specified with ``OPENSSL_ROOT``.
-- ``LIBRESSL``: Links to LibreSSL's libtls. (LibreSSL's compatible libssl may be linked to by setting ``OPENSSL``).
+- ``LIBRESSL``: Links to LibreSSL's libtls. You can link to LibreSSL's compatible libssl by setting ``OPENSSL``.
+- ``WINDOWS``: Links to Secure Channel, the native TLS library on Windows.
+- ``DARWIN``: Links to Secure Transport, the native TLS library on macOS.
 - ``OFF``: Disables TLS support.
 
 OpenSSL
@@ -185,16 +187,14 @@ The MongoDB C Driver supports LibreSSL through the use of OpenSSL compatibility 
 ``openssl``. It also supports the new ``libtls`` library when configured to build against ``libressl``.
 
 When compiled against the Windows native libraries, the ``crl_file`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported,
-and will issue an error if used.
-
-Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
+and will issue an error if used. Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
 
 The Online Certificate Status Protocol (OCSP) is partially supported
 with the following notes:
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
-- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
-- Connection will not continue if the client receives a revoked response from an OCSP responder.
+- Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored
+- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down
+- Connection will not continue if the client receives a revoked response from an OCSP responder
 
 .. tip::
  
@@ -209,10 +209,9 @@ The MongoDB C Driver supports the Windows native TLS library (Secure Channel, or
 When compiled against the Windows native libraries, the ``ca_dir`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported
 and will issue an error if used.
 
-Encrypted PEM files (e.g., setting the ``tlsCertificateKeyPassword`` URI option) are also not supported and will result in error when
-attempting to load them.
+Encrypted PEM files, set by using the ``tlsCertificateKeyPassword`` URI option, are also not supported and will result in error when
 
-When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided.
+When ``tlsCAFile`` is set, the driver will only allow server certificates issued by one or more authorities provided.
 When no ``tlsCAFile`` is set, the driver will look up the Certificate Authority using the ``System Local Machine Root``
 certificate store to confirm the provided certificate.
 
@@ -224,7 +223,7 @@ Setting ``tlsDisableOCSPEndpointCheck`` has no effect.
 The Online Certificate Status Protocol (OCSP) is partially supported
 with the following notes:
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
+- Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
 - Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
 - Connection will not continue if the client receives a revoked response from an OCSP responder.
 - When a ``crl_file`` is set with `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__, and the ``crl_file`` revokes the server's certificate, the OCSP response
@@ -248,15 +247,14 @@ An error is issued if either are used.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided.
 When no ``tlsCAFile`` is set, the driver will use the Certificate Authorities in the unlocked keychains.
-
 Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
 
 The Online Certificate Status Protocol (OCSP) is partially supported
 with the following notes.
 
-- The Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored.
-- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down.
-- Connection will not continue if the client receives a revoked response from an OCSP responder.
+- Must-Staple extension (see `RFC 7633 <https://tools.ietf.org/html/rfc7633>`__) is ignored
+- Connection will continue if a Must-Staple certificate is presented without a stapled response and the OCSP responder is down
+- Connection will not continue if the client receives a revoked response from an OCSP responder
 
 .. tip::
  
