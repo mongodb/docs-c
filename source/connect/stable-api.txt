@@ -45,7 +45,7 @@ To enable the {+stable-api+}, perform the following steps:
 
 1. Construct a ``mongoc_server_api_t`` object and specify a {+stable-api+} version. You must use
    a {+stable-api+} version defined in the ``mongoc_server_api_t`` enum.
-#. Construct a ``mongoc_client_new`` object.
+#. Construct a ``mongoc_client_t`` object.
 #. Pass the client and the {+stable-api+} object to the ``mongoc_client_set_server_api`` function.
 
 The following code example shows how to specify {+stable-api+} version 1:

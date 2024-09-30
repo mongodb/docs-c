@@ -27,12 +27,12 @@ int main ()
 
 // start-stable-api-options
 mongoc_server_api_t *stable_api = mongoc_server_api_new (MONGOC_SERVER_API_V1);
-    mongoc_server_api_set_strict (stable_api, true);
-    mongoc_server_api_set_deprecation_errors (stable_api, true);
+mongoc_server_api_set_strict (stable_api, true);
+mongoc_server_api_set_deprecation_errors (stable_api, true);
 
-    mongoc_client_t *client = mongoc_client_new ("<connection string>");
-    if (!mongoc_client_set_server_api (client, stable_api, &error)) {
-        fprintf (stderr, "Failed to set Stable API: %s\n", error.message);
-        return EXIT_FAILURE;
-    }
+mongoc_client_t *client = mongoc_client_new ("<connection string>");
+if (!mongoc_client_set_server_api (client, stable_api, &error)) {
+    fprintf (stderr, "Failed to set Stable API: %s\n", error.message);
+    return EXIT_FAILURE;
+}
 // end-stable-api-options
