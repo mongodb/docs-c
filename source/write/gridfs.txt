@@ -272,25 +272,17 @@ create a download stream.
 
 This example uses a download stream to perform the following actions:
 
-- Selects a GridFS file with the specified ``_id`` value and opens it as a readable stream 
+- Calls the ``mongoc_gridfs_bucket_open_download_stream()`` function to select
+  a GridFS file with the specified ``_id`` value and opens it as a readable stream 
 - Calls the ``mongoc_stream_read()`` function to read the contents of the file
-- Prints the file contents
-- Calls the ``mongoc_stream_close()`` function to close the download stream
-  pointing to the file
+- Calls the ``mongoc_stream_close()`` and ``mongoc_stream_destroy()`` functions to
+  close and destroy the download stream pointing to the file
 
-.. io-code-block::
-   :copyable:
-
-   .. input:: /includes/write/gridfs.c
-      :start-after: start-open-download-stream
-      :end-before: end-open-download-stream
-      :language: c
-      :dedent:
-
-   .. output::
-      :visible: false
-
-      "Data to store"
+.. literalinclude:: /includes/write/gridfs.c
+   :language: c
+   :dedent:
+   :start-after: start-open-download-stream
+   :end-before: end-open-download-stream
 
 .. note::
 
@@ -310,6 +302,8 @@ This example performs the following actions:
   located at ``/path/to/output_file`` as a stream in read and write (``O_RDWR``) mode
 - Downloads a GridFS file that has the specified ``_id`` value
   to the stream
+- Calls the ``mongoc_stream_close()`` and ``mongoc_stream_destroy()`` functions to
+  close and destroy the file stream 
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -347,11 +341,11 @@ API Documentation
 To learn more about using the {+driver-short+} to store and retrieve large files,
 see the following API documentation:
 
-- `mongoc_gridfs_bucket_new() <{+api-libmongoc}/mongoc_gridfs_bucket_new.html>`__
-- `mongoc_gridfs_bucket_open_upload_stream() <{+api-libmongoc}/mongoc_gridfs_bucket_open_upload_stream.html>`__
-- `mongoc_gridfs_bucket_upload_from_stream() <{+api-libmongoc}/mongoc_gridfs_bucket_upload_from_stream.html>`__
-- `mongoc_gridfs_bucket_find() <{+api-libmongoc}/mongoc_gridfs_bucket_find.html>`__
-- `mongoc_gridfs_bucket_open_download_stream() <{+api-libmongoc}/mongoc_gridfs_bucket_open_download_stream.html>`__
-- `mongoc_gridfs_bucket_download_to_stream() <{+api-libmongoc}/mongoc_gridfs_bucket_download_to_stream.html>`__
-- `mongoc_gridfs_file_set_metadata() <{+api-libmongoc}/mongoc_gridfs_file_set_metadata.html>`__
-- `mongoc_gridfs_bucket_delete_by_id() <{+api-libmongoc}/mongoc_gridfs_bucket_delete_by_id.html>`__
+- `mongoc_gridfs_bucket_new() <{+api-libmongoc+}/mongoc_gridfs_bucket_new.html>`__
+- `mongoc_gridfs_bucket_open_upload_stream() <{+api-libmongoc+}/mongoc_gridfs_bucket_open_upload_stream.html>`__
+- `mongoc_gridfs_bucket_upload_from_stream() <{+api-libmongoc+}/mongoc_gridfs_bucket_upload_from_stream.html>`__
+- `mongoc_gridfs_bucket_find() <{+api-libmongoc+}/mongoc_gridfs_bucket_find.html>`__
+- `mongoc_gridfs_bucket_open_download_stream() <{+api-libmongoc+}/mongoc_gridfs_bucket_open_download_stream.html>`__
+- `mongoc_gridfs_bucket_download_to_stream() <{+api-libmongoc+}/mongoc_gridfs_bucket_download_to_stream.html>`__
+- `mongoc_gridfs_file_set_metadata() <{+api-libmongoc+}/mongoc_gridfs_file_set_metadata.html>`__
+- `mongoc_gridfs_bucket_delete_by_id() <{+api-libmongoc+}/mongoc_gridfs_bucket_delete_by_id.html>`__
