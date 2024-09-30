@@ -46,7 +46,6 @@ main (void)
         bson_t *filter = BCON_NEW ("name", "{", "$regex", BCON_UTF8 ("Mongo"), "}");
         bson_error_t error;
         bson_t opts;
-
         bson_init(&opts);
         BCON_APPEND (&opts, "comment", BCON_UTF8 ("Deleting Mongo restaurants"));
 
