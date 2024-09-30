@@ -210,6 +210,7 @@ When compiled against the Windows native libraries, the ``ca_dir`` option of a `
 and will issue an error if used.
 
 Encrypted PEM files, set by using the ``tlsCertificateKeyPassword`` URI option, are also not supported and will result in error when
+attempting to load them.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by one or more authorities provided.
 When no ``tlsCAFile`` is set, the driver will look up the Certificate Authority using the ``System Local Machine Root``
