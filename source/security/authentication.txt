@@ -252,5 +252,5 @@ API Documentation
 To learn more about authenticating your application in the {+driver-short+},
 see the following API documentation:
 
-- `mongoc_client_t <{+api-libmongo-c+}/mongoc_client_t.html>`__
-- `mongoc_uri_t <{+api-libmongo-c+}/mongoc_uri_t.html>`__
+- `mongoc_client_t <{+api-libmongoc+}/mongoc_client_t.html>`__
+- `mongoc_uri_t <{+api-libmongoc+}/mongoc_uri_t.html>`__
