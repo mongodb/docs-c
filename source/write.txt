@@ -12,3 +12,4 @@ Write Data to MongoDB
    /write/replace
    /write/update
    /write/delete
+   /write/transactions
