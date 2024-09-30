@@ -59,6 +59,8 @@ The ``mongoc_collection_replace_one()`` function requires the following paramete
 - Replacement document: Specifies the fields and values to insert into the new 
   document.
 
+- Options document: Specifies options to customize the operation, or ``NULL``.
+
 - Results location: Specifies a pointer to overwritable storage that will contain
   operation results, or ``NULL``.
 
