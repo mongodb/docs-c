@@ -65,8 +65,8 @@ version. If you need to run commands using more than one version of the
 Configure the {+stable-api+}
 ------------------------
 
-The following table describes the parameters of the ``ServerApi`` class. You can use these
-parameters to customize the behavior of the {+stable-api+}.
+The following table describes the options of the ``ServerApi`` class. You can use these
+options to customize the behavior of the {+stable-api+}.
 
 .. list-table::
    :header-rows: 1
@@ -88,7 +88,7 @@ parameters to customize the behavior of the {+stable-api+}.
        |
        | Default: **false**
 
-The following code example shows how you can use these parameters when constructing a 
+The following code example shows how you can set both options to ``true`` when constructing a 
 ``ServerApi`` object:
 
 .. literalinclude:: /includes/connect/stable-api.c
