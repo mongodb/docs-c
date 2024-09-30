@@ -7,7 +7,7 @@ Atlas Search Indexes
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 1
+   :depth: 2
    :class: singlecol
 
 .. facet::
@@ -67,7 +67,7 @@ List Search Indexes
 -------------------
 
 You can use the
-```mongoc_collection_aggregate()`` function to return all Atlas Search indexes in a
+``mongoc_collection_aggregate()`` function to return all Atlas Search indexes in a
 collection by using the ``$listSearchIndexes`` aggregation stage.
 
 The following code example shows how to print a list of the search indexes in
