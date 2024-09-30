@@ -23,7 +23,7 @@ Overview
 In this guide, you can learn how to store and retrieve large files in
 MongoDB by using **GridFS**. GridFS is a specification implemented by 
 the {+driver-short+} that describes how to split files into chunks when storing them
-and reassemble them when retrieving them. The library's implementation of
+and reassemble them when retrieving them. The driver's implementation of
 GridFS is an abstraction that manages the operations and organization of
 the file storage. 
 
@@ -43,17 +43,17 @@ defined in the GridFS specification:
 - The ``chunks`` collection stores the binary file chunks.
 - The ``files`` collection stores the file metadata.
 
-When you create a new GridFS bucket, the library creates the preceding 
+When you create a new GridFS bucket, the driver creates the preceding 
 collections, prefixed with the default bucket name ``fs``, unless
-you specify a different name. The library also creates an index on each
+you specify a different name. The driver also creates an index on each
 collection to ensure efficient retrieval of the files and related
-metadata. The library creates the GridFS bucket, if it doesn't exist, only when the first write
-operation is performed. The library creates indexes only if they don't exist and when the
+metadata. The driver creates the GridFS bucket, if it doesn't exist, only when the first write
+operation is performed. The driver creates indexes only if they don't exist and when the
 bucket is empty. For more information about
 GridFS indexes, see :manual:`GridFS Indexes </core/gridfs/#gridfs-indexes>`
 in the {+mdb-server+} manual.
 
-When using GridFS to store files, the library splits the files into smaller
+When using GridFS to store files, the driver splits the files into smaller
 chunks, each represented by a separate document in the ``chunks`` collection.
 It also creates a document in the ``files`` collection that contains
 a file ID, file name, and other file metadata. You can upload the file by passing
@@ -319,37 +319,12 @@ This example performs the following actions:
    :start-after: start-download-to-stream
    :end-before: end-download-to-stream
 
-.. _gridfs-rename-files:
-
-Rename Files
-------------
-
-Use the ``mongoc_gridfs_file_set_metadata()`` function to update the name of
-a GridFS file in your bucket. You must specify the file to rename by its
-``_id`` field rather than its file name. 
-
-The following example shows how to update the ``filename`` field to
-``'new_file_name'`` by referencing a document's ``_id`` field:
-
-.. literalinclude:: /includes/write/gridfs.c
-   :language: c
-   :dedent:
-   :start-after: start-rename-files
-   :end-before: end-rename-files
-
-.. note:: File Revisions
-
-   The ``rename()`` function supports updating the name of only one file at
-   a time. If you want to rename each file revision, or files with different upload
-   times that share the same file name, collect the ``_id`` values of each revision.
-   Then, pass each value in separate calls to the ``rename()`` function.
-
 .. _gridfs-delete-files:
 
 Delete Files
 ------------
 
-Use the ``mongoc_gridfs_bucket_delete_by_id`` function to remove a file's collection
+Use the ``mongoc_gridfs_bucket_delete_by_id()`` function to remove a file's collection
 document and associated chunks from your bucket. This effectively deletes the file.
 
 The following example shows you how to delete a file by referencing its ``_id`` field:

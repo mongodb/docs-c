@@ -1,77 +1,143 @@
-?php
-require 'vendor/autoload.php';
+#include <stdio.h>
+#include <bson/bson.h>
+#include <mongoc/mongoc.h>
 
-use MongoDB\Client;
-use MongoDB\BSON\ObjectId;
+int
+main (void)
+{
+    mongoc_client_t *client;
+    mongoc_collection_t *collection;
+    mongoc_init ();
 
-$uri = getenv('MONGODB_URI') ?: throw new RuntimeException('Set the MONGODB_URI variable to your Atlas URI that connects to the sample dataset');
-$client = new Client($uri);
+    client = mongoc_client_new ("<connection string URI>");
+    
+    {
+        // Creates a GridFS bucket
+        // start-create-bucket
+        mongoc_database_t *db = mongoc_client_get_database (client, "db");
 
-// Creates a GridFS bucket or references an existing one
-// start-create-bucket
-$bucket = $client->db->selectGridFSBucket();
-// end-create-bucket
+        bson_error_t error;
+        if (!mongoc_gridfs_bucket_new (db, NULL, NULL, &error)) {
+            fprintf (stderr, "Failed to create bucket: %s\n", error.message);
+        }
+        // end-create-bucket
+    }
 
-// Creates or references a GridFS bucket with a custom name
-// start-create-custom-bucket
-$custom_bucket = $client->db->selectGridFSBucket(
-    ['bucketName' => 'myCustomBucket']
-);
-// end-create-custom-bucket
+    {
+        // Creates a GridFS bucket and specifies a custom name
+        // start-create-custom-bucket
+        mongoc_database_t *db = mongoc_client_get_database (client, "db");
+        bson_t opts;
+        bson_init(&opts);
+        BSON_APPEND_UTF8 (opts, "bucketName", "myCustomBucket");
 
-// Uploads a file called "my_file" to the GridFS bucket and writes data to it
-// start-open-upload-stream
-$stream = $bucket->openUploadStream('my_file', [
-    'metadata' => ['contentType' => 'text/plain']
-]);
-fwrite($stream, 'Data to store');
-fclose($stream);
-// end-open-upload-stream
+        bson_error_t error;
+        if (!mongoc_gridfs_bucket_new (db, &opts, NULL, &error)) {
+            fprintf (stderr, "Failed to create bucket: %s\n", error.message);
+        }
+        // end-create-custom-bucket
+    }
 
-// Uploads data to a stream, then writes the stream to a GridFS file
-// start-upload-from-stream
-$file = fopen('/path/to/input_file', 'rb');
-$bucket->uploadFromStream('new_file', $file);
-// end-upload-from-stream
+    {
+        // Opens an upload stream for a given file name
+        // start-open-upload-stream
+        bson_error_t error;
+        if (!mongoc_gridfs_bucket_open_upload_stream (bucket, "my_file", NULL, NULL, &error)) {
+            fprintf (stderr, "Failed to create upload stream: %s\n", error.message);
+        }
+        const char *data = "Data to store";
+        mongoc_stream_write (upload_stream, data, strlen(data), -1);
 
-// Prints information about each file in the bucket
-// start-retrieve-file-info
-$files = $bucket->find();
-foreach ($files as $file_doc) {
-    echo toJSON($file_doc), PHP_EOL;
+        mongoc_stream_close (upload_stream);
+        mongoc_stream_destroy (upload_stream);
+        // end-open-upload-stream
+    }
+
+    {
+        // Uploads the contents of a stream to a GridFS file
+        // start-upload-from-stream
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/input_file", O_RDONLY, 0);
+        
+        bson_error_t error;
+        if (!mongoc_gridfs_bucket_upload_from_stream (bucket, "my-file", file_stream, NULL, NULL, &error)) {
+            fprintf (stderr, "Failed to upload file: %s\n", error.message);
+        }
+
+        mongoc_stream_close (file_stream);
+        mongoc_stream_destroy (file_stream);
+        // end-upload-from-stream
+    }
+
+    {
+        // Retrieves information about GridFS files
+        // start-retrieve-file-info
+        mongoc_cursor_t *cursor = mongoc_gridfs_bucket_find(bucket, bson_new(), NULL);
+        const bson_t *file_doc;
+
+        while (mongoc_cursor_next(cursor, &file_doc)) {
+            char *json = bson_as_json(file_doc, NULL);
+            printf("%s\n", json);
+            bson_free(json);
+        }
+        
+        mongoc_cursor_destroy (cursor);
+        // end-retrieve-file-info
+    }
+
+    {
+        // Creates a download stream for a given file ID
+        // start-open-download-stream
+        char buf[512];
+        bson_oid_t oid;
+        bson_oid_init_from_string (&oid, "123456789012345678901234");
+
+        bson_error_t error;
+        mongoc_stream_t *download_stream = mongoc_gridfs_bucket_open_download_stream (bucket, &oid, &error);
+        if (!download_stream) {
+            fprintf (stderr, "Failed to create download stream: %s\n", error.message);
+        }
+        mongoc_stream_read (stream, buf, 1, 1, 0);
+        
+        mongoc_stream_close (download_stream);
+        mongoc_stream_destroy (download_stream);
+        // end-open-download-stream
+    }
+
+    {
+        // Downloads a GridFS file to a local file
+        // start-download-to-stream
+        bson_oid_t oid;
+        bson_oid_init_from_string (&oid, "56789012345678901234567");
+
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/output_file", O_RDWR, 0);
+        bson_error_t error;
+        if (!file_stream) {
+            fprintf (stderr, "Error opening file stream: %s\n", error.message);
+        }
+
+        if (!mongoc_gridfs_bucket_download_to_stream (bucket, &oid, file_stream, &error)) {
+            fprintf (stderr, "Failed to download file: %s\n", error.message);
+        }
+        mongoc_stream_close (file_stream);
+        mongoc_stream_destroy (file_stream);
+        // end-download-to-stream
+    }
+
+    {
+        // Deletes a GridFS file
+        // start-delete-files
+        bson_error_t error;
+        bson_oid_t oid;
+        bson_oid_init_from_string (&oid, "123456789012345678901234");
+
+        if (!mongoc_gridfs_bucket_delete_by_id (bucket, &oid, &error)) {
+            fprintf (stderr, "Failed to delete file: %s\n", error.message);
+        }
+        // end-delete-files
+    }
+
+    mongoc_client_destroy (client);
+    mongoc_cleanup ();
+
+    return EXIT_SUCCESS;
 }
-// end-retrieve-file-info
-
-// Downloads the "my_file" file from the GridFS bucket and prints its contents
-// start-open-download-stream-name
-$stream = $bucket->openDownloadStreamByName('my_file');
-$contents = stream_get_contents($stream);
-echo $contents, PHP_EOL;
-fclose($stream);
-// end-open-download-stream-name
-
-// Downloads a file from the GridFS bucket by referencing its ObjectId value
-// start-download-files-id
-$stream = $bucket->openDownloadStream(new ObjectId('66e0a5487c880f844c0a32b1'));
-$contents = stream_get_contents($stream);
-fclose($stream);
-// end-download-files-id
-
-// Downloads an entire GridFS file to a download stream
-// start-download-to-stream
-$file = fopen('/path/to/output_file', 'wb');
-$bucket->downloadToStream(
-	new ObjectId('66e0a5487c880f844c0a32b1'),
-	$file,
-);
-// end-download-to-stream
-
-// Renames a file from the GridFS bucket with the specified ObjectId
-// start-rename-files
-$bucket->rename(new ObjectId('66e0a5487c880f844c0a32b1'), 'new_file_name');
-// end-rename-files
-
-// Deletes a file from the GridFS bucket with the specified ObjectId
-// start-delete-files
-$bucket->delete(new ObjectId('66e0a5487c880f844c0a32b1'));
-// end-delete-files
