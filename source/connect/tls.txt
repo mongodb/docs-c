@@ -132,7 +132,7 @@ all are set to ``false``.
 
 It is not recommended to change these defaults, since you might expose your client to the following security risks:
 
-- `Man In The Middle attacks <https://en.wikipedia.org/wiki/Man-in-the-middle_attack.`_, when
+- `Man In The Middle attacks <https://en.wikipedia.org/wiki/Man-in-the-middle_attack>`_, when
   ``tlsAllowInvalidHostnames`` is set
 - Invalid certificates, when ``tlsAllowInvalidCertificates`` is set
 - Potentially revoked certificates, when ``tlsDisableOCSPEndpointCheck`` or ``tlsDisableCertificateRevocationCheck`` are set
