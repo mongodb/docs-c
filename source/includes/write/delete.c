@@ -47,9 +47,10 @@ main (void)
         bson_error_t error;
         bson_t opts;
 
+        bson_init(&opts);
         BCON_APPEND (&opts, "comment", BCON_UTF8 ("Deleting Mongo restaurants"));
 
-        if (!mongoc_collection_delete_many_with_opts (collection, filter, &opts, NULL, &error)) {
+        if (!mongoc_collection_delete_many (collection, filter, &opts, NULL, &error)) {
             printf ("Delete error: %s\n", error.message);
         }
 
@@ -60,7 +61,6 @@ main (void)
 
     mongoc_collection_destroy (collection);
     mongoc_client_destroy (client);
-    mongoc_uri_destroy (uri);
     mongoc_cleanup ();
 
     return 0;
