@@ -65,7 +65,7 @@ Create a Time Series Collection
 
 You can create a time series collection to store time series data.  
 To create a time series collection, pass the following parameters to the 
-``mongoc_database_create_collection()`` method:
+``mongoc_database_create_collection()`` function:
 
 - The database in which to create the collection
 - The name of the new collection to create
@@ -84,7 +84,7 @@ The following example creates a time series collection named ``october2024`` in 
    :emphasize-lines: 13-19
 
 To verify that you successfully created the time series collection, run
-the ``mongoc_database_find_collections_with_opts()`` method on the
+the ``mongoc_database_find_collections_with_opts()`` function on the
 ``fall_weather`` database and print the results:
 
 .. io-code-block::
@@ -108,7 +108,7 @@ Store Time Series Data
 ----------------------
 
 You can insert data into a time series collection by using the ``mongoc_collection_insert_one()``
-or ``mongoc_collection_insert_many()`` methods and specifying the measurement, timestamp, and metadata
+or ``mongoc_collection_insert_many()`` functions and specifying the measurement, timestamp, and metadata
 in each inserted document.
 
 To learn more about inserting documents into a collection, see the :ref:`c-write-insert`
@@ -161,7 +161,7 @@ guide.
 API Documentation
 ~~~~~~~~~~~~~~~~~
 
-To learn more about the methods mentioned in this guide, see the following
+To learn more about the functions mentioned in this guide, see the following
 API documentation:
 
 - `mongoc_database_create_collection() <{+api-libmongoc+}/mongoc_database_create_collection.html#mongoc-database-create-collection>`__
