@@ -77,12 +77,18 @@ to the file.
 Create a GridFS Bucket
 ----------------------
 
-To store or retrieve files from GridFS, call the ``mongoc_client_get_gridfs()``
-method on your database. This method accesses an existing bucket or creates
-a new bucket if one does not exist.
+To store or retrieve files from GridFS, call the ``mongoc_gridfs_bucket_new()``
+function. This function creates a new ``mongoc_gridfs_bucket_t`` value and accepts the
+following parameters:
 
-The following example calls the ``selectGridFSBucket()`` method on the ``db``
-database:
+- **Database**: Specifies the database in which to create the bucket
+- **Options document**: Specifies options to customize the bucket, or ``NULL``
+- **Read preference**: Specifies the read preference to use for read operations, or ``NULL``
+  to inherit the database's read preference
+- **Error location**: Specifies a location for an error value, or ``NULL``
+
+The following example calls the ``mongoc_gridfs_bucket_new()`` function and passes
+the ``db`` database as a parameter:
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -95,9 +101,9 @@ database:
 Customize the Bucket
 ~~~~~~~~~~~~~~~~~~~~
 
-You can customize the GridFS bucket configuration by passing an array that specifies
-option values to the ``selectGridFSBucket()`` method. The following table describes
-some options you can set in the array:
+You can customize the GridFS bucket configuration by passing a BSON document that specifies
+option values to the ``mongoc_gridfs_bucket_new()`` function. The following table describes
+the options you can set in the document:
 
 .. list-table::
    :widths: 30 70
@@ -108,30 +114,25 @@ some options you can set in the array:
 
    * - ``bucketName`` 
      - | Specifies the bucket name to use as a prefix for the files and chunks collections.
-         The default value is ``'fs'``.
+         The default value is ``"fs"``.
        | **Type**: ``string``
 
    * - ``chunkSizeBytes`` 
-     - | Specifies the chunk size that GridFS splits files into. The default value is ``261120``.
-       | **Type**: ``integer``
+     - | Specifies the chunk size that GridFS splits files into. The default value is 255 kB.
+       | **Type**: ``int32``
 
    * - ``readConcern`` 
      - | Specifies the read concern to use for bucket operations. The default value is the 
          database's read concern.
-       | **Type**: ``MongoDB\Driver\ReadConcern``
-
-   * - ``readPreference`` 
-     - | Specifies the read preference to use for bucket operations. The default value is the 
-         database's read preference.
-       | **Type**: ``MongoDB\Driver\ReadPreference``
+       | **Type**: ``mongoc_read_concern_t``
 
    * - ``writeConcern`` 
      - | Specifies the write concern to use for bucket operations. The default value is the 
          database's write concern.
-       | **Type**: ``MongoDB\Driver\WriteConcern``
+       | **Type**: ``mongoc_write_concern_t``
 
 The following example creates a bucket named ``'myCustomBucket'`` by passing an
-array to ``selectGridFSBucket()`` that sets the ``bucketName`` option:
+options document to ``mongoc_gridfs_bucket_new()`` that sets the ``bucketName`` option:
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -144,11 +145,11 @@ array to ``selectGridFSBucket()`` that sets the ``bucketName`` option:
 Upload Files
 ------------
 
-You can upload files to a GridFS bucket by using the following methods:
+You can upload files to a GridFS bucket by using the following functions:
 
-- ``MongoDB\GridFS\Bucket::openUploadStream()``: Opens a new upload stream
+- ``mongoc_gridfs_bucket_open_upload_stream()``: Opens a new upload stream
   to which you can write file contents
-- ``MongoDB\GridFS\Bucket::uploadFromStream()``: Uploads the contents of
+- ``mongoc_gridfs_bucket_upload_from_stream()``: Uploads the contents of
   an existing stream to a GridFS file
 
 .. _gridfs-open-upload-stream:
@@ -156,18 +157,19 @@ You can upload files to a GridFS bucket by using the following methods:
 Write to an Upload Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``openUploadStream()`` method to create an upload stream for a given
-file name. The ``openUploadStream()`` method allows you to specify configuration
-information in an options array, which you can pass as a parameter.
+Use the ``mongoc_gridfs_bucket_open_upload_stream()`` function to create an
+upload stream for a given file name. The ``mongoc_gridfs_bucket_open_upload_stream()``
+function allows you to specify configuration information in an options document,
+which you can pass as a parameter.
 
 This example uses an upload stream to perform the following
 actions:
 
-- Opens a writable stream for a new GridFS file named ``'my_file'``
-- Sets the ``metadata`` option in an array parameter
-  to the ``openUploadStream()`` method
-- Calls the ``fwrite()`` method to write data to ``'my_file'``, which the stream points to
-- Calls the ``fclose()`` method to close the stream pointing to ``'my_file'`` 
+- Opens a writable stream for a new GridFS file named ``"my_file"``
+- Sets the ``metadata`` option in an options parameter
+- Calls the ``mongoc_stream_write()`` function to write data to ``"my_file"``, which the stream points to
+- Calls the ``mongoc_stream_close()`` and ``mongoc_stream_destroy()`` functions to
+  close and destroy the stream pointing to ``"my_file"`` 
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -178,16 +180,19 @@ actions:
 Upload an Existing Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``uploadFromStream()`` method to upload the contents of a stream to
-a new GridFS file. The ``uploadFromStream()`` method allows you to specify configuration
-information in an options array, which you can pass as a parameter.
+Use the ``mongoc_gridfs_bucket_upload_from_stream()`` function to upload the contents
+of a stream to a new GridFS file. The ``mongoc_gridfs_bucket_upload_from_stream()``
+function allows you to specify configuration information in an options document, which
+you can pass as a parameter.
 
 This example performs the following actions:
 
-- Calls the ``fopen()`` method to open a file located at ``/path/to/input_file``
-  as a stream in binary read (``rb``) mode
-- Calls the ``uploadFromStream()`` method to upload the contents of the stream
-  to a GridFS file named ``'new_file'`` 
+- Calls the ``mongoc_stream_file_new_for_path()`` function to open a file located
+  at ``/path/to/input_file`` as a stream in read only (``O_RDONLY``) mode
+- Calls the ``mongoc_gridfs_bucket_upload_from_stream()`` function to upload the
+  contents of the stream to a GridFS file named ``"new_file"`` 
+- Calls the ``mongoc_stream_close()`` and ``mongoc_stream_destroy()`` functions to
+  close and destroy the stream
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -210,16 +215,16 @@ about the file it refers to, including:
 - The upload date and time
 - A ``metadata`` document in which you can store any other information
 
-To retrieve files from a GridFS bucket, call the ``MongoDB\GridFS\Bucket::find()``
-method on the ``MongoDB\GridFS\Bucket`` instance. The method returns a ``MongoDB\Driver\Cursor``
-instance from which you can access the results. To learn more about ``Cursor`` objects in
-the {+driver-short+}, see the :ref:`<c-cursors>` guide.
+To retrieve files from a GridFS bucket, call the ``mongoc_gridfs_bucket_find()``
+function and pass your bucket as a parameter. The function returns a cursor
+from which you can access the results. To learn more about cursors in the
+{+driver-short+}, see the :ref:`<c-cursors>` guide.
 
 Example 
 ~~~~~~~
 
 The following code example shows you how to retrieve and print file metadata
-from files in a GridFS bucket. It uses a ``foreach`` loop to iterate through
+from files in a GridFS bucket. It uses a ``while`` loop to iterate through
 the returned cursor and display the contents of the files uploaded in the
 :ref:`gridfs-upload-files` examples:
 
@@ -241,49 +246,38 @@ the returned cursor and display the contents of the files uploaded in the
       { "_id" : { "$oid" : "..." }, "chunkSize" : 261120, "filename" : "new_file",
       "length" : 13, "uploadDate" : { ... }, "md5" : "6b24249b03ea3dd176c5a04f037a658c" }
 
-The ``find()`` method accepts various query specifications. You can use its
-``$options`` parameter to specify the sort order, maximum number of documents to return,
+The ``mongoc_gridfs_bucket_find()`` function accepts various query specifications. You can use its
+options parameter to specify the sort order, maximum number of documents to return,
 and the number of documents to skip before returning. To view a list of available
-options, see the `API documentation <{+api+}/method/MongoDBGridFSBucket-find/#parameters>`__.
-
-.. note::
-
-   The preceding example calls the ``toJSON()`` method to print file metadata as 
-   Extended JSON, defined in the following code:
-
-   .. literalinclude:: /includes/write/gridfs.c
-      :language: c
-      :dedent:
-      :start-after: start-to-json
-      :end-before: end-to-json
+options, see the `mongoc_collection_find_with_opts() <{+api-libmongoc+}/mongoc_collection_find_with_opts.html>`__
+API documentation.
 
 .. _gridfs-download-files:
 
 Download Files
 --------------
 
-You can download files from a GridFS bucket by using the following methods:
+You can download files from a GridFS bucket by using the following functions:
 
-- ``MongoDB\GridFS\Bucket::openDownloadStreamByName()`` or
-  ``MongoDB\GridFS\Bucket::openDownloadStream()``: Opens a new download stream
+- ``mongoc_gridfs_bucket_open_download_stream()``: Opens a new download stream
   from which you can read the file contents
-- ``MongoDB\GridFS\Bucket::downloadToStream()``: Writes the entire file to
+- ``mongoc_gridfs_bucket_download_to_stream()``: Writes the entire file to
   an existing download stream
 
 Read From a Download Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can download files from your MongoDB database by using the
-``MongoDB\GridFS\Bucket::openDownloadStreamByName()`` method to
+``MongoDB\GridFS\Bucket::openDownloadStreamByName()`` function to
 create a download stream.
 
 This example uses a download stream to perform the following actions:
 
 - Selects a GridFS file named ``'my_file'``, uploaded in the
   :ref:`gridfs-open-upload-stream` example, and opens it as a readable stream 
-- Calls the ``stream_get_contents()`` method to read the contents of ``'my_file'``
+- Calls the ``stream_get_contents()`` function to read the contents of ``"my_file"``
 - Prints the file contents
-- Calls the ``fclose()`` method to close the download stream pointing to ``'my_file'`` 
+- Calls the ``fclose()`` function to close the download stream pointing to ``"my_file"`` 
 
 .. io-code-block::
    :copyable:
@@ -306,7 +300,7 @@ This example uses a download stream to perform the following actions:
    determined by the ``uploadDate`` field).
 
 Alternatively, you can use the ``MongoDB\GridFS\Bucket::openDownloadStream()``
-method, which takes the ``_id`` field of a file as a parameter:
+function, which takes the ``_id`` field of a file as a parameter:
 
 .. literalinclude:: /includes/write/gridfs.c
    :language: c
@@ -338,7 +332,7 @@ of the revision. The revision value ``-1`` references the most recent revision a
 references the next most recent revision.
 
 You can instruct GridFS to download a specific file revision by passing an options
-array to the ``openDownloadStreamByName()`` method and specifying the ``revision``
+array to the ``openDownloadStreamByName()`` function and specifying the ``revision``
 option. The following example reads the contents of the original file named
 ``'my_file'`` rather than the most recent revision:
 
@@ -352,12 +346,12 @@ Download to an Existing Stream
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can download the contents of a GridFS file to an existing stream
-by calling the ``MongoDB\GridFS\Bucket::downloadToStream()`` method
+by calling the ``MongoDB\GridFS\Bucket::downloadToStream()`` function
 on your bucket.
 
 This example performs the following actions:
 
-- Calls the ``fopen()`` method to open a file located at ``/path/to/output_file``
+- Calls the ``fopen()`` function to open a file located at ``/path/to/output_file``
   as a stream in binary write (``wb``) mode
 - Downloads a GridFS file that has an ``_id`` value of ``ObjectId('66e0a5487c880f844c0a32b1')``
   to the stream
@@ -373,7 +367,7 @@ This example performs the following actions:
 Rename Files
 ------------
 
-Use the ``MongoDB\GridFS\Bucket::rename()`` method to update the name of
+Use the ``MongoDB\GridFS\Bucket::rename()`` function to update the name of
 a GridFS file in your bucket. You must specify the file to rename by its
 ``_id`` field rather than its file name. 
 
@@ -388,17 +382,17 @@ The following example shows how to update the ``filename`` field to
 
 .. note:: File Revisions
 
-   The ``rename()`` method supports updating the name of only one file at
+   The ``rename()`` function supports updating the name of only one file at
    a time. If you want to rename each file revision, or files with different upload
    times that share the same file name, collect the ``_id`` values of each revision.
-   Then, pass each value in separate calls to the ``rename()`` method.
+   Then, pass each value in separate calls to the ``rename()`` function.
 
 .. _gridfs-delete-files:
 
 Delete Files
 ------------
 
-Use the ``MongoDB\GridFS\Bucket::delete()`` method to remove a file's collection
+Use the ``MongoDB\GridFS\Bucket::delete()`` function to remove a file's collection
 document and associated chunks from your bucket. This effectively deletes the file.
 You must specify the file by its ``_id`` field rather than its file name.
 
@@ -412,10 +406,10 @@ The following example shows you how to delete a file by referencing its ``_id`` 
 
 .. note:: File Revisions
 
-   The ``delete()`` method supports deleting only one file at a time. If
+   The ``delete()`` function supports deleting only one file at a time. If
    you want to delete each file revision, or files with different upload
    times that share the same file name, collect the ``_id`` values of each revision.
-   Then, pass each value in separate calls to the ``delete()`` method.
+   Then, pass each value in separate calls to the ``delete()`` function.
 
 API Documentation
 -----------------
@@ -423,12 +417,12 @@ API Documentation
 To learn more about using the {+driver-short+} to store and retrieve large files,
 see the following API documentation:
 
-- :cmethod:`MongoDB\Database::selectGridFSBucket()`
-- :cmethod:`MongoDB\GridFS\Bucket::openUploadStream()`
-- :cmethod:`MongoDB\GridFS\Bucket::uploadFromStream()`
-- :cmethod:`MongoDB\GridFS\Bucket::find()`
-- :cmethod:`MongoDB\GridFS\Bucket::openDownloadStreamByName()`
-- :cmethod:`MongoDB\GridFS\Bucket::openDownloadStream()`
-- :cmethod:`MongoDB\GridFS\Bucket::downloadToStream()`
-- :cmethod:`MongoDB\GridFS\Bucket::rename()`
-- :cmethod:`MongoDB\GridFS\Bucket::delete()`
+- :cfunction:`MongoDB\Database::selectGridFSBucket()`
+- :cfunction:`MongoDB\GridFS\Bucket::openUploadStream()`
+- :cfunction:`MongoDB\GridFS\Bucket::uploadFromStream()`
+- :cfunction:`MongoDB\GridFS\Bucket::find()`
+- :cfunction:`MongoDB\GridFS\Bucket::openDownloadStreamByName()`
+- :cfunction:`MongoDB\GridFS\Bucket::openDownloadStream()`
+- :cfunction:`MongoDB\GridFS\Bucket::downloadToStream()`
+- :cfunction:`MongoDB\GridFS\Bucket::rename()`
+- :cfunction:`MongoDB\GridFS\Bucket::delete()`
