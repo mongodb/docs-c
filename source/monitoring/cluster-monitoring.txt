@@ -1,0 +1,130 @@
+.. _c-cluster-monitoring:
+
+==================
+Cluster Monitoring
+==================
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. meta::
+   :keywords: code example, server, topology
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecols
+
+Overview
+--------
+
+This guide shows you how to use the {+driver-short+} to monitor server
+discovery and monitoring (SDAM) events in a MongoDB instance, replica
+set, or sharded cluster. These events occur when there are any changes
+in the state of the MongoDB instance or cluster that you are connected
+to.
+
+You might use information about SDAM events in your application to
+understand cluster changes, assess cluster health, or perform capacity
+planning.
+
+.. _c-subscribe-sdam:
+
+Subscribe to Events
+-------------------
+
+You can access details about SDAM events by subscribing to them
+in your application. To subscribe to an event, create a value of
+type ``mongoc_apm_callbacks_t`` and create an event callback function
+for the event you want to subscribe to. Use the callback's corresponding
+setter method to set the callback on the ``mongoc_apm_callbacks_t`` and 
+pass this type to the ``mongoc_client_set_apm_callbacks()`` function.
+
+This code monitors server opening events by performing the following
+actions:
+
+- Defines a ``server_opening()`` event handler function, or callback
+- Creates a ``mongoc_apm_callbacks_t`` to store callbacks
+- Calls the ``mongoc_apm_set_server_opening_cb()`` function, which instructs
+  the ``mongoc_apm_callbacks_t`` type to store a pointer to the ``server_opening()``
+  callback
+- Calls the ``mongoc_client_set_apm_callbacks()`` function, which registers
+  the callback with the client
+
+.. literalinclude:: /includes/monitoring/sdam.c
+   :language: c
+   :copyable:
+   :linenos:
+   :emphasize-lines: 11, 31-33
+
+When you perform a database operation, the driver establishes a connection to
+the server and your subscriber records the server opening event. The code outputs
+messages that resemble the following:
+
+.. code-block:: none
+   :copyable: false
+
+   Server opening on ac-rmuag0v-shard-00-00.gh0qg50.mongodb.net:27017
+   Server opening on ac-rmuag0v-shard-00-01.gh0qg50.mongodb.net:27017
+   Server opening on ac-rmuag0v-shard-00-02.gh0qg50.mongodb.net:27017
+
+Event Descriptions
+------------------
+
+You can subscribe to SDAM events by defining the corresponding
+event callback function. The following table provides the name of
+each SDAM event, links to the class's API documentation, and describes
+when the event is published:
+
+.. list-table::
+   :widths: 35 65 
+   :header-rows: 1
+
+   * - Event Type
+     - Description
+
+   * - `mongoc_apm_server_changed_t <{+api-libmongoc+}/mongoc_apm_server_changed_t.html>`__
+     - Created when the server description changes, such as the server's
+       type changing from secondary to primary.
+
+   * - `mongoc_apm_server_opening_t <{+api-libmongoc+}/mongoc_apm_server_opening_t.html>`__
+     - Created when a new server is added to the topology. For an example application that
+       subscribes to this SDAM event, see :ref:`c-subscribe-sdam` on this page.
+
+   * - `mongoc_apm_server_closed_t <{+api-libmongoc+}/mongoc_apm_server_closed_t.html>`__
+     - Created when an existing server is removed from the topology.
+
+   * - `mongoc_apm_topology_changed_t <{+api-libmongoc+}/mongoc_apm_topology_changed_t.html>`__
+     - Created when the topology description changes, such as when there
+       is an election of a new primary.
+
+   * - `mongoc_apm_topology_changed_t <{+api-libmongoc+}/mongoc_apm_topology_changed_t.html>`__
+     - Created when the driver first connects to the cluster.
+
+   * - `mongoc_apm_topology_opening_t <{+api-libmongoc+}/mongoc_apm_topology_opening_t.html>`__
+     - Created when the driver disconnects from the cluster.
+
+   * - `mongoc_apm_server_heartbeat_started_t <{+api-libmongoc+}/mongoc_apm_server_heartbeat_started_t.html>`__
+     - Created when the server monitor sends a ``hello`` command to the server.
+       This action is called a heartbeat.
+
+   * - `mongoc_apm_server_heartbeat_succeeded_t <{+api-libmongoc+}/mongoc_apm_server_heartbeat_succeeded_t.html>`__
+     - Created when the heartbeat succeeds.
+
+   * - `mongoc_apm_server_heartbeat_failed_t <{+api-libmongoc+}/mongoc_apm_server_heartbeat_failed_t.html>`__
+     - Created when the heartbeat fails.
+
+You can find a list of the monitoring subscriber classes and event
+methods in the `Application Performance Monitoring <{+api-libmongoc+}//application-performance-monitoring.html>`__
+section of the API documentation.
+
+API Documentation
+-----------------
+
+To learn more about the functions discussed in this guide, see the
+following API documentation:
+
+- `mongoc_apm_set_server_opening_cb() <{+api-libmongoc+}/mongoc_apm_set_server_opening_cb.html>`__
+- `mongoc_client_set_apm_callbacks() <{+api-libmongoc+}/mongoc_client_set_apm_callbacks.html>`__
