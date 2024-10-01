@@ -75,7 +75,7 @@ Event Descriptions
 
 You can subscribe to SDAM events by defining the corresponding
 event callback function. The following table provides the name of
-each SDAM event, links to the class's API documentation, and describes
+each SDAM event, links to the type's API documentation, and describes
 when the event is published:
 
 .. list-table::
@@ -116,7 +116,7 @@ when the event is published:
    * - `mongoc_apm_server_heartbeat_failed_t <{+api-libmongoc+}/mongoc_apm_server_heartbeat_failed_t.html>`__
      - Created when the heartbeat fails.
 
-You can find information about each monitoring subscriber class and event
+You can find information about each monitoring subscriber type and event
 method in the `Application Performance Monitoring <{+api-libmongoc+}/application-performance-monitoring.html>`__
 section of the API documentation.
 
