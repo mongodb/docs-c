@@ -28,10 +28,6 @@ Connect to MongoDB
 ..   /connect/server-selection
 ..   /connect/stable-api
 
-.. TODO, the rest of this root page will be filled out in DOCSP-43745, after
-.. all the child pages have been created. 
-.. This page is acting as a stub for now, so that child pages can be made.
-
 Overview
 --------
 
@@ -57,7 +53,7 @@ Be sure to replace all placeholders in the code examples, such as
    :language: c
    :copyable: true
    :linenos:
-   :emphasize-lines: 15-17
+   :emphasize-lines: 12-14
 
 Connection
 ----------
@@ -125,25 +121,7 @@ Enable TLS
 
 The following tabs demonstrate how to enable TLS on a connection:
 
-.. tabs::
-
-   .. tab:: Connection String
-      :tabid: connectionstring
-
-      .. literalinclude:: /includes/connect/tls.c
-         :language: c
-         :start-after: start-connect-str
-         :end-before: end-connect-str
-         :dedent:
-
-   .. tab:: MongoC URI Options
-      :tabid: mongocurioptions
-
-      .. literalinclude:: /includes/connect/tls.c
-         :language: c
-         :start-after: start-connect-uri-opt
-         :end-before: end-connect-uri-opt
-         :dedent:
+.. include:: /includes/connect/tls-tabs.rst
 
 .. TODO, uncomment once TLS page is merged
 .. To learn more about enabling TLS, see :ref:`c-enable-tls` in
@@ -215,10 +193,13 @@ The following code shows how to specify Stable API settings within a
 
 .. code-block:: c 
 
+   bson_error_t error;
+
    client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname:port>/?<options>");
 
    // Set the version of the Stable API on the client
    mongoc_server_api_t *api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
+   mongoc_client_set_server_api(client, api, &error)
 
    // Do database work here
 

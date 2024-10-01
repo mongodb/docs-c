@@ -4,16 +4,16 @@
 int main(void) {
 
   mongoc_database_t *database
-	bson_t *ping, reply;
-	bson_error_t error;
+  bson_t *ping, reply;
+  bson_error_t error;
 
-	mongoc_init();
+  mongoc_init();
 
   // Start example code here
 
   // End example code here
 
-	database = mongoc_client_get_database (client, "admin");
+  database = mongoc_client_get_database (client, "admin");
     
   ping = BCON_NEW ("ping", BCON_INT32 (1));
    
@@ -27,6 +27,5 @@ int main(void) {
     bson_destroy (&reply);
     bson_destroy (ping);
     mongoc_database_destroy (database);
-    mongoc_client_destroy (client);
     mongoc_cleanup ();
 }
