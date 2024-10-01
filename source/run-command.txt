@@ -141,8 +141,7 @@ the ``distinct`` command with the ``collation`` and ``readConcern`` options.
 .. literalinclude:: /includes/usage-examples/run-command.c
     :language: c
     :dedent:
-    :linenos:
-    :emphasize-lines: 95-98,100-103,128,131-133,135-138
+    :emphasize-lines: 95-98, 100, 112, 128, 131-133, 135-138
     :start-after: start-run-command-example
     :end-before: end-run-command-example
 
