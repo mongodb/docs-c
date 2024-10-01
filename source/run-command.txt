@@ -130,7 +130,7 @@ every response contains documents with the following fields:
 - **<command result>:** Provides fields specific to the database command. For
   example, ``count`` returns the ``n`` field and ``explain`` returns the
   ``queryPlanner`` field.
-- ``**ok:**`` Indicates whether the command succeeded (``1``) or failed (``0``).
+- ``ok``: Indicates whether the command succeeded (``1``) or failed (``0``).
 
 Example
 -------
