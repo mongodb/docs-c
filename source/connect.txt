@@ -100,7 +100,7 @@ replica set:
 
 .. code-block:: c
    
-   char *uri = "mongodb+srv://<replica-set-member>:<port>/?replicaSet=<replica_set_name>";
+   char *uri = "mongodb+srv://<replica-set-member>/?replicaSet=<replica_set_name>";
    mongoc_client_t *client = mongoc_client_new (uri);
 
    // Do database work here
