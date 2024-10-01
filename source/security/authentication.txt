@@ -20,7 +20,7 @@ Overview
 --------
 
 This guide describes the mechanisms you can use in the {+driver-short+} to authenticate
-users.
+users to MongoDB.
 
 .. important:: Percent-Encoding
 
@@ -36,7 +36,7 @@ SCRAM-SHA-256, as defined by `RFC 7677 <https://www.rfc-editor.org/rfc/rfc7677>`
 is the default authentication mechanism on MongoDB deployments
 running MongoDB v4.0 or later.
 
-To authenticate with this mechanism, set the following connection options:
+To authenticate by using SCRAM-SHA-256, set the following connection options:
 
 - ``username``: The username to authenticate. Percent-encode this value before including
   it in the connection URI.
@@ -44,7 +44,8 @@ To authenticate with this mechanism, set the following connection options:
   it in the connection URI.
 - ``authSource``: The MongoDB database to authenticate against. By default,
   the {+driver-short+} authenticates against the database in the connection
-  URI, if you include one. If you don't, it authenticates against the ``admin`` database.
+  URI, if you include one. If you don't specify an authentication database, it
+  authenticates against the ``admin`` database.
 - ``authMechanism``: Set to ``SCRAM-SHA-256``.
 
 You can set these options by using parameters in your connection string, as shown
