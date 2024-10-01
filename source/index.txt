@@ -12,6 +12,7 @@
    /read
    /indexes
    /aggregation
+   /read-write-configuration
    /whats-new
    /compatibility
    /upgrade
@@ -74,6 +75,12 @@ Transform Your Data with Aggregation
 
 Learn how to use the {+driver-short+} to perform aggregation operations in the
 :ref:`c-aggregation` section.
+
+Configure Operations on Replica Sets
+------------------------------------
+
+Learn how to configure read and write operations on a replica set in the
+:ref:`c-read-write-config` section.
 
 .. TODO:
 .. FAQ
