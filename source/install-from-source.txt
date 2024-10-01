@@ -27,8 +27,8 @@ the value into that step.
 .. seealso::
 
   Before building, you may want to check that you are running on a supported
-  platform. For the list of supported platforms, refer to the
-  :ref:`platform-support` page.
+  platform. For the list of supported platforms, refer to :ref:`platform-support`
+  on the Compatibility page.
 
 
 Choose a Version
@@ -314,14 +314,6 @@ directory.
   The ``--config`` option is only used for Multi-Config generators (i.e. Visual Studio)
   and is otherwise ignored. The value given for ``--config`` must be the same as was given for
   ``--config`` with ``cmake --build``.
-
-.. seealso::
-
-   The above snippet simply installs ``mongo-c-driver`` in a subdirectory of the
-   source directory itself, but this is not a normal workflow. Once you feel
-   compfortable about configuring and building ``mongo-c-driver``, the page
-   :ref:`how-to-install` will do a deeper dive on from-source
-   installation options.
 
 
 Configuring with libmongoc
