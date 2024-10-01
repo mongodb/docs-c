@@ -139,7 +139,7 @@ banking transaction. The code performs the following actions:
 #. Records a receipt of the transaction with a timestamp.
 #. Prints a message if the transaction committed successfully.
 
-.. literalinclude:: /includes/write/transaction.c
+.. literalinclude:: /includes/write/transactions.c
    :start-after: start-callback
    :end-before: end-callback
    :language: c
