@@ -117,7 +117,7 @@ when the event is published:
      - Created when the heartbeat fails.
 
 You can find information about each monitoring subscriber class and event
-method in the `Application Performance Monitoring <{+api-libmongoc+}//application-performance-monitoring.html>`__
+method in the `Application Performance Monitoring <{+api-libmongoc+}/application-performance-monitoring.html>`__
 section of the API documentation.
 
 API Documentation
