@@ -130,7 +130,6 @@ main (int argc, char *argv[])
         /* Adds a read concern to "opts" */
         read_concern = mongoc_read_concern_new ();
         mongoc_read_concern_set_level (read_concern, MONGOC_READ_CONCERN_LEVEL_MAJORITY);
-
         mongoc_read_concern_append (read_concern, opts);
 
         if (mongoc_client_read_command_with_opts (client, "test", cmd, read_prefs, opts, &reply, &error)) {

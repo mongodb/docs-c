@@ -26,10 +26,10 @@ In this guide, you can learn how to run a database command with the
 administrative and diagnostic tasks, such as fetching server statistics,
 initializing a replica set, or running an aggregation pipeline.
 
-.. important:: Prefer Driver Methods to Database Commands
+.. important:: Prefer Driver Functions to Database Commands
 
-   The driver provides wrapper methods for many database commands. We recommend
-   using driver methods instead of executing database commands when possible.
+   The driver provides wrapper functions for many database commands. We recommend
+   using driver functions instead of executing database commands when possible.
    
    To perform administrative tasks, use the :mongosh:`MongoDB Shell </>` instead
    of the {+driver-short+}. Calling the ``db.runCommand()`` method inside the
@@ -41,18 +41,19 @@ Execute a Command
 
 To run a database command, you must specify the command and any relevant
 parameters in a BSON document, then pass this BSON document to a command
-execution method. The {+driver-short+} provides the following methods to run
+execution function. The {+driver-short+} provides the following functions to run
 database commands:
 
-- ``mongoc_client_command_simple()``, which returns the first document from the
-  result cursor into ``reply``. This method is a simplified interface that sends
-  a raw command to the server.
-- ``mongoc_client_command_with_opts()``, which runs a command on the server and
-  interprets ``opts`` according to this MongoDB server version. This method
-  offers flexibiilty by allowing additional options.
+- ``mongoc_client_command_simple()``, which runs a specified command on the
+  server and stores the first document from the result in the ``reply`` BSON
+  document. This function provides a simplified way to send a command directly
+  to the server
+- ``mongoc_client_command_with_opts()``, which runs a specified command on the
+  server and interprets ``opts`` according to the MongoDB server version. This
+  function offers flexibiilty by allowing additional options.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
-method to run the ``hello`` command, which returns information about the current
+function to run the ``hello`` command, which returns information about the current
 member's role in the replica set, on a database:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -68,13 +69,10 @@ Command Options
 ---------------
 
 You can specify optional command behavior for the
-``mongoc_client_command_with_opts()`` method.
+``mongoc_client_command_with_opts()`` function. This function accepts a BSON
+document for the ``opts`` parameter.
 
-The ``mongoc_client_command_with_opts()`` method accepts a BSON document for the
-``opts`` parameter. This can include command options such as read concerns,
-write concerns, and session options. 
-
-You can pass a BSON document with the following options:
+You can pass a BSON document that specifies the following options:
 
 - ``readConcern``
 - ``writeConcern``
@@ -86,7 +84,7 @@ To learn more about a command and the options that it accepts, locate the
 command and follow the link in the :manual:`Database Commands
 </reference/command/>` section of the Server manual.
 
-The following code shows you how to specify a ``grantRolesToUsers`` command with a
+The following code shows how to specify a ``grantRolesToUsers`` command with a
 ``majority`` write concern:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -98,16 +96,16 @@ The following code shows you how to specify a ``grantRolesToUsers`` command with
 .. note:: Read Preference
 
    The ``mongoc_client_command_simple()`` and
-   ``mongoc_client_command_with_opts()`` methods ignore the read preference
-   setting you may have set on your ``Db`` object. By default, these methods use
+   ``mongoc_client_command_with_opts()`` functions ignore the read preference
+   setting you might have set on your database. By default, these functions use
    the ``primary`` read preference.
 
-   To specify a read preference other than the primary read preference, you need
-   to explicity pass it as an argument. The following code demonstrates how to
+   To specify a read preference other than the primary read preference, you must
+   explicity pass it as an argument. The following code demonstrates how to
    specify a read preference and use it with the
-   ``mongoc_client_command_simple()`` method:
+   ``mongoc_client_command_simple()`` function:
 
-   .. code-block:: C
+   .. code-block:: c
 
       read_prefs = mongoc_read_prefs_new(MONGOC_READ_SECONDARY);
 
@@ -122,12 +120,12 @@ The following code shows you how to specify a ``grantRolesToUsers`` command with
 Response
 --------
 
-Each method returns either a BSON document or a cursor containing the response
+Each function returns either a BSON document or a cursor containing the response
 from the database after the command runs. Each database command performs a
 different function, so the response content can vary across commands. However,
 every response contains documents with the following fields:
 
-- **<command result>:** Provides fields specific to the database command. For
+- ``<command result>``: Provides fields specific to the database command. For
   example, ``count`` returns the ``n`` field and ``explain`` returns the
   ``queryPlanner`` field.
 - ``ok``: Indicates whether the command succeeded (``1``) or failed (``0``).
@@ -136,7 +134,7 @@ Example
 -------
 
 The following code shows how you can use the
-``mongoc_client_command_with_opts()`` method to run the
+``mongoc_client_command_with_opts()`` function to run the
 ``cloneCollectionAsCapped`` command with the ``writeConcern`` option, then run
 the ``distinct`` command with the ``collation`` and ``readConcern`` options.
 
@@ -145,6 +143,7 @@ the ``distinct`` command with the ``collation`` and ``readConcern`` options.
     :dedent:
     :start-after: start-run-command-example
     :end-before: end-run-command-example
+    :emphasize-lines: 95-98, 100-103, 128, 131-133, 135-138
 
 Output
 ~~~~~~
