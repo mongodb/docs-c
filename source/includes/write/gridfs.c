@@ -13,7 +13,7 @@ main (void)
     {
         // Creates a GridFS bucket
         // start-create-bucket
-        mongoc_database_t *db = mongoc_client_get_database (client, "db-gridfs");
+        mongoc_database_t *db = mongoc_client_get_database (client, "db");
 
         bson_error_t error;
         if (!mongoc_gridfs_bucket_new (db, NULL, NULL, &error)) {
@@ -25,7 +25,7 @@ main (void)
     {
         // Creates a GridFS bucket and specifies a custom name
         // start-create-custom-bucket
-        mongoc_database_t *db = mongoc_client_get_database (client, "db-gridfs");
+        mongoc_database_t *db = mongoc_client_get_database (client, "db");
         bson_t opts;
         bson_init(&opts);
         BSON_APPEND_UTF8 (&opts, "bucketName", "myCustomBucket");
@@ -56,7 +56,7 @@ main (void)
     {
         // Uploads the contents of a stream to a GridFS file
         // start-upload-from-stream
-        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("test.txt", O_RDONLY, 0);
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/input_file", O_RDONLY, 0);
         
         bson_error_t error;
         if (!mongoc_gridfs_bucket_upload_from_stream (bucket, "new_file", file_stream, NULL, NULL, &error)) {
@@ -109,7 +109,7 @@ main (void)
     {
         // Downloads a GridFS file to a local file
         // start-download-to-stream
-        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("test.txt", O_RDWR, 0);
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/output_file", O_RDWR, 0);
         bson_error_t error;
         if (!file_stream) {
             fprintf (stderr, "Error opening file stream: %s\n", error.message);
