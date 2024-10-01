@@ -9,6 +9,7 @@
    Get Started </get-started>
    /connect
    /databases-collections
+   /run-command
    /read
    /indexes
    /aggregation
