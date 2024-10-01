@@ -46,10 +46,15 @@ main (int argc, char *argv[])
         bson_error_t error;
         bool retval;
 
+        command = BCON_NEW(
+            "grantRolesToUser", BCON_UTF8("user011"),
+            "roles", "[", BCON_UTF8("readWrite"), "]"
+        );
+
         opts = BCON_NEW(
-        "writeConcern", "{",
-            "w", BCON_UTF8("majority"),
-        "}"
+            "writeConcern", "{",
+                "w", BCON_UTF8("majority"),
+            "}"
         );
 
         retval = mongoc_client_command_with_opts(client, "admin", command, opts, &reply, &error);

@@ -40,14 +40,16 @@ Execute a Command
 -----------------
 
 To run a database command, you must specify the command and any relevant
-parameters in a document, then pass this document to a command execution method.
-The {+driver-short} provides the following methods to run database commands:
+parameters in a BSON document, then pass this BSON document to a command
+execution method. The {+driver-short+} provides the following methods to run
+database commands:
 
 - ``mongoc_client_command_simple()``, which returns the first document from the
   result cursor into ``reply``. This method is a simplified interface that sends
   a raw command to the server.
 - ``mongoc_client_command_with_opts()``, which runs a command on the server and
-  interprets ``opts`` according to this MongoDB server version.
+  interprets ``opts`` according to this MongoDB server version. This method
+  offers flexibiilty by allowing additional options.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
 method to run the ``hello`` command, which returns information about the current
@@ -84,7 +86,7 @@ To learn more about a command and the options that it accepts, locate the
 command and follow the link in the :manual:`Database Commands
 </reference/command/>` section of the Server manual.
 
-The following code shows you how to specify a ``grantRolesToUs`` command with a
+The following code shows you how to specify a ``grantRolesToUsers`` command with a
 ``majority`` write concern:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -107,12 +109,12 @@ The following code shows you how to specify a ``grantRolesToUs`` command with a
 
    .. code-block:: C
 
-      read_prefs_t = mongoc_read_prefs_new(MONGOC_READ_SECONDARY);
+      read_prefs = mongoc_read_prefs_new(MONGOC_READ_SECONDARY);
 
       command = BCON_NEW("hello", BCON_INT32(1));
 
       retval = mongoc_client_command_simple(client, "admin", command,
-      read_prefs, NULL, reply, &error);
+      read_prefs, NULL, &reply, &error);
   
    For more information on read preference options, see :manual:`Read Preference
    </core/read-preference/>` in the Server manual.
@@ -128,7 +130,7 @@ every response contains documents with the following fields:
 - **<command result>:** Provides fields specific to the database command. For
   example, ``count`` returns the ``n`` field and ``explain`` returns the
   ``queryPlanner`` field.
-- **``ok``:** Indicates whether the command succeeded (``1``) or failed (``0``).
+- ``**ok:**`` Indicates whether the command succeeded (``1``) or failed (``0``).
 
 Example
 -------
