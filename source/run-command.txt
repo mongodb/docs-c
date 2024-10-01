@@ -47,7 +47,7 @@ database commands:
 - ``mongoc_client_command_simple()``, which runs a specified command on the
   server and stores the first document from the result in the ``reply`` BSON
   document. This function provides a simplified way to send a command directly
-  to the server
+  to the server.
 - ``mongoc_client_command_with_opts()``, which runs a specified command on the
   server and interprets ``opts`` according to the MongoDB server version. This
   function offers flexibiilty by allowing additional options.
@@ -141,9 +141,9 @@ the ``distinct`` command with the ``collation`` and ``readConcern`` options.
 .. literalinclude:: /includes/usage-examples/run-command.c
     :language: c
     :dedent:
+    :emphasize-lines: 95-98,100-103,128,131-133,135-138
     :start-after: start-run-command-example
     :end-before: end-run-command-example
-    :emphasize-lines: 95-98, 100-103, 128, 131-133, 135-138
 
 Output
 ~~~~~~
