@@ -12,6 +12,7 @@
    /read
    /indexes
    /aggregation
+   /install-from-source
    /whats-new
    /compatibility
    /upgrade
@@ -34,12 +35,11 @@ Get Started
 Learn how to install the driver, establish a connection to MongoDB, and begin
 working with data in the :ref:`c-get-started` tutorial.
 
-.. TODO
-.. Connect to MongoDB
-.. ------------------
+Connect to MongoDB
+------------------
 
-.. Learn how to create and configure a connection to a MongoDB deployment
-.. in the :ref:`c-connect` section.
+Learn how to create and configure a connection to a MongoDB deployment
+in the :ref:`c-connect` section.
 
 Databases and Collections
 -------------------------
@@ -52,11 +52,10 @@ What's New
 For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
 section.
 
-.. TODO
-.. Write Data to MongoDB
-.. ---------------------
+Write Data to MongoDB
+---------------------
 
-.. Learn how you can write data to MongoDB in the :ref:`c-write` section.
+Learn how you can write data to MongoDB in the :ref:`c-write` section.
 
 Read Data from MongoDB
 ----------------------
@@ -74,6 +73,12 @@ Transform Your Data with Aggregation
 
 Learn how to use the {+driver-short+} to perform aggregation operations in the
 :ref:`c-aggregation` section.
+
+Install From Source
+-------------------
+
+Learn how to build the ``libmongoc`` and ``libbson`` libraries from their source
+code in the :ref:`c-install-from-source` section.
 
 .. TODO:
 .. FAQ
@@ -97,9 +102,8 @@ Learn how to use the {+driver-short+} to perform aggregation operations in the
 .. Learn how to report bugs, contribute to the driver, and find more resources for
 .. asking questions and receiving help in the :ref:`Issues & Help <c-issues-and-help>` section.
 
-
 Compatibility
-------------
+-------------
 
 To learn about the versions of the {+mdb-server+} and the C language that are compatible with 
 each version of the {+driver-short+}, see the :ref:`Compatibility <c-compatibility>` section.

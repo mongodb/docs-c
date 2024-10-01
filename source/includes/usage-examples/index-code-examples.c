@@ -1,20 +1,16 @@
+#include <stdio.h>
 #include <bson/bson.h>
 #include <mongoc/mongoc.h>
-#include <stdio.h>
 
 int
-main (int argc, char *argv[])
+main (void)
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
-    bson_error_t error;
-
     mongoc_init ();
 
-    client =
-        mongoc_client_new ("<connection string URI>");
-    collection =
-        mongoc_client_get_collection (client, "sample_mflix", "movies");
+    client = mongoc_client_new ("<connection string URI>");
+    collection = mongoc_client_get_collection (client, "sample_mflix", "movies");
 
     // Start example code here
     {

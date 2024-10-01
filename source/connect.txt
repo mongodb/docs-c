@@ -1,4 +1,4 @@
-.. _c-sync-connect:
+.. _c-connect:
 
 ==================
 Connect to MongoDB
