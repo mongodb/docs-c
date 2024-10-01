@@ -6,7 +6,6 @@ typedef struct {
    int server_opening_events;
 } stats_t;
 
-
 static void
 server_opening (const mongoc_apm_server_opening_t *event)
 {

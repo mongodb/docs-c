@@ -46,7 +46,7 @@ This code monitors server opening events by performing the following
 actions:
 
 - Defines a ``server_opening()`` event handler function, or callback
-- Creates a ``mongoc_apm_callbacks_t`` to store callbacks
+- Creates a ``mongoc_apm_callbacks_t`` structure to store callbacks
 - Calls the ``mongoc_apm_set_server_opening_cb()`` function, which instructs
   the ``mongoc_apm_callbacks_t`` type to store a pointer to the ``server_opening()``
   callback
@@ -57,7 +57,7 @@ actions:
    :language: c
    :copyable:
    :linenos:
-   :emphasize-lines: 11, 31-33
+   :emphasize-lines: 10, 30-32
 
 When you perform a database operation, the driver establishes a new connection to
 the server and your subscriber records the server opening event. The code outputs
