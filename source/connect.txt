@@ -116,6 +116,7 @@ Transport Layer Security (TLS)
 
 The following sections describe how to connect to MongoDB
 while enabling the TLS protocol. 
+
 .. To learn more about using TLS with the {+driver-short+},
 .. see :ref:`c-tls`.
 
@@ -212,10 +213,16 @@ selection function:
 The following code shows how to specify Stable API settings within a
 ``mongoc_client_t`` instance:
 
-.. literalinclude:: /includes/connect/connection-targets.c
-   :language: c
-   :start-after: start-connect-stable-api
-   :end-before: end-connect-stable-api
-   :dedent:
+.. code-block:: c 
+
+   client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname:port>/?<options>");
+
+   // Set the version of the Stable API on the client
+   mongoc_server_api_t *api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
+
+   // Do database work here
+
+   mongoc_server_api_destroy (api);
+   mongoc_client_destroy (client);
 
 .. To learn more about the {+stable-api+}, see :ref:`c-stable-api`.
