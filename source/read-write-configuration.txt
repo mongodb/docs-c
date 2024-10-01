@@ -55,13 +55,13 @@ To specify the level of your write concern, call the
 ``mongoc_write_concern_set_w()`` function, and pass in your write concern and one of the following values:
 
 - ``MONGOC_WRITE_CONCERN_W_DEFAULT``: The write operation returns after the operation
-    is written to memory.
+  is written to memory.
 - ``0``: The write operation returns after the primary
-    node processes the write operation.
+  node processes the write operation.
 - ``1``: The write operation returns after only the primary node acknowledges
-    the write operation, without waiting for acknowledgement from secondary nodes.
+  the write operation, without waiting for acknowledgement from secondary nodes.
 - ``MONGOC_WRITE_CONCERN_W_MAJORITY``: The write operation returns after a majority of the
-    replica set members acknowledge the write operation.
+  replica set members acknowledge the write operation.
 - ``MONGOC_WRITE_CONCERN_W_TAG``: The write operation returns after the replica
   set  member with the specified tag acknowledges the write operation.
 
@@ -170,7 +170,7 @@ To specify the level of your read preference, call the
 - ``MONGOC_READ_PRIMARY_PREFERRED``: The query returns data from the primary node if
   available. Otherwise, the query returns data from a secondary node.
 - ``MONGOC_READ_SECONDARY``: The query returns data from a secondary node.
-- ``ReadPreference.secondaryPreferred()``: The query returns data from a secondary node if
+- ``MONGOC_READ_SECONDARY_PREFERRED``: The query returns data from a secondary node if
   available, Otherwise, the query returns data from the primary node.
 - ``MONGOC_READ_NEAREST``: The query returns data from the node with the lowest
   network latency.
