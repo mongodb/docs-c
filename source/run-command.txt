@@ -46,11 +46,11 @@ parameters in a document, then pass this document to a command execution
 method. The {+driver-short} provides the following methods to run database 
 commands:
 
-- ``mongoc_client_command_simple()``, which returns the first document 
-   from the result cursor into ``reply``. This method is a simplified 
-   interface that sends a raw command to the server.
-- ``mongoc_client_command_with_opts()``, which runs a command on the server
-   and interprets ``opts`` according to this MongoDB server version.
+- ``mongoc_client_command_simple()``, which returns the first document from the
+  result cursor into ``reply``. This method is a simplified interface that sends
+  a raw command to the server.
+- ``mongoc_client_command_with_opts()``, which runs a command on the server and
+  interprets ``opts`` according to this MongoDB server version.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
 to run the ``hello`` command, which returns information about the current
@@ -163,8 +163,8 @@ For more information about the concepts in this guide, see the following documen
 - :manual:`db.runCommand() </reference/method/db.runCommand/>`
 - :manual:`Database Commands </reference/command/>`
 - :manual:`hello Command </reference/command/hello/>`
-- :manual:`cloneCollectionAsCapped Command <reference/command/cloneCollectionAsCapped/>`
-- :manual:`distinct Command <reference/command/distinct>`
+- :manual:`cloneCollectionAsCapped Command </reference/command/cloneCollectionAsCapped/>`
+- :manual:`distinct Command </reference/command/distinct>`
 
 API Documentation
 ~~~~~~~~~~~~~~~~~
