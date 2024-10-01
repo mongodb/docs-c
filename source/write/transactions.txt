@@ -71,7 +71,8 @@ transaction. The ``mongoc_client_session_with_transaction()`` function performs 
 tasks:
 
 - Starts the transaction
-- Handles errors by either ending the transaction or retrying it
+- Handles errors by either ending the transaction or retrying it, such as when the operation
+  results in a ``TransientTransactionError``
 - Commits the transaction
 
 The :ref:`c-txn-example` section of this guide demonstrates how to use
@@ -154,12 +155,20 @@ completes the following actions:
 #. Calls the ``mongoc_client_session_with_transaction()`` function to manage the transaction,
    passing the session and the callback as parameters.
 
-.. literalinclude:: /includes/write/transactions.c
-   :start-after: start-transaction
-   :end-before: end-transaction
-   :language: c
+.. io-code-block::
    :copyable:
-   :dedent:
+
+   .. input:: /includes/write/transactions.c
+      :start-after: start-transaction
+      :end-before: end-transaction
+      :language: c
+      :dedent:
+   
+   .. output::
+      :language: console
+      :visible: false
+
+      Transaction successful!
 
 Additional Information
 ----------------------
