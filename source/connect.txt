@@ -25,7 +25,7 @@ Connect to MongoDB
    /connect/mongoclient
    /connect/stable-api
    /connect/connection-targets
-..   /connect/tls
+   /connect/tls
 ..   /connect/server-selection
 
 .. TODO, the rest of this root page will be filled out in DOCSP-43745, after
