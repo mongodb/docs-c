@@ -239,11 +239,11 @@ the returned cursor and display the contents of the files uploaded in the
    .. output::
       :visible: false
 
-      { "_id" : { "$oid" : "..." }, "chunkSize" : 261120, "filename" : "my_file",
-      "length" : 13, "uploadDate" : { ... }, "metadata" : { "contentType" : "text/plain" },
-      "md5" : "6b24249b03ea3dd176c5a04f037a658c" }
-      { "_id" : { "$oid" : "..." }, "chunkSize" : 261120, "filename" : "new_file",
-      "length" : 13, "uploadDate" : { ... }, "md5" : "6b24249b03ea3dd176c5a04f037a658c" }
+      { "_id" : { "$oid" : "..." }, "length" : 13, "chunkSize" : 261120, "uploadDate" : 
+      { "$date" : ... }, "filename" : "my_file", "metadata" : {  } }
+
+      { "_id" : { "$oid" : "..." }, "length" : 13, "chunkSize" : 261120, "uploadDate" :
+      { "$date" : ... }, "filename" : "new_file", "metadata" : {  } }
 
 The ``mongoc_gridfs_bucket_find()`` function accepts various query specifications. You can use its
 options parameter to specify the sort order, maximum number of documents to return,

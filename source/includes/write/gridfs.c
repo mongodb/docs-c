@@ -13,7 +13,7 @@ main (void)
     {
         // Creates a GridFS bucket
         // start-create-bucket
-        mongoc_database_t *db = mongoc_client_get_database (client, "db");
+        mongoc_database_t *db = mongoc_client_get_database (client, "db-gridfs");
 
         bson_error_t error;
         if (!mongoc_gridfs_bucket_new (db, NULL, NULL, &error)) {
@@ -25,10 +25,10 @@ main (void)
     {
         // Creates a GridFS bucket and specifies a custom name
         // start-create-custom-bucket
-        mongoc_database_t *db = mongoc_client_get_database (client, "db");
+        mongoc_database_t *db = mongoc_client_get_database (client, "db-gridfs");
         bson_t opts;
         bson_init(&opts);
-        BSON_APPEND_UTF8 (opts, "bucketName", "myCustomBucket");
+        BSON_APPEND_UTF8 (&opts, "bucketName", "myCustomBucket");
 
         bson_error_t error;
         if (!mongoc_gridfs_bucket_new (db, &opts, NULL, &error)) {
@@ -56,7 +56,7 @@ main (void)
     {
         // Uploads the contents of a stream to a GridFS file
         // start-upload-from-stream
-        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/input_file", O_RDONLY, 0);
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("test.txt", O_RDONLY, 0);
         
         bson_error_t error;
         if (!mongoc_gridfs_bucket_upload_from_stream (bucket, "new_file", file_stream, NULL, NULL, &error)) {
@@ -89,14 +89,17 @@ main (void)
         // start-open-download-stream
         char buf[512];
         bson_oid_t oid;
-        bson_oid_init_from_string (&oid, "123456789012345678901234");
+        bson_oid_init_from_string (&oid, "66fb1b8ea0f84a74ee099e71");
+        bson_value_t file_id;
+        file_id.value_type = BSON_TYPE_OID;
+        memcpy(&file_id.value.v_oid, &oid, sizeof(bson_oid_t));
 
         bson_error_t error;
-        mongoc_stream_t *download_stream = mongoc_gridfs_bucket_open_download_stream (bucket, &oid, &error);
+        mongoc_stream_t *download_stream = mongoc_gridfs_bucket_open_download_stream (bucket, &file_id, &error);
         if (!download_stream) {
             fprintf (stderr, "Failed to create download stream: %s\n", error.message);
         }
-        mongoc_stream_read (stream, buf, 1, 1, 0);
+        mongoc_stream_read (download_stream, buf, 1, 1, 0);
         
         mongoc_stream_close (download_stream);
         mongoc_stream_destroy (download_stream);
@@ -106,15 +109,19 @@ main (void)
     {
         // Downloads a GridFS file to a local file
         // start-download-to-stream
-        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("/path/to/output_file", O_RDWR, 0);
+        mongoc_stream_t *file_stream = mongoc_stream_file_new_for_path ("test.txt", O_RDWR, 0);
         bson_error_t error;
         if (!file_stream) {
             fprintf (stderr, "Error opening file stream: %s\n", error.message);
         }
 
         bson_oid_t oid;
-        bson_oid_init_from_string (&oid, "56789012345678901234567");
-        if (!mongoc_gridfs_bucket_download_to_stream (bucket, &oid, file_stream, &error)) {
+        bson_oid_init_from_string (&oid, "66fb1b8ea0f84a74ee099e71");
+        bson_value_t file_id;
+        file_id.value_type = BSON_TYPE_OID;
+        memcpy(&file_id.value.v_oid, &oid, sizeof(bson_oid_t));
+
+        if (!mongoc_gridfs_bucket_download_to_stream (bucket, &file_id, file_stream, &error)) {
             fprintf (stderr, "Failed to download file: %s\n", error.message);
         }
         
@@ -128,7 +135,7 @@ main (void)
         // start-delete-files
         bson_error_t error;
         bson_oid_t oid;
-        bson_oid_init_from_string (&oid, "123456789012345678901234");
+        bson_oid_init_from_string (&oid, "66fb1b365fd1cc348b031b01");
 
         if (!mongoc_gridfs_bucket_delete_by_id (bucket, &oid, &error)) {
             fprintf (stderr, "Failed to delete file: %s\n", error.message);
