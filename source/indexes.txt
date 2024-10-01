@@ -30,12 +30,11 @@ Overview
 On this page, you can see copyable code examples that show how to manage different
 types of indexes by using the {+driver-short+}.
 
-.. TODO
-.. .. tip::
+.. tip::
 
-..    To learn more about working with indexes, see the :ref:`c-work-with-indexes`
-..    guide. To learn more about any of the indexes shown on this page, see the link
-..    provided in each section.
+   To learn more about working with indexes, see the :ref:`c-work-with-indexes`
+   guide. To learn more about any of the indexes shown on this page, see the link
+   provided in each section.
 
 To use an example from this page, copy the code example into the
 :ref:`sample application <c-index-sample>` or your own application.
@@ -64,8 +63,7 @@ The following example creates an ascending index on the specified field:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about single field indexes, see the :ref:`c-single-field-index` guide.
+To learn more about single field indexes, see the :ref:`c-single-field-index` guide.
 
 Compound Index
 --------------
@@ -80,8 +78,7 @@ fields:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about compound indexes, see the :ref:`c-compound-index` guide.
+To learn more about compound indexes, see the :ref:`c-compound-index` guide.
 
 Multikey Index
 --------------
@@ -95,9 +92,7 @@ The following example creates an ascending multikey index on the specified array
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about multikey indexes, see the :ref:`c-multikey-index`
-.. guide.
+To learn more about multikey indexes, see the :ref:`c-multikey-index` guide.
 
 Geospatial Index
 ----------------
@@ -200,9 +195,8 @@ Atlas Search Index Management
 The following sections contain code examples that describe how to manage Atlas Search
 indexes.
 
-.. TODO
-.. To learn more about Atlas Search indexes, see the :ref:`c-atlas-search-index`
-.. guide.
+To learn more about Atlas Search indexes, see the :ref:`c-atlas-search-index`
+guide.
 
 Create Search Index
 ~~~~~~~~~~~~~~~~~~~
@@ -216,9 +210,8 @@ The following example creates an Atlas Search index on the specified field:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about creating serach indexes, see the :ref:`c-atlas-search-index-create`
-.. guide.
+To learn more about creating search indexes, see the :ref:`c-atlas-search-index-create`
+guide.
 
 List Search Indexes
 ~~~~~~~~~~~~~~~~~~~
@@ -232,9 +225,8 @@ The following example prints a list of Atlas Search indexes in the specified col
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about listing search indexes, see the :ref:`c-atlas-search-index-list`
-.. guide.
+To learn more about listing search indexes, see the :ref:`c-atlas-search-index-list`
+guide.
 
 Update Search Indexes
 ~~~~~~~~~~~~~~~~~~~~~
@@ -249,9 +241,8 @@ new index definition:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about updating search indexes, see the :ref:`c-atlas-search-index-update`
-.. guide.
+To learn more about updating search indexes, see the :ref:`c-atlas-search-index-update`
+guide.
 
 Delete Search Indexes
 ~~~~~~~~~~~~~~~~~~~~~
@@ -265,6 +256,5 @@ The following example deletes an Atlas Search index with the specified name:
    :copyable:
    :dedent:
 
-.. TODO
-.. To learn more about deleting search indexes, see the :ref:`c-atlas-search-index-drop`
-.. guide.
+To learn more about deleting search indexes, see the :ref:`c-atlas-search-index-drop`
+guide.
