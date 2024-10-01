@@ -95,6 +95,112 @@ main (int argc, char *argv[])
         bson_destroy (filter);
         // end-index-compound-query
     }
+        {
+        // start-create-search-index
+        bson_t cmd;
+        bson_error_t error;
+        char *cmd_str = bson_strdup_printf (
+            BSON_STR ({
+                "createSearchIndexes" : "%s",
+                "indexes" : [ {"definition" : {"mappings" : {"dynamic" : false}}, "name" : "<index name>"} ]
+            }),
+            "<collection name>");
+        bson_init_from_json (&cmd, cmd_str, -1, &error);
+        bson_free (cmd_str);
+
+        if (mongoc_collection_command_simple (collection, &cmd, NULL, NULL, &error)) {
+            printf ("Successfully created search index\n");
+        } else {
+            fprintf (stderr, "Failed to create search index: %s", error.message);
+        }
+        bson_destroy (&cmd);
+        // end-create-search-index
+    }
+    {
+        // start-create-search-indexes
+        bson_t cmd;
+        bson_error_t error;
+        char *cmd_str = bson_strdup_printf (
+            BSON_STR ({
+                "createSearchIndexes" : "%s",
+                "indexes" : [ {"definition" : {"mappings" : {"dynamic" : false}}, "name" : "<first index name>"},
+                              {"definition" : {"mappings" : {"dynamic" : false}}, "name" : "<second index name>"} ]
+            }),
+            "<collection name>");
+        bson_init_from_json (&cmd, cmd_str, -1, &error);
+        bson_free (cmd_str);
+
+        if (mongoc_collection_command_simple (collection, &cmd, NULL, NULL, &error)) {
+            printf ("Successfully created search indexes\n");
+        } else {
+            fprintf (stderr, "Failed to create search indexes: %s", error.message);
+        }
+        bson_destroy (&cmd);
+        // end-create-search-indexes
+    }
+    {
+        // start-list-search-indexes
+        bson_t pipeline;
+        const bson_t *doc;
+        bson_error_t error;
+
+        const char *pipeline_str = BSON_STR ({"pipeline" : [ {"$listSearchIndexes" : {}} ]});
+        bson_init_from_json (&pipeline, pipeline_str, -1, &error);
+
+        mongoc_cursor_t *cursor =
+            mongoc_collection_aggregate (collection, MONGOC_QUERY_NONE, &pipeline, NULL, NULL);
+        
+        while (mongoc_cursor_next (cursor, &doc)) {
+            char *str = bson_as_canonical_extended_json (doc, NULL);
+            printf ("%s\n", str);
+            bson_free (str);
+        }
+        
+        bson_destroy (&pipeline);
+        mongoc_cursor_destroy (cursor);
+        // end-list-search-indexes
+    }
+    {
+        // start-update-search-index
+        bson_t cmd;
+        bson_error_t error;
+        char *cmd_str = bson_strdup_printf (
+            BSON_STR ({
+                "updateSearchIndex" : "%s",
+                "definition" : {"mappings" : {"dynamic" : true}}, "name" : "<index name>"}),
+            "<collection name>");
+        bson_init_from_json (&cmd, cmd_str, -1, &error);
+        bson_free (cmd_str);
+
+        if (mongoc_collection_command_simple (collection, &cmd, NULL, NULL, &error)) {
+            printf ("Successfully updated search index\n");
+        } else {
+            fprintf (stderr, "Failed to create search index: %s", error.message);
+        }
+        bson_destroy (&cmd);
+        // end-update-search-index
+    }
+    {
+        // start-drop-search-index
+        bson_t cmd;
+        bson_error_t error;
+        char *cmd_str = bson_strdup_printf (
+            BSON_STR ({
+                "dropSearchIndexes" : "%s",
+                "index" : "<index name>"
+            }),
+            "<collection name>");
+        bson_init_from_json (&cmd, cmd_str, -1, &error);
+
+        if (mongoc_collection_command_simple (collection, &cmd, NULL, NULL, &error)) {
+            printf ("Successfully deleted search index\n");
+        } else {
+            fprintf (stderr, "Failed to delete search index: %s", error.message);
+        }
+        bson_destroy (&cmd);
+        // end-drop-search-index
+    }
+
 
     mongoc_collection_destroy (collection);
     mongoc_client_destroy (client);
