@@ -9,6 +9,7 @@
    Get Started </get-started>
    /connect
    /databases-collections
+   /write
    /read
    /indexes
    /aggregation
@@ -52,11 +53,11 @@ What's New
 For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
 section.
 
-.. TODO
-.. Write Data to MongoDB
-.. ---------------------
 
-.. Learn how you can write data to MongoDB in the :ref:`c-write` section.
+Write Data to MongoDB
+---------------------
+
+Learn how you can write data to MongoDB in the :ref:`c-write` section.
 
 Read Data from MongoDB
 ----------------------
