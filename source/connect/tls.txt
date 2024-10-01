@@ -145,7 +145,7 @@ by the cmake flag ``ENABLE_SSL``, which is set to ``AUTO`` by default. This flag
 
 - ``AUTO``: Links to the system's native TLS library, or attempts to find OpenSSL. This is the default value.
 - ``OPENSSL``: Links to OpenSSL (libssl). An optional install path may be specified with ``OPENSSL_ROOT``.
-- ``LIBRESSL``: Links to LibreSSL's libtls. You can link to LibreSSL's compatible libssl by setting ``OPENSSL``.
+- ``LIBRESSL`` (Deprecated): Links to LibreSSL's libtls. You can link to LibreSSL's compatible libssl by setting ``OPENSSL``.
 - ``WINDOWS``: Links to Secure Channel, the native TLS library on Windows.
 - ``DARWIN``: Links to Secure Transport, the native TLS library on macOS.
 - ``OFF``: Disables TLS support.
@@ -180,13 +180,13 @@ the server's certificate, the certificate is considered revoked, even if the cer
  
    For more information about OCSP, see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__.
 
-LibreSSL / libtls
-~~~~~~~~~~~~~~~~~
+LibreSSL / libtls (Deprecated)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The MongoDB C Driver supports LibreSSL through the use of OpenSSL compatibility checks when configured to compile against
 ``openssl``. It also supports the new ``libtls`` library when configured to build against ``libressl``.
 
-When compiled against the Windows native libraries, the ``crl_file`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported,
+When compiled with LibreSSL, the ``crl_file`` option of a `mongoc_ssl_opt_t <{+api-libmongoc+}/mongoc_ssl_opt_t.html>`__ is not supported,
 and will issue an error if used. Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
 
 The Online Certificate Status Protocol (OCSP) is partially supported
@@ -248,7 +248,8 @@ An error is issued if either are used.
 
 When ``tlsCAFile`` is set, the driver will only allow server certificates issued by the authority (or authorities) provided.
 When no ``tlsCAFile`` is set, the driver will use the Certificate Authorities in the unlocked keychains.
-Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect.
+
+Setting ``tlsDisableOCSPEndpointCheck`` and ``tlsDisableCertificateRevocationCheck`` has no effect when compiling against secure transport.
 
 The Online Certificate Status Protocol (OCSP) is partially supported
 with the following notes.

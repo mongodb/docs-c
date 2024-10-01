@@ -8,7 +8,7 @@ int main (void) {
   {
     // Set TLS using connection string
     // start-connect-str
-    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname/port>/?tls=true");
+    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname>/?tls=true");
 
     // Do database work here 
 
@@ -34,7 +34,7 @@ int main (void) {
   {
     // Set TLS and provide CA file using connection string
     // start-connect-ca-file-str
-    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname/port>/?tls=true&tlscertificatekeyfile=/path/to/certs/client-certificate.pem");
+    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname>/?tls=true&tlscertificatekeyfile=/path/to/certs/client-certificate.pem");
 
     // Do database work here 
 
