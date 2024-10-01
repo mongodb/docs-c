@@ -92,8 +92,7 @@ The following example creates an ascending multikey index on the specified array
    :copyable:
    :dedent:
 
-To learn more about multikey indexes, see the :ref:`c-multikey-index`
-guide.
+To learn more about multikey indexes, see the :ref:`c-multikey-index` guide.
 
 Geospatial Index
 ----------------

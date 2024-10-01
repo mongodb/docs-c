@@ -95,7 +95,41 @@ main (int argc, char *argv[])
         bson_destroy (filter);
         // end-index-compound-query
     }
-        {
+    {
+        // start-index-multikey
+        bson_error_t error;
+        bson_t *keys = BCON_NEW ("cast", BCON_INT32 (1));
+        mongoc_index_model_t *index_model = mongoc_index_model_new (keys, NULL);
+
+        if (mongoc_collection_create_indexes_with_opts (collection, &index_model, 1, NULL, NULL, &error)) {
+            printf ("Successfully created index\n");
+        } else {
+            fprintf (stderr, "Failed to create index: %s", error.message);
+        }
+
+        bson_destroy (keys);
+        mongoc_index_model_destroy (index_model);
+        // end-index-multikey
+    }
+    {
+        // start-index-multikey-query
+        const bson_t *doc;
+        bson_t *filter = BCON_NEW ("cast", BCON_UTF8 ("Viola Davis"));
+
+        mongoc_cursor_t *results =
+            mongoc_collection_find_with_opts (collection, filter, NULL, NULL);
+        
+        while (mongoc_cursor_next (results, &doc)) {
+            char *str = bson_as_canonical_extended_json (doc, NULL);
+            printf ("%s\n", str);
+            bson_free (str);
+        }
+
+        mongoc_cursor_destroy (results);
+        bson_destroy (filter);
+        // end-index-multikey-query
+    }
+    {
         // start-create-search-index
         bson_t cmd;
         bson_error_t error;
@@ -200,7 +234,6 @@ main (int argc, char *argv[])
         bson_destroy (&cmd);
         // end-drop-search-index
     }
-
 
     mongoc_collection_destroy (collection);
     mongoc_client_destroy (client);
