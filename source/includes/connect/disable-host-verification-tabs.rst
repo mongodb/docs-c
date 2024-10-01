@@ -5,7 +5,7 @@
 
       .. code-block:: c
 
-         mongoc_client_t *client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>:<port>/?tls=true&tlsAllowInvalidHostnames=true");
+         mongoc_client_t *client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?tls=true&tlsAllowInvalidHostnames=true");
 
          // Do database work here
 

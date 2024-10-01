@@ -5,7 +5,7 @@
 
       .. code-block:: c
 
-         mongoc_client_t *client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>:<port>/?compressors=snappy,zlib,zstd");
+         mongoc_client_t *client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?compressors=snappy,zlib,zstd");
 
          // Do database work here
 
