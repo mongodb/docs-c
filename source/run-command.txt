@@ -28,23 +28,20 @@ initializing a replica set, or running an aggregation pipeline.
 
 .. important:: Prefer Driver Methods to Database Commands
 
-   The driver provides wrapper methods for many database commands.
-   We recommend using driver methods instead of executing database
-   commands when possible.
+   The driver provides wrapper methods for many database commands. We recommend
+   using driver methods instead of executing database commands when possible.
    
-   To perform administrative tasks, use the :mongosh:`MongoDB Shell </>`
-   instead of the {+driver-short+}. Calling the ``db.runCommand()``
-   method inside the shell is the preferred method to issue database
-   commands, as it provides a consistent interface between the shell and
-   drivers.
+   To perform administrative tasks, use the :mongosh:`MongoDB Shell </>` instead
+   of the {+driver-short+}. Calling the ``db.runCommand()`` method inside the
+   shell is the preferred method to issue database commands, as it provides a
+   consistent interface between the shell and drivers.
 
 Execute a Command
 -----------------
 
-To run a database command, you must specify the command and any relevant 
-parameters in a document, then pass this document to a command execution 
-method. The {+driver-short} provides the following methods to run database 
-commands:
+To run a database command, you must specify the command and any relevant
+parameters in a document, then pass this document to a command execution method.
+The {+driver-short} provides the following methods to run database commands:
 
 - ``mongoc_client_command_simple()``, which returns the first document from the
   result cursor into ``reply``. This method is a simplified interface that sends
@@ -53,7 +50,7 @@ commands:
   interprets ``opts`` according to this MongoDB server version.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
-to run the ``hello`` command, which returns information about the current
+method to run the ``hello`` command, which returns information about the current
 member's role in the replica set, on a database:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -62,18 +59,18 @@ member's role in the replica set, on a database:
     :start-after: start-execute-command
     :end-before: end-execute-command
 
-For a full list of database commands and corresponding parameters, see the 
+For a full list of database commands and corresponding parameters, see the
 :ref:`Additional Information <c-addl-info-runcommand>` section.
 
 Command Options
 ---------------
 
-You can specify optional command behavior for the ``mongoc_client_command_with_opts()``
-method.
+You can specify optional command behavior for the
+``mongoc_client_command_with_opts()`` method.
 
 The ``mongoc_client_command_with_opts()`` method accepts a BSON document for the
-``opts`` parameter. This can include command options such as read concerns, write
-concerns, and session options. 
+``opts`` parameter. This can include command options such as read concerns,
+write concerns, and session options. 
 
 You can pass a BSON document with the following options:
 
@@ -83,11 +80,11 @@ You can pass a BSON document with the following options:
 - ``collation``
 - ``serverId``
 
-To learn more about a command and the options that it accepts, locate the command and follow
-the link in the :manual:`Database Commands </reference/command/>` section of the Server
-manual.
+To learn more about a command and the options that it accepts, locate the
+command and follow the link in the :manual:`Database Commands
+</reference/command/>` section of the Server manual.
 
-The following code shows you how to specify a ``grantRolesToUs`` command with a 
+The following code shows you how to specify a ``grantRolesToUs`` command with a
 ``majority`` write concern:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -98,13 +95,15 @@ The following code shows you how to specify a ``grantRolesToUs`` command with a
 
 .. note:: Read Preference
 
-   The ``mongoc_client_command_simple()`` and ``mongoc_client_command_with_opts()``
-   methods ignore the read preference setting you may have set on your ``Db`` 
-   object. By default, these methods use the ``primary`` read preference.
+   The ``mongoc_client_command_simple()`` and
+   ``mongoc_client_command_with_opts()`` methods ignore the read preference
+   setting you may have set on your ``Db`` object. By default, these methods use
+   the ``primary`` read preference.
 
-   To specify a read preference other than the primary read preference, you need to
-   explicity pass it as an argument. The following code demonstrates how to specify
-   a read preference and use it with the ``mongoc_client_command_simple()`` method:
+   To specify a read preference other than the primary read preference, you need
+   to explicity pass it as an argument. The following code demonstrates how to
+   specify a read preference and use it with the
+   ``mongoc_client_command_simple()`` method:
 
    .. code-block:: C
 
@@ -112,29 +111,32 @@ The following code shows you how to specify a ``grantRolesToUs`` command with a
 
       command = BCON_NEW("hello", BCON_INT32(1));
 
-      retval = mongoc_client_command_simple(client, "admin", command, read_prefs, NULL, reply, &error);
+      retval = mongoc_client_command_simple(client, "admin", command,
+      read_prefs, NULL, reply, &error);
   
-   For more information on read preference options, see :manual:`Read
-   Preference </core/read-preference/>` in the Server manual.
+   For more information on read preference options, see :manual:`Read Preference
+   </core/read-preference/>` in the Server manual.
 
 Response
 --------
 
-Each method returns either a BSON document or a cursor containing the response 
-from the database after the command runs. Each database command performs a 
+Each method returns either a BSON document or a cursor containing the response
+from the database after the command runs. Each database command performs a
 different function, so the response content can vary across commands. However,
 every response contains documents with the following fields:
 
-- **<command result>:** Provides fields specific to the database command. For example, ``count``
-  returns the ``n`` field and ``explain`` returns the ``queryPlanner`` field.
+- **<command result>:** Provides fields specific to the database command. For
+  example, ``count`` returns the ``n`` field and ``explain`` returns the
+  ``queryPlanner`` field.
 - **``ok``:** Indicates whether the command succeeded (``1``) or failed (``0``).
 
 Example
 -------
 
-The following code shows how you can use the ``mongoc_client_command_with_opts()`` method 
-to run the ``cloneCollectionAsCapped`` command with the ``writeConcern`` option, then run the 
-``distinct`` command with the ``collation`` and ``readConcern`` options.
+The following code shows how you can use the
+``mongoc_client_command_with_opts()`` method to run the
+``cloneCollectionAsCapped`` command with the ``writeConcern`` option, then run
+the ``distinct`` command with the ``collation`` and ``readConcern`` options.
 
 .. literalinclude:: /includes/usage-examples/run-command.c
     :language: c
@@ -145,29 +147,34 @@ to run the ``cloneCollectionAsCapped`` command with the ``writeConcern`` option,
 Output
 ~~~~~~
 
-The ``cloneCollectionAsCapped`` command clones a collection as a capped collection. Then, 
-the ``distinct`` command gets the distinct values of a field with a given filter and collation.
+The ``cloneCollectionAsCapped`` command clones a collection as a capped
+collection. Then, the ``distinct`` command gets the distinct values of a field
+with a given filter and collation.
 
 .. code-block:: c
 
-    cloneCollectionAsCapped: { "ok": 1, ... }
-    distinct: { "values": ["value1", "value2", "value3"], "ok": 1, ... }
+    cloneCollectionAsCapped: { "ok": 1, ... } distinct: { "values": ["value1",
+    "value2", "value3"], "ok": 1, ... }
 
 ..  _c-addl-info-runcommand:
 
 Additional Information
 ----------------------
 
-For more information about the concepts in this guide, see the following documentation:
+For more information about the concepts in this guide, see the following
+documentation:
 
 - :manual:`db.runCommand() </reference/method/db.runCommand/>`
 - :manual:`Database Commands </reference/command/>`
 - :manual:`hello Command </reference/command/hello/>`
-- :manual:`cloneCollectionAsCapped Command </reference/command/cloneCollectionAsCapped/>`
+- :manual:`cloneCollectionAsCapped Command
+  </reference/command/cloneCollectionAsCapped/>`
 - :manual:`distinct Command </reference/command/distinct>`
 
 API Documentation
 ~~~~~~~~~~~~~~~~~
 
-- `mongoc_client_command_simple() <{+api-libmongoc+}/mongoc_client_command_simple>`__
-- `mongoc_client_command_with_opts() <{+api-libmongoc+}/mongoc_client_command_with_opts>`__
+- `mongoc_client_command_simple()
+  <{+api-libmongoc+}/mongoc_client_command_simple>`__
+- `mongoc_client_command_with_opts()
+  <{+api-libmongoc+}/mongoc_client_command_with_opts>`__
