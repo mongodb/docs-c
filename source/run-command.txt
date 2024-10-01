@@ -1,8 +1,8 @@
 .. _c-run-command:
 
-=============
-Run a Command
-=============
+======================
+Run a Database Command
+======================
 
 .. contents:: On this page
    :local:
@@ -53,7 +53,7 @@ commands:
    and interprets ``opts`` according to this MongoDB server version.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
-to run the ``hello`` command, which returns information abotu the current
+to run the ``hello`` command, which returns information about the current
 member's role in the replica set, on a database:
 
 .. literalinclude:: /includes/usage-examples/run-command.c
@@ -63,7 +63,7 @@ member's role in the replica set, on a database:
     :end-before: end-execute-command
 
 For a full list of database commands and corresponding parameters, see the 
-:ref:`Additional Information section <c-addl-info-runcommand>.`
+:ref:`Additional Information <c-addl-info-runcommand>` section.
 
 Command Options
 ---------------
@@ -84,7 +84,7 @@ You can pass a BSON document with the following options:
 - ``serverId``
 
 To learn more about a command and the options that it accepts, locate the command and follow
-the link on the :manual:`Database Commands </reference/command/>` section of the Server
+the link in the :manual:`Database Commands </reference/command/>` section of the Server
 manual.
 
 The following code shows you how to specify a ``grantRolesToUs`` command with a 
@@ -125,9 +125,9 @@ from the database after the command runs. Each database command performs a
 different function, so the response content can vary across commands. However,
 every response contains documents with the following fields:
 
-- ``<command result>``: Provides fields specific to the database command. For example, ``count``
+- **<command result>:** Provides fields specific to the database command. For example, ``count``
   returns the ``n`` field and ``explain`` returns the ``queryPlanner`` field.
-- ``ok``: Indicates whether the command succeeded (``1``) or failed (``0``).
+- **``ok``:** Indicates whether the command succeeded (``1``) or failed (``0``).
 
 Example
 -------
@@ -141,8 +141,6 @@ to run the ``cloneCollectionAsCapped`` command with the ``writeConcern`` option,
     :dedent:
     :start-after: start-run-command-example
     :end-before: end-run-command-example
-
-.. _c-addl-info-runcommand:
 
 Output
 ~~~~~~
@@ -165,6 +163,8 @@ For more information about the concepts in this guide, see the following documen
 - :manual:`db.runCommand() </reference/method/db.runCommand/>`
 - :manual:`Database Commands </reference/command/>`
 - :manual:`hello Command </reference/command/hello/>`
+- :manual:`cloneCollectionAsCapped Command <reference/command/cloneCollectionAsCapped/>`
+- :manual:`distinct Command <reference/command/distinct>`
 
 API Documentation
 ~~~~~~~~~~~~~~~~~

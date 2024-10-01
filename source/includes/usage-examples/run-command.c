@@ -119,7 +119,7 @@ main (int argc, char *argv[])
 
         read_prefs = mongoc_read_prefs_new (MONGOC_READ_SECONDARY);
 
-        /* Specifies "One" sort after "one" to override default behavior */
+        /* Specifies "One" sorts after "one" to override default behavior */
         opts = BCON_NEW ("collation", "{", "locale", BCON_UTF8 ("en_US"), "caseFirst", BCON_UTF8 ("lower"), "}");
 
         /* Adds a read concern to "opts" */
