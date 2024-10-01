@@ -21,10 +21,11 @@ Overview
 --------
 
 In this guide, you can learn how to use the {+driver-short+} to perform
-**transactions**. Transactions allow you to run a series of operations that do 
-not change any data until the transaction is committed. If any operation in 
-the transaction returns an error, the driver cancels the transaction and discards 
-all data changes before they ever become visible.
+**transactions**. Transactions allow you to perform a series of operations
+that change data only if the entire transaction is committed.
+If any operation in the transaction does not succeed, the library stops the
+transaction and discards all data changes before they ever become
+visible. This feature is called **atomicity**.
 
 In MongoDB, transactions run within logical **sessions**. A
 session is a grouping of related read or write operations that you intend to run 
@@ -36,9 +37,8 @@ data involved in your transaction operations remains consistent, even if the
 operations encounter unexpected errors.
 
 When using the {+driver-short+}, you can create a new session from a
-``mongoc_client_t`` instance as a ``mongoc_client_session_t`` type. We recommend that you
-reuse your ``mongoc_client_t`` for multiple sessions and transactions instead of
-creating a new client each time.
+``mongoc_client_t`` instance. Then, you can use the resulting ``mongoc_client_session_t``
+instance to perform transactions.
 
 .. warning::
 
@@ -47,19 +47,43 @@ creating a new client each time.
    ``mongoc_client_session_t`` with a different ``mongoc_client_t`` results in operation
    errors.
 
-Sample Data
-~~~~~~~~~~~
+Transaction APIs
+----------------
 
-The examples in this section use the ``restaurants`` collection in the ``sample_restaurants``
-database from the :atlas:`Atlas sample datasets </sample-data>`. To learn how to create a
-free MongoDB Atlas cluster and load the sample datasets, see the
-:atlas:`Get Started with Atlas </getting-started>` guide.
+In this section, you can learn about the transaction APIs provided by
+the {+driver-short+}. Before you begin a transaction, you must create a
+``mongoc_client_session_t`` by using the ``mongoc_client_start_session()``
+function on your ``mongoc_client_t`` instance. Then, you can use either of the
+following APIs to perform a transaction:
 
-Functions
----------
+- :ref:`c-convenient-txn`
+- :ref:`c-core-txn`
 
-After you start a session by using the ``mongoc_client_start_session()`` function, you can
-manage the session state by using the following functions:
+.. _c-convenient-txn:
+
+Convenient API
+~~~~~~~~~~~~~~
+
+The {+driver-short+} provides a **Convenient Transaction API** to manage
+the transaction lifecyle. Implement this API by using the
+``mongoc_client_session_with_transaction()`` function to run custom callback within a
+transaction. The ``mongoc_client_session_with_transaction()`` function performs the following
+tasks:
+
+- Starts the transaction
+- Handles errors by either ending the transaction or retrying it
+- Commits the transaction
+
+The :ref:`c-txn-example` section of this guide demonstrates how to use
+this API to perform a transaction. 
+
+.. _c-core-txn:
+
+Core API
+~~~~~~~~
+
+Alternatively, you can have more control over your transaction lifecyle
+by using the following functions with your ``mongoc_client_session_t`` instance:
 
 .. list-table::
    :widths: 25 75
@@ -89,12 +113,6 @@ manage the session state by using the following functions:
          this function, see the :manual:`commitTransaction() page
          </reference/method/Session.commitTransaction/>`  in the Server manual.
 
-   * - ``mongoc_client_session_with_transaction()``
-     - | Starts a transaction on this session and runs the provided callback function once, then
-         commits the transaction. In the event of an exception, this function may retry
-         the commit or the entire transaction, which may invoke the callback multiple 
-         times by a single call to ``mongoc_client_session_with_transaction()``.
-
    * - ``mongoc_client_session_destroy()``
      - | Aborts any transactions in progress and ends this session. Frees
          all client resources associated with this session.
@@ -102,21 +120,39 @@ manage the session state by using the following functions:
 To learn more about functions that retrieve ``mongoc_client_session_t`` properties and
 modify mutable session properties, see the :ref:`API documentation <c-api-docs-transactions>`.
 
-Example
--------
+.. _c-txn-example:
 
-The following example shows how you can create a session, create a
-transaction, and commit a multi-document insert operation through the
-following steps:
+Transaction Example
+-------------------
 
-1. Create a session from the client by using the ``mongoc_client_session_start_transaction()``
+This example defines a callback function that
+modifies data in the collections of the ``sample_bank`` database for a
+banking transaction. The code performs the following actions:
+
+1. Defines the callback function, which receives the ``mongoc_client_session_t`` instance
+   as a parameter.
+#. Creates ``mongoc_collection_t`` instances to access the target
+   collections.
+#. Specifies the account number and amount to be transferred between
+   accounts.
+#. Updates the customer's balances to reflect the money transfer.
+#. Records a receipt of the transaction with a timestamp.
+#. Prints a message if the transaction committed successfully.
+
+.. literalinclude:: /includes/write/transaction.c
+   :start-after: start-callback
+   :end-before: end-callback
+   :language: c
+   :copyable:
+   :dedent:
+
+Then, run the following code to perform the transaction. This code
+completes the following actions:
+
+1. Creates a session from the client by using the ``mongoc_client_start_session()``
    function.
-#. Use the ``mongoc_client_session_start_transaction()`` function to start a transaction.
-#. Insert multiple documents into the ``restaurants`` collection by using the
-   ``mongoc_collection_insert_many()`` function. The ``mongoc_collection_insert_many()``
-   function specifies the session as an option.
-#. Commit the transaction by using the ``mongoc_client_session_commit_transaction()`` function.
-#. End the session by using the ``mongoc_client_session_destroy()`` function.
+#. Calls the ``mongoc_client_session_with_transaction()`` function to manage the transaction,
+   passing the session and the callback as parameters.
 
 .. literalinclude:: /includes/write/transactions.c
    :start-after: start-transaction
@@ -129,7 +165,7 @@ Additional Information
 ----------------------
 
 To learn more about the concepts mentioned in this guide, see the following pages in 
-the Server manual:
+the {+mdb-server+} manual:
 
 - :manual:`Transactions </core/transactions/>`
 - :manual:`Server Sessions </reference/server-sessions>`
