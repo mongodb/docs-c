@@ -209,8 +209,8 @@ function:
    :language: c
    :dedent:
 
-If any of the write operations fail, the {+driver-short+} raises a
-``mongoc_bulkwriteexception_t`` error and does not perform any further operations.
+If any of the write operations fail, the {+driver-short+} sets the output error
+and does not perform any further operations.
 
 Customize Bulk Write Operations
 -------------------------------
