@@ -23,10 +23,10 @@ Connect to MongoDB
    :maxdepth: 1
     
    /connect/mongoclient
+   /connect/stable-api
    /connect/connection-targets
-..   /connect/tls
+   /connect/tls
 ..   /connect/server-selection
-..   /connect/stable-api
 
 Overview
 --------
@@ -113,6 +113,7 @@ Transport Layer Security (TLS)
 The following sections describe how to connect to MongoDB
 while enabling the TLS protocol. 
 
+.. TODO, uncomment once TLS page is merged
 .. To learn more about using TLS with the {+driver-short+},
 .. see :ref:`c-tls`.
 
@@ -182,6 +183,7 @@ selection function:
 
    mongoc_client_destroy (client);
 
+.. TODO, uncomment once server selection page is merged
 .. To learn more about customizing server selection, see
 .. :ref:`c-server-selection`.
 
@@ -206,4 +208,5 @@ The following code shows how to specify Stable API settings within a
    mongoc_server_api_destroy (api);
    mongoc_client_destroy (client);
 
+.. TODO, uncomment once stable API page is merged
 .. To learn more about the {+stable-api+}, see :ref:`c-stable-api`.
