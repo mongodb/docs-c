@@ -3,8 +3,10 @@
 
 int main(void) {
 
-  mongoc_database_t *database
-  bson_t *ping, reply;
+  mongoc_uri_t* uri = NULL;
+  mongoc_client_t *client = NULL;
+  mongoc_database_t *database = NULL;
+  bson_t *ping = NULL, reply = BSON_INITIALIZER;
   bson_error_t error;
 
   mongoc_init();
@@ -27,5 +29,7 @@ int main(void) {
     bson_destroy (&reply);
     bson_destroy (ping);
     mongoc_database_destroy (database);
+    mongoc_client_destroy (client);
+    mongoc_uri_destroy (uri);
     mongoc_cleanup ();
 }

@@ -69,13 +69,8 @@ instance of MongoDB:
 
 .. code-block:: c
 
-   mongoc_uri_t *uri = mongoc_uri_new ("mongodb://localhost:27017"); 
-   mongoc_client_t *client = mongoc_client_new_from_uri (uri);
-
-   // Do database work here
-
-   mongoc_client_destroy (client);
-   mongoc_uri_destroy (uri);
+   uri = mongoc_uri_new ("mongodb://localhost:27017"); 
+   client = mongoc_client_new_from_uri (uri);
 
 Atlas
 ~~~~~
@@ -85,12 +80,8 @@ deployment hosted on Atlas:
 
 .. code-block:: c
 
-   char *uri = "mongodb+srv://<db_username>:<db_password>@<hostname>/?<options>";
-   mongoc_client_t *client = mongoc_client_new (uri);
-
-   // Do database work here
-
-   mongoc_client_destroy (client);
+   uri = "mongodb+srv://<db_username>:<db_password>@<hostname>/?<options>";
+   client = mongoc_client_new (uri);
 
 Replica Set
 ~~~~~~~~~~~
@@ -100,12 +91,8 @@ replica set:
 
 .. code-block:: c
    
-   char *uri = "mongodb+srv://<replica-set-member>/?replicaSet=<replica_set_name>";
-   mongoc_client_t *client = mongoc_client_new (uri);
-
-   // Do database work here
-
-   mongoc_client_destroy (client);
+   uri = "mongodb+srv://<replica-set-member>/?replicaSet=<replica_set_name>";
+   client = mongoc_client_new (uri);
 
 Transport Layer Security (TLS)
 ------------------------------
@@ -177,11 +164,7 @@ selection function:
 
 .. code-block:: c
 
-   mongoc_client_t *client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?server_selector=<selector_function>");
-
-   // Do database work here
-
-   mongoc_client_destroy (client);
+   client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?server_selector=<selector_function>");
 
 .. TODO, uncomment once server selection page is merged
 .. To learn more about customizing server selection, see
@@ -197,7 +180,7 @@ The following code shows how to specify Stable API settings within a
 
    bson_error_t error;
 
-   mongoc_client_t *client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname>/?<options>");
+   client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname>/?<options>");
 
    // Set the version of the Stable API on the client
    mongoc_server_api_t *api = mongoc_server_api_new(MONGOC_SERVER_API_V1);
@@ -206,7 +189,6 @@ The following code shows how to specify Stable API settings within a
    // Do database work here
 
    mongoc_server_api_destroy (api);
-   mongoc_client_destroy (client);
 
 .. TODO, uncomment once stable API page is merged
 .. To learn more about the {+stable-api+}, see :ref:`c-stable-api`.
