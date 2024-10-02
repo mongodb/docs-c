@@ -37,9 +37,6 @@ Connection URI
 
 A standard connection string includes the following components:
 
-.. TODO, add this as last sentence for ``username:password`` description once a c auth page is made: 
-.. For more information about the ``authSource`` connection option, see :ref:`c-auth`. 
-
 .. list-table::
    :widths: 20 80
    :header-rows: 1
@@ -56,6 +53,8 @@ A standard connection string includes the following components:
 
      - Optional. Authentication credentials. If you include these, the client
        authenticates the user against the database specified in ``authSource``.
+       For more information about the ``authSource`` connection option, see the
+       :ref:`c-auth` guide.
 
    * - ``host[:port]``
 
@@ -96,9 +95,10 @@ to connect to a MongoDB instance:
 You can set the Stable API version client option to avoid breaking changes when 
 you upgrade to a new server version. 
 
-.. TODO, uncomment these once the Stable API for C Driver page is made.
-.. To learn more about the Stable API feature, 
-.. see the :ref:`Stable API page <c-stable-api>`. 
+.. tip::
+
+   To learn more about the {+stable-api+} feature, see the :ref:`c-stable-api`
+   guide. 
 
 The following code shows how you can specify the connection string and the 
 Stable API client option when connecting to a MongoDB deployment on Atlas 

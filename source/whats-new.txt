@@ -62,7 +62,7 @@ Fixes
 - Fixes C23 compile
 
 Improvements
-```````````
+````````````
 
 - Documents expected behavior of command errors in a transaction
 

@@ -186,8 +186,8 @@ The following example deletes an index with the specified name:
    :copyable:
    :dedent:
 
-.. TODO: To learn more about removing indexes, see :ref:`c-indexes-remove`
-.. in the Work with Indexes guide.
+To learn more about removing indexes, see :ref:`c-indexes-remove`
+in the Work with Indexes guide.
 
 Atlas Search Index Management
 -----------------------------

@@ -2,7 +2,8 @@
 #include <mongoc/mongoc.h>
 #include <stdio.h>
 
-int main (int argc, char *argv[])
+int
+main (void)
 {
     const bson_t *doc;
 

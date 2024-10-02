@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int
-main (int argc, char *argv[])
+main (void)
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
@@ -12,8 +12,7 @@ main (int argc, char *argv[])
 
     mongoc_init ();
 
-    client =
-        mongoc_client_new ("<connection string URI>");
+    client = mongoc_client_new ("<connection string URI>");
     collection = mongoc_client_get_collection (client, "<database name>", "collection name");
 
     {

@@ -74,6 +74,8 @@ code for creating each index type.
 - :ref:`c-multikey-index`
 - :ref:`c-atlas-search-index`
 
+.. _c-indexes-remove:
+
 Remove an Index
 ---------------
 

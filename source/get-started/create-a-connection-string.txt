@@ -13,9 +13,8 @@ The connection string includes the hostname or IP address and
 port of your deployment, the authentication mechanism, user credentials 
 when applicable, and connection options.
 
-.. TODO
-.. To connect to an instance or deployment not hosted on Atlas, see the
-.. :ref:`c-connection-targets` guide.
+To connect to an instance or deployment not hosted on Atlas, see the
+:ref:`c-connection-targets` guide.
 
 .. procedure::
    :style: connected
