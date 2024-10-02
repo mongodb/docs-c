@@ -112,7 +112,7 @@ main (main)
     
     bson_t *insert_doc = BCON_NEW (
         "<field name>", BCON_UTF8 ("<value>"),
-        "<field name>", BCON_UTF8 ("<value>>"),
+        "<field name>", BCON_UTF8 ("<value>"),
         "<field name>", BCON_UTF8 ("<value>"),
         "<field name>", BCON_UTF8 ("<value>")
     );
