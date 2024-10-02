@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int
-main (main)
+main (void)
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
@@ -83,7 +83,7 @@ main (main)
     bson_error_t error;
 
     if (!mongoc_collection_delete_one (collection, filter, NULL, NULL, &error)) {
-        fprintf ("Delete error: %s\n", error.message);
+        fprintf (stderr, "Delete error: %s\n", error.message);
     }
 
     bson_destroy (filter);
@@ -96,7 +96,7 @@ main (main)
     bson_error_t error;
 
     if (!mongoc_collection_delete_many (collection, filter, NULL, NULL, &error)) {
-        fprintf ("Delete error: %s\n", error.message);
+        fprintf (stderr, "Delete error: %s\n", error.message);
     }
 
     bson_destroy (filter);
@@ -131,6 +131,8 @@ main (main)
     if (!result) {
         fprintf (stderr, "Bulk operation error: %s\n", error.message);
     }
+
+    mongoc_bulk_operation_destroy (bulk);
     // end-bulk-write
 }
 
