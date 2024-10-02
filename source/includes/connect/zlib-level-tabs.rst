@@ -5,7 +5,7 @@
 
       .. code-block:: c
 
-         client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?compressors=zlib&zlibCompressionLevel=<zlib-compression-level");
+         client = mongoc_client_new("mongodb://<db_username>:<db_password>@<hostname>/?compressors=zlib&zlibCompressionLevel=<zlib_compression_level");
 
    .. tab:: MongoC URI Options
       :tabid: mongocurioptions
