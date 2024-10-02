@@ -83,7 +83,7 @@ main (int argc, char *argv[])
     bson_error_t error;
 
     if (!mongoc_collection_delete_one (collection, filter, NULL, NULL, &error)) {
-        printf ("Delete error: %s\n", error.message);
+        fprintf ("Delete error: %s\n", error.message);
     }
 
     bson_destroy (filter);
@@ -96,7 +96,7 @@ main (int argc, char *argv[])
     bson_error_t error;
 
     if (!mongoc_collection_delete_many (collection, filter, NULL, NULL, &error)) {
-        printf ("Delete error: %s\n", error.message);
+        fprintf ("Delete error: %s\n", error.message);
     }
 
     bson_destroy (filter);
@@ -127,9 +127,9 @@ main (int argc, char *argv[])
         bson_destroy(query);
         bson_destroy(update);
 
-        result = mongoc_bulk_operation_execute(bulk, NULL, &error);
+        bool result = mongoc_bulk_operation_execute(bulk, NULL, &error);
         if (!result) {
-            printf (stderr, "Bulk operation error: %s\n", error.message);
+            fprintf (stderr, "Bulk operation error: %s\n", error.message);
         }
     // end-bulk-write
 }
