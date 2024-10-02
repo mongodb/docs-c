@@ -36,22 +36,22 @@ Subscribe to Events
 -------------------
 
 You can access details about SDAM events by subscribing to them
-in your application. To subscribe to an event, create a value of
-type ``mongoc_apm_callbacks_t`` and create an event callback function
-for the event you want to subscribe to. Use the callback's corresponding
-setter method to set the callback on the ``mongoc_apm_callbacks_t`` and 
-pass this type to the ``mongoc_client_set_apm_callbacks()`` function.
+in your application. To subscribe to an event, define an Application
+Performance Monitoring (APM) callback function to handle each event
+type you want to subscribe to. Use a ``mongoc_apm_callbacks_t`` object
+to register the list of APM callbacks with a client using the
+``mongoc_client_set_apm_callbacks()`` function.
 
 This code monitors server opening events by performing the following
 actions:
 
-- Defines a ``server_opening()`` event handler function, or callback
-- Creates a ``mongoc_apm_callbacks_t`` structure to store callbacks
-- Calls the ``mongoc_apm_set_server_opening_cb()`` function, which instructs
-  the ``mongoc_apm_callbacks_t`` type to store a pointer to the ``server_opening()``
-  callback
+- Defines a ``server_opening()`` APM callback function
+- Creates a ``mongoc_apm_callbacks_t`` object to store callbacks
+- Calls the ``mongoc_apm_set_server_opening_cb()`` function, which
+  stores a pointer to the provided APM callback function in the
+  ``mongoc_apm_callbacks_t`` object
 - Calls the ``mongoc_client_set_apm_callbacks()`` function, which registers
-  the callback with the client
+  the callback in the ``mongoc_apm_callbacks_t`` object with the client
 
 .. literalinclude:: /includes/monitoring/sdam.c
    :language: c
