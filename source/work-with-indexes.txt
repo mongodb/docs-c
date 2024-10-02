@@ -21,6 +21,8 @@ Work with Indexes
 
    /indexes/single-field-index.txt
    /indexes/compound-index.txt
+   /indexes/multikey-index.txt
+   /indexes/atlas-search-index.txt
 
 Overview
 --------
@@ -69,6 +71,8 @@ code for creating each index type.
 
 - :ref:`c-single-field-index`
 - :ref:`c-compound-index`
+- :ref:`c-multikey-index`
+- :ref:`c-atlas-search-index`
 
 Remove an Index
 ---------------

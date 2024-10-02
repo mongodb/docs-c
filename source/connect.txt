@@ -23,9 +23,9 @@ Connect to MongoDB
    :maxdepth: 1
     
    /connect/mongoclient
-.. /connect/stable-api
+   /connect/stable-api
    /connect/connection-targets
-.. /connect/tls
+   /connect/tls
 ..   /connect/server-selection
 
 Overview
