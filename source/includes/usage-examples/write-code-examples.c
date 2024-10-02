@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int
-main (int argc, char *argv[])
+main (main)
 {
     mongoc_client_t *client;
     mongoc_collection_t *collection;
@@ -37,13 +37,13 @@ main (int argc, char *argv[])
     docs[0] = BCON_NEW ("<field name>", BCON_UTF8 ("<value>"));
     docs[1] = BCON_NEW ("<field name>", BCON_UTF8 ("<value>"));
 
-        bson_error_t error;
-        if (!mongoc_collection_insert_many (collection, (const bson_t **) docs, num_docs, NULL, NULL, &error)) {
-            fprintf (stderr, "Insert many operation failed: %s\n", error.message);
-        }
+    bson_error_t error;
+    if (!mongoc_collection_insert_many (collection, (const bson_t **) docs, num_docs, NULL, NULL, &error)) {
+        fprintf (stderr, "Insert many operation failed: %s\n", error.message);
+    }
 
-        bson_destroy (docs[0]);
-        bson_destroy (docs[1]);
+    bson_destroy (docs[0]);
+    bson_destroy (docs[1]);
     // end-insert-many
 }
 
@@ -110,27 +110,27 @@ main (int argc, char *argv[])
     mongoc_bulk_operation_t *bulk =
        mongoc_collection_create_bulk_operation_with_opts (collection, NULL);
     
-        bson_t *insert_doc = BCON_NEW (
-            "<field name>", BCON_UTF8 ("<value>"),
-            "<field name>", BCON_UTF8 ("<value>>"),
-            "<field name>>", BCON_UTF8 ("<value>"),
-            "<field name>", BCON_UTF8 ("<value>")
-        );
+    bson_t *insert_doc = BCON_NEW (
+        "<field name>", BCON_UTF8 ("<value>"),
+        "<field name>", BCON_UTF8 ("<value>>"),
+        "<field name>", BCON_UTF8 ("<value>"),
+        "<field name>", BCON_UTF8 ("<value>")
+    );
 
-        mongoc_bulk_operation_insert(bulk, insert_doc);
-        bson_destroy (insert_doc);
+    mongoc_bulk_operation_insert(bulk, insert_doc);
+    bson_destroy (insert_doc);
         
-        bson_t *query = BCON_NEW ("<field to match>", BCON_UTF8 ("<value to match>"));
-        bson_t *update = BCON_NEW ("$set", "{", "<field name>", BCON_UTF8 ("<value>"), "}");
+    bson_t *query = BCON_NEW ("<field to match>", BCON_UTF8 ("<value to match>"));
+    bson_t *update = BCON_NEW ("$set", "{", "<field name>", BCON_UTF8 ("<value>"), "}");
 
-        mongoc_bulk_operation_update_one(bulk, query, update, false);
-        bson_destroy(query);
-        bson_destroy(update);
+    mongoc_bulk_operation_update_one(bulk, query, update, false);
+    bson_destroy(query);
+    bson_destroy(update);
 
-        bool result = mongoc_bulk_operation_execute(bulk, NULL, &error);
-        if (!result) {
-            fprintf (stderr, "Bulk operation error: %s\n", error.message);
-        }
+    bool result = mongoc_bulk_operation_execute(bulk, NULL, &error);
+    if (!result) {
+        fprintf (stderr, "Bulk operation error: %s\n", error.message);
+    }
     // end-bulk-write
 }
 

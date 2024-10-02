@@ -15,7 +15,7 @@ Write Data to MongoDB
    :values: reference
  
 .. meta::
-   :description: Learn how to use {+driver-short+} to write data to MongoDB.
+   :description: Learn how to use the {+driver-short+} to write data to MongoDB.
    :keywords: usage examples, save, crud, create, code example
 
 .. toctree::
@@ -32,7 +32,7 @@ Overview
 --------
 
 On this page, you can see copyable code examples that show common functions you
-can use to write data to MongoDB with {+driver-short+}.
+can use to write data to MongoDB with the {+driver-short+}.
 
 .. tip::
 
