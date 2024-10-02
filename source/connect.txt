@@ -25,8 +25,8 @@ Connect to MongoDB
    /connect/mongoclient
    /connect/stable-api
    /connect/connection-targets
-   /connect/tls
-..   /connect/server-selection
+.. /connect/tls
+.. /connect/server-selection
 
 Overview
 --------
@@ -53,7 +53,7 @@ Be sure to replace all placeholders in the code examples, such as
    :language: c
    :copyable: true
    :linenos:
-   :emphasize-lines: 12-14
+   :emphasize-lines: 14-16
 
 Connection
 ----------
