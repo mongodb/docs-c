@@ -23,10 +23,10 @@ Connect to MongoDB
    :maxdepth: 1
     
    /connect/mongoclient
+   /connect/stable-api
    /connect/connection-targets
-..   /connect/tls
+   /connect/tls
 ..   /connect/server-selection
-..   /connect/stable-api
 
 .. TODO, the rest of this root page will be filled out in DOCSP-43745, after
 .. all the child pages have been created. 
