@@ -50,7 +50,7 @@ database commands:
   to the server.
 - ``mongoc_client_command_with_opts()``, which runs a specified command on the
   server and interprets ``opts`` according to the MongoDB server version. This
-  function offers flexibiilty by allowing additional options.
+  function offers flexibilty by allowing additional options.
 
 The following code shows how you can use the ``mongoc_client_command_simple()``
 function to run the ``hello`` command, which returns information about the current
@@ -97,7 +97,7 @@ The following code shows how to specify a ``grantRolesToUsers`` command with a
 
    The ``mongoc_client_command_simple()`` and
    ``mongoc_client_command_with_opts()`` functions ignore the read preference
-   setting you might have set on your database. By default, these functions use
+   setting you might have set on your client. By default, these functions use
    the ``primary`` read preference.
 
    To specify a read preference other than the primary read preference, you must
@@ -112,7 +112,7 @@ The following code shows how to specify a ``grantRolesToUsers`` command with a
       command = BCON_NEW("hello", BCON_INT32(1));
 
       retval = mongoc_client_command_simple(client, "admin", command,
-      read_prefs, NULL, &reply, &error);
+      read_prefs, &reply, &error);
   
    For more information on read preference options, see :manual:`Read Preference
    </core/read-preference/>` in the Server manual.
@@ -134,10 +134,10 @@ Example
 -------
 
 The following code shows how you can use the
-``mongoc_client_command_with_opts()`` function to run the
+``mongoc_client_write_command_with_opts()`` function to run the
 ``cloneCollectionAsCapped`` command with the ``writeConcern`` option. It then
-runs the ``distinct`` command with the ``collation`` and ``readConcern``
-options.
+uses the ``mongoc_client_read_command_with_opts()`` function to run the
+``distinct`` command with the ``collation`` and ``readConcern`` options.
 
 .. literalinclude:: /includes/usage-examples/run-command.c
     :language: c
@@ -176,7 +176,7 @@ documentation:
 API Documentation
 ~~~~~~~~~~~~~~~~~
 
-- `mongoc_client_command_simple()
-  <{+api-libmongoc+}/mongoc_client_command_simple>`__
-- `mongoc_client_command_with_opts()
-  <{+api-libmongoc+}/mongoc_client_command_with_opts>`__
+- `mongoc_client_command_simple() <{+api-libmongoc+}/mongoc_client_command_simple>`__
+- `mongoc_client_command_with_opts() <{+api-libmongoc+}/mongoc_client_command_with_opts>`__
+- `mongoc_client_write_command_with_opts() <{+api-libmongoc+}/mongoc_client_write_command_with_opts>`__
+- `mongoc_client_read_command_with_opts() <{+api-libmongoc+}/mongoc_client_read_command_with_opts>`__
