@@ -72,6 +72,7 @@ The following example sets the write concern to ``MONGOC_WRITE_CONCERN_W_MAJORIT
    :start-after: // start-client-write-concern
    :end-before: // end-client-write-concern
    :language: c
+   :dedent:
 
 The following example sets the write concern to ``MONGOC_WRITE_CONCERN_W_MAJORITY`` for a collection:
 
@@ -79,6 +80,7 @@ The following example sets the write concern to ``MONGOC_WRITE_CONCERN_W_MAJORIT
    :start-after: // start-collection-write-concern
    :end-before: // end-collection-write-concern
    :language: c
+   :dedent:
 
 .. note:: Collections and Databases are Immutable
 
@@ -138,6 +140,7 @@ The following example sets the read concern to ``MONGOC_READ_CONCERN_LEVEL_MAJOR
    :start-after: // start-client-read-concern
    :end-before: // end-client-read-concern
    :language: c
+   :dedent:
 
 The following example sets the read concern to ``MONGOC_READ_CONCERN_LEVEL_MAJORITY`` for a
 collection:
@@ -146,6 +149,7 @@ collection:
    :start-after: // start-collection-read-concern
    :end-before: // end-collection-read-concern
    :language: c
+   :dedent:
 
 To learn more about read concern, see :manual:`Read Concern
 <reference/read-concern>` in the {+mdb-server+} manual.
@@ -182,6 +186,7 @@ for an instance of ``mongoc_client_t``:
    :start-after: // start-client-read-preference
    :end-before: // end-client-read-preference
    :language: c
+   :dedent:
 
 The following example sets the read preference to ``MONGOC_READ_SECONDARY``
 for a collection:
@@ -190,6 +195,7 @@ for a collection:
    :start-after: // start-collection-read-preference
    :end-before: // end-collection-read-preference
    :language: c
+   :dedent:
 
 For more information about read preference, see :manual:`Read Preference
 </core/read-preference/>` in the {+mdb-server+} manual.
