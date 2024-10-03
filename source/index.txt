@@ -10,9 +10,12 @@
    /connect
    /databases-collections
    /run-command
+   /write
    /read
    /indexes
+   /monitoring
    /aggregation
+   /read-write-configuration
    /whats-new
    /compatibility
    /upgrade
@@ -53,11 +56,11 @@ What's New
 For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
 section.
 
-.. TODO
-.. Write Data to MongoDB
-.. ---------------------
 
-.. Learn how you can write data to MongoDB in the :ref:`c-write` section.
+Write Data to MongoDB
+---------------------
+
+Learn how you can write data to MongoDB in the :ref:`c-write` section.
 
 Read Data from MongoDB
 ----------------------
@@ -75,6 +78,12 @@ Transform Your Data with Aggregation
 
 Learn how to use the {+driver-short+} to perform aggregation operations in the
 :ref:`c-aggregation` section.
+
+Configure Operations on Replica Sets
+------------------------------------
+
+Learn how to configure read and write operations on a replica set in the
+:ref:`c-read-write-config` section.
 
 .. TODO:
 .. FAQ
