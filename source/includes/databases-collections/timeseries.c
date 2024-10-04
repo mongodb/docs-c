@@ -27,8 +27,9 @@ int main (void)
     if (!collection) {
         fprintf(stderr, "Error creating collection: %s\n", error.message);
     }
-    // end-create-time-series
     bson_destroy (opts);
+    // end-create-time-series
+
     // start-list-collections
     // List collections in the database
     mongoc_cursor_t *cursor = mongoc_database_find_collections_with_opts (database, NULL);
@@ -55,8 +56,8 @@ int main (void)
         "location", "{", "city", BCON_UTF8 ("New York"), "}",
         "timestamp", BCON_DATE_TIME (1633046400000));
 
-    if (!mongoc_collection_insert_one (collection, insert_doc, NULL, NULL, &error) {
-        fprintf("Error inserting document: %s\n", error.message);
+    if (!mongoc_collection_insert_one (collection, insert_doc, NULL, NULL, &error)) {
+        fprintf(stderr, "Error inserting document: %s\n", error.message);
     }
     // end-insert-document
     mongoc_database_destroy (database);
