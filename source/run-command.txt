@@ -142,7 +142,8 @@ uses the ``mongoc_client_read_command_with_opts()`` function to run the
 .. literalinclude:: /includes/usage-examples/run-command.c
     :language: c
     :dedent:
-    :emphasize-lines: 18-21, 23, 35, 51, 54-56, 58-61
+    :linenos:
+    :emphasize-lines: 17-20, 30, 46, 53-56
     :start-after: start-run-command-example
     :end-before: end-run-command-example
 
