@@ -46,7 +46,7 @@ main (int argc, char *argv[])
         );
 
         mongoc_write_concern_t *write_concern = mongoc_write_concern_new();
-        mongoc_write_concern_set_w (write concern, MONGOC_WRITE_CONCERN_W_MAJORITY);
+        mongoc_write_concern_set_w (write_concern, MONGOC_WRITE_CONCERN_W_MAJORITY);
         bson_t *opts = bson_new();
         mongoc_write_concern_append(write_concern, opts);
 
@@ -63,6 +63,7 @@ main (int argc, char *argv[])
         bson_destroy(command);
         bson_destroy(opts);
         bson_destroy(&reply);
+        mongoc_write_concern_destroy (write_concern);
         // end-execute-command-with-options
     }
 
@@ -79,7 +80,7 @@ main (int argc, char *argv[])
                 BCON_INT64 (1024 * 1024));
 
         /* Includes write concern "majority" in command options */
-        mongo_write_concern_t *write_concern = mongoc_write_concern_new ();
+        mongoc_write_concern_t *write_concern = mongoc_write_concern_new ();
         mongoc_write_concern_set_w (write_concern, MONGOC_WRITE_CONCERN_W_MAJORITY);
         bson_t *opts = bson_new ();
         mongoc_write_concern_append (write_concern, opts);
@@ -94,6 +95,7 @@ main (int argc, char *argv[])
 
         bson_free (cmd);
         bson_free (opts);
+        bson_destroy (&reply);
 
         /* Defines distinct values of "x" in "my_collection" where "y" sorts after "one" */
         cmd = BCON_NEW ("distinct",
@@ -120,7 +122,7 @@ main (int argc, char *argv[])
         mongoc_read_concern_append (read_concern, opts);
 
         if (mongoc_client_read_command_with_opts (client, "test", cmd, read_prefs, opts, &reply, &error)) {
-            str = bson_as_canonical_extended_json (&reply, NULL);
+            char* str = bson_as_canonical_extended_json (&reply, NULL);
             printf ("distinct: %s\n", str);
             bson_free (str);
         } else {
