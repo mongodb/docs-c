@@ -8,11 +8,13 @@ intersphinx = [
 ]
 
 toc_landing_pages = [
+  "/databases-collections",
   "/read", 
   "/get-started", 
   "/indexes", 
   "/work-with-indexes",
-  "/connect"
+  "/connect",
+  "/write"
  ]
 
 sharedinclude_root = "https://raw.githubusercontent.com/10gen/docs-shared/main/"
