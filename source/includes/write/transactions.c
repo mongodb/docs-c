@@ -5,9 +5,11 @@
 
 // start-callback
 bool
-transaction_callback (mongoc_client_session_t *session)
+transaction_callback (mongoc_client_session_t *session, void *ctx, bson_t **reply,
+                      bson_error_t *error)
 {
-    bson_error_t error;
+    BSON_UNUSED(ctx);
+    BSON_UNUSED(reply);
 
     mongoc_client_t *client = mongoc_client_session_get_client (session);
 
@@ -15,7 +17,7 @@ transaction_callback (mongoc_client_session_t *session)
     mongoc_collection_t *savings = mongoc_client_get_collection (client, "sample_bank", "savings");
     mongoc_collection_t *receipts = mongoc_client_get_collection (client, "sample_bank", "receipts");
 
-    char *account_id = "123456";
+    const char *account_id = "123456";
     int transfer_amount = 1000;
 
     bson_t *filter = BCON_NEW ("account_id", BCON_UTF8 (account_id));
@@ -56,7 +58,7 @@ transaction_callback (mongoc_client_session_t *session)
 // end-callback
 
 int
-main (int argc, char *argv[])
+main (void)
 {
     mongoc_client_t *client;
     bson_error_t error;
