@@ -9,11 +9,14 @@
    Get Started </get-started>
    /connect
    /databases-collections
+   /run-command
+   /write
    /read
    /indexes
    /monitoring
    /aggregation
    /install-from-source
+   /read-write-configuration
    /whats-new
    /compatibility
    /upgrade
@@ -80,6 +83,12 @@ Install From Source
 
 Learn how to build the ``libmongoc`` and ``libbson`` libraries from their source
 code in the :ref:`c-install-from-source` section.
+
+Configure Operations on Replica Sets
+------------------------------------
+
+Learn how to configure read and write operations on a replica set in the
+:ref:`c-read-write-config` section.
 
 .. TODO:
 .. FAQ
