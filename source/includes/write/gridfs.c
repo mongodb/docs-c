@@ -42,10 +42,10 @@ main (void)
         bson_error_t error;
         mongoc_stream_t *upload_stream = mongoc_gridfs_bucket_open_upload_stream (bucket, "my_file", NULL, NULL, &error);
         if (upload_stream == NULL) {
-	            fprintf (stderr, "Failed to create upload stream: %s\n", error.message);
-	    } else {
-	            const char *data = "Data to store";
-	            mongoc_stream_write (upload_stream, data, strlen(data), -1);
+                fprintf (stderr, "Failed to create upload stream: %s\n", error.message);
+        } else {
+                const char *data = "Data to store";
+                mongoc_stream_write (upload_stream, data, strlen(data), -1);
         }
 
         mongoc_stream_close (upload_stream);
@@ -89,8 +89,8 @@ main (void)
         // start-open-download-stream
         char buf[512];
         bson_value_t file_id;
-	    file_id.value_type = BSON_TYPE_OID;
-	    bson_oid_init_from_string (&file_id.value.v_oid, "66fb1b8ea0f84a74ee099e71");
+        file_id.value_type = BSON_TYPE_OID;
+        bson_oid_init_from_string (&file_id.value.v_oid, "66fb1b8ea0f84a74ee099e71");
 
         bson_error_t error;
         mongoc_stream_t *download_stream = mongoc_gridfs_bucket_open_download_stream (bucket, &file_id, &error);
@@ -114,8 +114,8 @@ main (void)
         }
 
         bson_value_t file_id;
-	    file_id.value_type = BSON_TYPE_OID;
-	    bson_oid_init_from_string (&file_id.value.v_oid, "66fb1b8ea0f84a74ee099e71");
+        file_id.value_type = BSON_TYPE_OID;
+        bson_oid_init_from_string (&file_id.value.v_oid, "66fb1b8ea0f84a74ee099e71");
 
         if (!mongoc_gridfs_bucket_download_to_stream (bucket, &file_id, file_stream, &error)) {
             fprintf (stderr, "Failed to download file: %s\n", error.message);
