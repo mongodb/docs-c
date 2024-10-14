@@ -30,6 +30,6 @@ mongoc_client_t *client = mongoc_client_new(uri);
 // end-aws-connection-uri-session
 
 // start-aws-environment
-const char *uri = "mongodb://<AWS IAM access key ID>:<AWS IAM secret access key>@<hostname>:<port>/?authMechanism=MONGODB-AWS");
+const char *uri = "mongodb://<hostname>:<port>/?authMechanism=MONGODB-AWS");
 mongoc_client_t *client = mongoc_client_new(uri);
 // end-aws-environment
