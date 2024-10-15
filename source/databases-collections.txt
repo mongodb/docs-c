@@ -22,6 +22,7 @@ Databases and Collections
    :maxdepth: 1
 
    /databases-collections/time-series
+   /databases-collections/run-command
 
 Overview
 --------

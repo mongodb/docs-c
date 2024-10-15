@@ -9,7 +9,6 @@
    Get Started </get-started>
    /connect
    /databases-collections
-   /run-command
    /write
    /read
    /indexes
