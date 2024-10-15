@@ -14,7 +14,7 @@ mongoc_ssl_opt_t ssl_opts = {0};
 
 ssl_opts.pem_file = "mycert.pem";
 
-const char *uri = "mongodb://<percent-encoded username>:<percent-encoded password>@<hostname>:<port>/?authMechanism=MONGODB-X509";
+const char *uri = "mongodb://<percent-encoded username>@<hostname>:<port>/?authMechanism=MONGODB-X509";
 mongoc_client_t *client = mongoc_client_new(uri);
 mongoc_client_set_ssl_opts(client, &ssl_opts);
 // end-x509
