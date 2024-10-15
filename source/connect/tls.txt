@@ -91,9 +91,9 @@ trusted by the native certificate store in use on the server.
 
 You can provide the client certificate in the following ways:
 
-- Setting the ``tlscertificatekeyfile`` parameter in your connection string to a `.pem` file containing the root certificate chain
-- Using the `mongoc_uri_set_option_as_utf8()` function to set the `MONGOC_URI_TLSCERTIFICATEKEYFILE` option
-  to a `.pem` file containing the root certificate chain
+- Setting the ``tlscertificatekeyfile`` parameter in your connection string to a ``.pem`` file containing the root certificate chain
+- Using the ``mongoc_uri_set_option_as_utf8()`` function to set the ``MONGOC_URI_TLSCERTIFICATEKEYFILE`` option
+  to a ``.pem`` file containing the root certificate chain
 
 .. tabs::
 
