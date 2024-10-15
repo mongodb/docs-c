@@ -14,6 +14,7 @@
    /read
    /indexes
    /monitoring
+   /security
    /aggregation
    /read-write-configuration
    /whats-new
@@ -72,6 +73,18 @@ Optimize Queries by Using Indexes
 
 Learn how to work with common types of indexes in the :ref:`c-indexes`
 section.
+
+Monitoring
+----------
+
+Learn how to monitor change events in the :ref:`c-monitoring`
+section.
+
+Secure Your Data
+----------------
+
+Learn about ways you can authenticate your application and encrypt your data in
+the :ref:`c-security` section.
 
 Transform Your Data with Aggregation
 ------------------------------------

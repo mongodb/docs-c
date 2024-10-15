@@ -137,6 +137,8 @@ retrieve your AWS credentials from the following sources, in the order listed:
 The following sections describe how to use the {+driver-short+} to retrieve credentials from
 these sources and use them to authenticate your application.
 
+.. _c-mongo-aws-connection-uri:
+
 Connection URI
 ~~~~~~~~~~~~~~
 
