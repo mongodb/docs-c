@@ -137,7 +137,7 @@ Learn what changes you might need to make to your application to upgrade driver 
 :ref:`Upgrade Driver Versions <c-upgrade>` section.
 
 Learn
-------
+-----
 
 Visit the Developer Hub to learn more about the {+driver-long+}.
 

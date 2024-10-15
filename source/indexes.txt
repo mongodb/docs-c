@@ -49,7 +49,7 @@ the relevant values for your MongoDB deployment.
    :language: c
    :copyable:
    :linenos:
-   :emphasize-lines: 19-21
+   :emphasize-lines: 17-19
 
 Single Field Index
 ------------------
