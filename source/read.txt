@@ -55,12 +55,13 @@ the relevant values for your MongoDB deployment.
     :language: c
     :copyable:
     :linenos:
-    :emphasize-lines: 20-22
+    :emphasize-lines: 18-20
 
-.. TODO: uncomment when installation guide is complete
-.. .. tip::
 
-..   For instructions about how to install the {+driver-short+}, see :ref:`<c-download-install>`.
+.. tip::
+
+   For instructions about how to install the {+driver-short+}, see :ref:`<c-get-started-download-and-install>`
+   in the Get Started guide.
 
 Find Documents
 --------------

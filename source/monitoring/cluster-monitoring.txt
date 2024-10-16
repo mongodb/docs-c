@@ -57,7 +57,7 @@ actions:
    :language: c
    :copyable:
    :linenos:
-   :emphasize-lines: 10, 30-32
+   :emphasize-lines: 10, 28-30
 
 When you perform a database operation, the driver establishes a new connection to
 the server and your subscriber records the server opening event. The code outputs

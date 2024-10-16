@@ -24,17 +24,31 @@ Connect to MongoDB
 
          mkdir c-quickstart
 
-      Run the following commands to create a ``quickstart.c`` application file in the ``c-quickstart``
-      directory:
+      Select the tab corresponding to your operating system and run the
+      following commands to create a ``quickstart.c`` application file
+      in the ``c-quickstart`` directory:
 
-      .. code-block:: bash
+      .. tabs::
 
-         cd c-quickstart
-         touch quickstart.c
+          .. tab:: macOS / Linux
+             :tabid: create-file-mac-linux
+
+             .. code-block:: bash
+
+                cd c-quickstart
+                touch quickstart.c
+
+          .. tab:: Windows
+             :tabid: create-file-windows
+
+             .. code-block:: bash
+
+                cd c-quickstart
+                type nul > quickstart.c
 
    .. step:: Create your {+driver-short+} application
 
-      Copy and paste the following code into the ``quickstart.cpp`` file, which queries
+      Copy and paste the following code into the ``quickstart.c`` file, which queries
       the ``movies`` collection in the ``sample_mflix`` database:
 
       .. literalinclude:: /includes/get-started/quickstart.c

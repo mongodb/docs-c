@@ -32,8 +32,8 @@ following command in your shell:
    apt-cache policy libmongoc-dev
 
 If the version of the driver that is available is not the version you want, you
-can install the driver from source.
-.. TODO: To learn how to install the driver from source, see the c-install-from-source guide.
+can install the driver from source. To learn how to install the driver from source,
+see the :ref:`c-install-from-source` guide.
 
 To learn how to install the driver by using a package manager, select the tab corresponding to
 your operating system:
@@ -204,10 +204,6 @@ your operating system:
       .. code-block:: bash
 
           brew install mongo-c-driver
-
-.. TODO:
-    .. To learn how to install the driver libraries from source, see the
-    .. :ref:`c-install-from-source`` guide.
 
 After you complete these steps, you have the {+driver-short+} installed 
 on your machine.

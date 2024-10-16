@@ -40,9 +40,6 @@ Then, pass your connection string to the ``mongoc_client_new()`` function.
    Follow the :atlas:`Atlas driver connection guide </driver-connection>`
    to retrieve your connection string.
 
-.. TODO, uncomment this and link to correct Stable API page for C, once written.
-.. To learn more about the {+stable-api+} feature, see the :ref:`<c-stable-api>`guide.
-
 The following code shows how to use the {+driver-short+} to connect to an Atlas cluster. The
 code also uses the ``mongoc_server_api_new()`` function to specify a {+stable-api+} version.
 
@@ -52,13 +49,11 @@ code also uses the ``mongoc_server_api_new()`` function to specify a {+stable-ap
    :end-before: end-connect-stable-api
    :dedent:
 
-
-.. TODO, add link to Stable API page for C Driver once created
-
 .. tip::
 
    When you connect to Atlas, we recommend using the {+stable-api+} client option to avoid
-   breaking changes when Atlas upgrades to a new version of {+mdb-server+}.
+   breaking changes when Atlas upgrades to a new version of {+mdb-server+}. To learn more
+   about the {+stable-api+}, see the :ref:`c-stable-api` guide.
 
 Local Deployments
 -----------------

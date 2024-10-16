@@ -81,7 +81,7 @@ The following example creates a time series collection named ``october2024`` in 
    :start-after: start-create-time-series
    :end-before: end-create-time-series
    :dedent:
-   :emphasize-lines: 13-19
+   :emphasize-lines: 12-18
 
 To verify that you successfully created the time series collection, run
 the ``mongoc_database_find_collections_with_opts()`` function on the
@@ -95,7 +95,7 @@ the ``mongoc_database_find_collections_with_opts()`` function on the
       :start-after: start-list-collections
       :end-before: end-list-collections
       :dedent:
-      :emphasize-lines: 4-11
+      :emphasize-lines: 2-9
 
    .. output::
 
