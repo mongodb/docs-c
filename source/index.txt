@@ -50,12 +50,6 @@ Databases and Collections
 Learn how to use the {+driver-short+} to work with MongoDB databases and collections in the
 :ref:`c-databases-collections` section.
 
-What's New
-----------
-
-For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
-section.
-
 Write Data to MongoDB
 ---------------------
 
@@ -123,6 +117,12 @@ Learn how to configure read and write operations on a replica set in the
 
 .. Learn how to report bugs, contribute to the driver, and find more resources for
 .. asking questions and receiving help in the :ref:`Issues & Help <c-issues-and-help>` section.
+
+What's New
+----------
+
+For a list of new features and changes in each version, see the :ref:`What's New <c-whats-new>`
+section.
 
 Compatibility
 -------------
