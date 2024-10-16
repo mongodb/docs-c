@@ -72,7 +72,7 @@ instance of MongoDB:
    client = mongoc_client_new ("mongodb://localhost:27017");
 
 To learn more about connecting to local deployments, see :ref:`c-connect-local`
-in the Connection Target guide.
+in the Choose a Connection Target guide.
 
 Atlas
 ~~~~~
@@ -85,7 +85,7 @@ deployment hosted on Atlas:
    client = mongoc_client_new ("mongodb+srv://<db_username>:<db_password>@<hostname>/?<options>");
 
 To learn more about connecting to Atlas, see :ref:`c-connect-atlas` in the
-Connection Target guide.
+Choose a Connection Target guide.
 
 Replica Set
 ~~~~~~~~~~~
@@ -98,7 +98,7 @@ replica set:
    client = mongoc_client_new ("mongodb+srv://<replica-set-member>/?replicaSet=<replica_set_name>");
 
 To learn more about connecting to replica sets, see
-:ref:`c-connect-replica-sets` in the Connection Target guide.
+:ref:`c-connect-replica-sets` in the Choose a Connection Target guide.
 
 Transport Layer Security (TLS)
 ------------------------------
