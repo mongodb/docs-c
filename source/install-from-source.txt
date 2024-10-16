@@ -17,7 +17,7 @@ This page details how to download, unpack, configure, and build the ``libbson`` 
 
    Admonitions (like this one) contain extra information and explanatory details
    that are not required to complete the tutorial, but may be helpful for curious
-   readersx and more advanced users that want an explanation of the meaning of
+   readers and more advanced users that want an explanation of the meaning of
    certain tutorial steps.
 
 The following page uses a few named variables to represent configuration
