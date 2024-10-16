@@ -21,7 +21,7 @@ This page details how to download, unpack, configure, and build the ``libbson`` 
    certain tutorial steps.
 
 The following page uses a few named variables to represent configuration
-information, such as $VERSION. You must choose values for these variables
+information, such as ``$VERSION``. You must choose values for these variables
 before you start the tutorial. When you see a variable referenced in a
 tutorial step, substitute your value in its place.
 
@@ -37,7 +37,7 @@ Choose a Version
 Before you begin, know what version of ``mongo-c-driver`` you will be downloading.
 A list of available versions can be found on
 `the GitHub repository tags page <https://github.com/mongodb/mongo-c-driver/tags>`__.
-(This tutorial documents the current driver version, v{+full-version+}.)
+This tutorial documents the current driver version, v{+full-version+}.
 
 For the remainder of this page, ``$VERSION`` will refer to the version number of
 ``mongo-c-driver`` that you will be building for this tutorial.
@@ -51,10 +51,10 @@ Obtaining the Source
 Obtain the ``mongo-c-driver`` source code in one of the following ways:
 
 - Clone the repository by using ``git`` (recommended).
-  `(See below) <learn.obtaining.git>`__
+  For more information, see :ref:`learn.obtaining.git`.
 
 - Download a source archive at a specific version.
-  `(See below) <learn.obtaining.archive>`__
+  For more information, see :ref:`learn.obtaining.archive`.
 
 .. important::
 
@@ -149,8 +149,7 @@ Obtaining Prerequisites
 
 You must install `CMake <https://cmake.org>`__ to configure the ``libmongoc`` and
 ``libbson`` projects. We highly recommended that you download the latest stable version of
-CMake that is available for your platform. To download a new stable release of CMake,
-visit the .
+CMake that is available for your platform.
 
 Select the tab corresponding to your operating system and follow the instructions
 to download CMake:
@@ -187,11 +186,11 @@ to download CMake:
 
 This page assumes that ``cmake`` is available as a command on your ``PATH`` environment
 variable and can be executed as "``cmake``" from a shell. You can test this by requesting
-the ``--version`` from CMake from the command line:
+the ``--version`` from CMake from the command line, as shown in the following code:
 
 .. code-block:: none
 
-   $ cmake --version
+   cmake --version
    cmake version 3.21.4
 
   CMake suite maintained and supported by Kitware (kitware.com/cmake).
