@@ -10,34 +10,34 @@ Building the C Driver Libraries from Source
    :depth: 2
    :class: singlecol
    
-This page details how to download, unpack, configure, and build ``libbson`` and
-``libmongoc`` from their original source-code form.
+This page details how to download, unpack, configure, and build the ``libbson`` and
+``libmongoc`` libraries from their source code.
 
 .. tip:: Extra information
 
-   Dropdowns (like this one) contain extra information and explanatory details
+   Admonitions (like this one) contain extra information and explanatory details
    that are not required to complete the tutorial, but may be helpful for curious
-   readers, and more advanced users that want an explanation of the meaning of
+   readersx and more advanced users that want an explanation of the meaning of
    certain tutorial steps.
 
-The following page uses a few named "variables" that you must decide up-front.
-When you see such a value referenced in a tutorial step, you should substitute
-the value into that step.
+The following page uses a few named variables to represent configuration
+information, such as $VERSION. You must choose values for these variables
+before you start the tutorial. When you see a variable referenced in a
+tutorial step, substitute your value in its place.
 
 .. seealso::
 
-  Before building, you may want to check that you are running on a supported
-  platform. For the list of supported platforms, refer to :ref:`platform-support`
-  on the Compatibility page.
-
+   Before you build the libraries, check that you are running on a supported
+   platform. For the list of supported platforms, refer to :ref:`platform-support`
+   on the Compatibility page.
 
 Choose a Version
 ----------------
 
-Before we begin, know what version of ``mongo-c-driver`` you will be downloading.
+Before you begin, know what version of ``mongo-c-driver`` you will be downloading.
 A list of available versions can be found on
 `the GitHub repository tags page <https://github.com/mongodb/mongo-c-driver/tags>`__.
-(The current version written for this documentation is {+full-version+}.)
+(This tutorial documents the current driver version, v{+full-version+}.)
 
 For the remainder of this page, ``$VERSION`` will refer to the version number of
 ``mongo-c-driver`` that you will be building for this tutorial.
@@ -48,14 +48,13 @@ For the remainder of this page, ``$VERSION`` will refer to the version number of
 Obtaining the Source
 --------------------
 
-There are two primary recommended methods of obtaining the ``mongo-c-driver``
-source code:
+Obtain the ``mongo-c-driver`` source code in one of the following ways:
 
-1. Clone the repository using ``git`` (recommended).
-   `(See below) <learn.obtaining.git>`__
+- Clone the repository by using ``git`` (recommended).
+  `(See below) <learn.obtaining.git>`__
 
-2. Download a source archive at a specific version.
-   `(See below) <learn.obtaining.archive>`__
+- Download a source archive at a specific version.
+  `(See below) <learn.obtaining.archive>`__
 
 .. important::
 
@@ -69,10 +68,10 @@ source code:
 Downloading Using Git
 ~~~~~~~~~~~~~~~~~~~~~
 
-Using Git, the C driver repository can be cloned from the GitHub URL
-https://github.com/mongodb/mongo-c-driver.git. Git tags for released versions
-are named after the version for which they correspond (e.g. "{+full-version+}"). To
-clone the repository using the command line, the following command may be used:
+You can clone the C driver repository from :github:`GitHub <mongodb/mongo-c-driver.git>`
+by using Git. Git tags for released versions are named after the version for which they
+correspond (e.g. "{+full-version+}"). To clone the repository from the command line,
+use the following command:
 
 .. code-block:: bash
 
@@ -80,18 +79,18 @@ clone the repository using the command line, the following command may be used:
 
 .. tip::
 
-  Despite the name, ``git-clone``'s ``--branch`` argument may also be used to
-  clone from repository *tags*.
+   Despite its name, you can use the ``--branch`` option of the ``git-clone`` command to
+   clone from repository tags.
 
 .. _learn.obtaining.archive:
 
 Downloading a Release Archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-An archived snapshot of the repository can be obtained from the
-`GitHub Releases Page <https://github.com/mongodb/mongo-c-driver/releases>`__.
-The ``mongo-c-driver-x.y.z.tar.gz`` archive attached to any release contains the
-minimal set of files that you'll need for the build.
+You can obtain an archived snapshot of the C driver repository from the repository's
+:github:`Releases <mongodb/mongo-c-driver/releases>` page. Every release includes a
+``mongo-c-driver-x.y.z.tar.gz`` archive, which contains contains the minimal set of
+files that you'll need for the build.
 
 .. tabs::
 
@@ -106,6 +105,11 @@ minimal set of files that you'll need for the build.
         ## Extract using tar:
         $ tar xf "mongo-c-driver-$VERSION.tar.gz"
 
+      The preceding commands create the ``mongo-c-driver-$VERSION`` directory 
+      within the directory in which you ran them, which is the root of the driver
+      source tree. This documentation refers to this directory as ``$SOURCE``. 
+      The ``$SOURCE`` directory contains the top-level ``CMakeLists.txt`` file.
+
    .. tab:: Using ``curl`` + ``tar``
       :tabid: curl-tar
 
@@ -116,6 +120,11 @@ minimal set of files that you'll need for the build.
              --output="mongo-c-driver-$VERSION.tar.gz"
         ## Extract using tar:
         $ tar xf "mongo-c-driver-$VERSION.tar.gz"
+
+      The preceding commands create the ``mongo-c-driver-$VERSION`` directory 
+      within the directory in which you ran them, which is the root of the driver
+      source tree. This documentation refers to this directory as ``$SOURCE``. 
+      The ``$SOURCE`` directory contains the top-level ``CMakeLists.txt`` file.
 
    .. tab:: PowerShell
       :tabid: powershell
@@ -129,53 +138,56 @@ minimal set of files that you'll need for the build.
         ## Extract using Expand-Archive:
         PS> Expand-Archive mongo-c-driver-$VERSION.zip
 
-The above commands will create a new directory ``mongo-c-driver-$VERSION`` within
-the directory in which you ran the ``tar`` / ``Expand-Archive`` command (**note**:
-PowerShell will create an additional intermediate subdirectory of the same
-name). This directory is the root of the driver source tree (which we refer to
-as ``$SOURCE`` in these documents). The ``$SOURCE`` directory should contain the
-top-level ``CMakeLists.txt`` file.
-
+      The preceding commands create the ``mongo-c-driver-$VERSION`` directory 
+      within the directory in which you ran them. The ``mongo-c-driver-$VERSION`` directory
+      contains a second ``mongo-c-driver-$VERSION`` directory, which is the root of the driver
+      source tree. This documentation refers to this directory as ``$SOURCE``. 
+      The ``$SOURCE`` directory contains the top-level ``CMakeLists.txt`` file.
 
 Obtaining Prerequisites
 -----------------------
 
-In order to build the project, a few prerequisites need to be available.
+You must install `CMake <https://cmake.org>`__ to configure the ``libmongoc`` and
+``libbson`` projects. We highly recommended that you download the latest stable version of
+CMake that is available for your platform. To download a new stable release of CMake,
+visit the .
 
-Both ``libmongoc`` and ``libbson`` projects use `CMake <https://cmake.org>`__ for build configuration.
+Select the tab corresponding to your operating system and follow the instructions
+to download CMake:
 
-.. note::
+.. tabs::
 
-   It is *highly recommended* -- but not *required* -- that you download the
-   latest stable CMake available for your platform.
+   .. tab:: Windows or macOS
+      :tabid: windows-macos
 
-.. tip:: Getting the Latest CMake
-   
-   A new stable release of CMake can be obtained from
-   `the CMake downloads page <https://cmake.org/download/#latest>`__.
+      1. Visit the `CMake downloads page <https://cmake.org/download/#latest>`__.
+      
+      #. Download the CMake ``.msi`` or ``.dmg`` file and use it
+         to install CMake.
 
-   For Windows and macOS, simply download the CMake ``.msi`` / ``.dmg`` (not the
-   ``.zip`` / ``.tar.gz``) and use it to install CMake.
+   .. tab:: Linux
+      :tabid: linux
 
-   On Linux, download the self-extracting shell script (ending with ``.sh``) and
-   execute it using the ``sh`` utility, passing the appropriate arguments to
-   perform the install. For example, with the CMake 3.27.0 on the ``x86_64``
-   platform, the following command can be used on the
-   ``cmake-3.27.0-linux-x86_64.sh`` script:
+      1. Visit the `CMake downloads page <https://cmake.org/download/#latest>`__
 
-   .. code-block:: none
+      #. Download the self-extracting shell script, which ends with ``.sh``.
+        
+      #. Execute the script by using the ``sh`` utility and passing the appropriate
+         arguments to perform the install. For example, with the CMake 3.27.0 on the ``x86_64``
+         platform, run the following command:
 
-      $ sh cmake-3.27.0-linux-x86_64.sh --prefix="$HOME/.local" --exclude-subdir --skip-license
+         .. code-block:: none
 
-   Assuming that ``$HOME/.local/bin`` is on your ``$PATH`` list, the ``cmake`` command
-   for 3.27.0 will then become available.
-   
-   The ``--help`` option can be passed to the shell script for more information.
+            sh cmake-3.27.0-linux-x86_64.sh --prefix="$HOME/.local" --exclude-subdir --skip-license
 
-For the remainder of this page, it will be assumed that ``cmake`` is available as
-a command on your ``PATH`` environment variable and can be executed as "``cmake``"
-from a shell. You can test this by requesting the ``--version`` from CMake from
-the command line:
+         Assuming that ``$HOME/.local/bin`` is on your ``$PATH`` list, the ``cmake`` command
+         for 3.27.0 will then become available.
+      
+         The ``--help`` option can be passed to the shell script for more information.
+
+This page assumes that ``cmake`` is available as a command on your ``PATH`` environment
+variable and can be executed as "``cmake``" from a shell. You can test this by requesting
+the ``--version`` from CMake from the command line:
 
 .. code-block:: none
 
