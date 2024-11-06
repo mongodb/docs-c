@@ -16,7 +16,7 @@
    Security </security>
    Data Aggregation </aggregation>
    Build the Driver </install-from-source>
-   Operations on Replica Sets /read-write-configuration
+   Operations on Replica Sets </read-write-configuration>
    What's New </whats-new>
    Compatibility </compatibility>
    Upgrade </upgrade>
