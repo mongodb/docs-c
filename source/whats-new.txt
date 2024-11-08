@@ -17,6 +17,13 @@ What's New
 .. meta::
    :keywords: update, new feature, deprecation, upgrade
 
+Overview
+--------
+
+The {+driver-long+} consists of two libraries: ``{+libbson+}`` and
+``{+libmongoc+}``. On this page, you can learn about the changes,
+and deprecations made in each version of the driver libraries.
+
 Learn what's new in:
 
 * :ref:`Version 1.29.0 <c-version-1.29.0>`
@@ -39,13 +46,13 @@ Learn what's new in:
 What's New in 1.29.0
 --------------------
 
-The 1.29.0 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.29.0 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.29.0 release of ``libbson`` includes the following changes:
+The 1.29.0 release of ``{+libbson+}`` includes the following changes:
 
 Deprecations
 ````````````
@@ -56,8 +63,10 @@ Deprecations
 - Deprecates ``bson_atomic_*()`` and ``bson_thrd-yield()`` functions
 - Deprecates ``bson_as_json()`` and ``bson_array_as_json()`` functions
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
+
+The 1.29.0 release of ``{+libmongoc+}`` includes the following changes:
 
 Deprecations
 ````````````
@@ -79,13 +88,13 @@ For more information about this release, see the :github:`v1.29 release notes
 What's New in 1.28.0
 --------------------
 
-The 1.28.0 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.28.0 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.28.0 release of ``libbson`` includes the following changes:
+The 1.28.0 release of ``{+libbson+}`` includes the following changes:
 
 New Features
 ````````````
@@ -98,7 +107,7 @@ Changes
 - Removes automatic ``ccache`` detection and usage
 - Removes ``Mongo_USE-CCACHE``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
 New Features
@@ -138,23 +147,23 @@ For more information about this release, see the :github:`v1.28 release notes
 What's New in 1.27.6
 --------------------
 
-The 1.27.6 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.6 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.6 release of ``libbson`` includes the following changes:
+The 1.27.6 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Fixes handling of malformed extended JSON for special BSON types
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.6 release of ``libmongoc`` includes the following changes:
+The 1.27.6 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -172,23 +181,23 @@ Improvements
 What's New in 1.27.5
 --------------------
 
-The 1.27.5 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.5 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.5 release of ``libbson`` includes the following changes:
+The 1.27.5 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Fixes large string handling in ``bson_append_utf8``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.5 release of ``libmongoc`` includes the following changes:
+The 1.27.5 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -200,23 +209,23 @@ Fixes
 What's New in 1.27.4
 --------------------
 
-The 1.27.4 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.4 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.4 release of ``libbson`` includes the following changes:
+The 1.27.4 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Fixes build issues with Visual Studio 2013
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.4 release of ``libmongoc`` includes the following changes:
+The 1.27.4 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -229,13 +238,13 @@ Fixes
 What's New in 1.27.3
 --------------------
 
-The 1.27.3 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.3 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.3 release of ``libbson`` includes the following changes:
+The 1.27.3 release of ``{+libbson+}`` includes the following changes:
 
 Changes
 ```````
@@ -243,10 +252,10 @@ Changes
 - Introduces changes surrounding the development processes, 
   including new code signing and dependency tracking. There are no behavioral or API changes.
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.3 release of ``libmongoc`` includes the following changes:
+The 1.27.3 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -258,13 +267,13 @@ Fixes
 What's New in 1.27.2
 --------------------
 
-The 1.27.2 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.2 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.2 release of ``libbson`` includes the following changes:
+The 1.27.2 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
@@ -272,10 +281,10 @@ Fixes
 - Fixes parsing of colon in timezone
 - Fixes error on failure to initialize a subdocument in ``bson_iter_visit_all``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.2 release of ``libmongoc`` includes the following changes:
+The 1.27.2 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -292,41 +301,41 @@ New Features
 What's New in 1.27.1
 --------------------
 
-The 1.27.1 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.1 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.27.1 release of ``libbson`` includes the following changes:
+The 1.27.1 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Fixes large string handling in ``bson_string_new`` and ``bson_string_append``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-This version is incremented to match the ``libbson`` version, but there are no changes since 1.27.0. 
+This version is incremented to match the ``{+libbson+}`` version, but there are no changes since 1.27.0. 
 
 .. _c-version-1.27.0:
 
 What's New in 1.27.0
 --------------------
 
-The 1.27.0 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.27.0 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-This version is incremented to match the ``libbson`` version, but there are no changes since 1.26.2. 
+This version is incremented to match the ``{+libbson+}`` version, but there are no changes since 1.26.2. 
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.27.0 release of ``libmongoc`` includes the following changes:
+The 1.27.0 release of ``{+libmongoc+}`` includes the following changes:
 
 Changes
 ```````
@@ -352,23 +361,23 @@ New Features
 What's New in 1.26.2
 --------------------
 
-The 1.26.2 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.26.2 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.26.2 release of ``libbson`` includes the following changes:
+The 1.26.2 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Fixes iteration on ``bson_strfreev``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.26.2 release of ``libmongoc`` includes the following changes:
+The 1.26.2 release of ``{+libmongoc+}`` includes the following changes:
 
 Changes
 ```````
@@ -390,23 +399,23 @@ Fixes
 What's New in 1.26.1
 --------------------
 
-The 1.26.1 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.26.1 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-The 1.26.1 release of ``libbson`` includes the following changes:
+The 1.26.1 release of ``{+libbson+}`` includes the following changes:
 
 Fixes
 `````
 
 - Uses aligned allocation for ``bson_array_builder_t``
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.26.1 release of ``libmongoc`` includes the following changes:
+The 1.26.1 release of ``{+libmongoc+}`` includes the following changes:
 
 Fixes
 `````
@@ -418,18 +427,18 @@ Fixes
 What's New in 1.26.0
 --------------------
 
-The 1.26.0 release of ``libbson`` and ``libmongoc``, the libraries constituting 
+The 1.26.0 release of ``{+libbson+}`` and ``{+libmongoc+}``, the libraries constituting 
 the C driver, includes several changes.
 
-libbson
+{+libbson+}
 ~~~~~~~
 
-This version is incremented to match the ``libmongoc`` version, but there are no changes since 1.25.4. 
+This version is incremented to match the ``{+libmongoc+}`` version, but there are no changes since 1.25.4. 
 
-libmongoc
+{+libmongoc+}
 ~~~~~~~~~
 
-The 1.26.0 release of ``libmongoc`` includes the following changes:
+The 1.26.0 release of ``{+libmongoc+}`` includes the following changes:
 
 New Features
 ````````````
