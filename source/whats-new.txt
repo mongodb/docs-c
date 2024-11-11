@@ -104,7 +104,7 @@ Changes
 ```````
 
 - Removes automatic ``ccache`` detection and usage
-- Removes ``Mongo_USE-CCACHE``
+- Removes ``Mongo_USE_CCACHE``
 
 {+libmongoc+}
 ~~~~~~~~~
