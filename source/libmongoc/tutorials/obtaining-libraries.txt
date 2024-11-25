@@ -10,7 +10,7 @@ There are a few methods of obtaining the ``mongo-c-driver`` codebase:
   :maxdepth: 1
 
   Build from Source </libmongoc/tutorials/obtaining-libraries/from-source>
-  Install Prebuilt Libraries </libmongoc/tutorials/obtaining-libraries/installing>
+  Prebuilt Libraries </libmongoc/tutorials/obtaining-libraries/installing>
   Build the Documentation </libmongoc/tutorials/obtaining-libraries/docs>
 
 - :ref:`build-libraries`

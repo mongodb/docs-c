@@ -12,7 +12,7 @@ Tutorials
    BSON Docsuments </libbson/tutorials/creating>
    Handling Errors </libbson/tutorials/errors>
    ObjectIDs </libbson/tutorials/oid>
-   Parsing & Iterating BSON </libbson/tutorials/parsing>
+   Parsing BSON </libbson/tutorials/parsing>
    UTF-8 </libbson/tutorials/utf8>
 
 - :ref:`bson_include_and_link`
