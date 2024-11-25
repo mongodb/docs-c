@@ -11,7 +11,7 @@ There are a few methods of obtaining the ``mongo-c-driver`` codebase:
 
   Build from Source </libmongoc/tutorials/obtaining-libraries/from-source>
   Prebuilt Libraries </libmongoc/tutorials/obtaining-libraries/installing>
-  Build the Documentatio </libmongoc/tutorials/obtaining-libraries/docs>
+  Build the Documentation </libmongoc/tutorials/obtaining-libraries/docs>
 
 - :ref:`build-libraries`
 - :ref:`installing`
