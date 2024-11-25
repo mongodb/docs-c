@@ -9,6 +9,7 @@ raw: ${prefix}/ -> ${base}/current/
 raw: ${prefix}/stable -> ${base}/current/
 raw: ${prefix}/master -> ${base}/upcoming/
 raw: ${prefix}/current/libmongoc -> ${base}/current/
+raw: ${prefix}/current/libbson -> ${base}/current/
 
 [*-v1.28]: ${prefix}/${version}/get-started/ -> ${base}/${version}/libmongoc/tutorial/
 [*-v1.28]: ${prefix}/${version}/get-started/download-and-install/ -> ${base}/${version}/libmongoc/tutorials/obtaining-libraries
@@ -39,7 +40,6 @@ raw: ${prefix}/current/libmongoc -> ${base}/current/
 [*-v1.28]: ${prefix}/${version}/compatibility/ -> ${base}/${version}/
 [*-v1.28]: ${prefix}/${version}/upgrade/ -> ${base}/${version}/
 
-(v1.28-master]: ${prefix}/${version}/libbson/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorial/ -> ${base}/${version}/get-started/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/obtaining-libraries -> ${base}/${version}/get-started/download-and-install/
