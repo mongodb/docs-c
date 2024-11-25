@@ -1,4 +1,4 @@
-define: prefix docs/drivers/c
+define: prefix docs/languages/c/c-driver
 define: base https://www.mongodb.com/${prefix}
 define: versions v1.26 v1.27 v1.28 v1.29 master
 
@@ -7,6 +7,8 @@ symlink: upcoming -> master
 
 raw: ${prefix}/ -> ${base}/current/
 raw: ${prefix}/stable -> ${base}/current/
+raw: ${prefix}/master -> ${base}/upcoming/
+raw: ${prefix}/current/libmongoc -> ${base}/current/
 
 [*-v1.28]: ${prefix}/${version}/get-started/ -> ${base}/${version}/libmongoc/tutorial/
 [*-v1.28]: ${prefix}/${version}/get-started/download-and-install/ -> ${base}/${version}/libmongoc/tutorials/obtaining-libraries
@@ -41,18 +43,27 @@ raw: ${prefix}/stable -> ${base}/current/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorial/ -> ${base}/${version}/get-started/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/obtaining-libraries -> ${base}/${version}/get-started/download-and-install/
+(v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/obtaining-libraries/from-source/ -> ${base}/${version}/install-from-source/
 (v1.28-master]: ${prefix}/${version}/libmongoc/howto/ -> ${base}/${version}/
+(v1.28-master]: ${prefix}/${version}/libmongoc/howto/source-install/ -> ${base}/${version}/install-from-source/
 (v1.28-master]: ${prefix}/${version}/libmongoc/ref/ -> ${base}/${version}/
+(v1.28-master]: ${prefix}/${version}/libmongoc/ref/packages/ -> ${base}/${version}/get-started/download-and-install/
 (v1.28-master]: ${prefix}/${version}/libmongoc/ref/platforms/ -> ${base}/${version}/compatibility
 (v1.28-master]: ${prefix}/${version}/libmongoc/authentication/ -> ${base}/${version}/security/
 (v1.28-master]: ${prefix}/${version}/libmongoc/basic-troubleshooting/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/configuring_tls/ -> ${base}/${version}/connect/tls/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/bulk/ -> ${base}/${version}/write/bulk-write/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/data-compression/ -> ${base}/${version}/connect/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/distinct-mapreduce/ -> ${base}/${version}/read/distinct/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/visual-studio-guide/ -> ${base}/${version}/get-started/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/mongoc-common-task-examples/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/cursors/ -> ${base}/${version}/read/cursors/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/debugging/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/manage-collection-indexes/ -> ${base}/${version}/indexes/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/queryable-encryption/ -> ${base}/${version}/
+(v1.28-master]: ${prefix}/${version}/libmongoc/guides/client-side-field-level-encryption/ -> ${base}/${version}/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/aggregate/ -> ${base}/${version}/aggregation/
 (v1.28-master]: ${prefix}/${version}/libmongoc/guides/advanced-connections/ -> ${base}/${version}/read-write-configuration/
-(v1.28-master]: ${prefix}/${version}/libmongoc/tutorials/obtaining-libraries/from-source/ -> ${base}/${version}/install-from-source/
+
 
