@@ -115,6 +115,13 @@ You can provide the client certificate in the following ways:
          :end-before: end-connect-ca-file-uri
          :dedent:
 
+.. note::
+
+   If you're compiling against the Windows Native TLS library, you don't need to
+   explicitly specify the location of a CA file. If you don't specify a CA file, the driver
+   will use the Windows Certificate Store. To learn more, see the :ref:`c-native-tls`
+   section of this guide.
+
 .. _c-certificate-revocation:
 
 Server Certificate Verification
@@ -199,6 +206,8 @@ with the following notes:
 .. tip::
  
    For more information about OCSP, see `RFC 6960 <https://tools.ietf.org/html/rfc6960>`__.
+
+.. _c-native-tls:
 
 Native TLS Support on Windows (Secure Channel)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
