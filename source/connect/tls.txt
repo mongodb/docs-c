@@ -117,8 +117,7 @@ You can provide the client certificate in the following ways:
 
 .. note::
 
-   If you're compiling against the Windows Native TLS library, you don't need to
-   explicitly specify the location of a CA file. If you don't specify a CA file, the driver
+   If you don't specify a CA file when compiling against the Windows Native TLS library, the driver
    will use the Windows Certificate Store. To learn more, see the :ref:`c-native-tls`
    section of this guide.
 
