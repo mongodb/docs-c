@@ -77,7 +77,7 @@ Fixes
     of two spaces
   - Serializes arrays that the driver omits because of the maximum recursion limit
     to ``[...]`` instead of ``{...}``
-  - Applies the maximum recursion limit to legacy codewscope documents
+  - Applies the maximum recursion limit to legacy CodeWScope documents
 
 - Fixes an output parameter leaked after unsuccessful calls to the 
   ``bson_append_array_builder_begin()`` function
