@@ -103,8 +103,8 @@ New Features
   encryption keys. To configure this feature, use the ``mongoc_auto_encryption_opts_set_key_expiration()``
   and ``mongoc_client_encryption_opts_set_key_expiration()`` functions.
 
-  To learn more about In-Use Encryption, see :manual:`In-Use Encryption` in
-  the {+mdb-server+} manual.
+  To learn more about In-Use Encryption, see :manual:`In-Use Encryption </core/security-in-use-encryption/>`
+  in the {+mdb-server+} manual.
 
 - Adds support for the ``sort`` option for update and replace operations.
 
