@@ -47,7 +47,8 @@ Learn what's new in:
 What's New in 1.30.0
 --------------------
 
-The 1.30.0 release of the {+driver-short+} includes several changes.
+The following sections describe the changes in the 1.30.0 release of
+the {+driver-short+}.
 
 {+libbson+}
 ~~~~~~~
