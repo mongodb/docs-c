@@ -170,15 +170,15 @@ main (void)
         }),
         "<collection name>"
       );
-      bson_init_from_json( & cmd, cmd_str, -1, & error);
+      bson_init_from_json(&cmd, cmd_str, -1, &error);
       bson_free(cmd_str);
 
-      if (mongoc_collection_command_simple(collection, & cmd, NULL, NULL, & error)) {
+      if (mongoc_collection_command_simple(collection, &cmd, NULL, NULL, &error)) {
         printf("Successfully created Vector Search index\n");
       } else {
         fprintf(stderr, "Failed to create Vector Search index: %s", error.message);
       }
-      bson_destroy( & cmd);
+      bson_destroy(&cmd);
       // end-create-vector-search-index
     }
     {
@@ -211,15 +211,15 @@ main (void)
           ]
         }),
         "<collection name>");
-      bson_init_from_json( & cmd, cmd_str, -1, & error);
+      bson_init_from_json(&cmd, cmd_str, -1, &error);
       bson_free(cmd_str);
 
-      if (mongoc_collection_command_simple(collection, & cmd, NULL, NULL, & error)) {
+      if (mongoc_collection_command_simple(collection, &cmd, NULL, NULL, &error)) {
         printf("Successfully created search indexes\n");
       } else {
         fprintf(stderr, "Failed to create search indexes: %s", error.message);
       }
-      bson_destroy( & cmd);
+      bson_destroy(&cmd);
       // end-create-search-indexes
     }
     {
@@ -283,15 +283,15 @@ main (void)
         }),
         "<collection name>"
         );
-        bson_init_from_json( & cmd, cmd_str, -1, & error);
+        bson_init_from_json(&cmd, cmd_str, -1, &error);
         bson_free(cmd_str);
 
-        if (mongoc_collection_command_simple(collection, & cmd, NULL, NULL, & error)) {
+        if (mongoc_collection_command_simple(collection, &cmd, NULL, NULL, &error)) {
         printf("Successfully updated search index\n");
         } else {
         fprintf(stderr, "Failed to create search index: %s", error.message);
         }
-        bson_destroy( & cmd);
+        bson_destroy(&cmd);
         // end-update-vector-search-index
     }
     {
