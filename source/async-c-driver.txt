@@ -67,7 +67,7 @@ Our resources include:
 
 Here’s a simple application that initializes an asynchronous event loop and attempts to establish a connection to a local MongoDB server using the ``amongoc`` library.
 
-.. literalinclude:: /includes/async-c-driver-example
+.. literalinclude:: /includes/async-c-driver-example.c
    :language: c
    :dedent:
 
