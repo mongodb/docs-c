@@ -14,7 +14,7 @@
    Indexes </indexes>
    Monitor Your Application </monitoring>
    Security </security>
-   amongoc Preview </async-c-driver>
+   amongoc Public Preview </async-c-driver>
    Data Aggregation </aggregation>
    Build the Driver </install-from-source>
    Operations on Replica Sets </read-write-configuration>
