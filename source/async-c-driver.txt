@@ -54,6 +54,7 @@ Getting Started with amongoc
 To explore ``amongoc``, visit the `GitHub repository <https://github.com/mongodb-labs/mongo-c-driver-async/>`__
 and access our comprehensive `Documentation <https://mongodb-labs.github.io/mongo-c-driver-async/>`__. 
 Our resources include: 
+
 - A step-by-step `Quickstart guide <https://github.com/mongodb-labs/mongo-c-driver-async/tree/develop/etc/quickstart>`__
   to help you set up and initiate your first connection.
 - Detailed `Reference documentation <https://mongodb-labs.github.io/mongo-c-driver-async/ref/>`__ 
