@@ -1,8 +1,8 @@
 .. _c-async-driver:
 
-======================
-amongoc Public Preview
-======================
+=======================
+Public Preview: amongoc
+=======================
 
 .. contents:: On this page
    :local:
@@ -61,11 +61,11 @@ Our resources include:
   covering the configuration, building, and usage of the library.
 - `Tutorials <https://mongodb-labs.github.io/mongo-c-driver-async/learn/>`__ to walk you through 
   common use cases and showcase the potential of asynchronous operations.
-- List of `amongoc features <https://mongodb-labs.github.io/mongo-c-driver-async/ref/features/>`__
-- `amongoc’s design considerations <https://mongodb-labs.github.io/mongo-c-driver-async/explain/consider/>`__ 
+- A list of `amongoc features <https://mongodb-labs.github.io/mongo-c-driver-async/ref/features/>`__
+- Descriptions of `amongoc’s design considerations <https://mongodb-labs.github.io/mongo-c-driver-async/explain/consider/>`__ 
   and `amongoc’s asynchrony model <https://mongodb-labs.github.io/mongo-c-driver-async/explain/async-model/>`__
 
-Here’s a simple application that initializes an asynchronous event loop and attempts to establish a connection to a local MongoDB server using the ``amongoc`` library.
+The following example is an application that initializes an asynchronous event loop and attempts to establish a connection to a local MongoDB server using the ``amongoc`` library:
 
 .. literalinclude:: /includes/async-c-driver-example.c
    :language: c
@@ -75,9 +75,8 @@ Feedback: Your Voice Matters
 ----------------------------
 
 This public preview release is focused on gathering user feedback to inform the architectural 
-decisions for a production-ready version. We invite you to try out ``amongoc`` and share your thoughts,
-suggestions, and issues. Please participate in GitHub `discussions <https://github.com/mongodb-labs/mongo-c-driver-async/discussions>`__ and `issues <https://github.com/mongodb-labs/mongo-c-driver-async/issues>`__ to 
-provide your feedback, especially about the interface and build & runtime requirements. Over the next few months, 
-our goal is to collect as much user input as possible to align with the needs and expectations of
-our user community. Your feedback is invaluable, and we eagerly look forward to hearing from you 
-and seeing what you'll create with ``amongoc``!
+decisions for a production-ready version of ``amongoc``. We invite you to share your thoughts,
+suggestions, and issues  in GitHub `discussions <https://github.com/mongodb-labs/mongo-c-driver-async/discussions>`__ 
+and `issues <https://github.com/mongodb-labs/mongo-c-driver-async/issues>`__. We are especially 
+interested in your opinions about the interface, and the build and runtime requirements. Our goal 
+is to collect as much user input as possible to align with the needs and expectations of our user community. Your feedback is invaluable, and we eagerly look forward to hearing from you and seeing what you'll create with ``amongoc``!

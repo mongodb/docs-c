@@ -6,6 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
+   amongoc Public Preview </async-c-driver>
    Get Started </get-started>
    Connect to MongoDB </connect>
    Databases & Collections </databases-collections>
@@ -14,7 +15,6 @@
    Indexes </indexes>
    Monitor Your Application </monitoring>
    Security </security>
-   amongoc Public Preview </async-c-driver>
    Data Aggregation </aggregation>
    Build the Driver </install-from-source>
    Operations on Replica Sets </read-write-configuration>
