@@ -41,8 +41,8 @@ programming language, see our :driver:`list of official drivers <>`.
 Download and Install
 --------------------
 
-Download the {+driver-short+}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Download the C Driver
+~~~~~~~~~~~~~~~~~~~~~
 
 The {+driver-short+} consists of two libraries: ``libbson`` and
 ``libmongoc``. In this guide, you will learn how to install ``libmongoc``,
@@ -293,7 +293,7 @@ To connect to an instance or deployment not hosted on Atlas, see the
 .. procedure::
    :style: connected
 
-   .. step:: Find your MongoDB Atlas Connection String
+   .. step:: Find Your MongoDB Atlas Connection String
 
       To retrieve your connection string for the deployment that
       you created in the :ref:`previous step <c-get-started-create-deployment>`,
@@ -314,7 +314,7 @@ To connect to an instance or deployment not hosted on Atlas, see the
       Deselect the :guilabel:`Include full driver code example` option to view
       only the connection string.
 
-   .. step:: Copy your Connection String
+   .. step:: Copy Your Connection String
 
       Click the button on the right of the connection string to copy it
       to your clipboard, as shown in the following screenshot:
@@ -335,10 +335,10 @@ corresponds to your Atlas cluster.
 
 .. _c-get-started-connect-to-mongodb:
 
-Connect to MongoDB
+Run a Sample Query
 ------------------
 
-.. step:: Create a project directory
+.. step:: Create a Project Directory
 
    In your shell, navigate to where you want to create your
    application, then run the following command to create a
@@ -370,7 +370,7 @@ Connect to MongoDB
                cd c-quickstart
                type nul > quickstart.c
 
-.. step:: Create your {+driver-short+} application
+.. step:: Create Your C Driver Application
 
    Copy and paste the following code into the ``quickstart.c`` file, which queries
    the ``movies`` collection in the ``sample_mflix`` database:
@@ -378,13 +378,13 @@ Connect to MongoDB
    .. literalinclude:: /includes/get-started/quickstart.c
       :language: c
 
-.. step:: Assign the connection string
+.. step:: Assign the Connection String
 
    Replace the ``<connection string>`` placeholder with the
    connection string that you copied from the :ref:`c-get-started-connection-string`
    step of this guide.
 
-.. step:: Run your C application
+.. step:: Run Your C Application
 
    In your shell, run the following commands to compile and run this application:
    
