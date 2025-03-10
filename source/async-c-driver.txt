@@ -75,8 +75,8 @@ Feedback: Your Voice Matters
 ----------------------------
 
 This public preview release is focused on gathering user feedback to inform the architectural 
-decisions for a production-ready version of ``amongoc``. We invite you to share your thoughts,
-suggestions, and issues  in GitHub `discussions <https://github.com/mongodb-labs/mongo-c-driver-async/discussions>`__ 
+decisions for a production-ready version of ``amongoc``. We invite you to share your thoughts and 
+suggestions in GitHub `discussions <https://github.com/mongodb-labs/mongo-c-driver-async/discussions>`__ 
 and `issues <https://github.com/mongodb-labs/mongo-c-driver-async/issues>`__. We are especially 
 interested in your opinions about the interface, and the build and runtime requirements. Our goal 
 is to collect as much user input as possible to align with the needs and expectations of our user community. Your feedback is invaluable, and we eagerly look forward to hearing from you and seeing what you'll create with ``amongoc``!
