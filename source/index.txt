@@ -6,7 +6,7 @@
    :titlesonly:
    :maxdepth: 1
 
-   Public Preview: amongoc </async-c-driver>
+   Asynchronous C Driver: Public Preview </async-c-driver>
    Get Started </get-started>
    Connect to MongoDB </connect>
    Databases & Collections </databases-collections>
