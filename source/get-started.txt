@@ -204,7 +204,7 @@ your operating system:
          vcpkg install mongo-c-driver
 
       After you install the driver, the standard CMake configuration file
-      is available, as well as the generated ``IMPORTED`` targets.
+      and the generated ``IMPORTED`` targets are available.
         
       To configure the CMake project with vcpkg integration, set the CMake
       toolchain file in the configuration command by running the following
@@ -378,7 +378,7 @@ To learn more about the ``sample_mflix`` database, see :atlas:`Sample Mflix Data
       connection string that you copied from the :ref:`c-get-started-connection-string`
       step of this guide.
 
-   .. step:: Configure a CMake application
+   .. step:: Set up a CMake application
 
       To configure your application, create a ``CMakeLists.txt`` file in
       your project directory. Then, add the following code to the file:
@@ -402,6 +402,9 @@ To learn more about the ``sample_mflix`` database, see :atlas:`Sample Mflix Data
          :dedent:
          :start-after: # start-libmongoc
          :end-before: # end-libmongoc
+
+      Replace the ``<version>`` placeholder with your {+driver-short+}
+      version number, such as ``{+full-version+}``.
 
       .. note::
 
