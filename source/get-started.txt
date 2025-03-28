@@ -407,21 +407,6 @@ To learn more about the ``sample_mflix`` database, see :atlas:`Sample Mflix Data
 
       .. TODO: add link to what's new entry about static/shared library
 
-   .. step:: Use the {+driver-short+} in your application
-
-      To link your application to ``libmongoc``, add the following code
-      to your ``CMakeLists.txt`` file:
-
-      .. literalinclude:: /includes/get-started/CMakeLists.txt
-         :language: CMake
-         :dedent:
-         :start-after: # start-libmongoc
-         :end-before: # end-libmongoc
-
-
-
-
-
    .. step:: Run Your C Application
 
       In your shell, run the following commands to build and run this application:
