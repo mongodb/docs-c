@@ -210,8 +210,7 @@ your operating system:
       .. code-block:: cmake
        
          find_package(mongoc CONFIG REQUIRED)
-         target_link_libraries(my-application
-             PRIVATE $<IF:$<TARGET_EXISTS:mongoc::shared>,mongoc::shared,mongoc::static>)
+         target_link_libraries(my-application PRIVATE mongoc::mongoc)
         
       .. note::
         
