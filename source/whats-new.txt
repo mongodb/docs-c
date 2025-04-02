@@ -73,7 +73,7 @@ Changes
 ```````
 
 - Reduces the value of the ``BSON_ERROR_BUFFER_SIZE`` macro from ``504``
-  to ``503`` to reserve the final byte for internal use
+  to ``503`` to reserve the final byte for internal use.
 
 - Renames the following ``pkg-config`` files:
 
@@ -131,11 +131,13 @@ Changes
   - Requires that usernames are non-empty for all authentication mechanisms.
   - Validates username and password specification requirements and returns
     a client error for the specified authentication mechanism.
-  - For the MONGODB-AWS authentication mechanism, the ``authSource`` value defaults to
+  - For the ``MONGODB-AWS`` authentication mechanism, the ``authSource`` value defaults to
     ``$external``.
   - Validates ``authMechanism`` values and returns a client error for invalid values.
-  - Validates ``authMechanismProperties`` values and returns a client error for invalid values.
-    You cannot use the comma (``,``) character in an ``authMechanismProperties`` value.
+  - Validates ``authMechanismProperties`` values and returns a client error for invalid
+    properties for the specified authentication mechanism. You cannot use the comma (``,``)
+    character in an ``authMechanismProperties`` property value if you set the option in
+    your connection string.
   - Correctly parses colon (``:``) characters within ``authMechanismProperties`` values.
 
 - Generates an error if you call ``mongoc_bulk_operation_execute`` on the same 
