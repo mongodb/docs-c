@@ -405,7 +405,9 @@ To learn more about the ``sample_mflix`` database, see :atlas:`Sample Mflix Data
          both library types are available, ``mongoc::mongoc`` uses
          the static library.
 
-      .. TODO: add link to what's new entry about static/shared library
+         You can use the ``mongoc::static`` target to explicitly use the 
+         static library or the ``mongoc::shared`` target to use the shared
+         library.
 
    .. step:: Run Your C Application
 

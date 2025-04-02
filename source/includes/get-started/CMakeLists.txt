@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.11)
 project(c-quickstart LANGUAGES C)
 add_executable (quickstart.out quickstart.c)
 find_package(mongoc <version> REQUIRED)
