@@ -26,6 +26,7 @@ and deprecations made in each version of the driver libraries.
 
 Learn what's new in:
 
+* :ref:`Version 2.0.0 <c-version-2.0.0>`
 * :ref:`Version 1.30.0 <c-version-1.30.0>`
 * :ref:`Version 1.29.0 <c-version-1.29.0>`
 * :ref:`Version 1.28.0 <c-version-1.28.0>`
@@ -41,6 +42,80 @@ Learn what's new in:
 * :ref:`Version 1.26.0 <c-version-1.26.0>`
 
 .. _c-upcoming-breaking-changes:
+
+.. _c-version-2.0.0:
+
+What's New in 2.0.0
+--------------------
+
+The following sections describe the changes in the 2.0.0 release of
+the {+driver-short+}.
+
+.. important:: Removals
+
+   The 2.0.0 driver release removes many deprecated types and methods. To view
+   a full list of removals, see the **Removals** sections of the
+   :github:`v2.0 release notes </mongodb/mongo-c-driver/releases/tag/2.0.0>`.
+
+{+libbson+}
+~~~~~~~
+
+The 2.0.0 release of ``{+libbson+}`` includes the following changes:
+
+New Features
+````````````
+
+- Adds support for the BSON Binary Vector subtype. To learn more, see
+  `BSON Binary Vector subtype <{+api-libbson+}/binary_vector.html>`__ in
+  the {+libbson+} API documentation.
+
+Improvements
+````````````
+
+- Renames the following ``pkg-config`` files:
+
+  - ``libbson-1.0``: Renamed to ``bson2``
+  - ``libbson-static-1.0``: Renamed to ``bson2-static``
+
+- Removes the ``bson-1.0`` CMake package. Instead, use ``bson`` and
+  specify a version or version range to be imported, as shown in the
+  following example:
+
+  .. code-block:: c
+     
+     find_package(bson 1.30...2.0)
+
+{+libmongoc+}
+~~~~~~~~~
+
+The 2.0.0 release of ``{+libmongoc+}`` includes the following changes:
+
+New Features
+````````````
+
+- Supports aggregate operations that include ``$lookup`` stages for
+  In-Use Encryption. To learn more, see the following
+  references in the Server manual:
+
+  - :upcoming:`$lookup and $graphLookup Behavior </core/csfle/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for CSFLE
+  - :upcoming:`$lookup and $graphLookup Behavior </core/queryable-encryption/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for QE
+
+Improvements
+````````````
+
+- Implements URI authentication credentials validation when creating a
+  new ``mongoc_uri_t`` object from a connection string
+
+- Removes the ``mongoc-1.0`` CMake package. Instead, use ``mongoc`` and
+  specify a version or version range to be imported, as shown in the
+  following example:
+
+  .. code-block:: c
+     
+     find_package(mongoc 1.30...2.0)
+
+For more information about this release, see the :github:`v2.0 release notes
+</mongodb/mongo-c-driver/releases/tag/2.0.0>`.
 
 .. _c-version-1.30.0:
 
