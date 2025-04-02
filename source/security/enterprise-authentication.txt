@@ -92,7 +92,7 @@ Complete the following steps to authenticate with GSSAPI:
          You must replace the ``@`` symbol in the principal with ``%40``, as shown
          in the preceding example.
 
-.. include:: /includes/security/auth-properties-commas.rst
+      .. include:: /includes/security/auth-properties-commas.rst
 
 .. _c-plain:
 
