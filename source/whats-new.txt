@@ -152,7 +152,7 @@ Changes
   Before popping a client, use ``mongoc_client_pool_set_ssl_opts`` to set TLS options on
   a ``mongoc_client_pool_t``.
 
-- ``mongoc_client_set_ssl_stream_initiator `` ignores a pooled ``mongoc_client_t`` and
+- ``mongoc_client_set_ssl_stream_initiator`` ignores a pooled ``mongoc_client_t`` and
   logs an error.
 
 - Renames the following ``pkg-config`` files:
