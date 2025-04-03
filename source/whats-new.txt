@@ -138,10 +138,9 @@ Changes
   - Validates ``authMechanismProperties`` values and returns a client error for invalid
     properties for the specified authentication mechanism.
   - Correctly parses colon (``:``) characters within ``authMechanismProperties`` values.
-
-    - Example: Previously, if you set ``authMechanismProperties=A:B,C:D:E,F:G``, the driver
-      parses the value as ``{'A': 'B', 'C': 'D:E,F:G'}``. This is now is parsed as
-      ``{'A': 'B': 'C': 'D:E', 'F': 'G'}``.
+    For example, setting ``authMechanismProperties=A:B,C:D:E,F:G`` caused the driver to
+    parse the value as ``{'A': 'B', 'C': 'D:E,F:G'}``. This is now is parsed as
+    ``{'A': 'B': 'C': 'D:E', 'F': 'G'}``.
 
 - Generates an error if you call ``mongoc_bulk_operation_execute`` on the same 
   ``mongoc_bulk_operation_t`` repeatedly.
