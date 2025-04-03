@@ -139,7 +139,7 @@ Changes
     properties for the specified authentication mechanism.
   - Correctly parses colon (``:``) characters within ``authMechanismProperties`` values.
     For example, setting ``authMechanismProperties=A:B,C:D:E,F:G`` caused the driver to
-    parse the value as ``{'A': 'B', 'C': 'D:E,F:G'}``. This is now is parsed as
+    parse the value as ``{'A': 'B', 'C': 'D:E,F:G'}``. This is now parsed as
     ``{'A': 'B': 'C': 'D:E', 'F': 'G'}``.
 
 - Generates an error if you call ``mongoc_bulk_operation_execute`` on the same 
