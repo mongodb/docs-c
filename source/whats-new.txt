@@ -118,7 +118,8 @@ Changes
 ```````
 
 - If you pass the ``batchSize:0`` option to ``mongoc_client_watch``, ``mongoc_database_watch``,
-  or ``mongoc_collection_watch``, the option also applies to the ``aggregate`` command.
+  or ``mongoc_collection_watch``, the ``aggregate`` command no longer ignores this option and
+  applies it.
 
 - Removes ``bson_oid_init_sequence``. Instead, use ``bson_oid_init``.
 
@@ -135,10 +136,12 @@ Changes
     ``$external``.
   - Validates ``authMechanism`` values and returns a client error for invalid values.
   - Validates ``authMechanismProperties`` values and returns a client error for invalid
-    properties for the specified authentication mechanism. You cannot use the comma (``,``)
-    character in an ``authMechanismProperties`` property value if you set the option in
-    your connection string.
+    properties for the specified authentication mechanism.
   - Correctly parses colon (``:``) characters within ``authMechanismProperties`` values.
+
+    - Example: Previously, if you set ``authMechanismProperties=A:B,C:D:E,F:G``, the driver
+      parses the value as ``{'A': 'B', 'C': 'D:E,F:G'}``. This is now is parsed as
+      ``{'A': 'B': 'C': 'D:E', 'F': 'G'}``.
 
 - Generates an error if you call ``mongoc_bulk_operation_execute`` on the same 
   ``mongoc_bulk_operation_t`` repeatedly.
