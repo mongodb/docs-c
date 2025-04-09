@@ -188,7 +188,7 @@ For more information about this release, see the :github:`v2.0 release notes
 What's New in 1.30.3
 --------------------
 
-The following sections describe the changes in the 1.30.0 release of
+The following sections describe the changes in the 1.30.3 release of
 the {+driver-short+}.
 
 {+libbson+}
@@ -201,9 +201,11 @@ New Features
 
 - Adds new CMake packages and imported targets for ``bson`` and ``mongoc``
   to allow you to to support both major versions without modifying your 
-  CMake project. To import ``bson`` with the new names, call ``find_package`` 
-  for the ``bson`` package. The new imported targets are named 
-  ``bson::static``, ``bson::shared``, and ``bson::bson``.
+  CMake project. 
+  
+  - To import ``bson`` with the new names, call ``find_package`` 
+    for the ``bson`` package. The new imported target names are 
+    ``bson::static``, ``bson::shared``, and ``bson::bson``.
 
 {+libmongoc+}
 ~~~~~~~~~~~~~
@@ -215,12 +217,15 @@ New Features
 
 - Adds new CMake packages and imported targets for ``bson`` and ``mongoc``
   to allow you to to support both major versions without modifying your 
-  CMake project. To import ``mongoc`` with the new names, call ``find_package`` 
-  for the ``mongoc`` package. The new imported targets are named ``mongoc::static``, 
-  ``mongoc::shared``, and ``mongoc::mongoc``.
+  CMake project. 
 
-  - Programs that link to BSON libraries directly should also use the new target
-    names, ``bson::static``, ``bson::shared``, or ``bson::bson``.
+  - To import ``mongoc`` with the new names, call ``find_package`` 
+    for the ``mongoc`` package. The new imported target names are ``mongoc::static``, 
+    ``mongoc::shared``, and ``mongoc::mongoc``.
+
+  - To import ``bson`` with the new names, call ``find_package`` 
+    for the ``bson`` package. The new imported target names are 
+    ``bson::static``, ``bson::shared``, and ``bson::bson``.
 
 
 For more information about this release, see the :github:`v1.30.3 release notes
