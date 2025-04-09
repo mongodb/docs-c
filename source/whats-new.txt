@@ -208,7 +208,7 @@ New Features
     ``bson::static``, ``bson::shared``, and ``bson::bson``.
 
 {+libmongoc+}
-~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 The 1.30.3 release of ``{+libmongoc+}`` includes the following changes:
 
