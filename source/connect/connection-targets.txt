@@ -111,6 +111,10 @@ set ``myreplset``, which is running on port ``27017`` of three different hosts
    of its ``nodes`` attribute, the list might be empty while the client connects to
    the replica-set members.
 
+.. note:: Replica Set in Docker
+
+   .. sharedinclude:: dbx/docker-replica-set.rst
+
 API Documentation
 -----------------
 
