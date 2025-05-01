@@ -160,7 +160,7 @@ your operating system:
 
       .. code-block:: bash
 
-         apt install libmongoc-1.0-0
+         apt install mongoc2-0
 
    .. tab:: Windows
       :tabid: install-windows
