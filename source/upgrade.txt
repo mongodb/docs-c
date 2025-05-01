@@ -63,21 +63,21 @@ and upgrade versions.
 The {+driver-short+} consists of two libraries: ``{+libbson+}`` and ``{+libmongoc+}``. The
 sections of this guide describe the breaking changes included in each library.
 
-.. example:: Upgrading to Version 2.0
+.. example:: Upgrading to Version 2.0.0
 
-  If you're upgrading the {+driver-short+} from version 1.x to version 2.0,
+  If you're upgrading the {+driver-short+} from version 1.x to version 2.0.0,
   address all breaking changes that are listed for versions 1.x up to and
-  including version 2.0
+  including version 2.0.0
 
-.. _c-version-2.0-breaking-changes:
+.. _c-version-2.0.0-breaking-changes:
 
-Version 2.0
-~~~~~~~~~~~
+Version 2.0.0
+~~~~~~~~~~~~~
 
-{+libbson+} Breaking Changes in v2.0
-````````````````````````````````````
+{+libbson+} Breaking Changes in v2.0.0
+``````````````````````````````````````
 
-The 2.0 release of ``{+libbson+}`` includes the following breaking changes:
+The 2.0.0 release of ``{+libbson+}`` includes the following breaking changes:
 
 - Reduces the value of the ``BSON_ERROR_BUFFER_SIZE`` macro from ``504``
   to ``503`` to reserve the final byte for internal use.
@@ -106,8 +106,8 @@ The 2.0 release of ``{+libbson+}`` includes the following breaking changes:
   both library types are available, ``bson::bson`` uses
   the static library.
 
-{+libmongoc+} Breaking Changes in v2.0
-```````````````````````````````````````
+{+libmongoc+} Breaking Changes in v2.0.0
+````````````````````````````````````````
 
 The 2.0 release of ``{+libmongoc+}`` includes the following breaking changes:
 
@@ -173,41 +173,68 @@ The 2.0 release of ``{+libmongoc+}`` includes the following breaking changes:
   both library types are available, ``mongoc::mongoc`` uses
   the static library.
 
-.. _c-version-1.29-breaking-changes:
+.. _c-version-1.29.0-breaking-changes:
 
-Version 1.29
-~~~~~~~~~~~~
+Version 1.29.0
+~~~~~~~~~~~~~~
 
-{+libmongoc+} Breaking Changes in v1.29
-```````````````````````````````````````
+{+libmongoc+} Breaking Changes in v1.29.0
+`````````````````````````````````````````
 
-The 1.29 release of ``{+libmongoc+}`` includes the following breaking changes:
+The 1.29.0 release of ``{+libmongoc+}`` includes the following breaking changes:
 
 - Drops support for Visual Studio 2013
 - Raises required version of the ``libmongocrypt`` dependency to 1.12.0 to
   support the In-Use Encryption feature
 
-.. _c-version-1.28-breaking-changes:
+.. _c-version-1.28.0-breaking-changes:
 
-Version 1.28
-~~~~~~~~~~~~
+Version 1.28.0
+~~~~~~~~~~~~~~
 
-{+libbson+} Breaking Changes in v1.28
+{+libbson+} Breaking Changes in v1.28.0
 `````````````````````````````````````
 
-The 1.28 release of ``{+libbson+}`` includes the following breaking changes:
+The 1.28.0 release of ``{+libbson+}`` includes the following breaking changes:
 
 - Removes automatic ``ccache`` detection and usage
 - Removes ``Mongo_USE_CCACHE``
 
-{+libmongoc+} Breaking Changes in v1.28
-```````````````````````````````````````
+{+libmongoc+} Breaking Changes in v1.28.0
+`````````````````````````````````````````
 
-The 1.28 release of ``{+libmongoc+}`` includes the following breaking changes:
+The 1.28.0 release of ``{+libmongoc+}`` includes the following breaking changes:
 
 - Raises the minimum wire protocol version from ``6`` to ``7``
 - Raises the required ``libmongocrypt`` version to v1.11.0 to support In-Use
   Encryption
+
+.. _c-version-1.27.0-breaking-changes:
+
+Version 1.27.0
+~~~~~~~~~~~~~~
+
+{+libmongoc+} Breaking Changes in v1.27.0
+`````````````````````````````````````````
+
+The 1.27.0 release of ``{+libmongoc+}`` includes the following breaking changes:
+
+- Raises the required version of libmongocrypt to 1.10.0 to support In-Use
+  Encryption. This corresponds to the CMake option ``ENABLE_CLIENT_SIDE_ENCRYPTION``.
+
+.. _c-version-1.26.2-breaking-changes:
+
+Version 1.26.2
+~~~~~~~~~~~~~~
+
+{+libmongoc+} Breaking Changes in v1.26.2
+`````````````````````````````````````````
+
+The 1.26.2 release of ``{+libmongoc+}`` includes the following breaking changes:
+
+- By default, disables plugin loading with Cyrus SASL on Windows. 
+  To re-enable, set the CMake option ``CYRUS_PLUGIN_PATH_PREFIX`` to the 
+  absolute path prefix of the Cyrus SASL plugins.
 
 .. _c-version-1.24-breaking-changes:
 
