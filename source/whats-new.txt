@@ -73,11 +73,11 @@ Fixes
 
 - Fixes a username handling issue for ``MONGODB-X509`` authentication
   that occurred when the {+driver-short+} was configured to use the Secure
-  Transport or Secure Channel library.
+  Transport or Secure Channel library
 
 - No longer populates a ``mongoc_bulkwritereturn_t.res`` with a partial result
   when the ``mongoc_bulkwrite_execute()`` function generates a client error after the
-  first write operation.
+  first write operation
 
 .. _c-version-2.0.0:
 
