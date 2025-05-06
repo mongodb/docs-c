@@ -65,9 +65,9 @@ The 1.30.4 release of ``{+libmongoc+}`` includes the following changes:
 Fixes
 `````
 
-- Fixes an issue with username handling for ``MONGODB-X509`` authentication
-  when the {+driver-short+} is configured to use the Secure Transport or Secure Channel
-  library.
+- Fixes a username handling issue for ``MONGODB-X509`` authentication
+  that occurred when the {+driver-short+} was configured to use the Secure
+  Transport or Secure Channel library.
 
 - No longer populates a ``mongoc_bulkwritereturn_t.res`` with a partial result
   when the ``mongoc_bulkwrite_execute()`` function generates a client error after the
