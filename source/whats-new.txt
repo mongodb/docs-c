@@ -69,9 +69,9 @@ Fixes
   when the {+driver-short+} is configured to use the Secure Transport or Secure Channel
   library.
 
-- No longer populates an empty ``partialResult`` field of a ``BulkWriteException``
-  when the ``mongoc_bulkwrite_execute()`` method does not perform any successful
-  write operations.
+- No longer populates a ``mongoc_bulkwritereturn_t.res`` with a partial result
+  when the ``mongoc_bulkwrite_execute()`` function generates a client error after the
+  first write operation.
 
 .. _c-version-1.30.3:
 
