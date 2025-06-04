@@ -218,13 +218,15 @@ your operating system:
    .. tab:: MacOS
       :tabid: install-mac
 
-      You can download the {+driver-short+} on MacOS by using the `Homebrew
-      package manager <https://brew.sh/>`__. To do so, run the following command in
-      your shell:
+      To use the {+driver-short+} on MacOS, install the driver from the
+      source code. For installation instructions, see the :ref:`c-install-from-source`
+      guide.
 
-      .. code-block:: bash
+      .. warning:: Homebrew Limitations
 
-          brew install mongo-c-driver
+         {+driver-short+} v2.0 is not yet available to download
+         from Homebrew. The ``brew install mongo-c-driver`` command
+         installs driver v1.30.
 
 After you complete these steps, you have the {+driver-short+} installed 
 on your machine.
