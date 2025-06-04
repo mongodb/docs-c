@@ -218,8 +218,8 @@ your operating system:
    .. tab:: MacOS
       :tabid: install-mac
 
-      To use the {+driver-short+} on MacOS, install the driver from the
-      source code. For installation instructions, see the :ref:`c-install-from-source`
+      To use the {+driver-short+} on MacOS, build the driver libraries from
+      source. For installation instructions, see the :ref:`c-install-from-source`
       guide.
 
       .. important:: Homebrew Limitations
