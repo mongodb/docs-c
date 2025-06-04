@@ -222,11 +222,11 @@ your operating system:
       source code. For installation instructions, see the :ref:`c-install-from-source`
       guide.
 
-      .. warning:: Homebrew Limitations
+      .. important:: Homebrew Limitations
 
-         {+driver-short+} v2.0 is not yet available to download
-         from Homebrew. The ``brew install mongo-c-driver`` command
-         installs driver v1.30.
+         {+driver-short+} v{+version+} is not yet available to download
+         from the `Homebrew package manager <https://brew.sh/>`__.
+         The ``brew install mongo-c-driver`` command installs driver v1.30.
 
 After you complete these steps, you have the {+driver-short+} installed 
 on your machine.
