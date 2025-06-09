@@ -60,8 +60,8 @@ The 1.30.5 release of ``{+libbson+}`` includes the following changes:
 Fixes
 `````
 
-This release includes several fixes to the ``bson_validate`` family of function,
-including the following minro behavioral changes:
+This release includes several fixes to the ``bson_validate`` family of functions,
+with the following minor behavioral changes:
 
 - When ``BSON_VALIDATE_UTF8`` is specified, the driver will reject invalid UTF-8
   sequences instead of accepting them as in previous versions.
