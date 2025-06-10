@@ -80,7 +80,7 @@ The 1.30.5 release of ``{+libmongoc+}`` includes the following changes:
 Fixes
 `````
 
-- Fixxes a message of ``bson_strerror_r`` on Windows.
+- Fixes a message of ``bson_strerror_r`` on Windows.
 
 - Fixes memory leaks with Windows Secure Channel.
 
