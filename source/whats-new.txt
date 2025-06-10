@@ -84,7 +84,7 @@ Fixes
 
 - Fixes memory leaks with Windows Secure Channel.
 
-- Fixes loading PKCS#7 RSA keys with Windows Secure Channel.
+- Fixes loading PKCS#8 RSA keys with Windows Secure Channel.
 
 For more information about this release, see the :github:`v1.30.5 release notes </mongodb/mongo-c-driver/releases/tag/1.30.5>`.
 
