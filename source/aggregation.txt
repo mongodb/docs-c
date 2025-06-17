@@ -86,7 +86,7 @@ free MongoDB Atlas cluster and load the sample datasets, see the
 
    .. replacement:: language
    
-      :guilabel:`C`
+      :guilabel:`{+language+}`
 
 Build and Execute an Aggregation Pipeline
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
