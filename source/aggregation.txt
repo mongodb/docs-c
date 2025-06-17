@@ -191,5 +191,4 @@ For more information about executing aggregation operations with the {+driver-sh
 see the following API documentation:
 
 - `mongoc_collection_aggregate() <{+api-libmongoc+}/mongoc_collection_aggregate.html>`__
-- `mongoc_client_command_simple()
-  <{+api-libmongoc+}/mongoc_client_command_simple.html>`__
+- `mongoc_client_command_simple() <{+api-libmongoc+}/mongoc_client_command_simple.html>`__
