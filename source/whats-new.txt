@@ -52,28 +52,11 @@ Learn what's new in:
 What's New in 2.1.0
 -------------------
 
-The following sections describe the changes in the 2.1.0 release of
-the {+driver-short+}.
+.. warning:: Breaking Changes
 
-{+libbson+}
-~~~~~~~
-
-The 2.1.0 release of ``{+libbson+}`` includes the following changes:
-
-Removals
-````````
-
-- Removes support for Debian 9 and Debian 10
-
-{+libmongoc+}
-~~~~~~~~~
-
-The 2.1.0 release of ``{+libmongoc+}`` includes the following changes:
-
-Removals
-````````
-
-- Removes support for Debian 9 and Debian 10
+   {+driver-short+} v2.1.0 contains breaking changes. For more
+   information, see :ref:`c-version-2.1.0-breaking-changes` in the
+   Upgrade Driver Versions guide.
 
 .. _c-version-2.0.2:
 
