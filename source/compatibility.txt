@@ -65,22 +65,26 @@ The following operating systems are continually tested with the {+driver-short+}
     - Notes
 
   * - Debian
-    - Versions 9.2, 10.0, and 11.0
+    - Version 11.0
+
   * - RHEL
     - Versions 7.0, 7.1, 8.1, 8.2, and 8.3. RHEL derivatives
       (for example, CentOS, Rocky Linux, or AlmaLinux) of the same release version are
       supported. Fedora is also supported, but not continually tested.
+
   * - Ubuntu
     - Versions 16.04, 18.04, and 20.04. Subsequent minor releases
       are also supported. Ubuntu 22.04 and newer is not yet tested. Ubuntu
       derivatives based on supported Ubuntu versions are also supported.
+
   * - Arch Linux
     -
+
   * - macOS
     - Version 11.0
-  * - Windows Server 2008 and Windows Server 2016
-    - Windows variants of the same generation are supported
 
+  * - Windows Server 2008 and Windows Server 2016
+    - Windows variants of the same generation are supported.
 
 Compilers
 ~~~~~~~~~

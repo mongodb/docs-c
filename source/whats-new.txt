@@ -26,6 +26,7 @@ and deprecations made in each version of the driver libraries.
 
 Learn what's new in:
 
+* :ref:`Version 2.1.0 <c-version-2.1.0>`
 * :ref:`Version 2.0.2 <c-version-2.0.2>`
 * :ref:`Version 2.0.1 <c-version-2.0.1>`
 * :ref:`Version 2.0.0 <c-version-2.0.0>`
@@ -45,6 +46,34 @@ Learn what's new in:
 * :ref:`Version 1.26.0 <c-version-1.26.0>`
 
 .. _c-upcoming-breaking-changes:
+
+.. _c-version-2.1.0:
+
+What's New in 2.1.0
+-------------------
+
+The following sections describe the changes in the 2.1.0 release of
+the {+driver-short+}.
+
+{+libbson+}
+~~~~~~~
+
+The 2.1.0 release of ``{+libbson+}`` includes the following changes:
+
+Removals
+````````
+
+- Removes support for Debian 9 and Debian 10
+
+{+libmongoc+}
+~~~~~~~~~
+
+The 2.1.0 release of ``{+libmongoc+}`` includes the following changes:
+
+Removals
+````````
+
+- Removes support for Debian 9 and Debian 10
 
 .. _c-version-2.0.2:
 
