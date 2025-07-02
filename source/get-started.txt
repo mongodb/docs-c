@@ -218,8 +218,8 @@ your operating system:
    .. tab:: MacOS
       :tabid: install-mac
 
-      You can download the {+driver-short+} on MacOS by using the `Homebrew
-      package manager <https://brew.sh/>`__. To do so, run the following command in
+      You can use the `Homebrew package manager <https://brew.sh/>`__ to install
+      the {+driver-short+} on MacOS. To do so, run the following command in
       your shell:
 
       .. code-block:: bash
