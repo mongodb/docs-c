@@ -69,12 +69,12 @@ with the {+driver-short+}:
     - Versions 11.0 and later
 
   * - RHEL
-    - Versions 7.0 and newer. RHEL derivatives (such as CentOS,
+    - Versions 7.0 and later. RHEL derivatives (such as CentOS,
       Rocky Linux, and AlmaLinux) of the same release version are
       supported. Fedora is also supported.
 
   * - Ubuntu
-    - Versions 20.04 and newer. Ubuntu derivatives based on supported
+    - Versions 20.04 and later. Ubuntu derivatives based on supported
       Ubuntu versions are also supported.
 
   * - Arch Linux
