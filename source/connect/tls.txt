@@ -193,7 +193,7 @@ and will issue an error if used.
 Encrypted PEM files, set by using the ``tlsCertificateKeyPassword`` URI option, are also not supported and will result in error when
 attempting to load them.
 
-When ``tlsCAFile`` is set, the driver will import the file to the System Local Machine Root certificate store.
+When ``tlsCAFile`` is set, the driver will import the file to the ``System Local Machine Root`` certificate store.
 When no ``tlsCAFile`` is set, the driver will look up the Certificate Authority using the ``System Local Machine Root``
 certificate store to confirm the provided certificate.
 
