@@ -1,4 +1,4 @@
-The source for the C Driver has been moved to the monorepo:
+The source for the C Driver has been moved to the docs-mongodb-internal repo:
 https://github.com/10gen/docs-mongodb-internal/tree/main/content/c-driver
 
 This repo is being maintained for archival reasons only.
